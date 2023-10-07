@@ -8,7 +8,7 @@
                 <node id="ModuleInfo">
                     <attribute id="Author" type="LSWString" value="Fenrules"/>
                     <attribute id="CharacterCreationLevelName" type="FixedString" value=""/>
-                    <attribute id="Description" type="LSWString" value="https://github.com/novus213/RacialASI"/>
+                    <attribute id="Description" type="LSWString" value="https://github.com/novus213/BG3_RacialASI"/>
                     <attribute id="Folder" type="LSWString" value="RacialASI"/>
                     <attribute id="GMTemplate" type="FixedString" value=""/>
                     <attribute id="LobbyLevelName" type="FixedString" value=""/>
