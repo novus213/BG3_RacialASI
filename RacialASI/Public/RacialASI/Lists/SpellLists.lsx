@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="5" build="0"/>
+    <region id="SpellLists">
+        <node id="root">
+            <children>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="Forest gnomish LV1"/>
+                    <attribute id="Spells" type="LSString" value="Target_MinorIllusion"/>
+                    <attribute id="UUID" type="guid" value="7cdd46a5-ab1e-474a-a430-40769fd7e2fd"/>
+                </node>
+
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="Cadeau du Svirfneblin LV3"/>
+                    <attribute id="Spells" type="LSString" value="Shout_DisguiseSelf"/>
+                    <attribute id="UUID" type="guid" value="496ebaab-ac47-48c6-a19a-0b19a0acb7bc"/>
+                </node>
+
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="Cadeau du Svirfneblin LV5"/>
+                    <attribute id="Spells" type="LSString" value="Target_Nondetection"/>
+                    <attribute id="UUID" type="guid" value="e57298c0-12a5-4988-891f-8d9a52d5a38f"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="Git Astral Knowledge"/>
+                    <attribute id="Spells" type="LSString" value="Shout_AstralKnowledge"/>
+                    <attribute id="UUID" type="guid" value="0c1e2349-1757-4a13-bdc4-abf49bc0867d"/>
+                </node>
+			</children>
+        </node>
+    </region>
+</save>
