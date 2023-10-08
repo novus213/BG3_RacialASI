@@ -338,7 +338,7 @@
                     <attribute id="PassivesAdded" type="LSString" value="EldritchImpediment;EldritchAffinityInititiate;LimitersOff1;LimitersOff2;LimitersOff3;EW_PactOfTheBlade"/>
                     <attribute id="PassivesRemoved" type="LSString" value=""/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
-                    <attribute id="Selectors" type="LSString" value="SelectSpells(f5c4af9c-5d8d-4526-9057-94a4b243cd40,2,0,,,,AlwaysPrepared);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1);SelectPassives(fca428ce-b3e1-4b35-97f1-3189dc99fc45,1,ResearchApproach1)"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSkills(675236ba-c3cc-44ec-a58b-0e46351c85bd,2);SelectSpells(f5c4af9c-5d8d-4526-9057-94a4b243cd40,2,0,,,,AlwaysPrepared);SelectPassives(fca428ce-b3e1-4b35-97f1-3189dc99fc45,1,ResearchApproach1)"/>
                     <attribute id="TableUUID" type="guid" value="55c05326-0bff-4597-a945-d8fe91175910"/>
                     <attribute id="UUID" type="guid" value="a5842466-38b2-40fa-862a-7e48831e551d"/>
                     <children>
