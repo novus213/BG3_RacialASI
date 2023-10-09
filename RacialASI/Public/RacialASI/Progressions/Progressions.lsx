@@ -194,7 +194,7 @@
                     <attribute id="ProgressionType" type="uint8" value="2"/>
                     <attribute id="Selectors" type="LSString" value="AddSpells(496ebaab-ac47-48c6-a19a-0b19a0acb7bc,,,,AlwaysPrepared,UntilRest)"/>
                     <attribute id="TableUUID" type="guid" value="0f6d9f53-a2d0-422b-beea-a2fdfd88628a"/>
-                    <attribute id="UUID" type="guid" value=""/>
+                    <attribute id="UUID" type="guid" value="2d1c7b43-5e2e-44ca-9049-70bd60610817"/>
                 </node>
 
                  <!-- Deep Gnome LVL 5 -->
@@ -204,7 +204,7 @@
                     <attribute id="ProgressionType" type="uint8" value="2"/>
                     <attribute id="Selectors" type="LSString" value="AddSpells(e57298c0-12a5-4988-891f-8d9a52d5a38f,,Intelligence,,AlwaysPrepared,UntilRest)"/>
                     <attribute id="TableUUID" type="guid" value="0f6d9f53-a2d0-422b-beea-a2fdfd88628a"/>
-                    <attribute id="UUID" type="guid" value=""/>
+                    <attribute id="UUID" type="guid" value="a0900dc3-dcbe-4c30-9705-35f050bf98ee"/>
                 </node>
 				
 				<!-- Forest Gnome -->
