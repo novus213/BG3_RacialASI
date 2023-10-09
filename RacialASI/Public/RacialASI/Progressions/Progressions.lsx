@@ -329,6 +329,22 @@
                 </node>
 				  <!-- DISABLE FLOATING SCORES -->
 				  
+                  <!-- Ambusher -->
+
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Dexterity);ProficiencyBonus(SavingThrow,Intelligence);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);Proficiency(LightArmor);Proficiency(MediumArmor)"/>
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="Ambusher"/>
+                    <attribute id="PassivesAdded" type="LSString" value="NIT_AdvantageOfSurprise_Passive"/>
+                    <attribute id="PassivesRemoved" type="LSString" value=""/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSkills(b9ec009e-582e-4278-9e2c-882227e20ff1,3);AddSpells(30526070-72b0-4a18-8f9e-5521347993ea,,,,AlwaysPrepared)"/>
+                    <attribute id="TableUUID" type="guid" value="77b91258-4a9b-4cdb-b071-6e633ac9889a"/>
+                    <attribute id="UUID" type="guid" value="5ef72e3c-717a-4250-860e-0813e3c42a36"/>
+                </node>
+
+
+
                   <!-- EldritchScholar -->
 
                   <node id="Progression">
