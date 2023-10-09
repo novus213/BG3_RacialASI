@@ -6,26 +6,26 @@
       <children>
         <node id="Dependencies" />
         <node id="ModuleInfo">
-            <attribute id="Author" type="LSString" value="Fenrules" />
-            <attribute id="CharacterCreationLevelName" type="FixedString" value="" />
-            <attribute id="Description" type="LSWString" value="https://github.com/novus213/BG3_RacialASI"/>
-            <attribute id="Folder" type="LSString" value="RacialASI" />
-            <attribute id="GMTemplate" type="FixedString" value="" />
-            <attribute id="LobbyLevelName" type="FixedString" value="" />
-            <attribute id="MD5" type="LSString" value="" />
-            <attribute id="MainMenuBackgroundVideo" type="FixedString" value="" />
-            <attribute id="MenuLevelName" type="FixedString" value="" />
-            <attribute id="Name" type="FixedString" value="RacialASI" />
-            <attribute id="NumPlayers" type="uint8" value="4" />
-            <attribute id="PhotoBooth" type="FixedString" value="" />
-            <attribute id="StartupLevelName" type="FixedString" value="" />
-            <attribute id="Tags" type="LSString" value="" />
-            <attribute id="Type" type="FixedString" value="Add-on" />
-            <attribute id="UUID" type="FixedString" value="f505b1bf-b1fd-4809-8e1d-a4f94f426dfd" />
-            <attribute id="Version" type="int64" value="72198331526283264" />
+          <attribute id="Author" type="LSString" value="Fenrules" />
+          <attribute id="CharacterCreationLevelName" type="FixedString" value="" />
+          <attribute id="Description" type="LSWString" value="https://github.com/novus213/BG3_RacialASI"/>
+          <attribute id="Folder" type="LSString" value="RacialASI" />
+          <attribute id="GMTemplate" type="FixedString" value="" />
+          <attribute id="LobbyLevelName" type="FixedString" value="" />
+          <attribute id="MD5" type="LSString" value="" />
+          <attribute id="MainMenuBackgroundVideo" type="FixedString" value="" />
+          <attribute id="MenuLevelName" type="FixedString" value="" />
+          <attribute id="Name" type="FixedString" value="RacialASI" />
+          <attribute id="NumPlayers" type="uint8" value="4" />
+          <attribute id="PhotoBooth" type="FixedString" value="" />
+          <attribute id="StartupLevelName" type="FixedString" value="" />
+          <attribute id="Tags" type="LSString" value="" />
+          <attribute id="Type" type="FixedString" value="Add-on" />
+          <attribute id="UUID" type="FixedString" value="1ebf4a1c-01d4-41ed-8aa1-5b3975c6d019" />
+          <attribute id="Version" type="int64" value="72339069014638592" />
           <children>
             <node id="PublishVersion">
-              <attribute id="Version" type="int64" value="72198331526283264" />
+              <attribute id="Version" type="int64" value="72339069014638592" />
             </node>
             <node id="Scripts" />
             <node id="TargetModes">
@@ -41,4 +41,3 @@
     </node>
   </region>
 </save>
-
