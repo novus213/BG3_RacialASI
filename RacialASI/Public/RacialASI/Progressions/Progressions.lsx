@@ -327,6 +327,20 @@
                     <attribute id="TableUUID" type="guid" value="74e2e44d-e8c0-4b99-a6dc-c02f43cea8a6"/>
                     <attribute id="UUID" type="guid" value="816fa8c7-7648-48f7-8309-cb4e7383e45f"/>
                 </node>
+
+                <!-- Changeling -->
+                 <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(Attunement,3,0);Ability(Charisma,2);ActionResource(Movement,9,0)" />
+                    <attribute id="Level" type="uint8" value="1" />
+                    <attribute id="Name" type="LSString" value="Trips_Changeling_1" />
+                    <attribute id="PassivesAdded" type="LSString" value="Trips_PD_ChangelingInstincts;Trips_Immunities;Trips_Shapechanger;Trips_Fey;Trips_Shapechanger_Generic" />
+                    <attribute id="PassivesRemoved" type="LSString" value="" />
+                    <attribute id="ProgressionType" type="uint8" value="2" />
+                    <attribute id="Selectors" type="LSString" value="SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,1);SelectSkills(20a3e090-399d-4172-85b3-218f2dd62edd,2,Trips_ChangelingInstincts)" />
+                    <attribute id="TableUUID" type="guid" value="2a6b9ce0-c21a-421f-8378-6383c8c01b87" />
+                    <attribute id="UUID" type="guid" value="fa7bf84a-a1d6-46b2-a779-739424d20b5b" />
+                </node>
+
 				  <!-- DISABLE FLOATING SCORES -->
 				  
                   <!-- Ambusher -->
