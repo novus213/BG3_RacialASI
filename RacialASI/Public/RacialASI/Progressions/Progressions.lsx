@@ -642,20 +642,31 @@
                     <children>
                         <node id="SubClasses">
                             <children>
-                                <node id="SubClass">
-                                    <attribute id="Object" type="guid" value="14374d37-a70e-41a8-9dc5-85a23f8b5dd2"/>
+								<node id="SubClass"> <!--Draconic Bloodline-->
+									<attribute id="Object" type="guid" value="36286b0a-26f9-4b4e-9311-fd1404301d20"/>
+								</node>
+								<node id="SubClass"> <!--Wild Magic-->
+									<attribute id="Object" type="guid" value="14374d37-a70e-41a8-9dc5-85a23f8b5dd2"/>
+								</node>
+								<node id="SubClass"> <!--Storm Sorcery-->
+									<attribute id="Object" type="guid" value="d379fdae-b401-4731-8d50-277c73919ae3"/>
                                 </node>
-                                <node id="SubClass">
-                                    <attribute id="Object" type="guid" value="36286b0a-26f9-4b4e-9311-fd1404301d20"/>
+                                <node id="SubClass"> <!--Animist-->
+									<attribute id="Object" type="guid" value="ae58c555-8be7-429b-bb76-0ace4f55bbe4"/>
+								</node>
+                                <node id="SubClass"> <!--StoneSorcery-->
+                                    <attribute id="Object" type="guid" value="3c335f43-bae3-4468-9972-d9bdedca2a71" />
                                 </node>
-                                <node id="SubClass">
-                                    <attribute id="Object" type="guid" value="d379fdae-b401-4731-8d50-277c73919ae3"/>
+                                <node id="SubClass"> <!--Shadow Sorcerer-->
+                                    <attribute id="Object" type="guid" value="d007a7be-60c6-4606-87db-66eb9e247050"/>
+                                </node>
+                                <node id="SubClass"><!--Divine Soul-->
+                                    <attribute id="Object" type="guid" value="60067f14-9b4a-4347-b3ae-373833fb048f"/>
                                 </node>
                             </children>
                         </node>
                     </children>
                 </node>
-				
 				
 				<!-- Warlock -->
 				<node id="Progression">
@@ -679,12 +690,35 @@
                                 <node id="SubClass">
                                     <attribute id="Object" type="guid" value="733ddf8c-9ec4-4c5a-85e3-c70fd3df3c24"/>
                                 </node>
+                                <node id="SubClass"><!--HexBlade-->
+                                    <attribute id="Object" type="guid" value="95f27fb1-7e7d-4ae3-ba42-17c2f11b4bc3"/>
+                                </node>
+                                <node id="SubClass"><!--Fathomless-->
+                                    <attribute id="Object" type="guid" value="4eaff232-e33c-4696-8c99-47ff10458312" />
+                                </node>
+                                <node id="SubClass"><!--Genie Warlock-->
+                                    <attribute id="Object" type="guid" value="694a64ed-6dd5-4dd8-a18d-7eba20fe5eb2" />
+                                </node>
+                                <node id="SubClass"><!--Undead Warlock 3045-->
+                                    <attribute id="Object" type="guid" value="0e4537eb-c76a-4f9e-b98b-0aa4ba8396b0"/>
+                                </node>
                             </children>
                         </node>
                     </children>
                 </node>
 				
-				<!-- Wizard -->
+                <!-- Celestian Warlock -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="Celestial"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+		            <attribute id="Boosts" type="LSString" value="ActionResource(HealingLightPoint,2,0)"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(1d7bb5fc-396d-11ee-be56-0242ac120002,2,0,,,e9127b70-22b7-42a1-b172-d02f828f260a);AddSpells(d31cc313-ffe4-473b-beaf-1bb8665e40c5)"/>
+                    <attribute id="TableUUID" type="guid" value="1d7bbdb8-396d-11ee-be56-0242ac120002"/>
+                    <attribute id="UUID" type="guid" value="b7a111c9-e398-4f99-9759-b19a993d97a2"/>
+                </node>
+
+                <!-- Wizard -->
 				<node id="Progression">
                     <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,2,1);ProficiencyBonus(SavingThrow,Intelligence);ProficiencyBonus(SavingThrow,Wisdom);Proficiency(Daggers);Proficiency(Quarterstaffs);Proficiency(LightCrossbows);ActionResource(ArcaneRecoveryPoint,1,0)"/>
                     <attribute id="Level" type="uint8" value="1"/>
