@@ -26,6 +26,11 @@
                     <attribute id="Spells" type="LSString" value="Shout_AstralKnowledge"/>
                     <attribute id="UUID" type="guid" value="0c1e2349-1757-4a13-bdc4-abf49bc0867d"/>
                 </node>
+                <node id="SpellList">
+					<attribute id="Comment" type="LSString" value="Tinker Tool Rock Gnome"/>
+					<attribute id="Spells" type="LSString" value="Shout_RightToolForTheJob_RockGnome"/>
+					<attribute id="UUID" type="guid" value="5fdb4bd0-8122-4ce6-9191-fffc951cf3a3"/>
+                </node>
 			</children>
         </node>
     </region>

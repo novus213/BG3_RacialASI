@@ -170,11 +170,10 @@
                     <attribute id="Name" type="LSString" value="RockGnome"/>
                     <attribute id="PassivesAdded" type="LSString" value="Darkvision;RockGnome_ArtificersLore"/>
                     <attribute id="ProgressionType" type="uint8" value="2"/>
-                    <attribute id="Selectors" type="LSString" value="AddSpells(4cad4983-86fd-4855-8fb5-68d2b8d84b9c,,,,AlwaysPrepared,UntilRest)"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(5fdb4bd0-8122-4ce6-9191-fffc951cf3a3,,,,AlwaysPrepared,UntilRest)"/>
                     <attribute id="TableUUID" type="guid" value="1e9f254e-6aa4-4e54-9937-82065b3182ee"/>
                     <attribute id="UUID" type="guid" value="aa2257a9-1779-4d8b-be65-8a08eede07fa"/>
                 </node>
-				
 
 				<!-- Deep Gnome -->
 				<node id="Progression">
@@ -648,25 +647,76 @@
 								<node id="SubClass"> <!--Wild Magic-->
 									<attribute id="Object" type="guid" value="14374d37-a70e-41a8-9dc5-85a23f8b5dd2"/>
 								</node>
-								<node id="SubClass"> <!--Storm Sorcery-->
-									<attribute id="Object" type="guid" value="d379fdae-b401-4731-8d50-277c73919ae3"/>
-                                </node>
-                                <node id="SubClass"> <!--Animist-->
-									<attribute id="Object" type="guid" value="ae58c555-8be7-429b-bb76-0ace4f55bbe4"/>
-								</node>
-                                <node id="SubClass"> <!--StoneSorcery-->
-                                    <attribute id="Object" type="guid" value="3c335f43-bae3-4468-9972-d9bdedca2a71" />
-                                </node>
-                                <node id="SubClass"> <!--Shadow Sorcerer-->
-                                    <attribute id="Object" type="guid" value="d007a7be-60c6-4606-87db-66eb9e247050"/>
-                                </node>
-                                <node id="SubClass"><!--Divine Soul-->
-                                    <attribute id="Object" type="guid" value="60067f14-9b4a-4347-b3ae-373833fb048f"/>
+                                <node id="SubClass"><!--Storm Sorcery-->
+                                    <attribute id="Object" type="guid" value="d379fdae-b401-4731-8d50-277c73919ae3"/>
                                 </node>
                             </children>
                         </node>
                     </children>
                 </node>
+                
+                <!--Animist ok-->
+                <node id="Progression"> 
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="Animist"/>
+                    <attribute id="PassivesAdded" type="LSString" value="ManaConduit"/>
+                    <attribute id="PassivesRemoved" type="LSString" value=""/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(75e0a799-db56-4434-8b85-e004317e9550,,,,AlwaysPrepared);SelectSpells(94a0289f-e011-44fa-b64b-1b110a56f8da,4,0,SorcererCantrip,,,AlwaysPrepared);SelectSpells(ddeeff7e-2f9b-485d-960e-fe2b964d5439,2,0,SorcererSpell);SelectPassives(0b589240-bade-47ad-958f-33d49862a7ca,1,Primal Magic)"/>
+                    <attribute id="TableUUID" type="guid" value="5816c1e6-8908-4777-a7ab-6dd04bb24f68"/>
+                    <attribute id="UUID" type="guid" value="c55fdfce-eb9c-4438-93de-bb13202cc115"/>
+                </node>
+                <!--<node id="SubClass"> 
+                    <attribute id="Object" type="guid" value="ae58c555-8be7-429b-bb76-0ace4f55bbe4"/>
+                </node>-->
+
+                <!--StoneSorcery ok-->
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(ClassLevel(Sorcerer));Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons)" />
+                    <attribute id="Level" type="uint8" value="1" />
+                    <attribute id="Name" type="LSString" value="StoneSorcerery" />
+                    <attribute id="PassivesAdded" type="LSString" value="StonesDurability;MetalMagic" />
+                    <attribute id="ProgressionType" type="uint8" value="1" />
+                    <attribute id="Selectors" type="LSString" value="AddSpells(309cfbbd-79ac-414f-a158-f05d5d2b92e3,SorcererMetalMagic)" />
+                    <attribute id="TableUUID" type="guid" value="154fab86-3181-4f71-9691-7d94a8a3bb6d" />
+                    <attribute id="UUID" type="guid" value="e277a64f-b811-4319-bd0c-8ef24ebdec59" />
+                </node>
+                <!--<node id="SubClass"> 
+                    <attribute id="Object" type="guid" value="3c335f43-bae3-4468-9972-d9bdedca2a71" />
+                </node>-->
+
+                <!--Shadow Sorcerer ok-->
+                <node id="Progression">
+                    <attribute id="AllowImprovement" type="bool" value="false"/>
+                    <attribute id="Boosts" type="LSString" value=""/>
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="ShadowMagic"/>
+                    <attribute id="PassivesAdded" type="LSString" value="EyesOfTheDark;StrengthOfTheGrave"/>
+                    <attribute id="PassivesRemoved" type="LSString" value=""/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(5d2e076f-da2f-40ef-989d-a59a4b4ce844)"/>
+                    <attribute id="TableUUID" type="guid" value="1b981d86-3d9c-4b85-bf03-ace6bda4dfa2"/>
+                    <attribute id="UUID" type="guid" value="2a382291-7fed-44ba-9002-ccd894b687d8"/>
+                </node>
+                <!--<node id="SubClass"> 
+                    <attribute id="Object" type="guid" value="d007a7be-60c6-4606-87db-66eb9e247050"/>
+                </node>-->
+
+                <!--Divine Soul 
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="DivineSoul"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+					<attribute id="Boosts" type="LSString" value="ActionResource(HeavenlyFavor,1,0)"/>
+					<attribute id="PassivesAdded" type="LSString" value="DivineMagic;DivineSoul_FavoredByTheGods"/>
+					<attribute id="Selectors" type="LSString" value="SelectPassives(535191e1-19ad-4a7e-9341-8b3f76d57a60,1,DivineAffinity);SelectSpells(6384a9d7-467b-4d1b-8073-b6eb074fd646,4,0,DivineMagicCantrip,,,AlwaysPrepared);SelectSpells(562fac7f-3dd6-4ecf-aa40-9edb32692567,2,0,DivineMagicSpell)"/>                    
+                    <attribute id="TableUUID" type="guid" value="def10d77-39b5-419e-b5de-32931bd47136"/>
+                    <attribute id="UUID" type="guid" value="35aa255d-3eb7-4e93-8092-7545ced25b09"/>
+                </node>-->
+                <!--<node id="SubClass">
+                    <attribute id="Object" type="guid" value="60067f14-9b4a-4347-b3ae-373833fb048f"/>
+                </node>-->
+
 				
 				<!-- Warlock -->
 				<node id="Progression">
@@ -690,24 +740,54 @@
                                 <node id="SubClass">
                                     <attribute id="Object" type="guid" value="733ddf8c-9ec4-4c5a-85e3-c70fd3df3c24"/>
                                 </node>
-                                <node id="SubClass"><!--HexBlade-->
-                                    <attribute id="Object" type="guid" value="95f27fb1-7e7d-4ae3-ba42-17c2f11b4bc3"/>
-                                </node>
-                                <node id="SubClass"><!--Fathomless-->
-                                    <attribute id="Object" type="guid" value="4eaff232-e33c-4696-8c99-47ff10458312" />
-                                </node>
-                                <node id="SubClass"><!--Genie Warlock-->
-                                    <attribute id="Object" type="guid" value="694a64ed-6dd5-4dd8-a18d-7eba20fe5eb2" />
-                                </node>
-                                <node id="SubClass"><!--Undead Warlock 3045-->
-                                    <attribute id="Object" type="guid" value="0e4537eb-c76a-4f9e-b98b-0aa4ba8396b0"/>
-                                </node>
                             </children>
                         </node>
                     </children>
                 </node>
-				
-                <!-- Celestian Warlock -->
+
+				<!--Fathomless ok-->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="1" />
+                    <attribute id="Name" type="LSString" value="Fathomless" />
+                    <attribute id="PassivesAdded" type="LSString" value="FW_TotD_WaterMoving;FW_TotD_ActionResource_1;FW_TotD_ActionResource_2;FW_TotD_ActionResource_3" />
+                    <attribute id="ProgressionType" type="uint8" value="1" />
+                    <attribute id="Selectors" type="LSString" value="AddSpells(c60fdc3b-34b2-496c-9a7d-66105a09ae14);SelectSpells(6fc5c1fd-f389-4648-b55a-fe371c517bf6,2,0,,,e9127b70-22b7-42a1-b172-d02f828f260a)" />
+                    <attribute id="TableUUID" type="guid" value="6c1405ac-ad2f-4e4e-9b9a-7267fa6ede90" />
+                    <attribute id="UUID" type="guid" value="da7173e8-0faa-4929-a505-3e1228c16b82" />
+                </node>
+                <!--<node id="SubClass">
+                    <attribute id="Object" type="guid" value="4eaff232-e33c-4696-8c99-47ff10458312" />
+                </node>-->
+
+                <!--Genie Warlock ok-->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="1" /> 
+                    <attribute id="Name" type="LSString" value="Genie" /> 
+                    <attribute id="PassivesAdded" type="LSString" value="" /> 
+                    <attribute id="ProgressionType" type="uint8" value="1" /> 
+                    <attribute id="Selectors" type="LSString" value="AddSpells(ccc2e2f6-d8ad-48de-b137-5d1592d17590);SelectPassives(3cbe5879-5434-4cb5-b648-5bb99730e9e9,1,GeniePatron);SelectPassives(c253bd42-cc43-4a16-ab1b-38a8b7c82af9,1,GenieWrath);SelectSpells(212298bf-8bfb-403b-ac81-4096c22577e7,2,0,,,e9127b70-22b7-42a1-b172-d02f828f260a)" />  Points to SpellLists.lsx - Determines what spells you can choose from
+                    <attribute id="TableUUID" type="guid" value="dba58fbf-c0df-4871-916b-318f531a5454" /> 
+                    <attribute id="UUID" type="guid" value="37a9d834-26fa-4bf0-aec2-9e8522139d72" /> 
+                </node>
+                <!--<node id="SubClass">
+                    <attribute id="Object" type="guid" value="694a64ed-6dd5-4dd8-a18d-7eba20fe5eb2" />
+                </node>-->
+
+                <!--HexBlade ok-->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="Hexblade"/>
+                    <attribute id="PassivesAdded" type="LSString" value="HexbladeCurse;HexWarrior;"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(92ff4c0e-4af0-457a-aa4f-5d2abcb0d647,2,0,,,e9127b70-22b7-42a1-b172-d02f828f260a)"/>
+                    <attribute id="TableUUID" type="guid" value="54b55960-4113-46ae-9209-d1213b38aab3"/>
+                    <attribute id="UUID" type="guid" value="cbdbfb62-098f-4629-8036-edfb5f216726"/>
+                </node>
+                <!--<node id="SubClass">
+                    <attribute id="Object" type="guid" value="95f27fb1-7e7d-4ae3-ba42-17c2f11b4bc3"/>
+                </node>-->
+
+                <!-- Celestian Warlock
                 <node id="Progression">
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="Celestial"/>
@@ -716,7 +796,25 @@
                     <attribute id="Selectors" type="LSString" value="SelectSpells(1d7bb5fc-396d-11ee-be56-0242ac120002,2,0,,,e9127b70-22b7-42a1-b172-d02f828f260a);AddSpells(d31cc313-ffe4-473b-beaf-1bb8665e40c5)"/>
                     <attribute id="TableUUID" type="guid" value="1d7bbdb8-396d-11ee-be56-0242ac120002"/>
                     <attribute id="UUID" type="guid" value="b7a111c9-e398-4f99-9759-b19a993d97a2"/>
-                </node>
+                </node>-->
+                <!--<node id="SubClass">
+                    <attribute id="Object" type="guid" value="xxxxxxx"/>
+                </node>-->
+
+                 <!--Undead Warlock 3045 KO
+                <node id="Progression">
+					<attribute id="AllowImprovement" type="bool" value="False" />
+					<attribute id="Level" type="uint8" value="1" />
+					<attribute id="Name" type="LSString" value="WarlockUndead" />
+					<attribute id="ProgressionType" type="uint8" value="1" />
+					<attribute id="PassivesAdded" type="LSString" value="WarlockUndead_FormOfDread_ProficiencyBonusStage1;WarlockUndead_FormOfDread_ProficiencyBonusStage2;WarlockUndead_FormOfDread_ProficiencyBonusStage3" />
+					<attribute id="Selectors" type="LSString" value="SelectPassives(ca85b4e7-7085-4630-9120-fd3cd9cf8cfc,1,WarlockUndeadPatron);SelectSpells(93904380-c84b-412f-b280-605067d621f0,2,0,,,e9127b70-22b7-42a1-b172-d02f828f260a)" />
+					<attribute id="TableUUID" type="guid" value="2a455634-7418-48b4-862f-45e8ae5564b1" />
+					<attribute id="UUID" type="guid" value="9955647b-c417-4364-a8b0-980776325eaa" />
+				</node>-->
+                <!--<node id="SubClass">
+                    <attribute id="Object" type="guid" value="0e4537eb-c76a-4f9e-b98b-0aa4ba8396b0"/>
+                </node>-->
 
                 <!-- Wizard -->
 				<node id="Progression">
