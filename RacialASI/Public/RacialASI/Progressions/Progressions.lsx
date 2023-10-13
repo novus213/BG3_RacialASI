@@ -340,6 +340,19 @@
                     <attribute id="UUID" type="guid" value="fa7bf84a-a1d6-46b2-a779-739424d20b5b" />
                 </node>
 
+                <!-- Gobelin -->
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="Ability(Dexterity,2);Ability(Constitution,1);ActionResource(Movement,9,0)"/>
+                    <attribute id="Level" type="uint8" value="1" />
+                    <attribute id="Name" type="LSString" value="Trips_Goblin_1" />
+                    <attribute id="PassivesAdded" type="LSString" value="Trips_Gob_Darkvision;Trips_Gob_Immunities;Trips_Gob_Nimble_Escape;Trips_Gob_Fury_Of_The_Small;Trips_Gob_Fey;Traits" />
+                    <attribute id="PassivesRemoved" type="LSString" value="" />
+                    <attribute id="ProgressionType" type="uint8" value="2" />
+                    <attribute id="Selectors" type="LSString" value="" />
+                    <attribute id="TableUUID" type="guid" value="95653fbb-2fc7-4c6b-8027-25a5d890a376" />
+                    <attribute id="UUID" type="guid" value="fa9d4980-1b18-43e6-974b-4e3a2abae183" />
+                </node>
+
 				  <!-- DISABLE FLOATING SCORES -->
 				  
                   <!-- Ambusher -->
