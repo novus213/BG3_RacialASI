@@ -7,9 +7,9 @@
 				<node id="Resource">
 					<attribute id="ID" type="FixedString" value="87e01727-a42c-4ff5-ad79-0580419ef8d3" />
 					<attribute id="Localized" type="bool" value="False" />
-					<attribute id="Name" type="LSString" value="Icons_Artificer" />
+					<attribute id="Name" type="LSString" value="Icons_RacialASI" />
 					<attribute id="SRGB" type="bool" value="True" />
-					<attribute id="SourceFile" type="LSString" value="Public/Artificer/Assets/Textures/Icons/Icons_RacialASI.DDS" />
+					<attribute id="SourceFile" type="LSString" value="Public/RacialASI/Assets/Textures/Icons/Icons_RacialASI.DDS" />
 					<attribute id="Streaming" type="bool" value="True" />
 					<attribute id="Template" type="FixedString" value="Icons_Items" />
 					<attribute id="Type" type="int64" value="0" />
