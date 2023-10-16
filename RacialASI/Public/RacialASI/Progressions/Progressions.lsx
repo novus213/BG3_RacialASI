@@ -410,13 +410,13 @@
                 <!-- Artificer -->
 
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Intelligence);ProficiencyBonus(SavingThrow,Constitution);ProficiencyBonus(Skill,SleightOfHand);Proficiency(SimpleWeapons);Proficiency(HandCrossbows);Proficiency(LightCrossbows);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);ActionResource(SpellSlot,2,1)"/>
+                    <attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Intelligence);ProficiencyBonus(SavingThrow,Constitution);ProficiencyBonus(Skill,SleightOfHand);Proficiency(SimpleWeapons);Proficiency(HandCrossbows);Proficiency(LightCrossbows);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(Firearms);Proficiency(Slings);ActionResource(SpellSlot,2,1)"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="Artificer"/>
                     <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel1;Passive_ArtificerExtraSlots;MagicalTinkering;ExperimentalAlchemy;AuraOfArtificer_Technical;AuraOfArtificer_Passive_Technical_Self;AuraOfArtificer_Passive_Technical_Self_2;AuraOfArtificer_Passive_Technical_Self_3;AuraOfArtificer_Passive_Technical_Self_4;AuraOfArtificer_Passive_Technical_Self_5"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/> 
                     <attribute id="Selectors" type="LSString" value="SelectSkills(e6496b02-8d9d-4852-a9d1-dc86a2449b31,2);AddSpells(c9808849-c41b-444a-83aa-9748e03e9e16,MagicalTinkering,,,AlwaysPrepared);SelectSpells(b9808849-c41b-444a-83aa-9748e03e9e16,2,0,,,,AlwaysPrepared);AddSpells(ef3aa11f-cc98-412f-a85e-7fae4561a4d4)"/>
-                    <attribute id="TableUUID" type="guid" value="6b701f1f-c477-43f0-9afe-0e169f65fc7a"/>
+					<attribute id="TableUUID" type="guid" value="6b701f1f-c477-43f0-9afe-0e169f65fc7a"/>
                     <attribute id="UUID" type="guid" value="c1965de9-87f1-47ee-93c7-43c54f685f2d"/>
                 </node>
 
@@ -816,15 +816,15 @@
 
                  <!--Undead Warlock 3045 KO
                 <node id="Progression">
-					<attribute id="AllowImprovement" type="bool" value="False" />
-					<attribute id="Level" type="uint8" value="1" />
-					<attribute id="Name" type="LSString" value="WarlockUndead" />
-					<attribute id="ProgressionType" type="uint8" value="1" />
-					<attribute id="PassivesAdded" type="LSString" value="WarlockUndead_FormOfDread_ProficiencyBonusStage1;WarlockUndead_FormOfDread_ProficiencyBonusStage2;WarlockUndead_FormOfDread_ProficiencyBonusStage3" />
-					<attribute id="Selectors" type="LSString" value="SelectPassives(ca85b4e7-7085-4630-9120-fd3cd9cf8cfc,1,WarlockUndeadPatron);SelectSpells(93904380-c84b-412f-b280-605067d621f0,2,0,,,e9127b70-22b7-42a1-b172-d02f828f260a)" />
-					<attribute id="TableUUID" type="guid" value="2a455634-7418-48b4-862f-45e8ae5564b1" />
-					<attribute id="UUID" type="guid" value="9955647b-c417-4364-a8b0-980776325eaa" />
-				</node>-->
+                    <attribute id="AllowImprovement" type="bool" value="false"/>
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="WarlockUndead"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WarlockUndead_FormOfDread_ProficiencyBonusStage1;WarlockUndead_FormOfDread_ProficiencyBonusStage2;WarlockUndead_FormOfDread_ProficiencyBonusStage3"/>
+                    <attribute id="Selectors" type="LSString" value="SelectPassives(ca85b4e7-7085-4630-9120-fd3cd9cf8cfc,1,WarlockUndeadPatron);SelectSpells(93904380-c84b-412f-b280-605067d621f0,2,0,,,e9127b70-22b7-42a1-b172-d02f828f260a)"/>
+                    <attribute id="TableUUID" type="guid" value="2a455634-7418-48b4-862f-45e8ae5564b1"/>
+                    <attribute id="UUID" type="guid" value="9955647b-c417-4364-a8b0-980776325eaa"/>
+                </node>-->
                 <!--<node id="SubClass">
                     <attribute id="Object" type="guid" value="0e4537eb-c76a-4f9e-b98b-0aa4ba8396b0"/>
                 </node>-->
