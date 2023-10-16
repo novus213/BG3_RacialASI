@@ -329,7 +329,7 @@
 
                 <!-- Changeling -->
                  <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(Attunement,3,0);Ability(Charisma,2);ActionResource(Movement,9,0)" />
+                    <attribute id="Boosts" type="LSString" value="ActionResource(Attunement,3,0);Ability(Charisma,2)" /> I define movement in my Trips_Immunities Passive
                     <attribute id="Level" type="uint8" value="1" />
                     <attribute id="Name" type="LSString" value="Trips_Changeling_1" />
                     <attribute id="PassivesAdded" type="LSString" value="Trips_PD_ChangelingInstincts;Trips_Immunities;Trips_Shapechanger;Trips_Fey;Trips_Shapechanger_Generic" />
@@ -342,7 +342,7 @@
 
                 <!-- Gobelin -->
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="Ability(Dexterity,2);Ability(Constitution,1);ActionResource(Movement,9,0)"/>
+                    <attribute id="Boosts" type="LSString" value="Ability(Dexterity,2);Ability(Constitution,1)"/> I define movement in my Trips_Gob_Immunities Passive
                     <attribute id="Level" type="uint8" value="1" />
                     <attribute id="Name" type="LSString" value="Trips_Goblin_1" />
                     <attribute id="PassivesAdded" type="LSString" value="Trips_Gob_Darkvision;Trips_Gob_Immunities;Trips_Gob_Nimble_Escape;Trips_Gob_Fury_Of_The_Small;Trips_Gob_Fey;Traits" />
@@ -800,7 +800,7 @@
                     <attribute id="Object" type="guid" value="95f27fb1-7e7d-4ae3-ba42-17c2f11b4bc3"/>
                 </node>-->
 
-                <!-- Celestian Warlock not needed
+                <!-- Celestian Warlock
                 <node id="Progression">
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="Celestial"/>
@@ -816,15 +816,15 @@
 
                  <!--Undead Warlock 3045 KO
                 <node id="Progression">
-                    <attribute id="AllowImprovement" type="bool" value="false"/>
-                    <attribute id="Level" type="uint8" value="1"/>
-                    <attribute id="Name" type="LSString" value="WarlockUndead"/>
-                    <attribute id="ProgressionType" type="uint8" value="1"/>
-                    <attribute id="PassivesAdded" type="LSString" value="WarlockUndead_FormOfDread_ProficiencyBonusStage1;WarlockUndead_FormOfDread_ProficiencyBonusStage2;WarlockUndead_FormOfDread_ProficiencyBonusStage3"/>
-                    <attribute id="Selectors" type="LSString" value="SelectPassives(ca85b4e7-7085-4630-9120-fd3cd9cf8cfc,1,WarlockUndeadPatron);SelectSpells(93904380-c84b-412f-b280-605067d621f0,2,0,,,e9127b70-22b7-42a1-b172-d02f828f260a)"/>
-                    <attribute id="TableUUID" type="guid" value="2a455634-7418-48b4-862f-45e8ae5564b1"/>
-                    <attribute id="UUID" type="guid" value="9955647b-c417-4364-a8b0-980776325eaa"/>
-                </node>-->
+					<attribute id="AllowImprovement" type="bool" value="False" />
+					<attribute id="Level" type="uint8" value="1" />
+					<attribute id="Name" type="LSString" value="WarlockUndead" />
+					<attribute id="ProgressionType" type="uint8" value="1" />
+					<attribute id="PassivesAdded" type="LSString" value="WarlockUndead_FormOfDread_ProficiencyBonusStage1;WarlockUndead_FormOfDread_ProficiencyBonusStage2;WarlockUndead_FormOfDread_ProficiencyBonusStage3" />
+					<attribute id="Selectors" type="LSString" value="SelectPassives(ca85b4e7-7085-4630-9120-fd3cd9cf8cfc,1,WarlockUndeadPatron);SelectSpells(93904380-c84b-412f-b280-605067d621f0,2,0,,,e9127b70-22b7-42a1-b172-d02f828f260a)" />
+					<attribute id="TableUUID" type="guid" value="2a455634-7418-48b4-862f-45e8ae5564b1" />
+					<attribute id="UUID" type="guid" value="9955647b-c417-4364-a8b0-980776325eaa" />
+				</node>-->
                 <!--<node id="SubClass">
                     <attribute id="Object" type="guid" value="0e4537eb-c76a-4f9e-b98b-0aa4ba8396b0"/>
                 </node>-->
