@@ -293,6 +293,134 @@
                     <attribute id="TableUUID" type="guid" value="957ba6a9-68f4-4190-a432-25675d00f434"/>
                     <attribute id="UUID" type="guid" value="89d57acd-85ff-4da6-b989-9b82d0241e46"/>
                 </node>
+
+                <!--//////////////
+   				/////Baalzebul////
+    			///////////////-->
+
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="Ability(Strength,1);Ability(Charisma,2)"/>
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="ASTRL_Baalzebul_Tiefling"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(727682ef-a18e-4b46-bd16-e1812ac4b0c9,,Charisma,,AlwaysPrepared);AddSpells(82c4f7e5-0980-4c04-ac67-bbfb24bf3f6b,,Dexterity,,AlwaysPrepared)"/>
+                    <attribute id="ProgressionType" type="uint8" value="2"/>
+                    <attribute id="TableUUID" type="guid" value="e07d88b1-b935-4a65-b1be-0e8cd2a93ed5"/>
+                    <attribute id="UUID" type="guid" value="ad21229c-c202-4c86-af26-b5c47d36ff01"/>
+                </node>
+
+                <!--//////////////
+   				/////Dispater/////
+    			///////////////-->
+
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="Ability(Strength,1);Ability(Charisma,2)"/>
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="ASTRL_Dispater_Tiefling"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(321338a6-abf6-4722-ad06-304505aa415e,,Charisma,,AlwaysPrepared);AddSpells(1e670b6d-887f-4f47-9fcc-43e36ea74512,,Dexterity,,AlwaysPrepared)"/>
+                    <attribute id="ProgressionType" type="uint8" value="2"/>
+                    <attribute id="TableUUID" type="guid" value="aca218d9-207d-48ef-836d-3230d981480b"/>
+                    <attribute id="UUID" type="guid" value="535fb417-7341-4710-b500-0ac5602de515"/>
+                </node>
+
+                <!--//////////////
+   				//////Fierna//////
+    			///////////////-->
+
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="Ability(Strength,1);Ability(Charisma,2)"/>
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="ASTRL_Fierna_Tiefling"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(4b9e8df3-97cf-4e34-ad85-4f82bec03625,,Charisma,,AlwaysPrepared);AddSpells(12cb7889-679d-4156-8fcc-a7158e4b3e8b,,Dexterity,,AlwaysPrepared)"/>
+                    <attribute id="ProgressionType" type="uint8" value="2"/>
+                    <attribute id="TableUUID" type="guid" value="fe2e40ea-bcc8-48f3-a89a-c798c382d4d7"/>
+                    <attribute id="UUID" type="guid" value="929b6fe8-7415-43c7-9e2b-a3c87962e77d"/>
+                </node>
+
+                <!--//////////////
+   				//////Glasya/////
+    			//////////////-->
+
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="Ability(Strength,1);Ability(Charisma,2)"/>
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="ASTRL_Glasya_Tiefling"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(46714e72-b6c9-4b84-8a31-9fa191dd2f5e,,Charisma,,AlwaysPrepared);AddSpells(12cb7889-679d-4156-8fcc-a7158e4b3e8b,,Dexterity,,AlwaysPrepared)"/>
+                    <attribute id="ProgressionType" type="uint8" value="2"/>
+                    <attribute id="TableUUID" type="guid" value="bda111b8-ff84-4df0-99c4-20cafcb9cace"/>
+                    <attribute id="UUID" type="guid" value="1a215890-3ffc-4c4e-bf19-b70aa67c25cf"/>
+                </node>
+
+                <!--//////////////
+   				/////Levistus/////
+    			//////////////-->
+
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="Ability(Strength,1);Ability(Charisma,2)"/>
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="ASTRL_Levistus_Tiefling"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(94d92e2a-4fcd-429f-a1e9-10674f5ebe73,,Charisma,,AlwaysPrepared);AddSpells(f572a71f-e3de-4bfe-9e25-e99f36e0fc6e,,Dexterity,,AlwaysPrepared)"/>
+                    <attribute id="ProgressionType" type="uint8" value="2"/>
+                    <attribute id="TableUUID" type="guid" value="cddee309-0cec-4e7d-939f-06ce8aaf0da4"/>
+                    <attribute id="UUID" type="guid" value="62899e1e-d6b6-448d-847c-085a07d1f41d"/>
+                </node>
+
+                <!--//////////////
+   				//////Mammon/////
+    			//////////////-->
+
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="Ability(Strength,1);Ability(Charisma,2)"/>
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="ASTRL_Mammon_Tiefling"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(87f9dd4a-79e1-4d31-9c2c-774d9a7ade94,,Charisma,,AlwaysPrepared);AddSpells(1e670b6d-887f-4f47-9fcc-43e36ea74512,,Dexterity,,AlwaysPrepared)"/>
+                    <attribute id="ProgressionType" type="uint8" value="2"/>
+                    <attribute id="TableUUID" type="guid" value="cfb80dea-6416-42d0-a7b5-3e319ab54feb"/>
+                    <attribute id="UUID" type="guid" value="bf7c8b2d-5b6e-467e-b080-d85de151f57a"/>
+                </node>
+
+                <!--//////////////
+   				//////Variant/////
+    			///////////////-->
+
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="Ability(Strength,1);Ability(Charisma,2)"/>
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="ASTRL_Variant_Tiefling"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(615bc645-617a-4027-9967-8f85c0f5f961,1,0,VariantTieflingCantrip,Charisma);SelectSpells(f4f58973-ff5c-44c0-8961-23126946e117,1,0,VariantTieflingClaws,Dexterity)"/>
+                    <attribute id="ProgressionType" type="uint8" value="2"/>
+                    <attribute id="TableUUID" type="guid" value="a7025e87-add5-4aa9-8b2c-4928511196b3"/>
+                    <attribute id="UUID" type="guid" value="da92f08b-96fd-42b2-80f1-45b7bc9e703f"/>
+                </node>
+
+                <!--//////////////
+   				/////Nightborn////
+    			///////////////-->
+
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="Ability(Strength,1);Ability(Charisma,2)"/>
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="ASTRL_Nightborn_Tiefling"/>
+                    <attribute id="PassivesAdded" type="LSString" value="HagAncestry"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(d1b69494-ab5f-4fe5-8d8e-91ab5f3c446e,,Charisma,,AlwaysPrepared);AddSpells(82c4f7e5-0980-4c04-ac67-bbfb24bf3f6b,,Dexterity,,AlwaysPrepared)"/>
+                    <attribute id="ProgressionType" type="uint8" value="2"/>
+                    <attribute id="TableUUID" type="guid" value="47f87ed4-7729-4c69-9c4c-7cc9b9c7811d"/>
+                    <attribute id="UUID" type="guid" value="fa15d3e5-3f15-4d59-857a-804098843516"/>
+                </node>
+
+                <!--//////////////
+   				//////Fey'Ri//////
+    			///////////////-->
+
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="Ability(Strength,1);Ability(Charisma,2)"/>
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="ASTRL_Feyri_Tiefling"/>
+                    <attribute id="PassivesAdded" type="LSString" value="FeyAncestry"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(54501b23-74b1-46a2-8026-4064cdd23994,,Charisma,,AlwaysPrepared);AddSpells(8d8755da-ecdf-4b2a-972a-b1cd9e97c19b,,Dexterity,,AlwaysPrepared)"/>
+                    <attribute id="ProgressionType" type="uint8" value="2"/>
+                    <attribute id="TableUUID" type="guid" value="a0dc01cd-44c5-4c71-8c65-498cabcf3def"/>
+                    <attribute id="UUID" type="guid" value="3d807581-2721-4ba2-82bf-d91b345f7d81"/>
+                </node>
 				
 				<!-- Githyanki -->
 				<node id="Progression">
