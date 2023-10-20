@@ -433,6 +433,20 @@
                     <attribute id="TableUUID" type="guid" value="81e2cb57-6a12-4429-b3a5-f72549355b3b"/>
                     <attribute id="UUID" type="guid" value="f653d537-bc14-4fea-b7d2-25734ec928a2"/>
                 </node>
+
+                <!-- Githzerai -->
+                 <node id="Progression">
+                    <attribute id="AllowImprovement" type="bool" value="False" />
+                    <attribute id="Boosts" type="LSString" value="Ability(Intelligence,1); Ability(Wisdom,2);ActionResource(Movement,9,0)" />
+                    <attribute id="Level" type="uint8" value="1" />
+                    <attribute id="Name" type="LSString" value="Githzerai_Base" />
+                    <attribute id="PassivesAdded" type="LSString" value="GTZ_Mental_Discipline;" />
+                    <attribute id="PassivesRemoved" type="LSString" value="" />
+                    <attribute id="ProgressionType" type="uint8" value="2" />
+                    <attribute id="Selectors" type="LSString" value="SelectSkills(f974ebd6-3725-4b90-bb5c-2b647d41615d,1);AddSpells(c203ff42-09bc-4a9c-8b65-b13afd092573);AddSpells(4d7bfb6c-5001-4a83-8728-94e3711516d3,,Intelligence,,AlwaysPrepared)" />
+                    <attribute id="TableUUID" type="guid" value="eccc27e9-0d6f-409a-98d1-c924ce52c364" />
+                    <attribute id="UUID" type="guid" value="8e8928df-70b1-43c0-bc86-40b32c455bee" />
+                </node>
 				
 				<!-- Dragonborn -->
 				<node id="Progression">
