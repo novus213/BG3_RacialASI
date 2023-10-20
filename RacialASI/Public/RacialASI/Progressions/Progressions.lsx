@@ -500,7 +500,6 @@
                   <!-- Witcher no 5e class -->
 
                   <node id="Progression">
-                    <attribute id="AllowImprovement" type="bool" value="false" />
 c                    <attribute id="Level" type="uint8" value="1" />
                     <attribute id="Name" type="LSString" value="Witcher" />
                     <attribute id="ProgressionType" type="uint8" value="1" />
