@@ -255,7 +255,7 @@
                     <attribute id="Boosts" type="LSString" value="ActionResource(Movement,9,0);Resistance(Fire, Resistant)"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="Tiefling"/>
-                    <attribute id="PassivesAdded" type="LSString" value="Darkvision;Tiefling_HellishResistance"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Darkvision"/>
                     <attribute id="ProgressionType" type="uint8" value="2"/>
                     <attribute id="TableUUID" type="guid" value="1640733f-c32b-4d9d-9132-5ca6e985155c"/>
                     <attribute id="UUID" type="guid" value="56529178-3df2-4067-b1c0-e35fe82fbd37"/>
@@ -266,6 +266,7 @@
                     <attribute id="Boosts" type="LSString" value="Ability(Intelligence,1);Ability(Charisma,2)"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="AsmodeusTiefling"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Tiefling_HellishResistance"/>
                     <attribute id="ProgressionType" type="uint8" value="2"/>
                     <attribute id="Selectors" type="LSString" value="AddSpells(5eada6b7-d9a2-4ef2-8872-0dce047e458c,,Charisma,,AlwaysPrepared)"/>
                     <attribute id="TableUUID" type="guid" value="5ae9c280-64fd-43fb-85f3-40d1796c5b24"/>
@@ -277,6 +278,7 @@
                     <attribute id="Boosts" type="LSString" value="Ability(Intelligence,1);Ability(Charisma,2)"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="MephistophelesTiefling"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Tiefling_HellishResistance"/>
                     <attribute id="ProgressionType" type="uint8" value="2"/>
                     <attribute id="Selectors" type="LSString" value="AddSpells(e1407db3-e476-4d8f-a687-d3c795ad8c04,,Charisma,,AlwaysPrepared)"/>
                     <attribute id="TableUUID" type="guid" value="0d83cb0b-1f39-47bb-97bc-a6e49cd8a5c5"/>
@@ -288,6 +290,7 @@
                     <attribute id="Boosts" type="LSString" value="Ability(Strength,1);Ability(Charisma,2)"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="ZarielTiefling"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Tiefling_HellishResistance"/>
                     <attribute id="ProgressionType" type="uint8" value="2"/>
                     <attribute id="Selectors" type="LSString" value="AddSpells(5eada6b7-d9a2-4ef2-8872-0dce047e458c,,Charisma,,AlwaysPrepared)"/>
                     <attribute id="TableUUID" type="guid" value="957ba6a9-68f4-4190-a432-25675d00f434"/>
@@ -299,9 +302,10 @@
     			///////////////-->
 
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="Ability(Strength,1);Ability(Charisma,2)"/>
+                    <attribute id="Boosts" type="LSString" value="Ability(Intelligence,1);Ability(Charisma,2)"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="ASTRL_Baalzebul_Tiefling"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Tiefling_HellishResistance"/>
                     <attribute id="Selectors" type="LSString" value="AddSpells(727682ef-a18e-4b46-bd16-e1812ac4b0c9,,Charisma,,AlwaysPrepared);AddSpells(82c4f7e5-0980-4c04-ac67-bbfb24bf3f6b,,Dexterity,,AlwaysPrepared)"/>
                     <attribute id="ProgressionType" type="uint8" value="2"/>
                     <attribute id="TableUUID" type="guid" value="e07d88b1-b935-4a65-b1be-0e8cd2a93ed5"/>
@@ -313,9 +317,10 @@
     			///////////////-->
 
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="Ability(Strength,1);Ability(Charisma,2)"/>
+                    <attribute id="Boosts" type="LSString" value="Ability(Dexterity,1);Ability(Charisma,2)"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="ASTRL_Dispater_Tiefling"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Tiefling_HellishResistance"/>
                     <attribute id="Selectors" type="LSString" value="AddSpells(321338a6-abf6-4722-ad06-304505aa415e,,Charisma,,AlwaysPrepared);AddSpells(1e670b6d-887f-4f47-9fcc-43e36ea74512,,Dexterity,,AlwaysPrepared)"/>
                     <attribute id="ProgressionType" type="uint8" value="2"/>
                     <attribute id="TableUUID" type="guid" value="aca218d9-207d-48ef-836d-3230d981480b"/>
@@ -327,9 +332,10 @@
     			///////////////-->
 
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="Ability(Strength,1);Ability(Charisma,2)"/>
+                    <attribute id="Boosts" type="LSString" value="Ability(Wisdom,1);Ability(Charisma,2)"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="ASTRL_Fierna_Tiefling"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Tiefling_HellishResistance"/>
                     <attribute id="Selectors" type="LSString" value="AddSpells(4b9e8df3-97cf-4e34-ad85-4f82bec03625,,Charisma,,AlwaysPrepared);AddSpells(12cb7889-679d-4156-8fcc-a7158e4b3e8b,,Dexterity,,AlwaysPrepared)"/>
                     <attribute id="ProgressionType" type="uint8" value="2"/>
                     <attribute id="TableUUID" type="guid" value="fe2e40ea-bcc8-48f3-a89a-c798c382d4d7"/>
@@ -341,9 +347,10 @@
     			//////////////-->
 
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="Ability(Strength,1);Ability(Charisma,2)"/>
+                    <attribute id="Boosts" type="LSString" value="Ability(Dexterity,1);Ability(Charisma,2)"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="ASTRL_Glasya_Tiefling"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Tiefling_HellishResistance"/>
                     <attribute id="Selectors" type="LSString" value="AddSpells(46714e72-b6c9-4b84-8a31-9fa191dd2f5e,,Charisma,,AlwaysPrepared);AddSpells(12cb7889-679d-4156-8fcc-a7158e4b3e8b,,Dexterity,,AlwaysPrepared)"/>
                     <attribute id="ProgressionType" type="uint8" value="2"/>
                     <attribute id="TableUUID" type="guid" value="bda111b8-ff84-4df0-99c4-20cafcb9cace"/>
@@ -355,9 +362,10 @@
     			//////////////-->
 
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="Ability(Strength,1);Ability(Charisma,2)"/>
+                    <attribute id="Boosts" type="LSString" value="Ability(Constitution,1);Ability(Charisma,2)"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="ASTRL_Levistus_Tiefling"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Tiefling_HellishResistance"/>
                     <attribute id="Selectors" type="LSString" value="AddSpells(94d92e2a-4fcd-429f-a1e9-10674f5ebe73,,Charisma,,AlwaysPrepared);AddSpells(f572a71f-e3de-4bfe-9e25-e99f36e0fc6e,,Dexterity,,AlwaysPrepared)"/>
                     <attribute id="ProgressionType" type="uint8" value="2"/>
                     <attribute id="TableUUID" type="guid" value="cddee309-0cec-4e7d-939f-06ce8aaf0da4"/>
@@ -369,9 +377,10 @@
     			//////////////-->
 
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="Ability(Strength,1);Ability(Charisma,2)"/>
+                    <attribute id="Boosts" type="LSString" value="Ability(Intelligence,1);Ability(Charisma,2)"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="ASTRL_Mammon_Tiefling"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Tiefling_HellishResistance"/>
                     <attribute id="Selectors" type="LSString" value="AddSpells(87f9dd4a-79e1-4d31-9c2c-774d9a7ade94,,Charisma,,AlwaysPrepared);AddSpells(1e670b6d-887f-4f47-9fcc-43e36ea74512,,Dexterity,,AlwaysPrepared)"/>
                     <attribute id="ProgressionType" type="uint8" value="2"/>
                     <attribute id="TableUUID" type="guid" value="cfb80dea-6416-42d0-a7b5-3e319ab54feb"/>
@@ -383,9 +392,10 @@
     			///////////////-->
 
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="Ability(Strength,1);Ability(Charisma,2)"/>
+                    <attribute id="Boosts" type="LSString" value="Ability(Intelligence,1);Ability(Charisma,2)"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="ASTRL_Variant_Tiefling"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Tiefling_HellishResistance"/>
                     <attribute id="Selectors" type="LSString" value="SelectSpells(615bc645-617a-4027-9967-8f85c0f5f961,1,0,VariantTieflingCantrip,Charisma);SelectSpells(f4f58973-ff5c-44c0-8961-23126946e117,1,0,VariantTieflingClaws,Dexterity)"/>
                     <attribute id="ProgressionType" type="uint8" value="2"/>
                     <attribute id="TableUUID" type="guid" value="a7025e87-add5-4aa9-8b2c-4928511196b3"/>
@@ -393,14 +403,14 @@
                 </node>
 
                 <!--//////////////
-   				/////Nightborn////
+   				/////Nightborn no 5e ////
     			///////////////-->
 
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="Ability(Strength,1);Ability(Charisma,2)"/>
+                    <attribute id="Boosts" type="LSString" value="Ability(Intelligence,1)"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="ASTRL_Nightborn_Tiefling"/>
-                    <attribute id="PassivesAdded" type="LSString" value="HagAncestry"/>
+                    <attribute id="PassivesAdded" type="LSString" value="HagAncestry;SunlightSensitivity"/>
                     <attribute id="Selectors" type="LSString" value="AddSpells(d1b69494-ab5f-4fe5-8d8e-91ab5f3c446e,,Charisma,,AlwaysPrepared);AddSpells(82c4f7e5-0980-4c04-ac67-bbfb24bf3f6b,,Dexterity,,AlwaysPrepared)"/>
                     <attribute id="ProgressionType" type="uint8" value="2"/>
                     <attribute id="TableUUID" type="guid" value="47f87ed4-7729-4c69-9c4c-7cc9b9c7811d"/>
@@ -412,7 +422,7 @@
     			///////////////-->
 
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="Ability(Strength,1);Ability(Charisma,2)"/>
+                    <attribute id="Boosts" type="LSString" value="Ability(Dexterity,2)"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="ASTRL_Feyri_Tiefling"/>
                     <attribute id="PassivesAdded" type="LSString" value="FeyAncestry"/>
@@ -437,7 +447,7 @@
                 <!-- Githzerai -->
                  <node id="Progression">
                     <attribute id="AllowImprovement" type="bool" value="False" />
-                    <attribute id="Boosts" type="LSString" value="Ability(Intelligence,1); Ability(Wisdom,2);ActionResource(Movement,9,0)" />
+                    <attribute id="Boosts" type="LSString" value="Ability(Intelligence,1);Ability(Wisdom,2);ActionResource(Movement,9,0)" />
                     <attribute id="Level" type="uint8" value="1" />
                     <attribute id="Name" type="LSString" value="Githzerai_Base" />
                     <attribute id="PassivesAdded" type="LSString" value="GTZ_Mental_Discipline;" />
@@ -484,7 +494,7 @@
 
                 <!-- Gobelin -->
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="Ability(Dexterity,2);Ability(Constitution,1)"/> I define movement in my Trips_Gob_Immunities Passive
+                    <attribute id="Boosts" type="LSString" value="Ability(Dexterity,2)"/> I define movement in my Trips_Gob_Immunities Passive
                     <attribute id="Level" type="uint8" value="1" />
                     <attribute id="Name" type="LSString" value="Trips_Goblin_1" />
                     <attribute id="PassivesAdded" type="LSString" value="Trips_Gob_Darkvision;Trips_Gob_Immunities;Trips_Gob_Nimble_Escape;Trips_Gob_Fury_Of_The_Small;Trips_Gob_Fey;Traits" />
@@ -493,6 +503,30 @@
                     <attribute id="Selectors" type="LSString" value="" />
                     <attribute id="TableUUID" type="guid" value="95653fbb-2fc7-4c6b-8027-25a5d890a376" />
                     <attribute id="UUID" type="guid" value="fa9d4980-1b18-43e6-974b-4e3a2abae183" />
+                </node>
+
+                 <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="Ability(Constitution,1)"/> I define movement in my Trips_Gob_Immunities Passive
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="Trips_Goblin_Greenskin_1"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Trips_Gob_Fury_Of_The_Small;GoblinFots"/>
+                    <attribute id="PassivesRemoved" type="LSString" value=""/>
+                    <attribute id="ProgressionType" type="uint8" value="2"/>
+                    <attribute id="Selectors" type="LSString" value=""/>
+                    <attribute id="TableUUID" type="guid" value="06faa116-05b3-45a0-b61e-25fcaf99cdc2"/>
+                    <attribute id="UUID" type="guid" value="5a317953-08ea-4424-ad93-05a0a66b4748"/>
+                </node>
+                
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="Ability(Wisdom,1)"/> I define movement in my Trips_Gob_Immunities Passive
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="Trips_Goblin_Dankwood_1"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Trips_Gob_TalkWithAnimals;GoblinDankwoodTrait;GoblinDankwoodSquirrel"/>
+                    <attribute id="PassivesRemoved" type="LSString" value=""/>
+                    <attribute id="ProgressionType" type="uint8" value="2"/>
+                    <attribute id="Selectors" type="LSString" value=""/>
+                    <attribute id="TableUUID" type="guid" value="46aa63c9-79a5-4f1c-aa2b-74fff0243226"/>
+                    <attribute id="UUID" type="guid" value="453c15bb-0ead-4766-b747-961066c84ee1"/>
                 </node>
 
 				  <!-- DISABLE FLOATING SCORES -->
