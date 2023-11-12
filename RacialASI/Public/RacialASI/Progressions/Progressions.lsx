@@ -929,6 +929,18 @@
                     </children>
                 </node>
                 
+
+                <!--AberrantMind ok-->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="AberrantMind"/>
+                    <attribute id="PassivesAdded" type="LSString" value="PsionicSpells;IllithidHunger"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSkills(8743f14b-64de-4858-b056-50902a00df1a,2);SelectSpells(485a68b4-c678-4888-be63-4a702efbe391,4,0,SorcererCantrip,,,AlwaysPrepared);SelectSpells(92c4751f-6255-4f67-822c-a75d53830b27,2,0,SorcererSpell);AddSpells(896173bc-8b18-4632-8a23-53d755d11241,,,,AlwaysPrepared)"/>
+                    <attribute id="TableUUID" type="guid" value="9baf4faf-ac1c-4b00-9d20-3a74f8dc7f48"/>
+                    <attribute id="UUID" type="guid" value="e07ddef3-f16d-48fc-8832-124989328f0f"/>
+                </node>
+
                 <!--Animist ok-->
                 <node id="Progression"> 
                     <attribute id="Level" type="uint8" value="1"/>
