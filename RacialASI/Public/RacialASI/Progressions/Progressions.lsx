@@ -910,7 +910,6 @@
                     <attribute id="Name" type="LSString" value="Sorcerer"/>
                     <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel1"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
-                    <attribute id="Selectors" type="LSString" value="SelectSkills(8743f14b-64de-4858-b056-50902a00df1a,2);SelectSpells(485a68b4-c678-4888-be63-4a702efbe391,4,0,SorcererCantrip,,,AlwaysPrepared);SelectSpells(92c4751f-6255-4f67-822c-a75d53830b27,2,0,SorcererSpell)"/>
                     <attribute id="TableUUID" type="guid" value="e2416b02-953a-4ce8-aa8f-eb98d549d86d"/>
                     <attribute id="UUID" type="guid" value="42af9bda-9ac0-4564-920b-f9ca1588d6ee"/>
                     <children>
@@ -952,7 +951,7 @@
                     <attribute id="Name" type="LSString" value="StoneSorcerery" />
                     <attribute id="PassivesAdded" type="LSString" value="StonesDurability;MetalMagic" />
                     <attribute id="ProgressionType" type="uint8" value="1" />
-                    <attribute id="Selectors" type="LSString" value="AddSpells(309cfbbd-79ac-414f-a158-f05d5d2b92e3,SorcererMetalMagic)" />
+                    <attribute id="Selectors" type="LSString" value="SelectSkills(8743f14b-64de-4858-b056-50902a00df1a,2);SelectSpells(485a68b4-c678-4888-be63-4a702efbe391,4,0,SorcererCantrip,,,AlwaysPrepared);SelectSpells(92c4751f-6255-4f67-822c-a75d53830b27,2,0,SorcererSpell);AddSpells(309cfbbd-79ac-414f-a158-f05d5d2b92e3,SorcererMetalMagic)"/>
                     <attribute id="TableUUID" type="guid" value="154fab86-3181-4f71-9691-7d94a8a3bb6d" />
                     <attribute id="UUID" type="guid" value="e277a64f-b811-4319-bd0c-8ef24ebdec59" />
                 </node>
@@ -969,7 +968,7 @@
                     <attribute id="PassivesAdded" type="LSString" value="EyesOfTheDark;StrengthOfTheGrave"/>
                     <attribute id="PassivesRemoved" type="LSString" value=""/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
-                    <attribute id="Selectors" type="LSString" value="AddSpells(5d2e076f-da2f-40ef-989d-a59a4b4ce844)"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSkills(8743f14b-64de-4858-b056-50902a00df1a,2);SelectSpells(485a68b4-c678-4888-be63-4a702efbe391,4,0,SorcererCantrip,,,AlwaysPrepared);SelectSpells(92c4751f-6255-4f67-822c-a75d53830b27,2,0,SorcererSpell);AddSpells(5d2e076f-da2f-40ef-989d-a59a4b4ce844)"/>
                     <attribute id="TableUUID" type="guid" value="1b981d86-3d9c-4b85-bf03-ace6bda4dfa2"/>
                     <attribute id="UUID" type="guid" value="2a382291-7fed-44ba-9002-ccd894b687d8"/>
                 </node>
