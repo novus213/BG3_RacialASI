@@ -817,7 +817,197 @@
                         </node>
                     </children>
                 </node>
-						
+
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="Proficiency(HeavyArmor);Proficiency(MartialWeapons)"/>
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="TempestDomain"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WrathOfTheStorm"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(0888d55d-6382-4149-9b62-90a9579b0ec4,ClericTempestDomainSpells,,,AlwaysPrepared)"/>
+                    <attribute id="TableUUID" type="guid" value="0630b55b-36f4-41d2-aacc-28e99d6ae252"/>
+                    <attribute id="UUID" type="guid" value="6634d63a-07a6-4a4b-95cd-96852396dc39"/>
+                </node>
+
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(WarPriestActionPoint,3,0);Proficiency(HeavyArmor);Proficiency(MartialWeapons)"/>
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="WarDomain"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WarPriest"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(e785b163-bff3-4134-978c-20b654dc7203,ClericWarDomainSpells,,,AlwaysPrepared)"/>
+                    <attribute id="TableUUID" type="guid" value="8f6048bc-47b8-49fa-956a-8a364807f6ec"/>
+                    <attribute id="UUID" type="guid" value="61eb9c49-e4c7-42f1-a6e6-9d059eb71669"/>
+                </node>
+
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="Proficiency(HeavyArmor)"/>
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="NatureDomain"/>
+                    <attribute id="PassivesAdded" type="LSString" value="AcolyteOfNature"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSkills(889d3b97-5975-4c1c-bcc3-925521935a65,1);SelectSpells(b8faf12f-ca42-45c0-84f8-6951b526182a,1,0,,,,AlwaysPrepared);AddSpells(cba2f112-697f-4611-ae1d-758bf25ab3fd,ClericNatureDomainSpells,,,AlwaysPrepared)"/>
+                    <attribute id="TableUUID" type="guid" value="c668b65d-2848-4feb-981f-eb54cc5ceb15"/>
+                    <attribute id="UUID" type="guid" value="9c544341-fc87-446d-b77d-0b6948eeb0f3"/>
+                </node>
+
+                <node id="Progression">
+                    <attribute id="AllowImprovement" type="bool" value="false"/>
+                    <attribute id="Boosts" type="LSString" value="Proficiency(MartialWeapons)"/>
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="DeathDomain"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Reaper;DomainSpells"/>
+                    <attribute id="PassivesRemoved" type="LSString" value=""/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(3736cc14-9a9f-465c-a820-ffaa7ac139ca,ClericDeathDomainSpells,,,AlwaysPrepared);SelectSpells(f69bb43a-4676-49ad-a317-f1bcc210b369,1,0,ClericsReaper,,,AlwaysPrepared)"/>Lvl 1 Domain Spells 
+                    <attribute id="TableUUID" type="guid" value="116210d5-aba1-4f9c-a80f-cc54a4307442"/>
+                    <attribute id="UUID" type="guid" value="5dfae466-e39d-4e57-8204-068bd3c794f4"/>
+                </node>
+
+                <node id="Progression">
+                    <attribute id="AllowImprovement" type="bool" value="false"/>
+                    <attribute id="Boosts" type="LSString" value="Proficiency(HeavyArmor)"/>
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="ForgeDomain"/>
+                    <attribute id="PassivesAdded" type="LSString" value="DomainSpells;ForgeCleanUp;BlessingoftheForgeAddition"/>
+                    <attribute id="PassivesRemoved" type="LSString" value=""/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(765eccf2-7918-4b53-9b4c-4db33104bafb,ClericForgeDomainSpells,,,AlwaysPrepared)"/>Lvl 1 Domain Spells 
+                    <attribute id="TableUUID" type="guid" value="c0d1d34d-f6d2-4ba9-9fc7-ff85ebe23fc8"/>
+                    <attribute id="UUID" type="guid" value="27a27f56-8a4a-400d-8268-f35fbce4faf6"/>
+                </node>
+
+                <node id="Progression">
+                    <attribute id="AllowImprovement" type="bool" value="false"/>
+                    <attribute id="Boosts" type="LSString" value=""/>
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="GraveDomain"/>
+                    <attribute id="PassivesAdded" type="LSString" value="CircleofMortality;EyesoftheGraveAddition;DomainSpells"/>
+                    <attribute id="PassivesRemoved" type="LSString" value=""/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(6dc3b2d5-807c-4ab2-b649-47554544621c,ClericGraveDomainSpells,,,AlwaysPrepared)"/>Lvl 1 Domain Spells 
+                    <attribute id="TableUUID" type="guid" value="9e346f49-78cb-4e97-9cda-9f4dda919b2d"/>
+                    <attribute id="UUID" type="guid" value="443a1526-7647-40a5-a4a5-fa3205d2a9ba"/>
+                </node>
+
+                <node id="Progression">
+                    <attribute id="AllowImprovement" type="bool" value="false"/>
+                    <attribute id="Boosts" type="LSString" value=""/>
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="ArcanaDomain"/>
+                    <attribute id="PassivesAdded" type="LSString" value="ArcaneInitiate;ArcanaAdd;DomainSpells"/>
+                    <attribute id="PassivesRemoved" type="LSString" value=""/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(349c99a9-bb7b-4e3f-860b-c182a06661e7,ClericArcanaDomainSpells,,,AlwaysPrepared);SelectSpells(3cae2e56-9871-4cef-bba6-96845ea765fa,2,0,ArcaneInitiate,,,AlwaysPrepared)"/>Lvl 1 Domain Spells 
+                    <attribute id="TableUUID" type="guid" value="a6ccf040-95a7-4cdf-9e2e-225f1db1a0c1"/>
+                    <attribute id="UUID" type="guid" value="02f15f76-da9c-44d0-9467-143f4be1377d"/>
+                </node>
+
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="KnowledgeDomain"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(6c7083cd-e957-449d-a652-33dfbd9785e6,ClericKnowledgeDomainSpells,,,AlwaysPrepared);SelectSkillsExpertise(b0b9bc80-8468-4a53-b9ca-6d9146f23801,2,false)"/>
+                    <attribute id="TableUUID" type="guid" value="4709e126-1b45-4baf-93a2-be66ed4487d2"/>
+                    <attribute id="UUID" type="guid" value="2a780e20-d5a7-436e-9331-433ee8847db8"/>
+                </node>
+
+                <node id="Progression">
+                    <attribute id="AllowImprovement" type="bool" value="false"/>
+                    <attribute id="Boosts" type="LSString" value="Proficiency(HeavyArmor)"/>
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="OrderDomain"/>
+                    <attribute id="PassivesAdded" type="LSString" value="VoiceofAuthorityAdd;VoiceofAuthorityCast;DomainSpells;VoiceofAuthorityCast2;VoiceofAuthorityCast3;VoiceofAuthorityCast4;VoiceofAuthorityCast5;VoiceofAuthorityCast6;VoiceofAuthorityCast7;VoiceofAuthorityCast8;VoiceofAuthorityCast9;ClericsVOA;ClericsVOA2;ClericsVOA3;ClericsVOA;4;ClericsVOA5;ClericsVOA6"/>
+                    <attribute id="PassivesRemoved" type="LSString" value=""/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSkills(0806a23f-ec06-48ed-afae-8b77e6b4ba7d,1);AddSpells(4c4063c8-c14e-4940-88d4-fefa44116c28,ClericOrderDomainSpells,,,AlwaysPrepared)"/>Lvl 1 Domain Spells 
+                    <attribute id="TableUUID" type="guid" value="e6abdf29-2dfd-4005-bac0-a6b83ed94c12"/>
+                    <attribute id="UUID" type="guid" value="65fcd2dd-2ec5-450c-871f-b6afd4dcb394"/>
+                </node>
+
+                <node id="Progression">
+                    <attribute id="AllowImprovement" type="bool" value="false"/>
+                    <attribute id="Boosts" type="LSString" value="Proficiency(MartialWeapons);Proficiency(HeavyArmor)"/>
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="TwilightDomain"/>
+                    <attribute id="PassivesAdded" type="LSString" value="EyesofNightAddition;EyesofNightAdd;DomainSpells"/>
+                    <attribute id="PassivesRemoved" type="LSString" value=""/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(c5c599f6-480f-45c6-8cc8-945938760a86,ClericTwilightDomainSpells,,,AlwaysPrepared)"/>Lvl 1 Domain Spells 
+                    <attribute id="TableUUID" type="guid" value="fa1b617f-12ed-400c-8965-18a015d995d0"/>
+                    <attribute id="UUID" type="guid" value="00990d30-aec7-4665-972b-863b8eb7e3a6"/>
+                </node>
+
+                <node id="Progression">
+                    <attribute id="AllowImprovement" type="bool" value="false"/>
+                    <attribute id="Boosts" type="LSString" value=""/>
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="PeaceDomain"/>
+                    <attribute id="PassivesAdded" type="LSString" value="ImplementofPeace;DomainSpells;ProficiencyBonusCheck;EmboldeningBondAddition"/>
+                    <attribute id="PassivesRemoved" type="LSString" value=""/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSkills(f6c5329a-82de-4d09-939c-e1968f8b1f9e,1);AddSpells(9c920943-5cd7-4a89-90c0-bc92d537851a,ClericPeaceDomainSpells,,,AlwaysPrepared)"/>Lvl 1 Domain Spells 
+                    <attribute id="TableUUID" type="guid" value="844f062d-d5e5-463d-bfca-668637b08392"/>
+                    <attribute id="UUID" type="guid" value="1047e520-996e-4fac-a4f9-9be14cbc33a1"/>
+                </node>
+
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="Proficiency(HeavyArmor)"/>
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="LifeDomain"/>
+                    <attribute id="PassivesAdded" type="LSString" value="DiscipleOfLife"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(26ffbe70-23c6-4918-9e6a-a3e556a9d355,ClericLifeDomainSpells,,,AlwaysPrepared)"/>
+                    <attribute id="TableUUID" type="guid" value="9b56beb6-2a68-42a4-b81b-7a890a1b6b99"/>
+                    <attribute id="UUID" type="guid" value="87f501ae-c909-4f30-852b-98bdc72c0248"/>
+                </node>
+
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="TrickeryDomain"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(98ef625f-d127-4fc3-8e37-37a4b27e6393,ClericTrickeryDomainSpells,,,AlwaysPrepared)"/>
+                    <attribute id="TableUUID" type="guid" value="044e4e07-6980-479f-80e5-3c4a84e691d1"/>
+                    <attribute id="UUID" type="guid" value="97ba481e-13d2-4a8c-8503-e1b146c21b7b"/>
+                </node>
+
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="LightDomain"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WardingFlare"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(e2464518-2484-436e-9153-864c9dd05a7d,ClericLightDomainSpells,,,AlwaysPrepared)"/>
+                    <attribute id="TableUUID" type="guid" value="6ec6caad-2dfa-4661-8edd-5c4eca0e044c"/>
+                    <attribute id="UUID" type="guid" value="18b60150-3f77-4f5d-9c67-b25c3b7ce404"/>
+                </node>
+
+                <node id="Progression">
+                    <attribute id="AllowImprovement" type="bool" value="false"/>
+                    <attribute id="Boosts" type="LSString" value="Proficiency(MartialWeapons)"/>
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="BloodDomain"/>
+                    <attribute id="PassivesAdded" type="LSString" value="DomainSpells;BloodlettingFocus"/>
+                    <attribute id="PassivesRemoved" type="LSString" value=""/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(21db3568-c26d-4b23-bd94-d1daf9404fd8,ClericDeathDomainSpells,,,AlwaysPrepared)"/>Lvl 1 Domain Spells 
+                    <attribute id="TableUUID" type="guid" value="a9d55cad-8b0a-4bf3-bd61-ac3bb81c38d7"/>
+                    <attribute id="UUID" type="guid" value="6175ecbe-19b7-433d-af9e-f901ba0e313d"/>
+                </node>
+
+                <node id="Progression">
+                    <attribute id="AllowImprovement" type="bool" value="false"/>
+                    <attribute id="Boosts" type="LSString" value=""/>
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="MoonDomain"/>
+                    <attribute id="PassivesAdded" type="LSString" value="DomainSpells;ProficiencyBonusMoonCheck;ClarityofCathaAddition"/>
+                    <attribute id="PassivesRemoved" type="LSString" value=""/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(6effa075-f5e9-4fb4-a9d3-af7ec1567ace,ClericMoonDomainSpells,,,AlwaysPrepared)"/>Lvl 1 Domain Spells 
+                    <attribute id="TableUUID" type="guid" value="371c4fa8-7de0-4b37-a099-29b93a44d5e5"/>
+                    <attribute id="UUID" type="guid" value="e6b84185-4903-4055-af95-c995174f42d3"/>
+                </node>
+
+                					
 				<!-- Druid -->
 				<node id="Progression">
                     <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,2,1);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Intelligence);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(Clubs);Proficiency(Daggers);Proficiency(Javelins);Proficiency(Maces);Proficiency(Quarterstaffs);Proficiency(Scimitars);Proficiency(Sickles);Proficiency(Spears)"/>
