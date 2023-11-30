@@ -1161,6 +1161,21 @@
                     <attribute id="Object" type="guid" value="3c335f43-bae3-4468-9972-d9bdedca2a71" />
                 </node>-->
 
+                <!--Elemancer Sorcerer ok-->
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,2,1);ProficiencyBonus(SavingThrow,Constitution);ProficiencyBonus(SavingThrow,Charisma);Proficiency(Daggers);Proficiency(Quarterstaffs);Proficiency(LightCrossbows)" />
+                    <attribute id="Level" type="uint8" value="1" />
+                    <attribute id="Name" type="LSString" value="Elemancer" />
+                    <attribute id="PassivesAdded" type="LSString" value="Elemancer_HeartOfElementalEnergy" />
+                    <attribute id="ProgressionType" type="uint8" value="1" />
+                    <attribute id="Selectors" type="LSString" value="SelectSkills(8743f14b-64de-4858-b056-50902a00df1a,2);SelectSpells(485a68b4-c678-4888-be63-4a702efbe391,4,0,SorcererCantrip,,,AlwaysPrepared);SelectSpells(92c4751f-6255-4f67-822c-a75d53830b27,2,0,SorcererSpell);SelectPassives(2e7ad10a-2a82-4c6d-a4cc-5ea069d78693,1,ElementalOrigin)" />
+                    <attribute id="TableUUID" type="guid" value="dd41fdc5-0c30-4cae-8082-741664e860f3" />
+                    <attribute id="UUID" type="guid" value="06991042-fb65-4385-8808-ed85b2d5b3ee" />
+                </node>               
+                <!--<node id="SubClass"> Elemancer
+                    <attribute id="Object" type="guid" value="0ba7267a-0c41-42a4-b099-032e98e9855f" />
+                </node>-->
+
                 <!--Shadow Sorcerer ok-->
                 <node id="Progression">
                     <attribute id="AllowImprovement" type="bool" value="false"/>
