@@ -1120,18 +1120,7 @@
                 </node>
                 
 
-                <!--AberrantMind ok-->
-                <node id="Progression">
-                    <attribute id="Level" type="uint8" value="1"/>
-                    <attribute id="Name" type="LSString" value="AberrantMind"/>
-                    <attribute id="PassivesAdded" type="LSString" value="PsionicSpells;IllithidHunger"/>
-                    <attribute id="ProgressionType" type="uint8" value="1"/>
-                    <attribute id="Selectors" type="LSString" value="SelectSkills(8743f14b-64de-4858-b056-50902a00df1a,2);SelectSpells(485a68b4-c678-4888-be63-4a702efbe391,4,0,SorcererCantrip,,,AlwaysPrepared);SelectSpells(92c4751f-6255-4f67-822c-a75d53830b27,2,0,SorcererSpell);AddSpells(896173bc-8b18-4632-8a23-53d755d11241,,,,AlwaysPrepared)"/>
-                    <attribute id="TableUUID" type="guid" value="9baf4faf-ac1c-4b00-9d20-3a74f8dc7f48"/>
-                    <attribute id="UUID" type="guid" value="e07ddef3-f16d-48fc-8832-124989328f0f"/>
-                </node>
-
-                <!--Animist ok-->
+                <!--Animist ok
                 <node id="Progression"> 
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="Animist"/>
@@ -1141,24 +1130,9 @@
                     <attribute id="Selectors" type="LSString" value="AddSpells(75e0a799-db56-4434-8b85-e004317e9550,,,,AlwaysPrepared);SelectSpells(94a0289f-e011-44fa-b64b-1b110a56f8da,4,0,SorcererCantrip,,,AlwaysPrepared);SelectSpells(ddeeff7e-2f9b-485d-960e-fe2b964d5439,2,0,SorcererSpell);SelectPassives(0b589240-bade-47ad-958f-33d49862a7ca,1,Primal Magic)"/>
                     <attribute id="TableUUID" type="guid" value="5816c1e6-8908-4777-a7ab-6dd04bb24f68"/>
                     <attribute id="UUID" type="guid" value="c55fdfce-eb9c-4438-93de-bb13202cc115"/>
-                </node>
+                </node>-->
                 <!--<node id="SubClass"> 
                     <attribute id="Object" type="guid" value="ae58c555-8be7-429b-bb76-0ace4f55bbe4"/>
-                </node>-->
-
-                <!--StoneSorcery ok-->
-                <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="IncreaseMaxHP(ClassLevel(Sorcerer));Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons)" />
-                    <attribute id="Level" type="uint8" value="1" />
-                    <attribute id="Name" type="LSString" value="StoneSorcerery" />
-                    <attribute id="PassivesAdded" type="LSString" value="StonesDurability;MetalMagic" />
-                    <attribute id="ProgressionType" type="uint8" value="1" />
-                    <attribute id="Selectors" type="LSString" value="SelectSkills(8743f14b-64de-4858-b056-50902a00df1a,2);SelectSpells(485a68b4-c678-4888-be63-4a702efbe391,4,0,SorcererCantrip,,,AlwaysPrepared);SelectSpells(92c4751f-6255-4f67-822c-a75d53830b27,2,0,SorcererSpell);AddSpells(309cfbbd-79ac-414f-a158-f05d5d2b92e3,SorcererMetalMagic)"/>
-                    <attribute id="TableUUID" type="guid" value="154fab86-3181-4f71-9691-7d94a8a3bb6d" />
-                    <attribute id="UUID" type="guid" value="e277a64f-b811-4319-bd0c-8ef24ebdec59" />
-                </node>
-                <!--<node id="SubClass"> 
-                    <attribute id="Object" type="guid" value="3c335f43-bae3-4468-9972-d9bdedca2a71" />
                 </node>-->
 
                 <!--Elemancer Sorcerer ok-->

@@ -28,6 +28,15 @@
                                 <node id="SubClass"><!--Divine Soul patch-->
                                     <attribute id="Object" type="guid" value="60067f14-9b4a-4347-b3ae-373833fb048f"/>
                                 </node>
+                                <node id="SubClass"><!-- Elemancer -->
+                                    <attribute id="Object" type="guid" value="0ba7267a-0c41-42a4-b099-032e98e9855f" />
+                                </node>
+                                <node id="SubClass"> <!--Aberrant Mind -->
+                                    <attribute id="Object" type="guid" value="d35196ce-6bce-4837-a349-e4323fb600f3"/>
+                                </node>
+                                <node id="SubClass"> <!--Animist -->
+                                    <attribute id="Object" type="guid" value="ae58c555-8be7-429b-bb76-0ace4f55bbe4"/>
+                                </node> 
                             </children>
                         </node>
                     </children>
