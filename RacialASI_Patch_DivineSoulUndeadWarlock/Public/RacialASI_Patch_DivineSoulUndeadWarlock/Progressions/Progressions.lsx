@@ -67,6 +67,9 @@
                                 <node id="SubClass"><!--Undead Warlock 3045 Patch-->
                                     <attribute id="Object" type="guid" value="0e4537eb-c76a-4f9e-b98b-0aa4ba8396b0"/>
                                 </node>
+                                <node id="SubClass"><!--Hexblade Patch-->
+                                    <attribute id="Object" type="guid" value="95f27fb1-7e7d-4ae3-ba42-17c2f11b4bc3"/>
+                                </node>
                             </children>
                         </node>
                     </children>

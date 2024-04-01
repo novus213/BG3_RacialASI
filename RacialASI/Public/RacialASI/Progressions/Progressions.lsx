@@ -728,6 +728,20 @@
                     </children>
                 </node>
 
+                <!-- Pugilist -->
+
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Constitution);Proficiency(SimpleWeapons);Proficiency(LightArmor);Proficiency(Flails);Proficiency(Morningstars);Proficiency(Tridents);Proficiency(Warhammers);ActionResource(757_Moxie,3,0)" /> 
+                    <attribute id="Level" type="uint8" value="1" /> 
+                    <attribute id="Name" type="LSString" value="757_Pugilist" />
+                    <attribute id="PassivesAdded" type="LSString" value="757_IronChin;757_Fisticuffs_UnarmedDamage;757_Fisticuffs_BonusUnarmedStrike" />
+                    <attribute id="ProgressionType" type="uint8" value="0" />  
+                    <attribute id="Selectors" type="LSString" value="SelectSkills(1b838063-9027-4c49-a7f4-aada31bbb613,2);AddSpells(3993b964-9c29-4905-98d4-d7e8ced19c8e)" />  
+                    <attribute id="TableUUID" type="guid" value="8a1ffb44-4db3-4da7-8786-5c9ed98ef66f" /> 
+                    <attribute id="UUID" type="guid" value="41c5ac54-bd32-4f5b-9feb-c30afb255857" /> 
+                </node>
+
+
 				  <!-- Barbarian -->
 				<node id="Progression">
                     <attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Constitution);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(Rage,2,0)"/>
