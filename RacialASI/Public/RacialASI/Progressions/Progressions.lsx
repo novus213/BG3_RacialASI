@@ -575,6 +575,19 @@
                     <attribute id="UUID" type="guid" value="adab8d9e-904b-436e-ba9b-9657dd5216c6" />
                 </node>
 
+                <!-- Kender 5e -->
+
+                 <node id="Progression">
+                    <attribute id="Level" type="uint8" value="1" /> which level the progression is for
+                    <attribute id="Name" type="LSString" value="Kender" /> just an internal name
+                    <attribute id="Boosts" type="LSString" value="" /> 
+                    <attribute id="PassivesAdded" type="LSString" value="Infravision;Kender_Fearless;Kender_Fear_Resistance" /> passives from stats folder here
+                    <attribute id="Selectors" type="LSString" value="SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,1,1,1);AddSpells(1bcf482f-7790-4bd8-b4b8-1e25a91ade84);SelectSkills(0f09dfe4-7951-4f95-b5c9-f9ce2e5c4121,1)" /> see below for explanation
+                    <attribute id="ProgressionType" type="uint8" value="2" /> 2 means race
+                    <attribute id="TableUUID" type="guid" value="aab30a06-579a-4141-809f-787a1d8713df" /> Always use this one for races.lsx, says this progression node is for Main Race
+                    <attribute id="UUID" type="guid" value="7551c355-8311-4c2f-b91b-9877ef608267" />  this one must be unique
+                </node>
+
 				  <!-- DISABLE FLOATING SCORES -->
 
                   <!-- Witcher no 5e class -->
