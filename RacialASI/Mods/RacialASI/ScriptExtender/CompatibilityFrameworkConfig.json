@@ -1,0 +1,15 @@
+{
+  "FileVersion": 1,
+  "Progressions": [
+    {
+      "UUIDs": ["a2198ee9-ea4c-468e-b6b4-22b32d37806e", "374c3aae-828b-44d8-b4e3-51ba802977dd", "1dbce574-fff1-49be-b7da-704f9b73cad9", "b499258c-2823-42f1-b8ca-0a5ee8455e11", "dfb2fd83-9849-4c2d-be84-adedb81a867a", "c091d27e-009b-4841-8bde-5e63e5ca8f4e", "b60618d1-c262-42b5-9fdd-2c0f7aa5e5af", "ad1084b1-b99f-6720-cfdd-cf82ad44345b", "16f00e7f-12f6-4cff-b610-4ee738b02d62", "42af9bda-9ac0-4564-920b-f9ca1588d6ee", "a7767dc5-e6ab-4e05-96fd-f0424256121c", "c201c736-3717-4c3c-9e36-2ae7387597a3", "41c5ac54-bd32-4f5b-9feb-c30afb255857", "452d6137-7720-4d04-b950-f45555555555", "0482322d-723e-4705-a41a-99e27902311c", "c1965de9-87f1-47ee-93c7-43c54f685f2d", "c43581ac-0262-4dd9-958b-1eeed88b10f0", "a5842466-38b2-40fa-862a-7e48831e551d", "5ef72e3c-717a-4250-860e-0813e3c42a36", "ed7b629c-01e1-488d-88db-61851c63da27"],
+      "Selectors": [
+        {
+          "Action": "Remove",
+          "Function": "SelectAbilityBonus",
+          "UUID": "b9149c8e-52c8-46e5-9cb6-fc39301c05fe"
+        }
+      ]
+    }
+  ]
+}
