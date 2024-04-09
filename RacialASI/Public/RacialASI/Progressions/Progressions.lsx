@@ -10,7 +10,7 @@
 				<!-- Human -->
                 <node id="Progression">
                     <attribute id="AllowImprovement" type="bool" value="true"/>
-                    <attribute id="Boosts" type="LSString" value="Ability(Strength,1);Ability(Dexterity,1);Ability(Constitution,1);Ability(Intelligence,1);Ability(Wisdom,1);Ability(Charisma,1)ActionResource(Movement,9,0)"/>
+                    <attribute id="Boosts" type="LSString" value="ActionResource(Movement,9,0)"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="Human"/>
                     <attribute id="PassivesAdded" type="LSString" value="HumanMilitia;HumanVersatility"/>
@@ -18,6 +18,29 @@
                     <attribute id="Selectors" type="LSString" value="SelectSkills(f974ebd6-3725-4b90-bb5c-2b647d41615d,2,HumanVersatility)"/>
                     <attribute id="TableUUID" type="guid" value="4b6e7ec9-145b-4a95-9d8a-b2181de2749e"/>
                     <attribute id="UUID" type="guid" value="dbde4d66-d3e4-4c3f-ae87-fd6e2d1cd276"/>
+                </node>
+
+                <!-- Milice Human -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="1" />
+                    <attribute id="AllowImprovement" type="bool" value="false" />
+                    <attribute id="Boosts" type="LSString" value="Ability(Strength,1);Ability(Dexterity,1);Ability(Constitution,1);Ability(Intelligence,1);Ability(Wisdom,1);Ability(Charisma,1)" />
+                    <attribute id="Name" type="LSString" value="Human(Larian)" />
+                    <attribute id="PassivesAdded" type="LSString" value="HumanMilitia;HumanVersatility" />
+                    <attribute id="ProgressionType" type="uint8" value="2" />
+                    <attribute id="TableUUID" type="guid" value="c82f4ecb-69b2-4247-81bf-a7d21a54c439" />
+                    <attribute id="UUID" type="guid" value="139e1b8c-dfa1-4b2d-895c-efb170736093" />
+                </node>
+
+                <!-- Variant Human -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="1" />
+                    <attribute id="Name" type="LSString" value="Human(Variant)" />
+                    <attribute id="PassivesAdded" type="LSString" value="Skills;Feat" />
+                    <attribute id="ProgressionType" type="uint8" value="2" />
+                    <attribute id="Selectors" type="LSString" value="SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,1,1);SelectPassives(b607ad8f-17fb-4380-bec4-c953f700469e,1,Feat)" />
+                    <attribute id="TableUUID" type="guid" value="3b047c50-aaae-4000-93f7-37bd8804f7fb" />
+                    <attribute id="UUID" type="guid" value="0b88cad4-c5d0-4cde-a661-a8ede3f7d113" />
                 </node>
 				
 				<!-- Dwarf
