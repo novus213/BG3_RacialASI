@@ -7,6 +7,31 @@
 			
 			<!-- ADD PHB RACIAL BOOST -->
 			
+
+                <!-- Bugbear -->
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(Movement,9,0);Ability(Strength,2);Ability(Dexterity,1)" /> Volo's Guide to Monsters
+                    <attribute id="Level" type="uint8" value="1" />
+                    <attribute id="Name" type="LSString" value="Bugbear" />
+                    <attribute id="PassivesAdded" type="LSString" value="Darkvision;FeyAncestry_Revised;LongLimbed;PowerfulBuild;Sneaky;OriginProficiencies_Bugbear;SurpriseAttack" />
+                    <attribute id="Selectors" type="LSString" value="SelectSkills(105cc805-e9fa-4f8a-9fc1-002e854fbd6b,1,OriginProficiencies)" />
+                    <attribute id="ProgressionType" type="uint8" value="2" />
+                    <attribute id="TableUUID" type="guid" value="7ce6c941-4964-41a2-906f-71d4e1527003" />
+                    <attribute id="UUID" type="guid" value="d01d244f-3ae2-4d15-b0ba-9aed04fc16ac" />
+                </node>
+
+                <!-- Kobold(Legacy) -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="1" />
+                    <attribute id="Name" type="LSString" value="Kobold(Legacy)" />
+                    <attribute id="Boosts" type="LSString" value="ActionResource(Movement,9,0);Ability(Dexterity,2)" /> Volo's Guide to Monsters
+                    <attribute id="PassivesAdded" type="LSString" value="Darkvision;Legacy_PackTactics;SunlightSensitivity" />
+                    <attribute id="ProgressionType" type="uint8" value="2" />
+                    <attribute id="Selectors" type="LSString" value="AddSpells(3dcf10dc-6aed-41bf-afee-0d2a14bdabf4)" />                   
+                    <attribute id="TableUUID" type="guid" value="561fb98e-ddc2-44ad-842a-aa26837ab8d4" />
+                    <attribute id="UUID" type="guid" value="ee0bbb70-b8f7-44ec-9419-565ab963f664" />
+                </node>
+
 				<!-- Human -->
                 <node id="Progression">
                     <attribute id="AllowImprovement" type="bool" value="true"/>
@@ -84,6 +109,18 @@
                     <attribute id="ProgressionType" type="uint8" value="2"/>
                     <attribute id="TableUUID" type="guid" value="0f8458cb-9edd-401d-8066-86ba8e1529cf"/>
                     <attribute id="UUID" type="guid" value="bd012f5b-0a0b-424e-ab7c-186dbd82ab30"/>
+                </node>
+
+                <!-- DesertDwarf -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="1" /> which level the progression is for
+                    <attribute id="Name" type="LSString" value="DesertDwarf" /> just an internal name
+                    <attribute id="Boosts" type="LSString" value="Ability(Constitution,2);"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Passive_CanyonDweller;Passive_DesertBlur" /> passives from stats folder here
+                    <attribute id="Selectors" type="LSString" value="AddSpells(80d73996-6aec-4086-9241-aeb9ab3f2439);SelectSkills(d1a3ed32-89ed-463b-a0f6-28b39b268e3f,1);SelectPassives(d4b799b4-30e2-412b-b2c9-abb144df8e7d,1,DesertResilience)" />
+                    <attribute id="ProgressionType" type="uint8" value="2" /> 2 means race
+                    <attribute id="TableUUID" type="guid" value="d8702ee4-ff36-4447-81a4-72aa7c99ff38" /> Always use this one for races.lsx, says this progression node is for Main Race
+                    <attribute id="UUID" type="guid" value="75c28431-cd41-4256-af2e-0cadd4f8c2f8" />  this one must be unique
                 </node>
 				
 				<!-- Elf -->
@@ -185,6 +222,18 @@
                     <attribute id="TableUUID" type="guid" value="c1d4adfe-9f00-44b4-a433-a45250d00631"/>
                     <attribute id="UUID" type="guid" value="d48f8fb3-4351-4b5d-a28c-946fd33be726"/>
                 </node>
+
+				<!-- Sunstone Gnome -->
+                <node id="Progression">
+                        <attribute id="Level" type="uint8" value="1" /> which level the progression is for
+                        <attribute id="Name" type="LSString" value="SunstoneGnome" /> just an internal name
+                        <attribute id="Boosts" type="LSString" value="ProficiencyBonus(Skill,Insight);Ability(Dexterity,1)" /> 
+                        <attribute id="PassivesAdded" type="LSString" value="Passive_SilverFumes;Passive_SilverBlooded;MagicResistance;SunlightSensitivity" /> passives from stats folder here
+                        <attribute id="Selectors" type="LSString" value="AddSpells(621d4612-52a6-4df6-a420-f23415d2e0bc);SelectSkills(c3c79771-9d1e-4369-85c1-70645feace3c,1)" />
+                        <attribute id="ProgressionType" type="uint8" value="2" /> 2 means race
+                        <attribute id="TableUUID" type="guid" value="35267cc8-a1e5-4343-8af1-ebb19801b2c3" /> Always use this one for races.lsx, says this progression node is for Main Race
+                        <attribute id="UUID" type="guid" value="3d7c0866-0357-43e1-ace0-b9c7f8bd90be" />  this one must be unique
+                </node>
 				
 				<!-- Rock Gnome -->
 				<node id="Progression">
@@ -250,6 +299,30 @@
                     <attribute id="TableUUID" type="guid" value="7e1ae395-6f2a-456b-ab64-1012c18065d4"/>
                     <attribute id="UUID" type="guid" value="963edcba-c572-4f51-b447-8810bbb43a8e"/>
                 </node>-->
+
+                <!-- Ghostwise Halfling -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="1" /> which level the progression is for
+                    <attribute id="Name" type="LSString" value="Ghostwise" /> just an internal name
+                    <attribute id="Boosts" type="LSString" value="Ability(Dexterity,2);Ability(Wisdom,1)" /> 
+                    <attribute id="PassivesAdded" type="LSString" value="" /> passives from stats folder here
+                    <attribute id="Selectors" type="LSString" value="AddSpells(9da7c29a-9041-4c63-a8aa-6f6269b8eee8);SelectPassives(f4d7d94c-7417-49b5-9594-2a395a122392,1,ClanItem)" /> see below for explanation
+                    <attribute id="ProgressionType" type="uint8" value="2" /> 2 means race
+                    <attribute id="TableUUID" type="guid" value="3de86dee-fab0-4515-a321-27aed1fc98df" /> Always use this one for races.lsx, says this progression node is for Main Race
+                    <attribute id="UUID" type="guid" value="0194f214-ffce-4e74-94b6-09e76a270e49" />  this one must be unique
+                </node>
+
+                <!-- WildHalfling Halfling -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="1" /> which level the progression is for
+                    <attribute id="Name" type="LSString" value="WildHalfling" /> just an internal name
+                    <attribute id="Boosts" type="LSString" value="Ability(Dexterity,2);Ability(Wisdom,1)" /> 
+                    <attribute id="PassivesAdded" type="LSString" value="WildHalfling_JungleCamouflage;WildHalfling_WildHabitat" /> passives from stats folder here
+                    <attribute id="Selectors" type="LSString" value="AddSpells(4941f97b-6c10-4610-b0b6-b36f7041ee5d);SelectSkills(ca190ab5-c3ed-4059-81eb-df832b193ef3,1)" /> see below for explanation
+                    <attribute id="ProgressionType" type="uint8" value="2" /> 2 means race
+                    <attribute id="TableUUID" type="guid" value="7b6f7714-83fe-42af-a652-0dc2b378079d" /> Always use this one for races.lsx, says this progression node is for Main Race
+                    <attribute id="UUID" type="guid" value="e8ccff14-10b6-43f7-bbfa-22ab2104f4fc" />  this one must be unique
+                </node>
 				
 				<!-- Lightfoot Halfling -->
 				<node id="Progression">
