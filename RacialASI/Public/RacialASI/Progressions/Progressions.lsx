@@ -6,7 +6,18 @@
             <children>
 			
 			<!-- ADD PHB RACIAL BOOST -->
-			
+			 
+                <!-- Owlin -->
+                <node id="Progression">
+                  <attribute id="Level" type="uint8" value="1" /> which level the progression is for
+                  <attribute id="Name" type="LSString" value="Main_Race_1" /> just an internal name
+                  <attribute id="Boosts" type="LSString" value="" /> 
+                  <attribute id="PassivesAdded" type="LSString" value="Owlin_Custom_Race_Passives;MF_Passive_Flight;Silent_Feathers" /> passives from stats folder here
+                  <attribute id="Selectors" type="LSString" value="SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1);" />
+                  <attribute id="ProgressionType" type="uint8" value="2" /> 2 means race
+                  <attribute id="TableUUID" type="guid" value="257bb459-3a9e-4bea-b4e2-349e3a9ac3ef" /> Always use this one for races.lsx, says this progression node is for Main Race
+                  <attribute id="UUID" type="guid" value="b5f04836-e2ef-4eb6-93d5-4aad7f3b1c20" />  this one must be unique
+                </node>
 
                 <!-- Bugbear -->
                 <node id="Progression">
