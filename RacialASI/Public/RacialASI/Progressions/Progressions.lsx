@@ -300,6 +300,30 @@
                     <attribute id="TableUUID" type="guid" value="f0a6b572-9612-403f-981c-978c21225845"/>
                     <attribute id="UUID" type="guid" value="a63bbb3c-c37c-4578-94e6-7d1c4c063d5c"/>
                 </node>
+
+                <!-- TinkerGnome -->
+                <node id="Progression">
+                  <attribute id="Level" type="uint8" value="1" /> which level the progression is for
+                  <attribute id="Name" type="LSString" value="TinkerGnome" /> just an internal name
+                  <attribute id="Boosts" type="LSString" value="Ability(Dexterity,2)" /> 
+                  <attribute id="PassivesAdded" type="LSString" value="Passive_Infravision;Passive_LabConditioning" /> passives from stats folder here
+                  <attribute id="Selectors" type="LSString" value="AddSpells(a0227b0d-ff5c-49f2-9194-a2f121309792)" />
+                  <attribute id="ProgressionType" type="uint8" value="2" /> 2 means race
+                  <attribute id="TableUUID" type="guid" value="9b994a17-c932-4fc6-9814-ba573012539a" /> Always use this one for races.lsx, says this progression node is for Main Race
+                  <attribute id="UUID" type="guid" value="a0ae2974-b54a-4e17-ba69-cde2f7448338" />  this one must be unique
+                </node>
+
+                <!-- WhisperGnome -->
+                <node id="Progression">
+                  <attribute id="Level" type="uint8" value="1" /> which level the progression is for
+                  <attribute id="Name" type="LSString" value="WhisperGnome" /> just an internal name
+                  <attribute id="Boosts" type="LSString" value="ActionResource(Movement,1.5,0);DarkvisionRangeMin(12);Ability(Dexterity,2);Ability(Constitution,2);Ability(Charisma,-2);Ability(Strenght,-2);Ability(Intelligence,-2)" /> 
+                  <attribute id="PassivesAdded" type="LSString" value="Passive_ShadowsAndWhispers;GiantKiller" /> passives from stats folder here
+                  <attribute id="Selectors" type="LSString" value="AddSpells(d32b6063-ccdd-49a3-87b1-5f31fe7deab1);SelectSpells(f0d8f5a4-7c8d-4286-b422-54e87c375e87,1,0,,,,AlwaysPrepared);SelectSkills(4fa08577-172b-474c-90a3-98fc9e8be86c,1)" />
+                  <attribute id="ProgressionType" type="uint8" value="2" /> 2 means race
+                  <attribute id="TableUUID" type="guid" value="8b878c6f-7900-4bfc-b81d-655acf354ddb" /> Always use this one for races.lsx, says this progression node is for Main Race
+                  <attribute id="UUID" type="guid" value="d45a8d46-8a68-4065-98da-9cc84bb2e3b1" />  this one must be unique
+                </node>
 				
 				<!-- Halfling 
 				<node id="Progression">
