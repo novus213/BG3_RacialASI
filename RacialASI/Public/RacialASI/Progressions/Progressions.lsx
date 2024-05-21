@@ -7,6 +7,29 @@
 			
 			<!-- ADD PHB RACIAL BOOST -->
 
+                <!-- Yuanti -->
+                <node id="Progression">
+					<attribute id="Boosts" type="LSString" value="ActionResource(Movement,9,0);Ability(Intelligence,2);Ability(Wisdom,2)" />
+                    <attribute id="Level" type="uint8" value="1" />
+                    <attribute id="Name" type="LSString" value="Yuanti" />
+					<attribute id="PassivesAdded" type="LSString" value="SuperiorDarkvision;PoisonResilience;MagicResistance_Yuanti" />
+					<attribute id="Selectors" type="LSString" value="AddSpells(f7b9df51-2159-4e47-bf62-e1f39d65abfc,,Charisma,,AlwaysPrepared)" />
+                    <attribute id="ProgressionType" type="uint8" value="2" />
+                    <attribute id="TableUUID" type="guid" value="70b0cfaa-cac0-4cb6-938c-976ab96d73cd" />
+                    <attribute id="UUID" type="guid" value="139dba60-4895-496a-ab48-bbd45719f317" />
+                </node>
+                
+                <!-- Eladrin -->
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(Movement,9,0);ProficiencyBonus(Skill,Perception);Ability(Dexterity,2);Ability(Wisdom,1)" />
+                    <attribute id="Level" type="uint8" value="1" />
+                    <attribute id="Name" type="LSString" value="Eladrin" />
+                    <attribute id="PassivesAdded" type="LSString" value="Elf_WeaponTraining;Darkvision;FeyAncestry" />
+                    <attribute id="ProgressionType" type="uint8" value="2" />
+					<attribute id="Selectors" type="LSString" value="AddSpells(30c4dc2f-ee76-47ed-87a0-9346beca2586,,Charisma,,AlwaysPrepared)" />
+                    <attribute id="TableUUID" type="guid" value="0978ac75-f50d-4606-b57d-37291245022d" />
+                    <attribute id="UUID" type="guid" value="c2c089df-c622-4074-ab18-a4bde879a055" />
+                </node>
 
                 <!-- Fairy -->
                 <node id="Progression">
