@@ -6,6 +6,33 @@
             <children>
 			
 			<!-- ADD PHB RACIAL BOOST -->
+
+
+                <!-- Fairy -->
+                <node id="Progression">
+                    <attribute id="AllowImprovement" type="bool" value="false"/>
+                    <attribute id="Boosts" type="LSString" value="ActionResource(Movement,9,0);ActionResource(FairyFlutter_LongRest,1,0)"/>
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="Fairy"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Fairy_Flutter_LongRest"/>
+                    <attribute id="ProgressionType" type="uint8" value="2"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(06a5e327-7842-4f06-895b-31b78c2073f5,,,,AlwaysPrepared);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1)"/> unlocks druidcraft and tinify
+                    <attribute id="TableUUID" type="guid" value="2a6c5f35-1019-49de-9b6f-bccc9311078a"/> ProgressionTableUUID in Races.lsx
+                    <attribute id="UUID" type="guid" value="7b4d6e73-c54f-41ed-bd69-c25be95e9717"/> used as ProgressionId
+                </node>
+
+
+                <!-- Firbolg -->
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(Movement,9,0);Ability(Strength,1);Ability(Wisdom,2)" />
+                    <attribute id="Level" type="uint8" value="1" />
+                    <attribute id="Name" type="LSString" value="Firbolg" />
+                    <attribute id="PassivesAdded" type="LSString" value="FeyAncestry;Darkvision" />
+                    <attribute id="ProgressionType" type="uint8" value="2" />
+                    <attribute id="Selectors" type="LSString" value="AddSpells(93fb1c5e-43d7-43fc-a3cc-52aa16aafb4e,,Wisdom,,AlwaysPrepared);AddSpells(f37fd5b3-73e9-4ce0-b0cc-f106b61d0bec,,Wisdom,,AlwaysPrepared);AddSpells(390f7f7f-17d7-4be2-96a3-1d52ac48ac97,,Wisdom,,AlwaysPrepared)" />
+                    <attribute id="TableUUID" type="guid" value="6964d589-a2e3-484f-8a58-35a6042713a5" />
+                    <attribute id="UUID" type="guid" value="7eede716-00f0-43aa-ad18-f001f8c7c283" />
+                </node>
 			 
                 <!-- Owlin -->
                 <node id="Progression">
