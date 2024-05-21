@@ -9,7 +9,7 @@
 
                 <!-- Yuanti -->
                 <node id="Progression">
-					<attribute id="Boosts" type="LSString" value="ActionResource(Movement,9,0);Ability(Intelligence,2);Ability(Wisdom,2)" />
+					<attribute id="Boosts" type="LSString" value="ActionResource(Movement,9,0);Ability(Intelligence,1);Ability(Wisdom,2)" />
                     <attribute id="Level" type="uint8" value="1" />
                     <attribute id="Name" type="LSString" value="Yuanti" />
 					<attribute id="PassivesAdded" type="LSString" value="SuperiorDarkvision;PoisonResilience;MagicResistance_Yuanti" />
