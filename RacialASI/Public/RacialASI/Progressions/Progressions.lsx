@@ -7,17 +7,6 @@
 			
 			<!-- ADD PHB RACIAL BOOST -->
 
-                <!-- Undead -->
-                <node id="Progression">
-                        <attribute id="Level" type="uint8" value="1" />
-                        <attribute id="Name" type="LSString" value="Undead" />
-                        <attribute id="PassivesAdded" type="LSString" value="GGGT_SunlightSensitivity;Darkvision;Ghouls_Undead_Passive;Ghouls_Undead_PoisonHeal_Passive;Ghouls_Undead_Disguise_Status" />
-                        <attribute id="ProgressionType" type="uint8" value="2" />
-                        <attribute id="Selectors" type="LSString" value="SelectPassives(c58dba10-b93c-429d-a080-648e0e1d5a77,2,UndeadOrigin)" />					
-                        <attribute id="TableUUID" type="guid" value="d3b77de3-b977-46f4-bd1c-f85882b26489" />
-                        <attribute id="UUID" type="guid" value="a21579fc-b7d7-4295-bf5c-d2111be3f13a" />
-                </node>
-
                 <!-- Lich -->
                 <node id="Progression">			
                     <attribute id="Level" type="uint8" value="1" />
@@ -36,7 +25,7 @@
                     <attribute id="Boosts" type="LSString" value="ActionResource(MarkPoints,1,0);Ability(Charisma,1)" />
                     <attribute id="Name" type="LSString" value="Undead_Wight" />
                     <attribute id="PassivesAdded" type="LSString" value="Ghouls_Undead_Wight_MarkForDeath_KillPassive" />
-                    <attribute id="Selectors" type="LSString" value="AddSpells(5d32c2bd-ae32-4f41-acec-7a43390b4fea,,,,AlwaysPrepared);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,1,1);" />
+                    <attribute id="Selectors" type="LSString" value="AddSpells(5d32c2bd-ae32-4f41-acec-7a43390b4fea,,,,AlwaysPrepared);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,1,0);" />
                     <attribute id="ProgressionType" type="uint8" value="2" />				
                     <attribute id="TableUUID" type="guid" value="8a473472-a21c-4795-9d53-b2b757207e98" />
                     <attribute id="UUID" type="guid" value="677de788-81da-4f2f-b0d1-75c6aa9a1c35" />
