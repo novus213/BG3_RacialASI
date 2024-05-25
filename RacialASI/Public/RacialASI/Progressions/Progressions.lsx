@@ -22,8 +22,7 @@
                 <!-- Wight -->
                 <node id="Progression">			
                     <attribute id="Level" type="uint8" value="1" />
-                    <attribute id="Boosts" type="LSString" value="ActionResource(MarkPoints,1,0)" />	
-                    <attribute id="Boosts" type="LSString" value="Ability(Charisma,1)" />
+                    <attribute id="Boosts" type="LSString" value="ActionResource(MarkPoints,1,0);Ability(Charisma,1)" />
                     <attribute id="Name" type="LSString" value="Undead_Wight" />
                     <attribute id="PassivesAdded" type="LSString" value="Ghouls_Undead_Wight_MarkForDeath_KillPassive" />
                     <attribute id="Selectors" type="LSString" value="AddSpells(5d32c2bd-ae32-4f41-acec-7a43390b4fea,,,,AlwaysPrepared)" />					
