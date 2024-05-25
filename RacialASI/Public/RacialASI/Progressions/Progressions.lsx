@@ -7,6 +7,31 @@
 			
 			<!-- ADD PHB RACIAL BOOST -->
 
+                <!-- Satyr -->
+                <node id="Progression">
+                    <attribute id="AllowImprovement" type="bool" value="false" />
+                    <attribute id="Boosts" type="LSString" value="ActionResource(Movement,10.5,0);JumpMaxDistanceMultiplier(1.5);ActionResource(RevelerInstrument,1,0);Ability(Charisma,2);Ability(Dexterity,1)" />
+                    <attribute id="Level" type="uint8" value="1" />
+                    <attribute id="Name" type="LSString" value="Satyr" />
+                    <attribute id="PassivesAdded" type="LSString" value="MagicResistance;Satyr_Reveler;Satyr_Reveler_FAKE;RamKnockback;Ram_UnarmedDamage" />
+                    <attribute id="ProgressionType" type="uint8" value="2" />
+                    <attribute id="Selectors" type="LSString" value="AddSpells(bbcf6cf6-bf24-452f-9bc7-321cb7043d2e,,,,AlwaysPrepared)" />
+                    <attribute id="TableUUID" type="guid" value="7e91ca72-fcaf-4cd7-b0a4-7ccf53148604" /> ProgressionTableUUID in Races.lsx + for ProgressionsDescriptions.lsx
+                    <attribute id="UUID" type="guid" value="eb3ac23d-3f7f-44d5-ad6a-bb99232d63bd" />  used as ProgressionId
+                </node>
+
+                <!-- Dryad -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="1" /> which level the progression is for
+                    <attribute id="Name" type="LSString" value="Dryad_Race_1" /> just an internal name
+                    <attribute id="Boosts" type="LSString" value="ActionResource(Movement, 10.5, 0);ProficiencyBonus(Skill,Nature);Ability(Wisdom,2)" /> boosts
+                    <attribute id="PassivesAdded" type="LSString" value="Em_Dryad_Race_Darkvision;Em_Dryad_Race_Resilience;FeyAncestry;Dryad_Debuff_Passive;Dryad_Leaves_VFX_Toggle" /> passives from stats folder here
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(86b61fc0-1612-4fc9-9f26-1e014be18941,1,0,,,,AlwaysPrepared);" /> this allows player to select 1 cantrip
+                    <attribute id="ProgressionType" type="uint8" value="2" /> 2 means race
+                    <attribute id="TableUUID" type="guid" value="78cb9632-c52c-47d6-8588-4779228fc892" /> Always use this one for races.lsx, says this progression node is for Main Race
+                    <attribute id="UUID" type="guid" value="c5671549-0282-4b60-a68d-47b676e9e2b9" />  this one must be unique
+                </node>
+
                 <!-- Lich -->
                 <node id="Progression">			
                     <attribute id="Level" type="uint8" value="1" />
