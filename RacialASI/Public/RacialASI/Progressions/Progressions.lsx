@@ -25,7 +25,7 @@
                     <attribute id="Boosts" type="LSString" value="ActionResource(MarkPoints,1,0);Ability(Charisma,1)" />
                     <attribute id="Name" type="LSString" value="Undead_Wight" />
                     <attribute id="PassivesAdded" type="LSString" value="Ghouls_Undead_Wight_MarkForDeath_KillPassive" />
-                    <attribute id="Selectors" type="LSString" value="AddSpells(5d32c2bd-ae32-4f41-acec-7a43390b4fea,,,,AlwaysPrepared);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,1,0);" />
+                    <attribute id="Selectors" type="LSString" value="AddSpells(5d32c2bd-ae32-4f41-acec-7a43390b4fea,,,,AlwaysPrepared);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,1);" />
                     <attribute id="ProgressionType" type="uint8" value="2" />				
                     <attribute id="TableUUID" type="guid" value="8a473472-a21c-4795-9d53-b2b757207e98" />
                     <attribute id="UUID" type="guid" value="677de788-81da-4f2f-b0d1-75c6aa9a1c35" />
