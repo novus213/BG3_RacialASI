@@ -7,6 +7,17 @@
 			
 			<!-- ADD PHB RACIAL BOOST -->
 
+                <!-- Dhampir -->
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="Ability(Charisma,2);Ability(Dexterity,1)" />                    
+                    <attribute id="PassivesAdded" type="LSString" value="Weev_Dhampir_Passives;Weev_Thirsty" />
+                    <attribute id="Level" type="uint8" value="1" />
+                    <attribute id="Name" type="LSString" value="Dhampir_1" />
+                    <attribute id="ProgressionType" type="uint8" value="2" />
+                    <attribute id="TableUUID" type="guid" value="9add9a21-e933-4324-a438-6122a15557b4" />
+                    <attribute id="UUID" type="guid" value="58971151-461d-4556-8db7-5894af1dceb2" />
+                </node>
+
                 <!-- Satyr -->
                 <node id="Progression">
                     <attribute id="AllowImprovement" type="bool" value="false" />
@@ -417,7 +428,7 @@
                     <attribute id="Name" type="LSString" value="ForestGnome"/>
                     <attribute id="PassivesAdded" type="LSString" value="Darkvision"/>
                     <attribute id="ProgressionType" type="uint8" value="2"/>
-                    <attribute id="Selectors" type="LSString" value="AddSpells(582ed05c-c6fa-4d6f-99f9-efcc9de769f9,,Intelligence,,AlwaysPrepared,UntilRest);AddSpells(7cdd46a5-ab1e-474a-a430-40769fd7e2fd,,Intelligence,,AlwaysPrepared)"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(7cdd46a5-ab1e-474a-a430-40769fd7e2fd,,Intelligence,,AlwaysPrepared)"/>
                     <attribute id="TableUUID" type="guid" value="f0a6b572-9612-403f-981c-978c21225845"/>
                     <attribute id="UUID" type="guid" value="a63bbb3c-c37c-4578-94e6-7d1c4c063d5c"/>
                 </node>
