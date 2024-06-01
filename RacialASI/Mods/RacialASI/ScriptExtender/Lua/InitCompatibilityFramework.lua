@@ -1,4 +1,3 @@
-
 -- Debug toggle
 local debugMode = true
 
@@ -12,14 +11,31 @@ end
 -- Default settings configuration
 local defaultSettings = {
     Options = {
-        LightSensitivity_UnderdarkRaces = { Enabled = false },
-        RemoveHumanPassives = { Enabled = true },
-        RemoveHalfElfPassives = { Enabled = true }
+        LightSensitivity_UnderdarkRaces = { Enabled = true },
+        RemoveHumanPassives = { Enabled = false },
+        RemoveHalfElfPassives = { Enabled = false },
+        AddSelectors_RockGnome = { Enabled = true }
     }
 }
 
 -- Define Actions and Payloads
 local optionActions = {
+    AddSelectors_RockGnome = {
+        actions = {
+            {
+                action = "InsertSelectors",
+                payloads = {
+                    {
+                        modGuid = "b3b06502-0ee4-4ad5-a562-36f2b380101f",
+                        Target = "aa2257a9-1779-4d8b-be65-8a08eede07fa",
+                        FileType = "Progression",
+                        Type = "Selectors",
+                        Strings = { "AddSpells(5fdb4bd0-8122-4ce6-9191-fffc951cf3a3,,,,AlwaysPrepared,UntilRest)" } --  <attribute id="Selectors" type="LSString" value="AddSpells(5fdb4bd0-8122-4ce6-9191-fffc951cf3a3,,,,AlwaysPrepared,UntilRest)"/>
+                    }
+                }
+            }
+        }
+    },
     LightSensitivity_UnderdarkRaces = {
         actions = {
             {
@@ -38,7 +54,22 @@ local optionActions = {
                         FileType = "Progression",
                         Type = "PassivesAdded",
                         Strings = {"SunlightSensitivity"}
+                    },
+                    {
+                        modGuid = "b3b06502-0ee4-4ad5-a562-36f2b380101f",
+                        Target = "58dae581-c25a-4dfb-8a57-589bf4b34f62",
+                        FileType = "Progression",
+                        Type = "PassivesAdded",
+                        Strings = {"LightSensitivity"}
+                    },
+                    {
+                        modGuid = "b3b06502-0ee4-4ad5-a562-36f2b380101f",
+                        Target = "938b6f72-18a6-4af0-924b-5292251d32bf",
+                        FileType = "Progression",
+                        Type = "PassivesAdded",
+                        Strings = {"MagicResistance", "SunlightSensitivity"}
                     }
+                    
                 }
             }
         }

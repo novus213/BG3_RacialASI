@@ -30,6 +30,56 @@ local classMods = {
         Class = "DeathKnight",
         modGuid = "3eb9981c-15b7-4973-9c15-bb680808ebeb",
         UUID = "9406edff-5e57-4eb6-ab0d-a2cc7d5d8b8a"
+    },
+    {
+        Class = "Witcher (no 5e class)",
+        modGuid = "",
+        UUID = "ed7b629c-01e1-488d-88db-61851c63da27"
+    },
+    {
+        Class = "Ambusher (no 5e class)",
+        modGuid = "",
+        UUID = "5ef72e3c-717a-4250-860e-0813e3c42a36"
+    },
+    {
+        Class = "EldritchScholar (no 5e class)",
+        modGuid = "",
+        UUID = "a5842466-38b2-40fa-862a-7e48831e551d"
+    },
+    {
+        Class = "Fathomless",
+        modGuid = "",
+        UUID = "da7173e8-0faa-4929-a505-3e1228c16b82"
+    },
+    {
+        Class = "Genie Warlock 2023",
+        modGuid = "",
+        UUID = "37a9d834-26fa-4bf0-aec2-9e8522139d72"
+    },
+    {
+        Class = "HexBlade",
+        modGuid = "",
+        UUID = "cbdbfb62-098f-4629-8036-edfb5f216726"
+    },
+    {
+        Class = "Shadow Sorcerer",
+        modGuid = "",
+        UUID = "2a382291-7fed-44ba-9002-ccd894b687d8"
+    },
+    {
+        Class = "Elemancer Sorcerer",
+        modGuid = "",
+        UUID = "2a382291-7fed-44ba-9002-ccd894b687d8"
+    },
+    {
+        Class = "Arlequin",
+        modGuid = "",
+        UUID = "c43581ac-0262-4dd9-958b-1eeed88b10f0"
+    },
+    {
+        Class = "Pugilist",
+        modGuid = "",
+        UUID = "41c5ac54-bd32-4f5b-9feb-c30afb255857"
     }
 }
 

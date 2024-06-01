@@ -9,12 +9,6 @@ local fantasticalTable = {
                 UUID = "0b88cad4-c5d0-4cde-a661-a8ede3f7d113"
             },
             {
-                Name = "Fantastical Bugbear",
-                modGuid = "f4361c10-b197-4490-ae30-06ce796f950e",
-                Source = "Mordenkainen Presents: Monsters of the Multiverse",
-                UUID = "d01d244f-3ae2-4d15-b0ba-9aed04fc16ac"
-            },
-            {
                 Name = "Fantastical Astral Elf",
                 modGuid = "e7071309-78a8-4fad-949b-d4dd326dd39b",
                 Source = "Spelljammer: Adventures in Space",
@@ -182,6 +176,13 @@ local fantasticalTable = {
                 UUID = "0e35ec74-a63c-4d24-8912-4afa4a9930d8",
                 Source = "Volo's Guide to Monsters (LEGACY)",
                 Strings = {"Ability(Wisdom,2)", "Ability(Charisma,1)"}
+            },
+            {
+                Name = "Fantastical Bugbear",
+                modGuid = "f4361c10-b197-4490-ae30-06ce796f950e",
+                Source = "Volo's Guide to Monsters (LEGACY)",
+                UUID = "d01d244f-3ae2-4d15-b0ba-9aed04fc16ac",
+                Strings = {"Ability(Strength,2)", "Ability(Dexterity,1)"}
             }
         }
     },
