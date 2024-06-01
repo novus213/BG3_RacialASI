@@ -1,7 +1,0 @@
-{
-    "RequiredVersion": 15,
-    "ModTable": "racial_asi_5e",
-    "FeatureFlags": [
-        "Lua"
-    ]
-}

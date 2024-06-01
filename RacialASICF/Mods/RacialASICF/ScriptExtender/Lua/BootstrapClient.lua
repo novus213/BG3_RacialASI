@@ -1,6 +1,0 @@
-Ext.Require("InitCompatibilityFramework.lua")
-Ext.Require("Fantastical_CF.lua")
-Ext.Require("Trips_Aasimar_SE_CF.lua")
-Ext.Require("CustomClasses_CF.lua")
-Ext.Require("Races_Other_CF.lua")
-Ext.Require("ASTRL_Tieflings_CF.lua")
