@@ -11,5 +11,8 @@ function RequireFiles(path, files)
 end
 
 RequireFiles("Shared/", {
+    "Classes/_Init",
+    "Utils/_Init",
+    "Globals/_Init",
     "Config/_Init",
 })

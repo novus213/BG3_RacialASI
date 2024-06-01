@@ -1,6 +1,6 @@
 {
     "RequiredVersion": 15,
-    "ModTable": "racial_asi_5e",
+    "ModTable": "RacialASI",
     "FeatureFlags": [
         "Lua"
     ]
