@@ -174,7 +174,7 @@ local raceModsFixed = {
         Race = "Undead (Ghastly Ghouls) Ghoul",
         modGuid = "a21579fc-b7d7-4295-bf5c-d2111be3f13a",
         UUID = "cfabed72-38b8-424d-a07d-058fbd4dd1a9",
-        Strings = {"Ability(Intelligence,1)""}
+        Strings = {"Ability(Intelligence,1)"}
     }
 }
 

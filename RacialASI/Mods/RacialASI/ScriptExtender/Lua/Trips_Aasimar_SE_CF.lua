@@ -66,7 +66,7 @@ end
 local function CustomRacesOnStatsLoaded()
     local insertedModNames = {}
 
-    for _, mod in ipairs(raceModsFixed) do
+    for _, mod in ipairs(subAasimarFixed) do
         if insertBonuses(mod, "fixed") then
             table.insert(insertedModNames, mod.Race)
         end

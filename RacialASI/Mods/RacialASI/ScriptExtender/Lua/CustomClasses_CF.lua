@@ -65,7 +65,7 @@ local classMods = {
         Class = "The Celestia Patron for Warlocks 2024",
         modGuid = "015ff10e-b018-4bea-ab81-35b2a198623d",
         UUID = "a7767dc5-e6ab-4e05-96fd-f0424256121c" -- same uuid ????
-    }
+    },
     { 
         Class = "HexBlade",
         modGuid = "e1eb6d1a-5922-4964-bfd7-c971e71e351a",

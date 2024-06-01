@@ -35,6 +35,7 @@ local optionActions = {
                         PrepareType = "AlwaysPrepared", -- Used in SelectSpells, AddSpells. Values: Default, AlwaysPrepared
                         CooldownType = "UntilRest",     -- Used in SelectSpells, AddSpells. Values: Default, UntilRest
                     }
+                }
             }
         }
     },
