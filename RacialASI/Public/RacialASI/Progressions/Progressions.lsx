@@ -13,9 +13,9 @@
                         FileType = "Progression",
                         Function = "AddSpells",
                         Params = {
-                            Guid = "496ebaab-ac47-48c6-a19a-0b19a0acb7bc",                      -- Used in All
-                            PrepareType = "AlwaysPrepared", -- Used in SelectSpells, AddSpells. Values: Default, AlwaysPrepared
-                            CooldownType = "UntilRest"    -- Used in SelectSpells, AddSpells. Values: Default, UntilRest
+                            Guid = "496ebaab-ac47-48c6-a19a-0b19a0acb7bc",
+                            PrepareType = "AlwaysPrepared", 
+                            CooldownType = "UntilRest"   
                         }
                     },
                     {
@@ -24,9 +24,9 @@
                         FileType = "Progression",
                         Function = "AddSpells",
                         Params = {
-                            Guid = "e57298c0-12a5-4988-891f-8d9a52d5a38f",                      -- Used in All
-                            PrepareType = "AlwaysPrepared", -- Used in SelectSpells, AddSpells. Values: Default, AlwaysPrepared
-                            CooldownType = "UntilRest"    -- Used in SelectSpells, AddSpells. Values: Default, UntilRest
+                            Guid = "e57298c0-12a5-4988-891f-8d9a52d5a38f",                   
+                            PrepareType = "AlwaysPrepared", 
+                            CooldownType = "UntilRest" 
                         }
                     }
                 -->
