@@ -31,7 +31,6 @@ local optionActions = {
                         FileType = "Progression",
                         Type = "Selectors",
                         Guid = "5fdb4bd0-8122-4ce6-9191-fffc951cf3a3",                      -- Used in All
-                        SelectorId = "BardCantrip",     -- Reference to entry in Defaultvalues to populate default selections
                         PrepareType = "AlwaysPrepared", -- Used in SelectSpells, AddSpells. Values: Default, AlwaysPrepared
                         CooldownType = "UntilRest",     -- Used in SelectSpells, AddSpells. Values: Default, UntilRest
                     }

@@ -16,6 +16,11 @@ local RaceModsFloating = {
         Race = "Owlin",
         modGuid = "315ce1a1-0f24-4777-90d9-06b01a93a716",
         UUID = "b5f04836-e2ef-4eb6-93d5-4aad7f3b1c20"
+    },
+    {
+        Name = "Myconid",
+        UUID = "ada1a74c-89dd-45f9-95dd-f88bf59e3535",
+        modGuid = "71486ac7-a05c-434e-8e3b-9e6c2d40a04a"
     }
 }
 
@@ -27,7 +32,7 @@ local RaceModsFloating_111 = {
     }
 }
 
-local RaceModsFloating_11 = {
+local RaceModsFloating_11 = { -- bugg a tester
     {
         Race = "Variant Human - Fantastical",
         modGuid = "5e53f556-ba7a-46fd-9dee-ba1ff456d8db",
@@ -40,6 +45,11 @@ local RaceModsFloating_1 = {
         Race = "Wight",
         modGuid = "a21579fc-b7d7-4295-bf5c-d2111be3f13a",
         UUID = "677de788-81da-4f2f-b0d1-75c6aa9a1c35" -- SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,1);
+    },
+    {
+        Race = "Whispers of the Fey - Changelings", -- SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,1)
+        modGuid = "eaf83c50-1f22-4ce8-a825-25f07caf9faa",
+        UUID = "fa7bf84a-a1d6-46b2-a779-739424d20b5b",
     }
 }
 
@@ -51,10 +61,21 @@ local raceModsFixed = {
         Strings = {"Ability(Dexterity,2)", "Ability(Wisdom,1)"}
     },
     {
-        Race = "Halfling (Haunted Warriors UT)",
-        modGuid = "f8f5f704-d463-4616-a321-9460060538ff",
-        UUID = "0194f214-ffce-4e74-94b6-09e76a270e49",
-        Strings = {"Ability(Dexterity,2)", "Ability(Wisdom,1)"}
+        Race = "Aasimar(Radiant Soul)", 
+        UUID = "4c2c61ae-5904-4576-a8c5-efecce67ab82", 
+        modGuid = "ab267ed4-b3b5-4b4f-a62c-7dbc95c968fa",
+        Strings = {"Ability(Charisma,2)", "Ability(Wisdom,1)"}
+    },
+    {   Race = "Aasimar(Radiant Consumption)", 
+        UUID = "56d62681-9769-4ad7-9bbf-4f72db44f070", 
+        modGuid = "ab267ed4-b3b5-4b4f-a62c-7dbc95c968fa",
+        Strings = {"Ability(Charisma,2)", "Ability(Consumption,1)"}
+    },
+    { 
+        Race = "Aasimar(Necrotic Shroud)",
+        UUID = "1b07140b-98c1-42e8-b4ec-072622862dc2",
+        modGuid = "ab267ed4-b3b5-4b4f-a62c-7dbc95c968fa",
+        Strings = {"Ability(Charisma,2)", "Ability(Strength ,1)"}
     },
     {
         Race = "Satyr (Wine and Revelry)",
@@ -69,7 +90,13 @@ local raceModsFixed = {
         Strings = {"Ability(Dexterity,1)", "Ability(Charisma,2)"}
     },
     {
-        Race = "Followers Of Zerthimon Githzerai)",
+        Race = "Followers Of Zerthimon (Githzerai)",
+        modGuid = "ae6eacb7-f346-418f-89a9-f0e4c697baab",
+        UUID = "8e8928df-70b1-43c0-bc86-40b32c455bee",
+        Strings = {"Ability(Intelligence,1)", "Ability(Wisdom,2)"}
+    }, 
+    {
+        Race = "Followers Of Zerthimon (Githzerai)",
         modGuid = "d6d1028e-68fb-4e94-83d8-e8951f55b86a",
         UUID = "8e8928df-70b1-43c0-bc86-40b32c455bee",
         Strings = {"Ability(Intelligence,1)", "Ability(Wisdom,2)"}
@@ -95,7 +122,7 @@ local raceModsFixed = {
     {
         Race = "Enter Maztica: Desert Dwarf Subrace",
         modGuid = "1a3a0820-48e3-45b4-822a-7ee31e5d25c5",
-        UUID = "3d7c0866-0357-43e1-ace0-b9c7f8bd90be",
+        UUID = "75c28431-cd41-4256-af2e-0cadd4f8c2f8",
         Strings = {"Ability(Dexterity,1)", "Ability(Constitution,2)"}
     },
     {
@@ -129,7 +156,7 @@ local raceModsFixed = {
         Strings = {"Ability(Wisdom,2)"}
     },
     {
-        Race = "Whispers of the Fey - Changelings",
+        Race = "Whispers of the Fey - Changelings", -- SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,1)
         modGuid = "eaf83c50-1f22-4ce8-a825-25f07caf9faa",
         UUID = "fa7bf84a-a1d6-46b2-a779-739424d20b5b",
         Strings = {"Ability(Charisma,2)"}
@@ -154,25 +181,25 @@ local raceModsFixed = {
     },
     {
         Race = "Undead (Ghastly Ghouls) Lich",
-        modGuid = "a21579fc-b7d7-4295-bf5c-d2111be3f13a",
+        modGuid = "f3d4e722-e576-43ce-a585-cfffcfcbcf40",
         UUID = "7123242e-9e00-4b9e-8e4f-aa1b0477fe13",
         Strings = {"Ability(Intelligence,2)", "Ability(Wisdom,1)"}
     },
     {
         Race = "Undead (Ghastly Ghouls) Wight",
-        modGuid = "a21579fc-b7d7-4295-bf5c-d2111be3f13a",
+        modGuid = "f3d4e722-e576-43ce-a585-cfffcfcbcf40",
         UUID = "677de788-81da-4f2f-b0d1-75c6aa9a1c35", -- SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,1);
         Strings = {"Ability(Charisma,1)"}
     },
     {
         Race = "Undead (Ghastly Ghouls) Mummy",
-        modGuid = "a21579fc-b7d7-4295-bf5c-d2111be3f13a",
+        modGuid = "f3d4e722-e576-43ce-a585-cfffcfcbcf40",
         UUID = "3a4465df-49a2-4278-9d16-f17ed876aede",
         Strings = {"Ability(Intelligence,1)", "Ability(Wisdom,2)"}
     },
     {
         Race = "Undead (Ghastly Ghouls) Ghoul",
-        modGuid = "a21579fc-b7d7-4295-bf5c-d2111be3f13a",
+        modGuid = "f3d4e722-e576-43ce-a585-cfffcfcbcf40",
         UUID = "cfabed72-38b8-424d-a07d-058fbd4dd1a9",
         Strings = {"Ability(Intelligence,1)"}
     }
@@ -204,7 +231,7 @@ local function createPayload(mod, bonusType)
             payload.Function = "SelectAbilityBonus"
             payload.Params = {
                 Guid = AbilityList_UUID,
-                Amount = "2",
+                Amount = "1", -- 2 changed to 1
                 BonusType = "AbilityBonus",
                 Amounts = { "1", "1" }
             }

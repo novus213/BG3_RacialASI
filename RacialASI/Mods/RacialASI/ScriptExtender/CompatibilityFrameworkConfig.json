@@ -26,8 +26,8 @@
             ]
         },
 		{
-            "Comment": "Human Changes",
-			"UUID": "dbde4d66-d3e4-4c3f-ae87-fd6e2d1cd276",
+            "Comment": "Human Larian default",
+			"UUID": "139e1b8c-dfa1-4b2d-895c-efb170736093",
 			"Strings": [
 				{
 					"Action": "Insert",
