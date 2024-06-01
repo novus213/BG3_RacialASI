@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+  <version major="4" minor="0" revision="9" build="328" />
+  <region id="PassiveLists">
+    <node id="root">
+      <children>
+        <node id="PassiveList">
+                    <attribute id="Passives" type="LSString" value="BGW_LethalPrecision,BGW_SignIntensity" />
+                    <attribute id="UUID" type="guid" value="88203595-b613-4ee4-bb1e-57e69c6ad032" />
+                </node>
+        <node id="PassiveList">
+                    <attribute id="Passives" type="LSString" value="BGW_WitcherExpertiseArcana,BGW_WitcherExpertiseInvestigation,BGW_WitcherExpertiseNature,BGW_WitcherExpertiseMedicine" />
+                    <attribute id="UUID" type="guid" value="8af44475-f01b-40fc-86fd-6559d4f30a90" />
+                </node>
+        <node id="PassiveList">
+                    <attribute id="Passives" type="LSString" value="BGW_MutantEnhancement_IntimidatingPresence,BGW_MutantEnhancement_PersuasivePresence,BGW_MutantEnhancement_EnhancedReflexes,BGW_MutantEnhancement_EnhancedMovement,ExperimentalAlchemy" />
+                    <attribute id="UUID" type="guid" value="db928125-746e-48ac-b6b3-d75aa9a35278" />
+                </node>
+        <node id="PassiveList">
+                    <attribute id="Passives" type="LSString" value="BGW_MutantEnhancement_IntimidatingPresence,BGW_MutantEnhancement_PersuasivePresence,BGW_MutantEnhancement_EnhancedReflexes,BGW_MutantEnhancement_EnhancedMovement,ExperimentalAlchemy,BGW_MutantEnhancement_AggravatingWounds,BGW_MutantEnhancement_SunderArmor,BGW_MutantEnhancement_MaimingStrike,BGW_MutantEnhancement_MurderousSurge" />
+                    <attribute id="UUID" type="guid" value="34a04908-5ee9-41b1-b460-b9d968ef25f1" />
+                </node>
+      </children>
+    </node>
+  </region>
+</save>

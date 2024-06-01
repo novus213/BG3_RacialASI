@@ -3,29 +3,9 @@ local AbilityList_UUID = "b9149c8e-52c8-46e5-9cb6-fc39301c05fe"
 
 local RaceModsFloating = {
     {
-        Race = "Whispers of the Fey - Goblins",
-        modGuid = "ca81f091-bf1b-4bb6-90dd-1c4ef83fd798",
-        UUID = "fa9d4980-1b18-43e6-974b-4e3a2abae183"
-    },
-    {
-        Race = "Whispers of the Fey - Changelings",
-        modGuid = "eaf83c50-1f22-4ce8-a825-25f07caf9faa",
-        UUID = "fa7bf84a-a1d6-46b2-a779-739424d20b5b"
-    },
-    {
         Race = "Fairy (Flutter and Whimsy)",
         modGuid = "673c5b7b-a274-4916-ad89-4e3c591e1187",
         UUID = "7b4d6e73-c54f-41ed-bd69-c25be95e9717"
-    },
-    {
-        Race = "Undead (Ghastly Ghouls)",
-        modGuid = "f3d4e722-e576-43ce-a585-cfffcfcbcf40",
-        UUID = "a21579fc-b7d7-4295-bf5c-d2111be3f13a"
-    }, 
-    {
-        Race = "Followers Of Zerthimon (Githzerai)",
-        modGuid = "d6d1028e-68fb-4e94-83d8-e8951f55b86a",
-        UUID = "8e8928df-70b1-43c0-bc86-40b32c455bee"
     },
     {
         Race = "Genasi (Elemental Power)",
@@ -34,15 +14,15 @@ local RaceModsFloating = {
     },
     {
         Race = "Owlin",
-        modGuid = "XXXXXXX",
-        UUID = "b5f04836-e2ef-4eb6-93d5-4aad7f3b1c20",
+        modGuid = "315ce1a1-0f24-4777-90d9-06b01a93a716",
+        UUID = "b5f04836-e2ef-4eb6-93d5-4aad7f3b1c20"
     }
 }
 
 local RaceModsFloating_111 = {
     {
-        Race = "Kender - THE GOD RACE :-D",
-        modGuid = "XXXX",
+        Race = "Adapted Kender Race from Dragonlance: Shadow of the Dragon Queen (EOTB Version)",
+        modGuid = "56fe7a47-e0d6-404e-b2d5-fd6e88cae6ae",
         UUID = "7551c355-8311-4c2f-b91b-9877ef608267"
     }
 }
@@ -50,8 +30,16 @@ local RaceModsFloating_111 = {
 local RaceModsFloating_11 = {
     {
         Race = "Variant Human - Fantastical",
-        modGuid = "XXXX",
+        modGuid = "5e53f556-ba7a-46fd-9dee-ba1ff456d8db",
         UUID = "0b88cad4-c5d0-4cde-a661-a8ede3f7d113"
+    }
+}
+
+local RaceModsFloating_1 = {
+    {
+        Race = "Wight",
+        modGuid = "a21579fc-b7d7-4295-bf5c-d2111be3f13a",
+        UUID = "677de788-81da-4f2f-b0d1-75c6aa9a1c35" -- SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,1);
     }
 }
 
@@ -76,13 +64,13 @@ local raceModsFixed = {
     },
     {
         Race = "Transient Guests Are We - Playable Dhampir",
-        modGuid = "XXXXXXXXXXX",
+        modGuid = "7a4aaaca-88a7-41c4-98d6-de2df39496fe",
         UUID = "58971151-461d-4556-8db7-5894af1dceb2",
         Strings = {"Ability(Dexterity,1)", "Ability(Charisma,2)"}
     },
     {
         Race = "Followers Of Zerthimon Githzerai)",
-        modGuid = "ae6eacb7-f346-418f-89a9-f0e4c697baab",
+        modGuid = "d6d1028e-68fb-4e94-83d8-e8951f55b86a",
         UUID = "8e8928df-70b1-43c0-bc86-40b32c455bee",
         Strings = {"Ability(Intelligence,1)", "Ability(Wisdom,2)"}
     },
@@ -99,70 +87,94 @@ local raceModsFixed = {
         Strings = {"Ability(Strength,1)", "Ability(Wisdom,2)"}
     },
     {
-        Race = "Sunstone Gnome",
-        modGuid = "XXXXXXX",
+        Race = "Homebrew Gnome Subrace based on the Maztica Trilogy",
+        modGuid = "7c7407ec-e2a8-4deb-a6dc-6cbc7bea2894",
         UUID = "3d7c0866-0357-43e1-ace0-b9c7f8bd90be",
         Strings = {"Ability(Dexterity,1)", "Ability(Intelligence,2)"}
     },
     {
-        Race = "DesertDwarf",
-        modGuid = "XXXXXXX",
+        Race = "Enter Maztica: Desert Dwarf Subrace",
+        modGuid = "1a3a0820-48e3-45b4-822a-7ee31e5d25c5",
         UUID = "3d7c0866-0357-43e1-ace0-b9c7f8bd90be",
         Strings = {"Ability(Dexterity,1)", "Ability(Constitution,2)"}
     },
     {
-        Race = "TinkerGnome",
-        modGuid = "XXXXXXX",
+        Race = "Beyond Faerûn: Tinker Gnome Subrace",
+        modGuid = "0b1613ac-1610-4ac4-ba8b-effe33317fd1",
         UUID = "a0ae2974-b54a-4e17-ba69-cde2f7448338",
         Strings = {"Ability(Intelligence,2)", "Ability(Dexterity,2)"}
     },
     {
-        Race = "WhisperGnome",
-        modGuid = "XXXXXXX",
+        Race = "Adapted Whisper Gnome Subrace based on the Eberron Campaign",
+        modGuid = "f13d31f7-c897-494c-a988-bca2a71ccddc",
         UUID = "d45a8d46-8a68-4065-98da-9cc84bb2e3b1",
         Strings = {"Ability(Dexterity,2)", "Ability(Constitution,2)"}
     },
     {
-        Race = "Ghostwise Halfling",
-        modGuid = "XXXXXXX",
+        Race = "Adapted Ghostwise Halfling Subrace",
+        modGuid = "f8f5f704-d463-4616-a321-9460060538ff",
         UUID = "0194f214-ffce-4e74-94b6-09e76a270e49",
         Strings = {"Ability(Dexterity,2)", "Ability(Wisdom,1)"}
     },
     {
-        Race = "WildHalfling Halfling",
-        modGuid = "XXXXXXX",
+        Race = "Enter Maztica: Wild Halfling Subrace",
+        modGuid = "9e7836a9-b1a9-4d4e-9089-563c43f4fb1e",
         UUID = "e8ccff14-10b6-43f7-bbfa-22ab2104f4fc",
         Strings = {"Ability(Dexterity,2)", "Ability(Wisdom,1)"}
     },
     {
-        Race = "Dryad",
-        modGuid = "XXXXXXX",
+        Race = "dryad race inspired by BG3's dryads",
+        modGuid = "e61be041-6c93-4576-a4b1-ad183e726f02",
         UUID = "c5671549-0282-4b60-a68d-47b676e9e2b9",
         Strings = {"Ability(Wisdom,2)"}
     },
     {
-        Race = "Changeling (TRips)",
-        modGuid = "XXXXXXX",
+        Race = "Whispers of the Fey - Changelings",
+        modGuid = "eaf83c50-1f22-4ce8-a825-25f07caf9faa",
         UUID = "fa7bf84a-a1d6-46b2-a779-739424d20b5b",
         Strings = {"Ability(Charisma,2)"}
     },
     {
-        Race = "Trips_Goblin_Greenskin",
-        modGuid = "XXXXXXX",
+        Race = "Whispers of the Fey - Goblins Greenskin",
+        modGuid = "ca81f091-bf1b-4bb6-90dd-1c4ef83fd798",
         UUID = "5a317953-08ea-4424-ad93-05a0a66b4748",
         Strings = {"Ability(Dexterity,2)", "Ability(Constitution,1)"}
     },
     {
-        Race = "Trips_Goblin_Dankwood",
-        modGuid = "XXXXXXX",
+        Race = "Whispers of the Fey - Goblins Dankwood",
+        modGuid = "ca81f091-bf1b-4bb6-90dd-1c4ef83fd798",
         UUID = "453c15bb-0ead-4766-b747-961066c84ee1",
         Strings = {"Ability(Dexterity,2)", "Ability(Wisdom,1)"}
     },
     {
-        Race = "Yuanti",
-        modGuid = "XXXXXXX",
+        Race = "Yuan-ti",
+        modGuid = "b2d490bc-6e10-4bc2-89e0-69c8f68cd453",
         UUID = "139dba60-4895-496a-ab48-bbd45719f317",
         Strings = {"Ability(Intelligence,1)", "Ability(Wisdom,2)"}
+    },
+    {
+        Race = "Undead (Ghastly Ghouls) Lich",
+        modGuid = "a21579fc-b7d7-4295-bf5c-d2111be3f13a",
+        UUID = "7123242e-9e00-4b9e-8e4f-aa1b0477fe13",
+        Strings = {"Ability(Intelligence,2)", "Ability(Wisdom,1)"}
+    },
+    {
+        Race = "Undead (Ghastly Ghouls) Wight",
+        modGuid = "a21579fc-b7d7-4295-bf5c-d2111be3f13a",
+        UUID = "677de788-81da-4f2f-b0d1-75c6aa9a1c35", -- SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,1);
+        Strings = {"Ability(Charisma,1)"}
+    },
+    {
+        Race = "Undead (Ghastly Ghouls) Mummy",
+        modGuid = "a21579fc-b7d7-4295-bf5c-d2111be3f13a",
+        UUID = "3a4465df-49a2-4278-9d16-f17ed876aede",
+        Strings = {"Ability(Intelligence,1)", "Ability(Wisdom,2)"}
+    },
+    {
+        Race = "Undead (Ghastly Ghouls) Ghoul",
+        modGuid = "a21579fc-b7d7-4295-bf5c-d2111be3f13a",
+        UUID = "cfabed72-38b8-424d-a07d-058fbd4dd1a9",
+        Strings = {"Ability(Intelligence,1)""}
     }
 }
 
@@ -180,6 +192,14 @@ local function createPayload(mod, bonusType)
             BonusType = "AbilityBonus",
             Amounts = { "2", "1" }
          }
+        elseif bonusType == "floating_1" then
+            payload.Function = "SelectAbilityBonus"
+            payload.Params = {
+                Guid = AbilityList_UUID,
+                Amount = "1",
+                BonusType = "AbilityBonus",
+                Amounts = { "1" }
+            }
         elseif bonusType == "floating_11" then
             payload.Function = "SelectAbilityBonus"
             payload.Params = {
@@ -206,7 +226,7 @@ end
 local function insertBonuses(mod, bonusType)
     if mod.modGuid and Ext.Mod.IsModLoaded(mod.modGuid) then
         local payload = createPayload(mod, bonusType)
-        if bonusType == "floating" then
+        if (bonusType == "floating_111" || bonusType == "floating_11" || bonusType == "floating_1"|| bonusType == "floating") then
             Mods.SubclassCompatibilityFramework.Api.InsertSelectors({ payload })
         else
             Mods.SubclassCompatibilityFramework.Api.InsertBoosts({ payload })
@@ -233,6 +253,12 @@ local function CustomRacesOnStatsLoaded()
 
     for _, mod in ipairs(RaceModsFloating_11) do
         if insertBonuses(mod, "floating_11") then
+            table.insert(insertedModNames, mod.Race)
+        end
+    end
+
+    for _, mod in ipairs(RaceModsFloating_1) do
+        if insertBonuses(mod, "floating_1") then
             table.insert(insertedModNames, mod.Race)
         end
     end

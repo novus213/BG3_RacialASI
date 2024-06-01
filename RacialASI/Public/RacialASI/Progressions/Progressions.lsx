@@ -43,7 +43,7 @@
                     <attribute id="UUID" type="guid" value="c5671549-0282-4b60-a68d-47b676e9e2b9" />  this one must be unique
                 </node> -->
 
-                <!-- Lich -->
+                <!-- Lich 
                 <node id="Progression">			
                     <attribute id="Level" type="uint8" value="1" />
                     <attribute id="Name" type="LSString" value="Undead_Archlich" />
@@ -53,9 +53,9 @@
                     <attribute id="Selectors" type="LSString" value="AddSpells(9ac369cd-da5b-47b7-878b-d9183fa83e1a,,,,AlwaysPrepared)" />						
                     <attribute id="TableUUID" type="guid" value="cf1674f1-af50-4878-8f0a-2497941e5034" />
                     <attribute id="UUID" type="guid" value="7123242e-9e00-4b9e-8e4f-aa1b0477fe13" />
-                </node>
+                </node>-->
 
-                <!-- Wight -->
+                <!-- Wight 
                 <node id="Progression">			
                     <attribute id="Level" type="uint8" value="1" />
                     <attribute id="Boosts" type="LSString" value="ActionResource(MarkPoints,1,0);Ability(Charisma,1)" />
@@ -65,9 +65,9 @@
                     <attribute id="ProgressionType" type="uint8" value="2" />				
                     <attribute id="TableUUID" type="guid" value="8a473472-a21c-4795-9d53-b2b757207e98" />
                     <attribute id="UUID" type="guid" value="677de788-81da-4f2f-b0d1-75c6aa9a1c35" />
-                </node>
+                </node> -->
 
-                <!-- Mummy -->
+                <!-- Mummy 
                 <node id="Progression">				
                     <attribute id="Level" type="uint8" value="1" />
                     <attribute id="Name" type="LSString" value="Undead_Mummy" />
@@ -76,9 +76,9 @@
                     <attribute id="ProgressionType" type="uint8" value="2" />					
                     <attribute id="TableUUID" type="guid" value="1cf239c2-bc90-4135-94ac-f090ea59f89a" />
                     <attribute id="UUID" type="guid" value="3a4465df-49a2-4278-9d16-f17ed876aede" />
-                </node>
+                </node>-->
 
-                <!-- Ghoul -->
+                <!-- Ghoul
                 <node id="Progression">					
                     <attribute id="Level" type="uint8" value="1" />
                     <attribute id="Boosts" type="LSString" value="ActionResource(Movement,10.5,0);Ability(Intelligence,1)" />
@@ -87,7 +87,7 @@
                     <attribute id="ProgressionType" type="uint8" value="2" />	
                     <attribute id="TableUUID" type="guid" value="ff5eac8f-6074-4b22-9d29-b438382f733d" />
                     <attribute id="UUID" type="guid" value="cfabed72-38b8-424d-a07d-058fbd4dd1a9" />
-                </node>
+                </node> -->
 
                 <!-- Yuanti 
                 <node id="Progression">

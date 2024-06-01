@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="9" build="328" lslib_meta="v1,bswap_guids" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="h996611a6g19ecg46bcgbf0fg3c714e75483d" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h98f492d8g393bg48adg9c7fgced38b9416c3" version="2" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="fce7c35c-b4e1-47bd-aa50-9ef9a39ed932" />
+					<attribute id="Name" type="LSString" value="BGW_DominateNecklace" />
+					<attribute id="ParentTemplateId" type="FixedString" value="d6b70158-3493-4c76-9f8d-e410e2e36cec" />
+					<attribute id="Stats" type="FixedString" value="BGW_DominateNecklace" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<children>
+						<node id="Tags">
+							<children>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="983087c8-c9d3-4a87-bc69-65f9329666c8" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="h88756d94g5cfbg42f2g9851g627b64419034" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h1995f182g101cg4a74g9cddgdbf037d09f79" version="3" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="bc6f16b5-e0f4-4dbe-822f-5e2deba9d105" />
+					<attribute id="Name" type="LSString" value="BGW_WitchersSilverSword" />
+					<attribute id="ParentTemplateId" type="FixedString" value="e3b2adb6-7493-466e-9c65-4281fb74e83f" />
+					<attribute id="Stats" type="FixedString" value="BGW_WitchersSilverSword" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="VisualTemplate" type="FixedString" value="5f9832fa-7633-5e68-b69c-0156eda17471" />
+					<children>
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="MAG_GITHYANKI_PSYCHIC_DAMAGE" />
+								</node>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="MAG_PLANE_SHIFTER_SLAYER_BLESS" />
+								</node>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="MAG_RADIANT_RADIANCE_WEAPON" />
+								</node>
+							</children>
+						</node>
+						<node id="Tags">
+							<children>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="983087c8-c9d3-4a87-bc69-65f9329666c8" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="h7df25785g34f5g4076gbfccg9ab50ba4d8de" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h393cc8f0g2393g4b05g9bc9g871f95dbfb74" version="1" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="ed1f7f31-7cd8-4ace-8f7c-2d7e664027dc" />
+					<attribute id="Name" type="LSString" value="BGW_MonsterSlayerLongsword" />
+					<attribute id="ParentTemplateId" type="FixedString" value="d4cb8410-096a-480e-88fb-7224c6b654f6" />
+					<attribute id="Stats" type="FixedString" value="BGW_MonsterSlayerLongsword" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="VisualTemplate" type="FixedString" value="98bf6432-b2e0-b163-cfe4-7c6d838e3d62" />
+				</node>
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="hf4f5ceb3gba8bg4bdbga757ge44aaecc05d4" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h35bdfaefg7245g4795g92c2g6cc7cd296c91" version="1" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="fde7684a-3a46-482f-be17-4b12e85c657d" />
+					<attribute id="Name" type="LSString" value="BGW_Cunning_HandCrossbow_1" />
+					<attribute id="ParentTemplateId" type="FixedString" value="d2f396c2-9b1b-4eea-bf21-2f25934f092d" />
+					<attribute id="Stats" type="FixedString" value="BGW_Cunning_HandCrossbow_1" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="VisualTemplate" type="FixedString" value="79e935b4-9dca-7fdc-bc55-ba7e846909f9" />
+				</node>
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="ha13d3a2egf991g4c03gb35cg0d25a840c5d0" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h6d586c1cg863bg4c8egb470g10b6012cbc04" version="1" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="58ee0165-91ef-45d7-a495-a53e4daf7dfd" />
+					<attribute id="Name" type="LSString" value="BGW_Dimeritium_Longsword" />
+					<attribute id="ParentTemplateId" type="FixedString" value="e3b2adb6-7493-466e-9c65-4281fb74e83f" />
+					<attribute id="Stats" type="FixedString" value="BGW_Dimeritium_Longsword" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="VisualTemplate" type="FixedString" value="56d90029-423f-e537-a8e2-bcc797d7cdc7" />
+				</node>
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="h884099fag346fg4b08ga0cbg62bf9b62929a" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h791d7252g22e8g4a61gaf65g9a2324ccdf6e" version="1" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="e7c81efe-d4df-4035-a4e8-688b09f0b976" />
+					<attribute id="Name" type="LSString" value="BGW_SeluneMight" />
+					<attribute id="ParentTemplateId" type="FixedString" value="5af1725a-45f5-4f56-924a-76cd1dc1e50b" />
+					<attribute id="Stats" type="FixedString" value="BGW_SeluneMight" />
+					<attribute id="Type" type="FixedString" value="item" />
+				</node>
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="h62a85c9cge2e1g4ebbgbad6gb15829f2a158" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h35d15d21g4561g437fga568gc574395eac24" version="1" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="610a4e4f-ee16-4d10-91e6-6c5bacc4d647" />
+					<attribute id="Name" type="LSString" value="BGW_LegGithPlate" />
+					<attribute id="ParentTemplateId" type="FixedString" value="38c63f49-3c50-46d0-90d3-68b247542c36" />
+					<attribute id="Stats" type="FixedString" value="BGW_LegGithPlate" />
+					<attribute id="Type" type="FixedString" value="item" />
+				</node>
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="ha3a045e2g7331g4e9dgaa77gc2939bf34fd7" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="hb0a3666age87eg4bfcgacbcg2e21ae506127" version="1" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="1b63819a-c653-4988-b184-ba171abad870" />
+					<attribute id="Name" type="LSString" value="BGW_KarlachsDrip" />
+					<attribute id="ParentTemplateId" type="FixedString" value="2e3a2651-18ce-44b0-b7bd-3e2565bf666c" />
+					<attribute id="VisualTemplate" type="FixedString" value="eec213cc-3484-4555-8ebe-bea181ecdb42" />
+					<attribute id="Stats" type="FixedString" value="BGW_KarlachsDrip" />
+					<attribute id="Type" type="FixedString" value="item" />
+				</node>
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="hd53da196g0bccg4587gbc30g8a6c609d0322" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h9ecf974fga795g4e77gbab5gfa74574196c5" version="1" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="480bf864-0ee7-41a4-885a-8b8de5f40b67" />
+					<attribute id="Name" type="LSString" value="BGW_WitchersHandCrossbow" />
+					<attribute id="ParentTemplateId" type="FixedString" value="d2f396c2-9b1b-4eea-bf21-2f25934f092d" />
+					<attribute id="Stats" type="FixedString" value="BGW_WitchersHandCrossbow" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="VisualTemplate" type="FixedString" value="bdff6721-7995-98d1-5b61-0152387e6d2f" />
+					<children>
+						<node id="Tags">
+							<children>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="983087c8-c9d3-4a87-bc69-65f9329666c8" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

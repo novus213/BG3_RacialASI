@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+  <version major="4" minor="0" revision="9" build="328" />
+  <region id="SpellLists">
+    <node id="root">
+      <children>
+        <node id="SpellList"> SIGNS 3
+                    <attribute id="Comment" type="LSString" value="Witcher Signs List" />
+                    <attribute id="Spells" type="LSString" value="Shout_BGW_Quen_3;Shout_BGW_QuenAlt_3;Shout_BGW_Yrden_3;Shout_BGW_YrdenAlt_3;Target_BGW_Axii_3;Target_BGW_AxiiAlt_3;Zone_BGW_Igni_3;Zone_BGW_IgniAlt_3;Zone_BGW_Aard_3;Zone_BGW_AardAlt_3" />
+                    <attribute id="UUID" type="guid" value="e9c04dba-2ca0-41c5-93d1-b1fc68074fcd" />
+                </node>
+        <node id="SpellList"> HELIO
+                    <attribute id="Comment" type="LSString" value="Witcher Heliotrope" />
+                    <attribute id="Spells" type="LSString" value="" />
+                    <attribute id="UUID" type="guid" value="b80fa434-fbea-4ce8-bdf9-e39cc38a2da9" />
+                </node>
+        <node id="SpellList"> ALT HELIO
+                    <attribute id="Comment" type="LSString" value="Witcher Improved Heliotrope" />
+                    <attribute id="Spells" type="LSString" value="" />
+                    <attribute id="UUID" type="guid" value="824b5d35-6227-4783-831b-33b86b5bde68" />
+                </node>
+      </children>
+    </node>
+  </region>
+</save>

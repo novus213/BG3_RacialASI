@@ -30,9 +30,11 @@ local optionActions = {
                         Target = "aa2257a9-1779-4d8b-be65-8a08eede07fa",
                         FileType = "Progression",
                         Type = "Selectors",
-                        Strings = { "AddSpells(5fdb4bd0-8122-4ce6-9191-fffc951cf3a3,,,,AlwaysPrepared,UntilRest)" } --  <attribute id="Selectors" type="LSString" value="AddSpells(5fdb4bd0-8122-4ce6-9191-fffc951cf3a3,,,,AlwaysPrepared,UntilRest)"/>
+                        Guid = "5fdb4bd0-8122-4ce6-9191-fffc951cf3a3",                      -- Used in All
+                        SelectorId = "BardCantrip",     -- Reference to entry in Defaultvalues to populate default selections
+                        PrepareType = "AlwaysPrepared", -- Used in SelectSpells, AddSpells. Values: Default, AlwaysPrepared
+                        CooldownType = "UntilRest",     -- Used in SelectSpells, AddSpells. Values: Default, UntilRest
                     }
-                }
             }
         }
     },
@@ -197,6 +199,7 @@ local function callApiAction(action, payload)
     local apiActions = {
         InsertPassives = Mods.SubclassCompatibilityFramework.Api.InsertPassives,
         RemovePassives = Mods.SubclassCompatibilityFramework.Api.RemovePassives,
+        InsertSelectors = Mods.SubclassCompatibilityFramework.Api.InsertSelectors,
         SetBoolean = Mods.SubclassCompatibilityFramework.Api.SetBoolean
     }
 
