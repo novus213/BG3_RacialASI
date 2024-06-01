@@ -1,4 +1,6 @@
 RequireFiles("Shared/Utils/", {
     "Message",
-    "ModVars"
+    "ModVars",
+    "File",
+    "Log",
 })

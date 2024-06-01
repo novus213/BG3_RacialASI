@@ -75,10 +75,18 @@ end
 
 function CONFIG:init()
     Files.ClearLogFile()
+    BasicPrint(" ----------------------------- ")
+    BasicPrint(" ----------------------------- ")
+    BasicPrint(" ----------------------------- ")
+    BasicPrint(" ----------------------------- ")
     BasicPrint(
         string.format("Config.Init() - %s mod by Fenrules VERSION : %s starting up... ", MOD_INFO.MOD_NAME,
         MOD_INFO.VERSION),
         "INFO", nil, nil, true)
+    BasicPrint(" ----------------------------- ")
+    BasicPrint(" ----------------------------- ")
+    BasicPrint(" ----------------------------- ")
+    BasicPrint(" ----------------------------- ")
 
     -- Load the config from the file or create a new one if it doesn't exist
     self:load()
