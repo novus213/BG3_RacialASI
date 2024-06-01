@@ -76,7 +76,7 @@ end
 function CONFIG:init()
     Files.ClearLogFile()
     BasicPrint(
-        string.format("Config.Init() - %s mod by FallenStar VERSION : %s starting up... ", MOD_INFO.MOD_NAME,
+        string.format("Config.Init() - %s mod by Fenrules VERSION : %s starting up... ", MOD_INFO.MOD_NAME,
         MOD_INFO.VERSION),
         "INFO", nil, nil, true)
 
