@@ -226,7 +226,7 @@ end
 local function insertBonuses(mod, bonusType)
     if mod.modGuid and Ext.Mod.IsModLoaded(mod.modGuid) then
         local payload = createPayload(mod, bonusType)
-        if (bonusType == "floating_111" || bonusType == "floating_11" || bonusType == "floating_1"|| bonusType == "floating") then
+        if (bonusType == "floating_111" or bonusType == "floating_11" or bonusType == "floating_1" or bonusType == "floating") then
             Mods.SubclassCompatibilityFramework.Api.InsertSelectors({ payload })
         else
             Mods.SubclassCompatibilityFramework.Api.InsertBoosts({ payload })
