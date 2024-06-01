@@ -259,7 +259,7 @@ local function FantasticalOnStatsLoaded()
         totalPayloads = totalPayloads + count
     end
 
-    print("[PHB_Progression] Amount of Fantastical Mods reverted to original values: " .. totalPayloads)
+    print("[RacialASI_Progression] Amount of Fantastical Mods reverted to original values: " .. totalPayloads)
 end
 
 -- Check if the mod is loaded and subscribe to the stats loaded event

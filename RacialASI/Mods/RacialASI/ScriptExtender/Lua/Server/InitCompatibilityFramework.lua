@@ -167,37 +167,37 @@ local function writing()
     local json = Ext.Json.Stringify(defaultSettings, true) -- Convert table to JSON string
     local formatted_json = formatting(json) -- Format the JSON string
 
-    local success, errorMessage = pcall(Ext.IO.SaveFile, "PHB_Progression.json", formatted_json)
+    local success, errorMessage = pcall(Ext.IO.SaveFile, "RacialASI_Progression.json", formatted_json)
     if success then
-        log("[PHB_Progression] PHB_Progression.json saved successfully.")
+        BasicPrint("[RacialASI_Progression] RacialASI_Progression.json saved successfully.","INFO", nil, nil, true)
     else
-        log(string.format("[PHB_Progression] Failed to save PHB_Progression.json: %s", errorMessage))
+        BasicError(string.format("[RacialASI_Progression] Failed to save RacialASI_Progression.json: %s", errorMessage))
     end
 end
 
 local function reading()
-    local status, file_contents = pcall(Ext.IO.LoadFile, "PHB_Progression.json")
+    local status, file_contents = pcall(Ext.IO.LoadFile, "RacialASI_Progression.json")
 
     if not status then
-        log(string.format("[PHB_Progression] Failed to load PHB_Progression.json: %s", file_contents)) -- file_contents will contain the error message
+        BasicError(string.format("[RacialASI_Progression] Failed to load RacialASI_Progression.json: %s", file_contents)) -- file_contents will contain the error message
         return nil
     end
 
     if not file_contents then
-        log("[PHB_Progression] PHB_Progression.json not found. Creating configuration at Mods Folder")
+        BasicError("[RacialASI_Progression] RacialASI_Progression.json not found. Creating configuration at Mods Folder")
         writing() -- Create default configuration
 
         -- Attempt to load again after writing default
-        status, file_contents = pcall(Ext.IO.LoadFile, "PHB_Progression.json")
+        status, file_contents = pcall(Ext.IO.LoadFile, "RacialASI_Progression.json")
         if not status or not file_contents then
-            log("[PHB_Progression] ERROR: Failed to load config file even after creating default.")
+            BasicWarning("[RacialASI_Progression] ERROR: Failed to load config file even after creating default.")
             return nil
         end
     end
 
     local success, parsed_data = pcall(Ext.Json.Parse, file_contents)
     if not success then
-        log(string.format("[PHB_Progression] ERROR: Failed to parse config file. Invalid JSON format: %s", parsed_data)) -- parsed_data will contain the error message
+        BasicError(string.format("[RacialASI_Progression] ERROR: Failed to parse config file. Invalid JSON format: %s", parsed_data)) -- parsed_data will contain the error message
         return nil
     end
 
@@ -207,7 +207,7 @@ end
 --Maybe this is unncessary? Look at CF Github
 local function callApiAction(action, payload)
     if not (Mods.SubclassCompatibilityFramework and Mods.SubclassCompatibilityFramework.Api) then
-        error("[PHB_Progression] ERROR: Subclass Compatibility Framework mod or its API is not available.")
+        BasicError("[RacialASI_Progression] ERROR: Subclass Compatibility Framework mod or its API is not available.")
     end
 
     local apiActions = {
@@ -222,7 +222,7 @@ local function callApiAction(action, payload)
     if apiFunction then
         return apiFunction(payload)
     else
-        error("[PHB_Progression] ERROR: Invalid API action: " .. action)
+        BasicError("[RacialASI_Progression] ERROR: Invalid API action: " .. action)
     end
 end
 
@@ -233,7 +233,7 @@ end
 local function loadConfiguration()
     local config = reading()
     if not config then
-        log("[PHB_Progression] ERROR: Failed to load configuration file")
+        BasicError("[RacialASI_Progression] ERROR: Failed to load configuration file")
     end
     return config
 end
@@ -241,13 +241,13 @@ end
 local function handlePayload(action, payload)
     local success, result = pcall(callApiAction, action, { payload = payload })
     if not success then
-        log(string.format("[PHB_Progression] ERROR in %s action: %s", action, result))
+        BasicError(string.format("[RacialASI_Progression] ERROR in %s action: %s", action, result))
     end
 end
 
 local function processOption(optionName, optionValue, actionConfigs)
     if optionValue.Enabled then
-        log(string.format("[PHB_Progression] %s is enabled.", optionName))
+        BasicWarning(string.format("[RacialASI_Progression] %s is enabled.", optionName))
 
         for _, actionConfig in ipairs(actionConfigs) do
             local action = actionConfig.action
@@ -257,7 +257,7 @@ local function processOption(optionName, optionValue, actionConfigs)
                 if payload.Target then
                     handlePayload(action, payload)
                 else
-                    log(string.format("[PHB_Progression] ERROR: Invalid target UUID for payload in '%s'.", optionName))
+                    BasicError(string.format("[RacialASI_Progression] ERROR: Invalid target UUID for payload in '%s'.", optionName))
                 end
             end
         end
@@ -269,7 +269,7 @@ local function OnStatsLoaded()
         return
     end
 
-    log("[PHB_Progression] OnStatsLoaded function triggered, loading config")
+    BasicPrint("[RacialASI_Progression] OnStatsLoaded function triggered, loading config","INFO", nil, nil, true)
 
     local config = loadConfiguration()
     if not config then
@@ -283,7 +283,7 @@ local function OnStatsLoaded()
         if actionConfigs then
             processOption(optionName, optionValue, actionConfigs.actions)
         else
-            log(string.format("[PHB_Progression] ERROR: No action configuration found for %s.", optionName))
+            BasicError(string.format("[RacialASI_Progression] ERROR: No action configuration found for %s.", optionName))
         end
     end
 end

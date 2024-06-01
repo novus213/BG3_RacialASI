@@ -74,7 +74,7 @@ local function CustomRacesOnStatsLoaded()
 
     -- Log the results
     if #insertedModNames > 0 then 
-        Ext.Utils.Print("[PHB_Progression] Ability bonuses inserted to " .. 
+        Ext.Utils.Print("[RacialASI_Progression] Ability bonuses inserted to " .. 
                  #insertedModNames .. " mods: " .. 
                  table.concat(insertedModNames, ", "))
     end
@@ -114,5 +114,5 @@ end
 
 if Ext.Mod.IsModLoaded("67fbbd53-7c7d-4cfa-9409-6d737b4d92a9") or Ext.Mod.IsModLoaded("4806bd2a-929b-406e-b1d4-2e0e9cc23bb2") then
     Ext.Events.StatsLoaded:Subscribe(TripsAasimar_OnStatsLoaded)
-    Ext.Utils.Print("[PHB_Progression] Trips_Aasimar detected, reverting floating bonuses.")
+    Ext.Utils.Print("[RacialASI_Progression] Trips_Aasimar detected, reverting floating bonuses.")
 end

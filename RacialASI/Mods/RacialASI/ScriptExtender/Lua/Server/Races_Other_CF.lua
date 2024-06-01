@@ -298,7 +298,7 @@ local function CustomRacesOnStatsLoaded()
 
     -- Log the results
     if #insertedModNames > 0 then 
-        Ext.Utils.Print("[PHB_Progression] Ability bonuses inserted to " .. 
+        Ext.Utils.Print("[RacialASI_Progression] Ability bonuses inserted to " .. 
                  #insertedModNames .. " mods: " .. 
                  table.concat(insertedModNames, ", "))
     end

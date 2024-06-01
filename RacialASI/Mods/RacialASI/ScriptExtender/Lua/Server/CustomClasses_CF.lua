@@ -127,7 +127,7 @@ local function CustomClassesOnStatsLoaded()
 
     if #removedClasses > 0 then  -- Check if any selectors were removed
         local classList = table.concat(removedClasses, ", ") -- Create comma-separated list
-        Ext.Utils.Print(string.format("[PHB_Progression] Selectors removed from %d mods: %s", #removedClasses, classList))
+        Ext.Utils.Print(string.format("[RacialASI_Progression] Selectors removed from %d mods: %s", #removedClasses, classList))
     end
 end
 
