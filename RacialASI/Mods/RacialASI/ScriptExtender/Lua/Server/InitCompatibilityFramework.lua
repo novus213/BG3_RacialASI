@@ -3,6 +3,18 @@ local function start()
     if not CONFIG then CONFIG = InitConfig() end
 end
 
+Ext.Osiris.RegisterListener("LevelGameplayStarted", 2, "after", start)
+
+Ext.Events.ResetCompleted:Subscribe(start)
+
+---Should've done this from the start
+Ext.Events.GameStateChanged:Subscribe(function(e)
+    if e.FromState == "Running" and e.ToState == "Save" then
+        SyncModVariables()
+        SyncUserVariables()
+    end
+end)
+
 -- Debug toggle
 local debugMode = true
 
