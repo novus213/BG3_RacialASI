@@ -3,12 +3,6 @@ local fantasticalTable = {
     FantasticalCreatures = {
         FloatingSources = {
             {
-                Name = "Fantastical Variant Human",
-                modGuid = "5e53f556-ba7a-46fd-9dee-ba1ff456d8db",
-                Source = "Player's Handbook (2014)",
-                UUID = "0b88cad4-c5d0-4cde-a661-a8ede3f7d113"
-            },
-            {
                 Name = "Fantastical Astral Elf",
                 modGuid = "e7071309-78a8-4fad-949b-d4dd326dd39b",
                 Source = "Spelljammer: Adventures in Space",

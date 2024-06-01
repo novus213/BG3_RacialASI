@@ -42,9 +42,9 @@ local RaceModsFloating_11 = { -- bugg a tester
 
 local RaceModsFloating_1 = {
     {
-        Race = "Wight",
-        modGuid = "a21579fc-b7d7-4295-bf5c-d2111be3f13a",
-        UUID = "677de788-81da-4f2f-b0d1-75c6aa9a1c35" -- SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,1);
+        Race = "Undead (Ghastly Ghouls) Wight",
+        modGuid = "f3d4e722-e576-43ce-a585-cfffcfcbcf40",
+        UUID = "677de788-81da-4f2f-b0d1-75c6aa9a1c35", -- SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,1);
     },
     {
         Race = "Whispers of the Fey - Changelings", -- SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,1)
@@ -231,9 +231,9 @@ local function createPayload(mod, bonusType)
             payload.Function = "SelectAbilityBonus"
             payload.Params = {
                 Guid = AbilityList_UUID,
-                Amount = "1", -- 2 changed to 1
+                Amount = "2",
                 BonusType = "AbilityBonus",
-                Amounts = { "1", "1" }
+                Amounts = { "1", "1" } -- SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,1,1)
             }
         elseif bonusType == "floating_111" then
                 payload.Function = "SelectAbilityBonus"
