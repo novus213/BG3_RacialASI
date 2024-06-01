@@ -19,6 +19,7 @@ local defaultSettings = {
 }
 
 -- Define Actions and Payloads
+
 local optionActions = {
     AddSelectors_Gnome = {
         actions = {
@@ -29,36 +30,11 @@ local optionActions = {
                         modGuid = "1ebf4a1c-01d4-41ed-8aa1-5b3975c6d019",
                         Target = "aa2257a9-1779-4d8b-be65-8a08eede07fa",
                         FileType = "Progression",
-                        Type = "Selectors",
+                        Function = "AddSpells",
                         Params = {
                             Guid = "5fdb4bd0-8122-4ce6-9191-fffc951cf3a3",                      -- Used in All
                             PrepareType = "AlwaysPrepared", -- Used in SelectSpells, AddSpells. Values: Default, AlwaysPrepared
                             CooldownType = "UntilRest"     -- Used in SelectSpells, AddSpells. Values: Default, UntilRest
-                        }
-                    },
-                    {
-                        modGuid = "1ebf4a1c-01d4-41ed-8aa1-5b3975c6d019",
-                        Target = "2d1c7b43-5e2e-44ca-9049-70bd60610817",
-                        FileType = "Progression",
-                        Level = "3",
-                        Type = "Selectors",
-                        Params = {
-                            Guid = "496ebaab-ac47-48c6-a19a-0b19a0acb7bc",                      -- Used in All
-                            PrepareType = "AlwaysPrepared", -- Used in SelectSpells, AddSpells. Values: Default, AlwaysPrepared
-                            CooldownType = "UntilRest"    -- Used in SelectSpells, AddSpells. Values: Default, UntilRest
-                        }
-                    },
-                    {
-                        modGuid = "1ebf4a1c-01d4-41ed-8aa1-5b3975c6d019",
-                        Target = "2d1c7b43-5e2e-44ca-9049-70bd60610817",
-                        FileType = "Progression",
-                        Level = "5",
-                        Type = "Selectors",
-                        Params = {
-                            Guid = "e57298c0-12a5-4988-891f-8d9a52d5a38f",                      -- Used in All
-                            PrepareType = "AlwaysPrepared", -- Used in SelectSpells, AddSpells. Values: Default, AlwaysPrepared
-                            CooldownType = "UntilRest",     -- Used in SelectSpells, AddSpells. Values: Default, UntilRest
-                            BonusType = "Intelligence"
                         }
                     }
                 }
@@ -92,13 +68,19 @@ local optionActions = {
                         Strings = {"LightSensitivity"}
                     },
                     {
-                        modGuid = "1ebf4a1c-01d4-41ed-8aa1-5b3975c6d019", --xxx
+                        modGuid = "1ebf4a1c-01d4-41ed-8aa1-5b3975c6d019", -- Deep Gnome Osi.AddExplorationExperience(GetHostCharacter(), 9000000)
                         Target = "938b6f72-18a6-4af0-924b-5292251d32bf",
                         FileType = "Progression",
                         Type = "PassivesAdded",
                         Strings = {"MagicResistance", "SunlightSensitivity"}
-                    }
-                    
+                    },
+                    {
+                        modGuid = "1ebf4a1c-01d4-41ed-8aa1-5b3975c6d019", -- sunstone Gnome
+                        Target = "3d7c0866-0357-43e1-ace0-b9c7f8bd90be",
+                        FileType = "Progression",
+                        Type = "PassivesAdded",
+                        Strings = {"MagicResistance", "SunlightSensitivity"}
+                    }   
                 }
             }
         }

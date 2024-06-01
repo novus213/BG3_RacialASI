@@ -1,3 +1,4 @@
+Ext.Require("Shared/_Init.lua")
 Ext.Require("InitCompatibilityFramework.lua")
 Ext.Require("Fantastical_CF.lua")
 Ext.Require("Trips_Aasimar_SE_CF.lua")

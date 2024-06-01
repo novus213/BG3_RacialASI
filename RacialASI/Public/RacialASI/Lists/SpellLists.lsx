@@ -18,7 +18,7 @@
 
                 <node id="SpellList">
                     <attribute id="Comment" type="LSString" value="Cadeau du Svirfneblin LV5"/>
-                    <attribute id="Spells" type="LSString" value="Target_Nondetection"/>
+                    <attribute id="Spells" type="LSString" value="Shout_Nondetection"/>
                     <attribute id="UUID" type="guid" value="e57298c0-12a5-4988-891f-8d9a52d5a38f"/>
                 </node>
                 <node id="SpellList">

@@ -390,7 +390,7 @@
                     <attribute id="UUID" type="guid" value="aa2257a9-1779-4d8b-be65-8a08eede07fa"/>
                 </node> -->
 
-				<!-- Deep Gnome 
+				<!-- Deep Gnome
 				<node id="Progression">
                     <attribute id="Boosts" type="LSString" value="Ability(Dexterity,1)"/>
                     <attribute id="Level" type="uint8" value="1"/>
@@ -399,7 +399,7 @@
                     <attribute id="ProgressionType" type="uint8" value="2"/>
                     <attribute id="TableUUID" type="guid" value="0f6d9f53-a2d0-422b-beea-a2fdfd88628a"/>
                     <attribute id="UUID" type="guid" value="938b6f72-18a6-4af0-924b-5292251d32bf"/>
-                </node> -->
+                </node>  -->
 
                 <!-- Deep Gnome LVL 3 
                 <node id="Progression">
@@ -411,7 +411,7 @@
                     <attribute id="UUID" type="guid" value="2d1c7b43-5e2e-44ca-9049-70bd60610817"/>
                 </node> -->
 
-                 <!-- Deep Gnome LVL 5
+                 <!-- Deep Gnome LVL 5 -->
                 <node id="Progression">
                     <attribute id="Level" type="uint8" value="5"/>
                     <attribute id="Name" type="LSString" value="DeepGnome"/>
@@ -419,7 +419,7 @@
                     <attribute id="Selectors" type="LSString" value="AddSpells(e57298c0-12a5-4988-891f-8d9a52d5a38f,,Intelligence,,AlwaysPrepared,UntilRest)"/>
                     <attribute id="TableUUID" type="guid" value="0f6d9f53-a2d0-422b-beea-a2fdfd88628a"/>
                     <attribute id="UUID" type="guid" value="a0900dc3-dcbe-4c30-9705-35f050bf98ee"/>
-                </node> -->
+                </node>
 				
 				<!-- Forest Gnome 
 				<node id="Progression">
