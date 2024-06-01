@@ -1,3 +1,8 @@
+-- Launch
+local function start()
+    if not CONFIG then CONFIG = InitConfig() end
+end
+
 -- Debug toggle
 local debugMode = true
 
