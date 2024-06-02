@@ -73,8 +73,32 @@ function CONFIG_ASI:checkStructure()
 end
 
 function LoadconfigASI()
-   return CONFIG_ASI:load()
+    CONFIG_ASI.__configChanged = true
+    CONFIG_ASI:save()
+    return CONFIG_ASI:load()
 end
+
+function CONFIG_ASI:upgrade()
+    self.__configChanged = true
+    self:save()
+end
+
+function CONFIG_ASI:init()
+    Files.ClearLogFile()
+    -- Load the config from the file or create a new one if it doesn't exist
+    self:load()
+
+    -- Check the Config Structure and correct it if needed
+    self:checkStructure()
+
+    if CONFIG.data.VERSION ~= MOD_INFO.VERSION then
+        BasicWarning("Config.Init() - RacialASI.json - Detected version mismatch, upgrading file...")
+        self:upgrade()
+    else
+        BasicPrint("Config.Init() - RacialASI.json - VERSION check passed")
+    end
+end
+
 
 ---@param dataASI string table of default options
 function InitConfigASI(dataASI)
@@ -98,6 +122,6 @@ function InitConfigASI(dataASI)
     else
         return
     end
-    CONFIG:init()
+    CONFIG_ASI:init()
     return CONFIG_ASI
 end

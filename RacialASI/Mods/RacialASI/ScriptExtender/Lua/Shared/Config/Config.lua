@@ -36,6 +36,7 @@ function CONFIG:load()
     if self.__configChanged == true then
         self:save()
     end
+    
 end
 
 function CONFIG:save()
@@ -144,4 +145,8 @@ function InitConfig()
     end
     CONFIG:init()
     return CONFIG
+end
+
+function LoadconfigASI()
+    return JSON.LuaTableFromFile(CONFIG.path)
 end
