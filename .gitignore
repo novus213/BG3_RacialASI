@@ -2,9 +2,9 @@ RacialASI.zip
 RacialASI_Patch_DivineSoulOnly.zip
 RacialASI_Patch_DivineSoulUndeadWarlock.zip
 RacialASI_3.0.zip
-Server/_Init.lua
-Server/ASTRLTieflings.lua
-Server/CustomClasses.lua
-Server/CustomRaces.lua
-Server/FantasticalMultiverse.lua
-Server/WotDAasimaSE.lua
+Server_Origin/_Init.lua
+Server_Origin/ASTRLTieflings.lua
+Server_Origin/CustomClasses.lua
+Server_Origin/CustomRaces.lua
+Server_Origin/FantasticalMultiverse.lua
+Server_Origin/WotDAasimaSE.lua
