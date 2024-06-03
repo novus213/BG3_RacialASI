@@ -79,13 +79,11 @@ data "Boosts" "DamageReduction(Necrotic,Threshold,1000)"
 data "StatusGroups" "SG_RemoveOnRespec"
 data "Passives" "NECROTIC_REGENERATION_TECHNICAL"
 
-
-new entry "PATHOFUNDEATH_G_FORTITUDE_DISABLED"
+new entry "CANNOT_WITH_HEAL_POTION"
 type "StatusData"
 data "StatusType" "BOOST"
 using "UNDEAD_FORTITUDE_DISABLED"
 data "RemoveEvents" "OnHeal"
-
 
 new entry "NECROTIC_REDUCTION_Interrupt"
 type "InterruptData"
