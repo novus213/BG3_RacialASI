@@ -69,6 +69,7 @@ function CONFIG:checkStructure()
 end
 
 function CONFIG:upgrade()
+    self.data["Options"] = MOD_INFO.DEFAULT_CONFIG["Options"]
     self.data["VERSION"] = MOD_INFO.VERSION
     self.__configChanged = true
     self:save()
@@ -108,8 +109,8 @@ function CONFIG:init()
     -- Check the Config Structure and correct it if needed
     self:checkStructure()
 
-    if self.data.VERSION ~= MOD_INFO.VERSION then
-        BasicWarning("Config.Init() - Detected version mismatch, upgrading file...")
+    if self.data.VERSION ~= MOD_INFO.VERSION or self.data["Options"] ~= MOD_INFO.DEFAULT_CONFIG["Options"] then
+        BasicWarning("Config.Init() - Detected version or Options names mismatch, upgrading file...")
         self:upgrade()
     else
         BasicPrint("Config.Init() - VERSION check passed")
