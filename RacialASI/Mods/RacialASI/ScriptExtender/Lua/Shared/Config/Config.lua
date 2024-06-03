@@ -109,7 +109,7 @@ function CONFIG:init()
     -- Check the Config Structure and correct it if needed
     self:checkStructure()
 
-    if self.data.VERSION ~= MOD_INFO.VERSION or self.data["Options"] ~= MOD_INFO.DEFAULT_CONFIG["Options"] then
+    if self.data.VERSION ~= MOD_INFO.VERSION then -- or self.data["Options"] ~= MOD_INFO.DEFAULT_CONFIG["Options"]
         BasicWarning("Config.Init() - Detected version or Options names mismatch, upgrading file...")
         self:upgrade()
     else
