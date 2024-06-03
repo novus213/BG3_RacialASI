@@ -2,4 +2,11 @@
 <contentList>
   <content contentuid="h151054dfg3492g4f2dg89bfg34c7989bb135" version="1">Tinker’s tools Gnome</content>
   <content contentuid="hbe38632eg25f5g4949gb3f3ga7ae6b343737" version="1">You have proficiency with artisan’s tools (tinker’s tools), When you create a device, choose one of the following options : Music Box, Shovel</content>
+  <content contentuid="7342900a-1e03-4609-a77e-92b5089efabe" version="1">Undeath</content>
+	<content contentuid="6f038566-7c49-4fd4-a8b2-f9b670c793f3" version="1">You died, but it didn't stick. Now, you walk amongst the living once more as a creature reanimated by negative energy.&lt;br&gt;&lt;br&gt; Your undead nature means many spells and effects interact with you differently, or not at all. You have &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on Death &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;, and you are &lt;LSTag Tooltip="Immune"&gt;Immune&lt;/LSTag&gt; to Disease and Poison, and are healed by Necrotic damage. Once per long rest, you immediately gain health when downed.</content>
+	<content contentuid="8044db69-d33f-4f59-8bbf-791ad0bd2f28" version="1">Undying Fervor</content>
+	<content contentuid="a63dce7f-a907-4a57-88de-dd05fa525363" version="1">If you reach 0 &lt;LSTag Tooltip="HitPoints"&gt;hit points&lt;/LSTag&gt;, you regain [1] instead of becoming &lt;LSTag Tooltip="Downed"&gt;Downed&lt;/LSTag&gt;. Refreshes after a long rest.</content>
+	<content contentuid="67eb642a-5324-4a10-93a8-db09a7ff4736" version="1">If you reach 0 &lt;LSTag Tooltip="HitPoints"&gt;hit points&lt;/LSTag&gt;, you regain [1] instead of becoming &lt;LSTag Tooltip="Downed"&gt;Downed&lt;/LSTag&gt;. Once per short rest.</content>
+	<content contentuid="16cc763a-0f25-4c43-9057-5dff44817b55" version="1">Greater Undeath</content>
+	<content contentuid="71c2c2f2-89ef-46b1-b3ad-50445f2c4704" version="1">Your undeath has become a font of rejuvenation.&lt;br&gt;&lt;br&gt;You are immune to Disease, and you have &lt;LSTag Tooltip="Resistant"&gt;resistance&lt;/LSTag&gt; to Cold damage and Necrotic damage. Your Undying Fervor feature now replenishes after a short rest.</content>
 </contentList>

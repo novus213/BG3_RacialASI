@@ -61,7 +61,7 @@
 				{
 					"Action": "Insert",
 					"Type": "Boosts",
-					"Strings": ["Ability(Dexterity,2)","Ability(Wisdom,1)"]
+					"Strings": ["Ability(Dexterity,2)","Ability(Wisdom,1)","ProficiencyBonus(Skill,Stealth)"]
 				}
             ]
         },

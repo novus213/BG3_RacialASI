@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="9" build="319"/>
+    <region id="ProgressionDescriptions">
+        <node id="root">
+            <children>
+				<node id="ProgressionDescription">
+                    <attribute id="Description" type="TranslatedString" value="6f038566-7c49-4fd4-a8b2-f9b670c793f3" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" value="7342900a-1e03-4609-a77e-92b5089efabe" version="1"/>
+                    <attribute id="ExactMatch" type="FixedString" value=""/>
+                    <attribute id="PassivePrototype" type="FixedString" value="Sailor_Undeath"/>
+                    <attribute id="ProgressionId" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                    <attribute id="ProgressionTableId" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                    <attribute id="Type" type="FixedString" value="RollBonus"/>
+                    <attribute id="UUID" type="guid" value="439ed3cf-bd9b-4e13-8722-795620d27474"/>
+                </node>
+			</children>
+        </node>
+    </region>
+</save>

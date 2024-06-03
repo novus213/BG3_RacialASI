@@ -5,11 +5,12 @@ local racialASIConfig = {
     MOD_ENABLED = 1,
     DEBUG_MESSAGES = 3,
     Options = {
-        LightSensitivity_UnderdarkRaces = { Enabled = true },
-        LightSensitivity_UndeadGhastlyGhouls = { Enabled = true },
-        RemoveHumanPassives = { Enabled = true },
-        RemoveHalfElfPassives = { Enabled = true },
-        AddSelectors_Gnome = { Enabled = true }
+        AddUnderdarkRaces_LightSensitivity_Passives = { Enabled = true },
+        AddUndeadGhastlyGhouls_LightSensitivity_Passives = { Enabled = true },
+        RemoveHuman_HumanMilitia_HumanVersatility_Passives = { Enabled = true },
+        RemoveHalfElf_HumanMilitia_Passives = { Enabled = true },
+        AddGnome_Tinkertools = { Enabled = true },
+        AddHalfElfDrow_Drow_DrowWeaponTraining_Passives = { Enabled = true }
     },
 }
 
