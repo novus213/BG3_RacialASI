@@ -148,5 +148,6 @@ function InitConfig()
 end
 
 function LoadconfigASI()
+    BasicPrint("Config.load() - RacialASI.json - Loading...")
     return JSON.LuaTableFromFile(CONFIG.path)
 end

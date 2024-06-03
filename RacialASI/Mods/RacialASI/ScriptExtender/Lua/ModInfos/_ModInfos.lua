@@ -7,8 +7,8 @@ local racialASIConfig = {
     Options = {
         LightSensitivity_UnderdarkRaces = { Enabled = true },
         LightSensitivity_UndeadGhastlyGhouls = { Enabled = true },
-        RemoveHumanPassives = { Enabled = false },
-        RemoveHalfElfPassives = { Enabled = false },
+        RemoveHumanPassives = { Enabled = true },
+        RemoveHalfElfPassives = { Enabled = true },
         AddSelectors_Gnome = { Enabled = true }
     },
 }
