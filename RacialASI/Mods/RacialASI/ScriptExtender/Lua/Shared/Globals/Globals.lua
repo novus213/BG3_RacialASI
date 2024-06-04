@@ -14,7 +14,6 @@ NULLUUID="00000000-0000-0000-0000-000000000000"
 Paths = {
     config_json_file_path = "config.json",
     logPath = "log.txt",
-    RacialASI_json_file_path = "RacialASI.json",
 }
 
 --For concat function

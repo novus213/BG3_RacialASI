@@ -69,7 +69,7 @@ function CONFIG:checkStructure()
 end
 
 function CONFIG:upgrade()
-    self.data["Options"] = MOD_INFO.DEFAULT_CONFIG["Options"]
+    --- self.data["Options"] = MOD_INFO.DEFAULT_CONFIG["Options"]
     self.data["VERSION"] = MOD_INFO.VERSION
     self.__configChanged = true
     self:save()
@@ -115,7 +115,7 @@ function CONFIG:init()
     else
         BasicPrint("Config.Init() - VERSION check passed")
     end
-
+    Files.LogMessage("ok")
     BasicDebug("Config.Init() - DEBUG MESSAGES ARE ENABLED")
     BasicDebug(self)
 end

@@ -56,7 +56,7 @@ function BasicPrint(content, messageType, textColor, customPrefix, rainbowText, 
     prefixLength = prefixLength or 15
     messageType = messageType or "INFO"
     local textColorCode = textColor or TEXT_COLORS.blue -- Default to blue
-    customPrefix = customPrefix or (MOD_INFO and MOD_INFO.MOD_NAME) or "FALLEN_DEFAULT"
+    customPrefix = customPrefix or (MOD_INFO and MOD_INFO.MOD_NAME) or "FENRULES_DEFAULT"
     if CONFIG and CONFIG.LOG_ENABLED == 1 then
         Files.LogMessage(ConcatOutput(ConcatPrefix(customPrefix .. "  [" .. messageType .. "]", content)))
     end
