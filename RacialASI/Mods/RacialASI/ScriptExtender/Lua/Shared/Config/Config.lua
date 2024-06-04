@@ -77,27 +77,25 @@ end
 
 function CONFIG:init()
     Files.ClearLogFile()
+    Files.Save(Paths.logPath, "")
+
+    BasicPrint("    ____             _       __   ___   _____ ____   ____________","INFO", nil, nil, true)
+    BasicPrint("   / __ \\____ ______(_)___ _/ /  /   | / ___//  _/  / ____/ ____/","INFO", nil, nil, true)
+    BasicPrint("  / /_/ / __ `/ ___/ / __ `/ /  / /| | \\__ \\ / /   /___ \\/ __/   ","INFO", nil, nil, true)
+    BasicPrint(" / _, _/ /_/ / /__/ / /_/ / /  / ___ |___/ // /   ____/ / /___   ","INFO", nil, nil, true)
+    BasicPrint("/_/ |_|\\__,_/\\___/_/\\__,_/_/  /_/  |_/____/___/  /_____/_____/   ","INFO", nil, nil, true)
     BasicPrint("                               ")
     BasicPrint("                               ")
     BasicPrint(" ----------------------------- ")
     BasicPrint(" ----------------------------- ")
-    BasicPrint(" ----------------------------- ")
-    BasicPrint(" ----------------------------- ")
-    BasicPrint(" ----------------------------- ")
-    BasicPrint(" ----------------------------- ")
-    BasicPrint(" ----------------------------- ")
+    BasicPrint("                               ")
+    BasicPrint("                               ")
     BasicPrint(" ----------------------------- ")
     BasicPrint(" ----------------------------- ")
     BasicPrint(
         string.format("Config.Init() - %s mod by Fenrules VERSION : %s starting up... ", MOD_INFO.MOD_NAME,
         MOD_INFO.VERSION),
         "INFO", nil, nil, true)
-    BasicPrint(" ----------------------------- ")
-    BasicPrint(" ----------------------------- ")
-    BasicPrint(" ----------------------------- ")
-    BasicPrint(" ----------------------------- ")
-    BasicPrint(" ----------------------------- ")
-    BasicPrint(" ----------------------------- ")
     BasicPrint(" ----------------------------- ")
     BasicPrint(" ----------------------------- ")
     BasicPrint("                               ")
@@ -115,7 +113,7 @@ function CONFIG:init()
     else
         BasicPrint("Config.Init() - VERSION check passed")
     end
-    Files.LogMessage("ok")
+    Files.LogMessage("Config.Init()")
     BasicDebug("Config.Init() - DEBUG MESSAGES ARE ENABLED")
     BasicDebug(self)
 end
