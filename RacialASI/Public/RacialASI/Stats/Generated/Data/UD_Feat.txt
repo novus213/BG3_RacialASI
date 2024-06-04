@@ -95,8 +95,6 @@ data "InterruptDefaultValue" "Ask;Enabled"
 data "EnableCondition" "HasPassive("Sailor_Undeath", context.Source) and not HasStatus('SG_Polymorph') or Tagged('MINDFLAYER')"
 data "EnableContext" "OnStatusApplied"
 
-data "Boosts" "BlockRegainHP(Living;Undead); IF(Tagged('UNDEAD')):Disadvantage(AttackRoll)"
-
 new entry "POTION_OF_HEALING"
 type "StatusData"
 data "StatusType" "BOOST"
