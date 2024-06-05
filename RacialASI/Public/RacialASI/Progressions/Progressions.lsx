@@ -4,48 +4,21 @@
     <region id="Progressions">
         <node id="root">
             <children>		
-			<!-- ADD PHB RACIAL BOOST -->
-
-            <!-- Not Work need ask CF
-  {
-                        modGuid = "1ebf4a1c-01d4-41ed-8aa1-5b3975c6d019",
-                        Target = "2d1c7b43-5e2e-44ca-9049-70bd60610817",
-                        FileType = "Progression",
-                        Function = "AddSpells",
-                        Params = {
-                            Guid = "496ebaab-ac47-48c6-a19a-0b19a0acb7bc",
-                            PrepareType = "AlwaysPrepared", 
-                            CooldownType = "UntilRest"   
-                        }
-                    },
-                    {
-                        modGuid = "1ebf4a1c-01d4-41ed-8aa1-5b3975c6d019",
-                        Target = "a0900dc3-dcbe-4c30-9705-35f050bf98ee",
-                        FileType = "Progression",
-                        Function = "AddSpells",
-                        Params = {
-                            Guid = "e57298c0-12a5-4988-891f-8d9a52d5a38f",                   
-                            PrepareType = "AlwaysPrepared", 
-                            CooldownType = "UntilRest" 
-                        }
-                    }
-                -->
                 <!-- Deep Gnome LVL 3 -->
                 <node id="Progression">
                     <attribute id="Level" type="uint8" value="3"/>
                     <attribute id="Name" type="LSString" value="DeepGnome"/>
                     <attribute id="ProgressionType" type="uint8" value="2"/>
-                    <attribute id="Selectors" type="LSString" value="AddSpells(496ebaab-ac47-48c6-a19a-0b19a0acb7bc,,,,AlwaysPrepared,UntilRest)"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(496ebaab-ac47-48c6-a19a-0b19a0acb7bc,,,,AlwaysPrepared,UntilRest)" />
                     <attribute id="TableUUID" type="guid" value="0f6d9f53-a2d0-422b-beea-a2fdfd88628a"/>
                     <attribute id="UUID" type="guid" value="2d1c7b43-5e2e-44ca-9049-70bd60610817"/>
                 </node>
-
                  <!-- Deep Gnome LVL 5 -->
                 <node id="Progression">
                     <attribute id="Level" type="uint8" value="5"/>
                     <attribute id="Name" type="LSString" value="DeepGnome"/>
                     <attribute id="ProgressionType" type="uint8" value="2"/>
-                    <attribute id="Selectors" type="LSString" value="AddSpells(e57298c0-12a5-4988-891f-8d9a52d5a38f,,Intelligence,,AlwaysPrepared,UntilRest);SelectSpells(e57298c0-12a5-4988-891f-8d9a52d5a38f,,Intelligence,,AlwaysPrepared,UntilRest)"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(ca805d77-8844-4ec9-b33c-1a95dea71e0d,,,,AlwaysPrepared,UntilRest)" />
                     <attribute id="TableUUID" type="guid" value="0f6d9f53-a2d0-422b-beea-a2fdfd88628a"/>
                     <attribute id="UUID" type="guid" value="a0900dc3-dcbe-4c30-9705-35f050bf98ee"/>
                 </node>

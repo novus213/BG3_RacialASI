@@ -18,13 +18,8 @@
 
                 <node id="SpellList">
                     <attribute id="Comment" type="LSString" value="Cadeau du Svirfneblin LV5"/>
-                    <attribute id="Spells" type="LSString" value="Target_Nondetection"/>
-                    <attribute id="UUID" type="guid" value="e57298c0-12a5-4988-891f-8d9a52d5a38f"/>
-                </node>
-                <node id="SpellList">
-                    <attribute id="Comment" type="LSString" value="Git Astral Knowledge"/>
-                    <attribute id="Spells" type="LSString" value="Shout_AstralKnowledge"/>
-                    <attribute id="UUID" type="guid" value="0c1e2349-1757-4a13-bdc4-abf49bc0867d"/>
+                    <attribute id="Spells" type="LSString" value="Fenrules_Target_Nondetection"/>
+                    <attribute id="UUID" type="guid" value="ca805d77-8844-4ec9-b33c-1a95dea71e0d"/>
                 </node>
                 <node id="SpellList">
 					<attribute id="Comment" type="LSString" value="Tinker Tool Rock Gnome"/>

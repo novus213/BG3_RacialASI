@@ -268,6 +268,13 @@
             "UUID": "582ed05c-c6fa-4d6f-99f9-efcc9de769f9",
             "Type": "SpellList",
             "Items": ["Target_MinorIllusion"]
+        },
+        {
+            "Comment": "Add REAL Undead Passive to Undead Race",
+            "Action": "Insert",
+            "UUID": "fd58a3fe-9d5f-4ae0-a7cd-724914cb7c1b",
+            "Type": "PassiveList",
+            "Items": ["Fenrules_Undeath",",Fenrules_Undying_Fervor"]
         }
     ]
 }
