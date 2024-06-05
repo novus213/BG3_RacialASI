@@ -68,7 +68,7 @@ function CONFIG_ASI:checkStructure()
         end
     end
     if self.__configChanged == true then
-        self:save() -- Save after checking structure
+        self:save() -- Save after checking structure 
     end
 end
 
