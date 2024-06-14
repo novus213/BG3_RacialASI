@@ -3,7 +3,7 @@
 -- -------------------------------------------------------------------------- --
 local default_config_asi_tbl={}
 
-
+ 
 
 -- settings configuration
 local CONFIG_ASI = {
