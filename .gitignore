@@ -17,3 +17,7 @@ bg3-modders-multitool.exe
 bg3-modders-multitool.runtimeconfig.json
 RacialASI/Public/RacialASI/Feats/FeatDescriptions.lsx_
 bg3-modders-multitool.exe
+Server_Origin/Config_ASI.lua
+OLD/_Progressions/Progressions.lsx
+OLD/RacialASI_Patch_DivineSoulOnly/Mods/RacialASI_Patch_DivineSoulUndeadWarlock/meta.lsx
+OLD/RacialASI_Patch_DivineSoulOnly/Public/RacialASI_Patch_DivineSoulUndeadWarlock/Progressions/Progressions.lsx
