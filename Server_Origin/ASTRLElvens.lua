@@ -11,11 +11,11 @@
 
 local AstralitiesElevens = {
     elevensFixed = {
-        { Name = "ASTRL_MoonElf_LevelOne",  UUID = "934762bb-eebd-4b42-b050-540148507a4a", Strings = {"Ability(Charisma,1)"} },
+        { Name = "ASTRL_MoonElf_LevelOne",  UUID = "934762bb-eebd-4b42-b050-540148507a4a", Strings = {"Ability(Dexterity,2)", "Ability(Charisma,1)"} },
         { Name = "ASTRL_SnowElf_LevelOne",  UUID = "02e1d9ac-bcc4-4391-9e78-5df33f60ca64", Strings = {"Ability(Constitution,2)", "Ability(Wisdom,1)"} },
-        { Name = "ASTRL_StarElf_LevelOne",  UUID = "e4c4c550-d4c7-43c5-92ba-49f93691356a", Strings = {"Ability(Charisma,1)"} }, -- Ability Score Increase. Your Charisma or Wisdom score increases by 1.
-        { Name = "ASTRL_SunElf_LevelOne",  UUID = "1089dddf-4e75-4e1b-bf2a-33affd0f6093", Strings = {"Ability(Constitution,1)"} },
-        { Name = "ASTRL_LythariElf_LevelOne",  UUID = "9b37ca29-0d77-4a27-a662-8464ce9998bb", Strings = {"Ability(Charisma,1)"} },
+        { Name = "ASTRL_StarElf_LevelOne",  UUID = "e4c4c550-d4c7-43c5-92ba-49f93691356a", Strings = {"Ability(Dexterity,2)", "Ability(Charisma,1)"} }, -- Ability Score Increase. Your Charisma or Wisdom score increases by 1.
+        { Name = "ASTRL_SunElf_LevelOne",  UUID = "1089dddf-4e75-4e1b-bf2a-33affd0f6093", Strings = {"Ability(Dexterity,2)", "Ability(Constitution,1)"} },
+        { Name = "ASTRL_LythariElf_LevelOne",  UUID = "9b37ca29-0d77-4a27-a662-8464ce9998bb", Strings = {"Ability(Dexterity,2)", "Ability(Charisma,1)"} },
     },
 
     elevensFloating = {
@@ -88,10 +88,10 @@ local function AstralitiesElevensOnStatsLoaded()
         end
     end
 
-    BasicPrint(" _____    ______________________________.____      ___________.__                                    ","INFO", nil, nil, true)
-    BasicPrint("/  _  \\  /   _____/\\__    ___/\\______   \\    |     \\_   _____/|  |   _______  __ ____   ____   ______","INFO", nil, nil, true)
-    BasicPrint("/  /_\\  \\ \\_____  \\   |    |    |       _/    |      |    __)_ |  | _/ __ \\  \\/ // __ \\ /    \\ /  ___/","INFO", nil, nil, true)
-    BasicPrint("/    |    \\/        \\  |    |    |    |   \\    |___   |        \\|  |_\\  ___/\\   /\\  ___/|   |  \\\\___ \\ ","INFO", nil, nil, true)
+      BasicPrint(" _____    ______________________________.____      ___________.__                                    ","INFO", nil, nil, true)
+      BasicPrint("/  _  \\  /   _____/\\__    ___/\\______   \\    |     \\_   _____/|  |   _______  __ ____   ____   ______","INFO", nil, nil, true)
+      BasicPrint("/  /_\\  \\ \\_____  \\   |    |    |       _/    |      |    __)_ |  | _/ __ \\  \\/ // __ \\ /    \\ /  ___/","INFO", nil, nil, true)
+     BasicPrint("/    |    \\/        \\  |    |    |    |   \\    |___   |        \\|  |_\\  ___/\\   /\\  ___/|   |  \\\\___ \\ ","INFO", nil, nil, true)
     BasicPrint("\\____|__  /_______  /  |____|    |____|_  /_______ \\ /_______  /|____/\\___  >\\_/  \\___  >___|  /____  >","INFO", nil, nil, true)
     BasicPrint("          \\/        \\/                    \\/        \\/         \\/           \\/          \\/     \\/     \\/ ","INFO", nil, nil, true)
     BasicPrint("           \\\\_Astralities' Eleven Anthology 1.0 Used","INFO", nil, nil, true)
