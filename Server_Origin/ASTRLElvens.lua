@@ -13,7 +13,6 @@ local AstralitiesElevens = {
     elevensFixed = {
         { Name = "ASTRL_MoonElf_LevelOne",  UUID = "934762bb-eebd-4b42-b050-540148507a4a", Strings = {"Ability(Dexterity,2)", "Ability(Charisma,1)"} },
         { Name = "ASTRL_SnowElf_LevelOne",  UUID = "02e1d9ac-bcc4-4391-9e78-5df33f60ca64", Strings = {"Ability(Constitution,2)", "Ability(Wisdom,1)"} },
-        { Name = "ASTRL_StarElf_LevelOne",  UUID = "e4c4c550-d4c7-43c5-92ba-49f93691356a", Strings = {"Ability(Dexterity,2)", "Ability(Charisma,1)"} }, -- Ability Score Increase. Your Charisma or Wisdom score increases by 1.
         { Name = "ASTRL_SunElf_LevelOne",  UUID = "1089dddf-4e75-4e1b-bf2a-33affd0f6093", Strings = {"Ability(Dexterity,2)", "Ability(Constitution,1)"} },
         { Name = "ASTRL_LythariElf_LevelOne",  UUID = "9b37ca29-0d77-4a27-a662-8464ce9998bb", Strings = {"Ability(Dexterity,2)", "Ability(Charisma,1)"} },
     },
@@ -32,12 +31,17 @@ local AstralitiesElevens = {
         { Name = "ASTRL_LythariHalfElf_LevelOne",  UUID = "c1abf705-91b3-4ad9-a1db-7083f91011b1" },
         { Name = "ASTRL_HalfAevendrow_LevelOne",  UUID = "dc9e985a-6b20-4066-ab3d-eed16191122b" },
         { Name = "ASTRL_HalfLorendrow_LevelOne",  UUID = "3140a061-8e1f-4c9e-bca2-1c0ed5a3ae65" },
+    },
+
+    elevensStar = {
+        { Name = "ASTRL_StarElf_LevelOne",  UUID = "e4c4c550-d4c7-43c5-92ba-49f93691356a" }, -- Ability Score Increase. Your Charisma or Wisdom score increases by 1.
     }
 }
 
 local modGuid = "66b20233-cf0a-44bb-9bcf-32c0e0b09c19" -- ASTRLElevens
 local Framework_UUID = "67fbbd53-7c7d-4cfa-9409-6d737b4d92a9" -- CompatibilityFramework
 local AbilityList_UUID = "b9149c8e-52c8-46e5-9cb6-fc39301c05fe"
+local PassivesSunElf_UUID = "69b3308e-674c-429c-b46c-a68e3693ce52"
 local VariantAbilityList = "f773e653-ff37-455b-86af-7029d7fa41c9"
 
 local function createPayload(entry, sourceType)
@@ -55,6 +59,14 @@ local function createPayload(entry, sourceType)
             BonusType = "AbilityBonus",
             Amounts = {"2", "1"}
         }
+    elseif sourceType == "elevensStar" then
+        payload.Function = "SelectPassives"
+        payload.Params = {
+            Guid = PassivesSunElf_UUID,
+            Amount = "1"
+        }
+        payload.Type = "Boosts"
+        payload.Strings = "{"Ability(Dexterity,2)"}"
     elseif sourceType == "elevensFixed" then
         payload.Type = "Boosts"
         payload.Strings = entry.Strings
@@ -80,7 +92,7 @@ end
 
 local function AstralitiesElevensOnStatsLoaded()
     if Ext.Mod.IsModLoaded(modGuid) then
-        local elevensTypes = {"elevensFixed", "elevensFloating"}
+        local elevensTypes = {"elevensFixed", "elevensFloating", "elevensStar"}
 
         for _, sourceType in ipairs(elevensTypes) do
             local sources = AstralitiesElevens[sourceType]
