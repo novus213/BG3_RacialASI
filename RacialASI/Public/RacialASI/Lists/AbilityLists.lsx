@@ -9,12 +9,6 @@
             <attribute id="UUID" type="guid" value="0a42b87b-a001-4091-8072-a611a85fa465" />
         </node>
       </children>
-      <children>
-        <node id="AbilityList">
-            <attribute id="Abilities" type="LSString" value="Wisdom, Charisma" />
-            <attribute id="UUID" type="guid" value="69b3308e-674c-429c-b46c-a68e3693ce52" />
-        </node>
-      </children>
     </node>
   </region>
 </save>
