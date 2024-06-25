@@ -80,7 +80,7 @@ end
 
 local function AstralitiesElevensOnStatsLoaded()
     if Ext.Mod.IsModLoaded(modGuid) then
-        local elevensTypes = {"elevensFixed", "elevensFloating", "elevensCustomList"}
+        local elevensTypes = {"elevensFixed", "elevensFloating"}
 
         for _, sourceType in ipairs(elevensTypes) do
             local sources = AstralitiesElevens[sourceType]
