@@ -23,3 +23,4 @@ OLD/RacialASI_Patch_DivineSoulOnly/Mods/RacialASI_Patch_DivineSoulUndeadWarlock/
 OLD/RacialASI_Patch_DivineSoulOnly/Public/RacialASI_Patch_DivineSoulUndeadWarlock/Progressions/Progressions.lsx
 Server_Origin/Config_ASI.lua
 Server_Origin/ASTRLElvens.lua
+Server_Origin/*
