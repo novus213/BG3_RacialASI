@@ -66,7 +66,8 @@ local function createPayload(entry, sourceType)
             Amount = "1"
         }
         payload.Type = "Boosts"
-        payload.Strings = "{"Ability(Dexterity,2)"}"
+        abilityDexSunElf = {"Ability(Dexterity,2)"}
+        payload.Strings = abilityDexSunElf
     elseif sourceType == "elevensFixed" then
         payload.Type = "Boosts"
         payload.Strings = entry.Strings
