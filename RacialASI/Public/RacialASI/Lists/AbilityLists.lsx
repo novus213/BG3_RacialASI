@@ -10,7 +10,7 @@
         </node>
         <node id="AbilityList">
             <attribute id="Abilities" type="LSString" value="Wisdom, Charisma" />
-            <attribute id="UUID" type="guid" value="69b3308e-674c-429c-b46c-a68e3693ce52" />
+            <attribute id="UUID" type="guid" value="002d957b-ed24-4efa-afdb-ccf86bac00dd" />
         </node>
       </children>
     </node>
