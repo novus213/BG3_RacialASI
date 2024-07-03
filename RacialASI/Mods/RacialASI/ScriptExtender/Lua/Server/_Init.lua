@@ -1,3 +1,6 @@
+-- Refactorting Argelia
+-- MCM plugin in working update
+
 -- Launch CONFIG
 local function start()
     if not CONFIG then CONFIG = InitConfig() end

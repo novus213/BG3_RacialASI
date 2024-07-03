@@ -93,7 +93,7 @@ function CONFIG:init()
     BasicPrint(" ----------------------------- ")
     BasicPrint(" ----------------------------- ")
     BasicPrint(
-        string.format("Config.Init() - %s mod by Fenrules VERSION : %s starting up... ", MOD_INFO.MOD_NAME,
+        string.format("Config.Init() - %s mod by Argelia (Fenrules adds and reworking) VERSION : %s starting up... ", MOD_INFO.MOD_NAME,
         MOD_INFO.VERSION),
         "INFO", nil, nil, true)
     BasicPrint(" ----------------------------- ")
@@ -147,6 +147,6 @@ function InitConfig()
 end
 
 function LoadconfigASI()
-    BasicPrint("Config.load() - RacialASI.json - Loading...")
+    BasicPrint("Config.load() - Config.json - Loading...")
     return JSON.LuaTableFromFile(CONFIG.path)
 end

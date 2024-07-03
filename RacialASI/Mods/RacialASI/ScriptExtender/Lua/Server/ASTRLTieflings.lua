@@ -6,7 +6,7 @@
 \____|__  /_______  /  |____|    |____|_  /_______ \   |____|   |__|\___  >__|  |____/__|___|  /\___  /____  >
         \/        \/                    \/        \/                    \/                   \//_____/     \/ 
          \_Astralities' Tiefling Compendium 3.1 Used
-
+Argelia source mixed
 ]]--
 
 local AstralitiesTieflings = {

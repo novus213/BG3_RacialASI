@@ -1,4 +1,4 @@
-// True Undead by actualsailorcat , Thanks !
+// True Undead by actualsailorcat and updated , Thanks !
 
 new entry "Fenrules_Undeath"
 type "PassiveData"
