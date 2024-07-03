@@ -201,7 +201,7 @@ local function loadConfiguration()
     if not configData then
         BasicError("============> ERROR: Failed to load configuration file" .. configData)
     else
-        BasicPrint("Config.load() - RacialASI.json - Apply Configuration...")
+        BasicPrint("Config.load() - Config.json - Apply Configuration...")
     end
     return configData
 end
