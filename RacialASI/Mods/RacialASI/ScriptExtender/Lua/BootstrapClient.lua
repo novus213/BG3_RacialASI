@@ -9,7 +9,7 @@ local ModGuid_Tieflings = "167b846f-0a0b-4e0c-a9d0-df448be1320a" -- ASTRLTieflin
 
 local Framework_UUID = "67fbbd53-7c7d-4cfa-9409-6d737b4d92a9" -- CompatibilityFramework
 
-Osi.RequestDelete(ModGuid_Elvens)
+-- Osi.RequestDelete(ModGuid_Elvens)
 
 -- Check if the mod is loaded and load ASI
 if Ext.Mod.IsModLoaded(Framework_UUID) and Ext.Mod.IsModLoaded(Framework_FM_UUID) then
