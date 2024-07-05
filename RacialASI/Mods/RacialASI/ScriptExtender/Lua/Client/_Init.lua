@@ -223,6 +223,8 @@ local function processOption(optionName, optionValue, actionConfigs)
 
             for _, payload in ipairs(payloads) do
                 if payload.Target then
+                    BasicPrint(string.format("action : ", action))
+                    BasicPrint(string.format("payload : ", payload))
                     handlePayload(action, payload)
                 else
                     BasicError(string.format("============> ERROR: Invalid target UUID for payload in '%s'.", optionName))
