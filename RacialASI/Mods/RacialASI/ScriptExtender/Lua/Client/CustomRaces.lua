@@ -44,6 +44,11 @@ local RaceModsFloating = {
         Race = "HalfDragon (Jo Val Rudovous)",
         modGuid = "16ba58e4-3ee5-4cfd-81e8-5a9f6d3f6b46",
         UUID = "72a06fbf-e1b3-4321-b975-a4a26d9b4b71"
+    },
+    {
+        Race = "Hobgoblin race mod GentlemanBabbo https://github.com/GentlemanBabbo/Hobgoblin/tree/main",
+        modGuid = "42152a0b-9b3c-4d63-8114-3ceba848f3e2",
+        UUID = "86149467-d827-42f3-8b0c-87e267343225"
     }
 }
 
