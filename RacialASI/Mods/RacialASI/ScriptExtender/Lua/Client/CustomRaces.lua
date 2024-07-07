@@ -230,6 +230,12 @@ local raceModsFixed = {
         modGuid = "f3d4e722-e576-43ce-a585-cfffcfcbcf40",
         UUID = "cfabed72-38b8-424d-a07d-058fbd4dd1a9",
         Strings = {"Ability(Intelligence,1)"}
+    },
+    {
+        Race = "Automaton Figgyinchains https://github.com/GentlemanBabbo/Automaton/blob/main/",
+        modGuid = "a56867c9-8260-4685-b8a5-6cc94be41152",
+        UUID = "3615e5db-c3ac-4b3b-bd01-f618d1cd95b5",
+        Strings = {"Ability(Constitution,1)", "Ability(Intelligence,1)"}
     }
 }
 
