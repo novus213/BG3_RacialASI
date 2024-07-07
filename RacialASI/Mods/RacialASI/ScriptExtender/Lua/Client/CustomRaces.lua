@@ -48,7 +48,7 @@ local RaceModsFloating = {
     {
         Race = "Hobgoblin race mod GentlemanBabbo https://github.com/GentlemanBabbo/Hobgoblin/tree/main",
         modGuid = "42152a0b-9b3c-4d63-8114-3ceba848f3e2",
-        UUID = "86149467-d827-42f3-8b0c-87e267343225"
+        UUID = "575fa3d3-cf83-4716-8cc3-8d971666b05"
     }
 }
 
