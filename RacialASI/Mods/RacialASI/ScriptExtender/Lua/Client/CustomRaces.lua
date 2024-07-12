@@ -236,6 +236,12 @@ local raceModsFixed = {
         modGuid = "a56867c9-8260-4685-b8a5-6cc94be41152",
         UUID = "3615e5db-c3ac-4b3b-bd01-f618d1cd95b5",
         Strings = {"Ability(Constitution,1)", "Ability(Intelligence,1)"}
+    },
+    {
+        Race = "The Nine Hells Unchained - Imp Race",
+        modGuid = "4b268977-b9ec-47fd-95e7-9b977969ba28",
+        UUID = "602818c4-ec05-4af9-9cb7-dedf06ec04a8",
+        Strings = {"Ability(Dexterity,1)", "Ability(Charisma,1)"}
     }
 }
 
