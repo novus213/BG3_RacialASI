@@ -165,6 +165,22 @@ local optionActions = {
             }
         }
     },
+    raceModsRemoveBoosts = {
+        actions = {
+            {
+                action = "RemoveBoosts",  -- Remove Boosts To Raven Queen's Chosen - Shadar-Kai
+                payloads = {
+                    {
+                        modGuid = "c36d595f-70d1-44f1-8ca6-4ad14186f489",
+                        Target = "2f7edf7e-0a6b-4018-9715-1cb8aa238e4a",
+                        FileType = "Progression",
+                        Type = "Boosts",
+                        Strings = {"Ability(Constitution,1)"}
+                    }
+                }
+            }
+        }
+    }
     -- Removed first and ten level passives (Illithid Disguise excluded) from Ghoul and added Undeath trait that replace and improve these passives
 
 }
@@ -180,6 +196,7 @@ local function callApiAction(action, payload)
         RemovePassives = Mods.SubclassCompatibilityFramework.Api.RemovePassives,
         InsertSelectors = Mods.SubclassCompatibilityFramework.Api.InsertSelectors,
         InsertBoosts = Mods.SubclassCompatibilityFramework.Api.InsertBoosts,
+        RemoveBoosts = Mods.SubclassCompatibilityFramework.Api.RemoveBoosts,
         SetBoolean = Mods.SubclassCompatibilityFramework.Api.SetBoolean
     }
 
@@ -213,7 +230,7 @@ local function handlePayload(action, payload)
     end
 end
 
-local function processOption(optionName, optionValue, actionConfigs)
+function processOption(optionName, optionValue, actionConfigs)
     if optionValue.Enabled then
         BasicWarning(string.format("============> %s is enabled.", optionName))
 

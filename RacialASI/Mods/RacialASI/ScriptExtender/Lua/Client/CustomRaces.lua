@@ -36,6 +36,12 @@ local RaceModsFloating = {
         
     },
     {
+        Name = "Raven Queen's Chosen - Shadar-Kai",
+        modGuid = "c36d595f-70d1-44f1-8ca6-4ad14186f489",
+        UUID = "2f7edf7e-0a6b-4018-9715-1cb8aa238e4a"
+        
+    },
+    {
         Race = "Genasi (Elemental Power)",
         modGuid = "97954f72-711b-4938-a5ae-6a477b2ed574",
         UUID = "e808d2a5-a9eb-403f-bab9-90a5114a699c"
