@@ -25,6 +25,127 @@
                 }
             ]
         },
+        {
+            "Comment": "Remove Boosts To Raven Queen's Chosen - Shadar-Kai",
+			"UUID": "2f7edf7e-0a6b-4018-9715-1cb8aa238e4a",
+            "Strings": [
+                {
+                    "Action": "Remove",
+                    "Type": "Boosts",
+                    "Strings": ["Ability(Constitution,1)"]
+                }
+            ]
+        },
+        {
+            "Comment": "Remove Boosts To Aasimar DarthRen",
+			"UUID": "06e918ad-be2c-48b6-a098-0288539de744",
+            "Strings": [
+                {
+                    "Action": "Remove",
+                    "Type": "Boosts",
+                    "Strings": ["Ability(Charisma,2)"]
+                }
+            ]
+        },
+        {
+            "Comment": "Remove Boosts To Aasimar DarthRen",
+			"UUID": "4c2c61ae-5904-4576-a8c5-efecce67ab82",
+            "Strings": [
+                {
+                    "Action": "Remove",
+                    "Type": "Boosts",
+                    "Strings": ["Ability(Wisdom,1)"]
+                }
+            ]
+        },
+        {
+            "Comment": "Remove Boosts To Aasimar DarthRen",
+			"UUID": "56d62681-9769-4ad7-9bbf-4f72db44f070",
+            "Strings": [
+                {
+                    "Action": "Remove",
+                    "Type": "Boosts",
+                    "Strings": ["Ability(Constitution,1)"]
+                }
+            ]
+        },
+        {
+            "Comment": "Remove Boosts To Aasimar DarthRen",
+			"UUID": "1b07140b-98c1-42e8-b4ec-072622862dc2",
+            "Strings": [
+                {
+                    "Action": "Remove",
+                    "Type": "Boosts",
+                    "Strings": ["Ability(Strength,1)"]
+                }
+            ]
+        },
+        {
+            "Comment": "Remove Boosts To Avariel Ren",
+			"UUID": "77b6f9ec-7d6a-44b2-b110-88bf025eb586",
+            "Strings": [
+                {
+                    "Action": "Remove",
+                    "Type": "Boosts",
+                    "Strings": ["Ability(Dexterity,1)","Ability(Wisdom,1)"]
+                }
+            ]
+        },
+        {
+            "Comment": "Remove Boosts To Dhampyr Sassandra RU_SHI",
+			"UUID": "042e6092-1602-4338-b6f9-cc7987f3bff4",
+            "Strings": [
+                {
+                    "Action": "Remove",
+                    "Type": "Boosts",
+                    "Strings": ["Ability(Strength,2)","Ability(Intelligence,2)","Ability(Dexterity,-2)"]
+                }
+            ]
+        },
+        {
+            "Comment": "Remove Boosts To Dhampyr Sassandra SVETOCHER",
+			"UUID": "ceae071e-2ff2-4043-a2b8-a7fc1ab16065",
+            "Strings": [
+                {
+                    "Action": "Remove",
+                    "Type": "Boosts",
+                    "Strings": ["Ability(Strength,2)","Ability(Charisma,2)","Ability(Constitution,-2)"]
+                }
+            ]
+        },
+        {
+            "Comment": "Remove Boosts To Dhampyr Sassandra AJIBACHANA",
+			"UUID": "65930b4d-75ca-4968-93b0-dde6662d5882",
+            "Strings": [
+                {
+                    "Action": "Remove",
+                    "Type": "Boosts",
+                    "Strings": ["Ability(Dexterity,2)","Ability(Intelligence,2)","Ability(Wisdom,-2)"]
+                }
+            ]
+        },
+        {
+            "Comment": "Remove Boosts To Dhampyr Sassandra ANCIENTBORN",
+			"UUID": "ebd122f3-9223-4cc0-ac98-3810995dde9b",
+            "Strings": [
+                {
+                    "Action": "Remove",
+                    "Type": "Boosts",
+                    "Strings": ["Ability(Strength,2)","Ability(Wisdom,2)","Ability(Constitution,-2)"]
+                }
+            ]
+        },
+        {
+            "Comment": "Remove Boosts To Skeleton race Rexsaze",
+			"UUID": "042e6092-1602-4338-b6f9-cc7987f3bff4",
+            "Strings": [
+                {
+                    "Action": "Remove",
+                    "Type": "Boosts",
+                    "Strings": ["Ability(Constitution,1)"]
+                }
+            ]
+        },
 		{
             "Comment": "Human Larian default",
 			"UUID": "139e1b8c-dfa1-4b2d-895c-efb170736093",
@@ -45,7 +166,8 @@
         },
         {
             "Comment": "High Elf",
-			"UUID": "db13a1fb-7d64-4309-a1c8-e2a5c752ded5",
+			"UUID": 
+            "db13a1fb-7d64-4309-a1c8-e2a5c752ded5",
 			"Strings": [
 				{
 					"Action": "Insert",
@@ -110,8 +232,12 @@
             ]
         },
         {
-            "Comment": "Half-Elf",
-			"UUID": "a1729574-2f7b-4561-91d8-3766cf940420",
+            "Comment": "Half-Elf (races base)",
+            "UUIDs": [
+                "43bfa29a-fd63-4f47-850e-6714f0333022",
+                "cb0f84ec-1b1d-4ecc-9ab5-76261e332f5a",
+                "58dae581-c25a-4dfb-8a57-589bf4b34f62"
+            ],
 			"Strings": [
 				{
 					"Action": "Insert",
@@ -128,7 +254,13 @@
                         "Guid": "3d6edcc3-4ef7-419e-8891-187262cfb07e",
                         "Amounts": ["1","1"]
                     }
-                },
+                }
+            ]
+        },
+        {
+            "Comment": "Half-Elf (all)",
+            "UUID": "a1729574-2f7b-4561-91d8-3766cf940420",
+            "Selectors": [
                 {
                     "Action": "Insert",
                     "Function": "SelectSkills",

@@ -55,6 +55,11 @@ local RaceModsFloating = {
         Race = "Hobgoblin race mod GentlemanBabbo https://github.com/GentlemanBabbo/Hobgoblin/tree/main",
         modGuid = "42152a0b-9b3c-4d63-8114-3ceba848f3e2",
         UUID = "575fa3d3-cf83-4716-8cc3-8d971666b051"
+    },
+    {
+        Race = "CE_WitchElf",
+        modGuid = "1aa49383-9208-4cc0-96b6-e827819d71d0",
+        UUID = "d19f42b3-1c1e-46cd-83e4-fd964426616f"
     }
 }
 
@@ -78,12 +83,17 @@ local RaceModsFloating_1 = {
     {
         Race = "Undead (Ghastly Ghouls) Wight",
         modGuid = "f3d4e722-e576-43ce-a585-cfffcfcbcf40",
-        UUID = "677de788-81da-4f2f-b0d1-75c6aa9a1c35", -- SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,1);
+        UUID = "677de788-81da-4f2f-b0d1-75c6aa9a1c35" -- SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,1);
     },
     {
         Race = "Whispers of the Fey - Changelings", -- SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,1)
         modGuid = "eaf83c50-1f22-4ce8-a825-25f07caf9faa",
-        UUID = "fa7bf84a-a1d6-46b2-a779-739424d20b5b",
+        UUID = "fa7bf84a-a1d6-46b2-a779-739424d20b5b"
+    },
+    {
+        Race = "Avariel_Ren",
+        modGuid = "11675ee8-a7be-443b-9edb-125f33d21ce1",
+        UUID = "77b6f9ec-7d6a-44b2-b110-88bf025eb586"
     }
 }
 
@@ -122,6 +132,30 @@ local raceModsFixed = {
         modGuid = "7a4aaaca-88a7-41c4-98d6-de2df39496fe",
         UUID = "58971151-461d-4556-8db7-5894af1dceb2",
         Strings = {"Ability(Dexterity,1)", "Ability(Charisma,2)"}
+    },
+    {
+        Race = "Dhampyr RU_SHI - Sassandra (pathfinder)",
+        modGuid = "5114d845-2c0f-441c-a01b-91a1847a48bc",
+        UUID = "042e6092-1602-4338-b6f9-cc7987f3bff4",
+        Strings = {"Ability(Strength,2)", "Ability(Intelligence,2)", "Ability(Dexterity,-2)"}
+    },
+    {
+        Race = "Dhampyr SVETOCHER - Sassandra (pathfinder)",
+        modGuid = "5114d845-2c0f-441c-a01b-91a1847a48bc",
+        UUID = "ceae071e-2ff2-4043-a2b8-a7fc1ab16065",
+        Strings = {"Ability(Strength,2)", "Ability(Charisma,2)", "Ability(Constitution,-2)"}
+    },
+    {
+        Race = "Dhampyr AJIBACHANA - Sassandra (pathfinder)",
+        modGuid = "5114d845-2c0f-441c-a01b-91a1847a48bc",
+        UUID = "65930b4d-75ca-4968-93b0-dde6662d5882",
+        Strings = {"Ability(Dexterity,2)", "Ability(Intelligence,2)", "Ability(Wisdom,-2)"}
+    },
+    {
+        Race = "Dhampyr ANCIENTBORN - Sassandra (pathfinder)",
+        modGuid = "5114d845-2c0f-441c-a01b-91a1847a48bc",
+        UUID = "ebd122f3-9223-4cc0-ac98-3810995dde9b",
+        Strings = {"Ability(Strength,2)", "Ability(Wisdom,2)", "Ability(Constitution,-2)"}
     },
     {
         Race = "Followers Of Zerthimon (Githzerai)",
@@ -248,6 +282,48 @@ local raceModsFixed = {
         modGuid = "4b268977-b9ec-47fd-95e7-9b977969ba28",
         UUID = "602818c4-ec05-4af9-9cb7-dedf06ec04a8",
         Strings = {"Ability(Dexterity,1)", "Ability(Charisma,1)"}
+    },
+    {
+        Race = "Aasimar(Radiant Soul) DarthRen",
+        modGuid = "ab267ed4-b3b5-4b4f-a62c-7dbc95c968fa",
+        UUID = "4c2c61ae-5904-4576-a8c5-efecce67ab82",
+        Strings = {"Ability(Wisdom,1)", "Ability(Charisma,2)"}
+    },
+    {
+        Race = "Aasimar(Radiant Consumption) DarthRen",
+        modGuid = "ab267ed4-b3b5-4b4f-a62c-7dbc95c968fa",
+        UUID = "56d62681-9769-4ad7-9bbf-4f72db44f070",
+        Strings = {"Ability(Constitution,1)", "Ability(Charisma,2)"}
+    },
+    {
+        Race = "Aasimar(Necrotic Shroud) DarthRen",
+        modGuid = "ab267ed4-b3b5-4b4f-a62c-7dbc95c968fa",
+        UUID = "1b07140b-98c1-42e8-b4ec-072622862dc2",
+        Strings = {"Ability(Strength,1)", "Ability(Charisma,2)"}
+    },
+    {
+        Race = "Avariel_Ren",
+        modGuid = "11675ee8-a7be-443b-9edb-125f33d21ce1",
+        UUID = "77b6f9ec-7d6a-44b2-b110-88bf025eb586",
+        Strings = {"Ability(Dexterity,2)"}
+    },
+    {
+        Race = "Half-Elves that are half Drow and half Half-Orc Soriyumi",
+        modGuid = "d25f0ed3-efe7-4194-bdc6-671f784d7cef",
+        UUID = "128ae023-fef6-4fa1-ade9-e338e60b8b56",
+        Strings = {"Ability(Strength,1)", "Ability(Dexterity,1)", "Ability(Constitution,1)"}
+    },
+    {
+        Race = "Skeleton race Rexsaze (playableundead)",
+        modGuid = "315ce1a1-0f24-4777-90d9-06b01a93a716",
+        UUID = "042e6092-1602-4338-b6f9-cc7987f3bff4",
+        Strings = {"Ability(Constitution,1)"}
+    },
+    {
+        Race = "UnderdarksChosen - IndecisionIncarnate",
+        modGuid = "76015234-1bb4-42dc-adb9-c86c7f4cbb39",
+        UUID = "4a634f24-bdcb-4559-b8be-7847133ad1c3",
+        Strings = {"Ability(Dexterity,2)", "Ability(Charisma,1)"}
     }
 }
 

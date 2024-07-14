@@ -6,7 +6,7 @@ deps = {
     Framework_GUID          = "67fbbd53-7c7d-4cfa-9409-6d737b4d92a9" -- CompatibilityFramework
 }
 
-if not Ext.Mod.IsModLoaded(Framework_GUID) then return end
+if not Ext.Mod.IsModLoaded(deps.Framework_GUID) then return end
 
 DevelReady = Ext.Utils:Version() >= 17 or Ext.Debug.IsDeveloperMode()
 
