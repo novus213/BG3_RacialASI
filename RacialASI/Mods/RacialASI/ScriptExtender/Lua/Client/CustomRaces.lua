@@ -30,18 +30,6 @@ local RaceModsFloating = {
         
     },
     {
-        Name = "Shadar-Kai with Drow dialogue tags",
-        modGuid = "c36d595f-70d1-44f1-8ca6-4ad14186f489",
-        UUID = "96ad7abb-8a86-4939-913d-71f84191f7d7"
-        
-    },
-    {
-        Name = "Raven Queen's Chosen - Shadar-Kai",
-        modGuid = "c36d595f-70d1-44f1-8ca6-4ad14186f489",
-        UUID = "2f7edf7e-0a6b-4018-9715-1cb8aa238e4a"
-        
-    },
-    {
         Race = "Genasi (Elemental Power)",
         modGuid = "97954f72-711b-4938-a5ae-6a477b2ed574",
         UUID = "e808d2a5-a9eb-403f-bab9-90a5114a699c"
@@ -103,23 +91,6 @@ local raceModsFixed = {
         modGuid = "f8f5f704-d463-4616-a321-9460060538ff",
         UUID = "0194f214-ffce-4e74-94b6-09e76a270e49",
         Strings = {"Ability(Dexterity,2)", "Ability(Wisdom,1)"}
-    },
-    {
-        Race = "Aasimar(Radiant Soul)", 
-        UUID = "4c2c61ae-5904-4576-a8c5-efecce67ab82", 
-        modGuid = "ab267ed4-b3b5-4b4f-a62c-7dbc95c968fa",
-        Strings = {"Ability(Charisma,2)", "Ability(Wisdom,1)"}
-    },
-    {   Race = "Aasimar(Radiant Consumption)", 
-        UUID = "56d62681-9769-4ad7-9bbf-4f72db44f070", 
-        modGuid = "ab267ed4-b3b5-4b4f-a62c-7dbc95c968fa",
-        Strings = {"Ability(Charisma,2)", "Ability(Constitution,1)"}
-    },
-    { 
-        Race = "Aasimar(Necrotic Shroud)",
-        UUID = "1b07140b-98c1-42e8-b4ec-072622862dc2",
-        modGuid = "ab267ed4-b3b5-4b4f-a62c-7dbc95c968fa",
-        Strings = {"Ability(Charisma,2)", "Ability(Strength ,1)"}
     },
     {
         Race = "Satyr (Wine and Revelry)",
@@ -282,24 +253,6 @@ local raceModsFixed = {
         modGuid = "4b268977-b9ec-47fd-95e7-9b977969ba28",
         UUID = "602818c4-ec05-4af9-9cb7-dedf06ec04a8",
         Strings = {"Ability(Dexterity,1)", "Ability(Charisma,1)"}
-    },
-    {
-        Race = "Aasimar(Radiant Soul) DarthRen",
-        modGuid = "ab267ed4-b3b5-4b4f-a62c-7dbc95c968fa",
-        UUID = "4c2c61ae-5904-4576-a8c5-efecce67ab82",
-        Strings = {"Ability(Wisdom,1)", "Ability(Charisma,2)"}
-    },
-    {
-        Race = "Aasimar(Radiant Consumption) DarthRen",
-        modGuid = "ab267ed4-b3b5-4b4f-a62c-7dbc95c968fa",
-        UUID = "56d62681-9769-4ad7-9bbf-4f72db44f070",
-        Strings = {"Ability(Constitution,1)", "Ability(Charisma,2)"}
-    },
-    {
-        Race = "Aasimar(Necrotic Shroud) DarthRen",
-        modGuid = "ab267ed4-b3b5-4b4f-a62c-7dbc95c968fa",
-        UUID = "1b07140b-98c1-42e8-b4ec-072622862dc2",
-        Strings = {"Ability(Strength,1)", "Ability(Charisma,2)"}
     },
     {
         Race = "Avariel_Ren",
