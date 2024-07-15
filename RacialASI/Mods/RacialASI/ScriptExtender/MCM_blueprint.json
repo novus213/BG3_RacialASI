@@ -1,0 +1,83 @@
+{
+    "SchemaVersion": 1,
+    "ModName": "RacialASI",
+    "Tabs": [
+        {
+            "TabId": "settings",
+            "TabName": "Settings",
+            "Sections": [
+                {
+                    "SectionId": "general_settings",
+                    "SectionName": "General Settings",
+                    "Settings": [
+                        {
+                            "Id": "RASI",
+                            "Name": "Racial ASI",
+                            "Type": "checkbox",
+                            "Default": true,
+                            "Tooltip": "Enable or disable RacialASI."
+                        }                        
+                    ]
+                },
+                {
+                    "SectionId": "feats_settings",
+                    "SectionName": "Feats Settings",
+                    "Settings": [
+                        {
+                            "Id": "addGnome_tinkertools_spells",
+                            "Name": "Rock Gnome Tinkertools",
+                            "Type": "checkbox",
+                            "Default": true,
+                            "Tooltip": "Enable or disable Rock Gnome Tinkertools."
+                        },
+                        {
+                            "Id": "addHalfElfDrow_drow_drowWeaponTraining_passives",
+                            "Name": "HalfElfDrow Drow DrowWeaponTraining Passives",
+                            "Type": "checkbox",
+                            "Default": true,
+                            "Tooltip": "Enable or disable HalfElfDrow Drow DrowWeaponTraining Passives."
+                        }
+                    ]
+                },
+                {
+                    "SectionId": "book_settings",
+                    "SectionName": "Book Settings",
+                    "Settings": [
+                        {
+                            "Id": "active_book_boost",
+                            "Name": "active book boost",
+                            "Type": "enum",
+                            "Default": "ALL Books",
+                            "Options": {
+                                "Choices": [
+                                    "All books",
+                                    "Player's Handbook (2024)",
+                                    "Player's Handbook (2014)",
+                                    "Mordenkainen Presents: Monsters of the Multiverse",
+                                    "Spelljammer: Adventures in Space",
+                                    "Van Richten's Guide to Ravenloft",
+                                    "Grim Hollow's Player's Guide",
+                                    "Eorzea (FFXIV X Dungeons & Souls)",
+                                    "Malipāla Odyssey (Dungeons & Souls)",
+                                    "Dragonlance: Shadow of the Dragon Queen",
+                                    "Volo's Guide to Monsters (LEGACY)",
+                                    "Explorer's Guide to Wildemount",
+                                    "Eberron: Rising from the Last War",
+                                    "Guildmasters' Guide to Ravnica",
+                                    "Tasha's Cauldron of Everything",
+                                    "Fizban's Treasury of Dragons",
+                                    "Xanathar's Guide to Everything",
+                                    "Bigby Presents: Glory of the Giants",
+                                    "Tales from the Firelit Gathering",
+                                    "Mythic Odysseys of Theros",
+                                    "Homebrew"
+                                ]
+                            },
+                            "Tooltip": "Choose one Book to apply options"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
