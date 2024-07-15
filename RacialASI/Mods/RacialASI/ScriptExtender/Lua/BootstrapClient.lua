@@ -14,7 +14,7 @@ Ext.Require("Shared/_Init.lua")
 Ext.Require("ModInfos/_ModInfos.lua")
 Ext.Require("Client/_Init.lua")
 
-Ext.Require("Client/Clean.lua")
+Ext.Require("Client/CleanStatsASI.lua")
 
 
 -- Check if the mod is loaded and load ASI

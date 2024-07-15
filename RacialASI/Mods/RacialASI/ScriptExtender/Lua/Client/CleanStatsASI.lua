@@ -1,13 +1,13 @@
-local raceMods = {
+raceMods = {
     {
         Race = "Aasimar DEMERDE DarthRen",
         modGuid = "ab267ed4-b3b5-4b4f-a62c-7dbc95c968fa",
-        UUID = "06e918ad-be2c-48b6-a098-0288539de744",
+        UUID = "06e918ad-be2c-48b6-a098-0288539de744"
     },
     {
         Race = "Aasimar(Radiant Soul) DarthRen",
         modGuid = "ab267ed4-b3b5-4b4f-a62c-7dbc95c968fa",
-        UUID = "4c2c61ae-5904-4576-a8c5-efecce67ab82",
+        UUID = "4c2c61ae-5904-4576-a8c5-efecce67ab82"
     },
     {
         Name = "Raven Queen's Chosen - Shadar-Kai",
@@ -17,14 +17,27 @@ local raceMods = {
     },
     {   Race = "Aasimar(Radiant Consumption)", 
         UUID = "56d62681-9769-4ad7-9bbf-4f72db44f070", 
-        modGuid = "ab267ed4-b3b5-4b4f-a62c-7dbc95c968fa",
+        modGuid = "ab267ed4-b3b5-4b4f-a62c-7dbc95c968fa"
     },
     { 
         Race = "Aasimar(Necrotic Shroud)",
         UUID = "1b07140b-98c1-42e8-b4ec-072622862dc2",
-        modGuid = "ab267ed4-b3b5-4b4f-a62c-7dbc95c968fa",
+        modGuid = "ab267ed4-b3b5-4b4f-a62c-7dbc95c968fa"
     }
 }
+
+--[[ 
+{
+    modGuid="GUID3",
+    Status="Detected",
+    Race="Mod de race 3",
+    Author="",
+    UUID="",
+    SourceBook = "Mordenkainen Presents: Monsters of the Multiverse",
+    Strings = {"Ability(Dexterity,1)", "Ability(Charisma,2)"}
+    StringStats = {2, 0, 1, 0, 0, 0}
+}
+    ]]--
 
 local AbilityList_UUID = "b9149c8e-52c8-46e5-9cb6-fc39301c05fe"
 
