@@ -124,15 +124,11 @@ StatsList = {"Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", 
 
 --[[ String builder for the string table to removeAbility ]]
 for _, raceMod in pairs(RaceList) do
-	if raceMod.Guid == SearchedMod then
+--	if raceMod.Guid == SearchedMod then
 		print("Le mod : " .. raceMod.Name .. " est bien dans la liste")
-		RaceStrenght 		= "Ability(" .. StatsList[1] .. "," .. raceMod.Stats[1] .. ")"
-		RaceDexterity 		= "Ability(" .. StatsList[2] .. "," .. raceMod.Stats[2] .. ")"
-		RaceConstitution 	= "Ability(" .. StatsList[2] .. "," .. raceMod.Stats[2] .. ")"
-		RaceIntelligence	= "Ability(" .. StatsList[4] .. "," .. raceMod.Stats[4] .. ")"
-		RaceWisdom 		= "Ability(" .. StatsList[5] .. "," .. raceMod.Stats[5] .. ")"
-		RaceCharisma 		= "Ability(" .. StatsList[6] .. "," .. raceMod.Stats[6] .. ")"
-
-		TableConstructed = {RaceStrenght, RaceDexterity, RaceConstitution, RaceIntelligence, RaceWisdom, RaceCharisma}
-	end
+		for i = 1, 6 do
+			RaceStat 		= "Ability(" .. StatsList[i] .. "," .. raceMod.Stats[i] .. ")"
+			print(RaceStat)
+		 end
+--	end
 end
