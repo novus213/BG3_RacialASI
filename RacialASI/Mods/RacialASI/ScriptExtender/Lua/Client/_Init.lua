@@ -265,31 +265,18 @@ end
 function OnStatsLoadedMcm()
     for key, value in pairs(mcmVars) do
         local actionConfigs = optionActions[key]
-        if key == "RASI" then
-            BasicPrint("RASI")
-            break
-        end
-
-        if key == "debugToggle" then
-            BasicPrint("debugToggle")
-            break
-        end
-
-        if key == "ActiveBookBoost" then
-            BasicPrint("ActiveBookBoost")
-            break
-        end
 
         if actionConfigs then
             processOptionMcm(key, value, actionConfigs.actions)
         else
-            BasicError(string.format("============> ERROR: No configuration found for %s.", key))
+                BasicError(string.format("============> ERROR: No configuration found for %s.", key))
         end
     end
 end
 
 function processOptionMcm(optionName,optionValue, actionConfigs)
     if optionValue == true then
+        BasicWarning(string.format("============> %s is enabled.", optionName))
         for _, actionConfig in ipairs(actionConfigs) do
 
             local action   = actionConfig.action
@@ -297,59 +284,14 @@ function processOptionMcm(optionName,optionValue, actionConfigs)
 
             for _, payload in ipairs(payloads) do
                 if payload.Target then
-                    if action == "InsertSelectors" then
-                        --local payload = createPayloadMcm(payload.modGuid, payload.Target, payload.Type, payload.Strings, payload.Function, payload.Params.Guid, payload.Params.PrepareType, payload.Params.CooldownType)
-                        --Mods.SubclassCompatibilityFramework.Api.InsertSelectors({payload})
-                        BasicPrint("DoNothing")
-                    end
-
-                    if action == "InsertPassives" then
-                        --local payload = createPayloadMcm(payload.modGuid, payload.Target, payload.Type, payload.Strings)
-                        --Mods.SubclassCompatibilityFramework.Api.InsertPassives({payload})
-                        BasicPrint("DoNothing")
-                    end
-
-                    if action == "RemovePassives" then
-                        --local payload = createPayloadMcm(payload.modGuid, payload.Target, payload.Type, payload.Strings)
-                        --Mods.SubclassCompatibilityFramework.Api.RemovePassives({payload})
-                        BasicPrint("DoNothing")
-                    end
+                    handlePayload(action, payload)
                 else
                     BasicError(string.format("============> ERROR: Invalid target UUID for payload in '%s'.", optionName))
                 end
             end
         end
-        BasicWarning(string.format("============> %s is enabled.", optionName))
     end
 end
-
-
-local function createPayloadMcm(modGuid, targetuuid, typePayload, stringPayload, func, paramsGuid, prepareType, CooldownType)
-    if func then
-        return {
-            modGuid = modGuid,
-            Target = targetuuid,
-            FileType = "Progression",
-            Function = func,
-            Params = {
-                Guid = paramsGuid,                      
-                PrepareType = prepareType,
-                CooldownType = cooldownType
-            }
-        }
-    else
-        return {
-            modGuid = modGuid,
-            Target = targetuuid,
-            FileType = "Progression",
-            Type = typePayload,
-            Strings = {""..stringPayload..""}
-        }
-    end
-end
-
-
-
 
 if not Ext.Mod.IsModLoaded(deps.MCM_GUID) then
     Ext.Events.StatsLoaded:Subscribe(start)
@@ -370,20 +312,34 @@ else
 
     function OnSessionLoadedMCM()
         mcmVars = {
-            addGnome_tinkertools_spells = MCMGet("addGnome_tinkertools_spells"),
-            addHalfElfDrow_Drow_DrowWeaponTraining_Passives = MCMGet("addHalfElfDrow_Drow_DrowWeaponTraining_Passives"),
+            AddGnome_Tinkertools_Spells = MCMGet("AddGnome_Tinkertools_Spells"),
+            AddHalfElfDrow_Drow_DrowWeaponTraining_Passives = MCMGet("AddHalfElfDrow_Drow_DrowWeaponTraining_Passives"),
             RemoveHuman_HumanMilitia_HumanVersatility_Passives = MCMGet("RemoveHuman_HumanMilitia_HumanVersatility_Passives"),
             RemoveHalfElf_HumanMilitia_Passives = MCMGet("RemoveHalfElf_HumanMilitia_Passives"),
             AddUndeadGhastlyGhouls_LightSensitivity_Passives = MCMGet("AddUndeadGhastlyGhouls_LightSensitivity_Passives"),
-            AddUnderdarkRaces_LightSensitivity_Passives = MCMGet("AddUnderdarkRaces_LightSensitivity_Passives"),
-            RASI = MCMGet("RASI"),
-            debugToggle = MCMGet("debugToggle"),
-            ActiveBookBoost = MCMGet("active_5e_boost")
+            AddUnderdarkRaces_LightSensitivity_Passives = MCMGet("AddUnderdarkRaces_LightSensitivity_Passives")
             --[[
                 mcmVars["AddGnomeTinkertoolsSpells"]
             ]]--
         }
+
+        mcmVarsGeneralSettings = {
+            RASI = MCMGet("RASI"),
+            debugToggle = MCMGet("debugToggle"),
+            ActiveBookBoost = MCMGet("active_5e_boost")
+        }
     end
+
+    Mods.BG3MCM.IMGUIAPI:InsertModMenuTab(ModuleUUID, "Inserted tab", function(tabHeader)
+        local myCustomWidget = tabHeader:AddButton("Save")
+        myCustomWidget.OnClick = function()
+            -- Request the server to take actions to help uninstalling the mod
+        Ext.Net.PostMessageToServer("MU_Reload_Conf", Ext.Json.Stringify({
+            modUUID = selectedModUUID,
+        }))
+        end
+    end)
+
 
     Ext.Events.StatsLoaded:Subscribe(OnSessionLoadedMCM)
     -- Register a net listener to handle settings changes dynamically
@@ -396,13 +352,18 @@ else
         if mcmVars[data.settingId] ~= nil then
             mcmVars[data.settingId] = data.value
         end
+
+        if mcmVarsGeneralSettings[data.settingId] ~= nil then
+            mcmVarsGeneralSettings[data.settingId] = data.value
+        end
+
     end)
     
     Ext.Events.StatsLoaded:Subscribe(OnStatsLoadedMcm)
 
     ---Should've done this from the start
     Ext.Events.GameStateChanged:Subscribe(function(e)
-        if e.ToState == "Save" then
+        if e.ToState == "Save" or e.ToState == "load" then
             BasicPrint("Save OnStatsLoadedMcm")
             OnStatsLoadedMcm()
         end

@@ -31,14 +31,14 @@
                     "SectionName": "Feats Settings",
                     "Settings": [
                         {
-                            "Id": "addGnome_tinkertools_spells",
+                            "Id": "AddGnome_Tinkertools_Spells",
                             "Name": "Rock Gnome Tinkertools",
                             "Type": "checkbox",
                             "Default": true,
                             "Tooltip": "Enable or disable Rock Gnome Tinkertools."
                         },
                         {
-                            "Id": "addHalfElfDrow_Drow_DrowWeaponTraining_Passives",
+                            "Id": "AddHalfElfDrow_Drow_DrowWeaponTraining_Passives",
                             "Name": "HalfElfDrow Drow DrowWeaponTraining Passives",
                             "Type": "checkbox",
                             "Default": true,
