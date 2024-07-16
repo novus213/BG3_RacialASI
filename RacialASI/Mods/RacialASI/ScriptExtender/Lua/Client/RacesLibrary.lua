@@ -127,8 +127,10 @@ for _, raceMod in pairs(RaceList) do
 --	if raceMod.Guid == SearchedMod then
 		print("Le mod : " .. raceMod.Name .. " est bien dans la liste")
 		for i = 1, 6 do
-			RaceStat 		= "Ability(" .. StatsList[i] .. "," .. raceMod.Stats[i] .. ")"
+			RaceStat = "Ability(" .. StatsList[i] .. "," .. raceMod.Stats[i] .. ")"
 			print(RaceStat)
 		 end
 --	end
 end
+
+StringDeSesMort = {RaceStat}
