@@ -8,7 +8,7 @@ end
 
 -- Define Actions and Payloads
 
-local optionActions = {
+optionActions = {
     AddGnome_Tinkertools_Spells = {
         actions = {
             {
@@ -206,7 +206,7 @@ local function loadConfiguration()
     return configData
 end
 
-local function handlePayload(action, payload)
+function handlePayload(action, payload)
     local success, result = pcall(callApiAction, action, { payload = payload })
     if not success then
         BasicError(string.format("============> ERROR in %s action: %s", action, result))
@@ -258,13 +258,18 @@ local function OnStatsLoaded()
     end
 end
 
-Ext.Events.StatsLoaded:Subscribe(start)
-Ext.Events.StatsLoaded:Subscribe(OnStatsLoaded)
 
----Should've done this from the start
-Ext.Events.GameStateChanged:Subscribe(function(e)
-    if e.FromState == "Running" and e.ToState == "Save" then
-        SyncModVariables()
-        SyncUserVariables()
-    end
-end)
+if not Ext.Mod.IsModLoaded(depsServ.MCM_GUID) then
+    Ext.Events.StatsLoaded:Subscribe(start)
+    Ext.Events.StatsLoaded:Subscribe(OnStatsLoaded)
+
+    ---Should've done this from the start
+    Ext.Events.GameStateChanged:Subscribe(function(e)
+        if e.FromState == "Running" and e.ToState == "Save" then
+            SyncModVariables()
+            SyncUserVariables()
+        end
+    end)
+else
+    Ext.Events.StatsLoaded:Subscribe(OnStatsLoadedMcm)
+end
