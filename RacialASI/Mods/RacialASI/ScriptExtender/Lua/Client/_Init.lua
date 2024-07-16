@@ -259,6 +259,75 @@ local function OnStatsLoaded()
 end
 
 
+
+function OnStatsLoadedMcm()
+    for optionName, optionValue in ipairs(mcmVars) do
+        local actionConfigs = optionActions[optionName]
+        if actionConfigs then
+            processOptionMcm(optionName, optionValue, actionConfigs.actions)
+        else
+            BasicError(string.format("============> ERROR: No action configuration found for %s.", optionName))
+        end
+    end
+end
+
+function processOptionMcm(optionName, optionValue, actionConfigs)
+    if optionValue == true then
+        BasicWarning(string.format("============> %s is enabled.", optionName))
+        for _, actionConfig in ipairs(actionConfigs) do
+
+            local action = actionConfig.action
+            local payloads = actionConfig.payloads
+
+            for _, payload in ipairs(payloads) do
+                if payload.Target then
+                        if action == "InsertSelectors" then
+                            local payload = createPayloadMcm(payload.modGuid, payload.Target, payload.Function, payload.Params.Guid, payload.Params.PrepareType, payload.Params.CooldownType)
+                            Mods.SubclassCompatibilityFramework.Api.InsertSelectors({payload})
+                        end
+
+                        if action == "InsertPassives" then
+                            local payload = createPayloadMcm(payload.modGuid, payload.Target, payload.Function, payload.Params.Guid, payload.Params.PrepareType, payload.Params.CooldownType, payload.Type, payload.TypeStrings)
+                            Mods.SubclassCompatibilityFramework.Api.InsertPassives({payload})
+                        end
+
+                        if action == "RemovePassives" then
+                            local payload = createPayloadMcm(payload.modGuid, payload.Target, payload.Function, payload.Params.Guid, payload.Params.PrepareType, payload.Params.CooldownType, payload.Type, payload.TypeStrings)
+                            Mods.SubclassCompatibilityFramework.Api.RemovePassives({payload})
+                        end                    
+                else
+                    BasicError(string.format("============> ERROR: Invalid target UUID for payload in '%s'.", optionName))
+                end
+            end
+        end
+    end
+end
+
+local function createPayloadMcm(modGuid, targetuuid, func, paramsGuid, prepareType, CooldownType, typePayload, stringPayload)
+        if func == nil then
+            return {
+                modGuid = modGuid,
+                Target = targetuuid,
+                FileType = "Progression",
+                Type = typePayload,
+                Strings = {""..stringPayload..""}
+            }
+        elseif func == "AddSpells" then
+            return {
+                modGuid = modGuid,
+                Target = targetuuid,
+                FileType = "Progression",
+                Function = func,
+                Params = {
+                    Guid = paramsGuid,                      -- Used in All
+                    PrepareType = prepareType, -- Used in SelectSpells, AddSpells. Values: Default, AlwaysPrepared
+                    CooldownType = cooldownType     -- Used in SelectSpells, AddSpells. Values: Default, UntilRest
+                }
+            }
+        end
+end
+
+
 if not Ext.Mod.IsModLoaded(deps.MCM_GUID) then
     Ext.Events.StatsLoaded:Subscribe(start)
     Ext.Events.StatsLoaded:Subscribe(OnStatsLoaded)
