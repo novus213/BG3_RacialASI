@@ -1,4 +1,4 @@
-RaceList = {
+RaceLibrary = {
 	{
 		Name			=	"Fairy (Flutter and Whimsy)",
 		Guid			=	"673c5b7b-a274-4916-ad89-4e3c591e1187",
@@ -123,7 +123,7 @@ StatsList = {"Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", 
 
 
 --[[ String builder for the string table to removeAbility ]]
-for _, raceMod in pairs(RaceList) do
+for _, raceMod in pairs(RaceLibrary) do
 --	if raceMod.Guid == SearchedMod then
 		print("Le mod : " .. raceMod.Name .. " est bien dans la liste")
 		for i = 1, 6 do
