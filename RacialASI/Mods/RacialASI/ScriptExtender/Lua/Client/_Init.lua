@@ -262,7 +262,7 @@ end
 
 ---- MCM CONFIG
 
-function OnStatsLoadedMcm()
+function OnStatsLoadedMCM()
     for key, value in pairs(mcmVars) do
         local actionConfigs = optionActions[key]
 
@@ -330,7 +330,9 @@ else
         }
     end
 
-    Mods.BG3MCM.IMGUIAPI:InsertModMenuTab(ModuleUUID, "Inserted tab", function(tabHeader)
+    -- ask how put button not in tab
+    
+    Mods.BG3MCM.IMGUIAPI:InsertModMenuTab(ModuleUUID, "SAVE TAB", function(tabHeader)
         local myCustomWidget = tabHeader:AddButton("Save")
         myCustomWidget.OnClick = function()
             -- Request the server to take actions to help uninstalling the mod
@@ -359,13 +361,6 @@ else
 
     end)
     
-    Ext.Events.StatsLoaded:Subscribe(OnStatsLoadedMcm)
+    Ext.Events.StatsLoaded:Subscribe(OnStatsLoadedMCM)
 
-    ---Should've done this from the start
-    Ext.Events.GameStateChanged:Subscribe(function(e)
-        if e.ToState == "Save" or e.ToState == "load" then
-            BasicPrint("Save OnStatsLoadedMcm")
-            OnStatsLoadedMcm()
-        end
-    end)
 end
