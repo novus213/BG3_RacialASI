@@ -1,4 +1,4 @@
-activeBook = "PHB"
+searchedBook = "PHB"
 
 --[[Books = { Officials Sources list ]]
 Dnd5eLimited = { --[[ Core Rule Books (5e Limited) --]]
@@ -16,7 +16,7 @@ Dnd5e = { --[[  Complements Books (5e) --]]
 	{bookRef = "BPGotG",		bookName = "Bigby Presents: Glory of the Giants"			},
 	{bookRef = "TBoMT",			bookName = "The Book of Many Things"						},
 }
-DnD5eExtended = { --[[ Campains settings (5e Extended) --]]
+Dnd5eExtended = { --[[ Campains settings (5e Extended) --]]
 	{bookRef = "SCA",		bookName = "Sword Coast Adventurer’s Guide"						},
 	{bookRef = "GGtR",		bookName = "Guildmasters’ Guide to Ravnica"						},
 	{bookRef = "AI",		bookName = "Acquisitions Incorporated"							},
@@ -62,28 +62,28 @@ Flavours = {	--[[ Flavours --]]
 
 function checkBook()
 	for _, book in pairs(Dnd5eLimited) do
-		if book.bookRef == activeBook then
+		if book.bookRef == searchedBook then
 			do print("We Found it! - " .. book.bookName .. " in a Dnd5e Limited Book")
 				break
 			end
 		end
 	end
 	for _, book in pairs(Dnd5e) do
-		if book.bookRef == activeBook then
+		if book.bookRef == searchedBook then
 			do print("We Found it! - " .. book.bookName .. " in a Dnd5e Book")
 				break
 			end
 		end
 	end
-	for _, book in pairs(DndExtended) do
-		if book.bookRef == activeBook then
+	for _, book in pairs(Dnd5eExtended) do
+		if book.bookRef == searchedBook then
 			do print("We Found it! - " .. book.bookName .. " in a Dnd5e Extended Book")
 				break
 			end
 		end
 	end
 	for _, book in pairs(Flavours) do
-		if book.bookRef == activeBook then
+		if book.bookRef == searchedBook then
 			do print("We Found it! - " .. book.bookName .. " in a Flavour Book")
 				break
 			end
