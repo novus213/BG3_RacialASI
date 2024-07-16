@@ -67,7 +67,7 @@ RaceLibrary = {
 		Guid			=	"94710eae-8809-42fe-ab17-5681ceae8714",
 		UUID			=	"69a8edff-fdec-4ef5-aeb6-dcb15562b062",
 		Author		=	"",
-		SourceBook	= 	"Volo's Guide to Monsters (LEGACY)",
+		SourceBook	= 	"VGtM",
 		Stats		=	{"2", "0", "1", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 		Sab     		= 	{"0","0","0"}
 	 },
@@ -76,7 +76,7 @@ RaceLibrary = {
 		Guid			=	"02ad19d9-bb24-44a6-9693-35cec821774c",
 		UUID			=	"82704351-c1d6-4767-adef-49e25a290aad",
 		Author		=	"",
-		SourceBook	=	"Explorer's Guide to Wildemount",
+		SourceBook	=	"EGtW",
 		Stats		=	{"2", "0", "1", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 		Sab     		= 	{"0","0","0"}
 	 },
@@ -85,7 +85,7 @@ RaceLibrary = {
 		Guid			=	"58474556-4b69-494d-b290-1421010d1742",
 		UUID			=	"d17424ad-839d-4733-b16d-f7cb007c865f",
 		Author		=	"",
-		SourceBook	=	"Guildmasters' Guide to Ravnica",
+		SourceBook	=	"GGtR",
 		Stats		=	{"2", "0", "1", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 		Sab     		= 	{"0","0","0"}
 	 },
@@ -94,7 +94,7 @@ RaceLibrary = {
 		Guid			=	"866dee81-42b5-4647-9fb7-ec39271f6c96",
 		UUID			=	"ee0bbb70-b8f7-44ec-9419-565ab963f664",
 		Author		=	"",
-		SourceBook	=	"Volo's Guide to Monsters (LEGACY)",
+		SourceBook	=	"VGtM",
 		Stats		=	{"2", "0", "1", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 		Sab     		= 	{"0","0","0"}
 	 },
@@ -103,7 +103,7 @@ RaceLibrary = {
 		Guid			=	"cbd0f091-d2a7-4569-bdf8-56511cea3076",
 		UUID			=	"0e35ec74-a63c-4d24-8912-4afa4a9930d8",
 		Author		=	"",
-		SourceBook	=	"Volo's Guide to Monsters (LEGACY)",
+		SourceBook	=	"VGtM",
 		Stats		=	{"2", "0", "1", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 		Sab     		= 	{"0","0","0"}
 	 },
@@ -112,7 +112,7 @@ RaceLibrary = {
 		Guid			=	"f4361c10-b197-4490-ae30-06ce796f950e",
 		UUID			=	"d01d244f-3ae2-4d15-b0ba-9aed04fc16ac",
 		Author		=	"",
-		SourceBook	=	"Volo's Guide to Monsters (LEGACY)",
+		SourceBook	=	"VGtM",
 		Stats		=	{"2", "0", "1", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 		Sab     		= 	{"0","0","0"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	 }
