@@ -103,7 +103,7 @@ local function createPayload(modGuid, targetuuid, func, paramsGuid, prepareType,
                 Type = typePayload,
                 Strings = {""..stringPayload..""}
             }
-        elseif func == "AddSpells"
+        elseif func == "AddSpells" then
             return {
                 modGuid = modGuid,
                 Target = targetuuid,
