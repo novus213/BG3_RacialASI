@@ -37,6 +37,7 @@ raceMods = {
     Strings = {"Ability(Dexterity,1)", "Ability(Charisma,2)"}
     StringStats = {"2", "0", "1", "0", "0", "0"}
     SAB = true/false
+    SABNb = "2"
     SABStats = {"2", "1"}
 }
 
