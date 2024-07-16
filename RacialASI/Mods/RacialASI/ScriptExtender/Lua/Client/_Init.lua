@@ -258,71 +258,62 @@ local function OnStatsLoaded()
     end
 end
 
+
+
+---- MCM CONFIG
+
 function OnStatsLoadedMcm()
     for key, value in pairs(mcmVars) do
-        local actionConfigs = optionActions["RemoveHuman_HumanMilitia_HumanVersatility_Passives"] --optionActions[key]
-        if actionConfigs.actions then
-            processOptionMcm("RemoveHuman_HumanMilitia_HumanVersatility_Passives", true, actionConfigs.actions)
-            --processOptionMcm(key, value, actionConfigs.actions)
+        local actionConfigs = optionActions[key]
+        if key == "RASI" then
+            BasicPrint("RASI")
+            break
+        end
+
+        if key == "debugToggle" then
+            BasicPrint("debugToggle")
+            break
+        end
+
+        if key == "ActiveBookBoost" then
+            BasicPrint("ActiveBookBoost")
+            break
+        end
+
+        if actionConfigs then
+            processOptionMcm(key, value, actionConfigs.actions)
         else
-            -- GENERAL SETTINGS
-        --else
-            --BasicError(string.format("============> ERROR: No configuration found for %s.", key))
+            BasicError(string.format("============> ERROR: No configuration found for %s.", key))
         end
     end
 end
 
-function processOptionMcm(optionName, optionValue, actionConfigs)
-    BasicPrint("COUCOU processOptionMcm loading")
+function processOptionMcm(optionName,optionValue, actionConfigs)
     if optionValue == true then
         for _, actionConfig in ipairs(actionConfigs) do
 
             local action   = actionConfig.action
             local payloads = actionConfig.payloads
-            BasicPrint(payloads)
 
             for _, payload in ipairs(payloads) do
-                BasicPrint(payload)
                 if payload.Target then
-                        --[[if action == "InsertSelectors" then
-                            local payload = createPayloadMcm(payload.modGuid, payload.Target, payload.Type, payload.Strings, payload.Function, param.Guid, param.PrepareType, param.CooldownType)
-                            Mods.SubclassCompatibilityFramework.Api.InsertSelectors({payload})
-                        end]]--
+                    if action == "InsertSelectors" then
+                        --local payload = createPayloadMcm(payload.modGuid, payload.Target, payload.Type, payload.Strings, payload.Function, payload.Params.Guid, payload.Params.PrepareType, payload.Params.CooldownType)
+                        --Mods.SubclassCompatibilityFramework.Api.InsertSelectors({payload})
+                        BasicPrint("DoNothing")
+                    end
 
-                        --[[
-                        AddUndeadGhastlyGhouls_LightSensitivity_Passives = {
-                                actions = {
-                                    {
-                                        action = "InsertPassives",
-                                        payloads = {
-                                            {
-                                                modGuid = "1ebf4a1c-01d4-41ed-8aa1-5b3975c6d019", -- UndeadGhastly Ghouls
-                                                Target = "a21579fc-b7d7-4295-bf5c-d2111be3f13a",
-                                                FileType = "Progression",
-                                                Type = "PassivesAdded",
-                                                Strings = { "SunlightSensitivity", "Fenrules_Undeath", "Fenrules_UndyingFervor", "NECROTIC_REGENERATION_TECHNICAL" }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        ]]--
+                    if action == "InsertPassives" then
+                        --local payload = createPayloadMcm(payload.modGuid, payload.Target, payload.Type, payload.Strings)
+                        --Mods.SubclassCompatibilityFramework.Api.InsertPassives({payload})
+                        BasicPrint("DoNothing")
+                    end
 
-
-                        if action == "InsertPassives" then
-                            BasicPrint("InsertPassives")
-                            local payload = createPayloadMcm(payload.modGuid, payload.Target, payload.Type, payload.Strings)
-                            
-                            BasicPrint({payload})
-                            Mods.SubclassCompatibilityFramework.Api.InsertPassives({payload})
-                        end
-
-                        if action == "RemovePassives" then
-                            local payload = createPayloadMcm(payload.modGuid, payload.Target, payload.Type, payload.Strings)
-                            BasicPrint("RemovePassives")
-                            BasicPrint({payload})
-                            Mods.SubclassCompatibilityFramework.Api.RemovePassives({payload})
-                        end                   
+                    if action == "RemovePassives" then
+                        --local payload = createPayloadMcm(payload.modGuid, payload.Target, payload.Type, payload.Strings)
+                        --Mods.SubclassCompatibilityFramework.Api.RemovePassives({payload})
+                        BasicPrint("DoNothing")
+                    end
                 else
                     BasicError(string.format("============> ERROR: Invalid target UUID for payload in '%s'.", optionName))
                 end
@@ -332,32 +323,32 @@ function processOptionMcm(optionName, optionValue, actionConfigs)
     end
 end
 
+
 local function createPayloadMcm(modGuid, targetuuid, typePayload, stringPayload, func, paramsGuid, prepareType, CooldownType)
-    BasicPrint("createPayloadMcm begin")
-        if func == nil then
-            BasicPrint("Strings Payload")
-            return {
-                modGuid = modGuid,
-                Target = targetuuid,
-                FileType = "Progression",
-                Type = typePayload,
-                Strings = {""..stringPayload..""}
+    if func then
+        return {
+            modGuid = modGuid,
+            Target = targetuuid,
+            FileType = "Progression",
+            Function = func,
+            Params = {
+                Guid = paramsGuid,                      
+                PrepareType = prepareType,
+                CooldownType = cooldownType
             }
-        elseif func == "AddSpells" then
-            BasicPrint("func & Params Payload")
-            return {
-                modGuid = modGuid,
-                Target = targetuuid,
-                FileType = "Progression",
-                Function = func,
-                Params = {
-                    Guid = paramsGuid,                      -- Used in All
-                    PrepareType = prepareType, -- Used in SelectSpells, AddSpells. Values: Default, AlwaysPrepared
-                    CooldownType = cooldownType     -- Used in SelectSpells, AddSpells. Values: Default, UntilRest
-                }
-            }
-        end
+        }
+    else
+        return {
+            modGuid = modGuid,
+            Target = targetuuid,
+            FileType = "Progression",
+            Type = typePayload,
+            Strings = {""..stringPayload..""}
+        }
+    end
 end
+
+
 
 
 if not Ext.Mod.IsModLoaded(deps.MCM_GUID) then
@@ -372,7 +363,7 @@ if not Ext.Mod.IsModLoaded(deps.MCM_GUID) then
         end
     end)
 else
-        -- Function to get MCM setting values
+    -- Function to get MCM setting values
     function MCMGet(settingID)
         return Mods.BG3MCM.MCMAPI:GetSettingValue(settingID, ModuleUUID)
     end
@@ -384,36 +375,31 @@ else
             RemoveHuman_HumanMilitia_HumanVersatility_Passives = MCMGet("RemoveHuman_HumanMilitia_HumanVersatility_Passives"),
             RemoveHalfElf_HumanMilitia_Passives = MCMGet("RemoveHalfElf_HumanMilitia_Passives"),
             AddUndeadGhastlyGhouls_LightSensitivity_Passives = MCMGet("AddUndeadGhastlyGhouls_LightSensitivity_Passives"),
-            AddUnderdarkRaces_LightSensitivity_Passives = MCMGet("AddUnderdarkRaces_LightSensitivity_Passives")
-            --[[
-                mcmVars["AddGnomeTinkertoolsSpells"]
-                            addGnome_tinkertools_spells = MCMGet("addGnome_tinkertools_spells"),
-            ]]--
-        }
-        mcmVarsGeneralSettings = {
+            AddUnderdarkRaces_LightSensitivity_Passives = MCMGet("AddUnderdarkRaces_LightSensitivity_Passives"),
             RASI = MCMGet("RASI"),
             debugToggle = MCMGet("debugToggle"),
             ActiveBookBoost = MCMGet("active_5e_boost")
+            --[[
+                mcmVars["AddGnomeTinkertoolsSpells"]
+            ]]--
         }
     end
 
-    if Ext.Mod.IsModLoaded(deps.MCM_GUID) then
-        BasicPrint("COUCOU OnSessionLoadedMCM")
-        Ext.Events.StatsLoaded:Subscribe(OnSessionLoadedMCM)
-        -- Register a net listener to handle settings changes dynamically
-        Ext.RegisterNetListener("MCM_Saved_Setting", function(call, payload)
-            local data = Ext.Json.Parse(payload)
-            if not data or data.modGUID ~= ModuleUUID or not data.settingId then
-                return
-            end
+    Ext.Events.StatsLoaded:Subscribe(OnSessionLoadedMCM)
+    -- Register a net listener to handle settings changes dynamically
+    Ext.RegisterNetListener("MCM_Saved_Setting", function(call, payload)
+        local data = Ext.Json.Parse(payload)
+        if not data or data.modGUID ~= ModuleUUID or not data.settingId then
+            return
+        end
 
-            if mcmVars[data.settingId] ~= nil then
-                mcmVars[data.settingId] = data.value
-            end
-        end)
-    end
-    BasicPrint("COUCOU StatsLoaded")
+        if mcmVars[data.settingId] ~= nil then
+            mcmVars[data.settingId] = data.value
+        end
+    end)
+    
     Ext.Events.StatsLoaded:Subscribe(OnStatsLoadedMcm)
+
     ---Should've done this from the start
     Ext.Events.GameStateChanged:Subscribe(function(e)
         if e.ToState == "Save" then
@@ -421,5 +407,4 @@ else
             OnStatsLoadedMcm()
         end
     end)
-    BasicPrint("COUCOU fin StatsLoaded")
 end
