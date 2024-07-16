@@ -1,3 +1,1 @@
-RequireFiles("Server/", {
-    "SubscribedEvents",
-})
+Ext.Require("Server/SubscribedEvents.lua")
