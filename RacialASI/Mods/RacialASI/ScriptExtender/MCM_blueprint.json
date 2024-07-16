@@ -16,7 +16,14 @@
                             "Type": "checkbox",
                             "Default": true,
                             "Tooltip": "Enable or disable RacialASI."
-                        }                        
+                        },
+                        {
+                            "Id": "debugToggle",
+                            "Name": "Debug Toggle",
+                            "Type": "checkbox",
+                            "Default": false,
+                            "Description": "Keep it disabled unless you want to see verbose output on the console. \nIt is intended for the author to find bugs eaiser"
+                        }                       
                     ]
                 },
                 {
