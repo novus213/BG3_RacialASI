@@ -331,14 +331,13 @@ else
     end
 
     -- ask how put button not in tab
-    
+
     Mods.BG3MCM.IMGUIAPI:InsertModMenuTab(ModuleUUID, "SAVE TAB", function(tabHeader)
         local myCustomWidget = tabHeader:AddButton("Save")
         myCustomWidget.OnClick = function()
             -- Request the server to take actions to help uninstalling the mod
-        Ext.Net.PostMessageToServer("MU_Reload_Conf", Ext.Json.Stringify({
-            modUUID = selectedModUUID,
-        }))
+            OnSessionLoadedMCM()
+            OnStatsLoadedMCM()
         end
     end)
 
