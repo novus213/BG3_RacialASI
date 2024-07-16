@@ -39,6 +39,24 @@ raceMods = {
     SAB = true/false
     SABStats = {"2", "1"}
 }
+
+
+
+payload.Function = "SelectAbilityBonus"
+        payload.Params = {
+            Guid = AbilityList_UUID,
+            Amount = "2",
+            BonusType = "AbilityBonus",
+            Amounts = {"2", "1"}
+        }
+
+payload.Function = "SelectAbilityBonus"
+        payload.Params = {
+            Guid = AbilityList_UUID,
+            Amount = "2",
+            BonusType = "AbilityBonus",
+            Amounts = {"1", "1"}
+        }
     ]]--
 
 local AbilityList_UUID = "b9149c8e-52c8-46e5-9cb6-fc39301c05fe"
