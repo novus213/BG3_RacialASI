@@ -8,7 +8,7 @@ end
 
 -- Define Actions and Payloads
 
-local optionActions = {
+optionActions = {
     AddGnome_Tinkertools_Spells = {
         actions = {
             {
@@ -206,7 +206,7 @@ local function loadConfiguration()
     return configData
 end
 
-local function handlePayload(action, payload)
+function handlePayload(action, payload)
     local success, result = pcall(callApiAction, action, { payload = payload })
     if not success then
         BasicError(string.format("============> ERROR in %s action: %s", action, result))
@@ -258,13 +258,136 @@ local function OnStatsLoaded()
     end
 end
 
-Ext.Events.StatsLoaded:Subscribe(start)
-Ext.Events.StatsLoaded:Subscribe(OnStatsLoaded)
-
----Should've done this from the start
-Ext.Events.GameStateChanged:Subscribe(function(e)
-    if e.FromState == "Running" and e.ToState == "Save" then
-        SyncModVariables()
-        SyncUserVariables()
+function OnStatsLoadedMcm()
+    BasicPrint("COUCOU OnStatsLoadedMcm")
+    local storedValues = {}
+    for key, value in ipairs(mcmVars) do
+        storedValues[key] = value
+        BasicPrint("value.actions")
+        BasicPrint(value.actions)
+        -- Vérification simplifiée de l'existence de actionConfigs
+        if value.actions then
+          processOptionMcm(key, value, value.actions)
+        else
+          BasicError(string.format("============> ERROR: No action configuration found for %s.", key))
+        end
     end
-end)
+end
+
+function processOptionMcm(optionName, optionValue, actionConfigs)
+    BasicPrint("COUCOU processOptionMcm")
+    if optionValue == true then
+        BasicWarning(string.format("============> %s is enabled.", optionName))
+        for _, actionConfig in ipairs(actionConfigs) do
+
+            local action = actionConfig.action
+            local payloads = actionConfig.payloads
+
+            for _, payload in ipairs(payloads) do
+                if payload.Target then
+                        if action == "InsertSelectors" then
+                            local payload = createPayloadMcm(payload.modGuid, payload.Target, payload.Function, payload.Params.Guid, payload.Params.PrepareType, payload.Params.CooldownType)
+                            Mods.SubclassCompatibilityFramework.Api.InsertSelectors({payload})
+                        end
+
+                        if action == "InsertPassives" then
+                            local payload = createPayloadMcm(payload.modGuid, payload.Target, payload.Function, payload.Params.Guid, payload.Params.PrepareType, payload.Params.CooldownType, payload.Type, payload.TypeStrings)
+                            Mods.SubclassCompatibilityFramework.Api.InsertPassives({payload})
+                        end
+
+                        if action == "RemovePassives" then
+                            local payload = createPayloadMcm(payload.modGuid, payload.Target, payload.Function, payload.Params.Guid, payload.Params.PrepareType, payload.Params.CooldownType, payload.Type, payload.TypeStrings)
+                            Mods.SubclassCompatibilityFramework.Api.RemovePassives({payload})
+                        end                    
+                else
+                    BasicError(string.format("============> ERROR: Invalid target UUID for payload in '%s'.", optionName))
+                end
+            end
+        end
+    end
+end
+
+local function createPayloadMcm(modGuid, targetuuid, func, paramsGuid, prepareType, CooldownType, typePayload, stringPayload)
+        if func == nil then
+            return {
+                modGuid = modGuid,
+                Target = targetuuid,
+                FileType = "Progression",
+                Type = typePayload,
+                Strings = {""..stringPayload..""}
+            }
+        elseif func == "AddSpells" then
+            return {
+                modGuid = modGuid,
+                Target = targetuuid,
+                FileType = "Progression",
+                Function = func,
+                Params = {
+                    Guid = paramsGuid,                      -- Used in All
+                    PrepareType = prepareType, -- Used in SelectSpells, AddSpells. Values: Default, AlwaysPrepared
+                    CooldownType = cooldownType     -- Used in SelectSpells, AddSpells. Values: Default, UntilRest
+                }
+            }
+        end
+end
+
+
+if not Ext.Mod.IsModLoaded(deps.MCM_GUID) then
+    Ext.Events.StatsLoaded:Subscribe(start)
+    Ext.Events.StatsLoaded:Subscribe(OnStatsLoaded)
+
+    ---Should've done this from the start
+    Ext.Events.GameStateChanged:Subscribe(function(e)
+        if e.FromState == "Running" and e.ToState == "Save" then
+            SyncModVariables()
+            SyncUserVariables()
+        end
+    end)
+else
+        -- Function to get MCM setting values
+    function MCMGet(settingID)
+        return Mods.BG3MCM.MCMAPI:GetSettingValue(settingID, ModuleUUID)
+    end
+
+    function OnSessionLoadedMCM()
+        mcmVars = {
+            RASI = MCMGet("RASI"),
+            debugToggle = MCMGet("debugToggle"),
+            addGnome_tinkertools_spells = MCMGet("addGnome_tinkertools_spells"),
+            addHalfElfDrow_drow_drowWeaponTraining_passives = MCMGet("addHalfElfDrow_drow_drowWeaponTraining_passives"),
+            RemoveHuman_HumanMilitia_HumanVersatility_Passives = MCMGet("RemoveHuman_HumanMilitia_HumanVersatility_Passives"),
+            RemoveHalfElf_HumanMilitia_Passives = MCMGet("RemoveHalfElf_HumanMilitia_Passives"),
+            AddUndeadGhastlyGhouls_LightSensitivity_Passives = MCMGet("AddUndeadGhastlyGhouls_LightSensitivity_Passives"),
+            AddUnderdarkRaces_LightSensitivity_Passives = MCMGet("AddUnderdarkRaces_LightSensitivity_Passives"),
+            ActiveBookBoost = MCMGet("active_5e_boost")
+            --[[
+                mcmVars["AddGnomeTinkertoolsSpells"]
+            ]]--
+        }
+    end
+
+    if Ext.Mod.IsModLoaded(deps.MCM_GUID) then
+        BasicPrint("COUCOU OnSessionLoadedMCM")
+        Ext.Events.StatsLoaded:Subscribe(OnSessionLoadedMCM)
+        -- Register a net listener to handle settings changes dynamically
+        Ext.RegisterNetListener("MCM_Saved_Setting", function(call, payload)
+            local data = Ext.Json.Parse(payload)
+            if not data or data.modGUID ~= ModuleUUID or not data.settingId then
+                return
+            end
+
+            if mcmVars[data.settingId] ~= nil then
+                mcmVars[data.settingId] = data.value
+            end
+        end)
+    end
+    BasicPrint("COUCOU StatsLoaded")
+    Ext.Events.StatsLoaded:Subscribe(OnStatsLoadedMcm)
+    ---Should've done this from the start
+    Ext.Events.GameStateChanged:Subscribe(function(e)
+        if e.ToState == "Save" then
+            OnStatsLoadedMcm()
+        end
+    end)
+    BasicPrint("COUCOU fin StatsLoaded")
+end
