@@ -60,7 +60,7 @@ Flavours = {	--[[ Flavours --]]
 
 	
 
-
+function checkBook()
 	for _, book in pairs(Dnd5eLimited) do
 		if book.bookRef == activeBook then
 			do print("We Found it! - " .. book.bookName .. " in a Dnd5e Limited Book")
@@ -89,3 +89,4 @@ Flavours = {	--[[ Flavours --]]
 			end
 		end
 	end
+end

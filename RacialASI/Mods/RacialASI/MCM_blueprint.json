@@ -38,7 +38,7 @@
                             "Tooltip": "Enable or disable Rock Gnome Tinkertools."
                         },
                         {
-                            "Id": "addHalfElfDrow_drow_drowWeaponTraining_passives",
+                            "Id": "addHalfElfDrow_Drow_DrowWeaponTraining_Passives",
                             "Name": "HalfElfDrow Drow DrowWeaponTraining Passives",
                             "Type": "checkbox",
                             "Default": true,
