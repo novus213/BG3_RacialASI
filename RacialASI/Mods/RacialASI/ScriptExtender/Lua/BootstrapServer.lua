@@ -55,7 +55,7 @@ function OnStatsLoadedMcm()
     for optionName, optionValue in ipairs(mcmVars) do
         local actionConfigs = optionActions[optionName]
         if actionConfigs then
-            processOptionMcm(mcmVars[optionName], mcmVars[optionValue], actionConfigs.actions)
+            processOptionMcm(optionName, optionValue, actionConfigs.actions)
         else
             BasicError(string.format("============> ERROR: No action configuration found for %s.", optionName))
         end
