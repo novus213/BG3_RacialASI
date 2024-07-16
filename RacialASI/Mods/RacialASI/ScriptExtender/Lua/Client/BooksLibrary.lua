@@ -1,4 +1,4 @@
-Var="PHB"
+activeBook = "PHB"
 
 --[[Books = { Officials Sources list ]]
 Dnd5eLimited = { --[[ Core Rule Books (5e Limited) --]]
@@ -62,28 +62,28 @@ Flavours = {	--[[ Flavours --]]
 
 
 	for _, book in pairs(Dnd5eLimited) do
-		if book.bookRef == Var then
+		if book.bookRef == activeBook then
 			do print("We Found it! - " .. book.bookName .. " in a Dnd5e Limited Book")
 				break
 			end
 		end
 	end
 	for _, book in pairs(Dnd5e) do
-		if book.bookRef == Var then
+		if book.bookRef == activeBook then
 			do print("We Found it! - " .. book.bookName .. " in a Dnd5e Book")
 				break
 			end
 		end
 	end
 	for _, book in pairs(DndExtended) do
-		if book.bookRef == Var then
+		if book.bookRef == activeBook then
 			do print("We Found it! - " .. book.bookName .. " in a Dnd5e Extended Book")
 				break
 			end
 		end
 	end
 	for _, book in pairs(Flavours) do
-		if book.bookRef == Var then
+		if book.bookRef == activeBook then
 			do print("We Found it! - " .. book.bookName .. " in a Flavour Book")
 				break
 			end
