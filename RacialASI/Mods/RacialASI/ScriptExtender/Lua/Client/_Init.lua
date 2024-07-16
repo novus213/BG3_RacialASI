@@ -335,7 +335,6 @@ else
     Mods.BG3MCM.IMGUIAPI:InsertModMenuTab(ModuleUUID, "SAVE TAB", function(tabHeader)
         local myCustomWidget = tabHeader:AddButton("Save")
         myCustomWidget.OnClick = function()
-            -- Request the server to take actions to help uninstalling the mod
             OnSessionLoadedMCM()
             OnStatsLoadedMCM()
         end
@@ -361,5 +360,13 @@ else
     end)
     
     Ext.Events.StatsLoaded:Subscribe(OnStatsLoadedMCM)
+
+    ---Should've done this from the start
+    Ext.Events.GameStateChanged:Subscribe(function(e)
+        if e.FromState == "load" and e.ToState == "Save" then
+            OnSessionLoadedMCM()
+            OnStatsLoadedMCM()
+        end
+    end)
 
 end
