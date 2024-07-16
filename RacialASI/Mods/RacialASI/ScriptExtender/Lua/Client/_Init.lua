@@ -363,7 +363,7 @@ else
 
     ---Should've done this from the start
     Ext.Events.GameStateChanged:Subscribe(function(e)
-        if e.FromState == "load" and e.ToState == "Save" then
+        if e.FromState == "LoadSession" or e.ToState == "LoadSession" then
             OnSessionLoadedMCM()
             OnStatsLoadedMCM()
         end
