@@ -340,5 +340,7 @@ if not Ext.Mod.IsModLoaded(deps.MCM_GUID) then
         end
     end)
 else
-    Ext.Events.StatsLoaded:Subscribe(OnStatsLoadedMcm)
+    if mcmVars ~= nil
+        Ext.Events.StatsLoaded:Subscribe(OnStatsLoadedMcm)
+    end
 end
