@@ -258,20 +258,24 @@ local function OnStatsLoaded()
     end
 end
 
-
-
 function OnStatsLoadedMcm()
-    for optionName, optionValue in ipairs(mcmVars) do
-        local actionConfigs = optionActions[optionName]
-        if actionConfigs then
-            processOptionMcm(optionName, optionValue, actionConfigs.actions)
+    BasicPrint("COUCOU OnStatsLoadedMcm")
+    local storedValues = {}
+    for key, value in ipairs(mcmVars) do
+        storedValues[key] = value
+        BasicPrint("value.actions")
+        BasicPrint(value.actions)
+        -- Vérification simplifiée de l'existence de actionConfigs
+        if value.actions then
+          processOptionMcm(key, value, value.actions)
         else
-            BasicError(string.format("============> ERROR: No action configuration found for %s.", optionName))
+          BasicError(string.format("============> ERROR: No action configuration found for %s.", key))
         end
     end
 end
 
 function processOptionMcm(optionName, optionValue, actionConfigs)
+    BasicPrint("COUCOU processOptionMcm")
     if optionValue == true then
         BasicWarning(string.format("============> %s is enabled.", optionName))
         for _, actionConfig in ipairs(actionConfigs) do
@@ -340,7 +344,50 @@ if not Ext.Mod.IsModLoaded(deps.MCM_GUID) then
         end
     end)
 else
-    if mcmVars ~= nil then
-        Ext.Events.StatsLoaded:Subscribe(OnStatsLoadedMcm)
+        -- Function to get MCM setting values
+    function MCMGet(settingID)
+        return Mods.BG3MCM.MCMAPI:GetSettingValue(settingID, ModuleUUID)
     end
+
+    function OnSessionLoadedMCM()
+        mcmVars = {
+            RASI = MCMGet("RASI"),
+            debugToggle = MCMGet("debugToggle"),
+            addGnome_tinkertools_spells = MCMGet("addGnome_tinkertools_spells"),
+            addHalfElfDrow_drow_drowWeaponTraining_passives = MCMGet("addHalfElfDrow_drow_drowWeaponTraining_passives"),
+            RemoveHuman_HumanMilitia_HumanVersatility_Passives = MCMGet("RemoveHuman_HumanMilitia_HumanVersatility_Passives"),
+            RemoveHalfElf_HumanMilitia_Passives = MCMGet("RemoveHalfElf_HumanMilitia_Passives"),
+            AddUndeadGhastlyGhouls_LightSensitivity_Passives = MCMGet("AddUndeadGhastlyGhouls_LightSensitivity_Passives"),
+            AddUnderdarkRaces_LightSensitivity_Passives = MCMGet("AddUnderdarkRaces_LightSensitivity_Passives"),
+            ActiveBookBoost = MCMGet("active_5e_boost")
+            --[[
+                mcmVars["AddGnomeTinkertoolsSpells"]
+            ]]--
+        }
+    end
+
+    if Ext.Mod.IsModLoaded(deps.MCM_GUID) then
+        BasicPrint("COUCOU OnSessionLoadedMCM")
+        Ext.Events.StatsLoaded:Subscribe(OnSessionLoadedMCM)
+        -- Register a net listener to handle settings changes dynamically
+        Ext.RegisterNetListener("MCM_Saved_Setting", function(call, payload)
+            local data = Ext.Json.Parse(payload)
+            if not data or data.modGUID ~= ModuleUUID or not data.settingId then
+                return
+            end
+
+            if mcmVars[data.settingId] ~= nil then
+                mcmVars[data.settingId] = data.value
+            end
+        end)
+    end
+    BasicPrint("COUCOU StatsLoaded")
+    Ext.Events.StatsLoaded:Subscribe(OnStatsLoadedMcm)
+    ---Should've done this from the start
+    Ext.Events.GameStateChanged:Subscribe(function(e)
+        if e.ToState == "Save" then
+            OnStatsLoadedMcm()
+        end
+    end)
+    BasicPrint("COUCOU fin StatsLoaded")
 end
