@@ -40,40 +40,24 @@
                     ]
                 },
                 {
-                    "SectionId": "book_settings",
-                    "SectionName": "Book Settings",
+                    "SectionId": "5e_settings",
+                    "SectionName": "5e Settings",
                     "Settings": [
                         {
-                            "Id": "active_book_boost",
-                            "Name": "active book boost",
+                            "Id": "active_5e_boost",
+                            "Name": "active 5e boost",
                             "Type": "enum",
-                            "Default": "ALL Books",
+                            "Default": "5e extended",
                             "Options": {
                                 "Choices": [
-                                    "All books",
-                                    "Player's Handbook (2024)",
-                                    "Player's Handbook (2014)",
-                                    "Mordenkainen Presents: Monsters of the Multiverse",
-                                    "Spelljammer: Adventures in Space",
-                                    "Van Richten's Guide to Ravenloft",
-                                    "Grim Hollow's Player's Guide",
-                                    "Eorzea (FFXIV X Dungeons & Souls)",
-                                    "Malipāla Odyssey (Dungeons & Souls)",
-                                    "Dragonlance: Shadow of the Dragon Queen",
-                                    "Volo's Guide to Monsters (LEGACY)",
-                                    "Explorer's Guide to Wildemount",
-                                    "Eberron: Rising from the Last War",
-                                    "Guildmasters' Guide to Ravnica",
-                                    "Tasha's Cauldron of Everything",
-                                    "Fizban's Treasury of Dragons",
-                                    "Xanathar's Guide to Everything",
-                                    "Bigby Presents: Glory of the Giants",
-                                    "Tales from the Firelit Gathering",
-                                    "Mythic Odysseys of Theros",
-                                    "Homebrew"
+                                    "5e RAW",
+                                    "5e extended",
+                                    "All",
+                                    "Vanillia",
+                                    "Homebrew Bullshit",
                                 ]
                             },
-                            "Tooltip": "Choose one Book to apply options"
+                            "Tooltip": "Choose one to apply options"
                         }
                     ]
                 }
