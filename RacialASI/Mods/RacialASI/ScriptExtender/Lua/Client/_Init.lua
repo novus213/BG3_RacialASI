@@ -259,7 +259,7 @@ local function OnStatsLoaded()
 end
 
 
-if not Ext.Mod.IsModLoaded(depsServ.MCM_GUID) then
+if not Ext.Mod.IsModLoaded(deps.MCM_GUID) then
     Ext.Events.StatsLoaded:Subscribe(start)
     Ext.Events.StatsLoaded:Subscribe(OnStatsLoaded)
 

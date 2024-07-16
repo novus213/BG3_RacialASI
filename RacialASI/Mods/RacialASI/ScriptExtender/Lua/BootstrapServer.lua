@@ -95,22 +95,27 @@ function processOptionMcm(optionName, optionValue, actionConfigs)
 end
 
 local function createPayload(modGuid, targetuuid, func, paramsGuid, prepareType, CooldownType, typePayload, stringPayload)
-    return {
-        modGuid = modGuid,
-        Target = targetuuid,
-        FileType = "Progression",
         if func == nil then
-            Type = typePayload,
-            Strings = {""..stringPayload..""}
+            return {
+                modGuid = modGuid,
+                Target = targetuuid,
+                FileType = "Progression",
+                Type = typePayload,
+                Strings = {""..stringPayload..""}
+            }
         elseif func == "AddSpells"
-            Function = func,
-            Params = {
-                Guid = paramsGuid,                      -- Used in All
-                PrepareType = prepareType, -- Used in SelectSpells, AddSpells. Values: Default, AlwaysPrepared
-                CooldownType = cooldownType     -- Used in SelectSpells, AddSpells. Values: Default, UntilRest
+            return {
+                modGuid = modGuid,
+                Target = targetuuid,
+                FileType = "Progression",
+                Function = func,
+                Params = {
+                    Guid = paramsGuid,                      -- Used in All
+                    PrepareType = prepareType, -- Used in SelectSpells, AddSpells. Values: Default, AlwaysPrepared
+                    CooldownType = cooldownType     -- Used in SelectSpells, AddSpells. Values: Default, UntilRest
+                }
             }
         end
-      }
 end
 
 Ext.Events.SessionLoaded:Subscribe(OnSessionLoaded)
@@ -126,3 +131,8 @@ Ext.RegisterNetListener("MCM_Saved_Setting", function(call, payload)
         mcmVars[data.settingId] = data.value
     end
 end)
+
+--[[
+Ext.Osiris.RegisterListener("TUT_CharacterCreation_Started",1,"before",function()
+end) 
+]]--
