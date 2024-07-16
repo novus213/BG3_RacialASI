@@ -26,61 +26,6 @@
             ]
         },
         {
-            "Comment": "Remove Boosts To Raven Queen's Chosen - Shadar-Kai",
-			"UUID": "2f7edf7e-0a6b-4018-9715-1cb8aa238e4a",
-            "Strings": [
-                {
-                    "Action": "Remove",
-                    "Type": "Boosts",
-                    "Strings": ["Ability(Constitution,1)"]
-                }
-            ]
-        },
-        {
-            "Comment": "Remove Boosts To Aasimar DarthRen",
-			"UUID": "06e918ad-be2c-48b6-a098-0288539de744",
-            "Strings": [
-                {
-                    "Action": "Remove",
-                    "Type": "Boosts",
-                    "Strings": ["Ability(Charisma,2)"]
-                }
-            ]
-        },
-        {
-            "Comment": "Remove Boosts To Aasimar DarthRen",
-			"UUID": "4c2c61ae-5904-4576-a8c5-efecce67ab82",
-            "Strings": [
-                {
-                    "Action": "Remove",
-                    "Type": "Boosts",
-                    "Strings": ["Ability(Wisdom,1)"]
-                }
-            ]
-        },
-        {
-            "Comment": "Remove Boosts To Aasimar DarthRen",
-			"UUID": "56d62681-9769-4ad7-9bbf-4f72db44f070",
-            "Strings": [
-                {
-                    "Action": "Remove",
-                    "Type": "Boosts",
-                    "Strings": ["Ability(Constitution,1)"]
-                }
-            ]
-        },
-        {
-            "Comment": "Remove Boosts To Aasimar DarthRen",
-			"UUID": "1b07140b-98c1-42e8-b4ec-072622862dc2",
-            "Strings": [
-                {
-                    "Action": "Remove",
-                    "Type": "Boosts",
-                    "Strings": ["Ability(Strength,1)"]
-                }
-            ]
-        },
-        {
             "Comment": "Remove Boosts To Avariel Ren",
 			"UUID": "77b6f9ec-7d6a-44b2-b110-88bf025eb586",
             "Strings": [
@@ -137,7 +82,7 @@
         },
         {
             "Comment": "Remove Boosts To Skeleton race Rexsaze",
-			"UUID": "042e6092-1602-4338-b6f9-cc7987f3bff4",
+			"UUID": "b5f04836-e2ef-4eb6-93d5-4aad7f3b1c20",
             "Strings": [
                 {
                     "Action": "Remove",
