@@ -12,7 +12,7 @@ DevelReady = Ext.Utils:Version() >= 17 or Ext.Debug.IsDeveloperMode()
 
 Ext.Require("Shared/_Init.lua")
 Ext.Require("ModInfos/_ModInfos.lua")
-Ext.Require("Client/_Init.lua")
+Ext.Require("Client/_Init.lua") 
 
 -- Check if the mod is loaded and load ASI
 if Ext.Mod.IsModLoaded(deps.Framework_GUID) and Ext.Mod.IsModLoaded(deps.Framework_FM_GUID) then
