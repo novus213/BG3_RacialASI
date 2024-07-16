@@ -35,7 +35,9 @@ raceMods = {
     UUID="",
     SourceBook = "Mordenkainen Presents: Monsters of the Multiverse",
     Strings = {"Ability(Dexterity,1)", "Ability(Charisma,2)"}
-    StringStats = {2, 0, 1, 0, 0, 0}
+    StringStats = {"2", "0", "1", "0", "0", "0"}
+    SAB = true/false
+    SABStats = {"2", "1"}
 }
     ]]--
 
