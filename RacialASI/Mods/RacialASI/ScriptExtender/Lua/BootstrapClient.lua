@@ -14,9 +14,6 @@ Ext.Require("Shared/_Init.lua")
 Ext.Require("ModInfos/_ModInfos.lua")
 Ext.Require("Client/_Init.lua")
 
-Ext.Require("Client/Clean.lua")
-
-
 -- Check if the mod is loaded and load ASI
 if Ext.Mod.IsModLoaded(deps.Framework_GUID) and Ext.Mod.IsModLoaded(deps.Framework_FM_GUID) then
     Ext.Require("Client/FantasticalMultiverse.lua")
