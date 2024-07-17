@@ -30,6 +30,10 @@ function MCMASI:OnSessionLoadedMCM()
         debugLevel = MCMASIAPI:MCMGet("debug_level"),
         ActiveBookBoost = MCMASIAPI:MCMGet("active_5e_boost")
     }
+
+    BasicWarning(string.format("============> %s is loaded.", mcmVars))
+    BasicWarning(string.format("============> %s is loaded.", mcmVarsGeneralSettings))
+
 end
 
 --- Constructor for MCMASI:OnStatsLoadedMCM
@@ -57,7 +61,7 @@ function MCMASI:OnStatsLoadedMCM()
     BasicPrint(" ----------------------------- ")
     BasicPrint("                               ")
     BasicPrint("                               ")
-    
+
     for key, value in pairs(mcmVars) do
         local actionConfigs = optionActions[key]
 
