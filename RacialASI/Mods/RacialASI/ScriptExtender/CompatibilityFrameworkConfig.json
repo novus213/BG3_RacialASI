@@ -27,136 +27,174 @@
         },
         {
             "Comment": "Remove Boosts To Raven Queen's Chosen - Shadar-Kai",
-			"UUID": "2f7edf7e-0a6b-4018-9715-1cb8aa238e4a",
+            "UUID": "2f7edf7e-0a6b-4018-9715-1cb8aa238e4a",
             "Strings": [
                 {
                     "Action": "Remove",
                     "Type": "Boosts",
-                    "Strings": ["Ability(Constitution,1)"]
+                    "Strings": [
+                        "Ability(Constitution,1)"
+                    ]
                 }
             ]
         },
         {
             "Comment": "Remove Boosts To Aasimar DarthRen",
-			"UUID": "06e918ad-be2c-48b6-a098-0288539de744",
+            "UUID": "06e918ad-be2c-48b6-a098-0288539de744",
             "Strings": [
                 {
                     "Action": "Remove",
                     "Type": "Boosts",
-                    "Strings": ["Ability(Charisma,2)"]
+                    "Strings": [
+                        "Ability(Charisma,2)"
+                    ]
                 }
             ]
         },
         {
             "Comment": "Remove Boosts To Aasimar DarthRen",
-			"UUID": "4c2c61ae-5904-4576-a8c5-efecce67ab82",
+            "UUID": "4c2c61ae-5904-4576-a8c5-efecce67ab82",
             "Strings": [
                 {
                     "Action": "Remove",
                     "Type": "Boosts",
-                    "Strings": ["Ability(Wisdom,1)"]
+                    "Strings": [
+                        "Ability(Wisdom,1)"
+                    ]
                 }
             ]
         },
         {
             "Comment": "Remove Boosts To Aasimar DarthRen",
-			"UUID": "56d62681-9769-4ad7-9bbf-4f72db44f070",
+            "UUID": "56d62681-9769-4ad7-9bbf-4f72db44f070",
             "Strings": [
                 {
                     "Action": "Remove",
                     "Type": "Boosts",
-                    "Strings": ["Ability(Constitution,1)"]
+                    "Strings": [
+                        "Ability(Constitution,1)"
+                    ]
                 }
             ]
         },
         {
             "Comment": "Remove Boosts To Aasimar DarthRen",
-			"UUID": "1b07140b-98c1-42e8-b4ec-072622862dc2",
+            "UUID": "1b07140b-98c1-42e8-b4ec-072622862dc2",
             "Strings": [
                 {
                     "Action": "Remove",
                     "Type": "Boosts",
-                    "Strings": ["Ability(Strength,1)"]
+                    "Strings": [
+                        "Ability(Strength,1)"
+                    ]
                 }
             ]
         },
         {
             "Comment": "Remove Boosts To Avariel Ren",
-			"UUID": "77b6f9ec-7d6a-44b2-b110-88bf025eb586",
+            "UUID": "77b6f9ec-7d6a-44b2-b110-88bf025eb586",
             "Strings": [
                 {
                     "Action": "Remove",
                     "Type": "Boosts",
-                    "Strings": ["Ability(Dexterity,1)","Ability(Wisdom,1)"]
+                    "Strings": [
+                        "Ability(Dexterity,1)",
+                        "Ability(Wisdom,1)"
+                    ]
                 }
             ]
         },
         {
             "Comment": "Remove Boosts To Dhampyr Sassandra RU_SHI",
-			"UUID": "042e6092-1602-4338-b6f9-cc7987f3bff4",
+            "UUID": "042e6092-1602-4338-b6f9-cc7987f3bff4",
             "Strings": [
                 {
                     "Action": "Remove",
                     "Type": "Boosts",
-                    "Strings": ["Ability(Strength,2)","Ability(Intelligence,2)","Ability(Dexterity,-2)"]
+                    "Strings": [
+                        "Ability(Strength,2)",
+                        "Ability(Intelligence,2)",
+                        "Ability(Dexterity,-2)"
+                    ]
                 }
             ]
         },
         {
             "Comment": "Remove Boosts To Dhampyr Sassandra SVETOCHER",
-			"UUID": "ceae071e-2ff2-4043-a2b8-a7fc1ab16065",
+            "UUID": "ceae071e-2ff2-4043-a2b8-a7fc1ab16065",
             "Strings": [
                 {
                     "Action": "Remove",
                     "Type": "Boosts",
-                    "Strings": ["Ability(Strength,2)","Ability(Charisma,2)","Ability(Constitution,-2)"]
+                    "Strings": [
+                        "Ability(Strength,2)",
+                        "Ability(Charisma,2)",
+                        "Ability(Constitution,-2)"
+                    ]
                 }
             ]
         },
         {
             "Comment": "Remove Boosts To Dhampyr Sassandra AJIBACHANA",
-			"UUID": "65930b4d-75ca-4968-93b0-dde6662d5882",
+            "UUID": "65930b4d-75ca-4968-93b0-dde6662d5882",
             "Strings": [
                 {
                     "Action": "Remove",
                     "Type": "Boosts",
-                    "Strings": ["Ability(Dexterity,2)","Ability(Intelligence,2)","Ability(Wisdom,-2)"]
+                    "Strings": [
+                        "Ability(Dexterity,2)",
+                        "Ability(Intelligence,2)",
+                        "Ability(Wisdom,-2)"
+                    ]
                 }
             ]
         },
         {
             "Comment": "Remove Boosts To Dhampyr Sassandra ANCIENTBORN",
-			"UUID": "ebd122f3-9223-4cc0-ac98-3810995dde9b",
+            "UUID": "ebd122f3-9223-4cc0-ac98-3810995dde9b",
             "Strings": [
                 {
                     "Action": "Remove",
                     "Type": "Boosts",
-                    "Strings": ["Ability(Strength,2)","Ability(Wisdom,2)","Ability(Constitution,-2)"]
+                    "Strings": [
+                        "Ability(Strength,2)",
+                        "Ability(Wisdom,2)",
+                        "Ability(Constitution,-2)"
+                    ]
                 }
             ]
         },
         {
             "Comment": "Remove Boosts To Skeleton race Rexsaze",
-			"UUID": "042e6092-1602-4338-b6f9-cc7987f3bff4",
+            "UUID": "042e6092-1602-4338-b6f9-cc7987f3bff4",
             "Strings": [
                 {
                     "Action": "Remove",
                     "Type": "Boosts",
-                    "Strings": ["Ability(Constitution,1)"]
+                    "Strings": [
+                        "Ability(Constitution,1)"
+                    ]
                 }
             ]
         },
-		{
+        {
             "Comment": "Human Larian default",
-			"UUID": "139e1b8c-dfa1-4b2d-895c-efb170736093",
-			"Strings": [
-				{
-					"Action": "Insert",
-					"Type": "Boosts",
-					"Strings": ["Ability(Strength,1)","Ability(Dexterity,1)","Ability(Constitution,1)","Ability(Intelligence,1)","Ability(Wisdom,1)","Ability(Charisma,1)"]
-				}
-             ],
-             "Selectors": [
+            "UUID": "139e1b8c-dfa1-4b2d-895c-efb170736093",
+            "Strings": [
+                {
+                    "Action": "Insert",
+                    "Type": "Boosts",
+                    "Strings": [
+                        "Ability(Strength,1)",
+                        "Ability(Dexterity,1)",
+                        "Ability(Constitution,1)",
+                        "Ability(Intelligence,1)",
+                        "Ability(Wisdom,1)",
+                        "Ability(Charisma,1)"
+                    ]
+                }
+            ],
+            "Selectors": [
                 {
                     "Action": "Remove",
                     "Function": "SelectSkills",
@@ -166,69 +204,87 @@
         },
         {
             "Comment": "High Elf",
-			"UUID": 
-            "db13a1fb-7d64-4309-a1c8-e2a5c752ded5",
-			"Strings": [
-				{
-					"Action": "Insert",
-					"Type": "Boosts",
-					"Strings": ["Ability(Dexterity,2)","Ability(Intelligence,1)"]
-				}
+            "UUID": "db13a1fb-7d64-4309-a1c8-e2a5c752ded5",
+            "Strings": [
+                {
+                    "Action": "Insert",
+                    "Type": "Boosts",
+                    "Strings": [
+                        "Ability(Dexterity,2)",
+                        "Ability(Intelligence,1)"
+                    ]
+                }
             ]
         },
         {
             "Comment": "Wood Elf",
-			"UUID": "b262db2c-7a80-4c76-a1e8-0efdb9c1db13",
-			"Strings": [
-				{
-					"Action": "Insert",
-					"Type": "Boosts",
-					"Strings": ["Ability(Dexterity,2)","Ability(Wisdom,1)","ProficiencyBonus(Skill,Stealth)"]
-				}
+            "UUID": "b262db2c-7a80-4c76-a1e8-0efdb9c1db13",
+            "Strings": [
+                {
+                    "Action": "Insert",
+                    "Type": "Boosts",
+                    "Strings": [
+                        "Ability(Dexterity,2)",
+                        "Ability(Wisdom,1)",
+                        "ProficiencyBonus(Skill,Stealth)"
+                    ]
+                }
             ]
         },
         {
             "Comment": "Drow",
-			"UUID": "4a634f24-bdcb-4559-b8be-7847133ad1c3",
-			"Strings": [
-				{
-					"Action": "Insert",
-					"Type": "Boosts",
-					"Strings": ["Ability(Dexterity,2)","Ability(Charisma,1)"]
-				}
+            "UUID": "4a634f24-bdcb-4559-b8be-7847133ad1c3",
+            "Strings": [
+                {
+                    "Action": "Insert",
+                    "Type": "Boosts",
+                    "Strings": [
+                        "Ability(Dexterity,2)",
+                        "Ability(Charisma,1)"
+                    ]
+                }
             ]
         },
         {
             "Comment": "Dwarf (Duergar)",
-			"UUID": "bd012f5b-0a0b-424e-ab7c-186dbd82ab30",
-			"Strings": [
-				{
-					"Action": "Insert",
-					"Type": "Boosts",
-					"Strings": ["Ability(Constitution,2)","Ability(Strength,1)"]
-				}
+            "UUID": "bd012f5b-0a0b-424e-ab7c-186dbd82ab30",
+            "Strings": [
+                {
+                    "Action": "Insert",
+                    "Type": "Boosts",
+                    "Strings": [
+                        "Ability(Constitution,2)",
+                        "Ability(Strength,1)"
+                    ]
+                }
             ]
         },
         {
             "Comment": "Dwarf (Mountian)",
-			"UUID": "3576f8c6-e515-49c5-808c-b68b77154ffd",
-			"Strings": [
-				{
-					"Action": "Insert",
-					"Type": "Boosts",
-					"Strings": ["Ability(Constitution,2)","Ability(Strength,2)"]
-				}
+            "UUID": "3576f8c6-e515-49c5-808c-b68b77154ffd",
+            "Strings": [
+                {
+                    "Action": "Insert",
+                    "Type": "Boosts",
+                    "Strings": [
+                        "Ability(Constitution,2)",
+                        "Ability(Strength,2)"
+                    ]
+                }
             ]
         },
         {
             "Comment": "Dwarf (Hill)",
-			"UUID": "207d038e-1add-4335-81d1-b0861f524c19",
-			"Strings": [
-				{
-					"Action": "Insert",
-					"Type": "Boosts",
-					"Strings": ["Ability(Constitution,2)","Ability(Wisdom,1)"]
-				}
+            "UUID": "207d038e-1add-4335-81d1-b0861f524c19",
+            "Strings": [
+                {
+                    "Action": "Insert",
+                    "Type": "Boosts",
+                    "Strings": [
+                        "Ability(Constitution,2)",
+                        "Ability(Wisdom,1)"
+                    ]
+                }
             ]
         },
         {
@@ -238,21 +294,26 @@
                 "cb0f84ec-1b1d-4ecc-9ab5-76261e332f5a",
                 "58dae581-c25a-4dfb-8a57-589bf4b34f62"
             ],
-			"Strings": [
-				{
-					"Action": "Insert",
-					"Type": "Boosts",
-					"Strings": ["Ability(Charisma,2)"]
-				}
+            "Strings": [
+                {
+                    "Action": "Insert",
+                    "Type": "Boosts",
+                    "Strings": [
+                        "Ability(Charisma,2)"
+                    ]
+                }
             ],
             "Selectors": [
                 {
                     "Action": "Insert",
                     "Function": "SelectAbilityBonus",
                     "Params": {
-                        "Amount" : "2",
+                        "Amount": "2",
                         "Guid": "3d6edcc3-4ef7-419e-8891-187262cfb07e",
-                        "Amounts": ["1","1"]
+                        "Amounts": [
+                            "1",
+                            "1"
+                        ]
                     }
                 }
             ]
@@ -265,7 +326,7 @@
                     "Action": "Insert",
                     "Function": "SelectSkills",
                     "Params": {
-                        "Amount" : "2",
+                        "Amount": "2",
                         "Guid": "f974ebd6-3725-4b90-bb5c-2b647d41615d"
                     }
                 }
@@ -273,141 +334,178 @@
         },
         {
             "Comment": "Rock Gnome",
-			"UUID": "aa2257a9-1779-4d8b-be65-8a08eede07fa",
-			"Strings": [
-				{
-					"Action": "Insert",
-					"Type": "Boosts",
-					"Strings": ["Ability(Intelligence,2)","Ability(Constitution,1)"]
-				}
-            ]           
+            "UUID": "aa2257a9-1779-4d8b-be65-8a08eede07fa",
+            "Strings": [
+                {
+                    "Action": "Insert",
+                    "Type": "Boosts",
+                    "Strings": [
+                        "Ability(Intelligence,2)",
+                        "Ability(Constitution,1)"
+                    ]
+                }
+            ]
         },
         {
             "Comment": "Deep Gnome",
-			"UUID": "938b6f72-18a6-4af0-924b-5292251d32bf",
-			"Strings": [
-				{
-					"Action": "Insert",
-					"Type": "Boosts",
-					"Strings": ["Ability(Intelligence,2)","Ability(Dexterity,1)"]
-				}
-            ]           
+            "UUID": "938b6f72-18a6-4af0-924b-5292251d32bf",
+            "Strings": [
+                {
+                    "Action": "Insert",
+                    "Type": "Boosts",
+                    "Strings": [
+                        "Ability(Intelligence,2)",
+                        "Ability(Dexterity,1)"
+                    ]
+                }
+            ]
         },
         {
             "Comment": "Forest Gnome",
-			"UUID": "a63bbb3c-c37c-4578-94e6-7d1c4c063d5c",
-			"Strings": [
-				{
-					"Action": "Insert",
-					"Type": "Boosts",
-					"Strings": ["Ability(Intelligence,2)","Ability(Dexterity,1)"]
-				}
+            "UUID": "a63bbb3c-c37c-4578-94e6-7d1c4c063d5c",
+            "Strings": [
+                {
+                    "Action": "Insert",
+                    "Type": "Boosts",
+                    "Strings": [
+                        "Ability(Intelligence,2)",
+                        "Ability(Dexterity,1)"
+                    ]
+                }
             ]
         },
         {
             "Comment": "Halfling Lightfoot",
-			"UUID": "bc2d257b-a405-4f58-891e-3083c5f71127",
-			"Strings": [
-				{
-					"Action": "Insert",
-					"Type": "Boosts",
-					"Strings": ["Ability(Dexterity,2)","Ability(Charisma,1)"]
-				}
-            ]           
+            "UUID": "bc2d257b-a405-4f58-891e-3083c5f71127",
+            "Strings": [
+                {
+                    "Action": "Insert",
+                    "Type": "Boosts",
+                    "Strings": [
+                        "Ability(Dexterity,2)",
+                        "Ability(Charisma,1)"
+                    ]
+                }
+            ]
         },
         {
             "Comment": "Halfling Strongheart",
-			"UUID": "b7a39730-2820-40c7-be96-2c134fead68a",
-			"Strings": [
-				{
-					"Action": "Insert",
-					"Type": "Boosts",
-					"Strings": ["Ability(Dexterity,2)","Ability(Constitution,1)"]
-				}
-            ]           
+            "UUID": "b7a39730-2820-40c7-be96-2c134fead68a",
+            "Strings": [
+                {
+                    "Action": "Insert",
+                    "Type": "Boosts",
+                    "Strings": [
+                        "Ability(Dexterity,2)",
+                        "Ability(Constitution,1)"
+                    ]
+                }
+            ]
         },
         {
             "Comment": "Teifling Asmoedus",
-			"UUID": "a8b18f0c-fe70-4f13-9dbc-23f4dbc3d648",
-			"Strings": [
-				{
-					"Action": "Insert",
-					"Type": "Boosts",
-					"Strings": ["Ability(Charisma,2)","Ability(Intelligence,1)"]
-				}
-            ]           
+            "UUID": "a8b18f0c-fe70-4f13-9dbc-23f4dbc3d648",
+            "Strings": [
+                {
+                    "Action": "Insert",
+                    "Type": "Boosts",
+                    "Strings": [
+                        "Ability(Charisma,2)",
+                        "Ability(Intelligence,1)"
+                    ]
+                }
+            ]
         },
         {
             "Comment": "Teifling Mephistopheles",
-			"UUID": "bdd1cf22-1b3c-4bc6-8313-898a49fcfe49",
-			"Strings": [
-				{
-					"Action": "Insert",
-					"Type": "Boosts",
-					"Strings": ["Ability(Charisma,2)","Ability(Intelligence,1)"]
-				}
-            ]           
+            "UUID": "bdd1cf22-1b3c-4bc6-8313-898a49fcfe49",
+            "Strings": [
+                {
+                    "Action": "Insert",
+                    "Type": "Boosts",
+                    "Strings": [
+                        "Ability(Charisma,2)",
+                        "Ability(Intelligence,1)"
+                    ]
+                }
+            ]
         },
         {
             "Comment": "Teifling Zariel",
-			"UUID": "89d57acd-85ff-4da6-b989-9b82d0241e46",
-			"Strings": [
-				{
-					"Action": "Insert",
-					"Type": "Boosts",
-					"Strings": ["Ability(Charisma,2)","Ability(Strength,1)"]
-				}
-            ]           
+            "UUID": "89d57acd-85ff-4da6-b989-9b82d0241e46",
+            "Strings": [
+                {
+                    "Action": "Insert",
+                    "Type": "Boosts",
+                    "Strings": [
+                        "Ability(Charisma,2)",
+                        "Ability(Strength,1)"
+                    ]
+                }
+            ]
         },
         {
             "Comment": "Dragonborn",
-			"UUID": "cabc4d46-f08e-4a48-8937-0bd1067ab43d",
-			"Strings": [
-				{
-					"Action": "Insert",
-					"Type": "Boosts",
-					"Strings": ["Ability(Strength,2)","Ability(Charisma,1)"]
-				}
-            ]           
+            "UUID": "cabc4d46-f08e-4a48-8937-0bd1067ab43d",
+            "Strings": [
+                {
+                    "Action": "Insert",
+                    "Type": "Boosts",
+                    "Strings": [
+                        "Ability(Strength,2)",
+                        "Ability(Charisma,1)"
+                    ]
+                }
+            ]
         },
         {
             "Comment": "HalfOrc",
-			"UUID": "816fa8c7-7648-48f7-8309-cb4e7383e45f",
-			"Strings": [
-				{
-					"Action": "Insert",
-					"Type": "Boosts",
-					"Strings": ["Ability(Strength,2)","Ability(Constitution,1)"]
-				}
-            ]           
+            "UUID": "816fa8c7-7648-48f7-8309-cb4e7383e45f",
+            "Strings": [
+                {
+                    "Action": "Insert",
+                    "Type": "Boosts",
+                    "Strings": [
+                        "Ability(Strength,2)",
+                        "Ability(Constitution,1)"
+                    ]
+                }
+            ]
         },
         {
             "Comment": "Githyanki",
-			"UUID": "f653d537-bc14-4fea-b7d2-25734ec928a2",
-			"Strings": [
-				{
-					"Action": "Insert",
-					"Type": "Boosts",
-					"Strings": ["Ability(Strength,2)","Ability(Intelligence,1)"]
-				}
-            ]           
+            "UUID": "f653d537-bc14-4fea-b7d2-25734ec928a2",
+            "Strings": [
+                {
+                    "Action": "Insert",
+                    "Type": "Boosts",
+                    "Strings": [
+                        "Ability(Strength,2)",
+                        "Ability(Intelligence,1)"
+                    ]
+                }
+            ]
         }
-	],
+    ],
     "Lists": [
         {
             "Comment": "Add Minor Illusion to Forest Gnome Spell List",
             "Action": "Insert",
             "UUID": "582ed05c-c6fa-4d6f-99f9-efcc9de769f9",
             "Type": "SpellList",
-            "Items": ["Target_MinorIllusion"]
+            "Items": [
+                "Target_MinorIllusion"
+            ]
         },
         {
             "Comment": "Add REAL Undead Passive to Undead Race",
             "Action": "Insert",
             "UUID": "fd58a3fe-9d5f-4ae0-a7cd-724914cb7c1b",
             "Type": "PassiveList",
-            "Items": ["Fenrules_Undeath",",Fenrules_Undying_Fervor"]
+            "Items": [
+                "Fenrules_Undeath",
+                ",Fenrules_Undying_Fervor"
+            ]
         }
     ]
 }
-

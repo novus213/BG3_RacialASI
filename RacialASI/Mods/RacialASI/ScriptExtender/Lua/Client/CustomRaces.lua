@@ -71,7 +71,7 @@ local RaceModsFloating_111 = {
     }
 }
 
-local RaceModsFloating_11 = { -- bugg a tester
+local RaceModsFloating_11 = {
     {
         Race = "Variant Human - Fantastical",
         modGuid = "5e53f556-ba7a-46fd-9dee-ba1ff456d8db",
