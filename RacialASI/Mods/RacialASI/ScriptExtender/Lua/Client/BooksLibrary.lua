@@ -60,40 +60,40 @@ Legacy = {	--[[ Legacy --]]
 	{bookRef = "VGtM",		bookName = "Volo's Guide to Monsters"							},
 }
 
-function checkBook()
-	for _, book in pairs(Dnd5eLimited) do
-		if book.bookRef == searchedBook then
-			do print("It's in a Dnd5e Limited Book")
-				break
-			end
-		end
-	end
-	for _, book in pairs(Dnd5e) do
-		if book.bookRef == searchedBook then
-			do print("It's in a Dnd5e Book")
-				break
-			end
-		end
-	end
-	for _, book in pairs(Dnd5eExtended) do
-		if book.bookRef == searchedBook then
-			do print("It's in a Dnd5e Extended Book")
-				break
-			end
-		end
-	end
-	for _, book in pairs(Flavours) do
-		if book.bookRef == searchedBook then
-			do print("It's in a Flavours Book")
-				break
-			end
-		end
-	end
-	for _, book in pairs(Legacy) do
-		if book.bookRef == searchedBook then
-			do print("It's in a Legacy Book")
-				break
-			end
-		end
-	end
-end
+-- function checkBook()
+-- 	for _, book in pairs(Dnd5eLimited) do
+-- 		if book.bookRef == searchedBook then
+-- 			do print("It's in a Dnd5e Limited Book")
+-- 				break
+-- 			end
+-- 		end
+-- 	end
+-- 	for _, book in pairs(Dnd5e) do
+-- 		if book.bookRef == searchedBook then
+-- 			do print("It's in a Dnd5e Book")
+-- 				break
+-- 			end
+-- 		end
+-- 	end
+-- 	for _, book in pairs(Dnd5eExtended) do
+-- 		if book.bookRef == searchedBook then
+-- 			do print("It's in a Dnd5e Extended Book")
+-- 				break
+-- 			end
+-- 		end
+-- 	end
+-- 	for _, book in pairs(Flavours) do
+-- 		if book.bookRef == searchedBook then
+-- 			do print("It's in a Flavours Book")
+-- 				break
+-- 			end
+-- 		end
+-- 	end
+-- 	for _, book in pairs(Legacy) do
+-- 		if book.bookRef == searchedBook then
+-- 			do print("It's in a Legacy Book")
+-- 				break
+-- 			end
+-- 		end
+-- 	end
+-- end
