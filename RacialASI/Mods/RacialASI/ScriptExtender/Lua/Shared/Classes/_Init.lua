@@ -1,3 +1,4 @@
 RequireFiles("Shared/Classes/", {
-    "ModInfo"
+    "ModInfo",
+    "MetaClass"
 })
