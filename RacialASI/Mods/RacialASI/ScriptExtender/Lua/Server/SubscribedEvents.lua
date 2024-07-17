@@ -1,8 +1,3 @@
---[[Ext.RegisterNetListener("MU_Reload_Conf", function()
-    OnSessionLoadedMCM()
-    OnStatsLoadedMCM()
-end)
-]]--
 SubscribedEvents = {}
 
 function SubscribedEvents.SubscribeToEvents()

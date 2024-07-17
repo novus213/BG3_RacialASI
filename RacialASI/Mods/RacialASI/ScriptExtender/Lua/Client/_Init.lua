@@ -1,33 +1,10 @@
---- Launch CONFIG NO MCM
-local function start()
-    if not CONFIG then CONFIG = InitConfig() end
-end
-
-function callApiAction(action, payload)
-    if not (Mods.SubclassCompatibilityFramework and Mods.SubclassCompatibilityFramework.Api) then
-        BasicError("============> ERROR: Subclass Compatibility Framework mod or its API is not available.")
-    end
-
-    local apiActions = {
-        InsertPassives = Mods.SubclassCompatibilityFramework.Api.InsertPassives,
-        RemovePassives = Mods.SubclassCompatibilityFramework.Api.RemovePassives,
-        InsertSelectors = Mods.SubclassCompatibilityFramework.Api.InsertSelectors,
-        InsertBoosts = Mods.SubclassCompatibilityFramework.Api.InsertBoosts,
-        RemoveBoosts = Mods.SubclassCompatibilityFramework.Api.RemoveBoosts,
-        SetBoolean = Mods.SubclassCompatibilityFramework.Api.SetBoolean
-    }
-
-    local apiFunction = apiActions[action]
-
-    if apiFunction then
-        return apiFunction(payload)
-    else
-        BasicError("============> ERROR: Invalid API action: " .. action)
-    end
-end
-
 function isModLoaded(modId)
     return Ext.Mod.IsModLoaded(modId)
+end
+
+--- START CONFIG NO MCM
+local function start()
+    if not CONFIG then CONFIG = InitConfig() end
 end
 
 local function loadConfiguration()
@@ -40,14 +17,7 @@ local function loadConfiguration()
     return configData
 end
 
-function handlePayload(action, payload)
-    local success, result = pcall(callApiAction, action, { payload = payload })
-    if not success then
-        BasicError(string.format("============> ERROR in %s action: %s", action, result))
-    end
-end
-
-function processOption(optionName, optionValue, actionConfigs)
+local function processOption(optionName, optionValue, actionConfigs)
     if optionValue.Enabled then
         BasicWarning(string.format("============> %s is enabled.", optionName))
 
@@ -59,7 +29,7 @@ function processOption(optionName, optionValue, actionConfigs)
                 if payload.Target then
                     --BasicPrint(string.format("action : ", action))
                     --BasicPrint(string.format("payload : ", payload))
-                    handlePayload(action, payload)
+                    MCMASIAPI:handlePayload(action, payload)
                 else
                     BasicError(string.format("============> ERROR: Invalid target UUID for payload in '%s'.", optionName))
                 end
@@ -91,6 +61,7 @@ local function OnStatsLoaded()
         end
     end
 end
+--- End CONFIG NO MCM
 
 
 if not Ext.Mod.IsModLoaded(deps.MCM_GUID) then
@@ -119,22 +90,15 @@ else
     BasicPrint("                               ")
     BasicPrint("                               ")
 
-    --- Constructor for MCMGet class.
-    --- Function to get MCM setting values
-    function MCMGet(settingID)
-        return Mods.BG3MCM.MCMAPI:GetSettingValue(settingID, ModuleUUID)
-    end
-
      -- ask how put button not in tab
     --- Function to create save button
-    Mods.BG3MCM.IMGUIAPI:InsertModMenuTab(ModuleUUID, "SAVE TAB", function(tabHeader)
+    --[[Mods.BG3MCM.IMGUIAPI:InsertModMenuTab(ModuleUUID, "SAVE TAB", function(tabHeader)
         local myCustomWidget = tabHeader:AddButton("Save")
         myCustomWidget.OnClick = function()
             MCMASIAPI:OnSessionLoadedMCM()
             MCMASIAPI:OnStatsLoadedMCM()
         end
-    end)
-
+    end)]]--
 
     Ext.Events.StatsLoaded:Subscribe(function()
     MCMASIAPI:OnSessionLoadedMCM()
@@ -161,12 +125,12 @@ else
     MCMASIAPI:OnStatsLoadedMCM()
     end)    
 
-    Ext.Events.GameStateChanged:Subscribe(function(e)
+    --[[Ext.Events.GameStateChanged:Subscribe(function(e)
         if e.FromState == "Running" then
             MCMASIAPI:OnSessionLoadedMCM()
             MCMASIAPI:OnStatsLoadedMCM()
         end
-    end)
+    end)]]--
 end
 
 ---Should've done this from the start
