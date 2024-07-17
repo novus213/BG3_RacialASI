@@ -4,6 +4,7 @@
 local racialASIConfig = {
     MOD_ENABLED = 1,
     DEBUG_MESSAGES = 1,
+    LOG_ENABLED = 1,
     Options = {
         AddUnderdarkRaces_LightSensitivity_Passives = { Enabled = true },
         AddUndeadGhastlyGhouls_LightSensitivity_Passives = { Enabled = true },

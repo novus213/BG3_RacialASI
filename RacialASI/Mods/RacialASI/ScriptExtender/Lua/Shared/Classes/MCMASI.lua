@@ -49,7 +49,7 @@ function MCMASI:OnSessionLoadedMCM()
 
     mcmVarsGeneralSettings = {
         RASI = MCMASIAPI:MCMGet("RASI"),
-        debugToggle = MCMASIAPI:MCMGet("debugToggle"),
+        debugLevel = MCMASIAPI:MCMGet("debug_level"),
         ActiveBookBoost = MCMASIAPI:MCMGet("active_5e_boost")
     }
 end
