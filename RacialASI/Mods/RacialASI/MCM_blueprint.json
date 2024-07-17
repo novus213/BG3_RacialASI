@@ -27,7 +27,7 @@
                             "Id": "debug_level",
                             "Name": "Debug level",
                             "Type": "slider_int",
-                            "Default": 0,
+                            "Default": 1,
                             "Description": "Used mainly to determine which messages to print.\nUseful for developers or general troubleshooting. \nIt is intended for the author to find bugs eaiser",
                             "Options": {
                                 "Min": 0,
