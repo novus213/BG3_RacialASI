@@ -44,7 +44,7 @@ raceMods = {
 
 local AbilityList_UUID = "b9149c8e-52c8-46e5-9cb6-fc39301c05fe"
 
---- Constructor for createSABPayload class.
+--- Constructor for createSABPayload
 ---@param uuid string race Progression.lsx Level 1 UUID
 ---@param modGuid string race mod modGuid 
 ---@param sabUUID string SelectAbilityBonus UUID
@@ -60,7 +60,7 @@ function createSABPayload(uuid, modGuid, sabUUID)
 end
 
 
---- Constructor for createBoostPayload class.
+--- Constructor for createBoostPayload
 ---@param uuid string race Progression.lsx Level 1 UUID
 ---@param modGuid string race mod modGuid 
 ---@param ability string ability DnD (Strength ect.)
@@ -76,7 +76,7 @@ function createBoostPayload(modGuid, uuid, ability, score)
       }
 end
 
---- Constructor for removeBoosts class.
+--- Constructor for removeBoosts
 ---@param mod table race mod table
 ---@param ability string ability DnD (Strength ect.)
 ---@param score integer ability score
@@ -89,7 +89,7 @@ function removeBoosts(mod, ability, score)
     end
 end
 
---- Constructor for CleanOnStatsLoaded class.
+--- Constructor for CleanOnStatsLoaded
 --- Clean race mods stats ASI
 function CleanOnStatsLoaded()
     local removedRaces = {}  -- Table to store classes with removed shit asi 

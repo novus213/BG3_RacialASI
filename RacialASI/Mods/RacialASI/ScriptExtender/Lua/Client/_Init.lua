@@ -39,7 +39,7 @@ local function processOption(optionName, optionValue, actionConfigs)
 end
 
 local function OnStatsLoaded()
-    if not isModLoaded("67fbbd53-7c7d-4cfa-9409-6d737b4d92a9") then
+    if not isModLoaded(deps.Framework_GUID) then
         return
     end
 
@@ -64,32 +64,10 @@ end
 --- End CONFIG NO MCM
 
 
-if not Ext.Mod.IsModLoaded(deps.MCM_GUID) then
+if not isModLoaded(deps.MCM_GUID) then
     Ext.Events.StatsLoaded:Subscribe(start)
     Ext.Events.StatsLoaded:Subscribe(OnStatsLoaded)
 else
-    BasicPrint("    ____             _       __   ___   _____ ____   ____________","INFO", nil, nil, true)
-    BasicPrint("   / __ \\____ ______(_)___ _/ /  /   | / ___//  _/  / ____/ ____/","INFO", nil, nil, true)
-    BasicPrint("  / /_/ / __ `/ ___/ / __ `/ /  / /| | \\__ \\ / /   /___ \\/ __/   ","INFO", nil, nil, true)
-    BasicPrint(" / _, _/ /_/ / /__/ / /_/ / /  / ___ |___/ // /   ____/ / /___   ","INFO", nil, nil, true)
-    BasicPrint("/_/ |_|\\__,_/\\___/_/\\__,_/_/  /_/  |_/____/___/  /_____/_____/   ","INFO", nil, nil, true)
-    BasicPrint("                               ")
-    BasicPrint("                               ")
-    BasicPrint(" ----------------------------- ")
-    BasicPrint(" ----------------------------- ")
-    BasicPrint("                               ")
-    BasicPrint("                               ")
-    BasicPrint(" ----------------------------- ")
-    BasicPrint(" ----------------------------- ")
-    BasicPrint(
-        string.format("Config.MCM.Init() - %s mod by Fenrules VERSION : %s starting up... ", MOD_INFO.MOD_NAME,
-        MOD_INFO.VERSION),
-        "INFO", nil, nil, true)
-    BasicPrint(" ----------------------------- ")
-    BasicPrint(" ----------------------------- ")
-    BasicPrint("                               ")
-    BasicPrint("                               ")
-
      -- ask how put button not in tab
     --- Function to create save button
     --[[Mods.BG3MCM.IMGUIAPI:InsertModMenuTab(ModuleUUID, "SAVE TAB", function(tabHeader)
