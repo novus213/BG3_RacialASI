@@ -20,8 +20,8 @@ local RaceModsFloating = {
     },
     {
         Race = "Owlin",
-        modGuid = "315ce1a1-0f24-4777-90d9-06b01a93a716",
-        UUID = "b5f04836-e2ef-4eb6-93d5-4aad7f3b1c20"
+        modGuid = "c1e87b16-c845-4254-b831-bb22b13016fb" -- old "315ce1a1-0f24-4777-90d9-06b01a93a716",
+        UUID ="da629716-fd76-477d-9934-0473904fe04b" -- old "b5f04836-e2ef-4eb6-93d5-4aad7f3b1c20"
     },
     {
         Name = "Myconid",
