@@ -12,7 +12,7 @@ if not Ext.Mod.IsModLoaded(deps.Framework_GUID) then return end
 DevelReady = Ext.Utils:Version() >= 17 or Ext.Debug.IsDeveloperMode()
 
 Ext.Require("Shared/_Init.lua")
-Ext.Require("Client/CleanStatsASI.lua")
+Ext.Require("Client/CleanRacesModASI.lua")
 
 Ext.Require("ModInfos/_ModInfos.lua")
 Ext.Require("Client/_Init.lua")

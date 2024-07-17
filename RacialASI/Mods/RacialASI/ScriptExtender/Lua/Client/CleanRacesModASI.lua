@@ -40,32 +40,15 @@ raceMods = {
     SABNb = "2"
     SABStats = {"2", "1"}
 }
-
-
-
-payload.Function = "SelectAbilityBonus"
-        payload.Params = {
-            Guid = AbilityList_UUID,
-            Amount = "2",
-            BonusType = "AbilityBonus",
-            Amounts = {"2", "1"}
-        }
-
-payload.Function = "SelectAbilityBonus"
-        payload.Params = {
-            Guid = AbilityList_UUID,
-            Amount = "2",
-            BonusType = "AbilityBonus",
-            Amounts = {"1", "1"}
-        }
     ]]--
 
 local AbilityList_UUID = "b9149c8e-52c8-46e5-9cb6-fc39301c05fe"
 
----@param uuid 
----@param modGuid 
----@param sabUUID 
-
+--- Constructor for createSABPayload class.
+---@param uuid string race Progression.lsx Level 1 UUID
+---@param modGuid string race mod modGuid 
+---@param sabUUID string SelectAbilityBonus UUID
+---@return table payload
 function createSABPayload(uuid, modGuid, sabUUID)
     return {
         TargetUUID = uuid,
@@ -77,11 +60,12 @@ function createSABPayload(uuid, modGuid, sabUUID)
 end
 
 
----@param uuid 
----@param action
----@param ability
----@param score 
-
+--- Constructor for createBoostPayload class.
+---@param uuid string race Progression.lsx Level 1 UUID
+---@param modGuid string race mod modGuid 
+---@param ability string ability DnD (Strength ect.)
+---@param score integer ability score
+---@return table payload
 function createBoostPayload(modGuid, uuid, ability, score)
     return {
         modGuid = modGuid,
@@ -92,8 +76,11 @@ function createBoostPayload(modGuid, uuid, ability, score)
       }
 end
 
----@param mod 
-
+--- Constructor for removeBoosts class.
+---@param mod table race mod table
+---@param ability string ability DnD (Strength ect.)
+---@param score integer ability score
+---@return string mod.Race Return the race name if selectors were removed
 function removeBoosts(mod, ability, score)
     if mod.modGuid and Ext.Mod.IsModLoaded(mod.modGuid) then
         local payload = createBoostPayload(mod.modGuid, mod.UUID, ability, score)
@@ -102,13 +89,15 @@ function removeBoosts(mod, ability, score)
     end
 end
 
+--- Constructor for CleanOnStatsLoaded class.
+--- Clean race mods stats ASI
 function CleanOnStatsLoaded()
     local removedRaces = {}  -- Table to store classes with removed shit asi 
     local stats = {"Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma"}
     
     for _, mod in ipairs(raceMods) do
         
-        -- remove +2+1
+        -- remove +2+1, +1, +1+1 ect..
         local payload = createSABPayload(mod.UUID, mod.modGuid, ability, AbilityList_UUID)
         Mods.SubclassCompatibilityFramework.Api.RemoveSelectors({payload})
 

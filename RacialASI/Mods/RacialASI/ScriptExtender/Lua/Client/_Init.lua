@@ -1,12 +1,12 @@
--- Refactorting Argelia
--- MCM plugin in working update
+--- Refactorting Argelia
+--- MCM plugin in working update
 
--- Launch CONFIG
+--- Launch CONFIG
 local function start()
     if not CONFIG then CONFIG = InitConfig() end
 end
 
--- Define Actions and Payloads
+--- Define Actions and Payloads
 
 optionActions = {
     AddGnome_Tinkertools_Spells = {
@@ -260,8 +260,10 @@ end
 
 
 
----- MCM CONFIG
+--- MCM CONFIG
 
+--- Constructor for OnStatsLoadedMCM class.
+--- extract mcmVar table from MCM Json
 function OnStatsLoadedMCM()
     for key, value in pairs(mcmVars) do
         local actionConfigs = optionActions[key]
@@ -274,6 +276,10 @@ function OnStatsLoadedMCM()
     end
 end
 
+--- Constructor for processOptionMcm class.
+---@param optionName string Mcm option name
+---@param optionValue boolean active or not option
+---@param actionConfigs table actions table from mcm option 
 function processOptionMcm(optionName,optionValue, actionConfigs)
     if optionValue == true then
         BasicWarning(string.format("============> %s is enabled.", optionName))
@@ -326,11 +332,14 @@ else
     BasicPrint(" ----------------------------- ")
     BasicPrint("                               ")
     BasicPrint("                               ")
-    -- Function to get MCM setting values
+    --- Constructor for MCMGet class.
+    --- Function to get MCM setting values
     function MCMGet(settingID)
         return Mods.BG3MCM.MCMAPI:GetSettingValue(settingID, ModuleUUID)
     end
 
+    --- Constructor for OnSessionLoadedMCM class.
+    --- Function to load MCM values from json
     function OnSessionLoadedMCM()
         mcmVars = {
             AddGnome_Tinkertools_Spells = MCMGet("AddGnome_Tinkertools_Spells"),
@@ -352,7 +361,7 @@ else
     end
 
     -- ask how put button not in tab
-
+    --- Function to create save button
     Mods.BG3MCM.IMGUIAPI:InsertModMenuTab(ModuleUUID, "SAVE TAB", function(tabHeader)
         local myCustomWidget = tabHeader:AddButton("Save")
         myCustomWidget.OnClick = function()
