@@ -103,12 +103,12 @@ else
     MCMASIAPI:OnStatsLoadedMCM()
     end)    
 
-    --[[Ext.Events.GameStateChanged:Subscribe(function(e)
-        if e.FromState == "Running" then
+    Ext.Events.GameStateChanged:Subscribe(function(e)
+        if e.FromState == "Running" and e.ToState == "Save" then
             MCMASIAPI:OnSessionLoadedMCM()
-            MCMASIAPI:OnStatsLoadedMCM()
+            --MCMASIAPI:OnStatsLoadedMCM()
         end
-    end)]]--
+    end)
 end
 
 ---Should've done this from the start
