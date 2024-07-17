@@ -59,9 +59,6 @@ Flavours = {	--[[ Flavours --]]
 Legacy = {	--[[ Legacy --]]
 	{bookRef = "VGtM",		bookName = "Volo's Guide to Monsters"							},
 }
-	
-
-	
 
 function checkBook()
 	for _, book in pairs(Dnd5eLimited) do

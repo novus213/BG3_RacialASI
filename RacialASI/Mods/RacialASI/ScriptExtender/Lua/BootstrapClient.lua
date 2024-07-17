@@ -11,10 +11,12 @@ if not Ext.Mod.IsModLoaded(deps.Framework_GUID) then return end
 
 DevelReady = Ext.Utils:Version() >= 17 or Ext.Debug.IsDeveloperMode()
 
+---Libraries
+Ext.Require("Client/Libs/OptionActionsLib.lua")
 Ext.Require("Shared/_Init.lua")
 Ext.Require("Client/CleanRacesModASI.lua")
-
 Ext.Require("ModInfos/_ModInfos.lua")
+
 Ext.Require("Client/_Init.lua")
 
 -- Check if the mod is loaded and load ASI
