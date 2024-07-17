@@ -158,25 +158,3 @@ optionActions = {
     }
     -- Removed first and ten level passives (Illithid Disguise excluded) from Ghoul and added Undeath trait that replace and improve these passives
 }
-
---- Constructor for OnSessionLoadedMCM class.
---- Function to load MCM values from json
-function MCMRA:OnSessionLoadedMCM()
-    mcmVars = {
-        AddGnome_Tinkertools_Spells = MCMGet("AddGnome_Tinkertools_Spells"),
-        AddHalfElfDrow_Drow_DrowWeaponTraining_Passives = MCMGet("AddHalfElfDrow_Drow_DrowWeaponTraining_Passives"),
-        RemoveHuman_HumanMilitia_HumanVersatility_Passives = MCMGet("RemoveHuman_HumanMilitia_HumanVersatility_Passives"),
-        RemoveHalfElf_HumanMilitia_Passives = MCMGet("RemoveHalfElf_HumanMilitia_Passives"),
-        AddUndeadGhastlyGhouls_LightSensitivity_Passives = MCMGet("AddUndeadGhastlyGhouls_LightSensitivity_Passives"),
-        AddUnderdarkRaces_LightSensitivity_Passives = MCMGet("AddUnderdarkRaces_LightSensitivity_Passives")
-        --[[
-            mcmVars["AddGnomeTinkertoolsSpells"]
-        ]]--
-    }
-
-    mcmVarsGeneralSettings = {
-        RASI = MCMGet("RASI"),
-        debugToggle = MCMGet("debugToggle"),
-        ActiveBookBoost = MCMGet("active_5e_boost")
-    }
-end

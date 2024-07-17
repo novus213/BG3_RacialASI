@@ -1,18 +1,7 @@
---- Launch CONFIG
+--- Launch CONFIG NO MCM
 local function start()
     if not CONFIG then CONFIG = InitConfig() end
 end
-
-MCMRA = _Class:Create("MCMRA", nil, {
-    mods = {},
-    profiles = {},
-})
-
-MCMRAAPI = MCMRA:New({}, "RacialASI")
-
-RequireFiles("Client/Libs/", {
-    "OptionsActionsLib"
-})
 
 function callApiAction(action, payload)
     if not (Mods.SubclassCompatibilityFramework and Mods.SubclassCompatibilityFramework.Api) then
@@ -104,46 +93,6 @@ local function OnStatsLoaded()
 end
 
 
-
---- MCM CONFIG
-
---- Constructor for OnStatsLoadedMCM class.
---- extract mcmVar table from MCM Json
-function MCMRA:OnStatsLoadedMCM()
-    for key, value in pairs(mcmVars) do
-        local actionConfigs = optionActions[key]
-
-        if actionConfigs then
-            processOptionMcm(key, value, actionConfigs.actions)
-        else
-                BasicError(string.format("============> ERROR: No configuration found for %s.", key))
-        end
-    end
-end
-
---- Constructor for processOptionMcm class.
----@param optionName string Mcm option name
----@param optionValue boolean active or not option
----@param actionConfigs table actions table from mcm option 
-function processOptionMcm(optionName,optionValue, actionConfigs)
-    if optionValue == true then
-        BasicWarning(string.format("============> %s is enabled.", optionName))
-        for _, actionConfig in ipairs(actionConfigs) do
-
-            local action   = actionConfig.action
-            local payloads = actionConfig.payloads
-
-            for _, payload in ipairs(payloads) do
-                if payload.Target then
-                    handlePayload(action, payload)
-                else
-                    BasicError(string.format("============> ERROR: Invalid target UUID for payload in '%s'.", optionName))
-                end
-            end
-        end
-    end
-end
-
 if not Ext.Mod.IsModLoaded(deps.MCM_GUID) then
     Ext.Events.StatsLoaded:Subscribe(start)
     Ext.Events.StatsLoaded:Subscribe(OnStatsLoaded)
@@ -169,26 +118,28 @@ else
     BasicPrint(" ----------------------------- ")
     BasicPrint("                               ")
     BasicPrint("                               ")
+
     --- Constructor for MCMGet class.
     --- Function to get MCM setting values
     function MCMGet(settingID)
         return Mods.BG3MCM.MCMAPI:GetSettingValue(settingID, ModuleUUID)
     end
 
-    -- OnStatsLoadedMCM in Client/Libs/OptionsActions.lua
-
-    -- ask how put button not in tab
+     -- ask how put button not in tab
     --- Function to create save button
     Mods.BG3MCM.IMGUIAPI:InsertModMenuTab(ModuleUUID, "SAVE TAB", function(tabHeader)
         local myCustomWidget = tabHeader:AddButton("Save")
         myCustomWidget.OnClick = function()
-            MCMRAAPI:OnSessionLoadedMCM()
-            MCMRAAPI:OnStatsLoadedMCM()
+            MCMASIAPI:OnSessionLoadedMCM()
+            MCMASIAPI:OnStatsLoadedMCM()
         end
     end)
 
 
-    Ext.Events.StatsLoaded:Subscribe(MCMRAAPI:OnSessionLoadedMCM())
+    Ext.Events.StatsLoaded:Subscribe(function()
+    MCMASIAPI:OnSessionLoadedMCM()
+    end)
+
     -- Register a net listener to handle settings changes dynamically
     Ext.RegisterNetListener("MCM_Saved_Setting", function(call, payload)
         local data = Ext.Json.Parse(payload)
@@ -206,16 +157,16 @@ else
 
     end)
     
-    Ext.Events.StatsLoaded:Subscribe(MCMRAAPI:OnStatsLoadedMCM())
+    Ext.Events.StatsLoaded:Subscribe(function()
+    MCMASIAPI:OnStatsLoadedMCM()
+    end)    
 
-    ---Should've done this from the start
     Ext.Events.GameStateChanged:Subscribe(function(e)
-        if e.FromState == "Running" and e.ToState == "Save" then
-            MCMRAAPI:OnSessionLoadedMCM()
-            MCMRAAPI:OnStatsLoadedMCM()
+        if e.FromState == "Running" then
+            MCMASIAPI:OnSessionLoadedMCM()
+            MCMASIAPI:OnStatsLoadedMCM()
         end
     end)
-
 end
 
 ---Should've done this from the start

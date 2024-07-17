@@ -6,8 +6,8 @@ end
 
 
 function LoadAndSendSettings()
-    if Ext.IsServer() then
-        MCMRAAPI:OnSessionLoadedMCM()
-        MCMRAAPI:OnStatsLoadedMCM()
+   if Ext.IsServer() then
+        MCMASIAPI:OnSessionLoadedMCM()
+        MCMASIAPI:OnStatsLoadedMCM()
     end
 end

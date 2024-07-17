@@ -1,4 +1,5 @@
 RequireFiles("Shared/Classes/", {
     "ModInfo",
-    "MetaClass"
+    "MetaClass",
+    "MCMASI"
 })

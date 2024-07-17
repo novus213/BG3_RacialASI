@@ -10,6 +10,8 @@ function RequireFiles(path, files)
     end
 end
 
+--setmetatable(Mods[Ext.Mod.GetMod(ModuleUUID).Info.Directory], { __index = Mods.RacialASI })
+
 RequireFiles("Shared/", {
     "Classes/_Init",
     "Utils/_Init",
