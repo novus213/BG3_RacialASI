@@ -80,11 +80,40 @@ else
 
     Ext.Events.StatsLoaded:Subscribe(function()
     MCMASIAPI:OnSessionLoadedMCM()
+
+    --[[ 
+    mcmVarsOptions 		= mcmVars
+
+    IgnoreAll 			= mcmVarsBooksSettings["IgnoreAll"]
+    Ignore5eLimited 	= mcmVarsBooksSettings["Ignore5eLimited"]
+    Ignore5e 			= mcmVarsBooksSettings["Ignore5e"]
+    Ignore5eExtended 	= mcmVarsBooksSettings["Ignore5eExtended"]
+    IgnoreFlavours 		= mcmVarsBooksSettings["IgnoreFlavours"]
+    IgnoreLegacy 		= mcmVarsBooksSettings["IgnoreLegacy"]
+    IgnoreHomebrew 		= mcmVarsBooksSettings["IgnoreHomebrew"]
+
+    mcmVarsGeneralSettingsUse = mcmVarsGeneralSettings
+
+    BasicPrint("Ignore5eExtended OnSessionLoadedMCM base")
+
+    BasicPrint(Ignore5eExtended)
+    ]]--
+
     end)
 
     -- Register a net listener to handle settings changes dynamically
+    --[[
     Ext.RegisterNetListener("MCM_Saved_Setting", function(call, payload)
+        
+        BasicPrint("MCM_Saved_Setting")
+
         local data = Ext.Json.Parse(payload)
+
+         BasicPrint("data")
+
+        BasicPrint(data)
+        
+
         if not data or data.modGUID ~= ModuleUUID or not data.settingId then
             return
         end
@@ -93,20 +122,71 @@ else
             mcmVars[data.settingId] = data.value
         end
 
+         if mcmVarsBooksSettings[data.settingId] ~= nil then
+            mcmVarsBooksSettings[data.settingId] = data.value
+
+            --BasicPrint(mcmVarsBooksSettings[data.settingId])
+        end
+
         if mcmVarsGeneralSettings[data.settingId] ~= nil then
             mcmVarsGeneralSettings[data.settingId] = data.value
         end
 
+         if data.settingId == "debug_level" then
+            _D("Setting debug level to " .. data.value)
+        end
+
     end)
+    ]]--
+
     
     Ext.Events.StatsLoaded:Subscribe(function()
+
+    --[[ 
+    mcmVarsOptions 		= mcmVars
+
+    IgnoreAll 			= mcmVarsBooksSettings["IgnoreAll"]
+    Ignore5eLimited 	= mcmVarsBooksSettings["Ignore5eLimited"]
+    Ignore5e 			= mcmVarsBooksSettings["Ignore5e"]
+    Ignore5eExtended 	= mcmVarsBooksSettings["Ignore5eExtended"]
+    IgnoreFlavours 		= mcmVarsBooksSettings["IgnoreFlavours"]
+    IgnoreLegacy 		= mcmVarsBooksSettings["IgnoreLegacy"]
+    IgnoreHomebrew 		= mcmVarsBooksSettings["IgnoreHomebrew"]
+
+    mcmVarsGeneralSettingsUse = mcmVarsGeneralSettings
+
+    BasicPrint("Ignore5eExtended OnStatsLoadedMCM base")
+
+    BasicPrint(Ignore5eExtended)
+    ]]--
+
     MCMASIAPI:OnStatsLoadedMCM()
-    end)    
+    end)
+
+    
 
     Ext.Events.GameStateChanged:Subscribe(function(e)
         if e.FromState == "Running" then
             MCMASIAPI:OnSessionLoadedMCM()
-            --MCMASIAPI:OnStatsLoadedMCM()
+            MCMASIAPI:OnStatsLoadedMCM()
+
+           --[[
+           mcmVarsOptions 		= mcmVars
+
+            IgnoreAll 			= mcmVarsBooksSettings["IgnoreAll"]
+            Ignore5eLimited 	= mcmVarsBooksSettings["Ignore5eLimited"]
+            Ignore5e 			= mcmVarsBooksSettings["Ignore5e"]
+            Ignore5eExtended 	= mcmVarsBooksSettings["Ignore5eExtended"]
+            IgnoreFlavours 		= mcmVarsBooksSettings["IgnoreFlavours"]
+            IgnoreLegacy 		= mcmVarsBooksSettings["IgnoreLegacy"]
+            IgnoreHomebrew 		= mcmVarsBooksSettings["IgnoreHomebrew"]
+
+            mcmVarsGeneralSettingsUse = mcmVarsGeneralSettings
+
+            BasicPrint("Ignore5eExtended OnSessionLoadedMCM Running")
+
+            BasicPrint(Ignore5eExtended)
+            ]]--
         end
     end)
 end

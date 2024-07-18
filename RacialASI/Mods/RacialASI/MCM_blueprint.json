@@ -95,23 +95,54 @@
                     "SectionId": "5e_settings",
                     "SectionName": "5e Settings",
                     "Settings": [
+                         {
+                            "Id": "IgnoreAll",
+                            "Name": "Ignore All",
+                            "Type": "checkbox",
+                            "Default": false,
+                            "Tooltip": "Enable or disable Ignore All."
+                        },
+                         {
+                            "Id": "Ignore5eLimited",
+                            "Name": "Ignore 5eLimited",
+                            "Type": "checkbox",
+                            "Default": false,
+                            "Tooltip": "Enable or disable Ignore 5eLimited."
+                        },
                         {
-                            "Id": "active_5e_boost",
-                            "Name": "active 5e boost",
-                            "Type": "enum",
-                            "Default": "Ignore All",
-                            "Options": {
-                                "Choices": [
-                                    "Ignore All",
-                                    "Ignore 5eLimited",
-                                    "Ignore 5e",
-                                    "Ignore 5eExtended",
-                                    "Ignore Flavours",
-                                    "Ignore Legacy",
-                                    "Ignore Homebrew"
-                                ]
-                            },
-                            "Tooltip": "Choose one to apply options"
+                            "Id": "Ignore5e",
+                            "Name": "Ignore 5e",
+                            "Type": "checkbox",
+                            "Default": false,
+                            "Tooltip": "Enable or disable Ignore 5e."
+                        },
+                        {
+                            "Id": "Ignore5eExtended",
+                            "Name": "Ignore 5eExtended",
+                            "Type": "checkbox",
+                            "Default": false,
+                            "Tooltip": "Enable or disable Ignore 5eExtended."
+                        },
+                        {
+                            "Id": "IgnoreFlavours",
+                            "Name": "Ignore Flavours",
+                            "Type": "checkbox",
+                            "Default": false,
+                            "Tooltip": "Enable or disable Ignore Flavours."
+                        },
+                        {
+                            "Id": "IgnoreLegacy",
+                            "Name": "Ignore Legacy",
+                            "Type": "checkbox",
+                            "Default": false,
+                            "Tooltip": "Enable or disable Ignore Legacy."
+                        },
+                        {
+                            "Id": "IgnoreHomebrew",
+                            "Name": "Ignore Homebrew",
+                            "Type": "checkbox",
+                            "Default": false,
+                            "Tooltip": "Enable or disable Ignore Homebrew."
                         }
                     ]
                 }

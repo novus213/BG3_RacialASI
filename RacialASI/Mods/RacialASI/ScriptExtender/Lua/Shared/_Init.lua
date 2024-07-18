@@ -14,6 +14,7 @@ end
 
 RequireFiles("Shared/", {
     "Classes/_Init",
+    "Helpers/_Init",
     "Utils/_Init",
     "Globals/_Init",
     "Config/_Init",

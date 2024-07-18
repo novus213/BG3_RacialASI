@@ -14,7 +14,11 @@ DevelReady = Ext.Utils:Version() >= 17 or Ext.Debug.IsDeveloperMode()
 ---Libraries
 Ext.Require("Libs/OptionsActionsLib.lua")
 Ext.Require("Shared/_Init.lua")
+
 Ext.Require("Client/CleanRacesModASI.lua")
+Ext.Require("Client/BooksLibrary.lua")
+
+
 Ext.Require("ModInfos/_ModInfos.lua")
 
 Ext.Require("Client/_Init.lua")

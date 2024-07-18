@@ -25,15 +25,27 @@ function MCMASI:OnSessionLoadedMCM()
         ]]--
     }
 
+    mcmVarsBooksSettings = {
+        IgnoreAll = MCMASIAPI:MCMGet("IgnoreAll"),
+        Ignore5eLimited = MCMASIAPI:MCMGet("Ignore5eLimited"),
+        Ignore5e = MCMASIAPI:MCMGet("Ignore5e"),
+        Ignore5eExtended = MCMASIAPI:MCMGet("Ignore5eExtended"),
+        IgnoreFlavours = MCMASIAPI:MCMGet("IgnoreFlavours"),
+        IgnoreLegacy = MCMASIAPI:MCMGet("IgnoreLegacy"),
+        IgnoreHomebrew = MCMASIAPI:MCMGet("IgnoreHomebrew")
+
+        --[[
+            mcmVarsBooksSettings["IgnoreAll"]
+        ]]--
+    }
     mcmVarsGeneralSettings = {
         RASI = MCMASIAPI:MCMGet("RASI"),
-        debugLevel = MCMASIAPI:MCMGet("debug_level"),
-        ActiveBookBoost = MCMASIAPI:MCMGet("active_5e_boost")
+        debugLevel = MCMASIAPI:MCMGet("debug_level")
     }
 
     BasicWarning(string.format("============> %s is loaded.", mcmVars))
     BasicWarning(string.format("============> %s is loaded.", mcmVarsGeneralSettings))
-
+    BasicWarning(string.format("============> %s is loaded.", mcmVarsBooksSettings))
 end
 
 --- Constructor for MCMASI:OnStatsLoadedMCM
@@ -62,7 +74,7 @@ function MCMASI:OnStatsLoadedMCM()
     BasicPrint("                               ")
     BasicPrint("                               ")
 
-    for key, value in pairs(mcmVars) do
+    for key, value in pairs(mcmVarsOptions) do
         local actionConfigs = optionActions[key]
 
         if actionConfigs then
