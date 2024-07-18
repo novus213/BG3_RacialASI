@@ -152,7 +152,7 @@ end
 ---@param payload table payload
 function MCMASI:handlePayload(action, payload)       
     MCMASIAPI:callApiAction(action, { payload = payload })
-    BasicWarning(string.format("============> %s payload.", payload))     
+    BasicWarning(string.format("============> %s payload.", { payload = payload }))     
 end
 
 --- Constructor for MCMASI:MCMGet

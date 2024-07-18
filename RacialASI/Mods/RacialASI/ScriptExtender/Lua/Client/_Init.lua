@@ -82,7 +82,7 @@ else
 
             print("AddGnomeTinkertoolsSpells avant OnSessionLoadedMCM")
 
-            print(mcmVars["AddGnomeTinkertoolsSpells"])
+            print(mcmVars["AddGnome_Tinkertools_Spells"])
 
             mcmVarsOptions 		= mcmVars
 
@@ -102,7 +102,7 @@ else
 
             print("AddGnomeTinkertoolsSpells apres OnSessionLoadedMCM")
 
-            print(mcmVars["AddGnomeTinkertoolsSpells"])
+            print(mcmVars["AddGnome_Tinkertools_Spells"])
 
             mcmVarsOptions 		= mcmVars
 
