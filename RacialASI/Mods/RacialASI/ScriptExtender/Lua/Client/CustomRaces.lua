@@ -27,7 +27,7 @@ local RaceModsFloating = {
         Name = "Myconid",
         modGuid = "71486ac7-a05c-434e-8e3b-9e6c2d40a04a",
         UUID = "ada1a74c-89dd-45f9-95dd-f88bf59e3535"
-        
+
     },
     {
         Race = "Genasi (Elemental Power)",
@@ -372,7 +372,7 @@ local function CustomRacesOnStatsLoaded()
     end
 
     -- Log the results
-    if #insertedModNames > 0 then 
+    if #insertedModNames > 0 then
         BasicPrint("_________                 __                   __________                             ","INFO", nil, nil, true)
         BasicPrint("\\_   ___ \\ __ __  _______/  |_  ____   _____   \\______   \\_____    ____  ____   ______","INFO", nil, nil, true)
         BasicPrint("/    \\  \\/|  |  \\/  ___/\\   __\\/  _ \\ /     \\   |       _/\\__  \\ _/ ___\\/ __ \\ /  ___/","INFO", nil, nil, true)
@@ -380,7 +380,7 @@ local function CustomRacesOnStatsLoaded()
         BasicPrint(" \\______  /____//____  > |__|  \\____/|__|_|  /  |____|_  /(____  /\\___  >___  >____  >","INFO", nil, nil, true)
         BasicPrint("\\/           \\/                    \\/          \\/      \\/     \\/    \\/     \\/ ","INFO", nil, nil, true)
         BasicPrint(" \\_Custom Races from Nexus","INFO", nil, nil, true)
-        
+
         if Ext.Mod.IsModLoaded("f3d4e722-e576-43ce-a585-cfffcfcbcf40") then 
             BasicPrint(" ________.__                     __  .__            ________.__                 .__            ____ ___           .___                 .___ __________                      ","INFO", nil, nil, true)
             BasicPrint(" /  _____/|  |__ _____    _______/  |_|  | ___.__.  /  _____/|  |__   ____  __ __|  |   ______ |    |   \\____    __| _/____ _____     __| _/ \\______   \\_____    ____  ____  ","INFO", nil, nil, true)
@@ -394,7 +394,6 @@ local function CustomRacesOnStatsLoaded()
         BasicWarning("============> Ability bonuses inserted to " .. 
                  #insertedModNames .. " mods: " .. 
                  table.concat(insertedModNames, ", "))
-                
     end
 end
 

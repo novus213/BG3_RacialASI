@@ -23,8 +23,7 @@ print(IgnoreLegacy)
 print("IgnoreHomebrew")
 print(IgnoreHomebrew)
 
-
-StatsList = {"Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma"}
+--StatsList = {"Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma"}
 
 --[[Books = { Officials Sources list ]]
 Dnd5eLimited = { --[[ Core Rule Books (5e Limited) ]]
@@ -170,5 +169,5 @@ if IgnoreAll == false then
 	end
 else
 	print("Ignore cleaning the races ASI")
-end	
+end
 

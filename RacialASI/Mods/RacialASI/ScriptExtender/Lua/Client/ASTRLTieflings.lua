@@ -82,7 +82,7 @@ end
 local function processSources(sources, sourceType)
     for _, entry in ipairs(sources) do
         local payload = createPayload(entry, sourceType)
-        insertPayload(payload, sourceType)        
+        insertPayload(payload, sourceType)
     end
 end
 

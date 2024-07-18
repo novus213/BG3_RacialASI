@@ -1,0 +1,56 @@
+{
+  "$schema": "file:///c:/Users/remim/.vscode/extensions/tangzx.emmylua-0.8.1-win32-x64/server/win32-x64/win32-x64/Resources/schema.json",
+  "completion": {
+    "autoRequire": true,
+    "autoRequireFunction": "require",
+    "autoRequireNamingConvention": "snakeCase",
+    "callSnippet": false,
+    "postfix": "@"
+  },
+  "signature": {
+    "detailSignatureHelper": false
+  },
+  "diagnostics": {
+    "disable": [
+      "missing-parameter"
+    ],
+    "globals": [],
+    "globalsRegex": [],
+    "severity": {},
+    "enables": []
+  },
+  "hint": {
+    "paramHint": true,
+    "indexHint": true,
+    "localHint": false,
+    "overrideHint": true
+  },
+  "runtime": {
+    "version": "LuaLatest",
+    "requireLikeFunction": [],
+    "frameworkVersions": [],
+    "extensions": [],
+    "requirePattern": []
+  },
+  "workspace": {
+    "ignoreDir": [
+      ".idea",
+      ".vs",
+      ".vscode"
+    ],
+    "library": [],
+    "workspaceRoots": [],
+    "preloadFileSize": 1048576,
+    "encoding": ""
+  },
+  "resource": {
+    "paths": []
+  },
+  "codeLens": {
+    "enable": true
+  },
+  "strict": {
+    "requirePath": true,
+    "typeCall": true
+  }
+}

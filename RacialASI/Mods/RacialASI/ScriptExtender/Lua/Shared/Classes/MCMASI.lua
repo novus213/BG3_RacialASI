@@ -85,7 +85,7 @@ function MCMASI:OnStatsLoadedMCM()
             else
                     BasicError(string.format("============> ERROR: No configuration found for %s.", key))
             end
-            BasicWarning(string.format("============> %s is enabled.", key))            
+            BasicWarning(string.format("============> %s is enabled.", key))
         end
 
         if value == false then
@@ -94,7 +94,7 @@ function MCMASI:OnStatsLoadedMCM()
             else
                     BasicError(string.format("============> ERROR: No configuration found for %s.", key))
             end
-            BasicWarning(string.format("============> %s is disabled.", key))            
+            BasicWarning(string.format("============> %s is disabled.", key))
         end
 
     end
@@ -103,7 +103,7 @@ end
 --- Constructor for MCMASI:processOptionMcm
 ---@param optionName string Mcm option name
 ---@param optionValue boolean active or not option
----@param actionConfigs table actions table from mcm option 
+---@param actionConfigs table actions table from mcm option
 function MCMASI:processOptionMcm(optionName,optionValue, actionConfigs)
     for _, actionConfig in ipairs(actionConfigs) do
 
@@ -150,9 +150,9 @@ end
 --- Constructor for MCMASI:handlePayload
 ---@param action string payload action
 ---@param payload table payload
-function MCMASI:handlePayload(action, payload)       
+function MCMASI:handlePayload(action, payload)
     MCMASIAPI:callApiAction(action, { payload = payload })
-    BasicWarning(string.format("============> %s payload.", { payload = payload }))     
+    BasicWarning(string.format("============> %s payload.", { payload = payload }))
 end
 
 --- Constructor for MCMASI:MCMGet

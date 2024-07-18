@@ -82,7 +82,7 @@ end
 
 ---Creates a new class with a given name
 ---@generic T
----@param class `T` Name of new class
+---@param class T Name of new class
 ---@param parentClass? string|table Can be the name of a parent class or the class itself
 ---@param initial? table Initializing table for the class
 ---@return T

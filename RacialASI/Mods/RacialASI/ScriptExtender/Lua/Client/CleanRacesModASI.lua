@@ -13,7 +13,6 @@ raceMods = {
         Name = "Raven Queen's Chosen - Shadar-Kai",
         modGuid = "c36d595f-70d1-44f1-8ca6-4ad14186f489",
         UUID = "2f7edf7e-0a6b-4018-9715-1cb8aa238e4a"
-        
     },
     {   Race = "Aasimar(Radiant Consumption)", 
         UUID = "56d62681-9769-4ad7-9bbf-4f72db44f070", 
@@ -26,7 +25,7 @@ raceMods = {
     }
 }
 
---[[ 
+--[[
 {
     modGuid="GUID3",
     Status="Detected",
@@ -92,19 +91,19 @@ end
 --- Constructor for CleanOnStatsLoaded
 --- Clean race mods stats ASI
 function CleanOnStatsLoaded()
-    local removedRaces = {}  -- Table to store classes with removed shit asi 
+    local removedRaces = {}  -- Table to store classes with removed shit asi
     local stats = {"Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma"}
-    
+
     for _, mod in ipairs(raceMods) do
-        
+
         -- remove +2+1, +1, +1+1 ect..
-        local payload = createSABPayload(mod.UUID, mod.modGuid, ability, AbilityList_UUID)
+        local payload = createSABPayload(mod.UUID, mod.modGuid, AbilityList_UUID)
         Mods.SubclassCompatibilityFramework.Api.RemoveSelectors({payload})
 
         -- remove Boost Ability
         for _, ability in ipairs(stats) do
             for score=-10,10 do
-                local removedRace = removeBoosts(mod, ability, score)
+                removedRace = removeBoosts(mod, ability, score)
             end
         end
         if removedRace then
@@ -113,9 +112,9 @@ function CleanOnStatsLoaded()
     end
 
     if #removedRaces > 0 then
-        BasicWarning("============> Ability boost remove to " .. 
-                 #removedRaces .. " mods: " .. 
-                 table.concat(removedRaces, ", ")) 
+        BasicWarning("============> Ability boost remove to " ..
+                 #removedRaces .. " mods: " ..
+                 table.concat(removedRaces, ", "))
     end
 end
 
