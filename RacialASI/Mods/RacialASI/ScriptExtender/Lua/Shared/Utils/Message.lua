@@ -54,12 +54,6 @@ end
 function BasicPrint(content, messageType, textColor, customPrefix, rainbowText, prefixLength)
     local logLevel = (CONFIG and CONFIG.DEBUG_MESSAGES) or mcmVarsGeneralSettings["debugLevel"] or 3
     
-    print("[debugLevel]")
-    print(mcmVarsGeneralSettings["debugLevel"])
-
-    print("logLevel")
-    print(logLevel)
-
     prefixLength = prefixLength or 15
     messageType = messageType or "INFO"
     local textColorCode = textColor or TEXT_COLORS.blue -- Default to blue
