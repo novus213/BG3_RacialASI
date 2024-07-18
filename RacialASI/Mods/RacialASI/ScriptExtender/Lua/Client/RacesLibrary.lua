@@ -4,7 +4,7 @@ RaceLibrary = {
 		Guid			=	"673c5b7b-a274-4916-ad89-4e3c591e1187",
 		UUID			=	"7b4d6e73-c54f-41ed-bd69-c25be95e9717",
 		Author			=	"",
-		SourceBook		=	"",
+		SourceBook		=	"MPMotM",
 		Stats			=	{"2", "0", "1", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 		Sab     		= 	{"0","0","0"}
 	},
@@ -13,7 +13,7 @@ RaceLibrary = {
 		Guid			=	"315ce1a1-0f24-4777-90d9-06b01a93a716",
 		UUID			=	"b5f04836-e2ef-4eb6-93d5-4aad7f3b1c20",
 		Author			=	"",
-		SourceBook		=	"",
+		SourceBook		=	"SACoC",
 		Stats			=	{"2", "0", "1", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 		Sab     		= 	{"0","0","0"}
 	},
@@ -31,7 +31,7 @@ RaceLibrary = {
 		Guid			=	"97954f72-711b-4938-a5ae-6a477b2ed574",
 		UUID			=	"e808d2a5-a9eb-403f-bab9-90a5114a699c",
 		Author			=	"",
-		SourceBook		=	"",
+		SourceBook		=	"MPMotM",
 		Stats			=	{"2", "0", "1", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 		Sab     		= 	{"0","0","0"}
 	},
@@ -49,7 +49,7 @@ RaceLibrary = {
 		Guid			=	"42152a0b-9b3c-4d63-8114-3ceba848f3e2",
 		UUID			=	"575fa3d3-cf83-4716-8cc3-8d971666b051",
 		Author			=	"GentlemanBabbo",
-		SourceBook		=	"",
+		SourceBook		=	"MPMotM",
 		Stats			=	{"2", "0", "1", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 		Sab     		= 	{"0","0","0"}
 	},
