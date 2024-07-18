@@ -40,7 +40,8 @@ function MCMASI:OnSessionLoadedMCM()
     }
     mcmVarsGeneralSettings = {
         RASI = MCMASIAPI:MCMGet("RASI"),
-        debugLevel = MCMASIAPI:MCMGet("debug_level")
+        debugLevel = MCMASIAPI:MCMGet("debug_level"),
+        Log = MCMASIAPI:MCMGet("Log")
     }
 
     BasicWarning(string.format("============> %s is loaded.", mcmVars))

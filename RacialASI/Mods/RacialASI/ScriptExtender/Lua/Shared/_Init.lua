@@ -13,9 +13,9 @@ end
 --setmetatable(Mods[Ext.Mod.GetMod(ModuleUUID).Info.Directory], { __index = Mods.RacialASI })
 
 RequireFiles("Shared/", {
-    "Classes/_Init",
-    "Helpers/_Init",
     "Utils/_Init",
     "Globals/_Init",
     "Config/_Init",
+    "Classes/_Init",
+    "Helpers/_Init",
 })

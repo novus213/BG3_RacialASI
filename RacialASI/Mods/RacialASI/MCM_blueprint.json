@@ -37,6 +37,13 @@
                                 "NameHandle": "hffc964abc9a74a928cb047607a7aeb124594",
                                 "DescriptionHandle": "h1143226dbdd44d4aab3ce3010ffc589a073a"
                             }
+                        },
+                        {
+                            "Id": "Log",
+                            "Name": "Log Enable",
+                            "Type": "checkbox",
+                            "Default": true,
+                            "Tooltip": "Enable or disable Log File."
                         }
                     ],
                     "Handles": {

@@ -27,7 +27,9 @@ if Ext.Mod.IsModLoaded("755a8a72-407f-4f0d-9a33-274ac0f0b53d") then
     }
     mcmVarsGeneralSettings = {
         RASI = MCMASIAPI:MCMGet("RASI"),
-        debugLevel = MCMASIAPI:MCMGet("debug_level")
+        debugLevel = MCMASIAPI:MCMGet("debug_level"),
+        Log = MCMASIAPI:MCMGet("log")
+
     }
 
 
@@ -41,11 +43,15 @@ if Ext.Mod.IsModLoaded("755a8a72-407f-4f0d-9a33-274ac0f0b53d") then
     IgnoreLegacy 		= mcmVarsBooksSettings["IgnoreLegacy"]
     IgnoreHomebrew 		= mcmVarsBooksSettings["IgnoreHomebrew"]
 
-    mcmVarsGeneralSettingsUse = mcmVarsBooksSettings
 
-    print("Ignore5eExtended OnSessionLoadedMCM PRINTER SHIT TEST")
+    debugLevel = mcmVarsBooksSettings["debug_level"]
+    Log = mcmVarsBooksSettings["Log"]
 
-    print(Ignore5eExtended)
+
+
+    --print("Ignore5eExtended OnSessionLoadedMCM PRINTER SHIT TEST")
+
+    --print(Ignore5eExtended)
 
     -- Register a net listener to handle settings changes dynamically
     Ext.RegisterNetListener("MCM_Saved_Setting", function(call, payload)
@@ -67,21 +73,54 @@ if Ext.Mod.IsModLoaded("755a8a72-407f-4f0d-9a33-274ac0f0b53d") then
 
         if mcmVars[data.settingId] ~= nil then
             mcmVars[data.settingId] = data.value
+
+            --_D("Setting " .. mcmVars[data.settingId] .. " to " .. data.value)
+            BasicWarning(string.format("Setting %s to %s", data.settingId, data.value))
+
+            mcmVarsOptions 		= mcmVars
+
+
         end
 
             if mcmVarsBooksSettings[data.settingId] ~= nil then
             mcmVarsBooksSettings[data.settingId] = data.value
 
-            print(mcmVarsBooksSettings[data.settingId])
+            --_D("Setting " .. mcmVarsBooksSettings[data.settingId] .. " to " .. data.value)
+            BasicWarning(string.format("Setting %s to %s", data.settingId, data.value))
+
+            IgnoreAll 			= mcmVarsBooksSettings["IgnoreAll"]
+            Ignore5eLimited 	= mcmVarsBooksSettings["Ignore5eLimited"]
+            Ignore5e 			= mcmVarsBooksSettings["Ignore5e"]
+            Ignore5eExtended 	= mcmVarsBooksSettings["Ignore5eExtended"]
+            IgnoreFlavours 		= mcmVarsBooksSettings["IgnoreFlavours"]
+            IgnoreLegacy 		= mcmVarsBooksSettings["IgnoreLegacy"]
+            IgnoreHomebrew 		= mcmVarsBooksSettings["IgnoreHomebrew"]
+
         end
 
         if mcmVarsGeneralSettings[data.settingId] ~= nil then
             mcmVarsGeneralSettings[data.settingId] = data.value
+            --_D("Setting " .. mcmVarsGeneralSettings[data.settingId] .. " to " .. data.value)
+            BasicWarning(string.format("Setting %s to %s", data.settingId, data.value))
+            
+            mcmVarsGeneralSettingsUse = mcmVarsBooksSettings
+
         end
 
-            if data.settingId == "debug_level" then
-            _D("Setting debug level to " .. data.value)
+        if data.settingId == "debug_level" then
+            --_D("Setting debug level to " .. data.value)
+            BasicWarning(string.format("Setting %s to %s", data.settingId, data.value))
+
+            debugLevel = mcmVarsBooksSettings["debug_level"]
         end
+
+        if data.settingId == "Log" then
+            --_D("Setting debug level to " .. data.value)
+            BasicWarning(string.format("Setting %s to %s", data.settingId, data.value))
+
+            Log = mcmVarsBooksSettings["Log"]
+        end
+
 
     end)
 
