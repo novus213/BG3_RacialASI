@@ -72,7 +72,7 @@ else
     Ext.Events.StatsLoaded:Subscribe(function()
     MCMASIAPI:OnSessionLoadedMCM()
     end)
-   
+
     Ext.Events.StatsLoaded:Subscribe(function()
     MCMASIAPI:OnStatsLoadedMCM()
     end)

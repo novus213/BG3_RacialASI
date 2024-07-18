@@ -53,7 +53,7 @@ end
 ---@param prefixLength? number The length of the prefix. Defaults to 15 if not provided.
 function BasicPrint(content, messageType, textColor, customPrefix, rainbowText, prefixLength)
     local logLevel = (CONFIG and CONFIG.DEBUG_MESSAGES) or mcmVarsGeneralSettings["debugLevel"] or 3
-    
+
     prefixLength = prefixLength or 15
     messageType = messageType or "INFO"
     local textColorCode = textColor or TEXT_COLORS.blue -- Default to blue

@@ -1,6 +1,3 @@
----@alias 
-
-
 local racialASIConfig = {
     MOD_ENABLED = 1,
     DEBUG_MESSAGES = 1,

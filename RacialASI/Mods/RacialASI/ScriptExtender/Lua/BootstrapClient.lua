@@ -1,3 +1,4 @@
+---@diagnostic disable: missing-parameter
 deps = {
     Framework_FM_GUID       = "ff9844a0-a097-4149-bbca-ee0da5b937d7", -- FM Framework
     Framework_WotD_GUID     = "4806bd2a-929b-406e-b1d4-2e0e9cc23bb2", -- WOT AAsimaSE
@@ -8,8 +9,6 @@ deps = {
 }
 
 if not Ext.Mod.IsModLoaded(deps.Framework_GUID) then return end
-
-DevelReady = Ext.Utils:Version() >= 17 or Ext.Debug.IsDeveloperMode()
 
 ---Libraries
 Ext.Require("Libs/OptionsActionsLib.lua")
@@ -32,11 +31,11 @@ if Ext.Mod.IsModLoaded(deps.Framework_GUID) and Ext.Mod.IsModLoaded(deps.Framewo
     Ext.Require("Client/WotDAasimaSE.lua")
 end
 
-if Ext.Mod.IsModLoaded(deps.Framework_GUID) then 
+if Ext.Mod.IsModLoaded(deps.Framework_GUID) then
     Ext.Require("Client/CustomClasses.lua")
 end
 
-if Ext.Mod.IsModLoaded(deps.Framework_GUID) then 
+if Ext.Mod.IsModLoaded(deps.Framework_GUID) then
     Ext.Require("Client/CustomRaces.lua")
 end
 
