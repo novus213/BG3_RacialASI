@@ -68,107 +68,67 @@ if not isModLoaded(deps.MCM_GUID) then
     Ext.Events.StatsLoaded:Subscribe(start)
     Ext.Events.StatsLoaded:Subscribe(OnStatsLoaded)
 else
-     -- ask how put button not in tab
-    --- Function to create save button
-    --[[Mods.BG3MCM.IMGUIAPI:InsertModMenuTab(ModuleUUID, "SAVE TAB", function(tabHeader)
-        local myCustomWidget = tabHeader:AddButton("Save")
-        myCustomWidget.OnClick = function()
-            MCMASIAPI:OnSessionLoadedMCM()
-            MCMASIAPI:OnStatsLoadedMCM()
-        end
-    end)]]--
 
     Ext.Events.StatsLoaded:Subscribe(function()
     MCMASIAPI:OnSessionLoadedMCM()
-
-    --[[ 
-    mcmVarsOptions 		= mcmVars
-
-    IgnoreAll 			= mcmVarsBooksSettings["IgnoreAll"]
-    Ignore5eLimited 	= mcmVarsBooksSettings["Ignore5eLimited"]
-    Ignore5e 			= mcmVarsBooksSettings["Ignore5e"]
-    Ignore5eExtended 	= mcmVarsBooksSettings["Ignore5eExtended"]
-    IgnoreFlavours 		= mcmVarsBooksSettings["IgnoreFlavours"]
-    IgnoreLegacy 		= mcmVarsBooksSettings["IgnoreLegacy"]
-    IgnoreHomebrew 		= mcmVarsBooksSettings["IgnoreHomebrew"]
-
-    mcmVarsGeneralSettingsUse = mcmVarsGeneralSettings
-
-    BasicPrint("Ignore5eExtended OnSessionLoadedMCM base")
-
-    BasicPrint(Ignore5eExtended)
-    ]]--
-
     end)
-
-    -- Register a net listener to handle settings changes dynamically
-    --[[
-    Ext.RegisterNetListener("MCM_Saved_Setting", function(call, payload)
-        
-        BasicPrint("MCM_Saved_Setting")
-
-        local data = Ext.Json.Parse(payload)
-
-         BasicPrint("data")
-
-        BasicPrint(data)
-        
-
-        if not data or data.modGUID ~= ModuleUUID or not data.settingId then
-            return
-        end
-
-        if mcmVars[data.settingId] ~= nil then
-            mcmVars[data.settingId] = data.value
-        end
-
-         if mcmVarsBooksSettings[data.settingId] ~= nil then
-            mcmVarsBooksSettings[data.settingId] = data.value
-
-            --BasicPrint(mcmVarsBooksSettings[data.settingId])
-        end
-
-        if mcmVarsGeneralSettings[data.settingId] ~= nil then
-            mcmVarsGeneralSettings[data.settingId] = data.value
-        end
-
-         if data.settingId == "debug_level" then
-            _D("Setting debug level to " .. data.value)
-        end
-
-    end)
-    ]]--
-
-    
+   
     Ext.Events.StatsLoaded:Subscribe(function()
-
-    --[[ 
-    mcmVarsOptions 		= mcmVars
-
-    IgnoreAll 			= mcmVarsBooksSettings["IgnoreAll"]
-    Ignore5eLimited 	= mcmVarsBooksSettings["Ignore5eLimited"]
-    Ignore5e 			= mcmVarsBooksSettings["Ignore5e"]
-    Ignore5eExtended 	= mcmVarsBooksSettings["Ignore5eExtended"]
-    IgnoreFlavours 		= mcmVarsBooksSettings["IgnoreFlavours"]
-    IgnoreLegacy 		= mcmVarsBooksSettings["IgnoreLegacy"]
-    IgnoreHomebrew 		= mcmVarsBooksSettings["IgnoreHomebrew"]
-
-    mcmVarsGeneralSettingsUse = mcmVarsGeneralSettings
-
-    BasicPrint("Ignore5eExtended OnStatsLoadedMCM base")
-
-    BasicPrint(Ignore5eExtended)
-    ]]--
-
     MCMASIAPI:OnStatsLoadedMCM()
     end)
 
-    
-
     Ext.Events.GameStateChanged:Subscribe(function(e)
         if e.FromState == "Running" then
+
+            print("AddGnomeTinkertoolsSpells avant OnSessionLoadedMCM")
+
+            print(mcmVars["AddGnomeTinkertoolsSpells"])
+
+            mcmVarsOptions 		= mcmVars
+
+            IgnoreAll 			= mcmVarsBooksSettings["IgnoreAll"]
+            Ignore5eLimited 	= mcmVarsBooksSettings["Ignore5eLimited"]
+            Ignore5e 			= mcmVarsBooksSettings["Ignore5e"]
+            Ignore5eExtended 	= mcmVarsBooksSettings["Ignore5eExtended"]
+            IgnoreFlavours 		= mcmVarsBooksSettings["IgnoreFlavours"]
+            IgnoreLegacy 		= mcmVarsBooksSettings["IgnoreLegacy"]
+            IgnoreHomebrew 		= mcmVarsBooksSettings["IgnoreHomebrew"]
+
+
+            debugLevel = mcmVarsBooksSettings["debug_level"]
+            Log = mcmVarsBooksSettings["Log"]
+
             MCMASIAPI:OnSessionLoadedMCM()
+
+            print("AddGnomeTinkertoolsSpells apres OnSessionLoadedMCM")
+
+            print(mcmVars["AddGnomeTinkertoolsSpells"])
+
+            mcmVarsOptions 		= mcmVars
+
+            IgnoreAll 			= mcmVarsBooksSettings["IgnoreAll"]
+            Ignore5eLimited 	= mcmVarsBooksSettings["Ignore5eLimited"]
+            Ignore5e 			= mcmVarsBooksSettings["Ignore5e"]
+            Ignore5eExtended 	= mcmVarsBooksSettings["Ignore5eExtended"]
+            IgnoreFlavours 		= mcmVarsBooksSettings["IgnoreFlavours"]
+            IgnoreLegacy 		= mcmVarsBooksSettings["IgnoreLegacy"]
+            IgnoreHomebrew 		= mcmVarsBooksSettings["IgnoreHomebrew"]
+
+
+            debugLevel = mcmVarsBooksSettings["debug_level"]
+            Log = mcmVarsBooksSettings["Log"]
+
+            print("AddGnomeTinkertoolsSpells avant OnStatsLoadedMCM")
+
+            print(mcmVars["AddGnomeTinkertoolsSpells"])
+
             MCMASIAPI:OnStatsLoadedMCM()
+
+            print("AddGnomeTinkertoolsSpells après OnStatsLoadedMCM")
+
+            print(mcmVars["AddGnomeTinkertoolsSpells"])
+
+
 
            --[[
            mcmVarsOptions 		= mcmVars

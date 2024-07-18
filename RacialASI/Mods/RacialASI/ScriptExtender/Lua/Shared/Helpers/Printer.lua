@@ -48,24 +48,10 @@ if Ext.Mod.IsModLoaded("755a8a72-407f-4f0d-9a33-274ac0f0b53d") then
     Log = mcmVarsBooksSettings["Log"]
 
 
-
-    --print("Ignore5eExtended OnSessionLoadedMCM PRINTER SHIT TEST")
-
-    --print(Ignore5eExtended)
-
     -- Register a net listener to handle settings changes dynamically
     Ext.RegisterNetListener("MCM_Saved_Setting", function(call, payload)
         
-        --print("MCM_Saved_Setting Printer")
-
-        local data = Ext.Json.Parse(payload)
-
-        --[[ 
-        print("data")
-
-        print(data)
-        ]]--
-        
+        local data = Ext.Json.Parse(payload)        
 
         if not data or data.modGUID ~= ModuleUUID or not data.settingId then
             return
@@ -74,18 +60,15 @@ if Ext.Mod.IsModLoaded("755a8a72-407f-4f0d-9a33-274ac0f0b53d") then
         if mcmVars[data.settingId] ~= nil then
             mcmVars[data.settingId] = data.value
 
-            --_D("Setting " .. mcmVars[data.settingId] .. " to " .. data.value)
             BasicWarning(string.format("Setting %s to %s", data.settingId, data.value))
 
             mcmVarsOptions 		= mcmVars
-
 
         end
 
             if mcmVarsBooksSettings[data.settingId] ~= nil then
             mcmVarsBooksSettings[data.settingId] = data.value
 
-            --_D("Setting " .. mcmVarsBooksSettings[data.settingId] .. " to " .. data.value)
             BasicWarning(string.format("Setting %s to %s", data.settingId, data.value))
 
             IgnoreAll 			= mcmVarsBooksSettings["IgnoreAll"]
@@ -99,8 +82,8 @@ if Ext.Mod.IsModLoaded("755a8a72-407f-4f0d-9a33-274ac0f0b53d") then
         end
 
         if mcmVarsGeneralSettings[data.settingId] ~= nil then
+        
             mcmVarsGeneralSettings[data.settingId] = data.value
-            --_D("Setting " .. mcmVarsGeneralSettings[data.settingId] .. " to " .. data.value)
             BasicWarning(string.format("Setting %s to %s", data.settingId, data.value))
             
             mcmVarsGeneralSettingsUse = mcmVarsBooksSettings
@@ -108,14 +91,14 @@ if Ext.Mod.IsModLoaded("755a8a72-407f-4f0d-9a33-274ac0f0b53d") then
         end
 
         if data.settingId == "debug_level" then
-            --_D("Setting debug level to " .. data.value)
+
             BasicWarning(string.format("Setting %s to %s", data.settingId, data.value))
 
             debugLevel = mcmVarsBooksSettings["debug_level"]
         end
 
         if data.settingId == "Log" then
-            --_D("Setting debug level to " .. data.value)
+
             BasicWarning(string.format("Setting %s to %s", data.settingId, data.value))
 
             Log = mcmVarsBooksSettings["Log"]

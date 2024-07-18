@@ -77,12 +77,26 @@ function MCMASI:OnStatsLoadedMCM()
 
     for key, value in pairs(mcmVarsOptions) do
         local actionConfigs = optionActions[key]
+        local optionActionsReverse = optionActionsReverse[key]
 
-        if actionConfigs then
-            MCMASIAPI:processOptionMcm(key, value, actionConfigs.actions)
-        else
-                BasicError(string.format("============> ERROR: No configuration found for %s.", key))
+        if value == true then
+            if actionConfigs then
+                MCMASIAPI:processOptionMcm(key, value, actionConfigs.actions)
+            else
+                    BasicError(string.format("============> ERROR: No configuration found for %s.", key))
+            end
+            BasicWarning(string.format("============> %s is enabled.", key))            
         end
+
+        if value == false then
+            if optionActionsReverse then
+                MCMASIAPI:processOptionMcm(key, value, optionActionsReverse.actions)
+            else
+                    BasicError(string.format("============> ERROR: No configuration found for %s.", key))
+            end
+            BasicWarning(string.format("============> %s is disabled.", key))            
+        end
+
     end
 end
 
@@ -91,19 +105,16 @@ end
 ---@param optionValue boolean active or not option
 ---@param actionConfigs table actions table from mcm option 
 function MCMASI:processOptionMcm(optionName,optionValue, actionConfigs)
-    if optionValue == true then
-        BasicWarning(string.format("============> %s is enabled.", optionName))
-        for _, actionConfig in ipairs(actionConfigs) do
+    for _, actionConfig in ipairs(actionConfigs) do
 
-            local action   = actionConfig.action
-            local payloads = actionConfig.payloads
+        local action   = actionConfig.action
+        local payloads = actionConfig.payloads
 
-            for _, payload in ipairs(payloads) do
-                if payload.Target then
-                    MCMASIAPI:handlePayload(action, payload)
-                else
-                    BasicError(string.format("============> ERROR: Invalid target UUID for payload in '%s'.", optionName))
-                end
+        for _, payload in ipairs(payloads) do
+            if payload.Target then
+                MCMASIAPI:handlePayload(action, payload)
+            else
+                BasicError(string.format("============> ERROR: Invalid target UUID for payload in '%s'.", optionName))
             end
         end
     end
@@ -121,6 +132,7 @@ function MCMASI:callApiAction(action, payload)
         InsertPassives = Mods.SubclassCompatibilityFramework.Api.InsertPassives,
         RemovePassives = Mods.SubclassCompatibilityFramework.Api.RemovePassives,
         InsertSelectors = Mods.SubclassCompatibilityFramework.Api.InsertSelectors,
+        RemoveSelectors = Mods.SubclassCompatibilityFramework.Api.RemoveSelectors,
         InsertBoosts = Mods.SubclassCompatibilityFramework.Api.InsertBoosts,
         RemoveBoosts = Mods.SubclassCompatibilityFramework.Api.RemoveBoosts,
         SetBoolean = Mods.SubclassCompatibilityFramework.Api.SetBoolean
@@ -138,10 +150,9 @@ end
 --- Constructor for MCMASI:handlePayload
 ---@param action string payload action
 ---@param payload table payload
-function MCMASI:handlePayload(action, payload)
-    BasicPrint("payload")
-    BasicPrint(payload)
+function MCMASI:handlePayload(action, payload)       
     MCMASIAPI:callApiAction(action, { payload = payload })
+    BasicWarning(string.format("============> %s payload.", payload))     
 end
 
 --- Constructor for MCMASI:MCMGet

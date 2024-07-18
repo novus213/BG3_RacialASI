@@ -1,11 +1,6 @@
 Ext.Require("Client/RacesLibrary.lua")
 
 
---print(mcmVarsOptions)
-
---print(mcmVarsGeneralSettingsUse)
-
-
 -- move the Vars to helpers
 print("IgnoreAll")
 print(IgnoreAll)
