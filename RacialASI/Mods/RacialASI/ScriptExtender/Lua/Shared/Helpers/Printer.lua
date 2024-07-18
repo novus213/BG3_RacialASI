@@ -28,7 +28,7 @@ if Ext.Mod.IsModLoaded("755a8a72-407f-4f0d-9a33-274ac0f0b53d") then
     mcmVarsGeneralSettings = {
         RASI = MCMASIAPI:MCMGet("RASI"),
         debugLevel = MCMASIAPI:MCMGet("debug_level"),
-        Log = MCMASIAPI:MCMGet("log")
+        Log = MCMASIAPI:MCMGet("Log")
 
     }
 

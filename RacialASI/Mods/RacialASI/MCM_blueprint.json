@@ -37,7 +37,13 @@
                                 "NameHandle": "hffc964abc9a74a928cb047607a7aeb124594",
                                 "DescriptionHandle": "h1143226dbdd44d4aab3ce3010ffc589a073a"
                             }
-                        },
+                        }
+                    ]
+                },
+                {
+                    "SectionId": "log_settings",
+                    "SectionName": "Log settings",
+                    "Settings": [
                         {
                             "Id": "Log",
                             "Name": "Log Enable",
@@ -102,14 +108,14 @@
                     "SectionId": "5e_settings",
                     "SectionName": "5e Settings",
                     "Settings": [
-                         {
+                        {
                             "Id": "IgnoreAll",
                             "Name": "Ignore All",
                             "Type": "checkbox",
                             "Default": false,
                             "Tooltip": "Enable or disable Ignore All."
                         },
-                         {
+                        {
                             "Id": "Ignore5eLimited",
                             "Name": "Ignore 5eLimited",
                             "Type": "checkbox",

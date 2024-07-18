@@ -139,6 +139,8 @@ end
 ---@param action string payload action
 ---@param payload table payload
 function MCMASI:handlePayload(action, payload)
+    BasicPrint("payload")
+    BasicPrint(payload)
     MCMASIAPI:callApiAction(action, { payload = payload })
 end
 
