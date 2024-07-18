@@ -411,3 +411,218 @@ BG3Extender/Osiris/Shared/NodeHooks.cpp
 BG3Extender/Osiris/Shared/NodeHooks.h
 BG3Extender/Osiris/Shared/OsirisHelpers.cpp
 BG3Extender/Osiris/Shared/OsirisHelpers.h
+Mod Configuration Menu/Localization/BrazilianPortuguese/__MT_GEN_LOCA_6ae7fa5d-78a6-466a-bdbd-08a851741f83.loca.xml
+Mod Configuration Menu/Localization/English/__MT_GEN_LOCA_1e1c5ae8-4ee9-4c55-b576-82b3e8725b62.loca.xml
+Mod Configuration Menu/Mods/BG3MCM/MCM_blueprint.json
+Mod Configuration Menu/Mods/BG3MCM/meta.lsx
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Config.json
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/BootstrapClient.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/BootstrapServer.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Client/_Init.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Client/IMGUIAPI.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Client/IMGUILayer.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Client/SubscribedEvents.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Client/Components/_Init.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Client/Components/FrameManager.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Client/Components/MainMenu.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Client/Components/SectionManager.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Client/Components/SettingManager.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Client/Components/UIProfileManager.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Client/Helpers/_Init.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Client/Helpers/Noesis.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Client/Helpers/UIStyle.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Client/Helpers/IMGUIWidgets/_Init.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Client/Helpers/IMGUIWidgets/CheckboxIMGUIWidget.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Client/Helpers/IMGUIWidgets/ColorEditIMGUIWidget.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Client/Helpers/IMGUIWidgets/ColorPickerIMGUIWidget.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Client/Helpers/IMGUIWidgets/DragFloatIMGUIWidget.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Client/Helpers/IMGUIWidgets/DragIntIMGUIWidget.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Client/Helpers/IMGUIWidgets/EnumIMGUIWidget.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Client/Helpers/IMGUIWidgets/FloatIMGUIWidget.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Client/Helpers/IMGUIWidgets/IMGUIWidget.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Client/Helpers/IMGUIWidgets/IntIMGUIWidget.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Client/Helpers/IMGUIWidgets/KeybindingIMGUIWidget.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Client/Helpers/IMGUIWidgets/ListIMGUIWidget.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Client/Helpers/IMGUIWidgets/RadioIMGUIWidget.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Client/Helpers/IMGUIWidgets/SliderFloatIMGUIWidget.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Client/Helpers/IMGUIWidgets/SliderIntIMGUIWidget.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Client/Helpers/IMGUIWidgets/TextIMGUIWidget.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Client/Helpers/IMGUIWidgets/WidgetFactory.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Server/_Init.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Server/EventHandlers.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Server/SubscribedEvents.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Shared/_Init.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Shared/MetaClass.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Shared/Classes/_Init.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Shared/Classes/JsonLayer.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Shared/Classes/MCM.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Shared/Classes/ModConfig.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Shared/Classes/ProfileManager.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Shared/Classes/Command/_Init.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Shared/Classes/Command/AuthorizedNetCommand.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Shared/Classes/Command/CommandRegistry.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Shared/Classes/Command/NetCommand.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Shared/Classes/ConfigDefinition/_Init.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Shared/Classes/ConfigDefinition/Blueprint.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Shared/Classes/ConfigDefinition/Section.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Shared/Classes/ConfigDefinition/Setting.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Shared/Classes/ConfigDefinition/Tab.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Shared/Helpers/_Init.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Shared/Helpers/Channels.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Shared/Helpers/Color.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Shared/Helpers/Config.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Shared/Helpers/Messages.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Shared/Helpers/Printer.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Shared/Helpers/Keybindings/_Init.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Shared/Helpers/Keybindings/KeybindingManager.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Shared/Helpers/Keybindings/SDLKeys.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Shared/Helpers/MCM/_Init.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Shared/Helpers/MCM/MCMCommands.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Shared/Helpers/MCM/MCMUtils.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Shared/Helpers/Preprocessing/_Init.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Shared/Helpers/Preprocessing/BlueprintPreprocessing.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Shared/Helpers/Preprocessing/DataPreprocessing.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Shared/Helpers/Validators/_Init.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Shared/Helpers/Validators/CheckboxValidator.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Shared/Helpers/Validators/ColorValidator.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Shared/Helpers/Validators/DragFloatValidator.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Shared/Helpers/Validators/DragIntValidator.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Shared/Helpers/Validators/EnumValidator.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Shared/Helpers/Validators/FloatValidator.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Shared/Helpers/Validators/IntValidator.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Shared/Helpers/Validators/KeybindingValidator.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Shared/Helpers/Validators/ListValidator.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Shared/Helpers/Validators/RadioValidator.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Shared/Helpers/Validators/SliderFloatValidator.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Shared/Helpers/Validators/SliderIntValidator.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Shared/Helpers/Validators/TextValidator.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Shared/Helpers/Validators/Validator.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Shared/Helpers/VC/_Init.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Shared/Helpers/VC/VCConfig.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Shared/Helpers/VC/VCPrinter.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Shared/Helpers/VC/VCString.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Shared/Helpers/VC/VCTimer.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Shared/Tests/_Init.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Shared/Tests/DataPreprocessing.test.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Shared/Tests/ModConfig.test.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Shared/Tests/TestConstants.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Shared/Tests/TestHelpers.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Shared/Tests/ValidateAndFixSettings.test.lua
+Mod Configuration Menu/Mods/BG3MCM/ScriptExtender/Lua/Shared/Tests/Validators.test.lua
+Mod Configuration Menu/Public/Game/GUI/Widgets/GameMenu_c.xaml.bkp
+Mod Configuration Menu/Public/Game/GUI/Widgets/GameMenu.xaml
+Mod Configuration Menu/Public/Game/GUI/Widgets/MainMenu.xaml.bkp
+Mod Configuration Menu/Public/Shared/Assets/Textures/Icons/UIBasic24-96.dds
+Mod Configuration Menu/Public/Shared/Assets/Textures/Icons/UIBasic128-144.dds
+Mod Configuration Menu/Public/Shared/Assets/Textures/Icons/UIOrigin_Portraits.dds
+Mod Configuration Menu/Public/Shared/Content/UI/[PAK]_UI/merged.lsf.lsx
+Mod Configuration Menu/Public/Shared/Content/UI/[PAK]_UI/merged.lsx
+Mod Configuration Menu/Public/Shared/GUI/UIBasic_24-96.lsf.lsx
+Mod Configuration Menu/Public/Shared/GUI/UIBasic_24-96.lsx
+Mod Configuration Menu/Public/Shared/GUI/UIBasic_128-144.lsf.lsx
+Mod Configuration Menu/Public/Shared/GUI/UIBasic_128-144.lsx
+Mod Configuration Menu/Public/Shared/GUI/UIOrigin_Portraits.lsf.lsx
+Mod Configuration Menu/Public/Shared/GUI/UIOrigin_Portraits.lsx
+VolitionCabinet/Mods/VolitionCabinet/meta.lsx
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Config.json
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/BootstrapClient.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/BootstrapServer.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Client/_Init.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Server/_Init.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/_Init.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/MetaClass.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Classes/_Init.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Classes/ItemList.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Classes/Events/_Init.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Classes/Events/Callback.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Classes/Events/Event.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Classes/Events/EventParams.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Classes/Events/ExtraParams.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Classes/Events/SubscribableEvents/_Init.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Classes/Events/SubscribableEvents/Custom/_Init.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Classes/Events/SubscribableEvents/Custom/CustomEvent.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Classes/Events/SubscribableEvents/Custom/GameStarted.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Classes/Events/SubscribableEvents/Custom/VarsLoaded.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Classes/Events/SubscribableEvents/Entity/_EntityEvent.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Classes/Events/SubscribableEvents/Entity/_Init.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Classes/Events/SubscribableEvents/Entity/GameObjectVisual.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Classes/Events/SubscribableEvents/Entity/Health.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Classes/Events/SubscribableEvents/Extender/_ExtenderEvent.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Classes/Events/SubscribableEvents/Extender/_Init.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Classes/Events/SubscribableEvents/Extender/BeforeDealDamage.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Classes/Events/SubscribableEvents/Extender/DealDamage.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Classes/Events/SubscribableEvents/Extender/DealtDamage.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Classes/Events/SubscribableEvents/Extender/DoConsoleCommand.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Classes/Events/SubscribableEvents/Extender/GameStateChanged.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Classes/Events/SubscribableEvents/Extender/NetMessage.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Classes/Events/SubscribableEvents/Extender/Tick.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Classes/Events/SubscribableEvents/Osiris/_Init.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Classes/Events/SubscribableEvents/Osiris/_OsirisEvent.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Classes/Events/SubscribableEvents/Osiris/CastedSpell.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Classes/Events/SubscribableEvents/Osiris/Combined.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Classes/Events/SubscribableEvents/Osiris/Equipped.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Classes/Events/SubscribableEvents/Osiris/ItemMoved.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Classes/Events/SubscribableEvents/Osiris/ObjectTimerFinished.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Classes/Events/SubscribableEvents/Osiris/RequestCanCombine.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Classes/Events/SubscribableEvents/Osiris/Saw.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Classes/Events/SubscribableEvents/Osiris/StartedPreviewingSpell.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Classes/Events/SubscribableEvents/Osiris/StatusApplied.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Classes/Events/SubscribableEvents/Osiris/StatusRemoved.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Classes/Events/SubscribableEvents/Osiris/TemplateAddedTo.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Classes/Events/SubscribableEvents/Osiris/Unequipped.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Classes/Events/SubscribableEvents/Osiris/UsedItem.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Classes/Events/SubscribableEvents/Osiris/UseFinished.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Classes/Events/SubscribableEvents/Osiris/UsingSpell.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Components/_Init.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Data/_Init.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Data/Origins.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Helpers/_Init.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Helpers/Appearance.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Helpers/Book.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Helpers/Camp.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Helpers/Character.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Helpers/Color.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Helpers/Commander.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Helpers/Config.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Helpers/Dice.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Helpers/File.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Helpers/Food.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Helpers/Format.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Helpers/Grid.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Helpers/Hit.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Helpers/Inventory.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Helpers/Loca.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Helpers/Log.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Helpers/Lootable.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Helpers/MessageBox.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Helpers/ModVars.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Helpers/Net.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Helpers/Object.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Helpers/Party.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Helpers/Passive.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Helpers/Printer.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Helpers/Rarity.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Helpers/Resource.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Helpers/SpellBook.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Helpers/SpellCast.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Helpers/Status.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Helpers/String.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Helpers/Table.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Helpers/Teleporting.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Helpers/Template.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Helpers/Timer.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Helpers/TreasureTable.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Helpers/UserVars.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Shared/Helpers/Ware.lua
+Mod Configuration Menu/Public/Shared/Content/UI/[PAK]_UI/merged.lsf.lsx
+Mod Configuration Menu/Public/Shared/Content/UI/[PAK]_UI/merged.lsx
+VolitionCabinet/Localization/English/__MT_GEN_LOCA_fbb81e15-610a-43a4-9ca9-aa80e1f0c3b6.loca.xml
+VolitionCabinet/Localization/English/VolitionCabinetEnglish.xml
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Client/Helpers/_Init.lua
+VolitionCabinet/Mods/VolitionCabinet/ScriptExtender/Lua/Client/Helpers/KeybindingManager.lua
+VolitionCabinet/Mods/VolitionCabinet/Story/RawFiles/Goals/ModFixer.txt
+VolitionCabinet/Public/FocusCore/Stats/Generated/Data/FocusCore_Object.txt
+VolitionCabinet/Public/FocusCore/Stats/Generated/Data/FocusCore_Status.txt
+Mod Configuration Menu/Public/Shared/Content/UI/[PAK]_UI/merged.lsx
+Mod Configuration Menu/Public/Shared/Content/UI/[PAK]_UI/merged.lsx
+Mod Configuration Menu/Public/Shared/Content/UI/[PAK]_UI/merged.lsf.lsx
