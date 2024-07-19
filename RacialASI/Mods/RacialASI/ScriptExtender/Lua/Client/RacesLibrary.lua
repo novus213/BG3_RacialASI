@@ -172,7 +172,7 @@ for _, raceMod in pairs(RaceLibrary) do
 
 		if raceMod.Stats ~= nil then
 			payload.Type = "Boosts"
-			payload.Strings = entry.Strings
+			payload.Strings = raceMod.Strings
 		end
 
 		print("payload:", dump(payload))
