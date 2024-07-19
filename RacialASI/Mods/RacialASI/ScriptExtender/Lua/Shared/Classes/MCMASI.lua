@@ -81,7 +81,7 @@ function MCMASI:OnStatsLoadedMCM()
 
         if value == true then
             if actionConfigs then
-                MCMASIAPI:processOptionMcm(key, value, actionConfigs.actions)
+                MCMASIAPI:processOptionMcm(key, actionConfigs.actions)
             else
                     BasicError(string.format("============> ERROR: No configuration found for %s.", key))
             end
@@ -90,7 +90,7 @@ function MCMASI:OnStatsLoadedMCM()
 
         if value == false then
             if optionActionsReverse then
-                MCMASIAPI:processOptionMcm(key, value, optionActionsReverse.actions)
+                MCMASIAPI:processOptionMcm(key, optionActionsReverse.actions)
             else
                     BasicError(string.format("============> ERROR: No configuration found for %s.", key))
             end
@@ -104,7 +104,7 @@ end
 ---@param optionName string Mcm option name
 ---@param optionValue boolean active or not option
 ---@param actionConfigs table actions table from mcm option
-function MCMASI:processOptionMcm(optionName,optionValue, actionConfigs)
+function MCMASI:processOptionMcm(optionName, actionConfigs)
     for _, actionConfig in ipairs(actionConfigs) do
 
         local action   = actionConfig.action

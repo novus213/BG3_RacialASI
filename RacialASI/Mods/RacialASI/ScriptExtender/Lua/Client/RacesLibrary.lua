@@ -118,19 +118,18 @@ RaceLibrary = {
 	 }
 }
 
-SearchedMod = "f4361c10-b197-4490-ae30-06ce796f950e"
+--SearchedMod = "f4361c10-b197-4490-ae30-06ce796f950e"
 StatsList = {"Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma"}
 
-
+RaceStat =  {}
 --[[ String builder for the string table to removeAbility ]]
 for _, raceMod in pairs(RaceLibrary) do
---	if raceMod.Guid == SearchedMod then
 		print("Le mod : " .. raceMod.Name .. " est bien dans la liste")
 		for i = 1, 6 do
-			RaceStat = "Ability(" .. StatsList[i] .. "," .. raceMod.Stats[i] .. ")"
-			print(RaceStat)
-		 end
---	end
+			table.insert(RaceStat, "Ability(" .. StatsList[i] .. "," .. raceMod.Stats[i] .. ")")
+		end
 end
 
-StringDeSesMort = {RaceStat}
+print(RaceStat)
+
+--StringDeSesMort = {RaceStat}
