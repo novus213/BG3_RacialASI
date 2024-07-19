@@ -72,7 +72,7 @@ local payload = {
 		payload.Strings = raceMod.Strings
 		Mods.SubclassCompatibilityFramework.Api.InsertBoosts({payload})
 	end
-    BasicWarning(string.format("payload ============> %s", payload))
+    BasicWarning(string.format("payload ============> %s", {payload}))
 	--print("payload:", dump(payload))
     --return payload
 end
@@ -80,8 +80,8 @@ end
 --- Constructor for builder5eRaces
 function builder5eRaces()
     if IgnoreAll == false then
+        RaceStat =  {}
         for _, raceMod in pairs(RaceLibrary) do
-            RaceStat =  {}
             if raceMod.SourceBook == nil or raceMod.SourceBook == "" then
                 if IgnoreHomebrew == false then
                     print("Le mod : " .. raceMod.Name .. " est bien dans la liste")
