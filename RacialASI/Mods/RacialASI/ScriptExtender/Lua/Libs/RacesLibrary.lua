@@ -56,6 +56,185 @@ RaceLibrary = {
 		Sab     		= 	{"2","1"}, --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 
+--[[
+   _____    ______________________________.____      ___________.__        _____.__  .__
+  /  _  \  /   _____/\__    ___/\______   \    |     \__    ___/|__| _____/ ____\  | |__| ____    ____  ______
+ /  /_\  \ \_____  \   |    |    |       _/    |       |    |   |  |/ __ \   __\|  | |  |/    \  / ___\/  ___/
+/    |    \/        \  |    |    |    |   \    |___    |    |   |  \  ___/|  |  |  |_|  |   |  \/ /_/  >___ \
+\____|__  /_______  /  |____|    |____|_  /_______ \   |____|   |__|\___  >__|  |____/__|___|  /\___  /____  >
+        \/        \/                    \/        \/                    \/                   \//_____/     \/
+         \_Astralities' Tiefling Compendium 3.1 Used
+Argelia source mixed
+]] --
+
+	{
+		Name			=	"ASTRL_Baalzebul_Tiefling",
+		Guid			=	"167b846f-0a0b-4e0c-a9d0-df448be1320a",
+		UUID			=	"ad21229c-c202-4c86-af26-b5c47d36ff01",
+		Author			=	"",
+		SourceBook		=	"",
+		Stats			=	{"0", "0", "0", "1", "0", "2"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+	},
+	{
+		Name			=	"ASTRL_Dispater_Tiefling",
+		Guid			=	"167b846f-0a0b-4e0c-a9d0-df448be1320a",
+		UUID			=	"535fb417-7341-4710-b500-0ac5602de515",
+		Author			=	"",
+		SourceBook		=	"",
+		Stats			=	{"0", "1", "0", "0", "0", "2"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+	},
+	{
+		Name			=	"ASTRL_Fierna_Tiefling",
+		Guid			=	"167b846f-0a0b-4e0c-a9d0-df448be1320a",
+		UUID			=	"929b6fe8-7415-43c7-9e2b-a3c87962e77d",
+		Author			=	"",
+		SourceBook		=	"",
+		Stats			=	{"0", "0", "0", "0", "1", "2"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+	},
+	{
+		Name			=	"ASTRL_Glasya_Tiefling",
+		Guid			=	"167b846f-0a0b-4e0c-a9d0-df448be1320a",
+		UUID			=	"1a215890-3ffc-4c4e-bf19-b70aa67c25cf",
+		Author			=	"",
+		SourceBook		=	"",
+		Stats			=	{"0", "1", "0", "0", "0", "2"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+	},
+	{
+		Name			=	"ASTRL_Levistus_Tiefling",
+		Guid			=	"167b846f-0a0b-4e0c-a9d0-df448be1320a",
+		UUID			=	"62899e1e-d6b6-448d-847c-085a07d1f41d",
+		Author			=	"",
+		SourceBook		=	"",
+		Stats			=	{"0", "0", "1", "0", "0", "2"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+	},
+	{
+		Name			=	"ASTRL_Mammon_Tiefling",
+		Guid			=	"167b846f-0a0b-4e0c-a9d0-df448be1320a",
+		UUID			=	"bf7c8b2d-5b6e-467e-b080-d85de151f57a",
+		Author			=	"",
+		SourceBook		=	"",
+		Stats			=	{"0", "0", "0", "1", "0", "2"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+	},
+	{
+		Name			=	"ASTRL_Variant_Tiefling",
+		Guid			=	"167b846f-0a0b-4e0c-a9d0-df448be1320a",
+		UUID			=	"da92f08b-96fd-42b2-80f1-45b7bc9e703f",
+		Author			=	"",
+		SourceBook		=	"",
+		Stats			=	{"0", "0", "0", "1", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Sab     		= 	{"2"}, --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+	},
+	{
+		Name			=	"ASTRL_Winged_Tiefling",
+		Guid			=	"167b846f-0a0b-4e0c-a9d0-df448be1320a",
+		UUID			=	"e2519a78-67c8-41d2-a276-fc4889511346",
+		Author			=	"",
+		SourceBook		=	"",
+		Stats			=	{"0", "0", "0", "1", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Sab     		= 	{"2"}, --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+	},
+	{
+		Name			=	"ASTRL_Nightborn_Tiefling",
+		Guid			=	"167b846f-0a0b-4e0c-a9d0-df448be1320a",
+		UUID			=	"fa15d3e5-3f15-4d59-857a-804098843516",
+		Author			=	"",
+		SourceBook		=	"",
+		Sab     		= 	{"2","1"}, --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+	},
+	{
+		Name			=	"ASTRL_Feyri_Tiefling",
+		Guid			=	"167b846f-0a0b-4e0c-a9d0-df448be1320a",
+		UUID			=	"3d807581-2721-4ba2-82bf-d91b345f7d81",
+		Author			=	"",
+		SourceBook		=	"",
+		Sab     		= 	{"2","1"}, --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+	},
+	{
+		Name			=	"ASTRL_Elamshinae_Tiefling",
+		Guid			=	"167b846f-0a0b-4e0c-a9d0-df448be1320a",
+		UUID			=	"b42939aa-ce0d-40c7-8b0b-98cc4c122214",
+		Author			=	"",
+		SourceBook		=	"",
+		Sab     		= 	{"2","1"}, --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+	},
+	{
+		Name			=	"ASTRL_Velkynbol_Tiefling",
+		Guid			=	"167b846f-0a0b-4e0c-a9d0-df448be1320a",
+		UUID			=	"3968f318-3ba4-4325-86f4-88ba7c01d999",
+		Author			=	"",
+		SourceBook		=	"",
+		Sab     		= 	{"2","1"}, --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+	},
+	{
+		Name			=	"ASTRL_Isilmnirel_Tiefling",
+		Guid			=	"167b846f-0a0b-4e0c-a9d0-df448be1320a",
+		UUID			=	"c9ebad8c-3f9c-42ff-a2c2-53e83578df8c",
+		Author			=	"",
+		SourceBook		=	"",
+		Sab     		= 	{"2","1"}, --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+	},
+
+--[[
+   _____    ______________________________.____      ___________.__
+  /  _  \  /   _____/\__    ___/\______   \    |     \_   _____/|  | ___  __ ____   ____   ______
+ /  /_\  \ \_____  \   |    |    |       _/    |      |    __)_ |  | \  \/ // __ \ /    \ /  ___/
+/    |    \/        \  |    |    |    |   \    |___   |        \|  |_/\   /\  ___/|   |  \\___ \
+\____|__  /_______  /  |____|    |____|_  /_______ \ /_______  /|____/>\_/  \___  >___|  /____  >
+        \/        \/                    \/        \/         \/      \/          \/     \/     \/
+         \_Astralities' Elven Anthology 1.2 Used
+
+]] --
+
+	{
+		Name 			= 	"ASTRL_MoonElf_LevelOne",
+		Guid 			=	"66b20233-cf0a-44bb-9bcf-32c0e0b09c19",
+		UUID 			= 	"934762bb-eebd-4b42-b050-540148507a4a",
+		Author			=	"",
+		SourceBook		=	"",
+		Stats			=	{"0", "2", "0", "0", "0", "1"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+	},
+	{
+		Name 			= 	"ASTRL_SnowElf_LevelOne",
+		Guid 			=	"66b20233-cf0a-44bb-9bcf-32c0e0b09c19",
+		UUID 			= 	"02e1d9ac-bcc4-4391-9e78-5df33f60ca64",
+		Author			=	"",
+		SourceBook		=	"",
+		Stats			=	{"0", "0", "2", "0", "1", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+	},
+	{
+		Name 			= 	"ASTRL_SunElf_LevelOne",
+		Guid 			=	"66b20233-cf0a-44bb-9bcf-32c0e0b09c19",
+		UUID 			= 	"1089dddf-4e75-4e1b-bf2a-33affd0f6093",
+		Author			=	"",
+		SourceBook		=	"",
+		Stats			=	{"0", "2", "1", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+	},
+	{
+		Name 			= 	"ASTRL_LythariElf_LevelOne",
+		Guid 			=	"66b20233-cf0a-44bb-9bcf-32c0e0b09c19",
+		UUID 			= 	"9b37ca29-0d77-4a27-a662-8464ce9998bb",
+		Author			=	"",
+		SourceBook		=	"",
+		Stats			=	{"0", "2", "0", "0", "0", "1"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+	},
+	{
+		Name 			= 	"ASTRL_StarElf_LevelOne",
+		Guid 			=	"66b20233-cf0a-44bb-9bcf-32c0e0b09c19",
+		UUID 			= 	"e4c4c550-d4c7-43c5-92ba-49f93691356a",
+		Author			=	"",
+		SourceBook		=	"",
+		Stats			=	{"0", "2", "0", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Sab     		= 	{"1"}, --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+	},
+	{
+		Name 			= 	"ASTRL_DuskElf_LevelOne",
+		Guid 			=	"66b20233-cf0a-44bb-9bcf-32c0e0b09c19",
+		UUID 			= 	"50d5a39d-4497-4d71-9368-d6c8c04f97dd",
+		Author			=	"",
+		SourceBook		=	"",
+		Sab     		= 	{"2","1"}, --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+	},
+
 
 
 -- ------------------------------------------------------------------ --
@@ -319,9 +498,9 @@ RaceLibrary = {
 		Stats			=	{"0", "2", "0", "0", "0", "1"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
     },
 	{
-        Name = "Adapted Kender Race from Dragonlance: Shadow of the Dragon Queen (EOTB Version)",
-        Guid = "56fe7a47-e0d6-404e-b2d5-fd6e88cae6ae",
-        UUID = "7551c355-8311-4c2f-b91b-9877ef608267",
+        Name 			= 	"Adapted Kender Race from Dragonlance: Shadow of the Dragon Queen (EOTB Version)",
+        Guid 			= 	"56fe7a47-e0d6-404e-b2d5-fd6e88cae6ae",
+        UUID 			= 	"7551c355-8311-4c2f-b91b-9877ef608267",
 		Author			=	"",
 		SourceBook		=	"",
 		Sab     		= 	{"1","1","1"}, --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
