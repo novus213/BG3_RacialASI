@@ -1,10 +1,10 @@
 -- temporary require libs here , in futur require to Client/CleanRacesModASI.lua
 --Ext.Require("Libs/RacesLibrary.lua")
-
 Ext.Require("Libs/BooksLibrary.lua")
 
 
--- move the Vars to helpers
+-- temp show var
+--[[
 print("IgnoreAll")
 print(IgnoreAll)
 
@@ -25,30 +25,11 @@ print(IgnoreLegacy)
 
 print("IgnoreHomebrew")
 print(IgnoreHomebrew)
-
-
-
---[[]
---- Constructor for dump
----@param o table
----@return string
-function dump(o)
-   if type(o) == 'table' then
-      local s = '{ '
-      for k,v in pairs(o) do
-         if type(k) ~= 'number' then k = '"'..k..'"' end
-         s = s .. '['..k..'] = ' .. dump(v) .. ','
-      end
-      return s .. '} '
-   else
-      return tostring(o)
-   end
-end
 ]]--
+
 
 --local AbilityList_UUID = "b9149c8e-52c8-46e5-9cb6-fc39301c05fe"
 
---SearchedMod = "f4361c10-b197-4490-ae30-06ce796f950e"
 StatsList = {"Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma"}
 
 
@@ -96,8 +77,8 @@ local payload = {
     --return payload
 end
 
---- Constructor for builder5e
-function builder5e()
+--- Constructor for builder5eRaces
+function builder5eRaces()
     if IgnoreAll == false then
         for _, raceMod in pairs(RaceLibrary) do
             RaceStat =  {}
@@ -199,4 +180,4 @@ function builder5e()
     end
 end
 
-Ext.Events.StatsLoaded:Subscribe(builder5e)
+Ext.Events.StatsLoaded:Subscribe(builder5eRaces)
