@@ -1,10 +1,10 @@
 --[[
-_________                 __                   __________                             
+_________                 __                   __________
 \_   ___ \ __ __  _______/  |_  ____   _____   \______   \_____    ____  ____   ______
 /    \  \/|  |  \/  ___/\   __\/  _ \ /     \   |       _/\__  \ _/ ___\/ __ \ /  ___/
-\     \___|  |  /\___ \  |  | (  <_> )  Y Y  \  |    |   \ / __ \\  \__\  ___/ \___ \ 
+\     \___|  |  /\___ \  |  | (  <_> )  Y Y  \  |    |   \ / __ \\  \__\  ___/ \___ \
  \______  /____//____  > |__|  \____/|__|_|  /  |____|_  /(____  /\___  >___  >____  >
-        \/           \/                    \/          \/      \/     \/    \/     \/ 
+        \/           \/                    \/          \/      \/     \/    \/     \/
          \_Custom Races from Nexus
 Argelia source Mixed
 ]]--
@@ -133,7 +133,7 @@ local raceModsFixed = {
         modGuid = "ae6eacb7-f346-418f-89a9-f0e4c697baab",
         UUID = "8e8928df-70b1-43c0-bc86-40b32c455bee",
         Strings = {"Ability(Intelligence,1)", "Ability(Wisdom,2)"}
-    }, 
+    },
     {
         Race = "Followers Of Zerthimon (Githzerai)",
         modGuid = "d6d1028e-68fb-4e94-83d8-e8951f55b86a",
@@ -391,8 +391,8 @@ local function CustomRacesOnStatsLoaded()
             BasicPrint("        \\_Ghastly Ghouls - Playable Undead Race 3.01 Used","INFO", nil, nil, true)
         end
 
-        BasicWarning("============> Ability bonuses inserted to " .. 
-                 #insertedModNames .. " mods: " .. 
+        BasicWarning("============> Ability bonuses inserted to " ..
+                 #insertedModNames .. " mods: " ..
                  table.concat(insertedModNames, ", "))
     end
 end

@@ -1,10 +1,10 @@
 --[[
  __      __       __ ________       _____                .__                   ____________________
 /  \    /  \_____/  |\______ \     /  _  \ _____    _____|__| _____ _____     /   _____/\_   _____/
-\   \/\/   /  _ \   __\    |  \   /  /_\  \\__  \  /  ___/  |/     \\__  \    \_____  \  |    __)_ 
+\   \/\/   /  _ \   __\    |  \   /  /_\  \\__  \  /  ___/  |/     \\__  \    \_____  \  |    __)_
  \        (  <_> )  | |    `   \ /    |    \/ __ \_\___ \|  |  Y Y  \/ __ \_  /        \ |        \
   \__/\  / \____/|__|/_______  / \____|__  (____  /____  >__|__|_|  (____  / /_______  //_______  /
-       \/                    \/          \/     \/     \/         \/     \/          \/         \/ 
+       \/                    \/          \/     \/     \/         \/     \/          \/         \/
         \_ WotD Aasimar - Script Extender Edition 2.0.4.0 Used
 Argelia source Mixed
 ]]--
@@ -90,8 +90,8 @@ local function CustomRacesOnStatsLoaded()
         BasicPrint("  \\__/\\  / \\____/|__|/_______  / \\____|__  (____  /____  >__|__|_|  (____  / /_______  //_______  /","INFO", nil, nil, true)
         BasicPrint("       \\/                    \\/          \\/     \\/     \\/         \\/     \\/          \\/         \\/ ","INFO", nil, nil, true)
         BasicPrint("        \\_ WotD Aasimar - Script Extender Edition 2.0.4.0 Used","INFO", nil, nil, true)
-        BasicWarning("============> Ability bonuses inserted to " .. 
-                 #insertedModNames .. " mods: " .. 
+        BasicWarning("============> Ability bonuses inserted to " ..
+                 #insertedModNames .. " mods: " ..
                  table.concat(insertedModNames, ", "))
     end
 end
@@ -108,7 +108,7 @@ local function createPayload(uuid)
         FileType = "Progression",
         Function = "SelectAbilityBonus",
         Params = {
-            Guid = "b9149c8e-52c8-46e5-9cb6-fc39301c05fe",
+            Guid = AbilityList_UUID,
             Amount = "2",
             BonusType = "AbilityBonus",
             Amounts = {"2", "1"}

@@ -5,8 +5,8 @@ RaceLibrary = {
 		UUID			=	"7b4d6e73-c54f-41ed-bd69-c25be95e9717",
 		Author			=	"",
 		SourceBook		=	"MPMotM",
-		Stats			=	{"2", "0", "1", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
-		Sab     		= 	{"0","0","0"}
+		Stats			=	{"0", "0", "0", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Sab     		= 	{"2","1"}
 	},
 	{
 		Name			=	"Owlin",
@@ -14,8 +14,8 @@ RaceLibrary = {
 		UUID			=	"b5f04836-e2ef-4eb6-93d5-4aad7f3b1c20",
 		Author			=	"",
 		SourceBook		=	"SACoC",
-		Stats			=	{"2", "0", "1", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
-		Sab     		= 	{"0","0","0"}
+		Stats			=	{"0", "0", "0", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Sab     		= 	{"2","1"}
 	},
 	{
 		Name			=	"Myconid",
@@ -23,8 +23,8 @@ RaceLibrary = {
 		UUID			=	"ada1a74c-89dd-45f9-95dd-f88bf59e3535",
 		Author			=	"",
 		SourceBook		=	"",
-		Stats			=	{"2", "0", "1", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
-		Sab     		= 	{"0","0","0"}
+		Stats			=	{"0", "0", "0", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Sab     		= 	{"2","1"}
 	},
 	{
 		Name			=	"Genasi (Elemental Power)",
@@ -32,8 +32,8 @@ RaceLibrary = {
 		UUID			=	"e808d2a5-a9eb-403f-bab9-90a5114a699c",
 		Author			=	"",
 		SourceBook		=	"MPMotM",
-		Stats			=	{"2", "0", "1", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
-		Sab     		= 	{"0","0","0"}
+		Stats			=	{"0", "0", "0", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Sab     		= 	{"2","1"}
 	},
 	{
 		Name			=	"HalfDragon",
@@ -41,8 +41,8 @@ RaceLibrary = {
 		UUID			=	"72a06fbf-e1b3-4321-b975-a4a26d9b4b71",
 		Author			=	"Jo Val Rudovous",
 		SourceBook		=	"",
-		Stats			=	{"2", "0", "1", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
-		Sab     		= 	{"0","0","0"}
+		Stats			=	{"0", "0", "0", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Sab     		= 	{"2","1"}
 	},
 	{
 		Name			=	"Hobgoblin (https://github.com/GentlemanBabbo/Hobgoblin/tree/main)",
@@ -50,8 +50,8 @@ RaceLibrary = {
 		UUID			=	"575fa3d3-cf83-4716-8cc3-8d971666b051",
 		Author			=	"GentlemanBabbo",
 		SourceBook		=	"MPMotM",
-		Stats			=	{"2", "0", "1", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
-		Sab     		= 	{"0","0","0"}
+		Stats			=	{"0", "0", "0", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Sab     		= 	{"2","1"}
 	},
 	{
 		Name			=	"CE_WitchElf",
@@ -59,8 +59,8 @@ RaceLibrary = {
 		UUID			=	"d19f42b3-1c1e-46cd-83e4-fd964426616f",
 		Author			=	"",
 		SourceBook		=	"",
-		Stats			=	{"2", "0", "1", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
-		Sab     		= 	{"0","0","0"}
+		Stats			=	{"0", "0", "0", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Sab     		= 	{"2","1"}
 	},
 	{
 		Name			=	"Fantastical Yuan-ti Pureblood",
@@ -68,8 +68,8 @@ RaceLibrary = {
 		UUID			=	"69a8edff-fdec-4ef5-aeb6-dcb15562b062",
 		Author			=	"",
 		SourceBook		= 	"VGtM",
-		Stats			=	{"2", "0", "1", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
-		Sab     		= 	{"0","0","0"}
+		Stats			=	{"0", "0", "0", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Sab     		= 	{"2","1"}
 	 },
 	 {
 		Name			=	"Fantastical Pallid Elf",
@@ -77,8 +77,8 @@ RaceLibrary = {
 		UUID			=	"82704351-c1d6-4767-adef-49e25a290aad",
 		Author			=	"",
 		SourceBook		=	"EGtW",
-		Stats			=	{"2", "0", "1", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
-		Sab     		= 	{"0","0","0"}
+		Stats			=	{"0", "0", "0", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Sab     		= 	{"2","1"}
 	 },
 	 {
 		Name			=	"Fantastical Vedalken",
@@ -86,8 +86,8 @@ RaceLibrary = {
 		UUID			=	"d17424ad-839d-4733-b16d-f7cb007c865f",
 		Author			=	"",
 		SourceBook		=	"GGtR",
-		Stats			=	{"2", "0", "1", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
-		Sab     		= 	{"0","0","0"}
+		Stats			=	{"0", "0", "0", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Sab     		= 	{"2","1"}
 	 },
 	 {
 		Name			=	"Fantastical Kobold Legacy",
@@ -95,8 +95,8 @@ RaceLibrary = {
 		UUID			=	"ee0bbb70-b8f7-44ec-9419-565ab963f664",
 		Author			=	"",
 		SourceBook		=	"VGtM",
-		Stats			=	{"2", "0", "1", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
-		Sab     		= 	{"0","0","0"}
+		Stats			=	{"0", "0", "0", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Sab     		= 	{"2","1"}
 	 },
 	 {
 		Name			=	"Fantastical Kalashtar",
@@ -104,8 +104,8 @@ RaceLibrary = {
 		UUID			=	"0e35ec74-a63c-4d24-8912-4afa4a9930d8",
 		Author			=	"",
 		SourceBook		=	"VGtM",
-		Stats			=	{"2", "0", "1", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
-		Sab     		= 	{"0","0","0"}
+		Stats			=	{"0", "0", "0", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Sab     		= 	{"2","1"}
 	 },
 	 {
 		Name			=	"Fantastical Bugbear",
@@ -113,8 +113,8 @@ RaceLibrary = {
 		UUID			=	"d01d244f-3ae2-4d15-b0ba-9aed04fc16ac",
 		Author			=	"",
 		SourceBook		=	"VGtM",
-		Stats			=	{"2", "0", "1", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
-		Sab     		= 	{"0","0","0"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Stats			=	{"0", "0", "0", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	 }
 }
 

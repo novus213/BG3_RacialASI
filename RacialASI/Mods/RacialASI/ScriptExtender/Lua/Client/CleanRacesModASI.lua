@@ -14,11 +14,12 @@ raceMods = {
         modGuid = "c36d595f-70d1-44f1-8ca6-4ad14186f489",
         UUID = "2f7edf7e-0a6b-4018-9715-1cb8aa238e4a"
     },
-    {   Race = "Aasimar(Radiant Consumption)", 
-        UUID = "56d62681-9769-4ad7-9bbf-4f72db44f070", 
+    {
+        Race = "Aasimar(Radiant Consumption)",
+        UUID = "56d62681-9769-4ad7-9bbf-4f72db44f070",
         modGuid = "ab267ed4-b3b5-4b4f-a62c-7dbc95c968fa"
     },
-    { 
+    {
         Race = "Aasimar(Necrotic Shroud)",
         UUID = "1b07140b-98c1-42e8-b4ec-072622862dc2",
         modGuid = "ab267ed4-b3b5-4b4f-a62c-7dbc95c968fa"
@@ -45,7 +46,7 @@ local AbilityList_UUID = "b9149c8e-52c8-46e5-9cb6-fc39301c05fe"
 
 --- Constructor for createSABPayload
 ---@param uuid string race Progression.lsx Level 1 UUID
----@param modGuid string race mod modGuid 
+---@param modGuid string race mod modGuid
 ---@param sabUUID string SelectAbilityBonus UUID
 ---@return table payload
 function createSABPayload(uuid, modGuid, sabUUID)
@@ -61,7 +62,7 @@ end
 
 --- Constructor for createBoostPayload
 ---@param uuid string race Progression.lsx Level 1 UUID
----@param modGuid string race mod modGuid 
+---@param modGuid string race mod modGuid
 ---@param ability string ability DnD (Strength ect.)
 ---@param score integer ability score
 ---@return table payload

@@ -50,8 +50,8 @@ if Ext.Mod.IsModLoaded("755a8a72-407f-4f0d-9a33-274ac0f0b53d") then
 
     -- Register a net listener to handle settings changes dynamically
     Ext.RegisterNetListener("MCM_Saved_Setting", function(call, payload)
-        
-        local data = Ext.Json.Parse(payload)        
+
+        local data = Ext.Json.Parse(payload)
 
         if not data or data.modGUID ~= ModuleUUID or not data.settingId then
             return
@@ -82,10 +82,10 @@ if Ext.Mod.IsModLoaded("755a8a72-407f-4f0d-9a33-274ac0f0b53d") then
         end
 
         if mcmVarsGeneralSettings[data.settingId] ~= nil then
-        
+
             mcmVarsGeneralSettings[data.settingId] = data.value
             BasicWarning(string.format("Setting %s to %s", data.settingId, data.value))
-            
+
             mcmVarsGeneralSettingsUse = mcmVarsBooksSettings
 
         end

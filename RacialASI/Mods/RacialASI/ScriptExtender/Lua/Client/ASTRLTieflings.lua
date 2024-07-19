@@ -1,37 +1,67 @@
 --[[
-   _____    ______________________________.____      ___________.__        _____.__  .__                      
+   _____    ______________________________.____      ___________.__        _____.__  .__
   /  _  \  /   _____/\__    ___/\______   \    |     \__    ___/|__| _____/ ____\  | |__| ____    ____  ______
  /  /_\  \ \_____  \   |    |    |       _/    |       |    |   |  |/ __ \   __\|  | |  |/    \  / ___\/  ___/
-/    |    \/        \  |    |    |    |   \    |___    |    |   |  \  ___/|  |  |  |_|  |   |  \/ /_/  >___ \ 
+/    |    \/        \  |    |    |    |   \    |___    |    |   |  \  ___/|  |  |  |_|  |   |  \/ /_/  >___ \
 \____|__  /_______  /  |____|    |____|_  /_______ \   |____|   |__|\___  >__|  |____/__|___|  /\___  /____  >
-        \/        \/                    \/        \/                    \/                   \//_____/     \/ 
+        \/        \/                    \/        \/                    \/                   \//_____/     \/
          \_Astralities' Tiefling Compendium 3.1 Used
 Argelia source mixed
-]]--
+]] --
 
 local AstralitiesTieflings = {
     tieflingsFixed = {
-        { Name = "ASTRL_Baalzebul_Tiefling",  UUID = "ad21229c-c202-4c86-af26-b5c47d36ff01", Strings = {"Ability(Charisma,2)", "Ability(Intelligence,1)"} },
-        { Name = "ASTRL_Dispater_Tiefling",   UUID = "535fb417-7341-4710-b500-0ac5602de515", Strings = {"Ability(Charisma,2)", "Ability(Dexterity,1)"} },
-        { Name = "ASTRL_Fierna_Tiefling",     UUID = "929b6fe8-7415-43c7-9e2b-a3c87962e77d", Strings = {"Ability(Charisma,2)", "Ability(Wisdom,1)"} },
-        { Name = "ASTRL_Glasya_Tiefling",     UUID = "1a215890-3ffc-4c4e-bf19-b70aa67c25cf", Strings = {"Ability(Charisma,2)", "Ability(Dexterity,1)"} },
-        { Name = "ASTRL_Levistus_Tiefling",   UUID = "62899e1e-d6b6-448d-847c-085a07d1f41d", Strings = {"Ability(Charisma,2)", "Ability(Constitution,1)"} },
-        { Name = "ASTRL_Mammon_Tiefling",     UUID = "bf7c8b2d-5b6e-467e-b080-d85de151f57a", Strings = {"Ability(Charisma,2)", "Ability(Intelligence,1)"} },
-        { Name = "ASTRL_Variant_Tiefling",    UUID = "da92f08b-96fd-42b2-80f1-45b7bc9e703f", Strings = {"Ability(Intelligence,1)"} },
-        { Name = "ASTRL_Winged_Tiefling",     UUID = "e2519a78-67c8-41d2-a276-fc4889511346", Strings = {"Ability(Intelligence,1)"} },
+        {
+            Name = "ASTRL_Baalzebul_Tiefling",
+            UUID = "ad21229c-c202-4c86-af26-b5c47d36ff01",
+            Strings = {"Ability(Charisma,2)", "Ability(Intelligence,1)"}
+        },
+        {
+            Name = "ASTRL_Dispater_Tiefling",
+            UUID = "535fb417-7341-4710-b500-0ac5602de515",
+            Strings = {"Ability(Charisma,2)", "Ability(Dexterity,1)"}
+        },
+        {
+            Name = "ASTRL_Fierna_Tiefling",
+            UUID = "929b6fe8-7415-43c7-9e2b-a3c87962e77d",
+            Strings = {"Ability(Charisma,2)", "Ability(Wisdom,1)"}
+        },
+        {
+            Name = "ASTRL_Glasya_Tiefling",
+            UUID = "1a215890-3ffc-4c4e-bf19-b70aa67c25cf",
+            Strings = {"Ability(Charisma,2)", "Ability(Dexterity,1)"}
+        },
+        {
+            Name = "ASTRL_Levistus_Tiefling",
+            UUID = "62899e1e-d6b6-448d-847c-085a07d1f41d",
+            Strings = {"Ability(Charisma,2)", "Ability(Constitution,1)"}
+        },
+        {
+            Name = "ASTRL_Mammon_Tiefling",
+            UUID = "bf7c8b2d-5b6e-467e-b080-d85de151f57a",
+            Strings = {"Ability(Charisma,2)", "Ability(Intelligence,1)"}
+        },
+        {
+            Name = "ASTRL_Variant_Tiefling",
+            UUID = "da92f08b-96fd-42b2-80f1-45b7bc9e703f",
+            Strings = {"Ability(Intelligence,1)"}
+        },
+        {
+            Name = "ASTRL_Winged_Tiefling",
+            UUID = "e2519a78-67c8-41d2-a276-fc4889511346",
+            Strings = {"Ability(Intelligence,1)"}
+        }
     },
-
     tieflingsFloating = {
-        { Name = "ASTRL_Nightborn_Tiefling",  UUID = "fa15d3e5-3f15-4d59-857a-804098843516" },
-        { Name = "ASTRL_Feyri_Tiefling",      UUID = "3d807581-2721-4ba2-82bf-d91b345f7d81" },
-        { Name = "ASTRL_Elamshinae_Tiefling", UUID = "b42939aa-ce0d-40c7-8b0b-98cc4c122214" },
-        { Name = "ASTRL_Velkynbol_Tiefling",  UUID = "3968f318-3ba4-4325-86f4-88ba7c01d999" },
-        { Name = "ASTRL_Isilmnirel_Tiefling", UUID = "c9ebad8c-3f9c-42ff-a2c2-53e83578df8c" },
+        {Name = "ASTRL_Nightborn_Tiefling", UUID = "fa15d3e5-3f15-4d59-857a-804098843516"},
+        {Name = "ASTRL_Feyri_Tiefling", UUID = "3d807581-2721-4ba2-82bf-d91b345f7d81"},
+        {Name = "ASTRL_Elamshinae_Tiefling", UUID = "b42939aa-ce0d-40c7-8b0b-98cc4c122214"},
+        {Name = "ASTRL_Velkynbol_Tiefling", UUID = "3968f318-3ba4-4325-86f4-88ba7c01d999"},
+        {Name = "ASTRL_Isilmnirel_Tiefling", UUID = "c9ebad8c-3f9c-42ff-a2c2-53e83578df8c"}
     },
-
     tieflingsCustomList = {
-        { Name = "ASTRL_Variant_Tiefling",    UUID = "da92f08b-96fd-42b2-80f1-45b7bc9e703f" },
-        { Name = "ASTRL_Winged_Tiefling",     UUID = "e2519a78-67c8-41d2-a276-fc4889511346" },
+        {Name = "ASTRL_Variant_Tiefling", UUID = "da92f08b-96fd-42b2-80f1-45b7bc9e703f"},
+        {Name = "ASTRL_Winged_Tiefling", UUID = "e2519a78-67c8-41d2-a276-fc4889511346"}
     }
 }
 
@@ -95,17 +125,53 @@ local function AstralitiesTieflingsOnStatsLoaded()
             processSources(sources, sourceType)
         end
     end
-    BasicPrint("     _____    ______________________________.____      ___________.__        _____.__  .__                      ","INFO", nil, nil, true)
-    BasicPrint("    /  _  \\  /   _____/\\__    ___/\\______   \\    |     \\__    ___/|__| _____/ ____\\  | |__| ____    ____  ______","INFO", nil, nil, true)
-    BasicPrint("   /  /_\\  \\ \\_____  \\   |    |    |       _/    |       |    |   |  |/ __ \\   __\\|  | |  |/    \\  / ___\\/  ___/","INFO", nil, nil, true)
-    BasicPrint("  /    |    \\/        \\  |    |    |    |   \\    |___    |    |   |  \\  ___/|  |  |  |_|  |   |  \\/ /_/  >___ \\ ","INFO", nil, nil, true)
-    BasicPrint("  \\____|__  /_______  /  |____|    |____|_  /_______ \\   |____|   |__|\\___  >__|  |____/__|___|  /\\___  /____  >","INFO", nil, nil, true)
-    BasicPrint("          \\/        \\/                    \\/        \\/                    \\/                   \\//_____/     \\/ ","INFO", nil, nil, true)
-    BasicPrint("           \\_Astralities' Tiefling Compendium 3.1 Used","INFO", nil, nil, true)
+    BasicPrint(
+        "     _____    ______________________________.____      ___________.__        _____.__  .__                      ",
+        "INFO",
+        nil,
+        nil,
+        true
+    )
+    BasicPrint(
+        "    /  _  \\  /   _____/\\__    ___/\\______   \\    |     \\__    ___/|__| _____/ ____\\  | |__| ____    ____  ______",
+        "INFO",
+        nil,
+        nil,
+        true
+    )
+    BasicPrint(
+        "   /  /_\\  \\ \\_____  \\   |    |    |       _/    |       |    |   |  |/ __ \\   __\\|  | |  |/    \\  / ___\\/  ___/",
+        "INFO",
+        nil,
+        nil,
+        true
+    )
+    BasicPrint(
+        "  /    |    \\/        \\  |    |    |    |   \\    |___    |    |   |  \\  ___/|  |  |  |_|  |   |  \\/ /_/  >___ \\ ",
+        "INFO",
+        nil,
+        nil,
+        true
+    )
+    BasicPrint(
+        "  \\____|__  /_______  /  |____|    |____|_  /_______ \\   |____|   |__|\\___  >__|  |____/__|___|  /\\___  /____  >",
+        "INFO",
+        nil,
+        nil,
+        true
+    )
+    BasicPrint(
+        "          \\/        \\/                    \\/        \\/                    \\/                   \\//_____/     \\/ ",
+        "INFO",
+        nil,
+        nil,
+        true
+    )
+    BasicPrint("           \\_Astralities' Tiefling Compendium 3.1 Used", "INFO", nil, nil, true)
     BasicPrint("                               ")
     BasicWarning("============> Ability bonuses inserted to Astralities Tieflings")
     BasicPrint("                               ")
-    BasicPrint("Config.loaded() Happy Fun Gaming! ","INFO", nil, nil, true)
+    BasicPrint("Config.loaded() Happy Fun Gaming! ", "INFO", nil, nil, true)
     BasicPrint("                               ")
 end
 
