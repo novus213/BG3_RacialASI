@@ -16,7 +16,7 @@ Ext.Require("Libs/OptionsActionsLib.lua")
 Ext.Require("Shared/_Init.lua")
 
 Ext.Require("Client/CleanRacesModASI.lua")
-Ext.Require("Client/5eBuilder.lua")
+Ext.Require("Client/Builder5e.lua")
 
 
 Ext.Require("ModInfos/_ModInfos.lua")
