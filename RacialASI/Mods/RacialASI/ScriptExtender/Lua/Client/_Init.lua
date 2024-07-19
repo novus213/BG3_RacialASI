@@ -1,7 +1,3 @@
-function isModLoaded(modId)
-    return Ext.Mod.IsModLoaded(modId)
-end
-
 --- START CONFIG NO MCM
 local function start()
     if not CONFIG then CONFIG = InitConfig() end

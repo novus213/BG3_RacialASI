@@ -29,6 +29,10 @@ function SyncModVariables()
     end
 end
 
+function isModLoaded(modId)
+    return Ext.Mod.IsModLoaded(modId)
+end
+
 -- -------------------------------------------------------------------------- --
 --                                 Custom Vars                                --
 -- -------------------------------------------------------------------------- --
