@@ -397,6 +397,6 @@ local function CustomRacesOnStatsLoaded()
     end
 end
 
-if Ext.Mod.IsModLoaded(Framework_UUID) then 
+if Ext.Mod.IsModLoaded(Framework_UUID) then
     Ext.Events.StatsLoaded:Subscribe(CustomRacesOnStatsLoaded)
 end

@@ -11,15 +11,16 @@ deps = {
 
 if not Ext.Mod.IsModLoaded(deps.Framework_GUID) then return end
 
----Libraries
+---Libraries / Shared / Customs
 Ext.Require("Libs/OptionsActionsLib.lua")
 Ext.Require("Shared/_Init.lua")
 
-Ext.Require("Client/CleanRacesModASI.lua")
-Ext.Require("Client/Builder5e.lua")
-
-
 Ext.Require("ModInfos/_ModInfos.lua")
+
+if isModLoaded(deps.MCM_GUID) then
+    Ext.Require("Client/CleanRacesModASI.lua")
+    Ext.Require("Client/Builder5e.lua")
+end
 
 Ext.Require("Client/_Init.lua")
 

@@ -15,7 +15,7 @@
                             "Name": "Racial ASI",
                             "Type": "checkbox",
                             "Default": true,
-                            "Tooltip": "Enable or disable RacialASI."
+                            "Tooltip": "Enable or disable RacialASI. not working FOR NOW Maybe useless with uninstall mod from Volition"
                         }
                     ]
                 },

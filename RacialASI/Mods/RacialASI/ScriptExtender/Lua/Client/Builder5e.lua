@@ -180,4 +180,8 @@ function builder5eRaces()
     end
 end
 
+
+--test execute ?
+--builder5eRaces()
+--or idk to TEST
 Ext.Events.StatsLoaded:Subscribe(builder5eRaces)
