@@ -1,6 +1,6 @@
 --Ext.Require("Libs/RacesLibrary.lua")
 
--- Racemod will deleted like final table will finish
+-- Racemod will deleted like final table will finish and changed to RaceLibrary var
 
 raceMods = {
     {
@@ -99,7 +99,7 @@ function CleanOnStatsLoaded()
     local removedRaces = {}  -- Table to store classes with removed shit asi
     local stats = {"Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma"}
 
-    for _, mod in ipairs(raceMods) do
+    for _, mod in ipairs(raceMods) do -- Racemod will deleted like final table will finish and changed to RaceLibrary var
 
         -- remove +2+1, +1, +1+1 ect..
         local payload = createSABPayload(mod.UUID, mod.modGuid, AbilityList_UUID)

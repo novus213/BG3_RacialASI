@@ -1,6 +1,4 @@
 
---StatsList = {"Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma"}
-
 --[[Books = { Officials Sources list ]]
 Dnd5eLimited = { --[[ Core Rule Books (5e Limited) ]]
 	{bookRef = "PHB",			bookName = "Player’s Handbook",								},
