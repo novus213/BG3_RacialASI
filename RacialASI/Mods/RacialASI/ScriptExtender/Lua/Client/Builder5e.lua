@@ -4,28 +4,28 @@ Ext.Require("Libs/BooksLibrary.lua")
 
 
 -- temp show var
---[[
-print("IgnoreAll")
-print(IgnoreAll)
 
-print("Ignore5eLimited")
-print(Ignore5eLimited)
+BasicWarning("IgnoreAll")
+BasicWarning(IgnoreAll)
 
-print("Ignore5e")
-print(Ignore5e)
+BasicWarning("Ignore5eLimited")
+BasicWarning(Ignore5eLimited)
 
-print("Ignore5eExtended")
-print(Ignore5eExtended)
+BasicWarning("Ignore5e")
+BasicWarning(Ignore5e)
 
-print("IgnoreFlavours")
-print(IgnoreFlavours)
+BasicWarning("Ignore5eExtended")
+BasicWarning(Ignore5eExtended)
 
-print("IgnoreLegacy")
-print(IgnoreLegacy)
+BasicWarning("IgnoreFlavours")
+BasicWarning(IgnoreFlavours)
 
-print("IgnoreHomebrew")
-print(IgnoreHomebrew)
-]]--
+BasicWarning("IgnoreLegacy")
+BasicWarning(IgnoreLegacy)
+
+BasicWarning("IgnoreHomebrew")
+BasicWarning(IgnoreHomebrew)
+
 
 
 --local AbilityList_UUID = "b9149c8e-52c8-46e5-9cb6-fc39301c05fe"
@@ -42,7 +42,7 @@ function tableInsertRaceStats(raceMod)
 		end
 		raceMod.Stats = RaceStat
         BasicWarning(string.format("raceMod ============> %s", raceMod))
-		--print("raceMod:", dump(raceMod))
+		print("raceMod:", table.dump(raceMod))
 	end
 end
 
@@ -64,7 +64,8 @@ local payload = {
 			BonusType = "AbilityBonus",
 			Amounts = raceMod.Sab
 		}
-		Mods.SubclassCompatibilityFramework.Api.InsertSelectors({payload})
+        Mods.SubclassCompatibilityFramework.Api.InsertSelectors({payload})
+        BasicWarning("payload: %s", table.dump(payload))
 	end
 
 	if raceMod.Stats ~= nil then
@@ -72,9 +73,8 @@ local payload = {
 		payload.Strings = raceMod.Strings
 		Mods.SubclassCompatibilityFramework.Api.InsertBoosts({payload})
 	end
-    BasicWarning(string.format("payload ============> %s", {payload}))
-	--print("payload:", dump(payload))
-    --return payload
+
+    BasicWarning("payload: %s", table.dump(payload))
 end
 
 --- Constructor for builder5eRaces
@@ -84,7 +84,7 @@ function builder5eRaces()
         for _, raceMod in pairs(RaceLibrary) do
             if raceMod.SourceBook == nil or raceMod.SourceBook == "" then
                 if IgnoreHomebrew == false then
-                    print("Le mod : " .. raceMod.Name .. " est bien dans la liste")
+                    BasicWarning(string.format("Le mod : %s est bien dans la liste", raceMod.Name))
                     -- Add Stats
                     -- Add Sab
                     tableInsertRaceStats(raceMod)

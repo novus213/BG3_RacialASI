@@ -37,6 +37,7 @@ end
 -- OLD LUA WILL REMOVE SOON //////
 
 -- Check if the mod is loaded and load ASI
+--[[
 if Ext.Mod.IsModLoaded(deps.Framework_GUID) and Ext.Mod.IsModLoaded(deps.Framework_FM_GUID) then
     Ext.Require("Client/FantasticalMultiverse.lua")
 end
@@ -56,3 +57,4 @@ end
 if Ext.Mod.IsModLoaded(deps.Framework_GUID) and Ext.Mod.IsModLoaded(deps.ASTRL_Tieflings_GUID) then
     Ext.Require("Client/ASTRLTieflings.lua")
 end
+]]--

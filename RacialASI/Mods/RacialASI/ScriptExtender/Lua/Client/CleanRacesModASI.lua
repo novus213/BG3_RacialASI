@@ -4,12 +4,12 @@ Ext.Require("Libs/RacesLibrary.lua")
 
 --[[raceMods = {
     {
-        Race = "Aasimar DEMERDE DarthRen",
+        Name = "Aasimar DEMERDE DarthRen",
         modGuid = "ab267ed4-b3b5-4b4f-a62c-7dbc95c968fa",
         UUID = "06e918ad-be2c-48b6-a098-0288539de744"
     },
     {
-        Race = "Aasimar(Radiant Soul) DarthRen",
+        Name = "Aasimar(Radiant Soul) DarthRen",
         modGuid = "ab267ed4-b3b5-4b4f-a62c-7dbc95c968fa",
         UUID = "4c2c61ae-5904-4576-a8c5-efecce67ab82"
     },
@@ -19,102 +19,17 @@ Ext.Require("Libs/RacesLibrary.lua")
         UUID = "2f7edf7e-0a6b-4018-9715-1cb8aa238e4a"
     },
     {
-        Race = "Aasimar(Radiant Consumption)",
+        Name = "Aasimar(Radiant Consumption)",
         UUID = "56d62681-9769-4ad7-9bbf-4f72db44f070",
         modGuid = "ab267ed4-b3b5-4b4f-a62c-7dbc95c968fa"
     },
     {
-        Race = "Aasimar(Necrotic Shroud)",
+        Name = "Aasimar(Necrotic Shroud)",
         UUID = "1b07140b-98c1-42e8-b4ec-072622862dc2",
         modGuid = "ab267ed4-b3b5-4b4f-a62c-7dbc95c968fa"
     }
 }
 ]]--
-
---[[
-       /*  {
-            "Comment": "Remove Boosts To Avariel Ren",
-			"UUID": "77b6f9ec-7d6a-44b2-b110-88bf025eb586",
-            "Strings": [
-                {
-                    "Action": "Remove",
-                    "Type": "Boosts",
-                    "Strings": ["Ability(Dexterity,1)","Ability(Wisdom,1)"]
-                }
-            ]
-        },
-        {
-            "Comment": "Remove Boosts To Dhampyr Sassandra RU_SHI",
-			"UUID": "042e6092-1602-4338-b6f9-cc7987f3bff4",
-            "Strings": [
-                {
-                    "Action": "Remove",
-                    "Type": "Boosts",
-                    "Strings": ["Ability(Strength,2)","Ability(Intelligence,2)","Ability(Dexterity,-2)"]
-                }
-            ]
-        },
-        {
-            "Comment": "Remove Boosts To Dhampyr Sassandra SVETOCHER",
-			"UUID": "ceae071e-2ff2-4043-a2b8-a7fc1ab16065",
-            "Strings": [
-                {
-                    "Action": "Remove",
-                    "Type": "Boosts",
-                    "Strings": ["Ability(Strength,2)","Ability(Charisma,2)","Ability(Constitution,-2)"]
-                }
-            ]
-        },
-        {
-            "Comment": "Remove Boosts To Dhampyr Sassandra AJIBACHANA",
-			"UUID": "65930b4d-75ca-4968-93b0-dde6662d5882",
-            "Strings": [
-                {
-                    "Action": "Remove",
-                    "Type": "Boosts",
-                    "Strings": ["Ability(Dexterity,2)","Ability(Intelligence,2)","Ability(Wisdom,-2)"]
-                }
-            ]
-        },
-        {
-            "Comment": "Remove Boosts To Dhampyr Sassandra ANCIENTBORN",
-			"UUID": "ebd122f3-9223-4cc0-ac98-3810995dde9b",
-            "Strings": [
-                {
-                    "Action": "Remove",
-                    "Type": "Boosts",
-                    "Strings": ["Ability(Strength,2)","Ability(Wisdom,2)","Ability(Constitution,-2)"]
-                }
-            ]
-        },
-        {
-            "Comment": "Remove Boosts To Skeleton race Rexsaze",
-			"UUID": "b5f04836-e2ef-4eb6-93d5-4aad7f3b1c20",
-            "Strings": [
-                {
-                    "Action": "Remove",
-                    "Type": "Boosts",
-                    "Strings": ["Ability(Constitution,1)"]
-                }
-            ]
-        }, */
-]]--
-
---[[
-{
-    modGuid="GUID3",
-    Status="Detected",
-    Race="Mod de race 3",
-    Author="",
-    UUID="",
-    SourceBook = "Mordenkainen Presents: Monsters of the Multiverse",
-    Strings = {"Ability(Dexterity,1)", "Ability(Charisma,2)"}
-    StringStats = {"2", "0", "1", "0", "0", "0"}
-    SAB = true/false
-    SABNb = "2"
-    SABStats = {"2", "1"}
-}
-    ]]--
 
 local AbilityList_UUID = "b9149c8e-52c8-46e5-9cb6-fc39301c05fe"
 
@@ -158,8 +73,12 @@ end
 function removeBoosts(mod, ability, score)
     if mod.modGuid and Ext.Mod.IsModLoaded(mod.modGuid) then
         local payload = createBoostPayload(mod.modGuid, mod.UUID, ability, score)
+
         Mods.SubclassCompatibilityFramework.Api.RemoveBoosts({payload})
-        return mod.Race  -- Return the race name if selectors were removed
+
+        BasicWarning("payload: %s", table.dump(payload))
+
+        return mod.Name  -- Return the race name if selectors were removed
     end
 end
 
@@ -171,9 +90,19 @@ function CleanOnStatsLoaded()
 
     for _, mod in ipairs(RaceLibrary) do -- Racemod will deleted like final table will finish and changed to RaceLibrary var
 
+        BasicWarning(string.format("mod.UUID ============> %s", mod.UUID))
+
+	    BasicWarning(string.format("mod.modGuid ============> %s", mod.modGuid))
+
+        BasicWarning(string.format("AbilityList_UUID ============> %s", AbilityList_UUID))
+
+
         -- remove +2+1, +1, +1+1 ect..
         local payload = createSABPayload(mod.UUID, mod.modGuid, AbilityList_UUID)
+
         Mods.SubclassCompatibilityFramework.Api.RemoveSelectors({payload})
+
+        BasicWarning("payload: %s", table.dump(payload))
 
         -- remove Boost Ability
         for _, ability in ipairs(stats) do
