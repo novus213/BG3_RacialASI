@@ -129,10 +129,9 @@ for _, raceMod in pairs(RaceLibrary) do
 			table.insert(RaceStat, "Ability(" .. StatsList[i] .. "," .. raceMod.Stats[i] .. ")")
 		end
 		raceMod.Stats = RaceStat
-		print("raceMod : ",dump(raceMod))
+		BasicWarning(string.format("%s :", raceMod))
 		RaceStat =  {}
 end
-
 
 
 --StringDeSesMort = {RaceStat}
