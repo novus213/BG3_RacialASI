@@ -28,7 +28,7 @@ print(IgnoreHomebrew)
 
 
 
-
+--[[]
 --- Constructor for dump
 ---@param o table
 ---@return string
@@ -44,18 +44,9 @@ function dump(o)
       return tostring(o)
    end
 end
+]]--
 
-
---- Constructor for tablelength
----@param T table
----@return Integer count
-function tablelength(T)
-  local count = 0
-  for _ in pairs(T) do count = count + 1 end
-  return count
-end
-
-local AbilityList_UUID = "b9149c8e-52c8-46e5-9cb6-fc39301c05fe"
+--local AbilityList_UUID = "b9149c8e-52c8-46e5-9cb6-fc39301c05fe"
 
 --SearchedMod = "f4361c10-b197-4490-ae30-06ce796f950e"
 StatsList = {"Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma"}
@@ -87,8 +78,8 @@ local payload = {
 	if raceMod.Sab ~= nil then
 		payload.Function = "SelectAbilityBonus"
 		payload.Params = {
-			Guid = AbilityList_UUID,
-			Amount = tablelength(raceMod.Sab),
+			Guid = deps.AbilityList_UUID,
+			Amount = table.getLength(raceMod.Sab),
 			BonusType = "AbilityBonus",
 			Amounts = raceMod.Sab
 		}
