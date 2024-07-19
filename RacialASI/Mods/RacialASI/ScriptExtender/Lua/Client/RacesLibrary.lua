@@ -118,6 +118,29 @@ RaceLibrary = {
 	 }
 }
 
+
+function dump(o)
+   if type(o) == 'table' then
+      local s = '{ '
+      for k,v in pairs(o) do
+         if type(k) ~= 'number' then k = '"'..k..'"' end
+         s = s .. '['..k..'] = ' .. dump(v) .. ','
+      end
+      return s .. '} '
+   else
+      return tostring(o)
+   end
+end
+
+
+function tablelength(T)
+  local count = 0
+  for _ in pairs(T) do count = count + 1 end
+  return count
+end
+
+local AbilityList_UUID = "b9149c8e-52c8-46e5-9cb6-fc39301c05fe"
+
 --SearchedMod = "f4361c10-b197-4490-ae30-06ce796f950e"
 StatsList = {"Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma"}
 
@@ -129,9 +152,34 @@ for _, raceMod in pairs(RaceLibrary) do
 			table.insert(RaceStat, "Ability(" .. StatsList[i] .. "," .. raceMod.Stats[i] .. ")")
 		end
 		raceMod.Stats = RaceStat
-		BasicWarning(string.format("%s :", raceMod))
-		RaceStat =  {}
-end
+		print("raceMod:", dump(raceMod))
 
+		local payload = {
+        modGuid = raceMod.modGuid,
+        Target = raceMod.UUID,
+        FileType = "Progression"
+		}
+
+		if raceMod.Sab ~= nil then
+			payload.Function = "SelectAbilityBonus"
+			payload.Params = {
+				Guid = AbilityList_UUID,
+				Amount = tablelength(raceMod.Sab),
+				BonusType = "AbilityBonus",
+				Amounts = raceMod.Sab
+			}
+		end
+
+		if raceMod.Stats ~= nil then
+			payload.Type = "Boosts"
+			payload.Strings = entry.Strings
+		end
+
+		print("payload:", dump(payload))
+
+    --return payload
+	--BasicWarning(string.format("%s :", raceMod)) miss info
+	RaceStat =  {}
+end
 
 --StringDeSesMort = {RaceStat}
