@@ -94,28 +94,28 @@ end
 
 
 --- Constructor for tablelength
----@param T table
----@return count
-function table.getLength(T)
+---@param tbl table
+---@return integer sizeOf table
+function table.getLength(tbl)
   local count = 0
-  for _ in pairs(T) do count = count + 1 end
+  for _ in pairs(tbl) do count = count + 1 end
   return count
 end
 
 
 
 --- Constructor for dump
----@param o table
+---@param tbl table
 ---@return string
-function table.dump(o)
-   if type(o) == 'table' then
+function table.dump(tbl)
+   if type(tbl) == 'table' then
       local s = '{ '
-      for k,v in pairs(o) do
+      for k,v in pairs(tbl) do
          if type(k) ~= 'number' then k = '"'..k..'"' end
          s = s .. '['..k..'] = ' .. table.dump(v) .. ','
       end
       return s .. '} '
    else
-      return tostring(o)
+      return tostring(tbl)
    end
 end
