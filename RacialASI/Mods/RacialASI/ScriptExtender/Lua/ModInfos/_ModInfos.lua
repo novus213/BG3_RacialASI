@@ -10,6 +10,15 @@ local racialASIConfig = {
         AddGnome_Tinkertools_Spells = { Enabled = true },
         AddHalfElfDrow_Drow_DrowWeaponTraining_Passives = { Enabled = true }
     },
+    Settings5e = {
+        IgnoreAll = false,
+        Ignore5eLimited = false,
+        Ignore5e = false,
+        Ignore5eExtended = false,
+        IgnoreFlavours = false,
+        IgnoreLegacy = false,
+        IgnoreHomebrew = false
+    }
 }
 
 MOD_INFO = ModInfo:new("RacialASI", "RacialASI", true, racialASIConfig)

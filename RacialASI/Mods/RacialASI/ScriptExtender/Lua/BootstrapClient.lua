@@ -17,12 +17,24 @@ Ext.Require("Shared/_Init.lua")
 
 Ext.Require("ModInfos/_ModInfos.lua")
 
+Ext.Require("Client/CleanRacesModASI.lua")
+
 if isModLoaded(deps.MCM_GUID) then
-    Ext.Require("Client/CleanRacesModASI.lua")
     Ext.Require("Client/Builder5e.lua")
 end
 
 Ext.Require("Client/_Init.lua")
+
+if Ext.Mod.IsModLoaded(deps.Framework_GUID) then
+    Ext.Require("Client/CleanClassesModASI.lua")
+end
+
+if not isModLoaded(deps.MCM_GUID) then
+    Ext.Require("Client/Builder5e.lua")
+end
+
+
+-- OLD LUA WILL REMOVE SOON //////
 
 -- Check if the mod is loaded and load ASI
 if Ext.Mod.IsModLoaded(deps.Framework_GUID) and Ext.Mod.IsModLoaded(deps.Framework_FM_GUID) then
@@ -31,10 +43,6 @@ end
 
 if Ext.Mod.IsModLoaded(deps.Framework_GUID) and Ext.Mod.IsModLoaded(deps.Framework_WotD_GUID) then
     Ext.Require("Client/WotDAasimaSE.lua")
-end
-
-if Ext.Mod.IsModLoaded(deps.Framework_GUID) then
-    Ext.Require("Client/CustomClasses.lua")
 end
 
 if Ext.Mod.IsModLoaded(deps.Framework_GUID) then

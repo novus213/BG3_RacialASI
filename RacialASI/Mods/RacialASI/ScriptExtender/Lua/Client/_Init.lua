@@ -56,6 +56,17 @@ local function OnStatsLoaded()
             BasicError(string.format("============> ERROR: No action configuration found for %s.", optionName))
         end
     end
+
+    local settings5e = config.Settings5e
+
+    IgnoreAll = settings5e["IgnoreAll"]
+    Ignore5eLimited = settings5e["Ignore5eLimited"]
+    Ignore5e = settings5e["Ignore5e"]
+    Ignore5eExtended = settings5e["Ignore5eExtended"]
+    IgnoreFlavours = settings5e["IgnoreFlavours"]
+    IgnoreLegacy = settings5e["IgnoreLegacy"]
+    IgnoreHomebrew = settings5e["IgnoreHomebrew"]
+
 end
 --- End CONFIG NO MCM
 

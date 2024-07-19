@@ -6,7 +6,7 @@ _________                 __                   _________ .__
  \______  /____//____  > |__|  \____/|__|_|  /  \______  /____(____  /____  >____  >\___  >____  >
         \/           \/                    \/          \/          \/     \/     \/     \/     \/
         \_Custom Races from Nexus
-Argelia source Mixed
+Argelia source Mixed NEED REFACTORING ALL
 ]]--
 
 local listUUID = "b9149c8e-52c8-46e5-9cb6-fc39301c05fe"
@@ -132,7 +132,7 @@ local function removeSelectors(mod)
     end
 end
 
-local function CustomClassesOnStatsLoaded()
+local function CleanClassesModASIOnStatsLoaded()
     local removedClasses = {}  -- Table to store classes with removed selectors
     for _, mod in ipairs(classMods) do
         local removedClass = removeSelectors(mod)
@@ -155,5 +155,5 @@ local function CustomClassesOnStatsLoaded()
 end
 
 if Ext.Mod.IsModLoaded("67fbbd53-7c7d-4cfa-9409-6d737b4d92a9") then
-    Ext.Events.StatsLoaded:Subscribe(CustomClassesOnStatsLoaded)
+    Ext.Events.StatsLoaded:Subscribe(CleanClassesModASIOnStatsLoaded)
 end
