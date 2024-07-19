@@ -1,4 +1,6 @@
+-- temporary require libs here , in futur require to Client/CleanRacesModASI.lua
 Ext.Require("Libs/RacesLibrary.lua")
+
 Ext.Require("Libs/BooksLibrary.lua")
 
 

@@ -1,3 +1,7 @@
+--Ext.Require("Libs/RacesLibrary.lua")
+
+-- Racemod will deleted like final table will finish
+
 raceMods = {
     {
         Race = "Aasimar DEMERDE DarthRen",
