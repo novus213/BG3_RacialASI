@@ -76,7 +76,7 @@ function removeBoosts(mod, ability, score)
 
         Mods.SubclassCompatibilityFramework.Api.RemoveBoosts({payload})
 
-        BasicWarning("payload: %s", table.dump(payload))
+        BasicWarning(string.format("payload: %s", table.dump(payload)))
 
         return mod.Name  -- Return the race name if selectors were removed
     end
@@ -102,7 +102,7 @@ function CleanOnStatsLoaded()
 
         Mods.SubclassCompatibilityFramework.Api.RemoveSelectors({payload})
 
-        BasicWarning("payload: %s", table.dump(payload))
+        BasicWarning(string.format("payload: %s", table.dump(payload)))
 
         -- remove Boost Ability
         for _, ability in ipairs(stats) do

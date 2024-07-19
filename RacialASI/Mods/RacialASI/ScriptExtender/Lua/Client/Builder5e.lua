@@ -41,8 +41,7 @@ function tableInsertRaceStats(raceMod)
 			table.insert(RaceStat, "Ability(" .. StatsList[i] .. "," .. raceMod.Stats[i] .. ")")
 		end
 		raceMod.Stats = RaceStat
-        BasicWarning(string.format("raceMod ============> %s", raceMod))
-		print("raceMod:", table.dump(raceMod))
+        BasicWarning(string.format("payload: %s", table.dump(raceMod)))
 	end
 end
 
@@ -65,16 +64,21 @@ local payload = {
 			Amounts = raceMod.Sab
 		}
         Mods.SubclassCompatibilityFramework.Api.InsertSelectors({payload})
-        BasicWarning("payload: %s", table.dump(payload))
+        BasicWarning(string.format("payload: %s", table.dump(payload)))
 	end
 
 	if raceMod.Stats ~= nil then
+        payload = {}
+        local payload = {
+		modGuid = raceMod.modGuid,
+		Target = raceMod.UUID,
+		FileType = "Progression"
+		}
 		payload.Type = "Boosts"
 		payload.Strings = raceMod.Strings
 		Mods.SubclassCompatibilityFramework.Api.InsertBoosts({payload})
+        BasicWarning(string.format("payload: %s", table.dump(payload)))
 	end
-
-    BasicWarning("payload: %s", table.dump(payload))
 end
 
 --- Constructor for builder5eRaces

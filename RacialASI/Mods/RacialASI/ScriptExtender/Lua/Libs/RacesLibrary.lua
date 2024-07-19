@@ -5,7 +5,7 @@ RaceLibrary = {
 		UUID			=	"7b4d6e73-c54f-41ed-bd69-c25be95e9717",
 		Author			=	"",
 		SourceBook		=	"MPMotM",
-		Sab     		= 	{"2","1"}, --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"Owlin",
@@ -13,7 +13,7 @@ RaceLibrary = {
 		UUID			=	"da629716-fd76-477d-9934-0473904fe04b", -- old "b5f04836-e2ef-4eb6-93d5-4aad7f3b1c20"
 		Author			=	"",
 		SourceBook		=	"SACoC",
-		Sab     		= 	{"2","1"}, --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"Myconid",
@@ -21,7 +21,7 @@ RaceLibrary = {
 		UUID			=	"ada1a74c-89dd-45f9-95dd-f88bf59e3535",
 		Author			=	"",
 		SourceBook		=	"",
-		Sab     		= 	{"2","1"}, --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"Genasi (Elemental Power)",
@@ -29,7 +29,7 @@ RaceLibrary = {
 		UUID			=	"e808d2a5-a9eb-403f-bab9-90a5114a699c",
 		Author			=	"",
 		SourceBook		=	"MPMotM",
-		Sab     		= 	{"2","1"}, --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"HalfDragon",
@@ -37,7 +37,7 @@ RaceLibrary = {
 		UUID			=	"72a06fbf-e1b3-4321-b975-a4a26d9b4b71",
 		Author			=	"Jo Val Rudovous",
 		SourceBook		=	"",
-		Sab     		= 	{"2","1"}, --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"Hobgoblin (https://github.com/GentlemanBabbo/Hobgoblin/tree/main)",
@@ -45,7 +45,7 @@ RaceLibrary = {
 		UUID			=	"575fa3d3-cf83-4716-8cc3-8d971666b051",
 		Author			=	"GentlemanBabbo",
 		SourceBook		=	"MPMotM",
-		Sab     		= 	{"2","1"}, --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"CE_WitchElf",
@@ -53,7 +53,7 @@ RaceLibrary = {
 		UUID			=	"d19f42b3-1c1e-46cd-83e4-fd964426616f",
 		Author			=	"",
 		SourceBook		=	"",
-		Sab     		= 	{"2","1"}, --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 
 --[[
@@ -72,7 +72,7 @@ RaceLibrary = {
 		UUID			=	"ad21229c-c202-4c86-af26-b5c47d36ff01",
 		Author			=	"",
 		SourceBook		=	"",
-		Stats			=	{"0", "0", "0", "1", "0", "2"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Stats			=	{"0", "0", "0", "1", "0", "2"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 	},
 	{
 		Name			=	"ASTRL_Dispater_Tiefling",
@@ -80,7 +80,7 @@ RaceLibrary = {
 		UUID			=	"535fb417-7341-4710-b500-0ac5602de515",
 		Author			=	"",
 		SourceBook		=	"",
-		Stats			=	{"0", "1", "0", "0", "0", "2"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Stats			=	{"0", "1", "0", "0", "0", "2"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 	},
 	{
 		Name			=	"ASTRL_Fierna_Tiefling",
@@ -88,7 +88,7 @@ RaceLibrary = {
 		UUID			=	"929b6fe8-7415-43c7-9e2b-a3c87962e77d",
 		Author			=	"",
 		SourceBook		=	"",
-		Stats			=	{"0", "0", "0", "0", "1", "2"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Stats			=	{"0", "0", "0", "0", "1", "2"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 	},
 	{
 		Name			=	"ASTRL_Glasya_Tiefling",
@@ -96,7 +96,7 @@ RaceLibrary = {
 		UUID			=	"1a215890-3ffc-4c4e-bf19-b70aa67c25cf",
 		Author			=	"",
 		SourceBook		=	"",
-		Stats			=	{"0", "1", "0", "0", "0", "2"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Stats			=	{"0", "1", "0", "0", "0", "2"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 	},
 	{
 		Name			=	"ASTRL_Levistus_Tiefling",
@@ -104,7 +104,7 @@ RaceLibrary = {
 		UUID			=	"62899e1e-d6b6-448d-847c-085a07d1f41d",
 		Author			=	"",
 		SourceBook		=	"",
-		Stats			=	{"0", "0", "1", "0", "0", "2"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Stats			=	{"0", "0", "1", "0", "0", "2"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 	},
 	{
 		Name			=	"ASTRL_Mammon_Tiefling",
@@ -112,7 +112,7 @@ RaceLibrary = {
 		UUID			=	"bf7c8b2d-5b6e-467e-b080-d85de151f57a",
 		Author			=	"",
 		SourceBook		=	"",
-		Stats			=	{"0", "0", "0", "1", "0", "2"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Stats			=	{"0", "0", "0", "1", "0", "2"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 	},
 	{
 		Name			=	"ASTRL_Variant_Tiefling",
@@ -121,7 +121,7 @@ RaceLibrary = {
 		Author			=	"",
 		SourceBook		=	"",
 		Stats			=	{"0", "0", "0", "1", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
-		Sab     		= 	{"2"}, --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab     		= 	{"2"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"ASTRL_Winged_Tiefling",
@@ -130,7 +130,7 @@ RaceLibrary = {
 		Author			=	"",
 		SourceBook		=	"",
 		Stats			=	{"0", "0", "0", "1", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
-		Sab     		= 	{"2"}, --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab     		= 	{"2"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"ASTRL_Nightborn_Tiefling",
@@ -138,7 +138,7 @@ RaceLibrary = {
 		UUID			=	"fa15d3e5-3f15-4d59-857a-804098843516",
 		Author			=	"",
 		SourceBook		=	"",
-		Sab     		= 	{"2","1"}, --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"ASTRL_Feyri_Tiefling",
@@ -146,7 +146,7 @@ RaceLibrary = {
 		UUID			=	"3d807581-2721-4ba2-82bf-d91b345f7d81",
 		Author			=	"",
 		SourceBook		=	"",
-		Sab     		= 	{"2","1"}, --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"ASTRL_Elamshinae_Tiefling",
@@ -154,7 +154,7 @@ RaceLibrary = {
 		UUID			=	"b42939aa-ce0d-40c7-8b0b-98cc4c122214",
 		Author			=	"",
 		SourceBook		=	"",
-		Sab     		= 	{"2","1"}, --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"ASTRL_Velkynbol_Tiefling",
@@ -162,7 +162,7 @@ RaceLibrary = {
 		UUID			=	"3968f318-3ba4-4325-86f4-88ba7c01d999",
 		Author			=	"",
 		SourceBook		=	"",
-		Sab     		= 	{"2","1"}, --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"ASTRL_Isilmnirel_Tiefling",
@@ -170,7 +170,7 @@ RaceLibrary = {
 		UUID			=	"c9ebad8c-3f9c-42ff-a2c2-53e83578df8c",
 		Author			=	"",
 		SourceBook		=	"",
-		Sab     		= 	{"2","1"}, --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 
 --[[
@@ -186,44 +186,44 @@ RaceLibrary = {
 
 	{
 		Name 			= 	"ASTRL_MoonElf_LevelOne",
-		modGuid 			=	"66b20233-cf0a-44bb-9bcf-32c0e0b09c19",
+		modGuid 		=	"66b20233-cf0a-44bb-9bcf-32c0e0b09c19",
 		UUID 			= 	"934762bb-eebd-4b42-b050-540148507a4a",
 		Author			=	"",
 		SourceBook		=	"",
-		Stats			=	{"0", "2", "0", "0", "0", "1"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Stats			=	{"0", "2", "0", "0", "0", "1"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 	},
 	{
 		Name 			= 	"ASTRL_SnowElf_LevelOne",
-		modGuid 			=	"66b20233-cf0a-44bb-9bcf-32c0e0b09c19",
+		modGuid 		=	"66b20233-cf0a-44bb-9bcf-32c0e0b09c19",
 		UUID 			= 	"02e1d9ac-bcc4-4391-9e78-5df33f60ca64",
 		Author			=	"",
 		SourceBook		=	"",
-		Stats			=	{"0", "0", "2", "0", "1", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Stats			=	{"0", "0", "2", "0", "1", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 	},
 	{
 		Name 			= 	"ASTRL_SunElf_LevelOne",
-		modGuid 			=	"66b20233-cf0a-44bb-9bcf-32c0e0b09c19",
+		modGuid 		=	"66b20233-cf0a-44bb-9bcf-32c0e0b09c19",
 		UUID 			= 	"1089dddf-4e75-4e1b-bf2a-33affd0f6093",
 		Author			=	"",
 		SourceBook		=	"",
-		Stats			=	{"0", "2", "1", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Stats			=	{"0", "2", "1", "0", "0", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 	},
 	{
 		Name 			= 	"ASTRL_LythariElf_LevelOne",
-		modGuid 			=	"66b20233-cf0a-44bb-9bcf-32c0e0b09c19",
+		modGuid 		=	"66b20233-cf0a-44bb-9bcf-32c0e0b09c19",
 		UUID 			= 	"9b37ca29-0d77-4a27-a662-8464ce9998bb",
 		Author			=	"",
 		SourceBook		=	"",
-		Stats			=	{"0", "2", "0", "0", "0", "1"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Stats			=	{"0", "2", "0", "0", "0", "1"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 	},
 	{
 		Name 			= 	"ASTRL_StarElf_LevelOne",
-		modGuid 			=	"66b20233-cf0a-44bb-9bcf-32c0e0b09c19",
+		modGuid 		=	"66b20233-cf0a-44bb-9bcf-32c0e0b09c19",
 		UUID 			= 	"e4c4c550-d4c7-43c5-92ba-49f93691356a",
 		Author			=	"",
 		SourceBook		=	"",
 		Stats			=	{"0", "2", "0", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
-		Sab     		= 	{"1"}, --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab     		= 	{"1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"ASTRL_DuskElf_LevelOne",
@@ -231,7 +231,7 @@ RaceLibrary = {
 		UUID			=	"50d5a39d-4497-4d71-9368-d6c8c04f97dd",
 		Author			=	"",
 		SourceBook		=	"",
-		Sab     		= 	{"2","1"}, --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 
 --[[
@@ -249,8 +249,7 @@ RaceLibrary = {
 		UUID			=	"63e0259e-4721-4f7e-bb75-c5d26a55dc74",
 		Author			=	"Trips",
 		SourceBook		=	"",
-		Stats			=	{"0", "0", "0", "0", "1", "2"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
-		Sab     		= 	{"2","1"}, --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Stats			=	{"0", "0", "0", "0", "1", "2"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 	},
 	{
 		Name			=	"Scourge",
@@ -258,8 +257,7 @@ RaceLibrary = {
 		UUID			=	"2d88948b-45ec-42ce-8dc9-755b6987a8f6",
 		Author			=	"Trips",
 		SourceBook		=	"",
-		Stats			=	{"0", "0", "1", "0", "0", "2"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
-		Sab     		= 	{"2","1"}, --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Stats			=	{"0", "0", "1", "0", "0", "2"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 	},
 	{
 		Name			=	"Fallen",
@@ -267,8 +265,7 @@ RaceLibrary = {
 		UUID			=	"adab8d9e-904b-436e-ba9b-9657dd5216c6",
 		Author			=	"Trips",
 		SourceBook		=	"",
-		Stats			=	{"1", "0", "0", "0", "0", "2"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
-		Sab     		= 	{"2","1"}, --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Stats			=	{"1", "0", "0", "0", "0", "2"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 	},
 	{
 		Name			=	"Herault / Variant",
@@ -276,8 +273,7 @@ RaceLibrary = {
 		UUID			=	"70ed9582-33c5-44c1-8710-2fbf8281543d",
 		Author			=	"Trips",
 		SourceBook		=	"",
-		Stats			=	{"0", "0", "0", "0", "1", "2"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
-		Sab     		= 	{"2","1"}, --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Stats			=	{"0", "0", "0", "0", "1", "2"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 	},
 
 
@@ -297,8 +293,7 @@ _________                 __                   __________
         UUID			=	"0194f214-ffce-4e74-94b6-09e76a270e49",
 		Author			=	"",
 		SourceBook		=	"",
-		Stats			=	{"0", "2", "0", "0", "1", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
-
+		Stats			=	{"0", "2", "0", "0", "1", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
     },
     {
         Name			=	"Satyr (Wine and Revelry)",
@@ -306,7 +301,7 @@ _________                 __                   __________
         UUID			=	"eb3ac23d-3f7f-44d5-ad6a-bb99232d63bd",
 		Author			=	"",
 		SourceBook		=	"",
-		Stats			=	{"0", "1", "0", "0", "0", "2"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Stats			=	{"0", "1", "0", "0", "0", "2"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
     },
     {
         Name			=	"Transient Guests Are We - Playable Dhampir",
@@ -314,7 +309,7 @@ _________                 __                   __________
         UUID			=	"58971151-461d-4556-8db7-5894af1dceb2",
 		Author			=	"",
 		SourceBook		=	"",
-		Stats			=	{"0", "1", "0", "0", "0", "2"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Stats			=	{"0", "1", "0", "0", "0", "2"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
     },
     {
         Name			=	"Dhampyr RU_SHI - Sassandra (pathfinder)",
@@ -322,7 +317,7 @@ _________                 __                   __________
         UUID			=	"042e6092-1602-4338-b6f9-cc7987f3bff4",
 		Author			=	"",
 		SourceBook		=	"",
-		Stats			=	{"2", "-2", "0", "2", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Stats			=	{"2", "-2", "0", "2", "0", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
     },
     {
         Name			=	"Dhampyr SVETOCHER - Sassandra (pathfinder)",
@@ -330,7 +325,7 @@ _________                 __                   __________
         UUID			=	"ceae071e-2ff2-4043-a2b8-a7fc1ab16065",
 		Author			=	"",
 		SourceBook		=	"",
-		Stats			=	{"2", "0", "-2", "0", "0", "2"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Stats			=	{"2", "0", "-2", "0", "0", "2"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
     },
     {
         Name			=	"Dhampyr AJIBACHANA - Sassandra (pathfinder)",
@@ -338,7 +333,7 @@ _________                 __                   __________
         UUID			=	"65930b4d-75ca-4968-93b0-dde6662d5882",
 		Author			=	"",
 		SourceBook		=	"",
-		Stats			=	{"0", "2", "0", "2", "-2", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Stats			=	{"0", "2", "0", "2", "-2", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
     },
     {
         Name			=	"Dhampyr ANCIENTBORN - Sassandra (pathfinder)",
@@ -346,7 +341,7 @@ _________                 __                   __________
         UUID			=	"ebd122f3-9223-4cc0-ac98-3810995dde9b",
 		Author			=	"",
 		SourceBook		=	"",
-		Stats			=	{"2", "0", "-2", "0", "2", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Stats			=	{"2", "0", "-2", "0", "2", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
     },
     {
         Name			=	"Followers Of Zerthimon (Githzerai)",
@@ -354,7 +349,7 @@ _________                 __                   __________
         UUID			=	"8e8928df-70b1-43c0-bc86-40b32c455bee",
 		Author			=	"",
 		SourceBook		=	"",
-		Stats			=	{"0", "0", "0", "1", "2", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Stats			=	{"0", "0", "0", "1", "2", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
     },
     {
         Name			=	"Followers Of Zerthimon (Githzerai)",
@@ -362,7 +357,7 @@ _________                 __                   __________
         UUID			=	"8e8928df-70b1-43c0-bc86-40b32c455bee",
 		Author			=	"",
 		SourceBook		=	"",
-		Stats			=	{"0", "0", "0", "1", "2", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Stats			=	{"0", "0", "0", "1", "2", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
     },
     {
         Name			=	"Fey (Eladrin)",
@@ -370,7 +365,7 @@ _________                 __                   __________
         UUID			=	"c2c089df-c622-4074-ab18-a4bde879a055",
 		Author			=	"",
 		SourceBook		=	"",
-		Stats			=	{"0", "2", "0", "0", "1", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Stats			=	{"0", "2", "0", "0", "1", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
     },
     {
         Name			=	"Firbolgs (Forest Friends)",
@@ -378,7 +373,7 @@ _________                 __                   __________
         UUID			=	"7eede716-00f0-43aa-ad18-f001f8c7c283",
 		Author			=	"",
 		SourceBook		=	"",
-		Stats			=	{"1", "0", "0", "0", "2", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Stats			=	{"1", "0", "0", "0", "2", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
     },
     {
         Name			=	"Homebrew Gnome Subrace based on the Maztica Trilogy",
@@ -386,7 +381,7 @@ _________                 __                   __________
         UUID			=	"3d7c0866-0357-43e1-ace0-b9c7f8bd90be",
 		Author			=	"",
 		SourceBook		=	"",
-		Stats			=	{"0", "1", "0", "2", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Stats			=	{"0", "1", "0", "2", "0", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
     },
     {
         Name			=	"Enter Maztica: Desert Dwarf Subrace",
@@ -394,7 +389,7 @@ _________                 __                   __________
         UUID			=	"75c28431-cd41-4256-af2e-0cadd4f8c2f8",
 		Author			=	"",
 		SourceBook		=	"",
-		Stats			=	{"0", "1", "2", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Stats			=	{"0", "1", "2", "0", "0", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
     },
     {
         Name			=	"Beyond Faerûn: Tinker Gnome Subrace",
@@ -402,7 +397,7 @@ _________                 __                   __________
         UUID			=	"a0ae2974-b54a-4e17-ba69-cde2f7448338",
 		Author			=	"",
 		SourceBook		=	"",
-		Stats			=	{"0", "2", "0", "2", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Stats			=	{"0", "2", "0", "2", "0", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
     },
     {
         Name			=	"Adapted Whisper Gnome Subrace based on the Eberron Campaign",
@@ -410,7 +405,7 @@ _________                 __                   __________
         UUID			=	"d45a8d46-8a68-4065-98da-9cc84bb2e3b1",
 		Author			=	"",
 		SourceBook		=	"",
-		Stats			=	{"0", "2", "2", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Stats			=	{"0", "2", "2", "0", "0", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
     },
     {
         Name			=	"Adapted Ghostwise Halfling Subrace",
@@ -418,7 +413,7 @@ _________                 __                   __________
         UUID			=	"0194f214-ffce-4e74-94b6-09e76a270e49",
 		Author			=	"",
 		SourceBook		=	"",
-		Stats			=	{"0", "2", "0", "0", "1", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Stats			=	{"0", "2", "0", "0", "1", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
     },
     {
         Name			=	"Enter Maztica: Wild Halfling Subrace",
@@ -426,7 +421,7 @@ _________                 __                   __________
         UUID			=	"e8ccff14-10b6-43f7-bbfa-22ab2104f4fc",
 		Author			=	"",
 		SourceBook		=	"",
-		Stats			=	{"0", "2", "0", "0", "1", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Stats			=	{"0", "2", "0", "0", "1", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
     },
     {
         Name			=	"dryad race inspired by BG3's dryads",
@@ -434,15 +429,16 @@ _________                 __                   __________
         UUID			=	"c5671549-0282-4b60-a68d-47b676e9e2b9",
 		Author			=	"",
 		SourceBook		=	"",
-		Stats			=	{"0", "0", "0", "0", "2", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Stats			=	{"0", "0", "0", "0", "2", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
     },
     {
         Name			=	"Whispers of the Fey - Changelings", -- SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,1)
         modGuid			=	"eaf83c50-1f22-4ce8-a825-25f07caf9faa",
         UUID			=	"fa7bf84a-a1d6-46b2-a779-739424d20b5b",
-		Author			=	"",
+		Author			=	"Trips",
 		SourceBook		=	"",
 		Stats			=	{"0", "0", "0", "0", "0", "2"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Sab     		= 	{"1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
     },
     {
         Name			=	"Whispers of the Fey - Goblins Greenskin",
@@ -450,15 +446,15 @@ _________                 __                   __________
         UUID			=	"5a317953-08ea-4424-ad93-05a0a66b4748",
 		Author			=	"Trips",
 		SourceBook		=	"",
-		Stats			=	{"0", "2", "1", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Stats			=	{"0", "2", "1", "0", "0", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
     },
     {
         Name			=	"Whispers of the Fey - Goblins Dankwood",
         modGuid			=	"ca81f091-bf1b-4bb6-90dd-1c4ef83fd798",
         UUID			=	"453c15bb-0ead-4766-b747-961066c84ee1",
-		Author			=	"",
+		Author			=	"Trips",
 		SourceBook		=	"",
-		Stats			=	{"0", "2", "0", "0", "1", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Stats			=	{"0", "2", "0", "0", "1", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
     },
     {
         Name			=	"Yuan-ti",
@@ -466,7 +462,7 @@ _________                 __                   __________
         UUID			=	"139dba60-4895-496a-ab48-bbd45719f317",
 		Author			=	"",
 		SourceBook		=	"",
-		Stats			=	{"0", "0", "0", "1", "2", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Stats			=	{"0", "0", "0", "1", "2", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
     },
     {
         Name			=	"Undead (Ghastly Ghouls) Lich",
@@ -474,7 +470,7 @@ _________                 __                   __________
         UUID			=	"7123242e-9e00-4b9e-8e4f-aa1b0477fe13",
 		Author			=	"",
 		SourceBook		=	"",
-		Stats			=	{"0", "0", "0", "2", "1", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Stats			=	{"0", "0", "0", "2", "1", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
     },
     {
         Name			=	"Undead (Ghastly Ghouls) Wight",
@@ -483,6 +479,7 @@ _________                 __                   __________
 		Author			=	"",
 		SourceBook		=	"",
 		Stats			=	{"0", "0", "0", "0", "0", "1"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Sab     		= 	{"1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
     },
     {
         Name			=	"Undead (Ghastly Ghouls) Mummy",
@@ -490,7 +487,7 @@ _________                 __                   __________
         UUID			=	"3a4465df-49a2-4278-9d16-f17ed876aede",
 		Author			=	"",
 		SourceBook		=	"",
-		Stats			=	{"0", "0", "0", "1", "2", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Stats			=	{"0", "0", "0", "1", "2", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
     },
     {
         Name			=	"Undead (Ghastly Ghouls) Ghoul",
@@ -498,7 +495,7 @@ _________                 __                   __________
         UUID			=	"cfabed72-38b8-424d-a07d-058fbd4dd1a9",
 		Author			=	"",
 		SourceBook		=	"",
-		Stats			=	{"0", "0", "0", "1", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Stats			=	{"0", "0", "0", "1", "0", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
     },
     {
         Name			=	"Automaton Figgyinchains https://github.com/GentlemanBabbo/Automaton/blob/main/",
@@ -506,7 +503,7 @@ _________                 __                   __________
         UUID			=	"3615e5db-c3ac-4b3b-bd01-f618d1cd95b5",
 		Author			=	"",
 		SourceBook		=	"",
-		Stats			=	{"0", "0", "1", "1", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Stats			=	{"0", "0", "1", "1", "0", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
     },
     {
         Name			=	"The Nine Hells Unchained - Imp Race",
@@ -514,7 +511,7 @@ _________                 __                   __________
         UUID			=	"602818c4-ec05-4af9-9cb7-dedf06ec04a8",
 		Author			=	"",
 		SourceBook		=	"",
-		Stats			=	{"0", "1", "0", "0", "0", "1"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Stats			=	{"0", "1", "0", "0", "0", "1"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
     },
     {
         Name			=	"Avariel_Ren",
@@ -523,6 +520,7 @@ _________                 __                   __________
 		Author			=	"",
 		SourceBook		=	"",
 		Stats			=	{"0", "2", "0", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Sab     		= 	{"1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
     },
     {
         Name			=	"Half-Elves that are half Drow and half Half-Orc Soriyumi",
@@ -530,7 +528,7 @@ _________                 __                   __________
         UUID			=	"128ae023-fef6-4fa1-ade9-e338e60b8b56",
 		Author			=	"",
 		SourceBook		=	"",
-		Stats			=	{"1", "1", "1", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Stats			=	{"1", "1", "1", "0", "0", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
     },
     {
         Name			=	"Skeleton race Rexsaze (playableundead)",
@@ -538,7 +536,7 @@ _________                 __                   __________
         UUID			=	"042e6092-1602-4338-b6f9-cc7987f3bff4",
 		Author			=	"",
 		SourceBook		=	"",
-		Stats			=	{"0", "0", "1", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Stats			=	{"0", "0", "1", "0", "0", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
     },
     {
         Name			=	"UnderdarksChosen - IndecisionIncarnate",
@@ -546,15 +544,15 @@ _________                 __                   __________
         UUID			=	"4a634f24-bdcb-4559-b8be-7847133ad1c3",
 		Author			=	"",
 		SourceBook		=	"",
-		Stats			=	{"0", "2", "0", "0", "0", "1"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Stats			=	{"0", "2", "0", "0", "0", "1"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
     },
 	{
         Name 			= 	"Adapted Kender Race from Dragonlance: Shadow of the Dragon Queen (EOTB Version)",
-        modGuid 			= 	"56fe7a47-e0d6-404e-b2d5-fd6e88cae6ae",
+        modGuid 		= 	"56fe7a47-e0d6-404e-b2d5-fd6e88cae6ae",
         UUID 			= 	"7551c355-8311-4c2f-b91b-9877ef608267",
 		Author			=	"",
 		SourceBook		=	"",
-		Sab     		= 	{"1","1","1"}, --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab     		= 	{"1","1","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
     },
 
 --[[
@@ -573,7 +571,7 @@ ___________              __                   __  .__              .__       ___
 		UUID			=	"0b88cad4-c5d0-4cde-a661-a8ede3f7d113",
 		Author			=	"",
 		SourceBook		=	"",
-		Sab     		= 	{"1","1"}, --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab     		= 	{"1","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"Fantastical Astral Elf",
@@ -581,7 +579,7 @@ ___________              __                   __  .__              .__       ___
 		UUID			=	"06e918ad-be2c-48b6-a098-0288539de744",
 		Author			=	"",
 		SourceBook		=	"SAiS",
-		Sab     		= 	{"2","1"}, --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"Fantastical Reborn(Humanoid)",
@@ -589,7 +587,7 @@ ___________              __                   __  .__              .__       ___
 		UUID			=	"1253592f-5c8b-41b5-9ae7-b83b08ab92bb",
 		Author			=	"",
 		SourceBook		=	"VRGtR",
-		Sab     		= 	{"2","1"}, --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"Fantastical Downcast",
@@ -597,7 +595,7 @@ ___________              __                   __  .__              .__       ___
 		UUID			=	"aa03e8ed-a301-4e4a-bfde-ff7144e1fbb1",
 		Author			=	"",
 		SourceBook		=	"GHPG",
-		Sab     		= 	{"2","1"}, --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"Fantastical Elezen",
@@ -605,7 +603,7 @@ ___________              __                   __  .__              .__       ___
 		UUID			=	"9be04b6b-c89f-4e67-8431-d0cd9b97db15",
 		Author			=	"",
 		SourceBook		=	"EFFXIV",
-		Sab     		= 	{"2","1"}, --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"Fantastical Dhampir(Lineage)",
@@ -613,7 +611,7 @@ ___________              __                   __  .__              .__       ___
 		UUID			=	"de9b4cc2-94af-46d8-ab7d-31b00d81df03",
 		Author			=	"",
 		SourceBook		=	"VRGtR",
-		Sab     		= 	{"2","1"}, --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"Fantastical Orc",
@@ -621,7 +619,7 @@ ___________              __                   __  .__              .__       ___
 		UUID			=	"6c7094a4-bc8c-4613-9de6-5d9edec8e403",
 		Author			=	"",
 		SourceBook		=	"PHB",
-		Sab     		= 	{"2","1"}, --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"Fantastical Kender",
@@ -629,7 +627,7 @@ ___________              __                   __  .__              .__       ___
 		UUID			=	"727ce5d7-2c90-4cbb-bd52-6bd45067e27b",
 		Author			=	"",
 		SourceBook		=	"DSotDQ",
-		Sab     		= 	{"2","1"}, --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"Fantastical Water Genasi",
@@ -637,7 +635,7 @@ ___________              __                   __  .__              .__       ___
 		UUID			=	"43759dcb-f50f-4c22-906c-d79c40a3dbb0",
 		Author			=	"",
 		SourceBook		=	"MPMotM",
-		Sab     		= 	{"2","1"}, --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"Fantastical Shadar-kai",
@@ -645,7 +643,7 @@ ___________              __                   __  .__              .__       ___
 		UUID			=	"24991da3-14d0-4c65-85c6-9c62168415eb",
 		Author			=	"",
 		SourceBook		=	"MPMotM",
-		Sab     		= 	{"2","1"}, --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"Fantastical Air Genasi",
@@ -653,7 +651,7 @@ ___________              __                   __  .__              .__       ___
 		UUID			=	"58af38d8-b039-4a75-91fa-4ef079318d8b",
 		Author			=	"",
 		SourceBook		=	"MPMotM",
-		Sab     		= 	{"2","1"}, --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"Fantastical Earth Genasi",
@@ -661,7 +659,7 @@ ___________              __                   __  .__              .__       ___
 		UUID			=	"47372143-e2a7-4cc5-9810-7caea80bd46a",
 		Author			=	"",
 		SourceBook		=	"MPMotM",
-		Sab     		= 	{"2","1"}, --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"Fantastical Firbolg",
@@ -669,7 +667,7 @@ ___________              __                   __  .__              .__       ___
 		UUID			=	"003cf78d-7db5-444e-9a2f-e41f9836c8c3",
 		Author			=	"",
 		SourceBook		=	"MPMotM",
-		Sab     		= 	{"2","1"}, --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"Fantastical Fire Genasi",
@@ -677,7 +675,7 @@ ___________              __                   __  .__              .__       ___
 		UUID			=	"5a33238e-313f-4cce-8bac-f36db533b704",
 		Author			=	"",
 		SourceBook		=	"MPMotM",
-		Sab     		= 	{"2","1"}, --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"Fantastical Githzerai",
@@ -685,7 +683,7 @@ ___________              __                   __  .__              .__       ___
 		UUID			=	"8ffe5132-b5ad-424c-befb-eb4fc640a18b",
 		Author			=	"",
 		SourceBook		=	"MPMotM",
-		Sab     		= 	{"2","1"}, --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"Fantastical Goliath",
@@ -693,7 +691,7 @@ ___________              __                   __  .__              .__       ___
 		UUID			=	"d3ca9791-8f41-4819-9e2e-5c3f6dfb7778",
 		Author			=	"",
 		SourceBook		=	"MPMotM",
-		Sab     		= 	{"2","1"}, --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"Fantastical Kobold",
@@ -701,7 +699,7 @@ ___________              __                   __  .__              .__       ___
 		UUID			=	"9572fef0-12c6-4730-94ad-1471d54e7172",
 		Author			=	"",
 		SourceBook		=	"MPMotM",
-		Sab     		= 	{"2","1"}, --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"Fantastical Lizardfolk",
@@ -709,7 +707,7 @@ ___________              __                   __  .__              .__       ___
 		UUID			=	"fc81b68e-2835-4791-8a22-bfedee977765",
 		Author			=	"",
 		SourceBook		=	"MPMotM",
-		Sab     		= 	{"2","1"}, --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"Fantastical Minotaur",
@@ -717,7 +715,7 @@ ___________              __                   __  .__              .__       ___
 		UUID			=	"82319b4e-f38e-49b0-81cd-59953d54d824",
 		Author			=	"",
 		SourceBook		=	"MPMotM",
-		Sab     		= 	{"2","1"}, --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"Fantastical Sea Elf",
@@ -725,7 +723,7 @@ ___________              __                   __  .__              .__       ___
 		UUID			=	"08bcd922-ef05-49e0-8e6f-3f6574c4d54c",
 		Author			=	"",
 		SourceBook		=	"MPMotM",
-		Sab     		= 	{"2","1"}, --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"Fantastical Triton",
@@ -733,7 +731,7 @@ ___________              __                   __  .__              .__       ___
 		UUID			=	"328aafb6-9e72-4702-b3ab-10bdbc5e953e",
 		Author			=	"",
 		SourceBook		=	"MPMotM",
-		Sab     		= 	{"2","1"}, --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"Fantastical Yuan-ti",
@@ -741,7 +739,7 @@ ___________              __                   __  .__              .__       ___
 		UUID			=	"3fbd5365-bb01-4741-965d-2be2f11156bd",
 		Author			=	"",
 		SourceBook		=	"MPMotM",
-		Sab     		= 	{"2","1"}, --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"Fantastical Ogresh",
@@ -749,7 +747,7 @@ ___________              __                   __  .__              .__       ___
 		UUID			=	"11d3fa5d-3e88-4c8c-b21c-e183d7208533",
 		Author			=	"",
 		SourceBook		=	"GHPG",
-		Sab     		= 	{"2","1"}, --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"Fantastical Yuan-ti Pureblood",
@@ -757,8 +755,7 @@ ___________              __                   __  .__              .__       ___
 		UUID			=	"69a8edff-fdec-4ef5-aeb6-dcb15562b062",
 		Author			=	"",
 		SourceBook		=	"VGtML",
-		Stats			=	{"0", "0", "0", "1", "0", "2"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
-
+		Stats			=	{"0", "0", "0", "1", "0", "2"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 	},
 	{
 		Name			=	"Fantastical Pallid Elf",
@@ -767,7 +764,6 @@ ___________              __                   __  .__              .__       ___
 		Author			=	"",
 		SourceBook		=	"EGtW",
 		Stats			=	{"0", "2", "0", "0", "1", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
-
 	},
 	{
 		Name			=	"Fantastical Vedalken",
@@ -776,7 +772,6 @@ ___________              __                   __  .__              .__       ___
 		Author			=	"",
 		SourceBook		=	"GGtR",
 		Stats			=	{"0", "0", "0", "2", "1", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
-
 	},
 	{
 		Name			=	"Fantastical Kobold Legacy",
@@ -784,8 +779,7 @@ ___________              __                   __  .__              .__       ___
 		UUID			=	"ee0bbb70-b8f7-44ec-9419-565ab963f664",
 		Author			=	"",
 		SourceBook		=	"VGtML",
-		Stats			=	{"0", "2", "0", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
-
+		Stats			=	{"0", "2", "0", "0", "0", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 	},
 	{
 		Name			=	"Fantastical Kalashtar",
@@ -793,8 +787,7 @@ ___________              __                   __  .__              .__       ___
 		UUID			=	"0e35ec74-a63c-4d24-8912-4afa4a9930d8",
 		Author			=	"",
 		SourceBook		=	"VGtML",
-		Stats			=	{"0", "0", "0", "0", "2", "1"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
-
+		Stats			=	{"0", "0", "0", "0", "2", "1"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 	},
 	{
 		Name			=	"Fantastical Bugbear",
@@ -802,8 +795,7 @@ ___________              __                   __  .__              .__       ___
 		UUID			=	"d01d244f-3ae2-4d15-b0ba-9aed04fc16ac",
 		Author			=	"",
 		SourceBook		=	"VGtML",
-		Stats			=	{"2", "1", "0", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
-
+		Stats			=	{"2", "1", "0", "0", "0", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 	}
 }
 
