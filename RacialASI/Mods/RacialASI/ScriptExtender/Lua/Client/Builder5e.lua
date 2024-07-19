@@ -80,10 +80,33 @@ local function createBoostPayload(modGuid, uuid, strings)
       }
 end
 
+--- Constructor for createRemoveRacePayload
+---@param uuid string race Progression.lsx Level 1 UUID
+---@param modGuid string race mod modGuid
+local function createRemoveRacePayload(modGuid, uuid)
+    return {
+        modGuid = modGuid,
+        raceGuid = uuid,
+      }
+end
 
---- Constructor for InsertPayload
+--- Constructor for RemoveRacePayload
 ---@param raceMod table raceMod
-local function InsertPayload(raceMod)
+local function removeRacePayload(raceMod)
+    local removedModRace = {}  -- Table to store classes with removed shit asi
+    if Ext.Mod.IsModLoaded(deps.Framework_GUID) and Ext.Mod.IsModLoaded(raceMod.modGuid) then
+            payload = createRemoveRacePayload(raceMod.modGuid,raceMod.UUID)
+            table.insert(removedModRace, raceMod.Name) -- Add to the list if ASI Fixed
+            Mods.SubclassCompatibilityFramework.Api.RemoveRaceChildData({payload})
+            BasicWarning(string.format("payload RemoveRaceChildData: %s", table.dump(payload)))
+    end
+end
+
+
+
+--- Constructor for insertPayload
+---@param raceMod table raceMod
+local function insertPayload(raceMod)
 local fixAsi = {}  -- Table to store classes with removed shit asi
 	if raceMod.Sab ~= nil then
         local payload = {}
@@ -121,58 +144,63 @@ local function builder5eRaces()
         for _, raceMod in pairs(RaceLibrary) do
             if raceMod.SourceBook == nil or raceMod.SourceBook == "" then
                 if IgnoreHomebrew == false then
-                    InsertPayload(raceMod)
+                    insertPayload(raceMod)
                 end
             else
                 if Ignore5eLimited == false then
                     for _, book in pairs(Dnd5eLimited) do
                         if book.bookRef == raceMod.SourceBook then
-                            InsertPayload(raceMod)
+                            insertPayload(raceMod)
                         end
                     end
                     if Ignore5e == false then
                         for _, book in pairs(Dnd5e) do
                             if book.bookRef == raceMod.SourceBook then
-                                InsertPayload(raceMod)
+                                insertPayload(raceMod)
                             end
                         end
                         if Ignore5eExtended == false then
                             for _, book in pairs(Dnd5eExtended) do
                                 if book.bookRef == raceMod.SourceBook then
-                                    InsertPayload(raceMod)
+                                    insertPayload(raceMod)
                                 end
                             end
                             if IgnoreLegacy == false then
                                 for _, book in pairs(Legacy) do
                                     if book.bookRef == raceMod.SourceBook then
-                                        InsertPayload(raceMod)
+                                        insertPayload(raceMod)
                                     end
                                 end
                                 if IgnoreFlavours == false then
                                     for _, book in pairs(Flavours) do
                                         if book.bookRef == raceMod.SourceBook then
-                                            InsertPayload(raceMod)
+                                            insertPayload(raceMod)
                                         end
                                     end
                                 else
                                     BasicWarning(string.format("Ignore Adding: %s due to IgnoreFlavours = True", raceMod.Name))
                                     --print("Ignore Adding: " .. raceMod.Name .. " due to IgnoreFlavours = True")
+                                    removeRacePayload(raceMod)
                                 end
                             else
                                 BasicWarning(string.format("Ignore Adding: %s due to IgnoreLegacy = True", raceMod.Name))
                                 --print("Ignore Adding: " .. raceMod.Name .. " due to IgnoreLegacy = True")
+                                removeRacePayload(raceMod)
                             end
                         else
                             BasicWarning(string.format("Ignore Adding: %s due to Ignore5eExtended = True", raceMod.Name))
                             --print("Ignore Adding: " .. raceMod.Name .. " due to Ignore5eExtended = True")
+                            removeRacePayload(raceMod)
                         end
                     else
                         BasicWarning(string.format("Ignore Adding: %s due to Ignore5e = True", raceMod.Name))
                         --print("Ignore Adding: " .. raceMod.Name .. " due to Ignore5e = True")
+                        removeRacePayload(raceMod)
                     end
                 else
                     BasicWarning(string.format("Ignore Adding: %s due to IgnoreLimited = True", raceMod.Name))
                     --print("Ignore Adding: " .. raceMod.Name .. " due to IgnoreLimited = True")
+                    removeRacePayload(raceMod)
                 end
             end
             --RaceStat =  {}
