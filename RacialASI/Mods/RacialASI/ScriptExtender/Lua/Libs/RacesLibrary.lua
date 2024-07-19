@@ -5,7 +5,6 @@ RaceLibrary = {
 		UUID			=	"7b4d6e73-c54f-41ed-bd69-c25be95e9717",
 		Author			=	"",
 		SourceBook		=	"MPMotM",
-
 		Sab     		= 	{"2","1"}
 	},
 	{
