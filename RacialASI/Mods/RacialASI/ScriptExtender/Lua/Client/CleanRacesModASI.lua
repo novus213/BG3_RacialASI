@@ -38,7 +38,7 @@ local AbilityList_UUID = "b9149c8e-52c8-46e5-9cb6-fc39301c05fe"
 ---@param modGuid string race mod modGuid
 ---@param sabUUID string SelectAbilityBonus UUID
 ---@return table payload
-function createSABPayload(uuid, modGuid, sabUUID)
+local function createSABPayload(uuid, modGuid, sabUUID)
     return {
         TargetUUID = uuid,
         FileType = "Progression",
@@ -55,7 +55,7 @@ end
 ---@param ability string ability DnD (Strength ect.)
 ---@param score integer ability score
 ---@return table payload
-function createBoostPayload(modGuid, uuid, ability, score)
+local function createBoostPayload(modGuid, uuid, ability, score)
     return {
         modGuid = modGuid,
         Target = uuid,
@@ -70,7 +70,7 @@ end
 ---@param ability string ability DnD (Strength ect.)
 ---@param score integer ability score
 ---@return string mod.Race Return the race name if selectors were removed
-function removeBoosts(mod, ability, score)
+local function removeBoosts(mod, ability, score)
     if mod.modGuid and Ext.Mod.IsModLoaded(mod.modGuid) then
         local payload = createBoostPayload(mod.modGuid, mod.UUID, ability, score)
 
@@ -84,7 +84,7 @@ end
 
 --- Constructor for CleanOnStatsLoaded
 --- Clean race mods stats ASI
-function CleanOnStatsLoaded()
+local function CleanOnStatsLoaded()
     local removedRaces = {}  -- Table to store classes with removed shit asi
     local stats = {"Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma"}
 

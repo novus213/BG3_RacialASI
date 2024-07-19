@@ -27,15 +27,11 @@ BasicWarning("IgnoreHomebrew")
 BasicWarning(IgnoreHomebrew)
 
 
-
---local AbilityList_UUID = "b9149c8e-52c8-46e5-9cb6-fc39301c05fe"
-
-StatsList = {"Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma"}
-
-
 --- Constructor for tableInsertRaceStats
 ---@param raceMod table raceMod
-function tableInsertRaceStats(raceMod)
+local function tableInsertRaceStats(raceMod)
+    local RaceStat = {}
+    local StatsList = {"Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma"}
 	if raceMod.Stats ~= nil then
 		for i = 1, 6 do
 			table.insert(RaceStat, "Ability(" .. StatsList[i] .. "," .. raceMod.Stats[i] .. ")")
@@ -46,49 +42,70 @@ function tableInsertRaceStats(raceMod)
 end
 
 
---- Constructor for createPayloadRaceStats
+
+--- Constructor for createSABPayload
+---@param uuid string race Progression.lsx Level 1 UUID
+---@param modGuid string race mod modGuid
+---@param sabUUID string SelectAbilityBonus UUID
+---@return table payload
+local function createSABPayload(modGuid, uuid, sabUUID, sab, sabAmount)
+    return {
+        TargetUUID = uuid,
+        FileType = "Progression",
+        Function = "SelectAbilityBonus",
+        ListUUID = sabUUID,
+        modGuid = modGuid,
+        Amount = sabAmount,
+		Amounts = sab
+    }
+end
+
+
+--- Constructor for createBoostPayload
+---@param uuid string race Progression.lsx Level 1 UUID
+---@param modGuid string race mod modGuid
+---@param ability string ability DnD (Strength ect.)
+---@param score integer ability score
+---@return table payload
+local function createBoostPayload(modGuid, uuid, strings)
+    return {
+        modGuid = modGuid,
+        Target = uuid,
+        FileType = "Progression",
+        Type = "Boosts",
+        Strings = strings
+      }
+end
+
+
+--- Constructor for InsertPayload
 ---@param raceMod table raceMod
-function createPayloadRaceStats(raceMod)
+local function InsertPayload(raceMod)
 local fixAsi = {}  -- Table to store classes with removed shit asi
-local payload = {
-            modGuid = raceMod.modGuid,
-            Target = raceMod.UUID,
-            FileType = "Progression"
-		}
-
 	if raceMod.Sab ~= nil then
-        table.insert(fixAsi, raceMod.Name) -- Add to the list if ASI Fixed
-		payload.Function = "SelectAbilityBonus"
-		payload.Params = {
-			Guid = deps.AbilityList_UUID,
-			Amount = table.getLength(raceMod.Sab),
-			BonusType = "AbilityBonus",
-			Amounts = raceMod.Sab
-		}
+        local payload = {}
+        if Ext.Mod.IsModLoaded(deps.Framework_GUID) and Ext.Mod.IsModLoaded(raceMod.modGuid) then
+            payload = createSABPayload(raceMod.modGuid, raceMod.UUID, deps.AbilityList_UUID, raceMod.Sab, table.getLength(raceMod.Sab))
+            table.insert(fixAsi, raceMod.Name) -- Add to the list if ASI Fixed
+            --Mods.SubclassCompatibilityFramework.Api.InsertSelectors({payload})
+            BasicPrint(string.format("payload SelectAbilityBonus: %s", payload))
+            BasicPrint(string.format("payload SelectAbilityBonus: %s", {payload}))
 
-        if raceMod.modGuid and Ext.Mod.IsModLoaded(raceMod.modGuid) then
-            Mods.SubclassCompatibilityFramework.Api.InsertSelectors({payload})
-            BasicWarning(string.format("payload SelectAbilityBonus: %s", table.dump(payload)))
         end
 
 	end
 
 	if raceMod.Stats ~= nil then
-        if raceMod.Sab ~= nil then
-            table.insert(fixAsi, raceMod.Name) -- Add to the list if ASI Fixed
-        end
-        payload = {}
-        local payload = {
-            modGuid = raceMod.modGuid,
-            Target = raceMod.UUID,
-            FileType = "Progression"
-		}
-		payload.Type = "Boosts"
-		payload.Strings = raceMod.Strings
-
-        if raceMod.modGuid and Ext.Mod.IsModLoaded(raceMod.modGuid) then
+        local payload = {}
+        if Ext.Mod.IsModLoaded(deps.Framework_GUID) and Ext.Mod.IsModLoaded(raceMod.modGuid) then
+            tableInsertRaceStats(raceMod)
+            payload = createBoostPayload(raceMod.modGuid, raceMod.UUID, raceMod.Stats)
+            if raceMod.Sab ~= nil and raceMod.Sab == nil then
+                table.insert(fixAsi, raceMod.Name) -- Add to the list if ASI Fixed
+            end
             --Mods.SubclassCompatibilityFramework.Api.InsertBoosts({payload})
-            BasicWarning(string.format("payload BOOST : %s", table.dump(payload)))
+            BasicPrint(string.format("payload BOOST : %s", payload))
+            BasicPrint(string.format("payload BOOST : %s", {payload}))
         end
 
 	end
@@ -100,77 +117,43 @@ local payload = {
 end
 
 --- Constructor for builder5eRaces
-function builder5eRaces()
+local function builder5eRaces()
     if IgnoreAll == false then
-        RaceStat =  {}
+        --RaceStat = {}
         for _, raceMod in pairs(RaceLibrary) do
             if raceMod.SourceBook == nil or raceMod.SourceBook == "" then
                 if IgnoreHomebrew == false then
-                    BasicWarning(string.format("Le mod : %s est bien dans la liste", raceMod.Name))
-                    -- Add Stats
-                    -- Add Sab
-                    tableInsertRaceStats(raceMod)
-                    createPayloadRaceStats(raceMod)
-                    BasicWarning(string.format("Add the Homebrew race: %s", raceMod.Name))
-                    --print("Add the Homebrew race: " .. raceMod.Name)
-                else
-                    --print("Ignore cleaning: " .. raceMod.Name .. " due to IgnoreHomebrew = True")
-                    BasicWarning(string.format("Ignore Adding: %s due to IgnoreHomebrew = True", raceMod.Name))
+                    InsertPayload(raceMod)
                 end
             else
                 if Ignore5eLimited == false then
                     for _, book in pairs(Dnd5eLimited) do
                         if book.bookRef == raceMod.SourceBook then
-                            tableInsertRaceStats(raceMod)
-                            createPayloadRaceStats(raceMod)
-                            -- Add Stats
-                            -- Add Sab
-                            BasicWarning(string.format("Add the 5eLimited race: %s", raceMod.Name))
-                            --print("Add the 5eLimited race: " .. raceMod.Name)
+                            InsertPayload(raceMod)
                         end
                     end
                     if Ignore5e == false then
                         for _, book in pairs(Dnd5e) do
                             if book.bookRef == raceMod.SourceBook then
-                                tableInsertRaceStats(raceMod)
-                                createPayloadRaceStats(raceMod)
-                                -- Add Stats
-                                -- Add Sab
-                                BasicWarning(string.format("Add the 5e race: %s", raceMod.Name))
-                                --print("Add the 5e race: " .. raceMod.Name)
+                                InsertPayload(raceMod)
                             end
                         end
                         if Ignore5eExtended == false then
                             for _, book in pairs(Dnd5eExtended) do
                                 if book.bookRef == raceMod.SourceBook then
-                                    tableInsertRaceStats(raceMod)
-                                    createPayloadRaceStats(raceMod)
-                                    -- Add Stats
-                                    -- Add Sab
-                                    BasicWarning(string.format("Add the 5eExtended race: %s", raceMod.Name))
-                                    --print("Add the 5eExtended race: " .. raceMod.Name)
+                                    InsertPayload(raceMod)
                                 end
                             end
                             if IgnoreLegacy == false then
                                 for _, book in pairs(Legacy) do
                                     if book.bookRef == raceMod.SourceBook then
-                                        tableInsertRaceStats(raceMod)
-                                        createPayloadRaceStats(raceMod)
-                                        -- Add Stats
-                                        -- Add Sab
-                                        BasicWarning(string.format("Add the Legacy race: %s", raceMod.Name))
-                                        --print("Add the Legacy race: " .. raceMod.Name)
+                                        InsertPayload(raceMod)
                                     end
                                 end
                                 if IgnoreFlavours == false then
                                     for _, book in pairs(Flavours) do
                                         if book.bookRef == raceMod.SourceBook then
-                                            tableInsertRaceStats(raceMod)
-                                            createPayloadRaceStats(raceMod)
-                                            -- Add Stats
-                                            -- Add Sab
-                                            BasicWarning(string.format("Add the Flavours race: %s", raceMod.Name))
-                                            --print("Add the Flavours race: " .. raceMod.Name)
+                                            InsertPayload(raceMod)
                                         end
                                     end
                                 else
@@ -194,7 +177,7 @@ function builder5eRaces()
                     --print("Ignore Adding: " .. raceMod.Name .. " due to IgnoreLimited = True")
                 end
             end
-            RaceStat =  {}
+            --RaceStat =  {}
         end
     else
         BasicWarning("Ignore Adding the races ASI")
@@ -206,4 +189,6 @@ end
 --test execute ?
 --builder5eRaces()
 --or idk to TEST
-Ext.Events.StatsLoaded:Subscribe(builder5eRaces)
+if Ext.Mod.IsModLoaded(deps.Framework_GUID) then
+    Ext.Events.StatsLoaded:Subscribe(builder5eRaces)
+end
