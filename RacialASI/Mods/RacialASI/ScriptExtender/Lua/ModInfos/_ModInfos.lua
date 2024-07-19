@@ -4,7 +4,7 @@ local racialASIConfig = {
     LOG_ENABLED = 1,
     Options = {
         AddUnderdarkRaces_LightSensitivity_Passives = { Enabled = true },
-        AddUndeadGhastlyGhouls_LightSensitivity_Passives = { Enabled = true },
+        AddUndeadGhastlyGhouls_TruePotion_and_LightSensitivity_Passives = { Enabled = true },
         RemoveHuman_HumanMilitia_HumanVersatility_Passives = { Enabled = true },
         RemoveHalfElf_HumanMilitia_Passives = { Enabled = true },
         AddGnome_Tinkertools_Spells = { Enabled = true },

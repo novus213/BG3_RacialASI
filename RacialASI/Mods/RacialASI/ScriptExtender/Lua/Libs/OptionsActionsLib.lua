@@ -78,11 +78,18 @@ optionActions = {
             }
         }
     },
-    AddUndeadGhastlyGhouls_LightSensitivity_Passives = {
+    AddUndeadGhastlyGhouls_TruePotion_and_LightSensitivity_Passives = {
         actions = {
             {
                 action = "InsertPassives",
                 payloads = {
+                    {
+                        modGuid = "1ebf4a1c-01d4-41ed-8aa1-5b3975c6d019", -- UndeadGhastly Ghouls Add REAL Undead Passive to Undead Race
+                        Target = "fd58a3fe-9d5f-4ae0-a7cd-724914cb7c1b",
+                        FileType = "Progression",
+                        Type = "PassivesAdded",
+                        Strings = { "Fenrules_Undeath", "Fenrules_Undying_Fervor" }
+                    },
                     {
                         modGuid = "1ebf4a1c-01d4-41ed-8aa1-5b3975c6d019", -- UndeadGhastly Ghouls
                         Target = "a21579fc-b7d7-4295-bf5c-d2111be3f13a",
@@ -239,11 +246,18 @@ optionActionsReverse = {
             }
         }
     },
-    AddUndeadGhastlyGhouls_LightSensitivity_Passives = {
+    AddUndeadGhastlyGhouls_TruePotion_and_LightSensitivity_Passives = {
         actions = {
             {
-                action = "RemovePassives",
+                action = "InsertPassives",
                 payloads = {
+                    {
+                        modGuid = "1ebf4a1c-01d4-41ed-8aa1-5b3975c6d019", -- UndeadGhastly Ghouls Add REAL Undead Passive to Undead Race
+                        Target = "fd58a3fe-9d5f-4ae0-a7cd-724914cb7c1b",
+                        FileType = "Progression",
+                        Type = "PassivesAdded",
+                        Strings = { "Fenrules_Undeath", "Fenrules_Undying_Fervor" }
+                    },
                     {
                         modGuid = "1ebf4a1c-01d4-41ed-8aa1-5b3975c6d019", -- UndeadGhastly Ghouls
                         Target = "a21579fc-b7d7-4295-bf5c-d2111be3f13a",

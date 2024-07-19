@@ -25,72 +25,6 @@
                 }
             ]
         },
-        {
-            "Comment": "Remove Boosts To Avariel Ren",
-			"UUID": "77b6f9ec-7d6a-44b2-b110-88bf025eb586",
-            "Strings": [
-                {
-                    "Action": "Remove",
-                    "Type": "Boosts",
-                    "Strings": ["Ability(Dexterity,1)","Ability(Wisdom,1)"]
-                }
-            ]
-        },
-        {
-            "Comment": "Remove Boosts To Dhampyr Sassandra RU_SHI",
-			"UUID": "042e6092-1602-4338-b6f9-cc7987f3bff4",
-            "Strings": [
-                {
-                    "Action": "Remove",
-                    "Type": "Boosts",
-                    "Strings": ["Ability(Strength,2)","Ability(Intelligence,2)","Ability(Dexterity,-2)"]
-                }
-            ]
-        },
-        {
-            "Comment": "Remove Boosts To Dhampyr Sassandra SVETOCHER",
-			"UUID": "ceae071e-2ff2-4043-a2b8-a7fc1ab16065",
-            "Strings": [
-                {
-                    "Action": "Remove",
-                    "Type": "Boosts",
-                    "Strings": ["Ability(Strength,2)","Ability(Charisma,2)","Ability(Constitution,-2)"]
-                }
-            ]
-        },
-        {
-            "Comment": "Remove Boosts To Dhampyr Sassandra AJIBACHANA",
-			"UUID": "65930b4d-75ca-4968-93b0-dde6662d5882",
-            "Strings": [
-                {
-                    "Action": "Remove",
-                    "Type": "Boosts",
-                    "Strings": ["Ability(Dexterity,2)","Ability(Intelligence,2)","Ability(Wisdom,-2)"]
-                }
-            ]
-        },
-        {
-            "Comment": "Remove Boosts To Dhampyr Sassandra ANCIENTBORN",
-			"UUID": "ebd122f3-9223-4cc0-ac98-3810995dde9b",
-            "Strings": [
-                {
-                    "Action": "Remove",
-                    "Type": "Boosts",
-                    "Strings": ["Ability(Strength,2)","Ability(Wisdom,2)","Ability(Constitution,-2)"]
-                }
-            ]
-        },
-        {
-            "Comment": "Remove Boosts To Skeleton race Rexsaze",
-			"UUID": "b5f04836-e2ef-4eb6-93d5-4aad7f3b1c20",
-            "Strings": [
-                {
-                    "Action": "Remove",
-                    "Type": "Boosts",
-                    "Strings": ["Ability(Constitution,1)"]
-                }
-            ]
-        },
 		{
             "Comment": "Human Larian default",
 			"UUID": "139e1b8c-dfa1-4b2d-895c-efb170736093",
@@ -345,13 +279,6 @@
             "UUID": "582ed05c-c6fa-4d6f-99f9-efcc9de769f9",
             "Type": "SpellList",
             "Items": ["Target_MinorIllusion"]
-        },
-        {
-            "Comment": "Add REAL Undead Passive to Undead Race",
-            "Action": "Insert",
-            "UUID": "fd58a3fe-9d5f-4ae0-a7cd-724914cb7c1b",
-            "Type": "PassiveList",
-            "Items": ["Fenrules_Undeath",",Fenrules_Undying_Fervor"]
         }
     ]
 }

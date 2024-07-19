@@ -89,11 +89,11 @@
                             "Tooltip": "Enable or disable RemoveHalfElf_HumanMilitia_Passives."
                         },
                         {
-                            "Id": "AddUndeadGhastlyGhouls_LightSensitivity_Passives",
-                            "Name": "AddUndeadGhastlyGhouls_LightSensitivity_Passives",
+                            "Id": "AddUndeadGhastlyGhouls_TruePotion_and_LightSensitivity_Passives",
+                            "Name": "AddUndeadGhastlyGhouls_TruePotion_and_LightSensitivity_Passives",
                             "Type": "checkbox",
                             "Default": true,
-                            "Tooltip": "Enable or disable AddUndeadGhastlyGhouls_LightSensitivity_Passives."
+                            "Tooltip": "Enable or disable AddUndeadGhastlyGhouls_TruePotion_and_LightSensitivity_Passives."
                         },
                         {
                             "Id": "AddUnderdarkRaces_LightSensitivity_Passives",
