@@ -50,13 +50,16 @@ end
 ---@return table payload
 local function createSABPayload(modGuid, uuid, sabUUID, sab, sabAmount)
     return {
-        TargetUUID = uuid,
+        Target = uuid,
         FileType = "Progression",
         Function = "SelectAbilityBonus",
-        ListUUID = sabUUID,
         modGuid = modGuid,
-        Amount = sabAmount,
-		Amounts = sab
+        Params = {
+            Guid = sabUUID,
+            Amount = sabAmount,
+            Amounts = sab,
+            BonusType = "AbilityBonus"
+        }
     }
 end
 
@@ -87,12 +90,9 @@ local fixAsi = {}  -- Table to store classes with removed shit asi
         if Ext.Mod.IsModLoaded(deps.Framework_GUID) and Ext.Mod.IsModLoaded(raceMod.modGuid) then
             payload = createSABPayload(raceMod.modGuid, raceMod.UUID, deps.AbilityList_UUID, raceMod.Sab, table.getLength(raceMod.Sab))
             table.insert(fixAsi, raceMod.Name) -- Add to the list if ASI Fixed
-            --Mods.SubclassCompatibilityFramework.Api.InsertSelectors({payload})
-            BasicPrint(string.format("payload SelectAbilityBonus: %s", payload))
-            BasicPrint(string.format("payload SelectAbilityBonus: %s", {payload}))
-
+            Mods.SubclassCompatibilityFramework.Api.InsertSelectors({payload})
+            BasicWarning(string.format("payload InsertSelectors: %s", table.dump(payload)))
         end
-
 	end
 
 	if raceMod.Stats ~= nil then
@@ -103,11 +103,9 @@ local fixAsi = {}  -- Table to store classes with removed shit asi
             if raceMod.Sab ~= nil and raceMod.Sab == nil then
                 table.insert(fixAsi, raceMod.Name) -- Add to the list if ASI Fixed
             end
-            --Mods.SubclassCompatibilityFramework.Api.InsertBoosts({payload})
-            BasicPrint(string.format("payload BOOST : %s", payload))
-            BasicPrint(string.format("payload BOOST : %s", {payload}))
+            Mods.SubclassCompatibilityFramework.Api.InsertBoosts({payload})
+            BasicWarning(string.format("payload InsertBoosts: %s", table.dump(payload)))
         end
-
 	end
     if #fixAsi > 0 then
         BasicWarning("============> Ability added to " ..
