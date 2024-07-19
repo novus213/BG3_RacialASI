@@ -54,6 +54,7 @@ Flavours = {	--[[ Flavours ]]
 	{bookRef = "KftGV",		bookName = "Keys from the Golden Vault"							},
 	{bookRef = "PaBTSO",	bookName = "Phandelver and Below: The Shattered Obelisk"		},
 	{bookRef = "VEoR",		bookName = "Vecna: Eve of Ruin"									},
+	{bookRef = "GHPG",		bookName = "Grim Hollow Players Guide"							},
 }
 Legacy = {	--[[ Legacy --]]
 	{bookRef = "VGtML",		bookName = "Volo's Guide to Monsters"							},
