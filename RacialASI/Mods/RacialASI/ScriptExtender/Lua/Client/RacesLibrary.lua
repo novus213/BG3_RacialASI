@@ -159,7 +159,7 @@ for _, raceMod in pairs(RaceLibrary) do
 				BonusType = "AbilityBonus",
 				Amounts = raceMod.Sab
 			}
-			Mods.SubclassCompatibilityFramework.Api.InsertBoosts({payload})
+			Mods.SubclassCompatibilityFramework.Api.InsertSelectors({payload})
 		end
 
 		if raceMod.Stats ~= nil then

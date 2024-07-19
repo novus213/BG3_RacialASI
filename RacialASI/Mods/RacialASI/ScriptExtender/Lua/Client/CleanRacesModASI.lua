@@ -99,7 +99,7 @@ function CleanOnStatsLoaded()
 
         -- remove +2+1, +1, +1+1 ect..
         local payload = createSABPayload(mod.UUID, mod.modGuid, AbilityList_UUID)
-        Mods.SubclassCompatibilityFramework.Api.InsertSelectors({payload})
+        Mods.SubclassCompatibilityFramework.Api.RemoveSelectors({payload})
 
         -- remove Boost Ability
         for _, ability in ipairs(stats) do
