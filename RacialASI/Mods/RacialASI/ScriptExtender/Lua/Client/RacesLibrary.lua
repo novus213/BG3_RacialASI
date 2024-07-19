@@ -128,8 +128,12 @@ for _, raceMod in pairs(RaceLibrary) do
 		for i = 1, 6 do
 			table.insert(RaceStat, "Ability(" .. StatsList[i] .. "," .. raceMod.Stats[i] .. ")")
 		end
+		RaceLibrary[raceMod]=RaceStat
+		print(RaceLibrary[raceMod])
+		print(RaceStat)
+		RaceStat =  {}
 end
 
-print(RaceStat)
+
 
 --StringDeSesMort = {RaceStat}
