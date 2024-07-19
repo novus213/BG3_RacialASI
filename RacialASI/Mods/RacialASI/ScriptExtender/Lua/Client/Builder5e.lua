@@ -41,7 +41,7 @@ function tableInsertRaceStats(raceMod)
 			table.insert(RaceStat, "Ability(" .. StatsList[i] .. "," .. raceMod.Stats[i] .. ")")
 		end
 		raceMod.Stats = RaceStat
-        BasicWarning(string.format("payload: %s", table.dump(raceMod)))
+        BasicWarning(string.format("raceMod.Stats: %s", table.dump(raceMod.Stats)))
 	end
 end
 
@@ -49,13 +49,15 @@ end
 --- Constructor for createPayloadRaceStats
 ---@param raceMod table raceMod
 function createPayloadRaceStats(raceMod)
+local fixAsi = {}  -- Table to store classes with removed shit asi
 local payload = {
-		modGuid = raceMod.modGuid,
-		Target = raceMod.UUID,
-		FileType = "Progression"
+            modGuid = raceMod.modGuid,
+            Target = raceMod.UUID,
+            FileType = "Progression"
 		}
 
 	if raceMod.Sab ~= nil then
+        table.insert(fixAsi, raceMod.Name) -- Add to the list if ASI Fixed
 		payload.Function = "SelectAbilityBonus"
 		payload.Params = {
 			Guid = deps.AbilityList_UUID,
@@ -63,22 +65,38 @@ local payload = {
 			BonusType = "AbilityBonus",
 			Amounts = raceMod.Sab
 		}
-        Mods.SubclassCompatibilityFramework.Api.InsertSelectors({payload})
-        BasicWarning(string.format("payload: %s", table.dump(payload)))
+
+        if raceMod.modGuid and Ext.Mod.IsModLoaded(raceMod.modGuid) then
+            Mods.SubclassCompatibilityFramework.Api.InsertSelectors({payload})
+            BasicWarning(string.format("payload SelectAbilityBonus: %s", table.dump(payload)))
+        end
+
 	end
 
 	if raceMod.Stats ~= nil then
+        if raceMod.Sab ~= nil then
+            table.insert(fixAsi, raceMod.Name) -- Add to the list if ASI Fixed
+        end
         payload = {}
         local payload = {
-		modGuid = raceMod.modGuid,
-		Target = raceMod.UUID,
-		FileType = "Progression"
+            modGuid = raceMod.modGuid,
+            Target = raceMod.UUID,
+            FileType = "Progression"
 		}
 		payload.Type = "Boosts"
 		payload.Strings = raceMod.Strings
-		Mods.SubclassCompatibilityFramework.Api.InsertBoosts({payload})
-        BasicWarning(string.format("payload: %s", table.dump(payload)))
+
+        if raceMod.modGuid and Ext.Mod.IsModLoaded(raceMod.modGuid) then
+            --Mods.SubclassCompatibilityFramework.Api.InsertBoosts({payload})
+            BasicWarning(string.format("payload BOOST : %s", table.dump(payload)))
+        end
+
 	end
+    if #fixAsi > 0 then
+        BasicWarning("============> Ability added to " ..
+                 #fixAsi .. " mods: " ..
+                 table.concat(fixAsi, ", "))
+    end
 end
 
 --- Constructor for builder5eRaces
