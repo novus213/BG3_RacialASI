@@ -46,7 +46,7 @@ RaceLibrary = {
 		SourceBook		=	"PHB",
 		MainRace		=	false,
 		Stats			=	{"0", "2", "0", "0", "1", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
-		Bonus			=	"ProficiencyBonus(Skill,Stealth)"
+		Bonus			=	{"ProficiencyBonus(Skill,Stealth)"}
 	},
 
 --[[
