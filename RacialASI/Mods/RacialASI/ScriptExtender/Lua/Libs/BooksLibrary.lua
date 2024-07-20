@@ -57,7 +57,8 @@ Flavours = {	--[[ Flavours ]]
 	{bookRef = "GHPG",		bookName = "Grim Hollow Players Guide"							},
 	{bookRef = "TftFG",		bookName = "Tales from the Firelit Gathering"					},
 	{bookRef = "UA",		bookName = "Unearthed Arcana"									},
-	{bookRef = "PSA",		bookName = "Plane Shift: Amonkhet"								}
+	{bookRef = "PSA",		bookName = "Plane Shift: Amonkhet"								},
+	{bookRef = "DNDB",		bookName = "	DND Beyond"										}
 }
 Legacy = {	--[[ Legacy --]]
 	{bookRef = "VGtML",		bookName = "Volo's Guide to Monsters"							}
