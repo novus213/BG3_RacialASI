@@ -415,7 +415,7 @@ ClassesLibrary = {
 		ParentGuid		=	"114e7aee-d1d4-4371-8d90-8a2080592faf",
 		UUID			=	"4b5da2f5-b999-4623-8bff-a63df5560fb3",
 		Author			=	"Larian",
-		SourceBook		=	"",
+		SourceBook		=	"PHB",
 		MainClasse		=	false,
 		isLvl20			=   true,
 		isOutdated		=	false
@@ -425,7 +425,7 @@ ClassesLibrary = {
 		ParentGuid		=	"114e7aee-d1d4-4371-8d90-8a2080592faf",
 		UUID			=	"c54d7591-b305-4f22-b2a7-1bf5c4a3470a",
 		Author			=	"Larian",
-		SourceBook		=	"",
+		SourceBook		=	"PHB",
 		MainClasse		=	false,
 		isLvl20			=   true,
 		isOutdated		=	false
@@ -435,7 +435,7 @@ ClassesLibrary = {
 		ParentGuid		=	"114e7aee-d1d4-4371-8d90-8a2080592faf",
 		UUID			=	"f013d01b-3310-43f7-81bf-a51130442b5e",
 		Author			=	"Larian",
-		SourceBook		=	"",
+		SourceBook		=	"PHB",
 		MainClasse		=	false,
 		isLvl20			=   true,
 		isOutdated		=	false
@@ -445,7 +445,7 @@ ClassesLibrary = {
 		ParentGuid		=	"114e7aee-d1d4-4371-8d90-8a2080592faf",
 		UUID			=	"ebe18794-b5e1-41c4-befa-4b9d6922b0ec",
 		Author			=	"Larian",
-		SourceBook		=	"",
+		SourceBook		=	"PHB",
 		MainClasse		=	false,
 		isLvl20			=   true,
 		isOutdated		=	false
@@ -455,7 +455,7 @@ ClassesLibrary = {
 		ParentGuid		=	"114e7aee-d1d4-4371-8d90-8a2080592faf",
 		UUID			=	"6dec76d0-df22-411c-8a78-3d6fb843ae50",
 		Author			=	"Larian",
-		SourceBook		=	"",
+		SourceBook		=	"PHB",
 		MainClasse		=	false,
 		isLvl20			=   true,
 		isOutdated		=	false
@@ -465,7 +465,7 @@ ClassesLibrary = {
 		ParentGuid		=	"114e7aee-d1d4-4371-8d90-8a2080592faf",
 		UUID			=	"89bacf1b-8f15-4972-ada7-bf59c7c78441",
 		Author			=	"Larian",
-		SourceBook		=	"",
+		SourceBook		=	"PHB",
 		MainClasse		=	false,
 		isLvl20			=   true,
 		isOutdated		=	false
@@ -475,11 +475,289 @@ ClassesLibrary = {
 		ParentGuid		=	"114e7aee-d1d4-4371-8d90-8a2080592faf",
 		UUID			=	"b9ccf90e-b35b-4b73-b896-8ed2d32ae8c6",
 		Author			=	"Larian",
-		SourceBook		=	"",
+		SourceBook		=	"PHB",
 		MainClasse		=	false,
 		isLvl20			=   true,
 		isOutdated		=	false
 	},
+	{
+		Name			=	"Cleric - Death Domain",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/432",
+		modGuid			=	"aaaa",
+		UUID			=	"aaaa",
+		Author			=	"baltavi",
+		SourceBook		=	"DMG",
+		MainClasse		=	false,
+		isLvl20			=   true,
+		isOutdated		=	false
+	},
+	{
+		Name			=	"Cleric - Arcana Domain",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/432",
+		modGuid			=	"aaaa",
+		UUID			=	"aaaa",
+		Author			=	"baltavi",
+		SourceBook		=	"SCAG",
+		MainClasse		=	false,
+		isLvl20			=   true,
+		isOutdated		=	false
+	},
+	{
+		Name			=	"Cleric - Forge Domain",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/432",
+		modGuid			=	"aaaa",
+		UUID			=	"aaaa",
+		Author			=	"baltavi",
+		SourceBook		=	"XGtE",
+		MainClasse		=	false,
+		isLvl20			=   true,
+		isOutdated		=	false
+	},
+	{
+		Name			=	"Cleric - Grave Domain",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/432",
+		modGuid			=	"aaaa",
+		UUID			=	"aaaa",
+		Author			=	"baltavi",
+		SourceBook		=	"XGtE",
+		MainClasse		=	false,
+		isLvl20			=   true,
+		isOutdated		=	false
+	},
+	{
+		Name			=	"Cleric - Order Domain",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/432",
+		modGuid			=	"aaaa",
+		UUID			=	"aaaa",
+		Author			=	"baltavi",
+		SourceBook		=	"GGtR",
+		MainClasse		=	false,
+		isLvl20			=   true,
+		isOutdated		=	false
+	},
+	{
+		Name			=	"Cleric - Peace Domain",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/432",
+		modGuid			=	"aaaa",
+		UUID			=	"aaaa",
+		Author			=	"baltavi",
+		SourceBook		=	"TCoE",
+		MainClasse		=	false,
+		isLvl20			=   true,
+		isOutdated		=	false
+	},
+	{
+		Name			=	"Cleric - Twilight Domain",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/432",
+		modGuid			=	"aaaa",
+		UUID			=	"aaaa",
+		Author			=	"baltavi",
+		SourceBook		=	"TCoE",
+		MainClasse		=	false,
+		isLvl20			=   true,
+		isOutdated		=	false
+	},
+	{
+		Name			=	"Cleric - Death Domain (Standalone)",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/1552",
+		modGuid			=	"aaaa",
+		UUID			=	"aaaa",
+		Author			=	"CrackerJackGCO",
+		SourceBook		=	"DMG",
+		MainClasse		=	false,
+		isLvl20			=   false,
+		isOutdated		=	false
+	},
+	{
+		Name			=	"Cleric - Forge Domain (Standalone)",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/5685",
+		modGuid			=	"aaaa",
+		UUID			=	"aaaa",
+		Author			=	"skystryke468",
+		SourceBook		=	"XGtE",
+		MainClasse		=	false,
+		isLvl20			=   false,
+		isOutdated		=	false
+	},
+	{
+		Name			=	"Cleric - Grave Domain (Standalone)",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/7909",
+		modGuid			=	"aaaa",
+		UUID			=	"aaaa",
+		Author			=	"skystryke468",
+		SourceBook		=	"XGtE",
+		MainClasse		=	false,
+		isLvl20			=   false,
+		isOutdated		=	false
+	},
+	{
+		Name			=	"Cleric - Twilight Domain (Standalone)",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/5481",
+		modGuid			=	"aaaa",
+		UUID			=	"aaaa",
+		Author			=	"skystryke468",
+		SourceBook		=	"TCoE",
+		MainClasse		=	false,
+		isLvl20			=   false,
+		isOutdated		=	false
+	},
+	{
+		Name			=	"Cleric - Inquisition Domain",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/8931",
+		modGuid			=	"aaaa",
+		UUID			=	"aaaa",
+		Author			=	"havsglimt",
+		SourceBook		=	"GHPG",
+		MainClasse		=	false,
+		isLvl20			=   true,
+		isOutdated		=	false
+	},
+	{
+		Name			=	"Cleric - Eldritch Domain",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/4999",
+		modGuid			=	"aaaa",
+		UUID			=	"aaaa",
+		Author			=	"tmus",
+		SourceBook		=	"GHPG",
+		MainClasse		=	false,
+		isLvl20			=   true,
+		isOutdated		=	false
+	},
+	{
+		Name			=	"Cleric - Protection Domain",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/9449",
+		modGuid			=	"aaaa",
+		UUID			=	"aaaa",
+		Author			=	"jevanoff",
+		SourceBook		=	"UA",
+		MainClasse		=	false,
+		isLvl20			=   true,
+		isOutdated		=	false
+	},
+	{
+		Name			=	"Cleric - Strength Domain",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/9054",
+		modGuid			=	"aaaa",
+		UUID			=	"aaaa",
+		Author			=	"jevanoff",
+		SourceBook		=	"PSA",
+		MainClasse		=	false,
+		isLvl20			=   true,
+		isOutdated		=	false
+	},
+	{
+		Name			=	"Cleric - Ambition Domain",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/8734",
+		modGuid			=	"aaaa",
+		UUID			=	"aaaa",
+		Author			=	"jevanoff",
+		SourceBook		=	"PSA",
+		MainClasse		=	false,
+		isLvl20			=   true,
+		isOutdated		=	false
+	},
+	{
+		Name			=	"Cleric - Zeal Domain",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/9089",
+		modGuid			=	"aaaa",
+		UUID			=	"aaaa",
+		Author			=	"Lumaterian",
+		SourceBook		=	"PSA",
+		MainClasse		=	false,
+		isLvl20			=   true,
+		isOutdated		=	false
+	},
+	{
+		Name			=	"Cleric - Solidarity Domain",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/8765",
+		modGuid			=	"aaaa",
+		UUID			=	"aaaa",
+		Author			=	"Lumaterian",
+		SourceBook		=	"PSA",
+		MainClasse		=	false,
+		isLvl20			=   true,
+		isOutdated		=	false
+	},
+
+-- ------------------------------ Cleric Homebrew ------------------------------ --
+
+--	{
+--		Name			=	"Cleric - Moon Domain",
+--		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/432",
+--		modGuid			=	"aaaa",
+--		UUID			=	"aaaa",
+--		Author			=	"baltavi",
+--		SourceBook		=	"",
+--		MainClasse		=	false,
+--		isLvl20			=   true,
+--		isOutdated		=	false
+--	},
+--	{
+--		Name			=	"Cleric - Moon Domain (Standalone)",
+--		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/6758",
+--		modGuid			=	"aaaa",
+--		UUID			=	"aaaa",
+--		Author			=	"skystryke468",
+--		SourceBook		=	"",
+--		MainClasse		=	false,
+--		isLvl20			=   false,
+--		isOutdated		=	false
+--	},
+--	{
+--		Name			=	"Cleric - Blood Domain",
+--		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/432",
+--		modGuid			=	"aaaa",
+--		UUID			=	"aaaa",
+--		Author			=	"baltavi",
+--		SourceBook		=	"",
+--		MainClasse		=	false,
+--		isLvl20			=   true,
+--		isOutdated		=	false
+--	},
+--	{
+--		Name			=	"Cleric - Mind Domain",
+--		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/9887",
+--		modGuid			=	"aaaa",
+--		UUID			=	"aaaa",
+--		Author			=	"jevanoff",
+--		SourceBook		=	"",
+--		MainClasse		=	false,
+--		isLvl20			=   true,
+--		isOutdated		=	false
+--	},
+--	{
+--		Name			=	"Cleric - Darkness Domain",
+--		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/8654",
+--		modGuid			=	"aaaa",
+--		UUID			=	"aaaa",
+--		Author			=	"xarara",
+--		SourceBook		=	"",
+--		MainClasse		=	false,
+--		isLvl20			=   true,
+--		isOutdated		=	false
+--	},
+--	{
+--		Name			=	"Cleric - Pained Domain",
+--		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/10268",
+--		modGuid			=	"aaaa",
+--		UUID			=	"aaaa",
+--		Author			=	"khbsd",
+--		SourceBook		=	"",
+--		MainClasse		=	false,
+--		isLvl20			=   false,
+--		isOutdated		=	false
+--	},
+--	{
+--		Name			=	"Cleric - Song Domain",
+--		modURL			=	"hhttps://www.nexusmods.com/baldursgate3/mods/7049",
+--		modGuid			=	"aaaa",
+--		UUID			=	"aaaa",
+--		Author			=	"yoonmoonsick",
+--		SourceBook		=	"",
+--		MainClasse		=	false,
+--		isLvl20			=   false,
+--		isOutdated		=	false
+--	},
 
 
 -- ------------------------------------------------------------------------------ --
