@@ -108,7 +108,14 @@ optionActions = {
                 payloads = {
                     {
                         modGuid = "1ebf4a1c-01d4-41ed-8aa1-5b3975c6d019",
-                        Target = "139e1b8c-dfa1-4b2d-895c-efb170736093", -- Larian Human Passives
+                        Target = "139e1b8c-dfa1-4b2d-895c-efb170736093", -- Fantastic M Human Passives
+                        FileType = "Progression",
+                        Type = "PassivesAdded",
+                        Strings = { "HumanMilitia", "HumanVersatility" }
+                    },
+                     {
+                        modGuid = "1ebf4a1c-01d4-41ed-8aa1-5b3975c6d019",
+                        Target = "dbde4d66-d3e4-4c3f-ae87-fd6e2d1cd276", -- Larian Human Passives
                         FileType = "Progression",
                         Type = "PassivesAdded",
                         Strings = { "HumanMilitia", "HumanVersatility" }
@@ -276,7 +283,14 @@ optionActionsReverse = {
                 payloads = {
                     {
                         modGuid = "1ebf4a1c-01d4-41ed-8aa1-5b3975c6d019",
-                        Target = "139e1b8c-dfa1-4b2d-895c-efb170736093", -- Larian Human Passives
+                        Target = "139e1b8c-dfa1-4b2d-895c-efb170736093", -- Fantastic M Human Passives
+                        FileType = "Progression",
+                        Type = "PassivesAdded",
+                        Strings = { "HumanMilitia", "HumanVersatility" }
+                    },
+                     {
+                        modGuid = "1ebf4a1c-01d4-41ed-8aa1-5b3975c6d019",
+                        Target = "dbde4d66-d3e4-4c3f-ae87-fd6e2d1cd276", -- Larian Human Passives
                         FileType = "Progression",
                         Type = "PassivesAdded",
                         Strings = { "HumanMilitia", "HumanVersatility" }
