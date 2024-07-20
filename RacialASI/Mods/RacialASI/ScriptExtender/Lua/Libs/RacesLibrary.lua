@@ -108,7 +108,7 @@ RaceLibrary = {
 	{
 		Name			=	"Dwarf - Hill default",
 		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
-		UUID			=	"07d038e-1add-4335-81d1-b0861f524c19",
+		UUID			=	"3c9a0bd8-bb0f-4a42-b77f-7a9a1cff2e5d",
 		Author			=	"Larian",
 		SourceBook		=	"PHB",
 		MainRace		=	false,

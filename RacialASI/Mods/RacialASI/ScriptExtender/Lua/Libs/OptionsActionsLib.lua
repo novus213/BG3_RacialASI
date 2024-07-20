@@ -27,7 +27,7 @@ optionActions = {
                 payloads = {
                     {
                         modGuid = "1ebf4a1c-01d4-41ed-8aa1-5b3975c6d019",
-                        Target = "582ed05c-c6fa-4d6f-99f9-efcc9de769f9",
+                        Target = "a63bbb3c-c37c-4578-94e6-7d1c4c063d5c",
                         FileType = "Progression",
                         Function = "AddSpells",
                         Params = {
@@ -241,7 +241,7 @@ optionActionsReverse = {
                 payloads = {
                     {
                         modGuid = "1ebf4a1c-01d4-41ed-8aa1-5b3975c6d019",
-                        Target = "582ed05c-c6fa-4d6f-99f9-efcc9de769f9",
+                        Target = "a63bbb3c-c37c-4578-94e6-7d1c4c063d5c",
                         FileType = "Progression",
                         Function = "AddSpells",
                         Params = {
