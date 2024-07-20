@@ -5,10 +5,10 @@ ClassesLibrary = {
 -- ------------------------------------------------------------------------------ --
 
     {
-		Name 			=	"Artificer - main",
+		Name 			=	"Artificer",
 		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/1779",
-		modGuid 		=	"aaaa",
-		UUID			=	"aaaa",
+		modGuid 		=	"88fadf2c-152d-404e-b863-c12273559e1c",
+		UUID			=	"c1965de9-87f1-47ee-93c7-43c54f685f2d",
 		Author			=	"KiderionLykon",
 		SourceBook		=	"TCoE",
 		MainClasse		=	true,
@@ -18,7 +18,7 @@ ClassesLibrary = {
     {
 		Name			=	"Artificer - Alchemist",
 		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/1779",
-		modGuid 		=	"aaaa",
+		modGuid 		=	"88fadf2c-152d-404e-b863-c12273559e1c",
 		UUID			=	"aaaa",
 		Author			=	"KiderionLykon",
 		SourceBook		=	"TCoE",
@@ -29,7 +29,7 @@ ClassesLibrary = {
     {
 		Name 			=	"Artificer - Armorer",
 		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/1779",
-		modGuid 		=	"aaaa",
+		modGuid 		=	"88fadf2c-152d-404e-b863-c12273559e1c",
 		UUID 			=	"aaaa",
 		Author			=	"KiderionLykon",
 		SourceBook		=	"TCoE",
@@ -40,7 +40,7 @@ ClassesLibrary = {
     {
 		Name 			=	"Artificer - Artillerist",
 		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/1779",
-		modGuid 		=	"aaaa",
+		modGuid 		=	"88fadf2c-152d-404e-b863-c12273559e1c",
 		UUID 			=	"aaaa",
 		Author			=	"KiderionLykon",
 		SourceBook		=	"TCoE",
@@ -51,7 +51,7 @@ ClassesLibrary = {
     {
 		Name			=	"Artificer - Battle Smith",
 		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/1779",
-		modGuid			=	"aaaa",
+		modGuid			=	"88fadf2c-152d-404e-b863-c12273559e1c",
 		UUID			=	"aaaa",
 		Author			=	"KiderionLykon",
 		SourceBook		=	"TCoE",
@@ -64,7 +64,7 @@ ClassesLibrary = {
 -- ---------------------------- Barbarian subclasses ---------------------------- --
 -- ------------------------------------------------------------------------------ --
 	{
-		Name			=	"Barbarian - Vanilla Default",
+		Name			=	"Barbarian - Vanilla",
 		ParentGuid		=	"d8cadb42-0ff9-4049-afaf-e5d78d06a399",
 		UUID			=	"a2198ee9-ea4c-468e-b6b4-22b32d37806e",
 		Author			=	"Larian",
@@ -255,7 +255,7 @@ ClassesLibrary = {
 -- ------------------------------------------------------------------------------- --
 
 	{
-		Name			=	"Bard - Vanilla Default",
+		Name			=	"Bard - Vanilla",
 		ParentGuid		=	"92cd50b6-eb1b-4824-8adb-853e90c34c90",
 		UUID			=	"374c3aae-828b-44d8-b4e3-51ba802977dd",
 		Author			=	"Larian",
@@ -289,11 +289,113 @@ ClassesLibrary = {
 		ParentGuid		=	"92cd50b6-eb1b-4824-8adb-853e90c34c90",
 		UUID			=	"c4bd5252-d68a-4330-9431-5e8ab24c5f29", -- At lvl 3 of bard
 		Author			=	"Larian",
+		SourceBook		=	"XGtE",
+		MainClasse		=	false,
+		isLvl20			=   true,
+		isOutdated		=	false
+	},
+	{
+		Name			=	"Bard - College of Glamour",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/741",
+		modGuid			=	"aaaa",
+		UUID			=	"aaaa",
+		Author			=	"Bonebreaker687",
+		SourceBook		=	"XGtE",
+		MainClasse		=	false,
+		isLvl20			=   false,
+		isOutdated		=	false
+	},
+--	{
+--		Name			=	"Bard - College of Whispers",
+--		modURL			=	"",
+--		modGuid			=	"aaaa",
+--		UUID			=	"aaaa",
+--		Author			=	"aaa",
+--		SourceBook		=	"XGtE",
+--		MainClasse		=	false,
+--		isLvl20			=   true,
+--		isOutdated		=	false
+--	},
+	{
+		Name			=	"Bard - College of Creation",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/4519",
+		modGuid			=	"aaaa",
+		UUID			=	"aaaa",
+		Author			=	"ghkdlxld",
 		SourceBook		=	"TCoE",
 		MainClasse		=	false,
 		isLvl20			=   true,
 		isOutdated		=	false
 	},
+	{
+		Name			=	"Bard - College of Eloquence",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/4651",
+		modGuid			=	"aaaa",
+		UUID			=	"aaaa",
+		Author			=	"ghkdlxld",
+		SourceBook		=	"MOoT",
+		MainClasse		=	false,
+		isLvl20			=   true,
+		isOutdated		=	false
+	},
+	{
+		Name			=	"Bard - College of Spirits",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/4309",
+		modGuid			=	"aaaa",
+		UUID			=	"aaaa",
+		Author			=	"havsglimt",
+		SourceBook		=	"VRGtR",
+		MainClasse		=	false,
+		isLvl20			=   false,
+		isOutdated		=	false
+	},
+	{
+		Name			=	"Bard - College of Spirits (legacy)",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/2367",
+		modGuid			=	"aaaa",
+		UUID			=	"aaaa",
+		Author			=	"REALvalco",
+		SourceBook		=	"VRGtR",
+		MainClasse		=	false,
+		isLvl20			=   false,
+		isOutdated		=	true
+	},
+
+-- -------------------------------- Bard homebrew -------------------------------- --
+
+--	{
+--		Name			=	"Bard - College of Shuffling",
+--		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/10079",
+--		modGuid			=	"aaaa",
+--		UUID			=	"aaaa",
+--		Author			=	"SydMeier",
+--		SourceBook		=	"",
+--		MainClasse		=	false,
+--		isLvl20			=   true,
+--		isOutdated		=	false
+--	},
+--	{
+--		Name			=	"Bard - College of Bae'qeshel",
+--		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/8861",
+--		modGuid			=	"aaaa",
+--		UUID			=	"aaaa",
+--		Author			=	"Tet42",
+--		SourceBook		=	"",
+--		MainClasse		=	false,
+--		isLvl20			=   true,
+--		isOutdated		=	false
+--	},
+--	{
+--		Name			=	"Bard - College of Players",
+--		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/909",
+--		modGuid			=	"aaaa",
+--		UUID			=	"aaaa",
+--		Author			=	"DroZzhat",
+--		SourceBook		=	"",
+--		MainClasse		=	false,
+--		isLvl20			=   true,
+--		isOutdated		=	false
+--	},
 
 -- ------------------------------------------------------------------------------- --
 -- ------------------------------ Cleric subclasses ------------------------------ --
