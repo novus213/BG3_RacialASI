@@ -18,7 +18,7 @@ ClassesLibrary = {
     {
 		Name			=	"Artificer - Alchemist",
 		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/1779",
-		modGuid 		=	"88fadf2c-152d-404e-b863-c12273559e1c",
+		modGuid 		=	"88fadf2c-152d-404e-b863-c12273559e1c", -- At lvl 3 of Artificer
 		UUID			=	"aaaa",
 		Author			=	"KiderionLykon",
 		SourceBook		=	"TCoE",
@@ -29,7 +29,7 @@ ClassesLibrary = {
     {
 		Name 			=	"Artificer - Armorer",
 		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/1779",
-		modGuid 		=	"88fadf2c-152d-404e-b863-c12273559e1c",
+		modGuid 		=	"88fadf2c-152d-404e-b863-c12273559e1c", -- At lvl 3 of Artificer
 		UUID 			=	"aaaa",
 		Author			=	"KiderionLykon",
 		SourceBook		=	"TCoE",
@@ -40,7 +40,7 @@ ClassesLibrary = {
     {
 		Name 			=	"Artificer - Artillerist",
 		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/1779",
-		modGuid 		=	"88fadf2c-152d-404e-b863-c12273559e1c",
+		modGuid 		=	"88fadf2c-152d-404e-b863-c12273559e1c", -- At lvl 3 of Artificer
 		UUID 			=	"aaaa",
 		Author			=	"KiderionLykon",
 		SourceBook		=	"TCoE",
@@ -51,7 +51,7 @@ ClassesLibrary = {
     {
 		Name			=	"Artificer - Battle Smith",
 		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/1779",
-		modGuid			=	"88fadf2c-152d-404e-b863-c12273559e1c",
+		modGuid			=	"88fadf2c-152d-404e-b863-c12273559e1c", -- At lvl 3 of Artificer
 		UUID			=	"aaaa",
 		Author			=	"KiderionLykon",
 		SourceBook		=	"TCoE",
