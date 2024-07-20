@@ -41,6 +41,8 @@ local function tableInsertRaceStats(raceMod)
         if raceMod.Bonus ~= nil then
              for _, bonusRaceMod in pairs(raceMod.Bonus) do
                 table.insert(RaceStat, raceMod.Bonus[bonusRaceMod])
+                print("RaceStat")
+                print(RaceStat)
             end
         end
 		raceMod.Stats = RaceStat
