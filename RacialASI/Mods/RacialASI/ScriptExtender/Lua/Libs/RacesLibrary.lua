@@ -44,7 +44,7 @@ RaceLibrary = {
 	{
 		Name			=	"Elf default",
 		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
-		UUID			=	"aaaa",
+		UUID			=	"496486a4-b5f2-4f91-90ea-6cad9023952e",
 		Author			=	"Larian",
 		SourceBook		=	"PHB",
 		MainRace		=	true,
@@ -81,7 +81,7 @@ RaceLibrary = {
 	{
 		Name			=	"Dwarf default",
 		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
-		UUID			=	"aaaa",
+		UUID			=	"3c9a0bd8-bb0f-4a42-b77f-7a9a1cff2e5d",
 		Author			=	"Larian",
 		SourceBook		=	"PHB",
 		MainRace		=	true,
@@ -156,7 +156,7 @@ RaceLibrary = {
 	{
 		Name			=	"Gnome default",
 		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
-		UUID			=	"aaaa",
+		UUID			=	"d48f8fb3-4351-4b5d-a28c-946fd33be726",
 		Author			=	"Larian",
 		SourceBook		=	"PHB",
 		MainRace		=	true,
@@ -192,7 +192,7 @@ RaceLibrary = {
 	{
 		Name			=	"Halfling default",
 		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
-		UUID			=	"aaaa",
+		UUID			=	"963edcba-c572-4f51-b447-8810bbb43a8e",
 		Author			=	"Larian",
 		SourceBook		=	"PHB",
 		MainRace		=	true,
@@ -219,7 +219,7 @@ RaceLibrary = {
 	{
 		Name			=	"Tiefling default",
 		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
-		UUID			=	"aaaa",
+		UUID			=	"56529178-3df2-4067-b1c0-e35fe82fbd37",
 		Author			=	"Larian",
 		SourceBook		=	"PHB",
 		MainRace		=	true,
