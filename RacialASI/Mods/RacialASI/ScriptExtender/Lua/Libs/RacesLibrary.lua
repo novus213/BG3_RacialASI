@@ -259,7 +259,7 @@ RaceLibrary = {
 		Author			=	"Larian",
 		SourceBook		=	"PHB",
 		MainRace		=	true,
-		Stats			=	{"2", "0", "0", "0", "0", "1"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Stats			=	{"0", "0", "0", "0", "0", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 	},
 	{
 		Name			=	"Half-Orc default",
