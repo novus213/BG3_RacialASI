@@ -17,4 +17,18 @@ Ext.Require("Shared/_Init.lua")
 
 Ext.Require("ModInfos/_ModInfos.lua")
 
+Ext.Require("Client/CleanRacesModASI.lua")
+
+if isModLoaded(deps.MCM_GUID) then
+    Ext.Require("Client/Builder5e.lua")
+end
+
 Ext.Require("Server/_Init.lua")
+
+if Ext.Mod.IsModLoaded(deps.Framework_GUID) then
+    Ext.Require("Client/CleanClassesModASI.lua")
+end
+
+if not isModLoaded(deps.MCM_GUID) then
+    Ext.Require("Client/Builder5e.lua")
+end

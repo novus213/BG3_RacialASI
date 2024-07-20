@@ -44,8 +44,8 @@ if Ext.Mod.IsModLoaded("755a8a72-407f-4f0d-9a33-274ac0f0b53d") then
     IgnoreHomebrew 		= mcmVarsBooksSettings["IgnoreHomebrew"]
 
 
-    debugLevel = mcmVarsBooksSettings["debug_level"]
-    Log = mcmVarsBooksSettings["Log"]
+    debugLevel = mcmVarsGeneralSettings["debug_level"]
+    Log = mcmVarsGeneralSettings["Log"]
 
 
     -- Register a net listener to handle settings changes dynamically
@@ -64,6 +64,8 @@ if Ext.Mod.IsModLoaded("755a8a72-407f-4f0d-9a33-274ac0f0b53d") then
 
             mcmVarsOptions 		= mcmVars
 
+            --MCMASIAPI:OnStatsLoadedMCM()
+
         end
 
             if mcmVarsBooksSettings[data.settingId] ~= nil then
@@ -79,8 +81,8 @@ if Ext.Mod.IsModLoaded("755a8a72-407f-4f0d-9a33-274ac0f0b53d") then
             IgnoreLegacy 		= mcmVarsBooksSettings["IgnoreLegacy"]
             IgnoreHomebrew 		= mcmVarsBooksSettings["IgnoreHomebrew"]
 
-            CleanOnStatsLoaded()
-            builder5eRaces()
+            --CleanOnStatsLoaded()
+            --builder5eRaces()
 
         end
 
@@ -89,7 +91,7 @@ if Ext.Mod.IsModLoaded("755a8a72-407f-4f0d-9a33-274ac0f0b53d") then
             mcmVarsGeneralSettings[data.settingId] = data.value
             BasicWarning(string.format("Setting %s to %s", data.settingId, data.value))
 
-            mcmVarsGeneralSettingsUse = mcmVarsBooksSettings
+            mcmVarsGeneralSettingsUse = mcmVarsGeneralSettings
 
         end
 
@@ -97,14 +99,14 @@ if Ext.Mod.IsModLoaded("755a8a72-407f-4f0d-9a33-274ac0f0b53d") then
 
             BasicWarning(string.format("Setting %s to %s", data.settingId, data.value))
 
-            debugLevel = mcmVarsBooksSettings["debug_level"]
+            debugLevel = mcmVarsGeneralSettings["debug_level"]
         end
 
         if data.settingId == "Log" then
 
             BasicWarning(string.format("Setting %s to %s", data.settingId, data.value))
 
-            Log = mcmVarsBooksSettings["Log"]
+            Log = mcmVarsGeneralSettings["Log"]
         end
 
 

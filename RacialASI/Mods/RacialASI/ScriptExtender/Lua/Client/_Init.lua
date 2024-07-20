@@ -85,8 +85,8 @@ else
     end)
 
     Ext.Events.GameStateChanged:Subscribe(function(e)
-        --if e.FromState == "Running" or e.ToState == "Unloading" then
-        CleanOnStatsLoaded()
+        if e.FromState == "loading" then
+                    CleanOnStatsLoaded()
         builder5eRaces()
         mcmVarsOptions 		= mcmVars
 
@@ -99,8 +99,8 @@ else
         IgnoreHomebrew 		= mcmVarsBooksSettings["IgnoreHomebrew"]
 
 
-        debugLevel = mcmVarsBooksSettings["debug_level"]
-        Log = mcmVarsBooksSettings["Log"]
+        debugLevel = mcmVarsGeneralSettings["debug_level"]
+        Log = mcmVarsGeneralSettings["Log"]
 
             MCMASIAPI:OnSessionLoadedMCM()
             MCMASIAPI:OnStatsLoadedMCM()
@@ -122,7 +122,7 @@ else
 
             BasicPrint(Ignore5eExtended)
             ]]--
-        --end
+        end
     end)
 end
 
