@@ -6,8 +6,7 @@ RaceLibrary = {
 		raceLsxUUID		=	"31c1d14f-2a46-4507-b9ba-b993bdffd298",
 		Author			=	"DarthRen",
 		SourceBook		=	"",
-		MainRace		=	false,
-		Stats			=	{"0", "0", "0", "0", "1", "2"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		MainRace		=	false
     },
 	{
         Name 			=	"Aasimar(Radiant Soul)",
