@@ -2,13 +2,15 @@
 local function checkHumanFM()
 	if Ext.Mod.IsModLoaded(deps.Framework_FM_GUID) then
         return {
-		    humanMainRace = false,
-		    humanUUID     =  "139e1b8c-dfa1-4b2d-895c-efb170736093" --Human default Fantastic M
+		    humanMainRace	= false,
+		    humanUUID		=  "139e1b8c-dfa1-4b2d-895c-efb170736093", --Human default Fantastic M
+			modGuid			= deps.Framework_FM_GUID
         }
 	else
         return {
-		    humanMainRace = true,
-		    humanUUID     =  "dbde4d66-d3e4-4c3f-ae87-fd6e2d1cd276" --Human default Larian
+		    humanMainRace	= true,
+		    humanUUID		=  "dbde4d66-d3e4-4c3f-ae87-fd6e2d1cd276", --Human default Larian,
+			modGuid			= "28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8" --GustavDev modGuid
         }
 	end
 end
@@ -18,7 +20,7 @@ local HumanFix = checkHumanFM()
 RaceLibrary = {
 	{
         Name 			=	"Human Larian default",
-        modGuid 		=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
+        modGuid 		=	HumanFix["modGuid"],
         UUID 			=	HumanFix["humanUUID"],
 		raceLsxUUID		=	"",
 		Author			=	"Larian / Fantastic Multiverse",
