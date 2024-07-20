@@ -960,3 +960,8 @@ ModUninstaller/ScriptExtender/Lua/Shared/Helpers/_Init.lua
 ModUninstaller/ScriptExtender/Lua/Shared/Helpers/Printer.lua
 ModUninstaller/ScriptExtender/Lua/Shared/Helpers/StatsHandler.lua
 ModUninstaller/ScriptExtender/Lua/Shared/Helpers/TemplateHandler.lua
+.emmyrc.json
+RacialASI/Mods/RacialASI/ScriptExtender/Lua/Client/ASTRLElvens.lua
+RacialASI/Mods/RacialASI/ScriptExtender/Lua/Client/ASTRLTieflings.lua
+RacialASI/Mods/RacialASI/ScriptExtender/Lua/Client/FantasticalMultiverse.lua
+RacialASI/Mods/RacialASI/ScriptExtender/Lua/Client/WotDAasimaSE.lua

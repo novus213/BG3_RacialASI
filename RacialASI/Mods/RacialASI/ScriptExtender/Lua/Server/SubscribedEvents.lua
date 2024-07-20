@@ -9,7 +9,8 @@ Ext.RegisterNetListener("MU_Request_Server_Uninstall_Mod", function(channel, pay
             Ext.Json.Stringify({ modUUID = data.modUUID, error = "Mod is not loaded" }))
         return
     end
-
+    print("disable  => (not work)")
+    print(mod)
     Mods.ModUninstaller.UninstallMod(uuid)
 end)
 
