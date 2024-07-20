@@ -1,24 +1,12 @@
-local function checkHumanFM()
-	if Ext.Mod.IsModLoaded(deps.Framework_FM_UUID) then
-		humanMainRace = false
-		humanUUID     =  "139e1b8c-dfa1-4b2d-895c-efb170736093" --Human default Fantastic M
-	else
-		humanMainRace = true
-		humanUUID     =  "dbde4d66-d3e4-4c3f-ae87-fd6e2d1cd276" --Human default Larian
-	end
-end
-
-checkHumanFM()
-
 RaceLibrary = {
 	{
         Name 			=	"Human Larian default",
         modGuid 		=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
-        UUID 			=	humanUUID,
+        UUID 			=	HumanFix["humanUUID"],
 		raceLsxUUID		=	"",
 		Author			=	"Larian / Fantastic Multiverse",
 		SourceBook		=	"",
-		MainRace		=	humanMainRace,
+		MainRace		=	HumanFix["humanMainRace"],
 		Stats			=	{"1", "1", "1", "1", "1", "1"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
     },
     {

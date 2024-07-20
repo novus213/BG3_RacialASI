@@ -104,9 +104,9 @@ else
             debugLevel = mcmVarsGeneralSettings["debug_level"]
             Log = mcmVarsGeneralSettings["Log"]
 
-            CleanOnStatsLoaded()
+            CleanOnRacesStatsLoaded()
             builder5eRaces()
- 
+
             MCMASIAPI:OnSessionLoadedMCM()
             MCMASIAPI:OnStatsLoadedMCM()
 

@@ -81,7 +81,7 @@ if Ext.Mod.IsModLoaded("755a8a72-407f-4f0d-9a33-274ac0f0b53d") then
             IgnoreLegacy 		= mcmVarsBooksSettings["IgnoreLegacy"]
             IgnoreHomebrew 		= mcmVarsBooksSettings["IgnoreHomebrew"]
 
-            --CleanOnStatsLoaded()
+            --CleanOnRacesStatsLoaded()
             --builder5eRaces()
 
         end
