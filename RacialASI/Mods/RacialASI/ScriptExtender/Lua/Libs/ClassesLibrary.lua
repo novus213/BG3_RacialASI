@@ -147,8 +147,8 @@ ClassesLibrary = {
 		isOutdated		=	true
 	},
 	{
-		Name			=	"New",
-		modURL			=	"",
+		Name			=	"Barbarian - Primal Sentry",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/8165",
 		modGuid			=	"aaaa",
 		UUID			=	"aaaa",
 		Author			=	"aaa",
