@@ -80,25 +80,21 @@ local function createBoostPayload(modGuid, uuid, strings)
       }
 end
 
---- Constructor for createRemoveRacePayload
----@param uuid string race Progression.lsx Level 1 UUID
----@param modGuid string race mod modGuid
-local function createRemoveRacePayload(modGuid, uuid)
-    return {
-        modGuid = modGuid,
-        raceGuid = uuid,
-      }
-end
 
 --- Constructor for RemoveRacePayload
 ---@param raceMod table raceMod
 local function removeRacePayload(raceMod)
     local removedModRace = {}  -- Table to store classes with removed shit asi
     if Ext.Mod.IsModLoaded(deps.Framework_GUID) and Ext.Mod.IsModLoaded(raceMod.modGuid) then
-            payload = createRemoveRacePayload(raceMod.modGuid,raceMod.UUID)
             table.insert(removedModRace, raceMod.Name) -- Add to the list if ASI Fixed
-            Mods.SubclassCompatibilityFramework.Api.RemoveRaceChildData({payload})
-            BasicWarning(string.format("payload RemoveRaceChildData: %s", table.dump(payload)))
+            Ext.Net.PostMessageToServer("MU_Request_Server_Uninstall_Mod", Ext.Json.Stringify({
+            modUUID = raceMod.modGuid
+        }))
+    end
+    if #removedModRace > 0 then
+        BasicWarning("============> Ability added to " ..
+                 #removedModRace .. " mods: " ..
+                 table.concat(removedModRace, ", "))
     end
 end
 
