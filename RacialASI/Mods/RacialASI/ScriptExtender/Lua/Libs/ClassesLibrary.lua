@@ -74,7 +74,7 @@ ClassesLibrary = {
 		isOutdated		=	false
 	},
 	{
-		Name			=	"Barbarian - Vanilla Wild Magic Path",
+		Name			=	"Barbarian - Vanilla Path of the Wild Magic",
 		ParentGuid		=	"d8cadb42-0ff9-4049-afaf-e5d78d06a399",
 		UUID			=	"d6bf00fc-3518-4d63-ba8b-03532c1abc4d", -- At lvl 3 of barbarian
 		Author			=	"Larian",
@@ -84,7 +84,7 @@ ClassesLibrary = {
 		isOutdated		=	false
 	},
 	{
-		Name			=	"Barbarian - Vanilla Berzerk Path",
+		Name			=	"Barbarian - Vanilla Path of the Berzerk",
 		ParentGuid		=	"d8cadb42-0ff9-4049-afaf-e5d78d06a399",
 		UUID			=	"32eee7d8-1b2f-4de5-b9ee-78fbd286c6ef", -- At lvl 3 of barbarian
 		Author			=	"Larian",
@@ -94,7 +94,7 @@ ClassesLibrary = {
 		isOutdated		=	false
 	},
 	{
-		Name			=	"Barbarian - Vanilla Wildheart (Totem Warrior Path)",
+		Name			=	"Barbarian - Vanilla Wildheart (Path of the Totem Warrior)",
 		ParentGuid		=	"d8cadb42-0ff9-4049-afaf-e5d78d06a399",
 		UUID			=	"2e585948-d775-451d-b58b-15b75321d11e", -- At lvl 3 of barbarian
 		Author			=	"Larian",
@@ -204,29 +204,51 @@ ClassesLibrary = {
 	},
 
 -- ----------------------------- Barbarian homebrew ----------------------------- --
-
-	{
-		Name			=	"Barbarian - Crusher",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/1858",
-		modGuid			=	"aaaa",
-		UUID			=	"aaaa",
-		Author			=	"Colten88",
-		SourceBook		=	"",
-		MainClasse		=	false,
-		isLvl20			=   false,
-		isOutdated		=	true
-	},
-	{
-		Name			=	"Barbarian - Blood Magic",
-		modURL			=	"",
-		modGuid			=	"aaaa",
-		UUID			=	"aaaa",
-		Author			=	"Bysell107",
-		SourceBook		=	"",
-		MainClasse		=	false,
-		isLvl20			=   true,
-		isOutdated		=	false
-	},
+--
+--	{
+--		Name			=	"Barbarian - Crusher",
+--		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/1858",
+--		modGuid			=	"aaaa",
+--		UUID			=	"aaaa",
+--		Author			=	"Colten88",
+--		SourceBook		=	"",
+--		MainClasse		=	false,
+--		isLvl20			=   false,
+--		isOutdated		=	true
+--	},
+--	{
+--		Name			=	"Barbarian - Blood Magic",
+--		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/6593",
+--		modGuid			=	"aaaa",
+--		UUID			=	"aaaa",
+--		Author			=	"Bysell107",
+--		SourceBook		=	"",
+--		MainClasse		=	false,
+--		isLvl20			=   false,
+--		isOutdated		=	false
+--	},
+--	{
+--		Name			=	"Barbarian - Fundamental Chaos",
+--		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/4086",
+--		modGuid			=	"aaaa",
+--		UUID			=	"aaaa",
+--		Author			=	"Nitreaux",
+--		SourceBook		=	"",
+--		MainClasse		=	false,
+--		isLvl20			=   false,
+--		isOutdated		=	false
+--	},
+--	{
+--		Name			=	"Barbarian - Path of the Hearteater",
+--		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/5591",
+--		modGuid			=	"aaaa",
+--		UUID			=	"aaaa",
+--		Author			=	"Bysell107",
+--		SourceBook		=	"",
+--		MainClasse		=	false,
+--		isLvl20			=   true,
+--		isOutdated		=	false
+--	},
 
 -- ------------------------------------------------------------------------------- --
 -- ------------------------------- Bard subclasses ------------------------------- --
@@ -263,7 +285,7 @@ ClassesLibrary = {
 		isOutdated		=	false
 	},
 	{
-		Name			=	"Barbarian - Vanilla College of Swords",
+		Name			=	"Bard - Vanilla College of Swords",
 		ParentGuid		=	"92cd50b6-eb1b-4824-8adb-853e90c34c90",
 		UUID			=	"c4bd5252-d68a-4330-9431-5e8ab24c5f29", -- At lvl 3 of bard
 		Author			=	"Larian",
@@ -272,6 +294,70 @@ ClassesLibrary = {
 		isLvl20			=   true,
 		isOutdated		=	false
 	},
+
+-- ------------------------------------------------------------------------------- --
+-- ------------------------------ Cleric subclasses ------------------------------ --
+-- ------------------------------------------------------------------------------- --
+
+
+
+-- ------------------------------------------------------------------------------ --
+-- ------------------------------ Druid subclasses ------------------------------ --
+-- ------------------------------------------------------------------------------ --
+
+
+
+-- ------------------------------------------------------------------------------ --
+-- ----------------------------- Fighter subclasses ----------------------------- --
+-- ------------------------------------------------------------------------------ --
+
+
+
+-- ------------------------------------------------------------------------------- --
+-- ------------------------------- Monk subclasses ------------------------------- --
+-- ------------------------------------------------------------------------------- --
+
+
+
+-- ------------------------------------------------------------------------------ --
+-- ----------------------------- Paladin subclasses ----------------------------- --
+-- ------------------------------------------------------------------------------ --
+
+
+
+-- ------------------------------------------------------------------------------- --
+-- ------------------------------ Ranger subclasses ------------------------------ --
+-- ------------------------------------------------------------------------------- --
+
+
+
+-- ------------------------------------------------------------------------------- --
+-- ----------------------------- Sorcerer subclasses ----------------------------- --
+-- ------------------------------------------------------------------------------- --
+
+
+
+-- ------------------------------------------------------------------------------ --
+-- ----------------------------- Warlock subclasses ----------------------------- --
+-- ------------------------------------------------------------------------------ --
+
+
+
+-- ------------------------------------------------------------------------------- --
+-- ------------------------------ Wizard subclasses ------------------------------ --
+-- ------------------------------------------------------------------------------- --
+
+
+
+-- ------------------------------------------------------------------------------- --
+-- ------------------------------- Favours classes ------------------------------- --
+-- ------------------------------------------------------------------------------- --
+
+
+
+-- ------------------------------------------------------------------------------ --
+-- ------------------------------ Homebrew classes ------------------------------ --
+-- ------------------------------------------------------------------------------ --
 	{
 		Name			=	"New",
 		modURL			=	"",
