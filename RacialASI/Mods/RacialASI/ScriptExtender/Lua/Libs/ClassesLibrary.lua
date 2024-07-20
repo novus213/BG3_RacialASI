@@ -1,4 +1,4 @@
-RaceLibrary = {
+ClassesLibrary = {
 
 --  Artificer Class
     {
@@ -152,7 +152,7 @@ RaceLibrary = {
 		modGuid			=	"aaaa",
 		UUID			=	"aaaa",
 		Author			=	"aaa",
-		SourceBook		=	"",
+		SourceBook		=	"TftFG",
 		MainClasse		=	false,
 		isLvl20			=   true,
 		isOutdated		=	false

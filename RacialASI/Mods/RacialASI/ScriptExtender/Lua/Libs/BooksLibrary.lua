@@ -3,7 +3,7 @@
 Dnd5eLimited = { --[[ Core Rule Books (5e Limited) ]]
 	{bookRef = "PHB",			bookName = "Player’s Handbook",								},
 	{bookRef = "DMG",			bookName = "Dungeon Master’s Guide",						},
-	{bookRef = "MM",			bookName = "Monster Manual",								},
+	{bookRef = "MM",			bookName = "Monster Manual",								}
 }
 Dnd5e = { --[[  Complements Books (5e) ]]
 	{bookRef = "VGtM",			bookName = "Volo’s Guide to Monsters"						},
@@ -13,7 +13,7 @@ Dnd5e = { --[[  Complements Books (5e) ]]
 	{bookRef = "FToD",			bookName = "Fizban’s Treasury of Dragons"					},
 	{bookRef = "MPMotM",		bookName = "Monsters of the Multiverse"						},
 	{bookRef = "BPGotG",		bookName = "Bigby Presents: Glory of the Giants"			},
-	{bookRef = "TBoMT",			bookName = "The Book of Many Things"						},
+	{bookRef = "TBoMT",			bookName = "The Book of Many Things"						}
 }
 Dnd5eExtended = { --[[ Campains settings (5e Extended) ]]
 	{bookRef = "SCA",		bookName = "Sword Coast Adventurer’s Guide"						},
@@ -25,7 +25,7 @@ Dnd5eExtended = { --[[ Campains settings (5e Extended) ]]
 	{bookRef = "VRGtR",		bookName = "Van Richten’s Guide to Ravenloft"					},
 	{bookRef = "SACoC",		bookName = "Strixhaven: A Curriculum of Chaos"					},
 	{bookRef = "SAiS",		bookName = "Spelljammer: Adventures in Space"					},
-	{bookRef = "PAitM",		bookName = "Planescape: Adventures in the Multiverse"			},
+	{bookRef = "PAitM",		bookName = "Planescape: Adventures in the Multiverse"			}
 }
 Flavours = {	--[[ Flavours ]]
 	{bookRef = "HotDQ",		bookName = "Hoard of the Dragon Queen"							},
@@ -55,7 +55,8 @@ Flavours = {	--[[ Flavours ]]
 	{bookRef = "PaBTSO",	bookName = "Phandelver and Below: The Shattered Obelisk"		},
 	{bookRef = "VEoR",		bookName = "Vecna: Eve of Ruin"									},
 	{bookRef = "GHPG",		bookName = "Grim Hollow Players Guide"							},
+	{bookRef = "TftFG",		bookName = "Tales from the Firelit Gathering"					}
 }
 Legacy = {	--[[ Legacy --]]
-	{bookRef = "VGtML",		bookName = "Volo's Guide to Monsters"							},
+	{bookRef = "VGtML",		bookName = "Volo's Guide to Monsters"							}
 }
