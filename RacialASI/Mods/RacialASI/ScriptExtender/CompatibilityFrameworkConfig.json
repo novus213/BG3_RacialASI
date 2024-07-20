@@ -25,24 +25,6 @@
                 }
             ]
         },
-		{
-            "Comment": "Human Larian default",
-			"UUID": "139e1b8c-dfa1-4b2d-895c-efb170736093",
-			"Strings": [
-				{
-					"Action": "Insert",
-					"Type": "Boosts",
-					"Strings": ["Ability(Strength,1)","Ability(Dexterity,1)","Ability(Constitution,1)","Ability(Intelligence,1)","Ability(Wisdom,1)","Ability(Charisma,1)"]
-				}
-             ],
-             "Selectors": [
-                {
-                    "Action": "Remove",
-                    "Function": "SelectSkills",
-                    "UUID": "f974ebd6-3725-4b90-bb5c-2b647d41615d"
-                }
-            ]
-        },
         {
             "Comment": "High Elf",
 			"UUID": 

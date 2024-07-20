@@ -1,4 +1,22 @@
+local function checkHumanFM()
+	if Ext.Mod.IsModLoaded(deps.Framework_FM_UUID) then
+		return "139e1b8c-dfa1-4b2d-895c-efb170736093"
+	else
+		return "5cfe5df9-57c0-43cb-a76b-5cab18d7e4e5"
+	end
+end
+
 RaceLibrary = {
+	{
+        Name 			=	"Human Larian default",
+        modGuid 		=	"",
+        UUID 			=	checkHumanFM(),
+		raceLsxUUID		=	"",
+		Author			=	"Larian / Fantastic Multiverse",
+		SourceBook		=	"",
+		MainRace		=	true,
+		Stats			=	{"1", "1", "1", "1", "1", "1"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+    },
     {
         Name 			=	"Aasimar Main",
         modGuid 		=	"ab267ed4-b3b5-4b4f-a62c-7dbc95c968fa",
