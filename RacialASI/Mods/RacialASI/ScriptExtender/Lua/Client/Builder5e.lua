@@ -39,12 +39,12 @@ local function tableInsertRaceStats(raceMod)
 		end
         if raceMod.Bonus ~= nil then
             for _, bonusRaceMod in pairs(raceMod.Bonus) do
-                table.insert(RaceStat, raceMod.Bonus[bonusRaceMod])
+                table.insert(RaceStat, bonusRaceMod.Bonus[_])
 
-                BasicPrint(string.format("raceMod.Bonus[bonusRaceMod] XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX: %s", raceMod.Bonus[bonusRaceMod]))
+                BasicPrint(string.format("raceMod.Bonus[bonusRaceMod] XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX: %s\r\r", bonusRaceMod[_]))
             end
         end
-        BasicWarning(string.format("raceMod.Stats: %s", table.dump(raceMod.Stats)))
+        BasicWarning(string.format("raceMod.Stats: %s\r\r", table.dump(raceMod.Stats)))
 		return RaceStat
 	end
 end
@@ -118,7 +118,7 @@ local fixAsi = {}  -- Table to store classes with removed shit asi
             payload = createSABPayload(raceMod.modGuid, raceMod.UUID, deps.AbilityList_UUID, raceMod.Sab, table.getLength(raceMod.Sab))
             table.insert(fixAsi, raceMod.Name) -- Add to the list if ASI Fixed
             Mods.SubclassCompatibilityFramework.Api.InsertSelectors({payload})
-            BasicWarning(string.format("payload InsertSelectors: %s", table.dump(payload)))
+            BasicWarning(string.format("payload InsertSelectors: %s\r\r", table.dump(payload)))
         end
 	end
 
@@ -131,7 +131,7 @@ local fixAsi = {}  -- Table to store classes with removed shit asi
                 table.insert(fixAsi, raceMod.Name) -- Add to the list if ASI Fixed
             end
             Mods.SubclassCompatibilityFramework.Api.InsertBoosts({payload})
-            BasicWarning(string.format("payload InsertBoosts: %s", table.dump(payload)))
+            BasicWarning(string.format("payload InsertBoosts: %s\r\r", table.dump(payload)))
         end
 	end
     if #fixAsi > 0 then
