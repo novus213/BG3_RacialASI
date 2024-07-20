@@ -84,7 +84,6 @@ else
     MCMASIAPI:OnStatsLoadedMCM()
     end)
 
-    --[[
     Ext.Events.GameStateChanged:Subscribe(function(e)
         BasicPrint("e.FromState")
         BasicPrint(e.FromState)
@@ -112,7 +111,6 @@ else
             MCMASIAPI:OnStatsLoadedMCM()
         end
     end)
-    ]]--
 end
 
 
