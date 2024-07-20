@@ -298,7 +298,7 @@ ClassesLibrary = {
 		Name			=	"Bard - College of Glamour",
 		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/741",
 		modGuid			=	"aaaa",
-		UUID			=	"aaaa",
+		UUID			=	"aaaa", -- At lvl 3 of bard
 		Author			=	"Bonebreaker687",
 		SourceBook		=	"XGtE",
 		MainClasse		=	false,
@@ -309,7 +309,7 @@ ClassesLibrary = {
 --		Name			=	"Bard - College of Whispers",
 --		modURL			=	"",
 --		modGuid			=	"aaaa",
---		UUID			=	"aaaa",
+--		UUID			=	"aaaa", -- At lvl 3 of bard
 --		Author			=	"aaa",
 --		SourceBook		=	"XGtE",
 --		MainClasse		=	false,
@@ -320,7 +320,7 @@ ClassesLibrary = {
 		Name			=	"Bard - College of Creation",
 		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/4519",
 		modGuid			=	"aaaa",
-		UUID			=	"aaaa",
+		UUID			=	"aaaa", -- At lvl 3 of bard
 		Author			=	"ghkdlxld",
 		SourceBook		=	"TCoE",
 		MainClasse		=	false,
@@ -331,7 +331,7 @@ ClassesLibrary = {
 		Name			=	"Bard - College of Eloquence",
 		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/4651",
 		modGuid			=	"aaaa",
-		UUID			=	"aaaa",
+		UUID			=	"aaaa", -- At lvl 3 of bard
 		Author			=	"ghkdlxld",
 		SourceBook		=	"MOoT",
 		MainClasse		=	false,
@@ -342,7 +342,7 @@ ClassesLibrary = {
 		Name			=	"Bard - College of Spirits",
 		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/4309",
 		modGuid			=	"aaaa",
-		UUID			=	"aaaa",
+		UUID			=	"aaaa", -- At lvl 3 of bard
 		Author			=	"havsglimt",
 		SourceBook		=	"VRGtR",
 		MainClasse		=	false,
@@ -353,7 +353,7 @@ ClassesLibrary = {
 		Name			=	"Bard - College of Spirits (legacy)",
 		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/2367",
 		modGuid			=	"aaaa",
-		UUID			=	"aaaa",
+		UUID			=	"aaaa", -- At lvl 3 of bard
 		Author			=	"REALvalco",
 		SourceBook		=	"VRGtR",
 		MainClasse		=	false,
@@ -367,7 +367,7 @@ ClassesLibrary = {
 --		Name			=	"Bard - College of Shuffling",
 --		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/10079",
 --		modGuid			=	"aaaa",
---		UUID			=	"aaaa",
+--		UUID			=	"aaaa", -- At lvl 3 of bard
 --		Author			=	"SydMeier",
 --		SourceBook		=	"",
 --		MainClasse		=	false,
@@ -378,7 +378,7 @@ ClassesLibrary = {
 --		Name			=	"Bard - College of Bae'qeshel",
 --		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/8861",
 --		modGuid			=	"aaaa",
---		UUID			=	"aaaa",
+--		UUID			=	"aaaa", -- At lvl 3 of bard
 --		Author			=	"Tet42",
 --		SourceBook		=	"",
 --		MainClasse		=	false,
@@ -389,7 +389,7 @@ ClassesLibrary = {
 --		Name			=	"Bard - College of Players",
 --		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/909",
 --		modGuid			=	"aaaa",
---		UUID			=	"aaaa",
+--		UUID			=	"aaaa", -- At lvl 3 of bard
 --		Author			=	"DroZzhat",
 --		SourceBook		=	"",
 --		MainClasse		=	false,
@@ -400,7 +400,86 @@ ClassesLibrary = {
 -- ------------------------------------------------------------------------------- --
 -- ------------------------------ Cleric subclasses ------------------------------ --
 -- ------------------------------------------------------------------------------- --
-
+	{
+		Name			=	"Cleric - Vanilla",
+		ParentGuid		=	"114e7aee-d1d4-4371-8d90-8a2080592faf",
+		UUID			=	"366cde9c-db0c-43ce-a49c-fb140e084b3c",
+		Author			=	"Larian",
+		SourceBook		=	"",
+		MainClasse		=	true,
+		isLvl20			=   true,
+		isOutdated		=	false
+	},
+	{
+		Name			=	"Cleric - Vanilla Life Domain",
+		ParentGuid		=	"114e7aee-d1d4-4371-8d90-8a2080592faf",
+		UUID			=	"4b5da2f5-b999-4623-8bff-a63df5560fb3",
+		Author			=	"Larian",
+		SourceBook		=	"",
+		MainClasse		=	false,
+		isLvl20			=   true,
+		isOutdated		=	false
+	},
+	{
+		Name			=	"Cleric - Vanilla Light Domain",
+		ParentGuid		=	"114e7aee-d1d4-4371-8d90-8a2080592faf",
+		UUID			=	"c54d7591-b305-4f22-b2a7-1bf5c4a3470a",
+		Author			=	"Larian",
+		SourceBook		=	"",
+		MainClasse		=	false,
+		isLvl20			=   true,
+		isOutdated		=	false
+	},
+	{
+		Name			=	"Cleric - Vanilla Trickery Domain",
+		ParentGuid		=	"114e7aee-d1d4-4371-8d90-8a2080592faf",
+		UUID			=	"f013d01b-3310-43f7-81bf-a51130442b5e",
+		Author			=	"Larian",
+		SourceBook		=	"",
+		MainClasse		=	false,
+		isLvl20			=   true,
+		isOutdated		=	false
+	},
+	{
+		Name			=	"Cleric - Vanilla Knowledge Domain",
+		ParentGuid		=	"114e7aee-d1d4-4371-8d90-8a2080592faf",
+		UUID			=	"ebe18794-b5e1-41c4-befa-4b9d6922b0ec",
+		Author			=	"Larian",
+		SourceBook		=	"",
+		MainClasse		=	false,
+		isLvl20			=   true,
+		isOutdated		=	false
+	},
+	{
+		Name			=	"Cleric - Vanilla Nature Domain",
+		ParentGuid		=	"114e7aee-d1d4-4371-8d90-8a2080592faf",
+		UUID			=	"6dec76d0-df22-411c-8a78-3d6fb843ae50",
+		Author			=	"Larian",
+		SourceBook		=	"",
+		MainClasse		=	false,
+		isLvl20			=   true,
+		isOutdated		=	false
+	},
+	{
+		Name			=	"Cleric - Vanilla Tempest Domain",
+		ParentGuid		=	"114e7aee-d1d4-4371-8d90-8a2080592faf",
+		UUID			=	"89bacf1b-8f15-4972-ada7-bf59c7c78441",
+		Author			=	"Larian",
+		SourceBook		=	"",
+		MainClasse		=	false,
+		isLvl20			=   true,
+		isOutdated		=	false
+	},
+	{
+		Name			=	"Cleric - Vanilla War Domain",
+		ParentGuid		=	"114e7aee-d1d4-4371-8d90-8a2080592faf",
+		UUID			=	"b9ccf90e-b35b-4b73-b896-8ed2d32ae8c6",
+		Author			=	"Larian",
+		SourceBook		=	"",
+		MainClasse		=	false,
+		isLvl20			=   true,
+		isOutdated		=	false
+	},
 
 
 -- ------------------------------------------------------------------------------ --
