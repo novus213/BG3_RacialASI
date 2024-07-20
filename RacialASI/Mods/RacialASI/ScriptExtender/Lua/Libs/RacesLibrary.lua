@@ -37,7 +37,6 @@ RaceLibrary = {
 		SourceBook		=	"PHB",
 		MainRace		=	true,
 		Stats			=	{"0", "0", "0", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
-		Bonus			=	{}
 	},
 	{
 		Name			=	"High Elf default",
@@ -148,7 +147,7 @@ RaceLibrary = {
 		UUID			=	"aaaa",
 		Author			=	"Larian",
 		SourceBook		=	"PHB",
-		MainRace		=	false,
+		MainRace		=	true,
 		Stats			=	{"0", "0", "0", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 	},
 	{
@@ -177,6 +176,33 @@ RaceLibrary = {
 		SourceBook		=	"PHB",
 		MainRace		=	false,
 		Stats			=	{"0", "1", "0", "2", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+	},
+	{
+		Name			=	"Halfling default",
+		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
+		UUID			=	"aaaa",
+		Author			=	"Larian",
+		SourceBook		=	"PHB",
+		MainRace		=	true,
+		Stats			=	{"0", "0", "0", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+	},
+	{
+		Name			=	"Halfling - Lightfoot default",
+		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
+		UUID			=	"bc2d257b-a405-4f58-891e-3083c5f71127",
+		Author			=	"Larian",
+		SourceBook		=	"PHB",
+		MainRace		=	false,
+		Stats			=	{"0", "2", "1", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+	},
+	{
+		Name			=	"Halfling - Strongheart default",
+		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
+		UUID			=	"b7a39730-2820-40c7-be96-2c134fead68a",
+		Author			=	"Larian",
+		SourceBook		=	"PHB",
+		MainRace		=	false,
+		Stats			=	{"0", "2", "1", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 	},
 
 --[[
