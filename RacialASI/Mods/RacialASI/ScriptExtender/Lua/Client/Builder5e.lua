@@ -38,13 +38,14 @@ local function tableInsertRaceStats(raceMod)
 			table.insert(RaceStat, "Ability(" .. StatsList[i] .. "," .. raceMod.Stats[i] .. ")")
 		end
         if raceMod.Bonus ~= nil then
-            for _, bonusRaceMod in pairs(raceMod.Bonus) do
-                table.insert(RaceStat, bonusRaceMod.Bonus[_])
+            local raceModBonusSize = table.getLength(raceMod.Bonus)
+            for i = 1, raceModBonusSize do
+                table.insert(RaceStat, raceMod.Bonus[i])
 
-                BasicPrint(string.format("raceMod.Bonus[bonusRaceMod] XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX: %s\r\r", bonusRaceMod[_]))
+                BasicPrint(string.format("raceMod.Bonus[bonusRaceMod] XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX: %s\n\n", raceMod.Bonus[i]))
             end
         end
-        BasicWarning(string.format("raceMod.Stats: %s\r\r", table.dump(raceMod.Stats)))
+        BasicWarning(string.format("raceMod.Stats: %s\n\n", table.dump(raceMod.Stats)))
 		return RaceStat
 	end
 end
@@ -118,7 +119,7 @@ local fixAsi = {}  -- Table to store classes with removed shit asi
             payload = createSABPayload(raceMod.modGuid, raceMod.UUID, deps.AbilityList_UUID, raceMod.Sab, table.getLength(raceMod.Sab))
             table.insert(fixAsi, raceMod.Name) -- Add to the list if ASI Fixed
             Mods.SubclassCompatibilityFramework.Api.InsertSelectors({payload})
-            BasicWarning(string.format("payload InsertSelectors: %s\r\r", table.dump(payload)))
+            BasicWarning(string.format("payload InsertSelectors: %s\n\n", table.dump(payload)))
         end
 	end
 
@@ -131,7 +132,7 @@ local fixAsi = {}  -- Table to store classes with removed shit asi
                 table.insert(fixAsi, raceMod.Name) -- Add to the list if ASI Fixed
             end
             Mods.SubclassCompatibilityFramework.Api.InsertBoosts({payload})
-            BasicWarning(string.format("payload InsertBoosts: %s\r\r", table.dump(payload)))
+            BasicWarning(string.format("payload InsertBoosts: %s\n\n", table.dump(payload)))
         end
 	end
     if #fixAsi > 0 then
