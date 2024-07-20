@@ -12,7 +12,7 @@ local function checkHumanFM()
 		    humanMainRace	= true,
 		    humanUUID		=  "dbde4d66-d3e4-4c3f-ae87-fd6e2d1cd276", --Human default Larian,
 			modGuid			= "28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
-			Author			=	"Fantastic Multiverse"
+			Author			=	"Larian"
         }
 	end
 end
