@@ -68,6 +68,20 @@
                             "Tooltip": "Enable or disable Rock Gnome Tinkertools."
                         },
                         {
+                            "Id": "AddGnome_ForestMinorIllusion_Spells",
+                            "Name": "Rock Forest Minor illusion",
+                            "Type": "checkbox",
+                            "Default": true,
+                            "Tooltip": "Enable or disable Rock Gnome Forest Illusion."
+                        },
+                        {
+                            "Id": "AddHalfElf_Skills",
+                            "Name": "HalfElf two Skills",
+                            "Type": "checkbox",
+                            "Default": true,
+                            "Tooltip": "Enable or disable HalfElf two Skills."
+                        },
+                        {
                             "Id": "AddHalfElfDrow_Drow_DrowWeaponTraining_Passives",
                             "Name": "HalfElfDrow Drow DrowWeaponTraining Passives",
                             "Type": "checkbox",
