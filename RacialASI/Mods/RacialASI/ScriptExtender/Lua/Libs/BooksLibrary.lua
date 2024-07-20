@@ -16,7 +16,7 @@ Dnd5e = { --[[  Complements Books (5e) ]]
 	{bookRef = "TBoMT",			bookName = "The Book of Many Things"						}
 }
 Dnd5eExtended = { --[[ Campains settings (5e Extended) ]]
-	{bookRef = "SCA",		bookName = "Sword Coast Adventurer’s Guide"						},
+	{bookRef = "SCAG",		bookName = "Sword Coast Adventurer’s Guide"						},
 	{bookRef = "GGtR",		bookName = "Guildmasters’ Guide to Ravnica"						},
 	{bookRef = "AI",		bookName = "Acquisitions Incorporated"							},
 	{bookRef = "ERftLW",	bookName = "Eberron: Rising from the Last War"					},
@@ -55,7 +55,8 @@ Flavours = {	--[[ Flavours ]]
 	{bookRef = "PaBTSO",	bookName = "Phandelver and Below: The Shattered Obelisk"		},
 	{bookRef = "VEoR",		bookName = "Vecna: Eve of Ruin"									},
 	{bookRef = "GHPG",		bookName = "Grim Hollow Players Guide"							},
-	{bookRef = "TftFG",		bookName = "Tales from the Firelit Gathering"					}
+	{bookRef = "TftFG",		bookName = "Tales from the Firelit Gathering"					},
+	{bookRef = "UA",		bookName = "Unearthed Arcana"									}
 }
 Legacy = {	--[[ Legacy --]]
 	{bookRef = "VGtML",		bookName = "Volo's Guide to Monsters"							}
