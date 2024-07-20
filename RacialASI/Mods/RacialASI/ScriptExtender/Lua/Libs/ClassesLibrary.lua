@@ -492,6 +492,17 @@ ClassesLibrary = {
 		isOutdated		=	false
 	},
 	{
+		Name			=	"Cleric - Death Domain (Standalone)",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/9790",
+		modGuid			=	"aaaa",
+		UUID			=	"aaaa",
+		Author			=	"xarara",
+		SourceBook		=	"DMG",
+		MainClasse		=	false,
+		isLvl20			=   true,
+		isOutdated		=	false
+	},
+	{
 		Name			=	"Cleric - Arcana Domain",
 		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/432",
 		modGuid			=	"aaaa",
