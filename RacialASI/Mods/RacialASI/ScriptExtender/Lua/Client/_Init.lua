@@ -85,23 +85,28 @@ else
     end)
 
     Ext.Events.GameStateChanged:Subscribe(function(e)
-        if e.FromState == "loading" then
-                    CleanOnStatsLoaded()
-        builder5eRaces()
-        mcmVarsOptions 		= mcmVars
+        BasicPrint("e.FromState")
+        BasicPrint(e.FromState)
 
-        IgnoreAll 			= mcmVarsBooksSettings["IgnoreAll"]
-        Ignore5eLimited 	= mcmVarsBooksSettings["Ignore5eLimited"]
-        Ignore5e 			= mcmVarsBooksSettings["Ignore5e"]
-        Ignore5eExtended 	= mcmVarsBooksSettings["Ignore5eExtended"]
-        IgnoreFlavours 		= mcmVarsBooksSettings["IgnoreFlavours"]
-        IgnoreLegacy 		= mcmVarsBooksSettings["IgnoreLegacy"]
-        IgnoreHomebrew 		= mcmVarsBooksSettings["IgnoreHomebrew"]
+        if e.FromState == "PrepareRunning" then
+
+            mcmVarsOptions 		= mcmVars
+
+            IgnoreAll 			= mcmVarsBooksSettings["IgnoreAll"]
+            Ignore5eLimited 	= mcmVarsBooksSettings["Ignore5eLimited"]
+            Ignore5e 			= mcmVarsBooksSettings["Ignore5e"]
+            Ignore5eExtended 	= mcmVarsBooksSettings["Ignore5eExtended"]
+            IgnoreFlavours 		= mcmVarsBooksSettings["IgnoreFlavours"]
+            IgnoreLegacy 		= mcmVarsBooksSettings["IgnoreLegacy"]
+            IgnoreHomebrew 		= mcmVarsBooksSettings["IgnoreHomebrew"]
 
 
-        debugLevel = mcmVarsGeneralSettings["debug_level"]
-        Log = mcmVarsGeneralSettings["Log"]
+            debugLevel = mcmVarsGeneralSettings["debug_level"]
+            Log = mcmVarsGeneralSettings["Log"]
 
+            CleanOnStatsLoaded()
+            builder5eRaces()
+ 
             MCMASIAPI:OnSessionLoadedMCM()
             MCMASIAPI:OnStatsLoadedMCM()
 
