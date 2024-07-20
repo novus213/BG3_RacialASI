@@ -66,17 +66,42 @@ RaceLibrary = {
 		SourceBook		=	"PHB",
 		MainRace		=	true,
 		Stats			=	{"0", "2", "0", "0", "0", "1"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
-		Bonus			=	{}
 	},
 	{
 		Name			=	"Dwarf default",
 		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
-		UUID			=	"bd012f5b-0a0b-424e-ab7c-186dbd82ab30",
+		UUID			=	"aaaa",
 		Author			=	"Larian",
 		SourceBook		=	"PHB",
 		MainRace		=	true,
+		Stats			=	{"0", "0", "0", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+	},
+	{
+		Name			=	"Dwarf - Duergar default",
+		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
+		UUID			=	"bd012f5b-0a0b-424e-ab7c-186dbd82ab30",
+		Author			=	"Larian",
+		SourceBook		=	"PHB",
+		MainRace		=	false,
 		Stats			=	{"1", "0", "2", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
-		Bonus			=	{}
+	},
+	{
+		Name			=	"Dwarf - Mountian default",
+		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
+		UUID			=	"3576f8c6-e515-49c5-808c-b68b77154ffd",
+		Author			=	"Larian",
+		SourceBook		=	"PHB",
+		MainRace		=	false,
+		Stats			=	{"2", "0", "2", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+	},
+	{
+		Name			=	"Dwarf - Hill default",
+		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
+		UUID			=	"07d038e-1add-4335-81d1-b0861f524c19",
+		Author			=	"Larian",
+		SourceBook		=	"PHB",
+		MainRace		=	false,
+		Stats			=	{"0", "0", "2", "0", "1", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 	},
 
 --[[
