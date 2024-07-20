@@ -20,7 +20,7 @@ local HumanFix = checkHumanFM()
 RaceLibrary = {
 
 	{
-		Name 			=	"Human Larian default",
+		Name 			=	"Human default",
 		modGuid 		=	HumanFix["modGuid"],
 		UUID 			=	HumanFix["humanUUID"],
 		raceLsxUUID		=	"",
@@ -30,7 +30,17 @@ RaceLibrary = {
 		Stats			=	{"1", "1", "1", "1", "1", "1"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 	},
 	{
-		Name			=	"High Elf",
+		Name			=	"Elf default",
+		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
+		UUID			=	"aaaa",
+		Author			=	"Larian",
+		SourceBook		=	"PHB",
+		MainRace		=	true,
+		Stats			=	{"0", "0", "0", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Bonus			=	{}
+	},
+	{
+		Name			=	"High Elf default",
 		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
 		UUID			=	"db13a1fb-7d64-4309-a1c8-e2a5c752ded5",
 		Author			=	"Larian",
@@ -39,7 +49,7 @@ RaceLibrary = {
 		Stats			=	{"0", "2", "0", "1", "0", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 	},
 	{
-		Name			=	"Wood Elf",
+		Name			=	"Wood Elf default",
 		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
 		UUID			=	"b262db2c-7a80-4c76-a1e8-0efdb9c1db13",
 		Author			=	"Larian",
@@ -47,6 +57,26 @@ RaceLibrary = {
 		MainRace		=	false,
 		Stats			=	{"0", "2", "0", "0", "1", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 		Bonus			=	{"ProficiencyBonus(Skill,Stealth)"}
+	},
+	{
+		Name			=	"Drow default",
+		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
+		UUID			=	"4a634f24-bdcb-4559-b8be-7847133ad1c3",
+		Author			=	"Larian",
+		SourceBook		=	"PHB",
+		MainRace		=	true,
+		Stats			=	{"0", "2", "0", "0", "0", "1"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Bonus			=	{}
+	},
+	{
+		Name			=	"Dwarf default",
+		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
+		UUID			=	"bd012f5b-0a0b-424e-ab7c-186dbd82ab30",
+		Author			=	"Larian",
+		SourceBook		=	"PHB",
+		MainRace		=	true,
+		Stats			=	{"1", "0", "2", "0", "0", "1"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Bonus			=	{}
 	},
 
 --[[
