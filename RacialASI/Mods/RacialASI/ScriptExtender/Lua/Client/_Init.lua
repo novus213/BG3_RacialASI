@@ -84,6 +84,7 @@ else
     MCMASIAPI:OnStatsLoadedMCM()
     end)
 
+    --[[
     Ext.Events.GameStateChanged:Subscribe(function(e)
         BasicPrint("e.FromState")
         BasicPrint(e.FromState)
@@ -109,27 +110,11 @@ else
 
             MCMASIAPI:OnSessionLoadedMCM()
             MCMASIAPI:OnStatsLoadedMCM()
-
-           --[[
-           mcmVarsOptions 		= mcmVars
-
-            IgnoreAll 			= mcmVarsBooksSettings["IgnoreAll"]
-            Ignore5eLimited 	= mcmVarsBooksSettings["Ignore5eLimited"]
-            Ignore5e 			= mcmVarsBooksSettings["Ignore5e"]
-            Ignore5eExtended 	= mcmVarsBooksSettings["Ignore5eExtended"]
-            IgnoreFlavours 		= mcmVarsBooksSettings["IgnoreFlavours"]
-            IgnoreLegacy 		= mcmVarsBooksSettings["IgnoreLegacy"]
-            IgnoreHomebrew 		= mcmVarsBooksSettings["IgnoreHomebrew"]
-
-            mcmVarsGeneralSettingsUse = mcmVarsGeneralSettings
-
-            BasicPrint("Ignore5eExtended OnSessionLoadedMCM Running")
-
-            BasicPrint(Ignore5eExtended)
-            ]]--
         end
     end)
+    ]]--
 end
+
 
 ---Should've done this from the start
 Ext.Events.GameStateChanged:Subscribe(function(e)

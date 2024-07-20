@@ -41,8 +41,8 @@ local function tableInsertRaceStats(raceMod)
         if raceMod.Bonus ~= nil then
              for _, bonusRaceMod in pairs(raceMod.Bonus) do
                 table.insert(RaceStat, raceMod.Bonus[bonusRaceMod])
-                print("RaceStat")
-                print(RaceStat)
+
+                BasicPrint(string.format("RaceStat XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX: %s", table.dump(RaceStat)))
             end
         end
 		raceMod.Stats = RaceStat
@@ -192,27 +192,27 @@ function builder5eRaces()
                                 else
                                     BasicWarning(string.format("Ignore Adding: %s due to IgnoreFlavours = True", raceMod.Name))
                                     --print("Ignore Adding: " .. raceMod.Name .. " due to IgnoreFlavours = True")
-                                    removeRacePayload(raceMod)
+                                    --removeRacePayload(raceMod)
                                 end
                             else
                                 BasicWarning(string.format("Ignore Adding: %s due to IgnoreLegacy = True", raceMod.Name))
                                 --print("Ignore Adding: " .. raceMod.Name .. " due to IgnoreLegacy = True")
-                                removeRacePayload(raceMod)
+                                --removeRacePayload(raceMod)
                             end
                         else
                             BasicWarning(string.format("Ignore Adding: %s due to Ignore5eExtended = True", raceMod.Name))
                             --print("Ignore Adding: " .. raceMod.Name .. " due to Ignore5eExtended = True")
-                            removeRacePayload(raceMod)
+                            --removeRacePayload(raceMod)
                         end
                     else
                         BasicWarning(string.format("Ignore Adding: %s due to Ignore5e = True", raceMod.Name))
                         --print("Ignore Adding: " .. raceMod.Name .. " due to Ignore5e = True")
-                        removeRacePayload(raceMod)
+                        --removeRacePayload(raceMod)
                     end
                 else
                     BasicWarning(string.format("Ignore Adding: %s due to IgnoreLimited = True", raceMod.Name))
                     --print("Ignore Adding: " .. raceMod.Name .. " due to IgnoreLimited = True")
-                    removeRacePayload(raceMod)
+                    --removeRacePayload(raceMod)
                 end
             end
             --RaceStat =  {}
