@@ -21,7 +21,7 @@ local HumanFix = checkHumanFM()
 
 RaceLibrary = {
 
-	--[[
+--[[
 .____                 .__                ____   ____             .__.__  .__
 |    |   _____ _______|__|____    ____   \   \ /   /____    ____ |__|  | |  | _____
 |    |   \__  \\_  __ \  \__  \  /    \   \   Y   /\__  \  /    \|  |  | |  | \__  \
@@ -48,7 +48,7 @@ RaceLibrary = {
 		Author			=	"Larian",
 		SourceBook		=	"PHB",
 		MainRace		=	true,
-		Stats			=	{"0", "0", "0", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Stats			=	{"0", "0", "0", "0", "0", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 	},
 	{
 		Name			=	"High Elf default",
@@ -76,7 +76,7 @@ RaceLibrary = {
 		Author			=	"Larian",
 		SourceBook		=	"PHB",
 		MainRace		=	true,
-		Stats			=	{"0", "2", "0", "0", "0", "1"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Stats			=	{"0", "2", "0", "0", "0", "1"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 	},
 	{
 		Name			=	"Dwarf default",
@@ -85,7 +85,7 @@ RaceLibrary = {
 		Author			=	"Larian",
 		SourceBook		=	"PHB",
 		MainRace		=	true,
-		Stats			=	{"0", "0", "0", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Stats			=	{"0", "0", "0", "0", "0", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 	},
 	{
 		Name			=	"Dwarf - Duergar default",
@@ -94,7 +94,7 @@ RaceLibrary = {
 		Author			=	"Larian",
 		SourceBook		=	"PHB",
 		MainRace		=	false,
-		Stats			=	{"1", "0", "2", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Stats			=	{"1", "0", "2", "0", "0", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 	},
 	{
 		Name			=	"Dwarf - Mountian default",
@@ -103,7 +103,7 @@ RaceLibrary = {
 		Author			=	"Larian",
 		SourceBook		=	"PHB",
 		MainRace		=	false,
-		Stats			=	{"2", "0", "2", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Stats			=	{"2", "0", "2", "0", "0", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 	},
 	{
 		Name			=	"Dwarf - Hill default",
@@ -112,7 +112,7 @@ RaceLibrary = {
 		Author			=	"Larian",
 		SourceBook		=	"PHB",
 		MainRace		=	false,
-		Stats			=	{"0", "0", "2", "0", "1", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Stats			=	{"0", "0", "2", "0", "1", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 	},
 	{
 		Name			=	"Half-Elf default",
@@ -121,7 +121,7 @@ RaceLibrary = {
 		Author			=	"Larian",
 		SourceBook		=	"PHB",
 		MainRace		=	true,
-		Stats			=	{"0", "0", "2", "0", "1", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Stats			=	{"0", "0", "2", "0", "1", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 	},
 	{
 		Name			=	"Half-Elf - Half High Elf default",
@@ -160,7 +160,7 @@ RaceLibrary = {
 		Author			=	"Larian",
 		SourceBook		=	"PHB",
 		MainRace		=	true,
-		Stats			=	{"0", "0", "0", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Stats			=	{"0", "0", "0", "0", "0", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 	},
 	{
 		Name			=	"Gnome - Rock default",
@@ -169,7 +169,7 @@ RaceLibrary = {
 		Author			=	"Larian",
 		SourceBook		=	"PHB",
 		MainRace		=	false,
-		Stats			=	{"0", "0", "1", "2", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Stats			=	{"0", "0", "1", "2", "0", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 	},
 	{
 		Name			=	"Gnome - Deep default",
@@ -178,7 +178,7 @@ RaceLibrary = {
 		Author			=	"Larian",
 		SourceBook		=	"PHB",
 		MainRace		=	false,
-		Stats			=	{"0", "1", "0", "2", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Stats			=	{"0", "1", "0", "2", "0", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 	},
 	{
 		Name			=	"Gnome - Forest default",
@@ -187,7 +187,7 @@ RaceLibrary = {
 		Author			=	"Larian",
 		SourceBook		=	"PHB",
 		MainRace		=	false,
-		Stats			=	{"0", "1", "0", "2", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Stats			=	{"0", "1", "0", "2", "0", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 	},
 	{
 		Name			=	"Halfling default",
@@ -196,7 +196,7 @@ RaceLibrary = {
 		Author			=	"Larian",
 		SourceBook		=	"PHB",
 		MainRace		=	true,
-		Stats			=	{"0", "0", "0", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Stats			=	{"0", "0", "0", "0", "0", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 	},
 	{
 		Name			=	"Halfling - Lightfoot default",
@@ -205,7 +205,7 @@ RaceLibrary = {
 		Author			=	"Larian",
 		SourceBook		=	"PHB",
 		MainRace		=	false,
-		Stats			=	{"0", "2", "1", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Stats			=	{"0", "2", "1", "0", "0", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 	},
 	{
 		Name			=	"Halfling - Strongheart default",
@@ -214,7 +214,70 @@ RaceLibrary = {
 		Author			=	"Larian",
 		SourceBook		=	"PHB",
 		MainRace		=	false,
-		Stats			=	{"0", "2", "1", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Stats			=	{"0", "2", "1", "0", "0", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+	},
+	{
+		Name			=	"Tiefling default",
+		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
+		UUID			=	"aaaa",
+		Author			=	"Larian",
+		SourceBook		=	"PHB",
+		MainRace		=	true,
+		Stats			=	{"0", "0", "0", "0", "0", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+	},
+	{
+		Name			=	"Tiefling - Asmodeus default",
+		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
+		UUID			=	"a8b18f0c-fe70-4f13-9dbc-23f4dbc3d648",
+		Author			=	"Larian",
+		SourceBook		=	"PHB",
+		MainRace		=	false,
+		Stats			=	{"0", "0", "0", "1", "0", "2"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+	},
+	{
+		Name			=	"Tiefling - Mephistopheles default",
+		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
+		UUID			=	"bdd1cf22-1b3c-4bc6-8313-898a49fcfe49",
+		Author			=	"Larian",
+		SourceBook		=	"PHB",
+		MainRace		=	false,
+		Stats			=	{"0", "0", "0", "1", "0", "2"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+	},
+	{
+		Name			=	"Tiefling - Zariel default",
+		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
+		UUID			=	"89d57acd-85ff-4da6-b989-9b82d0241e46",
+		Author			=	"Larian",
+		SourceBook		=	"PHB",
+		MainRace		=	false,
+		Stats			=	{"1", "0", "0", "0", "0", "2"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+	},
+	{
+		Name			=	"Dragonborn default",
+		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
+		UUID			=	"cabc4d46-f08e-4a48-8937-0bd1067ab43d",
+		Author			=	"Larian",
+		SourceBook		=	"PHB",
+		MainRace		=	true,
+		Stats			=	{"2", "0", "0", "0", "0", "1"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+	},
+	{
+		Name			=	"Half-Orc default",
+		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
+		UUID			=	"816fa8c7-7648-48f7-8309-cb4e7383e45f",
+		Author			=	"Larian",
+		SourceBook		=	"PHB",
+		MainRace		=	true,
+		Stats			=	{"2", "0", "1", "0", "0", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+	},
+	{
+		Name			=	"Githyanki default",
+		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
+		UUID			=	"f653d537-bc14-4fea-b7d2-25734ec928a2",
+		Author			=	"Larian",
+		SourceBook		=	"PHB",
+		MainRace		=	true,
+		Stats			=	{"2", "0", "0", "1", "0", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 	},
 
 --[[
