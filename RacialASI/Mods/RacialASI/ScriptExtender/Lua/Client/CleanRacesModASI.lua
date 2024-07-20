@@ -57,8 +57,6 @@ function CleanOnRacesStatsLoaded()
     local removedRaces = {}  -- Table to store classes with removed shit asi
     local stats = {"Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma"}
 
-    checkHumanFM()
-
     for _, mod in ipairs(RaceLibrary) do -- Racemod will deleted like final table will finish and changed to RaceLibrary var
 
         BasicWarning(string.format("mod.UUID ============> %s", mod.UUID))
@@ -91,20 +89,6 @@ function CleanOnRacesStatsLoaded()
                  #removedRaces .. " mods: " ..
                  table.concat(removedRaces, ", "))
     end
-end
-
-local function checkHumanFM()
-	if Ext.Mod.IsModLoaded(deps.Framework_FM_GUID) then
-        HumanFix = {
-		    humanMainRace = false,
-		    humanUUID     =  "139e1b8c-dfa1-4b2d-895c-efb170736093" --Human default Fantastic M
-        }
-	else
-        HumanFix = {
-		    humanMainRace = true,
-		    humanUUID     =  "dbde4d66-d3e4-4c3f-ae87-fd6e2d1cd276" --Human default Larian
-        }
-	end
 end
 
 Ext.Events.StatsLoaded:Subscribe(CleanOnRacesStatsLoaded)

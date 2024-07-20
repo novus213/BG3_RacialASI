@@ -1,3 +1,20 @@
+
+local function checkHumanFM()
+	if Ext.Mod.IsModLoaded(deps.Framework_FM_GUID) then
+        return {
+		    humanMainRace = false,
+		    humanUUID     =  "139e1b8c-dfa1-4b2d-895c-efb170736093" --Human default Fantastic M
+        }
+	else
+        return {
+		    humanMainRace = true,
+		    humanUUID     =  "dbde4d66-d3e4-4c3f-ae87-fd6e2d1cd276" --Human default Larian
+        }
+	end
+end
+
+local HumanFix = checkHumanFM()
+
 RaceLibrary = {
 	{
         Name 			=	"Human Larian default",
