@@ -1,5 +1,15 @@
 RaceLibrary = {
     {
+        Name 			=	"Aasimar Main",
+        modGuid 		=	"ab267ed4-b3b5-4b4f-a62c-7dbc95c968fa",
+        UUID 			=	"06e918ad-be2c-48b6-a098-0288539de744",
+		raceLsxUUID		=	"31c1d14f-2a46-4507-b9ba-b993bdffd298"
+		Author			=	"DarthRen",
+		SourceBook		=	"",
+		MainRace		=	false,
+		Stats			=	{"0", "0", "0", "0", "1", "2"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+    },
+	{
         Name 			=	"Aasimar(Radiant Soul)",
         modGuid 		=	"ab267ed4-b3b5-4b4f-a62c-7dbc95c968fa",
         UUID 			=	"4c2c61ae-5904-4576-a8c5-efecce67ab82",
