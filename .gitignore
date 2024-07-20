@@ -965,3 +965,8 @@ RacialASI/Mods/RacialASI/ScriptExtender/Lua/Client/ASTRLElvens.lua
 RacialASI/Mods/RacialASI/ScriptExtender/Lua/Client/ASTRLTieflings.lua
 RacialASI/Mods/RacialASI/ScriptExtender/Lua/Client/FantasticalMultiverse.lua
 RacialASI/Mods/RacialASI/ScriptExtender/Lua/Client/WotDAasimaSE.lua
+Old/ASTRLElvens.lua
+Old/ASTRLTieflings.lua
+Old/CustomRaces.lua
+Old/FantasticalMultiverse.lua
+Old/WotDAasimaSE.lua
