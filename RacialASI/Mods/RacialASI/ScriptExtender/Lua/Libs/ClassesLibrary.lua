@@ -823,7 +823,228 @@ ClassesLibrary = {
 -- ------------------------------- Favours classes ------------------------------- --
 -- ------------------------------------------------------------------------------- --
 
+-- ----------------------------- Blood Hunter class ----------------------------- --
 
+	{
+		Name			=	"BloodHunter",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/2151",
+		modGuid			=	"411d5c6e-2bd5-4e4e-ab72-67dcc37b8c0e",
+		UUID			=	"b85c5b64-347c-4ece-b45c-fe55a6fa2762",
+		Author			=	"WolfeTK",
+		SourceBook		=	"DNDB",
+		MainClasse		=	true,
+		isLvl20			=   true,
+		isOutdated		=	false
+	},
+	{
+		Name			=	"BloodHunter - Order of the Lycan",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/2151",
+		modGuid			=	"411d5c6e-2bd5-4e4e-ab72-67dcc37b8c0e",
+		UUID			=	"aaaa",
+		Author			=	"WolfeTK",
+		SourceBook		=	"DNDB",
+		MainClasse		=	false,
+		isLvl20			=   true,
+		isOutdated		=	false
+	},
+	{
+		Name			=	"BloodHunter - Order of the Ghostslayer",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/2151",
+		modGuid			=	"411d5c6e-2bd5-4e4e-ab72-67dcc37b8c0e",
+		UUID			=	"aaaa",
+		Author			=	"WolfeTK",
+		SourceBook		=	"DNDB",
+		MainClasse		=	false,
+		isLvl20			=   true,
+		isOutdated		=	false
+	},
+	{
+		Name			=	"BloodHunter - Profane Soul",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/5527",
+		modGuid			=	"aaaa",
+		UUID			=	"aaaa",
+		Author			=	"xBernos",
+		SourceBook		=	"DNDB",
+		MainClasse		=	false,
+		isLvl20			=   true,
+		isOutdated		=	false
+	},
+
+-- -------------------------------- Mystic class -------------------------------- --
+    {
+        Name			=	"Mystic",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/2786",
+        modGuid			=	"b2ac3aa8-ce29-4d53-be47-7121845f3c1c",
+        UUID			=	"0482322d-723e-4705-a41a-99e27902311c",
+		Author			=	"Xhevo",
+		SourceBook		=	"UA",
+		MainClasse		=	true,
+		isLvl20			=   true,
+		isOutdated		=	false
+    },
+    {
+        Name			=	"Mystic - Order of the Avatar",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/2786",
+        modGuid			=	"b2ac3aa8-ce29-4d53-be47-7121845f3c1c",
+        UUID			=	"aaaa",
+		Author			=	"Xhevo",
+		SourceBook		=	"UA",
+		MainClasse		=	false,
+		isLvl20			=   true,
+		isOutdated		=	false
+    },
+    {
+        Name			=	"Mystic - Order of the Awakened",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/2786",
+        modGuid			=	"b2ac3aa8-ce29-4d53-be47-7121845f3c1c",
+        UUID			=	"aaaa",
+		Author			=	"Xhevo",
+		SourceBook		=	"UA",
+		MainClasse		=	false,
+		isLvl20			=   true,
+		isOutdated		=	false
+    },
+    {
+        Name			=	"Mystic - Order of the Immortal",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/2786",
+        modGuid			=	"b2ac3aa8-ce29-4d53-be47-7121845f3c1c",
+        UUID			=	"aaaa",
+		Author			=	"Xhevo",
+		SourceBook		=	"UA",
+		MainClasse		=	false,
+		isLvl20			=   true,
+		isOutdated		=	false
+    },
+    {
+        Name			=	"Mystic - Order of the Nomad",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/2786",
+        modGuid			=	"b2ac3aa8-ce29-4d53-be47-7121845f3c1c",
+        UUID			=	"aaaa",
+		Author			=	"Xhevo",
+		SourceBook		=	"UA",
+		MainClasse		=	false,
+		isLvl20			=   true,
+		isOutdated		=	false
+    },
+    {
+        Name			=	"Mystic - Order of the Soul Knife",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/2786",
+        modGuid			=	"b2ac3aa8-ce29-4d53-be47-7121845f3c1c",
+        UUID			=	"aaaa",
+		Author			=	"Xhevo",
+		SourceBook		=	"UA",
+		MainClasse		=	false,
+		isLvl20			=   true,
+		isOutdated		=	false
+    },
+    {
+        Name			=	"Mystic - Order of the Wu Jen",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/2786",
+        modGuid			=	"b2ac3aa8-ce29-4d53-be47-7121845f3c1c",
+        UUID			=	"aaaa",
+		Author			=	"Xhevo",
+		SourceBook		=	"UA",
+		MainClasse		=	false,
+		isLvl20			=   true,
+		isOutdated		=	false
+    },
+    {
+        Name			=	"Mystic - Order of the Ascetic",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/2786",
+        modGuid			=	"b2ac3aa8-ce29-4d53-be47-7121845f3c1c",
+        UUID			=	"aaaa",
+		Author			=	"Xhevo",
+		SourceBook		=	"",
+		MainClasse		=	false,
+		isLvl20			=   true,
+		isOutdated		=	false
+    },
+    {
+        Name			=	"Mystic - Order of the Blade",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/2786",
+        modGuid			=	"b2ac3aa8-ce29-4d53-be47-7121845f3c1c",
+        UUID			=	"aaaa",
+		Author			=	"Xhevo",
+		SourceBook		=	"",
+		MainClasse		=	false,
+		isLvl20			=   true,
+		isOutdated		=	false
+    },
+    {
+        Name			=	"Mystic - Order of the Unbound",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/2786",
+        modGuid			=	"b2ac3aa8-ce29-4d53-be47-7121845f3c1c",
+        UUID			=	"aaaa",
+		Author			=	"Xhevo",
+		SourceBook		=	"",
+		MainClasse		=	false,
+		isLvl20			=   true,
+		isOutdated		=	false
+    },
+
+	-- -------------------------------- Magus class -------------------------------- --
+
+	{
+		Class			=	"Magus",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/422",
+		modGuid			=	"a827da36-4086-4d47-9945-f45555555555",
+		UUID			=	"452d6137-7720-4d04-b950-f45555555555",
+		Author			=	"Gycicada",
+		SourceBook		=	"P",
+		MainClasse		=	true,
+		isLvl20			=   true,
+		isOutdated		=	false
+	},{
+		Class			=	"Magus - Inexorable Iron",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/422",
+		modGuid			=	"a827da36-4086-4d47-9945-f45555555555",
+		UUID			=	"aaaa",
+		Author			=	"Gycicada",
+		SourceBook		=	"P",
+		MainClasse		=	false,
+		isLvl20			=   true,
+		isOutdated		=	false
+	},{
+		Class			=	"Magus - Sparkling Targe",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/422",
+		modGuid			=	"a827da36-4086-4d47-9945-f45555555555",
+		UUID			=	"aaaa",
+		Author			=	"Gycicada",
+		SourceBook		=	"P",
+		MainClasse		=	false,
+		isLvl20			=   true,
+		isOutdated		=	false
+	},{
+		Class			=	"Magus - Laughing Shadow",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/422",
+		modGuid			=	"a827da36-4086-4d47-9945-f45555555555",
+		UUID			=	"aaaa",
+		Author			=	"Gycicada",
+		SourceBook		=	"P",
+		MainClasse		=	false,
+		isLvl20			=   true,
+		isOutdated		=	false
+	},{
+		Class			=	"Magus - Twisting Tree",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/422",
+		modGuid			=	"a827da36-4086-4d47-9945-f45555555555",
+		UUID			=	"aaaa",
+		Author			=	"Gycicada",
+		SourceBook		=	"P",
+		MainClasse		=	false,
+		isLvl20			=   true,
+		isOutdated		=	false
+	},{
+		Class			=	"Magus - Starlit Span",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/422",
+		modGuid			=	"a827da36-4086-4d47-9945-f45555555555",
+		UUID			=	"aaaa",
+		Author			=	"Gycicada",
+		SourceBook		=	"P",
+		MainClasse		=	false,
+		isLvl20			=   true,
+		isOutdated		=	false
+	},
 
 -- ------------------------------------------------------------------------------ --
 -- ------------------------------ Homebrew classes ------------------------------ --

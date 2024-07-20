@@ -18,123 +18,165 @@ end
 local HumanFix = checkHumanFM()
 
 RaceLibrary = {
+
 	{
-        Name 			=	"Human Larian default",
-        modGuid 		=	HumanFix["modGuid"],
-        UUID 			=	HumanFix["humanUUID"],
+		Name 			=	"Human default",
+		modGuid 		=	HumanFix["modGuid"],
+		UUID 			=	HumanFix["humanUUID"],
 		raceLsxUUID		=	"",
 		Author			=	"Larian / Fantastic Multiverse",
-		SourceBook		=	"",
+		SourceBook		=	"PHB",
 		MainRace		=	HumanFix["humanMainRace"],
 		Stats			=	{"1", "1", "1", "1", "1", "1"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
-    },
-    {
-        Name 			=	"Aasimar Main",
-        modGuid 		=	"ab267ed4-b3b5-4b4f-a62c-7dbc95c968fa",
-        UUID 			=	"06e918ad-be2c-48b6-a098-0288539de744",
-		raceLsxUUID		=	"31c1d14f-2a46-4507-b9ba-b993bdffd298",
-		Author			=	"DarthRen",
-		SourceBook		=	"",
-		MainRace		=	true
-    },
+	},
 	{
-        Name 			=	"Aasimar(Radiant Soul)",
-        modGuid 		=	"ab267ed4-b3b5-4b4f-a62c-7dbc95c968fa",
-        UUID 			=	"4c2c61ae-5904-4576-a8c5-efecce67ab82",
-		Author			=	"DarthRen",
-		SourceBook		=	"",
+		Name			=	"Elf default",
+		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
+		UUID			=	"aaaa",
+		Author			=	"Larian",
+		SourceBook		=	"PHB",
+		MainRace		=	true,
+		Stats			=	{"0", "0", "0", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Bonus			=	{}
+	},
+	{
+		Name			=	"High Elf default",
+		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
+		UUID			=	"db13a1fb-7d64-4309-a1c8-e2a5c752ded5",
+		Author			=	"Larian",
+		SourceBook		=	"PHB",
 		MainRace		=	false,
-		Stats			=	{"0", "0", "0", "0", "1", "2"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
-    },
+		Stats			=	{"0", "2", "0", "1", "0", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+	},
 	{
-        Name 			=	"Aasimar(Radiant Consumption)",
-		modGuid 		=	"ab267ed4-b3b5-4b4f-a62c-7dbc95c968fa",
-        UUID 			=	"56d62681-9769-4ad7-9bbf-4f72db44f070",
-		Author			=	"DarthRen",
-		SourceBook		=	"",
+		Name			=	"Wood Elf default",
+		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
+		UUID			=	"b262db2c-7a80-4c76-a1e8-0efdb9c1db13",
+		Author			=	"Larian",
+		SourceBook		=	"PHB",
 		MainRace		=	false,
-		Stats			=	{"0", "0", "1", "0", "0", "2"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
-    },
-    {
-        Name 			=	"Aasimar(Necrotic Shroud)",
-	    modGuid 		=	"ab267ed4-b3b5-4b4f-a62c-7dbc95c968fa",
-        UUID 			=	"1b07140b-98c1-42e8-b4ec-072622862dc2",
-		Author			=	"DarthRen",
-		SourceBook		=	"",
+		Stats			=	{"0", "2", "0", "0", "1", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Bonus			=	{"ProficiencyBonus(Skill,Stealth)"}
+	},
+	{
+		Name			=	"Drow default",
+		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
+		UUID			=	"4a634f24-bdcb-4559-b8be-7847133ad1c3",
+		Author			=	"Larian",
+		SourceBook		=	"PHB",
+		MainRace		=	true,
+		Stats			=	{"0", "2", "0", "0", "0", "1"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+	},
+	{
+		Name			=	"Dwarf default",
+		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
+		UUID			=	"aaaa",
+		Author			=	"Larian",
+		SourceBook		=	"PHB",
+		MainRace		=	true,
+		Stats			=	{"0", "0", "0", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+	},
+	{
+		Name			=	"Dwarf - Duergar default",
+		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
+		UUID			=	"bd012f5b-0a0b-424e-ab7c-186dbd82ab30",
+		Author			=	"Larian",
+		SourceBook		=	"PHB",
 		MainRace		=	false,
-		Stats			=	{"0", "0", "1", "0", "0", "2"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
-    },
-    {
-        Name 			=	"Raven Queen's Chosen - Shadar-Kai",
-        modGuid 		=	"c36d595f-70d1-44f1-8ca6-4ad14186f489",
-        UUID 			=	"2f7edf7e-0a6b-4018-9715-1cb8aa238e4a",
-		Author			=	"",
-		SourceBook		=	"",
+		Stats			=	{"1", "0", "2", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+	},
+	{
+		Name			=	"Dwarf - Mountian default",
+		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
+		UUID			=	"3576f8c6-e515-49c5-808c-b68b77154ffd",
+		Author			=	"Larian",
+		SourceBook		=	"PHB",
 		MainRace		=	false,
-		Stats			=	{"0", "0", "0", "0", "1", "2"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Stats			=	{"2", "0", "2", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 	},
 	{
-		Name			=	"Fairy (Flutter and Whimsy)",
-		modGuid			=	"673c5b7b-a274-4916-ad89-4e3c591e1187",
-		UUID			=	"7b4d6e73-c54f-41ed-bd69-c25be95e9717",
-		Author			=	"",
-		SourceBook		=	"MPMotM",
-		MainRace		=	true,
-		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
-	},
-	{
-		Name			=	"Owlin",
-		modGuid			=	"c1e87b16-c845-4254-b831-bb22b13016fb", -- old "315ce1a1-0f24-4777-90d9-06b01a93a716",
-		UUID			=	"da629716-fd76-477d-9934-0473904fe04b", -- old "b5f04836-e2ef-4eb6-93d5-4aad7f3b1c20"
-		Author			=	"",
-		SourceBook		=	"SACoC",
-		MainRace		=	true,
-		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
-	},
-	{
-		Name			=	"Myconid",
-		modGuid			=	"71486ac7-a05c-434e-8e3b-9e6c2d40a04a",
-		UUID			=	"ada1a74c-89dd-45f9-95dd-f88bf59e3535",
-		Author			=	"",
-		SourceBook		=	"",
-		MainRace		=	true,
-		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
-	},
-	{
-		Name			=	"Genasi (Elemental Power)",
-		modGuid			=	"97954f72-711b-4938-a5ae-6a477b2ed574",
-		UUID			=	"e808d2a5-a9eb-403f-bab9-90a5114a699c",
-		Author			=	"",
-		SourceBook		=	"MPMotM",
-		MainRace		=	true,
-		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
-	},
-	{
-		Name			=	"HalfDragon",
-		modGuid			=	"16ba58e4-3ee5-4cfd-81e8-5a9f6d3f6b46",
-		UUID			=	"72a06fbf-e1b3-4321-b975-a4a26d9b4b71",
-		Author			=	"Jo Val Rudovous",
-		SourceBook		=	"",
-		MainRace		=	true,
-		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
-	},
-	{
-		Name			=	"Hobgoblin (https://github.com/GentlemanBabbo/Hobgoblin/tree/main)",
-		modGuid			=	"42152a0b-9b3c-4d63-8114-3ceba848f3e2",
-		UUID			=	"575fa3d3-cf83-4716-8cc3-8d971666b051",
-		Author			=	"GentlemanBabbo",
-		SourceBook		=	"MPMotM",
-		MainRace		=	true,
-		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
-	},
-	{
-		Name			=	"CE_WitchElf",
-		modGuid			=	"1aa49383-9208-4cc0-96b6-e827819d71d0",
-		UUID			=	"d19f42b3-1c1e-46cd-83e4-fd964426616f",
-		Author			=	"",
-		SourceBook		=	"",
+		Name			=	"Dwarf - Hill default",
+		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
+		UUID			=	"07d038e-1add-4335-81d1-b0861f524c19",
+		Author			=	"Larian",
+		SourceBook		=	"PHB",
 		MainRace		=	false,
-		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Stats			=	{"0", "0", "2", "0", "1", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+	},
+	{
+		Name			=	"Half-Elf default",
+		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
+		UUID			=	"a1729574-2f7b-4561-91d8-3766cf940420",
+		Author			=	"Larian",
+		SourceBook		=	"PHB",
+		MainRace		=	true,
+		Stats			=	{"0", "0", "2", "0", "1", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+	},
+	{
+		Name			=	"Half-Elf - Half High Elf default",
+		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
+		UUID			=	"43bfa29a-fd63-4f47-850e-6714f0333022",
+		Author			=	"Larian",
+		SourceBook		=	"PHB",
+		MainRace		=	false,
+		Stats			=	{"0", "0", "0", "0", "0", "2"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Sab     		= 	{"1","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+	},
+	{
+		Name			=	"Half-Elf - Half Wood Elf default",
+		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
+		UUID			=	"cb0f84ec-1b1d-4ecc-9ab5-76261e332f5a",
+		Author			=	"Larian",
+		SourceBook		=	"PHB",
+		MainRace		=	false,
+		Stats			=	{"0", "0", "0", "0", "0", "2"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Sab     		= 	{"1","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+	},
+	{
+		Name			=	"Half-Elf - Half Drow default",
+		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
+		UUID			=	"58dae581-c25a-4dfb-8a57-589bf4b34f62",
+		Author			=	"Larian",
+		SourceBook		=	"PHB",
+		MainRace		=	false,
+		Stats			=	{"0", "0", "0", "0", "0", "2"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Sab     		= 	{"1","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+	},
+	{
+		Name			=	"Gnome default",
+		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
+		UUID			=	"aaaa",
+		Author			=	"Larian",
+		SourceBook		=	"PHB",
+		MainRace		=	false,
+		Stats			=	{"0", "0", "0", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+	},
+	{
+		Name			=	"Gnome - Rock default",
+		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
+		UUID			=	"aa2257a9-1779-4d8b-be65-8a08eede07fa",
+		Author			=	"Larian",
+		SourceBook		=	"PHB",
+		MainRace		=	false,
+		Stats			=	{"0", "0", "1", "2", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+	},
+	{
+		Name			=	"Gnome - Deep default",
+		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
+		UUID			=	"938b6f72-18a6-4af0-924b-5292251d32bf",
+		Author			=	"Larian",
+		SourceBook		=	"PHB",
+		MainRace		=	false,
+		Stats			=	{"0", "1", "0", "2", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+	},
+	{
+		Name			=	"Gnome - Forest default",
+		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
+		UUID			=	"a63bbb3c-c37c-4578-94e6-7d1c4c063d5c",
+		Author			=	"Larian",
+		SourceBook		=	"PHB",
+		MainRace		=	false,
+		Stats			=	{"0", "1", "0", "2", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 	},
 
 --[[
@@ -391,6 +433,114 @@ _________                 __                   __________
          \_Custom Races from Nexus
 ]]--
 
+	{
+		Name 			=	"Aasimar Main",
+		modGuid 		=	"ab267ed4-b3b5-4b4f-a62c-7dbc95c968fa",
+		UUID 			=	"06e918ad-be2c-48b6-a098-0288539de744",
+		raceLsxUUID		=	"31c1d14f-2a46-4507-b9ba-b993bdffd298",
+		Author			=	"DarthRen",
+		SourceBook		=	"",
+		MainRace		=	true
+	},
+	{
+		Name 			=	"Aasimar(Radiant Soul)",
+		modGuid 		=	"ab267ed4-b3b5-4b4f-a62c-7dbc95c968fa",
+		UUID 			=	"4c2c61ae-5904-4576-a8c5-efecce67ab82",
+		Author			=	"DarthRen",
+		SourceBook		=	"",
+		MainRace		=	false,
+		Stats			=	{"0", "0", "0", "0", "1", "2"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+	},
+	{
+		Name 			=	"Aasimar(Radiant Consumption)",
+		modGuid 		=	"ab267ed4-b3b5-4b4f-a62c-7dbc95c968fa",
+		UUID 			=	"56d62681-9769-4ad7-9bbf-4f72db44f070",
+		Author			=	"DarthRen",
+		SourceBook		=	"",
+		MainRace		=	false,
+		Stats			=	{"0", "0", "1", "0", "0", "2"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+	},
+	{
+		Name 			=	"Aasimar(Necrotic Shroud)",
+		modGuid 		=	"ab267ed4-b3b5-4b4f-a62c-7dbc95c968fa",
+		UUID 			=	"1b07140b-98c1-42e8-b4ec-072622862dc2",
+		Author			=	"DarthRen",
+		SourceBook		=	"",
+		MainRace		=	false,
+		Stats			=	{"0", "0", "1", "0", "0", "2"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+	},
+	{
+		Name 			=	"Raven Queen's Chosen - Shadar-Kai",
+		modGuid 		=	"c36d595f-70d1-44f1-8ca6-4ad14186f489",
+		UUID 			=	"2f7edf7e-0a6b-4018-9715-1cb8aa238e4a",
+		Author			=	"",
+		SourceBook		=	"",
+		MainRace		=	false,
+		Stats			=	{"0", "0", "0", "0", "1", "2"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+	},
+	{
+		Name			=	"Fairy (Flutter and Whimsy)",
+		modGuid			=	"673c5b7b-a274-4916-ad89-4e3c591e1187",
+		UUID			=	"7b4d6e73-c54f-41ed-bd69-c25be95e9717",
+		Author			=	"",
+		SourceBook		=	"MPMotM",
+		MainRace		=	true,
+		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+	},
+	{
+		Name			=	"Owlin",
+		modGuid			=	"c1e87b16-c845-4254-b831-bb22b13016fb", -- old "315ce1a1-0f24-4777-90d9-06b01a93a716",
+		UUID			=	"da629716-fd76-477d-9934-0473904fe04b", -- old "b5f04836-e2ef-4eb6-93d5-4aad7f3b1c20"
+		Author			=	"",
+		SourceBook		=	"SACoC",
+		MainRace		=	true,
+		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+	},
+	{
+		Name			=	"Myconid",
+		modGuid			=	"71486ac7-a05c-434e-8e3b-9e6c2d40a04a",
+		UUID			=	"ada1a74c-89dd-45f9-95dd-f88bf59e3535",
+		Author			=	"",
+		SourceBook		=	"",
+		MainRace		=	true,
+		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+	},
+	{
+		Name			=	"Genasi (Elemental Power)",
+		modGuid			=	"97954f72-711b-4938-a5ae-6a477b2ed574",
+		UUID			=	"e808d2a5-a9eb-403f-bab9-90a5114a699c",
+		Author			=	"",
+		SourceBook		=	"MPMotM",
+		MainRace		=	true,
+		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+	},
+	{
+		Name			=	"HalfDragon",
+		modGuid			=	"16ba58e4-3ee5-4cfd-81e8-5a9f6d3f6b46",
+		UUID			=	"72a06fbf-e1b3-4321-b975-a4a26d9b4b71",
+		Author			=	"Jo Val Rudovous",
+		SourceBook		=	"",
+		MainRace		=	true,
+		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+	},
+	{
+		Name			=	"Hobgoblin (https://github.com/GentlemanBabbo/Hobgoblin/tree/main)",
+		modGuid			=	"42152a0b-9b3c-4d63-8114-3ceba848f3e2",
+		UUID			=	"575fa3d3-cf83-4716-8cc3-8d971666b051",
+		Author			=	"GentlemanBabbo",
+		SourceBook		=	"MPMotM",
+		MainRace		=	true,
+		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+	},
+	{
+		Name			=	"CE_WitchElf",
+		modGuid			=	"1aa49383-9208-4cc0-96b6-e827819d71d0",
+		UUID			=	"d19f42b3-1c1e-46cd-83e4-fd964426616f",
+		Author			=	"",
+		SourceBook		=	"",
+		MainRace		=	false,
+		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+	},
 	{
         Name			=	"Halfling (Haunted Warriors)",
         modGuid			=	"f8f5f704-d463-4616-a321-9460060538ff",
