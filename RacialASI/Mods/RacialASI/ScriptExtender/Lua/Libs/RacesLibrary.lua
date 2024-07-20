@@ -1,28 +1,35 @@
 RaceLibrary = {
-	{
-        Name 			= "Aasimar DEMERDE DarthRen",
-        modGuid 		= "ab267ed4-b3b5-4b4f-a62c-7dbc95c968fa",
-        UUID 			= "06e918ad-be2c-48b6-a098-0288539de744"
-    },
     {
-        Name 			= "Aasimar(Radiant Soul) DarthRen",
+        Name 			= "Aasimar(Radiant Soul)",
         modGuid 		= "ab267ed4-b3b5-4b4f-a62c-7dbc95c968fa",
-        UUID 			= "4c2c61ae-5904-4576-a8c5-efecce67ab82"
+        UUID 			= "4c2c61ae-5904-4576-a8c5-efecce67ab82",
+		Author			=	"DarthRen",
+		SourceBook		=	"",
+		Stats			=	{"0", "0", "0", "0", "1", "2"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
     },
     {
         Name 			= "Raven Queen's Chosen - Shadar-Kai",
         modGuid 		= "c36d595f-70d1-44f1-8ca6-4ad14186f489",
-        UUID 			= "2f7edf7e-0a6b-4018-9715-1cb8aa238e4a"
-    },
+        UUID 			= "2f7edf7e-0a6b-4018-9715-1cb8aa238e4a",
+		Author			=	"",
+		SourceBook		=	"",
+		Stats			=	{"0", "0", "0", "0", "1", "2"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+	},
     {
         Name 			= "Aasimar(Radiant Consumption)",
+		modGuid 		= "ab267ed4-b3b5-4b4f-a62c-7dbc95c968fa",
         UUID 			= "56d62681-9769-4ad7-9bbf-4f72db44f070",
-        modGuid 		= "ab267ed4-b3b5-4b4f-a62c-7dbc95c968fa"
+		Author			=	"DarthRen",
+		SourceBook		=	"",
+		Stats			=	{"0", "0", "1", "0", "0", "2"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
     },
     {
         Name 			= "Aasimar(Necrotic Shroud)",
+	    modGuid 		= "ab267ed4-b3b5-4b4f-a62c-7dbc95c968fa",
         UUID 			= "1b07140b-98c1-42e8-b4ec-072622862dc2",
-        modGuid 		= "ab267ed4-b3b5-4b4f-a62c-7dbc95c968fa"
+		Author			=	"DarthRen",
+		SourceBook		=	"",
+		Stats			=	{"0", "0", "1", "0", "0", "2"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
     },
 	{
 		Name			=	"Fairy (Flutter and Whimsy)",
