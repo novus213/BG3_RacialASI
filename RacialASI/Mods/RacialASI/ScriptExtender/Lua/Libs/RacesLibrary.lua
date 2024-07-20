@@ -4,13 +4,15 @@ local function checkHumanFM()
         return {
 		    humanMainRace	= false,
 		    humanUUID		=  "139e1b8c-dfa1-4b2d-895c-efb170736093", --Human default Fantastic M
-			modGuid			= deps.Framework_FM_GUID
+			modGuid			= deps.Framework_FM_GUID,
+			Author			=	"Fantastic Multiverse",
         }
 	else
         return {
 		    humanMainRace	= true,
 		    humanUUID		=  "dbde4d66-d3e4-4c3f-ae87-fd6e2d1cd276", --Human default Larian,
-			modGuid			= "28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8" --GustavDev modGuid
+			modGuid			= "28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
+			Author			=	"Fantastic Multiverse"
         }
 	end
 end
@@ -24,7 +26,7 @@ RaceLibrary = {
 		modGuid 		=	HumanFix["modGuid"],
 		UUID 			=	HumanFix["humanUUID"],
 		raceLsxUUID		=	"",
-		Author			=	"Larian / Fantastic Multiverse",
+		Author			=	HumanFix["Author"],
 		SourceBook		=	"PHB",
 		MainRace		=	HumanFix["humanMainRace"],
 		Stats			=	{"1", "1", "1", "1", "1", "1"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
