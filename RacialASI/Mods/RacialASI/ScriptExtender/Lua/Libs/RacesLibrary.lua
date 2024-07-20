@@ -15,7 +15,7 @@ RaceLibrary = {
 		SourceBook		=	"",
 		Stats			=	{"0", "0", "0", "0", "1", "2"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 	},
-    {
+	{
         Name 			= "Aasimar(Radiant Consumption)",
 		modGuid 		= "ab267ed4-b3b5-4b4f-a62c-7dbc95c968fa",
         UUID 			= "56d62681-9769-4ad7-9bbf-4f72db44f070",

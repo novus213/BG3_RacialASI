@@ -31,12 +31,15 @@ BasicWarning(IgnoreHomebrew)
 ---@param raceMod table raceMod
 local function tableInsertRaceStats(raceMod)
     local RaceStat = {}
+    table.empty(RaceStat)
+    RaceStat = {}
     local StatsList = {"Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma"}
 	if raceMod.Stats ~= nil then
 		for i = 1, 6 do
 			table.insert(RaceStat, "Ability(" .. StatsList[i] .. "," .. raceMod.Stats[i] .. ")")
 		end
 		raceMod.Stats = RaceStat
+        table.empty(RaceStat)
         BasicWarning(string.format("raceMod.Stats: %s", table.dump(raceMod.Stats)))
 	end
 end
@@ -106,16 +109,21 @@ local function insertPayload(raceMod)
 local fixAsi = {}  -- Table to store classes with removed shit asi
 	if raceMod.Sab ~= nil then
         local payload = {}
+        table.empty(payload)
+        payload = {}
         if Ext.Mod.IsModLoaded(deps.Framework_GUID) and Ext.Mod.IsModLoaded(raceMod.modGuid) then
             payload = createSABPayload(raceMod.modGuid, raceMod.UUID, deps.AbilityList_UUID, raceMod.Sab, table.getLength(raceMod.Sab))
             table.insert(fixAsi, raceMod.Name) -- Add to the list if ASI Fixed
             Mods.SubclassCompatibilityFramework.Api.InsertSelectors({payload})
             BasicWarning(string.format("payload InsertSelectors: %s", table.dump(payload)))
         end
+        table.empty(payload)
 	end
 
 	if raceMod.Stats ~= nil then
         local payload = {}
+        table.empty(payload)
+        payload = {}
         if Ext.Mod.IsModLoaded(deps.Framework_GUID) and Ext.Mod.IsModLoaded(raceMod.modGuid) then
             tableInsertRaceStats(raceMod)
             payload = createBoostPayload(raceMod.modGuid, raceMod.UUID, raceMod.Stats)
@@ -125,6 +133,7 @@ local fixAsi = {}  -- Table to store classes with removed shit asi
             Mods.SubclassCompatibilityFramework.Api.InsertBoosts({payload})
             BasicWarning(string.format("payload InsertBoosts: %s", table.dump(payload)))
         end
+        table.empty(payload)
 	end
     if #fixAsi > 0 then
         BasicWarning("============> Ability added to " ..

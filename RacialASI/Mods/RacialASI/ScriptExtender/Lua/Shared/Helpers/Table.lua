@@ -119,3 +119,12 @@ function table.dump(tbl)
       return tostring(tbl)
    end
 end
+
+--- Constructor for empty
+---@param self table
+---@return boolean
+function table.empty(self)
+    self = nil
+    collectgarbage()
+    return true
+end
