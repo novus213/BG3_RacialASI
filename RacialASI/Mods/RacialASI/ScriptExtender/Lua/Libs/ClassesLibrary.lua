@@ -1,6 +1,9 @@
 ClassesLibrary = {
 
---  Artificer Class
+-- ------------------------------------------------------------------------------ --
+-- ---------------------------- Artificer subclasses ---------------------------- --
+-- ------------------------------------------------------------------------------ --
+
     {
 		Name 			=	"Artificer - main",
 		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/1779",
@@ -57,7 +60,49 @@ ClassesLibrary = {
 		isOutdated		=	false
     },
 
--- Barbarian subclasses
+-- ------------------------------------------------------------------------------ --
+-- ---------------------------- Barbarian subclasses ---------------------------- --
+-- ------------------------------------------------------------------------------ --
+	{
+		Name			=	"Barbarian - Vanilla Default",
+		ParentGuid		=	"d8cadb42-0ff9-4049-afaf-e5d78d06a399",
+		UUID			=	"a2198ee9-ea4c-468e-b6b4-22b32d37806e",
+		Author			=	"Larian",
+		SourceBook		=	"PHB",
+		MainClasse		=	true,
+		isLvl20			=   true,
+		isOutdated		=	false
+	},
+	{
+		Name			=	"Barbarian - Vanilla Wild Magic Path",
+		ParentGuid		=	"d8cadb42-0ff9-4049-afaf-e5d78d06a399",
+		UUID			=	"d6bf00fc-3518-4d63-ba8b-03532c1abc4d", -- At lvl 3 of barbarian
+		Author			=	"Larian",
+		SourceBook		=	"PHB",
+		MainClasse		=	false,
+		isLvl20			=   true,
+		isOutdated		=	false
+	},
+	{
+		Name			=	"Barbarian - Vanilla Berzerk Path",
+		ParentGuid		=	"d8cadb42-0ff9-4049-afaf-e5d78d06a399",
+		UUID			=	"32eee7d8-1b2f-4de5-b9ee-78fbd286c6ef", -- At lvl 3 of barbarian
+		Author			=	"Larian",
+		SourceBook		=	"PHB",
+		MainClasse		=	false,
+		isLvl20			=   true,
+		isOutdated		=	false
+	},
+	{
+		Name			=	"Barbarian - Vanilla Wildheart (Totem Warrior Path)",
+		ParentGuid		=	"d8cadb42-0ff9-4049-afaf-e5d78d06a399",
+		UUID			=	"2e585948-d775-451d-b58b-15b75321d11e", -- At lvl 3 of barbarian
+		Author			=	"Larian",
+		SourceBook		=	"TCoE",
+		MainClasse		=	false,
+		isLvl20			=   true,
+		isOutdated		=	false
+	},
 	{
 		Name			=	"Barbarian - Path of the Zealot",
 		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/6411",
@@ -151,30 +196,78 @@ ClassesLibrary = {
 		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/8165",
 		modGuid			=	"aaaa",
 		UUID			=	"aaaa",
-		Author			=	"aaa",
+		Author			=	"Lumaterian",
 		SourceBook		=	"TftFG",
 		MainClasse		=	false,
 		isLvl20			=   true,
 		isOutdated		=	false
 	},
+
+-- ----------------------------- Barbarian homebrew ----------------------------- --
+
 	{
-		Name			=	"New",
+		Name			=	"Barbarian - Crusher",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/1858",
+		modGuid			=	"aaaa",
+		UUID			=	"aaaa",
+		Author			=	"Colten88",
+		SourceBook		=	"",
+		MainClasse		=	false,
+		isLvl20			=   false,
+		isOutdated		=	true
+	},
+	{
+		Name			=	"Barbarian - Blood Magic",
 		modURL			=	"",
 		modGuid			=	"aaaa",
 		UUID			=	"aaaa",
-		Author			=	"aaa",
+		Author			=	"Bysell107",
 		SourceBook		=	"",
 		MainClasse		=	false,
 		isLvl20			=   true,
 		isOutdated		=	false
 	},
+
+-- ------------------------------------------------------------------------------- --
+-- ------------------------------- Bard subclasses ------------------------------- --
+-- ------------------------------------------------------------------------------- --
+
 	{
-		Name			=	"New",
-		modURL			=	"",
-		modGuid			=	"aaaa",
-		UUID			=	"aaaa",
-		Author			=	"aaa",
-		SourceBook		=	"",
+		Name			=	"Bard - Vanilla Default",
+		ParentGuid		=	"92cd50b6-eb1b-4824-8adb-853e90c34c90",
+		UUID			=	"374c3aae-828b-44d8-b4e3-51ba802977dd",
+		Author			=	"Larian",
+		SourceBook		=	"PHB",
+		MainClasse		=	true,
+		isLvl20			=   true,
+		isOutdated		=	false
+	},
+	{
+		Name			=	"Bard - Vanilla College of Lore",
+		ParentGuid		=	"92cd50b6-eb1b-4824-8adb-853e90c34c90",
+		UUID			=	"d21368ac-c776-465c-9dcf-6123dd52734f", -- At lvl 3 of bard
+		Author			=	"Larian",
+		SourceBook		=	"PHB",
+		MainClasse		=	false,
+		isLvl20			=   true,
+		isOutdated		=	false
+	},
+	{
+		Name			=	"Bard - Vanilla College of Valour",
+		ParentGuid		=	"92cd50b6-eb1b-4824-8adb-853e90c34c90",
+		UUID			=	"2b46330d-0ada-4eb5-a131-3d250a41ca6a", -- At lvl 3 of bard
+		Author			=	"Larian",
+		SourceBook		=	"PHB",
+		MainClasse		=	false,
+		isLvl20			=   true,
+		isOutdated		=	false
+	},
+	{
+		Name			=	"Barbarian - Vanilla College of Swords",
+		ParentGuid		=	"92cd50b6-eb1b-4824-8adb-853e90c34c90",
+		UUID			=	"c4bd5252-d68a-4330-9431-5e8ab24c5f29", -- At lvl 3 of bard
+		Author			=	"Larian",
+		SourceBook		=	"TCoE",
 		MainClasse		=	false,
 		isLvl20			=   true,
 		isOutdated		=	false
