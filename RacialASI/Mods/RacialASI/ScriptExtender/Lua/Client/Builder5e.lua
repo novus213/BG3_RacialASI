@@ -134,7 +134,7 @@ local fixAsi = {}  -- Table to store classes with removed shit asi
         if Ext.Mod.IsModLoaded(deps.Framework_GUID) and Ext.Mod.IsModLoaded(raceMod.modGuid) then
             tableInsertRaceStats(raceMod)
             payload = createBoostPayload(raceMod.modGuid, raceMod.UUID, raceMod.Stats)
-            if raceMod.Sab ~= nil and raceMod.Sab == nil then
+            if raceMod.Stats ~= nil and raceMod.Sab == nil then
                 table.insert(fixAsi, raceMod.Name) -- Add to the list if ASI Fixed
             end
             Mods.SubclassCompatibilityFramework.Api.InsertBoosts({payload})
