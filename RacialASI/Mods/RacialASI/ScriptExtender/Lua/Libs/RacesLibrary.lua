@@ -75,7 +75,7 @@ RaceLibrary = {
 		Author			=	"Larian",
 		SourceBook		=	"PHB",
 		MainRace		=	true,
-		Stats			=	{"1", "0", "2", "0", "0", "1"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Stats			=	{"1", "0", "2", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 		Bonus			=	{}
 	},
 
