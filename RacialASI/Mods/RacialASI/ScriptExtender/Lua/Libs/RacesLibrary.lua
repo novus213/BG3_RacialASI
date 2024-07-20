@@ -103,6 +103,81 @@ RaceLibrary = {
 		MainRace		=	false,
 		Stats			=	{"0", "0", "2", "0", "1", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 	},
+	{
+		Name			=	"Half-Elf default",
+		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
+		UUID			=	"a1729574-2f7b-4561-91d8-3766cf940420",
+		Author			=	"Larian",
+		SourceBook		=	"PHB",
+		MainRace		=	true,
+		Stats			=	{"0", "0", "2", "0", "1", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+	},
+	{
+		Name			=	"Half-Elf - Half High Elf default",
+		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
+		UUID			=	"43bfa29a-fd63-4f47-850e-6714f0333022",
+		Author			=	"Larian",
+		SourceBook		=	"PHB",
+		MainRace		=	false,
+		Stats			=	{"0", "0", "0", "0", "0", "2"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Sab     		= 	{"1","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+	},
+	{
+		Name			=	"Half-Elf - Half Wood Elf default",
+		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
+		UUID			=	"cb0f84ec-1b1d-4ecc-9ab5-76261e332f5a",
+		Author			=	"Larian",
+		SourceBook		=	"PHB",
+		MainRace		=	false,
+		Stats			=	{"0", "0", "0", "0", "0", "2"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Sab     		= 	{"1","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+	},
+	{
+		Name			=	"Half-Elf - Half Drow default",
+		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
+		UUID			=	"58dae581-c25a-4dfb-8a57-589bf4b34f62",
+		Author			=	"Larian",
+		SourceBook		=	"PHB",
+		MainRace		=	false,
+		Stats			=	{"0", "0", "0", "0", "0", "2"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Sab     		= 	{"1","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+	},
+	{
+		Name			=	"Gnome default",
+		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
+		UUID			=	"aaaa",
+		Author			=	"Larian",
+		SourceBook		=	"PHB",
+		MainRace		=	false,
+		Stats			=	{"0", "0", "0", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+	},
+	{
+		Name			=	"Gnome - Rock default",
+		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
+		UUID			=	"aa2257a9-1779-4d8b-be65-8a08eede07fa",
+		Author			=	"Larian",
+		SourceBook		=	"PHB",
+		MainRace		=	false,
+		Stats			=	{"0", "0", "1", "2", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+	},
+	{
+		Name			=	"Gnome - Deep default",
+		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
+		UUID			=	"938b6f72-18a6-4af0-924b-5292251d32bf",
+		Author			=	"Larian",
+		SourceBook		=	"PHB",
+		MainRace		=	false,
+		Stats			=	{"0", "1", "0", "2", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+	},
+	{
+		Name			=	"Gnome - Forest default",
+		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
+		UUID			=	"a63bbb3c-c37c-4578-94e6-7d1c4c063d5c",
+		Author			=	"Larian",
+		SourceBook		=	"PHB",
+		MainRace		=	false,
+		Stats			=	{"0", "1", "0", "2", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+	},
 
 --[[
    _____    ______________________________.____      ___________.__        _____.__  .__
