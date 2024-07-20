@@ -48,7 +48,7 @@
                             "Id": "Log",
                             "Name": "Log Enable",
                             "Type": "checkbox",
-                            "Default": true,
+                            "Default": false,
                             "Tooltip": "Enable or disable Log File."
                         }
                     ],

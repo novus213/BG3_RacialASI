@@ -348,7 +348,7 @@ _________                 __                   __________
         modGuid			=	"ae6eacb7-f346-418f-89a9-f0e4c697baab",
         UUID			=	"8e8928df-70b1-43c0-bc86-40b32c455bee",
 		Author			=	"",
-		SourceBook		=	"",
+		SourceBook		=	"PAitM",
 		Stats			=	{"0", "0", "0", "1", "2", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
     },
     {
@@ -356,7 +356,7 @@ _________                 __                   __________
         modGuid			=	"d6d1028e-68fb-4e94-83d8-e8951f55b86a",
         UUID			=	"8e8928df-70b1-43c0-bc86-40b32c455bee",
 		Author			=	"",
-		SourceBook		=	"",
+		SourceBook		=	"PAitM",
 		Stats			=	{"0", "0", "0", "1", "2", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
     },
     {
@@ -551,7 +551,7 @@ _________                 __                   __________
         modGuid 		= 	"56fe7a47-e0d6-404e-b2d5-fd6e88cae6ae",
         UUID 			= 	"7551c355-8311-4c2f-b91b-9877ef608267",
 		Author			=	"",
-		SourceBook		=	"",
+		SourceBook		=	"DSotDQ",
 		Sab     		= 	{"1","1","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
     },
 

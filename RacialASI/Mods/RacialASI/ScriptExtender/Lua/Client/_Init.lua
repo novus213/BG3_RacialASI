@@ -85,7 +85,9 @@ else
     end)
 
     Ext.Events.GameStateChanged:Subscribe(function(e)
-        if e.FromState == "Running" then
+        --if e.FromState == "Running" or e.ToState == "Unloading" then
+
+            builder5eRaces()
 
             print("AddGnomeTinkertoolsSpells avant OnSessionLoadedMCM")
 
@@ -154,7 +156,7 @@ else
 
             BasicPrint(Ignore5eExtended)
             ]]--
-        end
+        --end
     end)
 end
 

@@ -134,7 +134,7 @@ local fixAsi = {}  -- Table to store classes with removed shit asi
 end
 
 --- Constructor for builder5eRaces
-local function builder5eRaces()
+function builder5eRaces()
     if IgnoreAll == false then
         --RaceStat = {}
         for _, raceMod in pairs(RaceLibrary) do
