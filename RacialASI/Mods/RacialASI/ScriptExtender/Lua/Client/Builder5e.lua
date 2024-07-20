@@ -38,6 +38,11 @@ local function tableInsertRaceStats(raceMod)
 		for i = 1, 6 do
 			table.insert(RaceStat, "Ability(" .. StatsList[i] .. "," .. raceMod.Stats[i] .. ")")
 		end
+        if raceMod.Bonus ~= nil then
+             for _, bonusRaceMod in pairs(raceMod.Bonus) do
+                table.insert(RaceStat, raceMod.Bonus[bonusRaceMod])
+            end
+        end
 		raceMod.Stats = RaceStat
         table.empty(RaceStat)
         BasicWarning(string.format("raceMod.Stats: %s", table.dump(raceMod.Stats)))

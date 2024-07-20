@@ -15,6 +15,8 @@ MCMASIAPI = MCMASI:New({}, "RacialASI")
 function MCMASI:OnSessionLoadedMCM()
     mcmVars = {
         AddGnome_Tinkertools_Spells = MCMASIAPI:MCMGet("AddGnome_Tinkertools_Spells"),
+        AddGnome_ForestMinorIllusion_Spells = MCMASIAPI:MCMGet("AddGnome_ForestMinorIllusion_Spells"),
+        AddHalfElf_Skills = MCMASIAPI:MCMGet("AddHalfElf_Skills"),
         AddHalfElfDrow_Drow_DrowWeaponTraining_Passives = MCMASIAPI:MCMGet("AddHalfElfDrow_Drow_DrowWeaponTraining_Passives"),
         RemoveHuman_HumanMilitia_HumanVersatility_Passives = MCMASIAPI:MCMGet("RemoveHuman_HumanMilitia_HumanVersatility_Passives"),
         RemoveHalfElf_HumanMilitia_Passives = MCMASIAPI:MCMGet("RemoveHalfElf_HumanMilitia_Passives"),

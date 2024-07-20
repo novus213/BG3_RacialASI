@@ -1,5 +1,45 @@
 --- Define Actions and Payloads
 optionActions = {
+
+    AddHalfElf_Skills = {
+       actions = {
+            {
+                action = "InsertSelectors",
+                payloads = {
+                    {
+                        modGuid = "1ebf4a1c-01d4-41ed-8aa1-5b3975c6d019",
+                        Target = "a1729574-2f7b-4561-91d8-3766cf940420",
+                        FileType = "Progression",
+                        Function = "SelectSkills",
+                        Params = {
+                            Guid = "f974ebd6-3725-4b90-bb5c-2b647d41615d",                      -- Used in All
+                            Amount = "2"
+                        }
+                    }
+                }
+            }
+        }
+    },
+     AddGnome_ForestMinorIllusion_Spells = {
+       actions = {
+            {
+                action = "InsertSelectors",
+                payloads = {
+                    {
+                        modGuid = "1ebf4a1c-01d4-41ed-8aa1-5b3975c6d019",
+                        Target = "582ed05c-c6fa-4d6f-99f9-efcc9de769f9",
+                        FileType = "Progression",
+                        Function = "AddSpells",
+                        Params = {
+                            Guid = "7cdd46a5-ab1e-474a-a430-40769fd7e2fd",                      -- Used in All
+                            PrepareType = "AlwaysPrepared", -- Used in SelectSpells, AddSpells. Values: Default, AlwaysPrepared
+                            CooldownType = "UntilRest"     -- Used in SelectSpells, AddSpells. Values: Default, UntilRest
+                        }
+                    }
+                }
+            }
+        }
+    },
     AddGnome_Tinkertools_Spells = {
         actions = {
             {
@@ -175,6 +215,45 @@ optionActions = {
 
 
 optionActionsReverse = {
+    AddHalfElf_Skills = {
+       actions = {
+            {
+                action = "InsertSelectors",
+                payloads = {
+                    {
+                        modGuid = "1ebf4a1c-01d4-41ed-8aa1-5b3975c6d019",
+                        Target = "a1729574-2f7b-4561-91d8-3766cf940420",
+                        FileType = "Progression",
+                        Function = "SelectSkills",
+                        Params = {
+                            Guid = "f974ebd6-3725-4b90-bb5c-2b647d41615d",                      -- Used in All
+                            Amount = "2"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    AddGnome_ForestMinorIllusion_Spells = {
+       actions = {
+            {
+                action = "RemoveSelectors",
+                payloads = {
+                    {
+                        modGuid = "1ebf4a1c-01d4-41ed-8aa1-5b3975c6d019",
+                        Target = "582ed05c-c6fa-4d6f-99f9-efcc9de769f9",
+                        FileType = "Progression",
+                        Function = "AddSpells",
+                        Params = {
+                            Guid = "7cdd46a5-ab1e-474a-a430-40769fd7e2fd",                      -- Used in All
+                            PrepareType = "AlwaysPrepared", -- Used in SelectSpells, AddSpells. Values: Default, AlwaysPrepared
+                            CooldownType = "UntilRest"     -- Used in SelectSpells, AddSpells. Values: Default, UntilRest
+                        }
+                    }
+                }
+            }
+        }
+    },
     AddGnome_Tinkertools_Spells = {
         actions = {
             {
