@@ -836,43 +836,6 @@ _________                 __                   __________
 		Stats			=	{"0", "0", "0", "1", "2", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
     },
     {
-        Name			=	"Undead (Ghastly Ghouls) Lich",
-        modGuid			=	"f3d4e722-e576-43ce-a585-cfffcfcbcf40",
-        UUID			=	"7123242e-9e00-4b9e-8e4f-aa1b0477fe13",
-		Author			=	"",
-		SourceBook		=	"",
-		MainRace		=	false,
-		Stats			=	{"0", "0", "0", "2", "1", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
-    },
-    {
-        Name			=	"Undead (Ghastly Ghouls) Wight",
-        modGuid			=	"f3d4e722-e576-43ce-a585-cfffcfcbcf40",
-        UUID			=	"677de788-81da-4f2f-b0d1-75c6aa9a1c35", -- SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,1);
-		Author			=	"",
-		SourceBook		=	"",
-		MainRace		=	false,
-		Stats			=	{"0", "0", "0", "0", "0", "1"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
-		Sab     		= 	{"1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
-    },
-    {
-        Name			=	"Undead (Ghastly Ghouls) Mummy",
-        modGuid			=	"f3d4e722-e576-43ce-a585-cfffcfcbcf40",
-        UUID			=	"3a4465df-49a2-4278-9d16-f17ed876aede",
-		Author			=	"",
-		SourceBook		=	"",
-		MainRace		=	false,
-		Stats			=	{"0", "0", "0", "1", "2", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
-    },
-    {
-        Name			=	"Undead (Ghastly Ghouls) Ghoul",
-        modGuid			=	"f3d4e722-e576-43ce-a585-cfffcfcbcf40",
-        UUID			=	"cfabed72-38b8-424d-a07d-058fbd4dd1a9",
-		Author			=	"",
-		SourceBook		=	"",
-		MainRace		=	false,
-		Stats			=	{"0", "0", "0", "1", "0", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
-    },
-    {
         Name			=	"Automaton Figgyinchains https://github.com/GentlemanBabbo/Automaton/blob/main/",
         modGuid			=	"a56867c9-8260-4685-b8a5-6cc94be41152",
         UUID			=	"3615e5db-c3ac-4b3b-bd01-f618d1cd95b5",
@@ -935,6 +898,54 @@ _________                 __                   __________
 		SourceBook		=	"DSotDQ",
 		MainRace		=	false,
 		Sab     		= 	{"1","1","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+    },
+
+--[[
+  ________.__                     __  .__            ________.__                 .__            ____ ___           .___                 .___ __________                      
+ /  _____/|  |__ _____    _______/  |_|  | ___.__.  /  _____/|  |__   ____  __ __|  |   ______ |    |   \____    __| _/____ _____     __| _/ \______   \_____    ____  ____  
+/   \  ___|  |   \__  \  /  ___/\   __\  |<   |  | /   \  ___|  |  \ /  _ \|  |  \  |  /  ___/ |    |   /    \  / __ |/ __ \__   \   / __ |   |       _/\__  \ _/ ___\/ __ \ 
+\    \_\  \   Y  \/ __ \_\___ \  |  | |  |_\___  | \    \_\  \   Y  (  <_> )  |  /  |__\___ \  |    |  /   |  \/ /_/ \  ___/ / __ \_/ /_/ |   |    |   \ / __ \  \__\  ___/ 
+ \______  /___|  (____  /____  > |__| |____/ ____|  \______  /___|  /\____/|____/|____/____  > |______/|___|  /\____ |\___  >____  /\____ |   |____|_  /(____ /\___  >___  >
+        \/     \/     \/     \/            \/              \/     \/                       \/               \/      \/    \/     \/      \/          \/      \/     \/   \/
+        \_Ghastly Ghouls - Playable Undead Race 3.01 Used
+]]--
+
+	{
+        Name			=	"Undead (Ghastly Ghouls) Lich",
+        modGuid			=	"f3d4e722-e576-43ce-a585-cfffcfcbcf40",
+        UUID			=	"7123242e-9e00-4b9e-8e4f-aa1b0477fe13",
+		Author			=	"",
+		SourceBook		=	"",
+		MainRace		=	false,
+		Stats			=	{"0", "0", "0", "2", "1", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+    },
+	{
+        Name			=	"Undead (Ghastly Ghouls) Ghoul",
+        modGuid			=	"f3d4e722-e576-43ce-a585-cfffcfcbcf40",
+        UUID			=	"cfabed72-38b8-424d-a07d-058fbd4dd1a9",
+		Author			=	"",
+		SourceBook		=	"",
+		MainRace		=	false,
+		Stats			=	{"0", "0", "0", "1", "0", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+    },
+	{
+        Name			=	"Undead (Ghastly Ghouls) Mummy",
+        modGuid			=	"f3d4e722-e576-43ce-a585-cfffcfcbcf40",
+        UUID			=	"3a4465df-49a2-4278-9d16-f17ed876aede",
+		Author			=	"",
+		SourceBook		=	"",
+		MainRace		=	false,
+		Stats			=	{"0", "0", "0", "1", "2", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+    },
+	{
+        Name			=	"Undead (Ghastly Ghouls) Wight",
+        modGuid			=	"f3d4e722-e576-43ce-a585-cfffcfcbcf40",
+        UUID			=	"677de788-81da-4f2f-b0d1-75c6aa9a1c35", -- SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,1);
+		Author			=	"",
+		SourceBook		=	"",
+		MainRace		=	false,
+		Stats			=	{"0", "0", "0", "0", "0", "1"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Sab     		= 	{"1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
     },
 
 --[[
