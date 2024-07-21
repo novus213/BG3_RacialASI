@@ -115,10 +115,11 @@ local fixAsi = {}  -- Table to store classes with removed shit asi
         local payload = {}
         if Ext.Mod.IsModLoaded(deps.Framework_GUID) and Ext.Mod.IsModLoaded(raceMod.modGuid) then
         -- special Ability List +x in some ASI or default
+            local AbilityListUUID = ""
             if raceMod.specialAbList ~= nil then
-                local AbilityListUUID = raceMod.specialAbList
+                AbilityListUUID = raceMod.specialAbList
             else
-                local AbilityListUUID = deps.AbilityList_UUID
+                AbilityListUUID = deps.AbilityList_UUID
             end
             payload = createSABPayload(raceMod.modGuid, raceMod.UUID, AbilityListUUID, raceMod.Sab, table.getLength(raceMod.Sab))
             table.insert(fixAsi, raceMod.Name) -- Add to the list if ASI Fixed
@@ -165,41 +166,48 @@ end
 
 --- Constructor for builder5eRaces
 function builder5eRaces()
+    removedRaces = {}  -- Table to store race with removed shit asi
     if IgnoreAll == false then
-        --RaceStat = {}
         for _, raceMod in pairs(RaceLibrary) do
             if raceMod.SourceBook == nil or raceMod.SourceBook == "" then
                 if IgnoreHomebrew == false then
+                    CleanOnRacesStatsLoaded(raceMod)
                     insertPayload(raceMod)
                 end
             else
                 if Ignore5eLimited == false then
                     for _, book in pairs(Dnd5eLimited) do
                         if book.bookRef == raceMod.SourceBook then
+                            CleanOnRacesStatsLoaded(raceMod)
                             insertPayload(raceMod)
+
                         end
                     end
                     if Ignore5e == false then
                         for _, book in pairs(Dnd5e) do
                             if book.bookRef == raceMod.SourceBook then
+                                CleanOnRacesStatsLoaded(raceMod)
                                 insertPayload(raceMod)
                             end
                         end
                         if Ignore5eExtended == false then
                             for _, book in pairs(Dnd5eExtended) do
                                 if book.bookRef == raceMod.SourceBook then
+                                    CleanOnRacesStatsLoaded(raceMod)
                                     insertPayload(raceMod)
                                 end
                             end
                             if IgnoreLegacy == false then
                                 for _, book in pairs(Legacy) do
                                     if book.bookRef == raceMod.SourceBook then
+                                        CleanOnRacesStatsLoaded(raceMod)
                                         insertPayload(raceMod)
                                     end
                                 end
                                 if IgnoreFlavours == false then
                                     for _, book in pairs(Flavours) do
                                         if book.bookRef == raceMod.SourceBook then
+                                            CleanOnRacesStatsLoaded(raceMod)
                                             insertPayload(raceMod)
                                         end
                                     end

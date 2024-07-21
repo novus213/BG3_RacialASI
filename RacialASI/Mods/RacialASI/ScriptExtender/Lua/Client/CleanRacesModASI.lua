@@ -53,11 +53,11 @@ end
 
 --- Constructor for CleanOnRacesStatsLoaded
 --- Clean race mods stats ASI
-function CleanOnRacesStatsLoaded()
-    local removedRaces = {}  -- Table to store classes with removed shit asi
+---@param mod table race mod table
+function CleanOnRacesStatsLoaded(mod)
     local stats = {"Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma"}
 
-    for _, mod in ipairs(RaceLibrary) do -- Racemod will deleted like final table will finish and changed to RaceLibrary var
+    --for _, mod in ipairs(RaceLibrary) do
 
         BasicWarning(string.format("mod.UUID ============> %s", mod.UUID))
 
@@ -82,7 +82,7 @@ function CleanOnRacesStatsLoaded()
         if removedRace then
             table.insert(removedRaces, removedRace) -- Add to the list if removed
         end
-    end
+    --end
 
     if #removedRaces > 0 then
         BasicWarning("============> Ability boost remove to " ..
@@ -91,4 +91,4 @@ function CleanOnRacesStatsLoaded()
     end
 end
 
-Ext.Events.StatsLoaded:Subscribe(CleanOnRacesStatsLoaded)
+--Ext.Events.StatsLoaded:Subscribe(CleanOnRacesStatsLoaded)
