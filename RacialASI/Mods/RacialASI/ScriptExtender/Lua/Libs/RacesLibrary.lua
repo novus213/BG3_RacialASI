@@ -900,6 +900,7 @@ The Avariel and Grugach, as far as I know, were not released.",
         UUID 			= 	"7551c355-8311-4c2f-b91b-9877ef608267",
 		Author			=	"",
 		SourceBook		=	"DSotDQ",
+		Comments		=	"The Alpha Race :-D",
 		MainRace		=	false,
 		Sab				=	{"1","1","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
     },
