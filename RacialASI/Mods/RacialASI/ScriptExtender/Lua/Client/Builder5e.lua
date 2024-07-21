@@ -140,6 +140,23 @@ local fixAsi = {}  -- Table to store classes with removed shit asi
     end
 end
 
+--- Constructor for insertPayload
+---@param raceMod table raceMod
+local function insertDefaultPayload(raceMod)
+    local baseAsi = {}  -- Table to store classes with removed shit asi
+    if Ext.Mod.IsModLoaded(deps.Framework_GUID) and Ext.Mod.IsModLoaded(raceMod.modGuid) then
+        payload = createSABPayload(raceMod.modGuid, raceMod.UUID, deps.AbilityList_UUID, {"2","1"}, 2)
+        table.insert(baseAsi, raceMod.Name) -- Add to the list if ASI Fixed
+        Mods.SubclassCompatibilityFramework.Api.InsertSelectors({payload})
+    end
+    if #baseAsi > 0 then
+        BasicWarning("============> Base +2/+1 Ability added to " ..
+                 #baseAsi .. " mods: " ..
+                 table.concat(baseAsi, ", "))
+    end    
+end
+
+
 --- Constructor for builder5eRaces
 function builder5eRaces()
     if IgnoreAll == false then
@@ -209,7 +226,10 @@ function builder5eRaces()
             --RaceStat =  {}
         end
     else
-        BasicWarning("Ignore Adding the races ASI")
+        BasicWarning("Ignore Adding the races ASI (Default +2/+1 apply too all)")
+        for _, raceMod in pairs(RaceLibrary) do
+            insertDefaultPayload(raceMod)
+        end
         --print("Ignore Adding the races ASI")
     end
 end
