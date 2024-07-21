@@ -83,6 +83,9 @@ local function createBoostPayload(modGuid, uuid, strings)
       }
 end
 
+
+--- Test function to hide or disable race NOT Working :'((((((
+
 --- Constructor for RemoveRacePayload
 ---@param raceMod table raceMod
 local function removeRacePayload(raceMod)
@@ -142,7 +145,7 @@ local fixAsi = {}  -- Table to store classes with removed shit asi
     end
 end
 
---- Constructor for insertPayload
+--- Constructor for insertDefaultPayload
 ---@param raceMod table raceMod
 local function insertDefaultPayload(raceMod)
     local baseAsi = {}  -- Table to store classes with removed shit asi
@@ -225,6 +228,6 @@ function builder5eRaces()
 	end
 end
 
-if Ext.Mod.IsModLoaded(deps.Framework_GUID) then
+if isModLoaded(deps.Framework_GUID) then
     Ext.Events.StatsLoaded:Subscribe(builder5eRaces)
 end
