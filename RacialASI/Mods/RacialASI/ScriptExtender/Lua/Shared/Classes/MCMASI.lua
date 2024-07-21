@@ -14,40 +14,42 @@ MCMASIAPI = MCMASI:New({}, "RacialASI")
 --- Function to load MCM values from json
 function MCMASI:OnSessionLoadedMCM()
     mcmVars = {
-        AddGnome_Tinkertools_Spells = MCMASIAPI:MCMGet("AddGnome_Tinkertools_Spells"),
-        AddGnome_ForestMinorIllusion_Spells = MCMASIAPI:MCMGet("AddGnome_ForestMinorIllusion_Spells"),
-        AddHalfElf_Skills = MCMASIAPI:MCMGet("AddHalfElf_Skills"),
-        AddHalfElfDrow_Drow_DrowWeaponTraining_Passives = MCMASIAPI:MCMGet("AddHalfElfDrow_Drow_DrowWeaponTraining_Passives"),
-        RemoveHuman_HumanMilitia_HumanVersatility_Passives = MCMASIAPI:MCMGet("RemoveHuman_HumanMilitia_HumanVersatility_Passives"),
-        RemoveHalfElf_HumanMilitia_Passives = MCMASIAPI:MCMGet("RemoveHalfElf_HumanMilitia_Passives"),
+        AddGnome_Tinkertools_Spells                                     = MCMASIAPI:MCMGet("AddGnome_Tinkertools_Spells"),
+        AddGnome_ForestMinorIllusion_Spells                             = MCMASIAPI:MCMGet("AddGnome_ForestMinorIllusion_Spells"),
+        AddHalfElf_Skills                                               = MCMASIAPI:MCMGet("AddHalfElf_Skills"),
+        AddHalfElfDrow_Drow_DrowWeaponTraining_Passives                 = MCMASIAPI:MCMGet("AddHalfElfDrow_Drow_DrowWeaponTraining_Passives"),
+        RemoveHuman_HumanMilitia_HumanVersatility_Passives              = MCMASIAPI:MCMGet("RemoveHuman_HumanMilitia_HumanVersatility_Passives"),
+        RemoveHalfElf_HumanMilitia_Passives                             = MCMASIAPI:MCMGet("RemoveHalfElf_HumanMilitia_Passives"),
         AddUndeadGhastlyGhouls_TruePotion_and_LightSensitivity_Passives = MCMASIAPI:MCMGet("AddUndeadGhastlyGhouls_TruePotion_and_LightSensitivity_Passives"),
-        AddUnderdarkRaces_LightSensitivity_Passives = MCMASIAPI:MCMGet("AddUnderdarkRaces_LightSensitivity_Passives")
+        AddUnderdarkRaces_LightSensitivity_Passives                     = MCMASIAPI:MCMGet("AddUnderdarkRaces_LightSensitivity_Passives")
         --[[
             mcmVars["AddGnomeTinkertoolsSpells"]
         ]]--
     }
 
     mcmVarsBooksSettings = {
-        PatchAsi5eLimited = MCMASIAPI:MCMGet("PatchASI_5eLimited"),
-        PatchAsi5e = MCMASIAPI:MCMGet("PatchASI_5e"),
-        PatchAsi5eExtended = MCMASIAPI:MCMGet("PatchASI_5eExtended"),
-        PatchAsiLegacy = MCMASIAPI:MCMGet("PatchASI_Legacy"),
-        PatchAsiFlavour = MCMASIAPI:MCMGet("PatchASI_Flavour"),
-        PatchAsiHomebrew = MCMASIAPI:MCMGet("PatchASI_Homebrew"),
-        PatchAsiDefault = MCMASIAPI:MCMGet("PatchASI_Default")
+        PatchAsi5eLimited   = MCMASIAPI:MCMGet("PatchASI_5eLimited"),
+        PatchAsi5e          = MCMASIAPI:MCMGet("PatchASI_5e"),
+        PatchAsi5eExtended  = MCMASIAPI:MCMGet("PatchASI_5eExtended"),
+        PatchAsiLegacy      = MCMASIAPI:MCMGet("PatchASI_Legacy"),
+        PatchAsiFlavour     = MCMASIAPI:MCMGet("PatchASI_Flavour"),
+        PatchAsiHomebrew    = MCMASIAPI:MCMGet("PatchASI_Homebrew"),
+        PatchAsiDefault     = MCMASIAPI:MCMGet("PatchASI_Default")
         --[[
             mcmVarsBooksSettings["IgnoreAll"]
         ]]--
     }
     mcmVarsGeneralSettings = {
-        RASI = MCMASIAPI:MCMGet("RASI"),
-        DebugLevel = MCMASIAPI:MCMGet("Debug_level"),
-        Log = MCMASIAPI:MCMGet("Log")
+        RASI        = MCMASIAPI:MCMGet("RASI"),
+        DebugLevel  = MCMASIAPI:MCMGet("Debug_level"),
+        Log         = MCMASIAPI:MCMGet("Log")
     }
 
-    BasicWarning(string.format("============> mcmVars is loaded. %s", mcmVars))
-    BasicWarning(string.format("============> mcmVarsGeneralSettings is loaded. %s", mcmVarsGeneralSettings))
-    BasicWarning(string.format("============> mcmVarsBooksSettings is loaded. %s", mcmVarsBooksSettings))
+    
+
+    BasicWarning(string.format("============> mcmVars is loaded. %s", table.dump(mcmVars)))
+    BasicWarning(string.format("============> mcmVarsGeneralSettings is loaded. %s", table.dump(mcmVarsGeneralSettings)))
+    BasicWarning(string.format("============> mcmVarsBooksSettings is loaded. %s", table.dump(mcmVarsBooksSettings)))
 end
 
 --- Constructor for MCMASI:OnStatsLoadedMCM
@@ -107,13 +109,13 @@ function MCMASI:callApiAction(action, payload)
     end
 
     local apiActions = {
-        InsertPassives = Mods.SubclassCompatibilityFramework.Api.InsertPassives,
-        RemovePassives = Mods.SubclassCompatibilityFramework.Api.RemovePassives,
+        InsertPassives  = Mods.SubclassCompatibilityFramework.Api.InsertPassives,
+        RemovePassives  = Mods.SubclassCompatibilityFramework.Api.RemovePassives,
         InsertSelectors = Mods.SubclassCompatibilityFramework.Api.InsertSelectors,
         RemoveSelectors = Mods.SubclassCompatibilityFramework.Api.RemoveSelectors,
-        InsertBoosts = Mods.SubclassCompatibilityFramework.Api.InsertBoosts,
-        RemoveBoosts = Mods.SubclassCompatibilityFramework.Api.RemoveBoosts,
-        SetBoolean = Mods.SubclassCompatibilityFramework.Api.SetBoolean
+        InsertBoosts    = Mods.SubclassCompatibilityFramework.Api.InsertBoosts,
+        RemoveBoosts    = Mods.SubclassCompatibilityFramework.Api.RemoveBoosts,
+        SetBoolean      = Mods.SubclassCompatibilityFramework.Api.SetBoolean
     }
 
     local apiFunction = apiActions[action]

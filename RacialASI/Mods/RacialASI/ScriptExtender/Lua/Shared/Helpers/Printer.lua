@@ -37,18 +37,17 @@ if Ext.Mod.IsModLoaded("755a8a72-407f-4f0d-9a33-274ac0f0b53d") then
 
     mcmVarsOptions 		= mcmVars
 
-    PatchAsi5eLimited  = mcmVarsBooksSettings["PatchASI_5eLimited"]
-    PatchAsi5e         = mcmVarsBooksSettings["PatchASI_5e"]
-    PatchAsi5eExtended = mcmVarsBooksSettings["PatchASI_5eExtended"]
-    PatchAsiLegacy     = mcmVarsBooksSettings["PatchASI_Legacy"]
-    PatchAsiFlavour    = mcmVarsBooksSettings["PatchASI_Flavour"]
-    PatchAsiHomebrew   = mcmVarsBooksSettings["PatchASI_Homebrew"]
-    PatchAsiDefault    = mcmVarsBooksSettings["PatchASI_Default"]
+    PatchAsi5eLimited  = mcmVarsBooksSettings["PatchAsi5eLimited"]
+    PatchAsi5e         = mcmVarsBooksSettings["PatchAsi5e"]
+    PatchAsi5eExtended = mcmVarsBooksSettings["PatchAsi5eExtended"]
+    PatchAsiLegacy     = mcmVarsBooksSettings["PatchAsiLegacy"]
+    PatchAsiFlavour    = mcmVarsBooksSettings["PatchAsiFlavour"]
+    PatchAsiHomebrew   = mcmVarsBooksSettings["PatchAsiHomebrew"]
+    PatchAsiDefault    = mcmVarsBooksSettings["PatchAsiDefault"]
 
 
     DebugLevel = mcmVarsGeneralSettings["Debug_level"]
     Log = mcmVarsGeneralSettings["Log"]
-
 
     -- Register a net listener to handle settings changes dynamically
     Ext.RegisterNetListener("MCM_Saved_Setting", function(call, payload)
@@ -75,13 +74,14 @@ if Ext.Mod.IsModLoaded("755a8a72-407f-4f0d-9a33-274ac0f0b53d") then
 
             BasicWarning(string.format("Setting %s to %s", data.settingId, data.value))
 
-            PatchAsi5eLimited  = mcmVarsBooksSettings["PatchASI_5eLimited"]
-            PatchAsi5e         = mcmVarsBooksSettings["PatchASI_5e"]
-            PatchAsi5eExtended = mcmVarsBooksSettings["PatchASI_5eExtended"]
-            PatchAsiLegacy     = mcmVarsBooksSettings["PatchASI_Legacy"]
-            PatchAsiFlavour    = mcmVarsBooksSettings["PatchASI_Flavour"]
-            PatchAsiHomebrew   = mcmVarsBooksSettings["PatchASI_Homebrew"]
-            PatchAsiDefault    = mcmVarsBooksSettings["PatchASI_Default"]
+            PatchAsi5eLimited  = mcmVarsBooksSettings["PatchAsi5eLimited"]
+            PatchAsi5e         = mcmVarsBooksSettings["PatchAsi5e"]
+            PatchAsi5eExtended = mcmVarsBooksSettings["PatchAsi5eExtended"]
+            PatchAsiLegacy     = mcmVarsBooksSettings["PatchAsiLegacy"]
+            PatchAsiFlavour    = mcmVarsBooksSettings["PatchAsiFlavour"]
+            PatchAsiHomebrew   = mcmVarsBooksSettings["PatchAsiHomebrew"]
+            PatchAsiDefault    = mcmVarsBooksSettings["PatchAsiDefault"]
+
 
 
             --CleanOnRacesStatsLoaded()

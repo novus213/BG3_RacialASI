@@ -48,6 +48,7 @@ Ext.Require("Client/_Init.lua")
 
 if Ext.Mod.IsModLoaded(deps.Framework_GUID) then
     Ext.Require("Client/CleanClassesModASI.lua")
+
 end
 
 if not isModLoaded(deps.MCM_GUID) then

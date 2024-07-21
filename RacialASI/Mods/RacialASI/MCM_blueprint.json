@@ -1,321 +1,321 @@
 {
-    "SchemaVersion": 1,
-    "ModName": "RacialASI",
-    "Tabs": [
+  "SchemaVersion": 1,
+  "ModName": "RacialASI",
+  "Tabs": [
+    {
+      "TabId": "generalsettings",
+      "TabName": "General Settings",
+      "Sections": [
         {
-            "TabId": "generalsettings",
-            "TabName": "General Settings",
-            "Sections": [
-                {
-                    "SectionId": "general_settings",
-                    "SectionName": "General Settings",
-                    "Settings": [
-                        {
-                            "Id": "RASI",
-                            "Name": "Racial ASI",
-                            "Type": "checkbox",
-                            "Default": true,
-                            "Tooltip": "Enable or disable RacialASI. not working FOR NOW Maybe useless with uninstall mod from Volition",
-                            "Handles": {
-                                "NameHandle": "",
-                                "DescriptionHandle": "",
-                                "TooltipHandle": ""
-                            }
-                        }
-                    ],
-                    "Handles": {
-                        "NameHandle": ""
-                    }
-                },
-                {
-                    "SectionId": "Debug_settings",
-                    "SectionName": "Debug settings",
-                    "Settings": [
-                        {
-                            "Id": "Debug_level",
-                            "Name": "Debug level",
-                            "Type": "slider_int",
-                            "Default": 1,
-                            "Description": "Used mainly to determine which messages to print.\nUseful for developers or general troubleshooting. \nIt is intended for the author to find bugs eaiser",
-                            "Tooltip": "Enable or disable debug level",
-                            "Options": {
-                                "Min": 0,
-                                "Max": 4
-                            },
-                            "Handles": {
-                                "NameHandle": "",
-                                "DescriptionHandle": "",
-                                "TooltipHandle": ""
-                            }
-                        }
-                    ],
-                    "Handles": {
-                        "NameHandle": ""
-                    }
-                },
-                {
-                    "SectionId": "Log_settings",
-                    "SectionName": "Log settings",
-                    "Settings": [
-                        {
-                            "Id": "Log",
-                            "Name": "Log Enable",
-                            "Type": "checkbox",
-                            "Default": false,
-                            "Tooltip": "Enable or disable Log File.",
-                            "Description": "Enable or disable Log File.",
-                            "Handles": {
-                                "NameHandle": "",
-                                "DescriptionHandle": "",
-                                "TooltipHandle": ""
-                            }
-                        }
-                    ],
-                    "Handles": {
-                        "NameHandle": ""
-                    }
-                },
-                {
-                    "SectionId": "Feats_settings",
-                    "SectionName": "Feats Settings",
-                    "Settings": [
-                        {
-                            "Id": "AddGnome_Tinkertools_Spells",
-                            "Name": "Rock Gnome Tinkertools",
-                            "Type": "checkbox",
-                            "Default": true,
-                            "Tooltip": "Enable or disable Rock Gnome Tinkertools.",
-                            "Description": "",
-                            "Handles": {
-                                "NameHandle": "",
-                                "DescriptionHandle": "",
-                                "TooltipHandle": ""
-                            }
-                        },
-                        {
-                            "Id": "AddGnome_ForestMinorIllusion_Spells",
-                            "Name": "Rock Forest Minor illusion",
-                            "Type": "checkbox",
-                            "Default": true,
-                            "Tooltip": "Enable or disable Rock Gnome Forest Illusion.",
-                            "Description": "",
-                            "Handles": {
-                                "NameHandle": "",
-                                "DescriptionHandle": "",
-                                "TooltipHandle": ""
-                            }
-                        },
-                        {
-                            "Id": "AddHalfElf_Skills",
-                            "Name": "HalfElf two Skills",
-                            "Type": "checkbox",
-                            "Default": true,
-                            "Tooltip": "Enable or disable HalfElf two Skills.",
-                            "Description": "",
-                            "Handles": {
-                                "NameHandle": "",
-                                "DescriptionHandle": "",
-                                "TooltipHandle": ""
-                            }
-                        },
-                        {
-                            "Id": "AddHalfElfDrow_Drow_DrowWeaponTraining_Passives",
-                            "Name": "HalfElfDrow Drow DrowWeaponTraining Passives",
-                            "Type": "checkbox",
-                            "Default": true,
-                            "Tooltip": "Enable or disable HalfElfDrow Drow DrowWeaponTraining Passives.",
-                            "Description": "",
-                            "Handles": {
-                                "NameHandle": "",
-                                "DescriptionHandle": "",
-                                "TooltipHandle": ""
-                            }
-                        },
-                        {
-                            "Id": "RemoveHuman_HumanMilitia_HumanVersatility_Passives",
-                            "Name": "RemoveHuman_HumanMilitia_HumanVersatility_Passives",
-                            "Type": "checkbox",
-                            "Default": true,
-                            "Tooltip": "Enable or disable RemoveHuman_HumanMilitia_HumanVersatility_Passives.",
-                            "Description": "",
-                            "Handles": {
-                                "NameHandle": "",
-                                "DescriptionHandle": "",
-                                "TooltipHandle": ""
-                            }
-                        },
-                        {
-                            "Id": "RemoveHalfElf_HumanMilitia_Passives",
-                            "Name": "RemoveHalfElf_HumanMilitia_Passives",
-                            "Type": "checkbox",
-                            "Default": true,
-                            "Tooltip": "Enable or disable RemoveHalfElf_HumanMilitia_Passives.",
-                            "Description": "",
-                            "Handles": {
-                                "NameHandle": "",
-                                "DescriptionHandle": "",
-                                "TooltipHandle": ""
-                            }
-                        },
-                        {
-                            "Id": "AddUndeadGhastlyGhouls_TruePotion_and_LightSensitivity_Passives",
-                            "Name": "AddUndeadGhastlyGhouls_TruePotion_and_LightSensitivity_Passives",
-                            "Type": "checkbox",
-                            "Default": true,
-                            "Tooltip": "Enable or disable AddUndeadGhastlyGhouls_TruePotion_and_LightSensitivity_Passives.",
-                            "Description": "",
-                            "Handles": {
-                                "NameHandle": "",
-                                "DescriptionHandle": "",
-                                "TooltipHandle": ""
-                            }
-                        },
-                        {
-                            "Id": "AddUnderdarkRaces_LightSensitivity_Passives",
-                            "Name": "AddUnderdarkRaces_LightSensitivity_Passives",
-                            "Type": "checkbox",
-                            "Default": true,
-                            "Tooltip": "Enable or disable AddUnderdarkRaces_LightSensitivity_Passives.",
-                            "Description": "",
-                            "Handles": {
-                                "NameHandle": "",
-                                "DescriptionHandle": "",
-                                "TooltipHandle": ""
-                            }
-                        }
-                    ],
-                    "Handles": {
-                        "NameHandle": ""
-                    }
-                }
-            ],
-            "Handles": {
-                "NameHandle": ""
+          "SectionId": "general_settings",
+          "SectionName": "General Settings",
+          "Settings": [
+            {
+              "Id": "RASI",
+              "Name": "Racial ASI",
+              "Type": "checkbox",
+              "Default": true,
+              "Tooltip": "Enable or disable RacialASI. not working FOR NOW Maybe useless with uninstall mod from Volition",
+              "Handles": {
+                "NameHandle": "",
+                "DescriptionHandle": "",
+                "TooltipHandle": ""
+              }
             }
+          ],
+          "Handles": {
+            "NameHandle": ""
+          }
         },
         {
-            "TabId": "PatchASI",
-            "TabName": "Patch ASI by Rule Set",
-            "Sections": [
-                {
-                    "SectionId": "Checkparam_patchASI",
-                    "SectionName": "Choose your rules set",
-                    "Settings": [
-                        {
-                            "Id": "PatchASI_5eLimited",
-                            "Name": "Fix 5e Limited ruleset Races & Classes",
-                            "Type": "checkbox",
-                            "Default": true,
-                            "description": "",
-                            "Tooltip": "Enable or disable to fix 5e Limited Races & Classes.",
-                            "Handles": {
-                                "NameHandle": "",
-                                "DescriptionHandle": "",
-                                "TooltipHandle": ""
-                            }
-                        },
-                        {
-                            "Id": "PatchASI_5e",
-                            "Name": "Fix 5e ruleset Races & Classes",
-                            "Type": "checkbox",
-                            "Default": true,
-                            "description": "",
-                            "Tooltip": "Enable or disable to fix 5e Races & Classes.",
-                            "Handles": {
-                                "NameHandle": "",
-                                "DescriptionHandle": "",
-                                "TooltipHandle": ""
-                            }
-                        },
-                        {
-                            "Id": "PatchASI_5eExtended",
-                            "Name": "Fix 5e Extended ruleset Races & Classes",
-                            "Type": "checkbox",
-                            "Default": true,
-                            "description": "",
-                            "Tooltip": "Enable or disable to fix 5e Extended Races & Classes.",
-                            "Handles": {
-                                "NameHandle": "",
-                                "DescriptionHandle": "",
-                                "TooltipHandle": ""
-                            }
-                        },
-                        {
-                            "Id": "PatchASI_Legacy",
-                            "Name": "Fix Legacy ruleset Races & Classes",
-                            "Type": "checkbox",
-                            "Default": true,
-                            "description": "",
-                            "Tooltip": "Enable or disable to fix Legacy Races & Classes.",
-                            "Handles": {
-                                "NameHandle": "",
-                                "DescriptionHandle": "",
-                                "TooltipHandle": ""
-                            }
-                        },
-                        {
-                            "Id": "PatchASI_Flavour",
-                            "Name": "Fix Flavour ruleset Races & Classes",
-                            "Type": "checkbox",
-                            "Default": true,
-                            "description": "",
-                            "Tooltip": "Enable or disable to fix Flavour Races & Classes.",
-                            "Handles": {
-                                "NameHandle": "",
-                                "DescriptionHandle": "",
-                                "TooltipHandle": ""
-                            }
-                        },
-                        {
-                            "Id": "PatchASI_Homebrew",
-                            "Name": "Fix Homebrew ruleset Races & Classes",
-                            "Type": "checkbox",
-                            "Default": true,
-                            "description": "",
-                            "Tooltip": "Enable or disable to fix Homebrew Races & Classes.",
-                            "Handles": {
-                                "NameHandle": "",
-                                "DescriptionHandle": "",
-                                "TooltipHandle": ""
-                            }
-                        }
-                    ],
-                    "Handles": {
-                        "NameHandle": ""
-                    }
-                },
-                {
-                    "SectionId": "Moreinfos_patchASI",
-                    "SectionName": "More Informations",
-                    "SectionDescription": "When you tick one of these boxes, the characteristics, skills and spells of the races will be modified to be more in line with the rules in the DnD books. If a race doesn't exist in the rule books, you'll be given the choice when creating your character to assign characteristics as you wish (+2, +1).\n\nPlease note that you will need to restart your game for these modifications to take effect.",
-                    "Handles": {
-                        "NameHandle": "",
-                        "DescriptionHandle": ""
-                    }
-                },
-                {
-                    "SectionId": "default_patchASI",
-                    "SectionName": "default patch ASI",
-                    "Settings": [
-                        {
-                            "Id": "PatchASI_Default",
-                            "Name": "Override all D&D rules",
-                            "Type": "checkbox",
-                            "Default": false,
-                            "description": "",
-                            "Tooltip": "WARNING ! If you select this option, all previous rules will be ignored and all races and sub-races will have default characteristic bonuses (+2, +1). Select with care!",
-                            "Handles": {
-                                "NameHandle": "",
-                                "DescriptionHandle": "",
-                                "TooltipHandle": ""
-                            }
-                        }
-                    ]
-                }
-            ],
-            "Handles": {
-                "NameHandle": ""
+          "SectionId": "Debug_settings",
+          "SectionName": "Debug settings",
+          "Settings": [
+            {
+              "Id": "Debug_level",
+              "Name": "Debug level",
+              "Type": "slider_int",
+              "Default": 1,
+              "Description": "Used mainly to determine which messages to print.\nUseful for developers or general troubleshooting. \nIt is intended for the author to find bugs eaiser",
+              "Tooltip": "Enable or disable debug level",
+              "Options": {
+                "Min": 0,
+                "Max": 4
+              },
+              "Handles": {
+                "NameHandle": "",
+                "DescriptionHandle": "",
+                "TooltipHandle": ""
+              }
             }
+          ],
+          "Handles": {
+            "NameHandle": ""
+          }
+        },
+        {
+          "SectionId": "Log_settings",
+          "SectionName": "Log settings",
+          "Settings": [
+            {
+              "Id": "Log",
+              "Name": "Log Enable",
+              "Type": "checkbox",
+              "Default": false,
+              "Tooltip": "Enable or disable Log File.",
+              "Description": "Enable or disable Log File.",
+              "Handles": {
+                "NameHandle": "",
+                "DescriptionHandle": "",
+                "TooltipHandle": ""
+              }
+            }
+          ],
+          "Handles": {
+            "NameHandle": ""
+          }
+        },
+        {
+          "SectionId": "Feats_settings",
+          "SectionName": "Feats Settings",
+          "Settings": [
+            {
+              "Id": "AddGnome_Tinkertools_Spells",
+              "Name": "Rock Gnome Tinkertools",
+              "Type": "checkbox",
+              "Default": true,
+              "Tooltip": "Enable or disable Rock Gnome Tinkertools.",
+              "Description": "",
+              "Handles": {
+                "NameHandle": "",
+                "DescriptionHandle": "",
+                "TooltipHandle": ""
+              }
+            },
+            {
+              "Id": "AddGnome_ForestMinorIllusion_Spells",
+              "Name": "Rock Forest Minor illusion",
+              "Type": "checkbox",
+              "Default": true,
+              "Tooltip": "Enable or disable Rock Gnome Forest Illusion.",
+              "Description": "",
+              "Handles": {
+                "NameHandle": "",
+                "DescriptionHandle": "",
+                "TooltipHandle": ""
+              }
+            },
+            {
+              "Id": "AddHalfElf_Skills",
+              "Name": "HalfElf two Skills",
+              "Type": "checkbox",
+              "Default": true,
+              "Tooltip": "Enable or disable HalfElf two Skills.",
+              "Description": "",
+              "Handles": {
+                "NameHandle": "",
+                "DescriptionHandle": "",
+                "TooltipHandle": ""
+              }
+            },
+            {
+              "Id": "AddHalfElfDrow_Drow_DrowWeaponTraining_Passives",
+              "Name": "HalfElfDrow Drow DrowWeaponTraining Passives",
+              "Type": "checkbox",
+              "Default": true,
+              "Tooltip": "Enable or disable HalfElfDrow Drow DrowWeaponTraining Passives.",
+              "Description": "",
+              "Handles": {
+                "NameHandle": "",
+                "DescriptionHandle": "",
+                "TooltipHandle": ""
+              }
+            },
+            {
+              "Id": "RemoveHuman_HumanMilitia_HumanVersatility_Passives",
+              "Name": "RemoveHuman_HumanMilitia_HumanVersatility_Passives",
+              "Type": "checkbox",
+              "Default": true,
+              "Tooltip": "Enable or disable RemoveHuman_HumanMilitia_HumanVersatility_Passives.",
+              "Description": "",
+              "Handles": {
+                "NameHandle": "",
+                "DescriptionHandle": "",
+                "TooltipHandle": ""
+              }
+            },
+            {
+              "Id": "RemoveHalfElf_HumanMilitia_Passives",
+              "Name": "RemoveHalfElf_HumanMilitia_Passives",
+              "Type": "checkbox",
+              "Default": true,
+              "Tooltip": "Enable or disable RemoveHalfElf_HumanMilitia_Passives.",
+              "Description": "",
+              "Handles": {
+                "NameHandle": "",
+                "DescriptionHandle": "",
+                "TooltipHandle": ""
+              }
+            },
+            {
+              "Id": "AddUndeadGhastlyGhouls_TruePotion_and_LightSensitivity_Passives",
+              "Name": "AddUndeadGhastlyGhouls_TruePotion_and_LightSensitivity_Passives",
+              "Type": "checkbox",
+              "Default": true,
+              "Tooltip": "Enable or disable AddUndeadGhastlyGhouls_TruePotion_and_LightSensitivity_Passives.",
+              "Description": "",
+              "Handles": {
+                "NameHandle": "",
+                "DescriptionHandle": "",
+                "TooltipHandle": ""
+              }
+            },
+            {
+              "Id": "AddUnderdarkRaces_LightSensitivity_Passives",
+              "Name": "AddUnderdarkRaces_LightSensitivity_Passives",
+              "Type": "checkbox",
+              "Default": true,
+              "Tooltip": "Enable or disable AddUnderdarkRaces_LightSensitivity_Passives.",
+              "Description": "",
+              "Handles": {
+                "NameHandle": "",
+                "DescriptionHandle": "",
+                "TooltipHandle": ""
+              }
+            }
+          ],
+          "Handles": {
+            "NameHandle": ""
+          }
         }
-    ]
+      ],
+      "Handles": {
+        "NameHandle": ""
+      }
+    },
+    {
+      "TabId": "PatchASI",
+      "TabName": "Patch ASI by Rule Set",
+      "Sections": [
+        {
+          "SectionId": "Checkparam_patchASI",
+          "SectionName": "Choose your rules set",
+          "Settings": [
+            {
+              "Id": "PatchASI_5eLimited",
+              "Name": "Fix 5e Limited ruleset Races & Classes",
+              "Type": "checkbox",
+              "Default": true,
+              "description": "",
+              "Tooltip": "Enable or disable to fix 5e Limited Races & Classes.",
+              "Handles": {
+                "NameHandle": "",
+                "DescriptionHandle": "",
+                "TooltipHandle": ""
+              }
+            },
+            {
+              "Id": "PatchASI_5e",
+              "Name": "Fix 5e ruleset Races & Classes",
+              "Type": "checkbox",
+              "Default": true,
+              "description": "",
+              "Tooltip": "Enable or disable to fix 5e Races & Classes.",
+              "Handles": {
+                "NameHandle": "",
+                "DescriptionHandle": "",
+                "TooltipHandle": ""
+              }
+            },
+            {
+              "Id": "PatchASI_5eExtended",
+              "Name": "Fix 5e Extended ruleset Races & Classes",
+              "Type": "checkbox",
+              "Default": true,
+              "description": "",
+              "Tooltip": "Enable or disable to fix 5e Extended Races & Classes.",
+              "Handles": {
+                "NameHandle": "",
+                "DescriptionHandle": "",
+                "TooltipHandle": ""
+              }
+            },
+            {
+              "Id": "PatchASI_Legacy",
+              "Name": "Fix Legacy ruleset Races & Classes",
+              "Type": "checkbox",
+              "Default": true,
+              "description": "",
+              "Tooltip": "Enable or disable to fix Legacy Races & Classes.",
+              "Handles": {
+                "NameHandle": "",
+                "DescriptionHandle": "",
+                "TooltipHandle": ""
+              }
+            },
+            {
+              "Id": "PatchASI_Flavour",
+              "Name": "Fix Flavour ruleset Races & Classes",
+              "Type": "checkbox",
+              "Default": true,
+              "description": "",
+              "Tooltip": "Enable or disable to fix Flavour Races & Classes.",
+              "Handles": {
+                "NameHandle": "",
+                "DescriptionHandle": "",
+                "TooltipHandle": ""
+              }
+            },
+            {
+              "Id": "PatchASI_Homebrew",
+              "Name": "Fix Homebrew ruleset Races & Classes",
+              "Type": "checkbox",
+              "Default": true,
+              "description": "",
+              "Tooltip": "Enable or disable to fix Homebrew Races & Classes.",
+              "Handles": {
+                "NameHandle": "",
+                "DescriptionHandle": "",
+                "TooltipHandle": ""
+              }
+            }
+          ],
+          "Handles": {
+            "NameHandle": ""
+          }
+        },
+        {
+          "SectionId": "Moreinfos_patchASI",
+          "SectionName": "More Informations",
+          "SectionDescription": "When you tick one of these boxes, the characteristics, skills and spells of the races will be modified to be more in line with the rules in the DnD books.\n\nIf a race doesn't exist in the rule books, you'll be given the choice when creating your character to assign characteristics as you wish (+2, +1).\n\nPlease note that you will need to restart your game for these modifications to take effect.",
+          "Handles": {
+            "NameHandle": "",
+            "DescriptionHandle": ""
+          }
+        },
+        {
+          "SectionId": "default_patchASI",
+          "SectionName": "default patch ASI",
+          "Settings": [
+            {
+              "Id": "PatchASI_Default",
+              "Name": "Override all D&D rules",
+              "Type": "checkbox",
+              "Default": false,
+              "description": "",
+              "Tooltip": "WARNING ! If you select this option, all previous rules will be ignored and all races and sub-races will have default characteristic bonuses (+2, +1). Select with care!",
+              "Handles": {
+                "NameHandle": "",
+                "DescriptionHandle": "",
+                "TooltipHandle": ""
+              }
+            }
+          ]
+        }
+      ],
+      "Handles": {
+        "NameHandle": ""
+      }
+    }
+  ]
 }

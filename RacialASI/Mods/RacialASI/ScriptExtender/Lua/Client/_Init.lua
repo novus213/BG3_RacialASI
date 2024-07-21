@@ -92,13 +92,13 @@ else
 
             mcmVarsOptions 		= mcmVars
 
-            PatchAsi5eLimited  = mcmVarsBooksSettings["PatchASI_5eLimited"]
-            PatchAsi5e         = mcmVarsBooksSettings["PatchASI_5e"]
-            PatchAsi5eExtended = mcmVarsBooksSettings["PatchASI_5eExtended"]
-            PatchAsiLegacy     = mcmVarsBooksSettings["PatchASI_Legacy"]
-            PatchAsiFlavour    = mcmVarsBooksSettings["PatchASI_Flavour"]
-            PatchAsiHomebrew   = mcmVarsBooksSettings["PatchASI_Homebrew"]
-            PatchAsiDefault    = mcmVarsBooksSettings["PatchASI_Default"]
+            PatchAsi5eLimited  = mcmVarsBooksSettings["PatchAsi5eLimited"]
+            PatchAsi5e         = mcmVarsBooksSettings["PatchAsi5e"]
+            PatchAsi5eExtended = mcmVarsBooksSettings["PatchAsi5eExtended"]
+            PatchAsiLegacy     = mcmVarsBooksSettings["PatchAsiLegacy"]
+            PatchAsiFlavour    = mcmVarsBooksSettings["PatchAsiFlavour"]
+            PatchAsiHomebrew   = mcmVarsBooksSettings["PatchAsiHomebrew"]
+            PatchAsiDefault    = mcmVarsBooksSettings["PatchAsiDefault"]
 
             DebugLevel = mcmVarsGeneralSettings["debug_level"]
             Log = mcmVarsGeneralSettings["Log"]
