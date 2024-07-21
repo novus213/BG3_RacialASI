@@ -41,11 +41,9 @@ local function tableInsertRaceStats(raceMod)
             local raceModBonusSize = table.getLength(raceMod.Bonus)
             for i = 1, raceModBonusSize do
                 table.insert(RaceStat, raceMod.Bonus[i])
-
-                BasicPrint(string.format("raceMod.Bonus[bonusRaceMod] XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX: %s\n\n", raceMod.Bonus[i]))
             end
         end
-        BasicWarning(string.format("raceMod.Stats: %s\n\n", table.dump(raceMod.Stats)))
+        BasicWarning(string.format("raceMod.Stats: %s\n\n", table.dump(RaceStat)))
 		return RaceStat
 	end
 end

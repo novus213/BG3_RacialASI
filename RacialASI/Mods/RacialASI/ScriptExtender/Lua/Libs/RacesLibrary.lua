@@ -47,8 +47,7 @@ RaceLibrary = {
 		UUID			=	"496486a4-b5f2-4f91-90ea-6cad9023952e",
 		Author			=	"Larian",
 		SourceBook		=	"PHB",
-		MainRace		=	true,
-		Stats			=	{"0", "0", "0", "0", "0", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		MainRace		=	true
 	},
 	{
 		Name			=	"High Elf default",
@@ -84,8 +83,7 @@ RaceLibrary = {
 		UUID			=	"3c9a0bd8-bb0f-4a42-b77f-7a9a1cff2e5d",
 		Author			=	"Larian",
 		SourceBook		=	"PHB",
-		MainRace		=	true,
-		Stats			=	{"0", "0", "0", "0", "0", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		MainRace		=	true
 	},
 	{
 		Name			=	"Dwarf - Duergar default",
@@ -159,8 +157,7 @@ RaceLibrary = {
 		UUID			=	"d48f8fb3-4351-4b5d-a28c-946fd33be726",
 		Author			=	"Larian",
 		SourceBook		=	"PHB",
-		MainRace		=	true,
-		Stats			=	{"0", "0", "0", "0", "0", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		MainRace		=	true
 	},
 	{
 		Name			=	"Gnome - Rock default",
@@ -195,8 +192,7 @@ RaceLibrary = {
 		UUID			=	"963edcba-c572-4f51-b447-8810bbb43a8e",
 		Author			=	"Larian",
 		SourceBook		=	"PHB",
-		MainRace		=	true,
-		Stats			=	{"0", "0", "0", "0", "0", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		MainRace		=	true
 	},
 	{
 		Name			=	"Halfling - Lightfoot default",
@@ -222,8 +218,7 @@ RaceLibrary = {
 		UUID			=	"56529178-3df2-4067-b1c0-e35fe82fbd37",
 		Author			=	"Larian",
 		SourceBook		=	"PHB",
-		MainRace		=	true,
-		Stats			=	{"0", "0", "0", "0", "0", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		MainRace		=	true
 	},
 	{
 		Name			=	"Tiefling - Asmodeus default",
@@ -258,8 +253,7 @@ RaceLibrary = {
 		UUID			=	"cabc4d46-f08e-4a48-8937-0bd1067ab43d",
 		Author			=	"Larian",
 		SourceBook		=	"PHB",
-		MainRace		=	true,
-		Stats			=	{"0", "0", "0", "0", "0", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		MainRace		=	true
 	},
 	{
 		Name			=	"Half-Orc default",
@@ -720,7 +714,7 @@ _________                 __                   __________
         UUID			=	"8e8928df-70b1-43c0-bc86-40b32c455bee",
 		Author			=	"",
 		SourceBook		=	"PAitM",
-		MainRace		=	false,
+		MainRace		=	true,
 		Stats			=	{"0", "0", "0", "1", "2", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
     },
     {
