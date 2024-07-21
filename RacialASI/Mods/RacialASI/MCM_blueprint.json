@@ -80,103 +80,12 @@
           "SectionName": "Feats Settings",
           "Settings": [
             {
-              "Id": "AddGnome_Tinkertools_Spells",
-              "Name": "Rock Gnome Tinkertools",
-              "Type": "checkbox",
-              "Default": true,
-              "Tooltip": "Enable or disable Rock Gnome Tinkertools.",
-              "Description": "",
-              "Handles": {
-                "NameHandle": "",
-                "DescriptionHandle": "",
-                "TooltipHandle": ""
-              }
-            },
-            {
-              "Id": "AddGnome_ForestMinorIllusion_Spells",
-              "Name": "Rock Forest Minor illusion",
-              "Type": "checkbox",
-              "Default": true,
-              "Tooltip": "Enable or disable Rock Gnome Forest Illusion.",
-              "Description": "",
-              "Handles": {
-                "NameHandle": "",
-                "DescriptionHandle": "",
-                "TooltipHandle": ""
-              }
-            },
-            {
-              "Id": "AddHalfElf_Skills",
-              "Name": "HalfElf two Skills",
-              "Type": "checkbox",
-              "Default": true,
-              "Tooltip": "Enable or disable HalfElf two Skills.",
-              "Description": "",
-              "Handles": {
-                "NameHandle": "",
-                "DescriptionHandle": "",
-                "TooltipHandle": ""
-              }
-            },
-            {
-              "Id": "AddHalfElfDrow_Drow_DrowWeaponTraining_Passives",
-              "Name": "HalfElfDrow Drow DrowWeaponTraining Passives",
-              "Type": "checkbox",
-              "Default": true,
-              "Tooltip": "Enable or disable HalfElfDrow Drow DrowWeaponTraining Passives.",
-              "Description": "",
-              "Handles": {
-                "NameHandle": "",
-                "DescriptionHandle": "",
-                "TooltipHandle": ""
-              }
-            },
-            {
-              "Id": "RemoveHuman_HumanMilitia_HumanVersatility_Passives",
-              "Name": "RemoveHuman_HumanMilitia_HumanVersatility_Passives",
-              "Type": "checkbox",
-              "Default": true,
-              "Tooltip": "Enable or disable RemoveHuman_HumanMilitia_HumanVersatility_Passives.",
-              "Description": "",
-              "Handles": {
-                "NameHandle": "",
-                "DescriptionHandle": "",
-                "TooltipHandle": ""
-              }
-            },
-            {
-              "Id": "RemoveHalfElf_HumanMilitia_Passives",
-              "Name": "RemoveHalfElf_HumanMilitia_Passives",
-              "Type": "checkbox",
-              "Default": true,
-              "Tooltip": "Enable or disable RemoveHalfElf_HumanMilitia_Passives.",
-              "Description": "",
-              "Handles": {
-                "NameHandle": "",
-                "DescriptionHandle": "",
-                "TooltipHandle": ""
-              }
-            },
-            {
               "Id": "AddUndeadGhastlyGhouls_TruePotion_and_LightSensitivity_Passives",
-              "Name": "AddUndeadGhastlyGhouls_TruePotion_and_LightSensitivity_Passives",
+              "Name": "Add Feats and Passives Undead Ghastly Ghouls",
               "Type": "checkbox",
               "Default": true,
-              "Tooltip": "Enable or disable AddUndeadGhastlyGhouls_TruePotion_and_LightSensitivity_Passives.",
-              "Description": "",
-              "Handles": {
-                "NameHandle": "",
-                "DescriptionHandle": "",
-                "TooltipHandle": ""
-              }
-            },
-            {
-              "Id": "AddUnderdarkRaces_LightSensitivity_Passives",
-              "Name": "AddUnderdarkRaces_LightSensitivity_Passives",
-              "Type": "checkbox",
-              "Default": true,
-              "Tooltip": "Enable or disable AddUnderdarkRaces_LightSensitivity_Passives.",
-              "Description": "",
+              "Tooltip": "Enable or disable  Feats and Passives to Undead Ghastly Ghouls.",
+              "Description": "Add TruePotion Feat and LightSensitivity Passives to Undead Ghastly Ghouls.",
               "Handles": {
                 "NameHandle": "",
                 "DescriptionHandle": "",
