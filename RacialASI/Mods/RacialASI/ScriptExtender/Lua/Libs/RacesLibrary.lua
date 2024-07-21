@@ -726,7 +726,7 @@ _________                 __                   __________
         modGuid			=	"abc09812-ed4d-43ff-9a93-ee46487e81d9",
         UUID			=	"c2c089df-c622-4074-ab18-a4bde879a055",
 		Author			=	"",
-		SourceBook		=	"",
+		SourceBook		=	"MToF",
 		MainRace		=	true,
 		Stats			=	{"0", "2", "0", "0", "1", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
     },
