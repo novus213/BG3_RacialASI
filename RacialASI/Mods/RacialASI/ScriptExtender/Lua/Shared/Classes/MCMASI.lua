@@ -33,7 +33,8 @@ function MCMASI:OnSessionLoadedMCM()
         PatchAsi5eExtended = MCMASIAPI:MCMGet("PatchASI_5eExtended"),
         PatchAsiLegacy = MCMASIAPI:MCMGet("PatchASI_Legacy"),
         PatchAsiFlavour = MCMASIAPI:MCMGet("PatchASI_Flavour"),
-        PatchAsiHomebrew = MCMASIAPI:MCMGet("PatchASI_Homebrew")
+        PatchAsiHomebrew = MCMASIAPI:MCMGet("PatchASI_Homebrew"),
+        PatchAsiDefault = MCMASIAPI:MCMGet("PatchASI_Default")
         --[[
             mcmVarsBooksSettings["IgnoreAll"]
         ]]--

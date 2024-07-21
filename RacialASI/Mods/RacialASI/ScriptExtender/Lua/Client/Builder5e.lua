@@ -164,67 +164,73 @@ end
 --- Constructor for builder5eRaces
 function builder5eRaces()
 	removedRaces = {}  -- Table to store race with removed shit asi
-	for _, raceMod in pairs(RaceLibrary) do
-		if isModExist(raceMod.modGuid) then -- présent dans isLoaded
-			if raceMod.SourceBook == nil or raceMod.SourceBook == "" then
-				if PatchAsiHomebrew==true then
-					CleanOnRacesStatsLoaded(raceMod)
-					insertPayload(raceMod)
-				else
-					BasicWarning(string.format("%s Wasn't fixed. You uncheck Homebrew", raceMod.Name))
-				end
-			end
-			for _, book in pairs(Dnd5eLimited) do
-				if book.bookRef == raceMod.SourceBook then
-					if PatchAsi5eLimited == true then
-						CleanOnRacesStatsLoaded(raceMod)
-						insertPayload(raceMod)
-					else
-						BasicWarning(string.format("%s Wasn't fixed. You uncheck Fix 5e Limited", raceMod.Name))
-					end
-				end
-			end
-			for _, book in pairs(Dnd5e) do
-				if book.bookRef == raceMod.SourceBook then
-					if PatchAsi5e == true then
-						CleanOnRacesStatsLoaded(raceMod)
-						insertPayload(raceMod)
-					else
-						BasicWarning(string.format("%s Wasn't fixed. You uncheck Fix 5e", raceMod.Name))
-					end
-				end
-			end
-			for _, book in pairs(Dnd5eExtended) do
-				if book.bookRef == raceMod.SourceBook then
-					if PatchAsi5eExtended == true then
-						CleanOnRacesStatsLoaded(raceMod)
-						insertPayload(raceMod)
-					else
-						BasicWarning(string.format("%s Wasn't fixed. You uncheck Fix 5e Extended", raceMod.Name))
-					end
-				end
-			end
-			for _, book in pairs(Legacy) do
-				if book.bookRef == raceMod.SourceBook then
-					if PatchAsiLegacy == true then
-						CleanOnRacesStatsLoaded(raceMod)
-						insertPayload(raceMod)
-					else
-						BasicWarning(string.format("%s Wasn't fixed. You uncheck Fix 5e Legacy", raceMod.Name))
-					end
-				end
-			end
-			for _, book in pairs(Flavours) do
-				if book.bookRef == raceMod.SourceBook then
-					if PatchAsiFlavour == true then
-						CleanOnRacesStatsLoaded(raceMod)
-						insertPayload(raceMod)
-					else
-						BasicWarning(string.format("%s Wasn't fixed. You uncheck Fix Flavours", raceMod.Name))
-					end
-				end
-			end
-		end
+    -- on test si le mec a coché dans mcm default payload si oui on fait un for each for _, raceMod in pairs(RaceLibrary) do CleanOnRacesStatsLoaded(raceMod) et insertDefaultPayload(raceMod)
+    for _, raceMod in pairs(RaceLibrary) do
+        if PatchAsiDefault == true then
+            CleanOnRacesStatsLoaded(raceMod)
+            insertDefaultPayload(raceMod)
+        else
+            if isModExist(raceMod.modGuid) then -- présent dans isLoaded
+                if raceMod.SourceBook == nil or raceMod.SourceBook == "" then
+                    if PatchAsiHomebrew == true then
+                        CleanOnRacesStatsLoaded(raceMod)
+                        insertPayload(raceMod)
+                    else
+                        BasicWarning(string.format("%s Wasn't fixed. You uncheck Homebrew", raceMod.Name))
+                    end
+                end
+                for _, book in pairs(Dnd5eLimited) do
+                    if book.bookRef == raceMod.SourceBook then
+                        if PatchAsi5eLimited == true then
+                            CleanOnRacesStatsLoaded(raceMod)
+                            insertPayload(raceMod)
+                        else
+                            BasicWarning(string.format("%s Wasn't fixed. You uncheck Fix 5e Limited", raceMod.Name))
+                        end
+                    end
+                end
+                for _, book in pairs(Dnd5e) do
+                    if book.bookRef == raceMod.SourceBook then
+                        if PatchAsi5e == true then
+                            CleanOnRacesStatsLoaded(raceMod)
+                            insertPayload(raceMod)
+                        else
+                            BasicWarning(string.format("%s Wasn't fixed. You uncheck Fix 5e", raceMod.Name))
+                        end
+                    end
+                end
+                for _, book in pairs(Dnd5eExtended) do
+                    if book.bookRef == raceMod.SourceBook then
+                        if PatchAsi5eExtended == true then
+                            CleanOnRacesStatsLoaded(raceMod)
+                            insertPayload(raceMod)
+                        else
+                            BasicWarning(string.format("%s Wasn't fixed. You uncheck Fix 5e Extended", raceMod.Name))
+                        end
+                    end
+                end
+                for _, book in pairs(Legacy) do
+                    if book.bookRef == raceMod.SourceBook then
+                        if PatchAsiLegacy == true then
+                            CleanOnRacesStatsLoaded(raceMod)
+                            insertPayload(raceMod)
+                        else
+                            BasicWarning(string.format("%s Wasn't fixed. You uncheck Fix 5e Legacy", raceMod.Name))
+                        end
+                    end
+                end
+                for _, book in pairs(Flavours) do
+                    if book.bookRef == raceMod.SourceBook then
+                        if PatchAsiFlavour == true then
+                            CleanOnRacesStatsLoaded(raceMod)
+                            insertPayload(raceMod)
+                        else
+                            BasicWarning(string.format("%s Wasn't fixed. You uncheck Fix Flavours", raceMod.Name))
+                        end
+                    end
+                end
+            end
+        end
 	end
 end
 

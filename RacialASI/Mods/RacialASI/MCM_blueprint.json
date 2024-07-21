@@ -205,7 +205,7 @@
                             "Id": "PatchASI_5eLimited",
                             "Name": "Fix 5e Limited ruleset Races & Classes",
                             "Type": "checkbox",
-                            "Default": false,
+                            "Default": true,
                             "description": "",
                             "Tooltip": "Enable or disable to fix 5e Limited Races & Classes.",
                             "Handles": {
@@ -218,7 +218,7 @@
                             "Id": "PatchASI_5e",
                             "Name": "Fix 5e ruleset Races & Classes",
                             "Type": "checkbox",
-                            "Default": false,
+                            "Default": true,
                             "description": "",
                             "Tooltip": "Enable or disable to fix 5e Races & Classes.",
                             "Handles": {
@@ -231,7 +231,7 @@
                             "Id": "PatchASI_5eExtended",
                             "Name": "Fix 5e Extended ruleset Races & Classes",
                             "Type": "checkbox",
-                            "Default": false,
+                            "Default": true,
                             "description": "",
                             "Tooltip": "Enable or disable to fix 5e Extended Races & Classes.",
                             "Handles": {
@@ -244,7 +244,7 @@
                             "Id": "PatchASI_Legacy",
                             "Name": "Fix Legacy ruleset Races & Classes",
                             "Type": "checkbox",
-                            "Default": false,
+                            "Default": true,
                             "description": "",
                             "Tooltip": "Enable or disable to fix Legacy Races & Classes.",
                             "Handles": {
@@ -287,12 +287,34 @@
                 {
                     "SectionId": "Moreinfos_patchASI",
                     "SectionName": "More Informations",
-                    "SectionDescription": "When you tick one of these boxes, the characteristics, skills and spells of the races will be modified to be more in line with the rules in the DnD books. If a race doesn't exist in the rule books, you'll be given the choice when creating your character to assign characteristics as you wish (+2, +1).\n\nPlease note that you will need to restart your game for these modifications to take effect."
+                    "SectionDescription": "When you tick one of these boxes, the characteristics, skills and spells of the races will be modified to be more in line with the rules in the DnD books. If a race doesn't exist in the rule books, you'll be given the choice when creating your character to assign characteristics as you wish (+2, +1).\n\nPlease note that you will need to restart your game for these modifications to take effect.",
+                    "Handles": {
+                        "NameHandle": "",
+                        "DescriptionHandle": ""
+                    }
+                },
+                {
+                    "SectionId": "default_patchASI",
+                    "SectionName": "default patch ASI",
+                    "Settings": [
+                        {
+                            "Id": "PatchASI_Default",
+                            "Name": "Override all D&D rules",
+                            "Type": "checkbox",
+                            "Default": false,
+                            "description": "",
+                            "Tooltip": "WARNING ! If you select this option, all previous rules will be ignored and all races and sub-races will have default characteristic bonuses (+2, +1). Select with care!",
+                            "Handles": {
+                                "NameHandle": "",
+                                "DescriptionHandle": "",
+                                "TooltipHandle": ""
+                            }
+                        }
+                    ]
                 }
             ],
             "Handles": {
-                "NameHandle": "",
-                "DescriptionHandle": ""
+                "NameHandle": ""
             }
         }
     ]

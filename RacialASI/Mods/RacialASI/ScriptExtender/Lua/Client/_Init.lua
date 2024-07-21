@@ -65,6 +65,8 @@ local function OnStatsLoaded()
     PatchAsiLegacy     = settings5e["PatchASI_Legacy"]
     PatchAsiFlavour    = settings5e["PatchASI_Flavour"]
     PatchAsiHomebrew   = settings5e["PatchASI_Homebrew"]
+    PatchAsiDefault    = settings5e["PatchASI_Default"]
+
 
 end
 --- End CONFIG NO MCM
@@ -96,6 +98,7 @@ else
             PatchAsiLegacy     = mcmVarsBooksSettings["PatchASI_Legacy"]
             PatchAsiFlavour    = mcmVarsBooksSettings["PatchASI_Flavour"]
             PatchAsiHomebrew   = mcmVarsBooksSettings["PatchASI_Homebrew"]
+            PatchAsiDefault    = mcmVarsBooksSettings["PatchASI_Default"]
 
             DebugLevel = mcmVarsGeneralSettings["debug_level"]
             Log = mcmVarsGeneralSettings["Log"]
