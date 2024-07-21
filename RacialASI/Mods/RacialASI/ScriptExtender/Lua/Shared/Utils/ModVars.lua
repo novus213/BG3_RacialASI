@@ -33,6 +33,10 @@ function isModLoaded(modId)
     return Ext.Mod.IsModLoaded(modId)
 end
 
+function isModExist(modId)
+    return Ext.Mod.IsModLoaded(deps.Framework_GUID) and Ext.Mod.IsModLoaded(modId)
+end
+
 -- -------------------------------------------------------------------------- --
 --                                 Custom Vars                                --
 -- -------------------------------------------------------------------------- --

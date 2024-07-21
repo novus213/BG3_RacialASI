@@ -83,12 +83,11 @@ local function createBoostPayload(modGuid, uuid, strings)
       }
 end
 
-
 --- Constructor for RemoveRacePayload
 ---@param raceMod table raceMod
 local function removeRacePayload(raceMod)
     local removedModRace = {}  -- Table to store classes with removed shit asi
-    if Ext.Mod.IsModLoaded(deps.Framework_GUID) and Ext.Mod.IsModLoaded(raceMod.modGuid) then
+    if isModExist(raceMod.modGuid) then
             table.insert(removedModRace, raceMod.Name) -- Add to the list if ASI Fixed
             Ext.Net.PostMessageToServer("MU_Request_Server_Uninstall_Mod", Ext.Json.Stringify({
             modUUID = raceMod.modGuid
@@ -109,7 +108,7 @@ local function insertPayload(raceMod)
 local fixAsi = {}  -- Table to store classes with removed shit asi
 	if raceMod.Sab ~= nil then
         local payload = {}
-        if Ext.Mod.IsModLoaded(deps.Framework_GUID) and Ext.Mod.IsModLoaded(raceMod.modGuid) then
+        if isModExist(raceMod.modGuid) then
         -- special Ability List +x in some ASI or default
             local AbilityListUUID = ""
             if raceMod.specialAbList ~= nil then
@@ -126,7 +125,7 @@ local fixAsi = {}  -- Table to store classes with removed shit asi
 
 	if raceMod.Stats ~= nil then
         local payload = {}
-        if Ext.Mod.IsModLoaded(deps.Framework_GUID) and Ext.Mod.IsModLoaded(raceMod.modGuid) then
+        if isModExist(raceMod.modGuid) then
             local raceModStats = tableInsertRaceStats(raceMod)
             payload = createBoostPayload(raceMod.modGuid, raceMod.UUID, raceModStats)
             if raceMod.Stats ~= nil and raceMod.Sab == nil then
@@ -147,7 +146,7 @@ end
 ---@param raceMod table raceMod
 local function insertDefaultPayload(raceMod)
     local baseAsi = {}  -- Table to store classes with removed shit asi
-    if Ext.Mod.IsModLoaded(deps.Framework_GUID) and Ext.Mod.IsModLoaded(raceMod.modGuid) then
+    if isModExist(raceMod.modGuid) then
         payload = createSABPayload(raceMod.modGuid, raceMod.UUID, deps.AbilityList_UUID, {"2","1"}, 2)
         table.insert(baseAsi, raceMod.Name) -- Add to the list if ASI Fixed
         Mods.SubclassCompatibilityFramework.Api.InsertSelectors({payload})
@@ -156,9 +155,8 @@ local function insertDefaultPayload(raceMod)
         BasicWarning("============> Base +2/+1 Ability added to " ..
                  #baseAsi .. " mods: " ..
                  table.concat(baseAsi, ", "))
-    end    
+    end
 end
-
 
 --- Constructor for builder5eRaces
 function builder5eRaces()
