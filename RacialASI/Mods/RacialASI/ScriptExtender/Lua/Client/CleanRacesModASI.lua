@@ -45,7 +45,7 @@ local function removeBoosts(mod, ability, score)
 
         Mods.SubclassCompatibilityFramework.Api.RemoveBoosts({payload})
 
-        BasicWarning(string.format("payload: %s", table.dump(payload)))
+        --BasicWarning(string.format("payload: %s", table.dump(payload)))
 
         return mod.Name  -- Return the race name if selectors were removed
     end
@@ -59,11 +59,11 @@ function CleanOnRacesStatsLoaded(mod)
 
     --for _, mod in ipairs(RaceLibrary) do
 
-        BasicWarning(string.format("mod.UUID ============> %s", mod.UUID))
+        --BasicWarning(string.format("mod.UUID ============> %s", mod.UUID))
 
-	    BasicWarning(string.format("mod.modGuid ============> %s", mod.modGuid))
+	    --BasicWarning(string.format("mod.modGuid ============> %s", mod.modGuid))
 
-        BasicWarning(string.format("AbilityList_UUID ============> %s", AbilityList_UUID))
+        --BasicWarning(string.format("AbilityList_UUID ============> %s", AbilityList_UUID))
 
 
         -- remove +2+1, +1, +1+1 ect..
@@ -71,7 +71,7 @@ function CleanOnRacesStatsLoaded(mod)
 
         Mods.SubclassCompatibilityFramework.Api.RemoveSelectors({payload})
 
-        BasicWarning(string.format("payload: %s", table.dump(payload)))
+        --BasicWarning(string.format("payload: %s", table.dump(payload)))
 
         -- remove Boost Ability
         for _, ability in ipairs(stats) do
@@ -83,12 +83,6 @@ function CleanOnRacesStatsLoaded(mod)
             table.insert(removedRaces, removedRace) -- Add to the list if removed
         end
     --end
-
-    if #removedRaces > 0 then
-        BasicWarning("============> Ability boost remove to " ..
-                 #removedRaces .. " mods: " ..
-                 table.concat(removedRaces, ", "))
-    end
 end
 
 --Ext.Events.StatsLoaded:Subscribe(CleanOnRacesStatsLoaded)

@@ -39,7 +39,7 @@ local function tableInsertRaceStats(raceMod)
                 table.insert(RaceStat, raceMod.Bonus[i])
             end
         end
-        BasicWarning(string.format("raceMod.Stats: %s\n\n", table.dump(RaceStat)))
+        --BasicWarning(string.format("raceMod.Stats: %s\n\n", table.dump(RaceStat)))
 		return RaceStat
 	end
 end
@@ -135,7 +135,7 @@ local fixAsi = {}  -- Table to store classes with removed shit asi
                 table.insert(fixAsi, raceMod.Name) -- Add to the list if ASI Fixed
             end
             Mods.SubclassCompatibilityFramework.Api.InsertBoosts({payload})
-            BasicWarning(string.format("payload InsertBoosts: %s\n\n", table.dump(payload)))
+            --BasicWarning(string.format("payload InsertBoosts: %s\n\n", table.dump(payload)))
         end
 	end
     if #fixAsi > 0 then
@@ -176,6 +176,7 @@ function builder5eRaces()
                         CleanOnRacesStatsLoaded(raceMod)
                         insertPayload(raceMod)
                     else
+                        --desactive moi ce putain de mod Connard function
                         BasicWarning(string.format("%s Wasn't fixed. You uncheck Homebrew", raceMod.Name))
                     end
                 end
@@ -232,6 +233,11 @@ function builder5eRaces()
             end
         end
 	end
+    if #removedRaces > 0 then
+        BasicWarning("============> Ability boost remove to " ..
+                 #removedRaces .. " mods: " ..
+                 table.concat(removedRaces, ", "))
+    end
 end
 
 if isModLoaded(deps.Framework_GUID) then
