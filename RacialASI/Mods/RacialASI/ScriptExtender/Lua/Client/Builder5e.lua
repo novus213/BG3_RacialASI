@@ -114,7 +114,13 @@ local fixAsi = {}  -- Table to store classes with removed shit asi
 	if raceMod.Sab ~= nil then
         local payload = {}
         if Ext.Mod.IsModLoaded(deps.Framework_GUID) and Ext.Mod.IsModLoaded(raceMod.modGuid) then
-            payload = createSABPayload(raceMod.modGuid, raceMod.UUID, deps.AbilityList_UUID, raceMod.Sab, table.getLength(raceMod.Sab))
+        -- special Ability List +x in some ASI or default
+            if raceMod.specialAbList ~= nil then
+                local AbilityListUUID = raceMod.specialAbList
+            else
+                local AbilityListUUID = deps.AbilityList_UUID
+            end
+            payload = createSABPayload(raceMod.modGuid, raceMod.UUID, AbilityListUUID, raceMod.Sab, table.getLength(raceMod.Sab))
             table.insert(fixAsi, raceMod.Name) -- Add to the list if ASI Fixed
             Mods.SubclassCompatibilityFramework.Api.InsertSelectors({payload})
             BasicWarning(string.format("payload InsertSelectors: %s\n\n", table.dump(payload)))

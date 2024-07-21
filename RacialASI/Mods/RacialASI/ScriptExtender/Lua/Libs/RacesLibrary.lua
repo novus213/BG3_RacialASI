@@ -345,6 +345,7 @@ RaceLibrary = {
 		Author			=	"",
 		SourceBook		=	"SCAG",
 		MainRace		=	false,
+		specialAbList	=	"0a42b87b-a001-4091-8072-a611a85fa465",
 		Stats			=	{"0", "0", "0", "1", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 		Sab				=	{"2"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
@@ -458,6 +459,7 @@ RaceLibrary = {
 		Author			=	"",
 		SourceBook		=	"",
 		MainRace		=	false,
+		specialAbList	=	"002d957b-ed24-4efa-afdb-ccf86bac00dd",
 		Stats			=	{"0", "2", "0", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 		Sab				=	{"1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
