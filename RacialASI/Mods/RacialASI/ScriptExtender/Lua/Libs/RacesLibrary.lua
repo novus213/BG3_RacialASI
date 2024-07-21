@@ -2,16 +2,16 @@
 local function checkHumanFM()
 	if Ext.Mod.IsModLoaded(deps.Framework_FM_GUID) then
         return {
-		    humanMainRace	= false,
-		    humanUUID		=  "139e1b8c-dfa1-4b2d-895c-efb170736093", --Human default Fantastic M
-			modGuid			= deps.Framework_FM_GUID,
+			humanMainRace	=	false,
+			humanUUID		=	"139e1b8c-dfa1-4b2d-895c-efb170736093", --Human default Fantastic M
+			modGuid			=	deps.Framework_FM_GUID,
 			Author			=	"Fantastic Multiverse",
         }
 	else
         return {
-		    humanMainRace	= true,
-		    humanUUID		=  "dbde4d66-d3e4-4c3f-ae87-fd6e2d1cd276", --Human default Larian,
-			modGuid			= "28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
+			humanMainRace	=	true,
+			humanUUID		=	"dbde4d66-d3e4-4c3f-ae87-fd6e2d1cd276", --Human default Larian,
+			modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
 			Author			=	"Larian"
         }
 	end
@@ -129,7 +129,7 @@ RaceLibrary = {
 		SourceBook		=	"PHB",
 		MainRace		=	false,
 		Stats			=	{"0", "0", "0", "0", "0", "2"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
-		Sab     		= 	{"1","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab				=	{"1","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"Half-Elf - Half Wood Elf default",
@@ -139,7 +139,7 @@ RaceLibrary = {
 		SourceBook		=	"PHB",
 		MainRace		=	false,
 		Stats			=	{"0", "0", "0", "0", "0", "2"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
-		Sab     		= 	{"1","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab				=	{"1","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"Half-Elf - Half Drow default",
@@ -149,7 +149,7 @@ RaceLibrary = {
 		SourceBook		=	"PHB",
 		MainRace		=	false,
 		Stats			=	{"0", "0", "0", "0", "0", "2"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
-		Sab     		= 	{"1","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab				=	{"1","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"Gnome default",
@@ -346,7 +346,7 @@ RaceLibrary = {
 		SourceBook		=	"SCAG",
 		MainRace		=	false,
 		Stats			=	{"0", "0", "0", "1", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
-		Sab     		= 	{"2"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab				=	{"2"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"ASTRL_Winged_Tiefling",
@@ -356,7 +356,7 @@ RaceLibrary = {
 		SourceBook		=	"MToF",
 		MainRace		=	false,
 		Stats			=	{"0", "0", "0", "1", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
-		Sab     		= 	{"2"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab				=	{"2"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"ASTRL_Nightborn_Tiefling",
@@ -365,7 +365,7 @@ RaceLibrary = {
 		Author			=	"",
 		SourceBook		=	"",
 		MainRace		=	false,
-		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab				=	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"ASTRL_Feyri_Tiefling",
@@ -374,7 +374,7 @@ RaceLibrary = {
 		Author			=	"",
 		SourceBook		=	"",
 		MainRace		=	false,
-		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab				=	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"ASTRL_Elamshinae_Tiefling",
@@ -383,7 +383,7 @@ RaceLibrary = {
 		Author			=	"",
 		SourceBook		=	"",
 		MainRace		=	false,
-		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab				=	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"ASTRL_Velkynbol_Tiefling",
@@ -392,7 +392,7 @@ RaceLibrary = {
 		Author			=	"",
 		SourceBook		=	"",
 		MainRace		=	false,
-		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab				=	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"ASTRL_Isilmnirel_Tiefling",
@@ -401,7 +401,7 @@ RaceLibrary = {
 		Author			=	"",
 		SourceBook		=	"",
 		MainRace		=	false,
-		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab				=	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 
 --[[
@@ -459,7 +459,7 @@ RaceLibrary = {
 		SourceBook		=	"",
 		MainRace		=	false,
 		Stats			=	{"0", "2", "0", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
-		Sab     		= 	{"1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab				=	{"1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"ASTRL_DuskElf_LevelOne",
@@ -468,7 +468,7 @@ RaceLibrary = {
 		Author			=	"",
 		SourceBook		=	"",
 		MainRace		=	false,
-		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab				=	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 
 --[[
@@ -571,9 +571,9 @@ _________                 __                   __________
 		Author			=	"",
 		SourceBook		=	"MToF",
 		Comments		=	"The Sea Elves and the Shadar-kai, originally published as playtest material in this Unearthed Arcana,\
-		were officially released today (May 29, 2018) as part of Mordenkainen's Tome of Foes;\
-		the Eladrin elf subrace was included as well.\
-		The Avariel and Grugach, as far as I know, were not released.",
+were officially released today (May 29, 2018) as part of Mordenkainen's Tome of Foes;\
+the Eladrin elf subrace was included as well.\
+The Avariel and Grugach, as far as I know, were not released.",
 		MainRace		=	false,
 		Stats			=	{"0", "2", "1", "0", "0", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 	},
@@ -584,7 +584,7 @@ _________                 __                   __________
 		Author			=	"",
 		SourceBook		=	"MPMotM",
 		MainRace		=	true,
-		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab				=	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"Owlin",
@@ -593,7 +593,7 @@ _________                 __                   __________
 		Author			=	"",
 		SourceBook		=	"SACoC",
 		MainRace		=	true,
-		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab				=	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"Myconid",
@@ -602,7 +602,7 @@ _________                 __                   __________
 		Author			=	"",
 		SourceBook		=	"",
 		MainRace		=	true,
-		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab				=	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"Genasi (Elemental Power)",
@@ -611,7 +611,7 @@ _________                 __                   __________
 		Author			=	"",
 		SourceBook		=	"MPMotM",
 		MainRace		=	true,
-		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab				=	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"HalfDragon",
@@ -620,7 +620,7 @@ _________                 __                   __________
 		Author			=	"Jo Val Rudovous",
 		SourceBook		=	"",
 		MainRace		=	true,
-		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab				=	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"Hobgoblin (https://github.com/GentlemanBabbo/Hobgoblin/tree/main)",
@@ -629,7 +629,7 @@ _________                 __                   __________
 		Author			=	"GentlemanBabbo",
 		SourceBook		=	"MPMotM",
 		MainRace		=	true,
-		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab				=	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"CE_WitchElf",
@@ -638,7 +638,7 @@ _________                 __                   __________
 		Author			=	"",
 		SourceBook		=	"",
 		MainRace		=	false,
-		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab				=	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
         Name			=	"Halfling (Haunted Warriors)",
@@ -810,7 +810,7 @@ _________                 __                   __________
 		SourceBook		=	"",
 		MainRace		=	true,
 		Stats			=	{"0", "0", "0", "0", "0", "2"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
-		Sab     		= 	{"1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab				=	{"1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
     },
     {
         Name			=	"Whispers of the Fey - Goblins Greenskin",
@@ -865,7 +865,7 @@ _________                 __                   __________
 		SourceBook		=	"",
 		MainRace		=	true,
 		Stats			=	{"0", "2", "0", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
-		Sab     		= 	{"1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab				=	{"1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
     },
     {
         Name			=	"Half-Elves that are half Drow and half Half-Orc Soriyumi",
@@ -901,7 +901,7 @@ _________                 __                   __________
 		Author			=	"",
 		SourceBook		=	"DSotDQ",
 		MainRace		=	false,
-		Sab     		= 	{"1","1","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab				=	{"1","1","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
     },
 
 --[[
@@ -949,7 +949,7 @@ _________                 __                   __________
 		SourceBook		=	"",
 		MainRace		=	false,
 		Stats			=	{"0", "0", "0", "0", "0", "1"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
-		Sab     		= 	{"1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab				=	{"1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
     },
 
 --[[
@@ -969,7 +969,7 @@ ___________              __                   __  .__              .__       ___
 		Author			=	"",
 		SourceBook		=	"",
 		MainRace		=	false,
-		Sab     		= 	{"1","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab				=	{"1","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"Fantastical Astral Elf",
@@ -978,7 +978,7 @@ ___________              __                   __  .__              .__       ___
 		Author			=	"",
 		SourceBook		=	"SAiS",
 		MainRace		=	false,
-		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab				=	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"Fantastical Reborn(Humanoid)",
@@ -987,7 +987,7 @@ ___________              __                   __  .__              .__       ___
 		Author			=	"",
 		SourceBook		=	"VRGtR",
 		MainRace		=	false,
-		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab				=	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"Fantastical Downcast",
@@ -996,7 +996,7 @@ ___________              __                   __  .__              .__       ___
 		Author			=	"",
 		SourceBook		=	"GHPG",
 		MainRace		=	false,
-		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab				=	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"Fantastical Elezen",
@@ -1005,7 +1005,7 @@ ___________              __                   __  .__              .__       ___
 		Author			=	"",
 		SourceBook		=	"EFFXIV",
 		MainRace		=	false,
-		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab				=	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"Fantastical Dhampir(Lineage)",
@@ -1014,7 +1014,7 @@ ___________              __                   __  .__              .__       ___
 		Author			=	"",
 		SourceBook		=	"VRGtR",
 		MainRace		=	false,
-		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab				=	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"Fantastical Orc",
@@ -1023,7 +1023,7 @@ ___________              __                   __  .__              .__       ___
 		Author			=	"",
 		SourceBook		=	"PHB",
 		MainRace		=	true,
-		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab				=	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"Fantastical Kender",
@@ -1032,7 +1032,7 @@ ___________              __                   __  .__              .__       ___
 		Author			=	"",
 		SourceBook		=	"DSotDQ",
 		MainRace		=	true,
-		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab				=	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"Fantastical Water Genasi",
@@ -1041,7 +1041,7 @@ ___________              __                   __  .__              .__       ___
 		Author			=	"",
 		SourceBook		=	"MPMotM",
 		MainRace		=	false,
-		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab				=	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"Fantastical Shadar-kai",
@@ -1050,7 +1050,7 @@ ___________              __                   __  .__              .__       ___
 		Author			=	"",
 		SourceBook		=	"MPMotM",
 		MainRace		=	false,
-		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab				=	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"Fantastical Air Genasi",
@@ -1059,7 +1059,7 @@ ___________              __                   __  .__              .__       ___
 		Author			=	"",
 		SourceBook		=	"MPMotM",
 		MainRace		=	false,
-		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab				=	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"Fantastical Earth Genasi",
@@ -1068,7 +1068,7 @@ ___________              __                   __  .__              .__       ___
 		Author			=	"",
 		SourceBook		=	"MPMotM",
 		MainRace		=	false,
-		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab				=	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"Fantastical Firbolg",
@@ -1077,7 +1077,7 @@ ___________              __                   __  .__              .__       ___
 		Author			=	"",
 		SourceBook		=	"MPMotM",
 		MainRace		=	true,
-		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab				=	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"Fantastical Fire Genasi",
@@ -1086,7 +1086,7 @@ ___________              __                   __  .__              .__       ___
 		Author			=	"",
 		SourceBook		=	"MPMotM",
 		MainRace		=	false,
-		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab				=	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"Fantastical Githzerai",
@@ -1095,7 +1095,7 @@ ___________              __                   __  .__              .__       ___
 		Author			=	"",
 		SourceBook		=	"MPMotM",
 		MainRace		=	false,
-		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab				=	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"Fantastical Goliath",
@@ -1104,7 +1104,7 @@ ___________              __                   __  .__              .__       ___
 		Author			=	"",
 		SourceBook		=	"MPMotM",
 		MainRace		=	true,
-		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab				=	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"Fantastical Kobold",
@@ -1113,7 +1113,7 @@ ___________              __                   __  .__              .__       ___
 		Author			=	"",
 		SourceBook		=	"MPMotM",
 		MainRace		=	true,
-		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab				=	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"Fantastical Lizardfolk",
@@ -1122,7 +1122,7 @@ ___________              __                   __  .__              .__       ___
 		Author			=	"",
 		SourceBook		=	"MPMotM",
 		MainRace		=	true,
-		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab				=	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"Fantastical Minotaur",
@@ -1131,7 +1131,7 @@ ___________              __                   __  .__              .__       ___
 		Author			=	"",
 		SourceBook		=	"MPMotM",
 		MainRace		=	true,
-		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab				=	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"Fantastical Sea Elf",
@@ -1140,7 +1140,7 @@ ___________              __                   __  .__              .__       ___
 		Author			=	"",
 		SourceBook		=	"MPMotM",
 		MainRace		=	false,
-		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab				=	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"Fantastical Triton",
@@ -1149,7 +1149,7 @@ ___________              __                   __  .__              .__       ___
 		Author			=	"",
 		SourceBook		=	"MPMotM",
 		MainRace		=	true,
-		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab				=	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"Fantastical Yuan-ti",
@@ -1158,7 +1158,7 @@ ___________              __                   __  .__              .__       ___
 		Author			=	"",
 		SourceBook		=	"MPMotM",
 		MainRace		=	true,
-		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab				=	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"Fantastical Ogresh",
@@ -1167,7 +1167,7 @@ ___________              __                   __  .__              .__       ___
 		Author			=	"",
 		SourceBook		=	"GHPG",
 		MainRace		=	true,
-		Sab     		= 	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Sab				=	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name			=	"Fantastical Yuan-ti Pureblood",
@@ -1222,6 +1222,162 @@ ___________              __                   __  .__              .__       ___
 		SourceBook		=	"VGtML",
 		MainRace		=	true,
 		Stats			=	{"2", "1", "0", "0", "0", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+	},
+
+--[[
+___________.__       ___.                          ___________                                                          _____  ________                                             
+\_   _____/|__|______\_ |__ _____    ____   ______ \__    ___/______   ____ _____    ________ _________ ___.__.   _____/ ____\ \______ \____________     ____   ____   ____   ______
+ |    __)  |  \___   /| __ \\__  \  /    \ /  ___/   |    |  \_  __ \_/ __ \\__  \  /  ___/  |  \_  __ <   |  |  /  _ \   __\   |    |  \_  __ \__  \   / ___\ /  _ \ /    \ /  ___/
+ |     \   |  |/    / | \_\ \/ __ \|   |  \\___ \    |    |   |  | \/\  ___/ / __ \_\___ \|  |  /|  | \/\___  | (  <_> )  |     |    `   \  | \// __ \_/ /_/  >  <_> )   |  \\___ \ 
+ \___  /   |__/_____ \|___  (____  /___|  /____  >   |____|   |__|    \___  >____  /____  >____/ |__|   / ____|  \____/|__|    /_______  /__|  (____  /\___  / \____/|___|  /____  >
+     \/             \/    \/     \/     \/     \/                         \/     \/     \/              \/                             \/           \//_____/             \/     \/ 
+     \_Fizbans Treasury of Dragons
+]]--
+
+	{
+		Name			=	"Amethyst Dragonborn",
+		modGuid			=	"1e64a434-4318-42fe-9388-e6aa49505094",
+		UUID			=	"862da67a-a65a-4cae-b9da-aceb974bc6e2",
+		Author			=	"3XC4L1B3R",
+		SourceBook		=	"PHB",
+		MainRace		=	false,
+		Sab				=	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+	},
+	{
+		Name			=	"Crystal Dragonborn",
+		modGuid			=	"1e64a434-4318-42fe-9388-e6aa49505094",
+		UUID			=	"f416a104-9a39-47ee-a96f-755f60f63d3e",
+		Author			=	"3XC4L1B3R",
+		SourceBook		=	"PHB",
+		MainRace		=	false,
+		Sab				=	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+	},
+	{
+		Name			=	"Emerald Dragonborn",
+		modGuid			=	"1e64a434-4318-42fe-9388-e6aa49505094",
+		UUID			=	"8c099c31-cc1b-4aa2-b6ba-43b46b607e5d",
+		Author			=	"3XC4L1B3R",
+		SourceBook		=	"PHB",
+		MainRace		=	false,
+		Sab				=	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+	},
+	{
+		Name			=	"Sapphire Dragonborn",
+		modGuid			=	"1e64a434-4318-42fe-9388-e6aa49505094",
+		UUID			=	"aff81767-f832-4599-b980-e4123cec0306",
+		Author			=	"3XC4L1B3R",
+		SourceBook		=	"PHB",
+		MainRace		=	false,
+		Sab				=	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+	},
+	{
+		Name			=	"Topaz Dragonborn",
+		modGuid			=	"1e64a434-4318-42fe-9388-e6aa49505094",
+		UUID			=	"f9d85bdb-2930-42b9-ace1-78b9187e8546",
+		Author			=	"3XC4L1B3R",
+		SourceBook		=	"PHB",
+		MainRace		=	false,
+		Sab				=	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+	},
+
+--[[
+____________________ ________  ________ ________                                    ___.                           _________    ___.                               ___________                                  .__               
+\______   \______   \\_____  \/  _____/ \______ \____________     ____   ____   ____\_ |__   ___________  ____    /   _____/__ _\_ |______________    ____  ____   \_   _____/__  ______________    ____   _____|__| ____   ____  
+ |    |  _/|    |  _/ /  ____/   __  \   |    |  \_  __ \__  \   / ___\ /  _ \ /    \| __ \ /  _ \_  __ \/    \   \_____  \|  |  \ __ \_  __ \__  \ _/ ___\/ __ \   |    __)_\  \/  /\____ \__  \  /    \ /  ___/  |/  _ \ /    \ 
+ |    |   \|    |   \/       \  |__\  \  |    `   \  | \// __ \_/ /_/  >  <_> )   |  \ \_\ (  <_> )  | \/   |  \  /        \  |  / \_\ \  | \// __ \\  \__\  ___/   |        \>    < |  |_> > __ \|   |  \\___ \|  (  <_> )   |  \
+ |______  /|______  /\_______ \_____  / /_______  /__|  (____  /\___  / \____/|___|  /___  /\____/|__|  |___|  / /_______  /____/|___  /__|  (____  /\___  >___  > /_______  /__/\_ \|   __(____  /___|  /____  >__|\____/|___|  /
+        \/        \/         \/     \/          \/           \//_____/             \/    \/                  \/          \/          \/           \/     \/    \/          \/      \/|__|       \/     \/     \/               \/ 
+        \_BB26 Dragonborn Subrace Expansion
+]]--
+	{
+		Name			=	"Pink Dragonborn",
+		modGuid			=	"05fa72c7-be18-4398-b0c6-a5c11fc897f6",
+		UUID			=	"50ee17bb-bc53-4d03-8100-0dd6c6bb48f8",
+		Author			=	"Backburner26",
+		SourceBook		=	"",
+		MainRace		=	false,
+		Sab				=	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+	},
+	{
+		Name			=	"Shadow Dragonborn",
+		modGuid			=	"05fa72c7-be18-4398-b0c6-a5c11fc897f6",
+		UUID			=	"e216af62-5c9d-492b-8d2f-bf669d70b078",
+		Author			=	"Backburner26",
+		SourceBook		=	"",
+		MainRace		=	false,
+		Sab				=	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+	},
+	{
+		Name			=	"Solar Dragonborn",
+		modGuid			=	"05fa72c7-be18-4398-b0c6-a5c11fc897f6",
+		UUID			=	"a36bfa8a-afeb-4ff3-9985-8726cc45a8c8",
+		Author			=	"Backburner26",
+		SourceBook		=	"",
+		MainRace		=	false,
+		Sab				=	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+	},
+	{
+		Name			=	"Lunar Dragonborn",
+		modGuid			=	"05fa72c7-be18-4398-b0c6-a5c11fc897f6",
+		UUID			=	"edfcb043-f704-4a84-a5ba-a9098787eb81",
+		Author			=	"Backburner26",
+		SourceBook		=	"",
+		MainRace		=	false,
+		Sab				=	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+	},
+	{
+		Name			=	"Deep Dragonborn",
+		modGuid			=	"05fa72c7-be18-4398-b0c6-a5c11fc897f6",
+		UUID			=	"097c8ee7-0525-4a9f-b614-24d1dd46aac6",
+		Author			=	"Backburner26",
+		SourceBook		=	"",
+		MainRace		=	false,
+		Sab				=	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+	},
+	{
+		Name			=	"Moonstone Dragonborn",
+		modGuid			=	"05fa72c7-be18-4398-b0c6-a5c11fc897f6",
+		UUID			=	"c990525f-e49b-4f82-b31f-e5dff0afed0a",
+		Author			=	"Backburner26",
+		SourceBook		=	"",
+		MainRace		=	false,
+		Sab				=	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+	},
+	{
+		Name			=	"Grey Dragonborn",
+		modGuid			=	"05fa72c7-be18-4398-b0c6-a5c11fc897f6",
+		UUID			=	"f011eebf-9545-4972-98d1-841c61b0ccae",
+		Author			=	"Backburner26",
+		SourceBook		=	"",
+		MainRace		=	false,
+		Sab				=	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+	},
+	{
+		Name			=	"Yellow Dragonborn",
+		modGuid			=	"05fa72c7-be18-4398-b0c6-a5c11fc897f6",
+		UUID			=	"f75743c6-8a0e-49a6-b9b1-4a001ea0ffb2",
+		Author			=	"Backburner26",
+		SourceBook		=	"",
+		MainRace		=	false,
+		Sab				=	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+	},
+	{
+		Name			=	"Orange Dragonborn",
+		modGuid			=	"05fa72c7-be18-4398-b0c6-a5c11fc897f6",
+		UUID			=	"039b3255-28c6-43a1-a40c-4fbbec842cb4",
+		Author			=	"Backburner26",
+		SourceBook		=	"",
+		MainRace		=	false,
+		Sab				=	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+	},
+	{
+		Name			=	"Purple Dragonborn",
+		modGuid			=	"05fa72c7-be18-4398-b0c6-a5c11fc897f6",
+		UUID			=	"19f4eded-03fb-4363-90c2-689bff080c4b",
+		Author			=	"Backburner26",
+		SourceBook		=	"",
+		MainRace		=	false,
+		Sab				=	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	}
 }
 
