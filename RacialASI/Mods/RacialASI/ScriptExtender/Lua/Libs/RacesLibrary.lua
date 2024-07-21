@@ -33,6 +33,7 @@ RaceLibrary = {
 
 	{
 		Name 			=	"Human default",
+		modURL			= 	{"https://bg3.wiki/wiki/Human", "https://baldursgate3.wiki.fextralife.com/Human"},
 		modGuid 		=	HumanFix["modGuid"],
 		UUID 			=	HumanFix["humanUUID"],
 		raceLsxUUID		=	"",
@@ -568,9 +569,10 @@ _________                 __                   __________
 	},
 	{
 		Name 			=	"Raven Queen's Chosen - Shadar-Kai",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/1305",
 		modGuid 		=	"c36d595f-70d1-44f1-8ca6-4ad14186f489",
 		UUID 			=	"2f7edf7e-0a6b-4018-9715-1cb8aa238e4a",
-		Author			=	"",
+		Author			=	"NellsRelo",
 		SourceBook		=	"MToF",
 		Comments		=	"The Sea Elves and the Shadar-kai, originally published as playtest material in this Unearthed Arcana,\
 were officially released today (May 29, 2018) as part of Mordenkainen's Tome of Foes;\

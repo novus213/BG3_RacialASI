@@ -240,6 +240,17 @@ function builder5eRaces()
     end
 end
 
+--[[
+idea for futur implement
+SourceBook		=	{
+			MToF = {
+				Stats			=	{"0", "2", "1", "0", "0", "0"}
+			},
+			bookingDeTamer = {
+				Sab				=	{"2","1"}
+			}
+		},
+]]--
 
 --test execute ?
 --builder5eRaces()

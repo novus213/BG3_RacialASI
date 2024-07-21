@@ -6,7 +6,7 @@ deps = {
     ASTRL_Tieflings_GUID    = "167b846f-0a0b-4e0c-a9d0-df448be1320a", -- ASTRLTieflings
     Framework_GUID          = "67fbbd53-7c7d-4cfa-9409-6d737b4d92a9", -- CompatibilityFramework
     MCM_GUID                = "755a8a72-407f-4f0d-9a33-274ac0f0b53d", -- MCM (not the TV channel ^^)
-    AbilityList_UUID        = "b9149c8e-52c8-46e5-9cb6-fc39301c05fe"
+    AbilityList_UUID        = "b9149c8e-52c8-46e5-9cb6-fc39301c05fe" -- Ability List Default all stats +x
 }
 
 if not Ext.Mod.IsModLoaded(deps.Framework_GUID) then return end
@@ -20,7 +20,7 @@ Ext.Require("ModInfos/_ModInfos.lua")
 Ext.Require("Client/CleanRacesModASI.lua")
 
 if isModLoaded(deps.MCM_GUID) then
-   BasicPrint("    ____             _       __   ___   _____ ____   ____________","INFO", nil, nil, true)
+    BasicPrint("    ____             _       __   ___   _____ ____   ____________","INFO", nil, nil, true)
     BasicPrint("   / __ \\____ ______(_)___ _/ /  /   | / ___//  _/  / ____/ ____/","INFO", nil, nil, true)
     BasicPrint("  / /_/ / __ `/ ___/ / __ `/ /  / /| | \\__ \\ / /   /___ \\/ __/   ","INFO", nil, nil, true)
     BasicPrint(" / _, _/ /_/ / /__/ / /_/ / /  / ___ |___/ // /   ____/ / /___   ","INFO", nil, nil, true)

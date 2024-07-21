@@ -75,7 +75,6 @@ if not isModLoaded(deps.MCM_GUID) then
     Ext.Events.StatsLoaded:Subscribe(start)
     Ext.Events.StatsLoaded:Subscribe(OnStatsLoaded)
 else
-
     Ext.Events.StatsLoaded:Subscribe(function()
     MCMASIAPI:OnSessionLoadedMCM()
     end)

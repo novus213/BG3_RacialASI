@@ -8,7 +8,6 @@ _________                 __                   _________ .__
  \______  /____//____  > |__|  \____/|__|_|  /  \______  /____(____  /____  >____  >\___  >____  >
         \/           \/                    \/          \/          \/     \/     \/     \/     \/
         \_Custom Races from Nexus
-Argelia source Mixed NEED REFACTORING ALL
 ]]--
 
 local listUUID = "b9149c8e-52c8-46e5-9cb6-fc39301c05fe"
@@ -34,7 +33,7 @@ end
 local function CleanClassesModASIOnStatsLoaded()
     local removedClasses = {}  -- Table to store classes with removed selectors
     for _, mod in ipairs(ClassesLibrary) do
-        if mod.UUID ~= "aaaa" then
+        if mod.UUID ~= "aaaa" then --rmv after lib finished
             local removedClass = removeSelectors(mod)
             if removedClass then
                 table.insert(removedClasses, removedClass) -- Add to the list if removed
