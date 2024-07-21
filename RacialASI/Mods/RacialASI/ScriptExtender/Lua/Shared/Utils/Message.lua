@@ -63,10 +63,12 @@ function BasicPrint(content, messageType, textColor, customPrefix, rainbowText, 
     end
 
     if logLevel <= 0 then
+            Mods.SubclassCompatibilityFramework.Api.ToggleDebug = false
         return
     end
 
     if PrintTypes[messageType] and logLevel >= PrintTypes[messageType] then
+        Mods.SubclassCompatibilityFramework.Api.ToggleDebug = true
         local padding = string.rep(" ", prefixLength - #customPrefix)
         local message = ConcatOutput(ConcatPrefix(customPrefix .. padding .. "  [" .. messageType .. "]", content))
         local coloredMessage = rainbowText and GetRainbowText(message) or
