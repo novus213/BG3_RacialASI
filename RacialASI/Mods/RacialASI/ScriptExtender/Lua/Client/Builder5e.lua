@@ -160,103 +160,71 @@ end
 
 --- Constructor for builder5eRaces
 function builder5eRaces()
-    removedRaces = {}  -- Table to store race with removed shit asi
-    if IgnoreAll == false then
-        for _, raceMod in pairs(RaceLibrary) do
-            if raceMod.SourceBook == nil or raceMod.SourceBook == "" then
-                if IgnoreHomebrew == false then
-                    CleanOnRacesStatsLoaded(raceMod)
-                    insertPayload(raceMod)
-                end
-            else
-                if Ignore5eLimited == false then
-                    for _, book in pairs(Dnd5eLimited) do
-                        if book.bookRef == raceMod.SourceBook then
-                            CleanOnRacesStatsLoaded(raceMod)
-                            insertPayload(raceMod)
-
-                        end
-                    end
-                    if Ignore5e == false then
-                        for _, book in pairs(Dnd5e) do
-                            if book.bookRef == raceMod.SourceBook then
-                                CleanOnRacesStatsLoaded(raceMod)
-                                insertPayload(raceMod)
-                            end
-                        end
-                        if Ignore5eExtended == false then
-                            for _, book in pairs(Dnd5eExtended) do
-                                if book.bookRef == raceMod.SourceBook then
-                                    CleanOnRacesStatsLoaded(raceMod)
-                                    insertPayload(raceMod)
-                                end
-                            end
-                            if IgnoreLegacy == false then
-                                for _, book in pairs(Legacy) do
-                                    if book.bookRef == raceMod.SourceBook then
-                                        CleanOnRacesStatsLoaded(raceMod)
-                                        insertPayload(raceMod)
-                                    end
-                                end
-                                if IgnoreFlavours == false then
-                                    for _, book in pairs(Flavours) do
-                                        if book.bookRef == raceMod.SourceBook then
-                                            CleanOnRacesStatsLoaded(raceMod)
-                                            insertPayload(raceMod)
-                                        end
-                                    end
-                                else
-                                    BasicWarning(string.format("Ignore Adding: %s due to IgnoreFlavours = True", raceMod.Name))
-                                    --print("Ignore Adding: " .. raceMod.Name .. " due to IgnoreFlavours = True")
-                                    --removeRacePayload(raceMod)
-                                end
-                            else
-                                BasicWarning(string.format("Ignore Adding: %s due to IgnoreLegacy = True", raceMod.Name))
-                                --print("Ignore Adding: " .. raceMod.Name .. " due to IgnoreLegacy = True")
-                                --removeRacePayload(raceMod)
-                            end
-                        else
-                            BasicWarning(string.format("Ignore Adding: %s due to Ignore5eExtended = True", raceMod.Name))
-                            --print("Ignore Adding: " .. raceMod.Name .. " due to Ignore5eExtended = True")
-                            --removeRacePayload(raceMod)
-                        end
-                    else
-                        BasicWarning(string.format("Ignore Adding: %s due to Ignore5e = True", raceMod.Name))
-                        --print("Ignore Adding: " .. raceMod.Name .. " due to Ignore5e = True")
-                        --removeRacePayload(raceMod)
-                    end
-                else
-                    BasicWarning(string.format("Ignore Adding: %s due to IgnoreLimited = True", raceMod.Name))
-                    --print("Ignore Adding: " .. raceMod.Name .. " due to IgnoreLimited = True")
-                    --removeRacePayload(raceMod)
-                end
-            end
-            --RaceStat =  {}
-        end
-    else
-        BasicWarning("Ignore Adding the races ASI (Default +2/+1 apply too all)")
-        for _, raceMod in pairs(RaceLibrary) do
-            insertDefaultPayload(raceMod)
-        end
-        --print("Ignore Adding the races ASI")
-    end
+	removedRaces = {}  -- Table to store race with removed shit asi
+	for _, raceMod in pairs(RaceLibrary) do
+		if isModExist(raceMod.modGuid) then -- présent dans isLoaded
+			if raceMod.SourceBook == nil or raceMod.SourceBook == "" then
+				if PatchAsiHomebrew==true then
+					CleanOnRacesStatsLoaded(raceMod)
+					insertPayload(raceMod)
+				else
+					BasicWarning(string.format("%s Wasn't fixed. You uncheck Homebrew", raceMod.Name))
+				end
+			end
+			for _, book in pairs(Dnd5eLimited) do
+				if book.bookRef == raceMod.SourceBook then
+					if PatchAsi5eLimited == true then
+						CleanOnRacesStatsLoaded(raceMod)
+						insertPayload(raceMod)
+					else
+						BasicWarning(string.format("%s Wasn't fixed. You uncheck Fix 5e Limited", raceMod.Name))
+					end
+				end
+			end
+			for _, book in pairs(Dnd5e) do
+				if book.bookRef == raceMod.SourceBook then
+					if PatchAsi5e == true then
+						CleanOnRacesStatsLoaded(raceMod)
+						insertPayload(raceMod)
+					else
+						BasicWarning(string.format("%s Wasn't fixed. You uncheck Fix 5e", raceMod.Name))
+					end
+				end
+			end
+			for _, book in pairs(Dnd5eExtended) do
+				if book.bookRef == raceMod.SourceBook then
+					if PatchAsi5eExtended == true then
+						CleanOnRacesStatsLoaded(raceMod)
+						insertPayload(raceMod)
+					else
+						BasicWarning(string.format("%s Wasn't fixed. You uncheck Fix 5e Extended", raceMod.Name))
+					end
+				end
+			end
+			for _, book in pairs(Legacy) do
+				if book.bookRef == raceMod.SourceBook then
+					if PatchAsiLegacy == true then
+						CleanOnRacesStatsLoaded(raceMod)
+						insertPayload(raceMod)
+					else
+						BasicWarning(string.format("%s Wasn't fixed. You uncheck Fix 5e Legacy", raceMod.Name))
+					end
+				end
+			end
+			for _, book in pairs(Flavours) do
+				if book.bookRef == raceMod.SourceBook then
+					if PatchAsiFlavour == true then
+						CleanOnRacesStatsLoaded(raceMod)
+						insertPayload(raceMod)
+					else
+						BasicWarning(string.format("%s Wasn't fixed. You uncheck Fix Flavours", raceMod.Name))
+					end
+				end
+			end
+		end
+	end
 end
 
---[[
-idea for futur implement
-SourceBook		=	{
-			MToF = {
-				Stats			=	{"0", "2", "1", "0", "0", "0"}
-			},
-			bookingDeTamer = {
-				Sab				=	{"2","1"}
-			}
-		},
-]]--
-
---test execute ?
---builder5eRaces()
---or idk to TEST
 if Ext.Mod.IsModLoaded(deps.Framework_GUID) then
     Ext.Events.StatsLoaded:Subscribe(builder5eRaces)
 end

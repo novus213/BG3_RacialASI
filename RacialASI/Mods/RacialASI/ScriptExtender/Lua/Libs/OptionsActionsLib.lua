@@ -5,6 +5,7 @@ optionActions = {
        actions = {
             {
                 action = "InsertSelectors",
+                ruleset = "5eLimited",
                 payloads = {
                     {
                         modGuid = "1ebf4a1c-01d4-41ed-8aa1-5b3975c6d019",
@@ -24,6 +25,7 @@ optionActions = {
        actions = {
             {
                 action = "InsertSelectors",
+                ruleset = "5eLimited",
                 payloads = {
                     {
                         modGuid = "1ebf4a1c-01d4-41ed-8aa1-5b3975c6d019",
@@ -44,6 +46,7 @@ optionActions = {
         actions = {
             {
                 action = "InsertSelectors",
+                ruleset = "5eLimited",
                 payloads = {
                     {
                         modGuid = "1ebf4a1c-01d4-41ed-8aa1-5b3975c6d019",
@@ -64,6 +67,7 @@ optionActions = {
         actions = {
             {
                 action = "InsertPassives",
+                ruleset = "5eLimited",
                 payloads = {
                     {
                         modGuid = "1ebf4a1c-01d4-41ed-8aa1-5b3975c6d019",
@@ -145,6 +149,7 @@ optionActions = {
         actions = {
             {
                 action = "RemovePassives",
+                ruleset = "5eLimited",
                 payloads = {
                     {
                         modGuid = "1ebf4a1c-01d4-41ed-8aa1-5b3975c6d019",
@@ -168,6 +173,7 @@ optionActions = {
         actions = {
             {
                 action = "RemovePassives",
+                ruleset = "5eLimited",
                 payloads = {
                     {
                         modGuid = "1ebf4a1c-01d4-41ed-8aa1-5b3975c6d019",
@@ -184,6 +190,7 @@ optionActions = {
         actions = {
             {
                 action = "InsertPassives",
+                ruleset = "5eLimited",
                 payloads = {
                     {
                         modGuid = "1ebf4a1c-01d4-41ed-8aa1-5b3975c6d019", -- half Drow

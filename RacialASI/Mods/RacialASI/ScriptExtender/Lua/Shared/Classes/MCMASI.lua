@@ -44,9 +44,9 @@ function MCMASI:OnSessionLoadedMCM()
         Log = MCMASIAPI:MCMGet("Log")
     }
 
-    BasicWarning(string.format("============> mcmVars is loaded.", mcmVars))
-    BasicWarning(string.format("============> mcmVarsGeneralSettings is loaded.", mcmVarsGeneralSettings))
-    BasicWarning(string.format("============> mcmVarsBooksSettings is loaded.", mcmVarsBooksSettings))
+    BasicWarning(string.format("============> mcmVars is loaded. %s", mcmVars))
+    BasicWarning(string.format("============> mcmVarsGeneralSettings is loaded. %s", mcmVarsGeneralSettings))
+    BasicWarning(string.format("============> mcmVarsBooksSettings is loaded. %s", mcmVarsBooksSettings))
 end
 
 --- Constructor for MCMASI:OnStatsLoadedMCM
