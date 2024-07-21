@@ -65,7 +65,7 @@ ClassesLibrary = {
 -- ------------------------------------------------------------------------------ --
 	{
 		Name			=	"Barbarian - Vanilla",
-		ParentGuid		=	"d8cadb42-0ff9-4049-afaf-e5d78d06a399",
+		modGuid			=	"d8cadb42-0ff9-4049-afaf-e5d78d06a399",
 		UUID			=	"a2198ee9-ea4c-468e-b6b4-22b32d37806e",
 		Author			=	"Larian",
 		SourceBook		=	"PHB",
@@ -75,7 +75,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"Barbarian - Vanilla Path of the Wild Magic",
-		ParentGuid		=	"d8cadb42-0ff9-4049-afaf-e5d78d06a399",
+		modGuid			=	"d8cadb42-0ff9-4049-afaf-e5d78d06a399",
 		UUID			=	"d6bf00fc-3518-4d63-ba8b-03532c1abc4d", -- At lvl 3 of barbarian
 		Author			=	"Larian",
 		SourceBook		=	"PHB",
@@ -85,7 +85,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"Barbarian - Vanilla Path of the Berzerk",
-		ParentGuid		=	"d8cadb42-0ff9-4049-afaf-e5d78d06a399",
+		modGuid			=	"d8cadb42-0ff9-4049-afaf-e5d78d06a399",
 		UUID			=	"32eee7d8-1b2f-4de5-b9ee-78fbd286c6ef", -- At lvl 3 of barbarian
 		Author			=	"Larian",
 		SourceBook		=	"PHB",
@@ -95,7 +95,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"Barbarian - Vanilla Wildheart (Path of the Totem Warrior)",
-		ParentGuid		=	"d8cadb42-0ff9-4049-afaf-e5d78d06a399",
+		modGuid			=	"d8cadb42-0ff9-4049-afaf-e5d78d06a399",
 		UUID			=	"2e585948-d775-451d-b58b-15b75321d11e", -- At lvl 3 of barbarian
 		Author			=	"Larian",
 		SourceBook		=	"TCoE",
@@ -203,7 +203,7 @@ ClassesLibrary = {
 		isOutdated		=	false
 	},
 
--- ----------------------------- Barbarian homebrew ----------------------------- --
+-- ----------------------- Homebrew Barbarian subclasses ------------------------ --
 --
 --	{
 --		Name			=	"Barbarian - Crusher",
@@ -250,13 +250,13 @@ ClassesLibrary = {
 --		isOutdated		=	false
 --	},
 
--- ------------------------------------------------------------------------------- --
--- ------------------------------- Bard subclasses ------------------------------- --
--- ------------------------------------------------------------------------------- --
+-- ------------------------------------------------------------------------------ --
+-- ------------------------------- Bard subclasses ------------------------------ --
+-- ------------------------------------------------------------------------------ --
 
 	{
 		Name			=	"Bard - Vanilla",
-		ParentGuid		=	"92cd50b6-eb1b-4824-8adb-853e90c34c90",
+		modGuid			=	"92cd50b6-eb1b-4824-8adb-853e90c34c90",
 		UUID			=	"374c3aae-828b-44d8-b4e3-51ba802977dd",
 		Author			=	"Larian",
 		SourceBook		=	"PHB",
@@ -266,7 +266,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"Bard - Vanilla College of Lore",
-		ParentGuid		=	"92cd50b6-eb1b-4824-8adb-853e90c34c90",
+		modGuid			=	"92cd50b6-eb1b-4824-8adb-853e90c34c90",
 		UUID			=	"d21368ac-c776-465c-9dcf-6123dd52734f", -- At lvl 3 of bard
 		Author			=	"Larian",
 		SourceBook		=	"PHB",
@@ -276,7 +276,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"Bard - Vanilla College of Valour",
-		ParentGuid		=	"92cd50b6-eb1b-4824-8adb-853e90c34c90",
+		modGuid			=	"92cd50b6-eb1b-4824-8adb-853e90c34c90",
 		UUID			=	"2b46330d-0ada-4eb5-a131-3d250a41ca6a", -- At lvl 3 of bard
 		Author			=	"Larian",
 		SourceBook		=	"PHB",
@@ -286,7 +286,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"Bard - Vanilla College of Swords",
-		ParentGuid		=	"92cd50b6-eb1b-4824-8adb-853e90c34c90",
+		modGuid			=	"92cd50b6-eb1b-4824-8adb-853e90c34c90",
 		UUID			=	"c4bd5252-d68a-4330-9431-5e8ab24c5f29", -- At lvl 3 of bard
 		Author			=	"Larian",
 		SourceBook		=	"XGtE",
@@ -361,7 +361,7 @@ ClassesLibrary = {
 		isOutdated		=	true
 	},
 
--- -------------------------------- Bard homebrew -------------------------------- --
+-- -------------------------- Homebrew Bard subclasses -------------------------- --
 
 --	{
 --		Name			=	"Bard - College of Shuffling",
@@ -397,12 +397,12 @@ ClassesLibrary = {
 --		isOutdated		=	false
 --	},
 
--- ------------------------------------------------------------------------------- --
--- ------------------------------ Cleric subclasses ------------------------------ --
--- ------------------------------------------------------------------------------- --
+-- ------------------------------------------------------------------------------ --
+-- ------------------------------ Cleric subclasses ----------------------------- --
+-- ------------------------------------------------------------------------------ --
 	{
 		Name			=	"Cleric - Vanilla",
-		ParentGuid		=	"114e7aee-d1d4-4371-8d90-8a2080592faf",
+		modGuid			=	"114e7aee-d1d4-4371-8d90-8a2080592faf",
 		UUID			=	"366cde9c-db0c-43ce-a49c-fb140e084b3c",
 		Author			=	"Larian",
 		SourceBook		=	"",
@@ -412,7 +412,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"Cleric - Vanilla Life Domain",
-		ParentGuid		=	"114e7aee-d1d4-4371-8d90-8a2080592faf",
+		modGuid			=	"114e7aee-d1d4-4371-8d90-8a2080592faf",
 		UUID			=	"4b5da2f5-b999-4623-8bff-a63df5560fb3",
 		Author			=	"Larian",
 		SourceBook		=	"PHB",
@@ -422,7 +422,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"Cleric - Vanilla Light Domain",
-		ParentGuid		=	"114e7aee-d1d4-4371-8d90-8a2080592faf",
+		modGuid			=	"114e7aee-d1d4-4371-8d90-8a2080592faf",
 		UUID			=	"c54d7591-b305-4f22-b2a7-1bf5c4a3470a",
 		Author			=	"Larian",
 		SourceBook		=	"PHB",
@@ -432,7 +432,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"Cleric - Vanilla Trickery Domain",
-		ParentGuid		=	"114e7aee-d1d4-4371-8d90-8a2080592faf",
+		modGuid			=	"114e7aee-d1d4-4371-8d90-8a2080592faf",
 		UUID			=	"f013d01b-3310-43f7-81bf-a51130442b5e",
 		Author			=	"Larian",
 		SourceBook		=	"PHB",
@@ -442,7 +442,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"Cleric - Vanilla Knowledge Domain",
-		ParentGuid		=	"114e7aee-d1d4-4371-8d90-8a2080592faf",
+		modGuid			=	"114e7aee-d1d4-4371-8d90-8a2080592faf",
 		UUID			=	"ebe18794-b5e1-41c4-befa-4b9d6922b0ec",
 		Author			=	"Larian",
 		SourceBook		=	"PHB",
@@ -452,7 +452,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"Cleric - Vanilla Nature Domain",
-		ParentGuid		=	"114e7aee-d1d4-4371-8d90-8a2080592faf",
+		modGuid			=	"114e7aee-d1d4-4371-8d90-8a2080592faf",
 		UUID			=	"6dec76d0-df22-411c-8a78-3d6fb843ae50",
 		Author			=	"Larian",
 		SourceBook		=	"PHB",
@@ -462,7 +462,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"Cleric - Vanilla Tempest Domain",
-		ParentGuid		=	"114e7aee-d1d4-4371-8d90-8a2080592faf",
+		modGuid			=	"114e7aee-d1d4-4371-8d90-8a2080592faf",
 		UUID			=	"89bacf1b-8f15-4972-ada7-bf59c7c78441",
 		Author			=	"Larian",
 		SourceBook		=	"PHB",
@@ -472,7 +472,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"Cleric - Vanilla War Domain",
-		ParentGuid		=	"114e7aee-d1d4-4371-8d90-8a2080592faf",
+		modGuid			=	"114e7aee-d1d4-4371-8d90-8a2080592faf",
 		UUID			=	"b9ccf90e-b35b-4b73-b896-8ed2d32ae8c6",
 		Author			=	"Larian",
 		SourceBook		=	"PHB",
@@ -690,7 +690,7 @@ ClassesLibrary = {
 		isOutdated		=	false
 	},
 
--- ------------------------------ Cleric Homebrew ------------------------------ --
+-- -------------------------- Homebrew Cleric subclass -------------------------- --
 
 --	{
 --		Name			=	"Cleric - Moon Domain",
@@ -783,9 +783,9 @@ ClassesLibrary = {
 
 
 
--- ------------------------------------------------------------------------------- --
--- ------------------------------- Monk subclasses ------------------------------- --
--- ------------------------------------------------------------------------------- --
+-- ------------------------------------------------------------------------------ --
+-- ------------------------------- Monk subclasses ------------------------------ --
+-- ------------------------------------------------------------------------------ --
 
 
 
@@ -795,15 +795,15 @@ ClassesLibrary = {
 
 
 
--- ------------------------------------------------------------------------------- --
--- ------------------------------ Ranger subclasses ------------------------------ --
--- ------------------------------------------------------------------------------- --
+-- ------------------------------------------------------------------------------ --
+-- ------------------------------ Ranger subclasses ----------------------------- --
+-- ------------------------------------------------------------------------------ --
 
 
 
--- ------------------------------------------------------------------------------- --
--- ----------------------------- Sorcerer subclasses ----------------------------- --
--- ------------------------------------------------------------------------------- --
+-- ------------------------------------------------------------------------------ --
+-- ----------------------------- Sorcerer subclasses ---------------------------- --
+-- ------------------------------------------------------------------------------ --
 
 
 
@@ -813,15 +813,15 @@ ClassesLibrary = {
 
 
 
--- ------------------------------------------------------------------------------- --
--- ------------------------------ Wizard subclasses ------------------------------ --
--- ------------------------------------------------------------------------------- --
+-- ------------------------------------------------------------------------------ --
+-- ------------------------------ Wizard subclasses ----------------------------- --
+-- ------------------------------------------------------------------------------ --
 
 
 
--- ------------------------------------------------------------------------------- --
--- ------------------------------- Favours classes ------------------------------- --
--- ------------------------------------------------------------------------------- --
+-- ------------------------------------------------------------------------------ --
+-- ------------------------------- Favours classes ------------------------------ --
+-- ------------------------------------------------------------------------------ --
 
 -- ----------------------------- Blood Hunter class ----------------------------- --
 
@@ -982,7 +982,11 @@ ClassesLibrary = {
 		isOutdated		=	false
     },
 
-	-- -------------------------------- Magus class -------------------------------- --
+-- ------------------------------------------------------------------------------ --
+-- ------------------------------ Homebrew classes ------------------------------ --
+-- ------------------------------------------------------------------------------ --
+
+-- -------------------------------- Magus class --------------------------------- --
 
 	{
 		Class			=	"Magus",
@@ -994,7 +998,8 @@ ClassesLibrary = {
 		MainClasse		=	true,
 		isLvl20			=   true,
 		isOutdated		=	false
-	},{
+	},
+	{
 		Class			=	"Magus - Inexorable Iron",
 		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/422",
 		modGuid			=	"a827da36-4086-4d47-9945-f45555555555",
@@ -1004,7 +1009,8 @@ ClassesLibrary = {
 		MainClasse		=	false,
 		isLvl20			=   true,
 		isOutdated		=	false
-	},{
+	},
+	{
 		Class			=	"Magus - Sparkling Targe",
 		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/422",
 		modGuid			=	"a827da36-4086-4d47-9945-f45555555555",
@@ -1014,7 +1020,8 @@ ClassesLibrary = {
 		MainClasse		=	false,
 		isLvl20			=   true,
 		isOutdated		=	false
-	},{
+	},
+	{
 		Class			=	"Magus - Laughing Shadow",
 		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/422",
 		modGuid			=	"a827da36-4086-4d47-9945-f45555555555",
@@ -1024,7 +1031,8 @@ ClassesLibrary = {
 		MainClasse		=	false,
 		isLvl20			=   true,
 		isOutdated		=	false
-	},{
+	},
+	{
 		Class			=	"Magus - Twisting Tree",
 		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/422",
 		modGuid			=	"a827da36-4086-4d47-9945-f45555555555",
@@ -1034,7 +1042,8 @@ ClassesLibrary = {
 		MainClasse		=	false,
 		isLvl20			=   true,
 		isOutdated		=	false
-	},{
+	},
+	{
 		Class			=	"Magus - Starlit Span",
 		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/422",
 		modGuid			=	"a827da36-4086-4d47-9945-f45555555555",
@@ -1046,9 +1055,8 @@ ClassesLibrary = {
 		isOutdated		=	false
 	},
 
--- ------------------------------------------------------------------------------ --
--- ------------------------------ Homebrew classes ------------------------------ --
--- ------------------------------------------------------------------------------ --
+-- -------------------------------- Magus class --------------------------------- --
+
 	{
 		Name			=	"New",
 		modURL			=	"",
