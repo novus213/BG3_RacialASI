@@ -14,14 +14,14 @@ MCMASIAPI = MCMASI:New({}, "RacialASI")
 --- Function to load MCM values from json
 function MCMASI:OnSessionLoadedMCM()
     mcmVars = {
-        AddGnome_Tinkertools_Spells                                     = nil,
-        AddGnome_ForestMinorIllusion_Spells                             = nil,
-        AddHalfElf_Skills                                               = nil,
-        AddHalfElfDrow_Drow_DrowWeaponTraining_Passives                 = nil,
-        RemoveHuman_HumanMilitia_HumanVersatility_Passives              = nil,
-        RemoveHalfElf_HumanMilitia_Passives                             = nil,
+        AddGnome_Tinkertools_Spells                                     = "notuse",
+        AddGnome_ForestMinorIllusion_Spells                             = "notuse",
+        AddHalfElf_Skills                                               = "notuse",
+        AddHalfElfDrow_Drow_DrowWeaponTraining_Passives                 = "notuse",
+        RemoveHuman_HumanMilitia_HumanVersatility_Passives              = "notuse",
+        RemoveHalfElf_HumanMilitia_Passives                             = "notuse",
         AddUndeadGhastlyGhouls_TruePotion_and_LightSensitivity_Passives = MCMASIAPI:MCMGet("AddUndeadGhastlyGhouls_TruePotion_and_LightSensitivity_Passives"),
-        AddUnderdarkRaces_LightSensitivity_Passives                     = nil
+        AddUnderdarkRaces_LightSensitivity_Passives                     = "notuse"
         --[[
             mcmVars["AddGnomeTinkertoolsSpells"]
         ]]--
@@ -67,15 +67,15 @@ function MCMASI:OnStatsLoadedMCM()
                     BasicError(string.format("============> ERROR: No configuration found for %s.", key))
             end
             BasicWarning(string.format("============> %s is enabled.", key))
-        end
-
-        if actionConfigs.ruleset ~= nil and actionConfigs.ruleset == "5eLimited" and PatchAsi5eLimited == true then
-            if actionConfigs then
-                MCMASIAPI:processOptionMcm(key, actionConfigs.actions)
-            else
-                    BasicError(string.format("============> ERROR: No configuration found for %s.", key))
+        else
+            if value == "notuse" and actionConfigs.ruleset == "5eLimited" and PatchAsi5eLimited == true then
+                if actionConfigs then
+                    MCMASIAPI:processOptionMcm(key, actionConfigs.actions)
+                else
+                        BasicError(string.format("============> ERROR: No configuration found for %s.", key))
+                end
+                BasicWarning(string.format("============> %s is enabled (5eLimited Actived).", key))
             end
-            BasicWarning(string.format("============> %s is enabled (5eLimited Actived).", key))
         end
     end
 end
