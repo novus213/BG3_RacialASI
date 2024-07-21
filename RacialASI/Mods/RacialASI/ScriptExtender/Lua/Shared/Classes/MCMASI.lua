@@ -28,21 +28,19 @@ function MCMASI:OnSessionLoadedMCM()
     }
 
     mcmVarsBooksSettings = {
-        IgnoreAll = MCMASIAPI:MCMGet("IgnoreAll"),
-        Ignore5eLimited = MCMASIAPI:MCMGet("Ignore5eLimited"),
-        Ignore5e = MCMASIAPI:MCMGet("Ignore5e"),
-        Ignore5eExtended = MCMASIAPI:MCMGet("Ignore5eExtended"),
-        IgnoreFlavours = MCMASIAPI:MCMGet("IgnoreFlavours"),
-        IgnoreLegacy = MCMASIAPI:MCMGet("IgnoreLegacy"),
-        IgnoreHomebrew = MCMASIAPI:MCMGet("IgnoreHomebrew")
-
+        PatchAsi5eLimited = MCMASIAPI:MCMGet("PatchASI_5eLimited"),
+        PatchAsi5e = MCMASIAPI:MCMGet("PatchASI_5e"),
+        PatchAsi5eExtended = MCMASIAPI:MCMGet("PatchASI_5eExtended"),
+        PatchAsiLegacy = MCMASIAPI:MCMGet("PatchASI_Legacy"),
+        PatchAsiFlavour = MCMASIAPI:MCMGet("PatchASI_Flavour"),
+        PatchAsiHomebrew = MCMASIAPI:MCMGet("PatchASI_Homebrew")
         --[[
             mcmVarsBooksSettings["IgnoreAll"]
         ]]--
     }
     mcmVarsGeneralSettings = {
         RASI = MCMASIAPI:MCMGet("RASI"),
-        debugLevel = MCMASIAPI:MCMGet("debug_level"),
+        DebugLevel = MCMASIAPI:MCMGet("Debug_level"),
         Log = MCMASIAPI:MCMGet("Log")
     }
 

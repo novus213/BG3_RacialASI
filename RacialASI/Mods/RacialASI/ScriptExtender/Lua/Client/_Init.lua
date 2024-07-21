@@ -59,13 +59,12 @@ local function OnStatsLoaded()
 
     local settings5e = config.Settings5e
 
-    IgnoreAll = settings5e["IgnoreAll"]
-    Ignore5eLimited = settings5e["Ignore5eLimited"]
-    Ignore5e = settings5e["Ignore5e"]
-    Ignore5eExtended = settings5e["Ignore5eExtended"]
-    IgnoreFlavours = settings5e["IgnoreFlavours"]
-    IgnoreLegacy = settings5e["IgnoreLegacy"]
-    IgnoreHomebrew = settings5e["IgnoreHomebrew"]
+    PatchAsi5eLimited  = settings5e["PatchASI_5eLimited"]
+    PatchAsi5e         = settings5e["PatchASI_5e"]
+    PatchAsi5eExtended = settings5e["PatchASI_5eExtended"]
+    PatchAsiLegacy     = settings5e["PatchASI_Legacy"]
+    PatchAsiFlavour    = settings5e["PatchASI_Flavour"]
+    PatchAsiHomebrew   = settings5e["PatchASI_Homebrew"]
 
 end
 --- End CONFIG NO MCM
@@ -91,16 +90,14 @@ else
 
             mcmVarsOptions 		= mcmVars
 
-            IgnoreAll 			= mcmVarsBooksSettings["IgnoreAll"]
-            Ignore5eLimited 	= mcmVarsBooksSettings["Ignore5eLimited"]
-            Ignore5e 			= mcmVarsBooksSettings["Ignore5e"]
-            Ignore5eExtended 	= mcmVarsBooksSettings["Ignore5eExtended"]
-            IgnoreFlavours 		= mcmVarsBooksSettings["IgnoreFlavours"]
-            IgnoreLegacy 		= mcmVarsBooksSettings["IgnoreLegacy"]
-            IgnoreHomebrew 		= mcmVarsBooksSettings["IgnoreHomebrew"]
+            PatchAsi5eLimited  = mcmVarsBooksSettings["PatchASI_5eLimited"]
+            PatchAsi5e         = mcmVarsBooksSettings["PatchASI_5e"]
+            PatchAsi5eExtended = mcmVarsBooksSettings["PatchASI_5eExtended"]
+            PatchAsiLegacy     = mcmVarsBooksSettings["PatchASI_Legacy"]
+            PatchAsiFlavour    = mcmVarsBooksSettings["PatchASI_Flavour"]
+            PatchAsiHomebrew   = mcmVarsBooksSettings["PatchASI_Homebrew"]
 
-
-            debugLevel = mcmVarsGeneralSettings["debug_level"]
+            DebugLevel = mcmVarsGeneralSettings["debug_level"]
             Log = mcmVarsGeneralSettings["Log"]
 
             --CleanOnRacesStatsLoaded()

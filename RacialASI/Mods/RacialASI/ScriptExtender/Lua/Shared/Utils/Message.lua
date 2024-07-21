@@ -52,7 +52,7 @@ end
 ---@param rainbowText? boolean If true, the text will be displayed in rainbow colors. Defaults to false.
 ---@param prefixLength? number The length of the prefix. Defaults to 15 if not provided.
 function BasicPrint(content, messageType, textColor, customPrefix, rainbowText, prefixLength)
-    local logLevel = (CONFIG and CONFIG.DEBUG_MESSAGES) or mcmVarsGeneralSettings["debugLevel"] or 3
+    local logLevel = (CONFIG and CONFIG.DEBUG_MESSAGES) or mcmVarsGeneralSettings["DebugLevel"] or 3
 
     prefixLength = prefixLength or 15
     messageType = messageType or "INFO"

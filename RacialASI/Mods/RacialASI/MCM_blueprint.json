@@ -28,11 +28,11 @@
                     }
                 },
                 {
-                    "SectionId": "debug_settings",
+                    "SectionId": "Debug_settings",
                     "SectionName": "Debug settings",
                     "Settings": [
                         {
-                            "Id": "debug_level",
+                            "Id": "Debug_level",
                             "Name": "Debug level",
                             "Type": "slider_int",
                             "Default": 1,
@@ -54,7 +54,7 @@
                     }
                 },
                 {
-                    "SectionId": "log_settings",
+                    "SectionId": "Log_settings",
                     "SectionName": "Log settings",
                     "Settings": [
                         {
@@ -76,7 +76,7 @@
                     }
                 },
                 {
-                    "SectionId": "feats_settings",
+                    "SectionId": "Feats_settings",
                     "SectionName": "Feats Settings",
                     "Settings": [
                         {
@@ -194,7 +194,7 @@
             }
         },
         {
-            "TabId": "patchASI",
+            "TabId": "PatchASI",
             "TabName": "Patch ASI by Rule Set",
             "Sections": [
                 {
@@ -202,10 +202,10 @@
                     "SectionName": "Choose your rules set",
                     "Settings": [
                         {
-                            "Id": "patchASI_5eLimited",
+                            "Id": "PatchASI_5eLimited",
                             "Name": "Fix 5e Limited ruleset Races & Classes",
                             "Type": "checkbox",
-                            "Default": true,
+                            "Default": false,
                             "description": "",
                             "Tooltip": "Enable or disable to fix 5e Limited Races & Classes.",
                             "Handles": {
@@ -215,10 +215,10 @@
                             }
                         },
                         {
-                            "Id": "patchASI_5e",
+                            "Id": "PatchASI_5e",
                             "Name": "Fix 5e ruleset Races & Classes",
                             "Type": "checkbox",
-                            "Default": true,
+                            "Default": false,
                             "description": "",
                             "Tooltip": "Enable or disable to fix 5e Races & Classes.",
                             "Handles": {
@@ -228,10 +228,10 @@
                             }
                         },
                         {
-                            "Id": "patchASI_5eExtended",
+                            "Id": "PatchASI_5eExtended",
                             "Name": "Fix 5e Extended ruleset Races & Classes",
                             "Type": "checkbox",
-                            "Default": true,
+                            "Default": false,
                             "description": "",
                             "Tooltip": "Enable or disable to fix 5e Extended Races & Classes.",
                             "Handles": {
@@ -241,10 +241,10 @@
                             }
                         },
                         {
-                            "Id": "patchASI_Legacy",
+                            "Id": "PatchASI_Legacy",
                             "Name": "Fix Legacy ruleset Races & Classes",
                             "Type": "checkbox",
-                            "Default": true,
+                            "Default": false,
                             "description": "",
                             "Tooltip": "Enable or disable to fix Legacy Races & Classes.",
                             "Handles": {
@@ -254,7 +254,7 @@
                             }
                         },
                         {
-                            "Id": "patchASI_Flavour",
+                            "Id": "PatchASI_Flavour",
                             "Name": "Fix Flavour ruleset Races & Classes",
                             "Type": "checkbox",
                             "Default": true,
@@ -267,7 +267,7 @@
                             }
                         },
                         {
-                            "Id": "patchASI_Homebrew",
+                            "Id": "PatchASI_Homebrew",
                             "Name": "Fix Homebrew ruleset Races & Classes",
                             "Type": "checkbox",
                             "Default": true,
@@ -285,7 +285,7 @@
                     }
                 },
                 {
-                    "SectionId": "moreinfos_patchASI",
+                    "SectionId": "Moreinfos_patchASI",
                     "SectionName": "More Informations",
                     "SectionDescription": "When you tick one of these boxes, the characteristics, skills and spells of the races will be modified to be more in line with the rules in the DnD books. If a race doesn't exist in the rule books, you'll be given the choice when creating your character to assign characteristics as you wish (+2, +1).\n\nPlease note that you will need to restart your game for these modifications to take effect."
                 }

@@ -13,13 +13,12 @@ local racialASIConfig = {
         AddHalfElfDrow_Drow_DrowWeaponTraining_Passives = { Enabled = true }
     },
     Settings5e = {
-        IgnoreAll = false,
-        Ignore5eLimited = false,
-        Ignore5e = false,
-        Ignore5eExtended = false,
-        IgnoreFlavours = false,
-        IgnoreLegacy = false,
-        IgnoreHomebrew = false
+        PatchAsi5eLimited = false,
+        PatchASI_5e = false,
+        PatchASI_5eExtended = false,
+        PatchASI_Legacy = false,
+        PatchASI_Flavour = true,
+        PatchASI_Homebrew = true
     }
 }
 

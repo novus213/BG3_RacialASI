@@ -15,13 +15,12 @@ if Ext.Mod.IsModLoaded("755a8a72-407f-4f0d-9a33-274ac0f0b53d") then
     }
 
     mcmVarsBooksSettings = {
-        IgnoreAll = MCMASIAPI:MCMGet("IgnoreAll"),
-        Ignore5eLimited = MCMASIAPI:MCMGet("Ignore5eLimited"),
-        Ignore5e = MCMASIAPI:MCMGet("Ignore5e"),
-        Ignore5eExtended = MCMASIAPI:MCMGet("Ignore5eExtended"),
-        IgnoreFlavours = MCMASIAPI:MCMGet("IgnoreFlavours"),
-        IgnoreLegacy = MCMASIAPI:MCMGet("IgnoreLegacy"),
-        IgnoreHomebrew = MCMASIAPI:MCMGet("IgnoreHomebrew")
+        PatchAsi5eLimited = MCMASIAPI:MCMGet("PatchASI_5eLimited"),
+        PatchAsi5e = MCMASIAPI:MCMGet("PatchASI_5e"),
+        PatchAsi5eExtended = MCMASIAPI:MCMGet("PatchASI_5eExtended"),
+        PatchAsiLegacy = MCMASIAPI:MCMGet("PatchASI_Legacy"),
+        PatchAsiFlavour = MCMASIAPI:MCMGet("PatchASI_Flavour"),
+        PatchAsiHomebrew = MCMASIAPI:MCMGet("PatchASI_Homebrew")
 
         --[[
             mcmVarsBooksSettings["IgnoreAll"]
@@ -29,7 +28,7 @@ if Ext.Mod.IsModLoaded("755a8a72-407f-4f0d-9a33-274ac0f0b53d") then
     }
     mcmVarsGeneralSettings = {
         RASI = MCMASIAPI:MCMGet("RASI"),
-        debugLevel = MCMASIAPI:MCMGet("debug_level"),
+        DebugLevel = MCMASIAPI:MCMGet("Debug_level"),
         Log = MCMASIAPI:MCMGet("Log")
 
     }
@@ -37,16 +36,15 @@ if Ext.Mod.IsModLoaded("755a8a72-407f-4f0d-9a33-274ac0f0b53d") then
 
     mcmVarsOptions 		= mcmVars
 
-    IgnoreAll 			= mcmVarsBooksSettings["IgnoreAll"]
-    Ignore5eLimited 	= mcmVarsBooksSettings["Ignore5eLimited"]
-    Ignore5e 			= mcmVarsBooksSettings["Ignore5e"]
-    Ignore5eExtended 	= mcmVarsBooksSettings["Ignore5eExtended"]
-    IgnoreFlavours 		= mcmVarsBooksSettings["IgnoreFlavours"]
-    IgnoreLegacy 		= mcmVarsBooksSettings["IgnoreLegacy"]
-    IgnoreHomebrew 		= mcmVarsBooksSettings["IgnoreHomebrew"]
+    PatchAsi5eLimited  = mcmVarsBooksSettings["PatchASI_5eLimited"]
+    PatchAsi5e         = mcmVarsBooksSettings["PatchASI_5e"]
+    PatchAsi5eExtended = mcmVarsBooksSettings["PatchASI_5eExtended"]
+    PatchAsiLegacy     = mcmVarsBooksSettings["PatchASI_Legacy"]
+    PatchAsiFlavour    = mcmVarsBooksSettings["PatchASI_Flavour"]
+    PatchAsiHomebrew   = mcmVarsBooksSettings["PatchASI_Homebrew"]
 
 
-    debugLevel = mcmVarsGeneralSettings["debug_level"]
+    DebugLevel = mcmVarsGeneralSettings["Debug_level"]
     Log = mcmVarsGeneralSettings["Log"]
 
 
@@ -75,13 +73,12 @@ if Ext.Mod.IsModLoaded("755a8a72-407f-4f0d-9a33-274ac0f0b53d") then
 
             BasicWarning(string.format("Setting %s to %s", data.settingId, data.value))
 
-            IgnoreAll 			= mcmVarsBooksSettings["IgnoreAll"]
-            Ignore5eLimited 	= mcmVarsBooksSettings["Ignore5eLimited"]
-            Ignore5e 			= mcmVarsBooksSettings["Ignore5e"]
-            Ignore5eExtended 	= mcmVarsBooksSettings["Ignore5eExtended"]
-            IgnoreFlavours 		= mcmVarsBooksSettings["IgnoreFlavours"]
-            IgnoreLegacy 		= mcmVarsBooksSettings["IgnoreLegacy"]
-            IgnoreHomebrew 		= mcmVarsBooksSettings["IgnoreHomebrew"]
+            PatchAsi5eLimited  = mcmVarsBooksSettings["PatchASI_5eLimited"]
+            PatchAsi5e         = mcmVarsBooksSettings["PatchASI_5e"]
+            PatchAsi5eExtended = mcmVarsBooksSettings["PatchASI_5eExtended"]
+            PatchAsiLegacy     = mcmVarsBooksSettings["PatchASI_Legacy"]
+            PatchAsiFlavour    = mcmVarsBooksSettings["PatchASI_Flavour"]
+            PatchAsiHomebrew   = mcmVarsBooksSettings["PatchASI_Homebrew"]
 
             --CleanOnRacesStatsLoaded()
             --builder5eRaces()
@@ -101,7 +98,7 @@ if Ext.Mod.IsModLoaded("755a8a72-407f-4f0d-9a33-274ac0f0b53d") then
 
             BasicWarning(string.format("Setting %s to %s", data.settingId, data.value))
 
-            debugLevel = mcmVarsGeneralSettings["debug_level"]
+            DebugLevel = mcmVarsGeneralSettings["Debug_level"]
         end
 
         if data.settingId == "Log" then

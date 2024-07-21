@@ -5,27 +5,23 @@ Ext.Require("Libs/BooksLibrary.lua")
 
 -- temp show var
 
-BasicWarning("IgnoreAll")
-BasicWarning(IgnoreAll)
+BasicWarning("PatchAsi5eLimited")
+BasicWarning(PatchAsi5eLimited)
 
-BasicWarning("Ignore5eLimited")
-BasicWarning(Ignore5eLimited)
+BasicWarning("PatchAsi5e")
+BasicWarning(PatchAsi5e)
 
-BasicWarning("Ignore5e")
-BasicWarning(Ignore5e)
+BasicWarning("PatchAsi5eExtended")
+BasicWarning(PatchAsi5eExtended)
 
-BasicWarning("Ignore5eExtended")
-BasicWarning(Ignore5eExtended)
+BasicWarning("PatchAsiLegacy")
+BasicWarning(PatchAsiLegacy)
 
-BasicWarning("IgnoreFlavours")
-BasicWarning(IgnoreFlavours)
+BasicWarning("PatchAsiFlavour")
+BasicWarning(PatchAsiFlavour)
 
-BasicWarning("IgnoreLegacy")
-BasicWarning(IgnoreLegacy)
-
-BasicWarning("IgnoreHomebrew")
-BasicWarning(IgnoreHomebrew)
-
+BasicWarning("PatchAsiHomebrew")
+BasicWarning(PatchAsiHomebrew)
 
 --- Constructor for tableInsertRaceStats
 ---@param raceMod table raceMod
