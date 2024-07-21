@@ -80,13 +80,13 @@ function MCMASI:OnStatsLoadedMCM()
         for key in pairs(MCMASIAPI:getLength(optionActions)) do
             local actionConfigs = optionActions[key]
 
-            if actionConfigs.ruleset ~= nil and actionConfigs.ruleset == "5eLimited" and PatchAsi5eExtended == true then
+            if actionConfigs.ruleset ~= nil and actionConfigs.ruleset == "5eLimited" and PatchAsi5eLimited == true then
                 if actionConfigs then
                     MCMASIAPI:processOptionMcm(key, actionConfigs.actions)
                 else
                         BasicError(string.format("============> ERROR: No configuration found for %s.", key))
                 end
-                BasicWarning(string.format("============> %s is enabled.", key))
+                BasicWarning(string.format("============> %s is enabled (5eLimited : Actived).", key))
             end
         end
 end
