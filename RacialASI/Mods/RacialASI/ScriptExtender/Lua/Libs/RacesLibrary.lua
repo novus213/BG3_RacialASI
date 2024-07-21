@@ -485,7 +485,7 @@ RaceLibrary = {
 		modGuid			=	"4806bd2a-929b-406e-b1d4-2e0e9cc23bb2",
 		UUID			=	"63e0259e-4721-4f7e-bb75-c5d26a55dc74",
 		Author			=	"Trips",
-		SourceBook		=	"",
+		SourceBook		=	"VGtML",
 		MainRace		=	false,
 		Stats			=	{"0", "0", "0", "0", "1", "2"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 	},
@@ -494,7 +494,7 @@ RaceLibrary = {
 		modGuid			=	"4806bd2a-929b-406e-b1d4-2e0e9cc23bb2",
 		UUID			=	"2d88948b-45ec-42ce-8dc9-755b6987a8f6",
 		Author			=	"Trips",
-		SourceBook		=	"",
+		SourceBook		=	"VGtML",
 		MainRace		=	false,
 		Stats			=	{"0", "0", "1", "0", "0", "2"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 	},
@@ -503,7 +503,7 @@ RaceLibrary = {
 		modGuid			=	"4806bd2a-929b-406e-b1d4-2e0e9cc23bb2",
 		UUID			=	"adab8d9e-904b-436e-ba9b-9657dd5216c6",
 		Author			=	"Trips",
-		SourceBook		=	"",
+		SourceBook		=	"VGtML",
 		MainRace		=	false,
 		Stats			=	{"1", "0", "0", "0", "0", "2"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 	},
@@ -512,7 +512,7 @@ RaceLibrary = {
 		modGuid			=	"4806bd2a-929b-406e-b1d4-2e0e9cc23bb2",
 		UUID			=	"70ed9582-33c5-44c1-8710-2fbf8281543d",
 		Author			=	"Trips",
-		SourceBook		=	"",
+		SourceBook		=	"VGtML",
 		MainRace		=	false,
 		Stats			=	{"0", "0", "0", "0", "1", "2"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 	},
@@ -542,7 +542,7 @@ _________                 __                   __________
 		modGuid 		=	"ab267ed4-b3b5-4b4f-a62c-7dbc95c968fa",
 		UUID 			=	"4c2c61ae-5904-4576-a8c5-efecce67ab82",
 		Author			=	"DarthRen",
-		SourceBook		=	"",
+		SourceBook		=	"VGtML",
 		MainRace		=	false,
 		Stats			=	{"0", "0", "0", "0", "1", "2"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 	},
@@ -551,7 +551,7 @@ _________                 __                   __________
 		modGuid 		=	"ab267ed4-b3b5-4b4f-a62c-7dbc95c968fa",
 		UUID 			=	"56d62681-9769-4ad7-9bbf-4f72db44f070",
 		Author			=	"DarthRen",
-		SourceBook		=	"",
+		SourceBook		=	"VGtML",
 		MainRace		=	false,
 		Stats			=	{"0", "0", "1", "0", "0", "2"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 	},
@@ -560,7 +560,7 @@ _________                 __                   __________
 		modGuid 		=	"ab267ed4-b3b5-4b4f-a62c-7dbc95c968fa",
 		UUID 			=	"1b07140b-98c1-42e8-b4ec-072622862dc2",
 		Author			=	"DarthRen",
-		SourceBook		=	"",
+		SourceBook		=	"VGtML",
 		MainRace		=	false,
 		Stats			=	{"0", "0", "1", "0", "0", "2"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 	},
@@ -668,7 +668,7 @@ _________                 __                   __________
         modGuid			=	"5114d845-2c0f-441c-a01b-91a1847a48bc",
         UUID			=	"042e6092-1602-4338-b6f9-cc7987f3bff4",
 		Author			=	"",
-		SourceBook		=	"",
+		SourceBook		=	"P",
 		MainRace		=	false,
 		Stats			=	{"2", "-2", "0", "2", "0", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
     },
@@ -677,7 +677,7 @@ _________                 __                   __________
         modGuid			=	"5114d845-2c0f-441c-a01b-91a1847a48bc",
         UUID			=	"ceae071e-2ff2-4043-a2b8-a7fc1ab16065",
 		Author			=	"",
-		SourceBook		=	"",
+		SourceBook		=	"P",
 		MainRace		=	false,
 		Stats			=	{"2", "0", "-2", "0", "0", "2"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
     },
@@ -686,7 +686,7 @@ _________                 __                   __________
         modGuid			=	"5114d845-2c0f-441c-a01b-91a1847a48bc",
         UUID			=	"65930b4d-75ca-4968-93b0-dde6662d5882",
 		Author			=	"",
-		SourceBook		=	"",
+		SourceBook		=	"P",
 		MainRace		=	false,
 		Stats			=	{"0", "2", "0", "2", "-2", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
     },
@@ -695,7 +695,7 @@ _________                 __                   __________
         modGuid			=	"5114d845-2c0f-441c-a01b-91a1847a48bc",
         UUID			=	"ebd122f3-9223-4cc0-ac98-3810995dde9b",
 		Author			=	"",
-		SourceBook		=	"",
+		SourceBook		=	"P",
 		MainRace		=	false,
 		Stats			=	{"2", "0", "-2", "0", "2", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
     },
