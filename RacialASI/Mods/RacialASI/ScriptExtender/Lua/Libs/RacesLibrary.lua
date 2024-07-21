@@ -534,7 +534,7 @@ _________                 __                   __________
 		UUID 			=	"06e918ad-be2c-48b6-a098-0288539de744",
 		raceLsxUUID		=	"31c1d14f-2a46-4507-b9ba-b993bdffd298",
 		Author			=	"DarthRen",
-		SourceBook		=	"",
+		SourceBook		=	"VGtML",
 		MainRace		=	true
 	},
 	{
@@ -569,7 +569,11 @@ _________                 __                   __________
 		modGuid 		=	"c36d595f-70d1-44f1-8ca6-4ad14186f489",
 		UUID 			=	"2f7edf7e-0a6b-4018-9715-1cb8aa238e4a",
 		Author			=	"",
-		SourceBook		=	"",
+		SourceBook		=	"MToF",
+		Comments		=	"The Sea Elves and the Shadar-kai, originally published as playtest material in this Unearthed Arcana,\
+		were officially released today (May 29, 2018) as part of Mordenkainen's Tome of Foes;\
+		the Eladrin elf subrace was included as well.\
+		The Avariel and Grugach, as far as I know, were not released.",
 		MainRace		=	false,
 		Stats			=	{"0", "0", "0", "0", "1", "2"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 	},
