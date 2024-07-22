@@ -24,14 +24,14 @@
                 </node>
                 <!-- Skeleton race Rexsaze (playableundead) LVL 1 -->
                 <node id="Progression">
-                    <attribute id="Level" type="uint8" value="1" /> which level the progression is for
-                    <attribute id="Name" type="LSString" value="Main_Race_1" /> just an internal name
+                    <attribute id="Level" type="uint8" value="1" />
+                    <attribute id="Name" type="LSString" value="Main_Race_1" />
                     <attribute id="Boosts" type="LSString" value="ActionResource(Movement,7.5,0)" /> 
-                    <attribute id="PassivesAdded" type="LSString" value="Darkvision;Skeleton_SkeletonResistance" /> passives from stats folder here
+                    <attribute id="PassivesAdded" type="LSString" value="Darkvision;Skeleton_SkeletonResistance" />
                     <attribute id="Selectors" type="LSString" value="AddSpells(7b88446a-f86b-41ed-b746-44a6e7950b54,,,,AlwaysPrepared,UntilShortRest);" />
-                    <attribute id="ProgressionType" type="uint8" value="2" /> 2 means race
-                    <attribute id="TableUUID" type="guid" value="257bb459-3a9e-4bea-b4e2-349e3a9ac3ef" /> Always use this one for races.lsx, says this progression node is for Main Race
-                    <attribute id="UUID" type="guid" value="1fc6ae9f-672f-458b-8b1d-0abfd3021336" />  this one must be unique
+                    <attribute id="ProgressionType" type="uint8" value="2" />
+                    <attribute id="TableUUID" type="guid" value="257bb459-3a9e-4bea-b4e2-349e3a9ac3ef" />
+                    <attribute id="UUID" type="guid" value="1fc6ae9f-672f-458b-8b1d-0abfd3021336" />
                 </node>
                 <!-- Aasimar Main Caca LVL 1 -->
                 <node id="Progression">
