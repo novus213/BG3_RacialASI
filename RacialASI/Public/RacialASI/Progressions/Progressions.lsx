@@ -22,10 +22,30 @@
                     <attribute id="TableUUID" type="guid" value="0f6d9f53-a2d0-422b-beea-a2fdfd88628a"/>
                     <attribute id="UUID" type="guid" value="a0900dc3-dcbe-4c30-9705-35f050bf98ee"/>
                 </node>
-                 <!-- Skeleton race Rexsaze (playableundead) LVL 1 -->
-
-                 <!-- Aasimar Main Caca LVL 1 -->
-                 
+                <!-- Skeleton race Rexsaze (playableundead) LVL 1 -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="1" /> which level the progression is for
+                    <attribute id="Name" type="LSString" value="Main_Race_1" /> just an internal name
+                    <attribute id="Boosts" type="LSString" value="ActionResource(Movement,7.5,0)" /> 
+                    <attribute id="PassivesAdded" type="LSString" value="Darkvision;Skeleton_SkeletonResistance" /> passives from stats folder here
+                    <attribute id="Selectors" type="LSString" value="AddSpells(7b88446a-f86b-41ed-b746-44a6e7950b54,,,,AlwaysPrepared,UntilShortRest);" />
+                    <attribute id="ProgressionType" type="uint8" value="2" /> 2 means race
+                    <attribute id="TableUUID" type="guid" value="257bb459-3a9e-4bea-b4e2-349e3a9ac3ef" /> Always use this one for races.lsx, says this progression node is for Main Race
+                    <attribute id="UUID" type="guid" value="1fc6ae9f-672f-458b-8b1d-0abfd3021336" />  this one must be unique
+                </node>
+                <!-- Aasimar Main Caca LVL 1 -->
+                <node id="Progression">
+                    <attribute id="AllowImprovement" type="bool" value="false"/>
+                    <attribute id="Boosts" type="LSString" value="ActionResource(Movement,9,0);ActionResource(Attunement,3,0);Tag(PLANAR);Tag(RARE)"/>
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="Aasimar"/>
+                    <attribute id="PassivesAdded" type="LSString" value="flyAngel;Aasimar_CelestialResistance;Darkvision;LightBearer;AasimarWingsRadiant;AasimarWingsHalf"/>
+                    <attribute id="PassivesRemoved" type="LSString" value=""/>
+                    <attribute id="ProgressionType" type="uint8" value="2"/>
+                    <attribute id="Selectors" type="LSString" value=""/>
+                    <attribute id="TableUUID" type="guid" value="5ab019ab-45e4-484f-bcc9-26e5fa2d7df5"/>
+                    <attribute id="UUID" type="guid" value="69fa02bf-9943-4ca2-ae9c-5e49488e28c5"/>
+                </node>       
             </children>
         </node>
     </region>
