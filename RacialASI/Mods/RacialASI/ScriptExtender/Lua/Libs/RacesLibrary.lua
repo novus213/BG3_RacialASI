@@ -830,18 +830,31 @@ The Avariel and Grugach, as far as I know, were not released.",
 		MainRace		=	true,
 		Stats			=	{"0", "1", "0", "0", "0", "2"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
     },
+--
+-- Dhampir by Sassandra Baerne - https://www.nexusmods.com/baldursgate3/mods/4761
+--
     {
-        Name			=	"Dhampir RU_SHI",
+        Name			=	"Dhampir",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/4761",
+        modGuid			=	"5114d845-2c0f-441c-a01b-91a1847a48bc",
+        UUID			=	"b5f04836-e2ef-4eb6-93d5-4aad7f3b1c20",
+		Author			=	"Sassandra Baerne",
+		SourceBook		=	"P",
+		MainRace		=	true
+    },
+    {
+        Name			=	"Dhampir - RU_SHI",
 		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/4761",
         modGuid			=	"5114d845-2c0f-441c-a01b-91a1847a48bc",
         UUID			=	"042e6092-1602-4338-b6f9-cc7987f3bff4",
 		Author			=	"Sassandra Baerne",
+		Comments		=	"Progression UUID conflict with playable undead",
 		SourceBook		=	"P",
 		MainRace		=	false,
 		Stats			=	{"2", "-2", "0", "2", "0", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
     },
     {
-        Name			=	"Dhampir SVETOCHER",
+        Name			=	"Dhampir - SVETOCHER",
 		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/4761",
         modGuid			=	"5114d845-2c0f-441c-a01b-91a1847a48bc",
         UUID			=	"ceae071e-2ff2-4043-a2b8-a7fc1ab16065",
@@ -851,7 +864,7 @@ The Avariel and Grugach, as far as I know, were not released.",
 		Stats			=	{"2", "0", "-2", "0", "0", "2"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
     },
     {
-        Name			=	"Dhampir AJIBACHANA",
+        Name			=	"Dhampir - AJIBACHANA",
 		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/4761",
         modGuid			=	"5114d845-2c0f-441c-a01b-91a1847a48bc",
         UUID			=	"65930b4d-75ca-4968-93b0-dde6662d5882",
@@ -861,7 +874,7 @@ The Avariel and Grugach, as far as I know, were not released.",
 		Stats			=	{"0", "2", "0", "2", "-2", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
     },
     {
-        Name			=	"Dhampir ANCIENTBORN",
+        Name			=	"Dhampir - ANCIENTBORN",
 		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/4761",
         modGuid			=	"5114d845-2c0f-441c-a01b-91a1847a48bc",
         UUID			=	"ebd122f3-9223-4cc0-ac98-3810995dde9b",
@@ -890,6 +903,9 @@ The Avariel and Grugach, as far as I know, were not released.",
 		MainRace		=	true,
 		Stats			=	{"0", "0", "0", "1", "2", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
     },
+--
+-- Fey Eladrin by tepkunset - https://www.nexusmods.com/baldursgate3/mods/7037
+--
     {
         Name			=	"Fey Eladrin (Spirited Seasons)",
 		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/7037",
@@ -897,7 +913,46 @@ The Avariel and Grugach, as far as I know, were not released.",
         UUID			=	"c2c089df-c622-4074-ab18-a4bde879a055",
 		Author			=	"tepkunset",
 		SourceBook		=	"MToF",
-		MainRace		=	true,
+		MainRace		=	true
+    },
+    {
+        Name			=	"Fey Eladrin - Winter (Spirited Seasons)",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/7037",
+        modGuid			=	"abc09812-ed4d-43ff-9a93-ee46487e81d9",
+        UUID			=	"83132733-dfd4-45d6-b117-8d33b5550c8e",
+		Author			=	"tepkunset",
+		SourceBook		=	"MToF",
+		MainRace		=	false,
+		Stats			=	{"0", "2", "0", "0", "1", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+    },
+    {
+        Name			=	"Fey Eladrin - Spring (Spirited Seasons)",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/7037",
+        modGuid			=	"abc09812-ed4d-43ff-9a93-ee46487e81d9",
+        UUID			=	"734b5fab-6654-49be-971a-e0d0ddede50d",
+		Author			=	"tepkunset",
+		SourceBook		=	"MToF",
+		MainRace		=	false,
+		Stats			=	{"0", "2", "0", "0", "1", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+    },
+    {
+        Name			=	"Fey Eladrin - Summer (Spirited Seasons)",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/7037",
+        modGuid			=	"abc09812-ed4d-43ff-9a93-ee46487e81d9",
+        UUID			=	"39d96060-532d-4814-9098-a6c0524d3b73",
+		Author			=	"tepkunset",
+		SourceBook		=	"MToF",
+		MainRace		=	false,
+		Stats			=	{"0", "2", "0", "0", "1", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+    },
+    {
+        Name			=	"Fey Eladrin - Autumn (Spirited Seasons)",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/7037",
+        modGuid			=	"abc09812-ed4d-43ff-9a93-ee46487e81d9",
+        UUID			=	"09e3d698-1ef6-46ef-b768-f19b94d46127",
+		Author			=	"tepkunset",
+		SourceBook		=	"MToF",
+		MainRace		=	false,
 		Stats			=	{"0", "2", "0", "0", "1", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
     },
     {
