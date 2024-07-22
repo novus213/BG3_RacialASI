@@ -1,9 +1,15 @@
 # BG3 - 5e Raw - Races and Classes Ability Scores and Stats (ASI) Mod
 A detailed guide to fixing ability scores and modifiers in Baldur's Gate 3 (BG3).
 
+![BG3 - 5e Raw - Races and Classes Ability Scores and Stats (ASI) Mod](https://staticdelivery.nexusmods.com/mods/3474/images/3015/3015-1719748315-1254145093.png)
+
 ## About this Mod
 
 This mod, BG3 - 5e Raw - Races and Classes Ability Scores and Stats (ASI), ensures races/subraces and classes/subclasses in BG3 adhere closely to the official Dungeons & Dragons (DnD) 5th Edition rules, incorporating racial bonuses. It applies to both original content and content added by other mods.
+
+
+![BG3 - Open FAERUN](https://i.imgur.com/qdQS6if.png)
+
 
 ## Features
 
