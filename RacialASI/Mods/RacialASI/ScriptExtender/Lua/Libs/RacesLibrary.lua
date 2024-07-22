@@ -1561,7 +1561,7 @@ variant human mods
 - Astral Elves 5E - https://www.nexusmods.com/baldursgate3/mods/1780
 - Astral Elves - https://www.nexusmods.com/baldursgate3/mods/1388
 - Astral Half-Elves - https://www.nexusmods.com/baldursgate3/mods/9676
-- Playable Ogre M-F - https://www.nexusmods.com/baldursgate3/mods/425 Ability Score Increase. Your Strength score increases by 2 and your Constitution score increases by 1.
+- Playable Ogre M-F - https://www.nexusmods.com/baldursgate3/mods/425  		Stats			=	{"4", "-1", "3", "-3", "-2", "-2"}
 
 Half-homebrew
 - Demon Player Race - https://www.nexusmods.com/baldursgate3/mods/3703
