@@ -1361,6 +1361,9 @@ The Avariel and Grugach, as far as I know, were not released.",
 		Stats			=	{"0", "2", "0", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 		Sab				=	{"1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
     },
+--
+-- Orc Half-Elf by Soriyumi - https://www.nexusmods.com/baldursgate3/mods/5943
+--
     {
         Name			=	"Orc Half-Elf",
 		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/5943",
@@ -1371,6 +1374,9 @@ The Avariel and Grugach, as far as I know, were not released.",
 		MainRace		=	false,
 		Stats			=	{"1", "1", "1", "0", "0", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
     },
+--
+-- Skeleton by Rexsaze - https://www.nexusmods.com/baldursgate3/mods/4949
+--
     {
         Name			=	"Skeleton race Rexsaze (playableundead)",
 		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/4949",
@@ -1380,16 +1386,6 @@ The Avariel and Grugach, as far as I know, were not released.",
 		SourceBook		=	"",
 		MainRace		=	true,
 		Stats			=	{"0", "0", "1", "0", "0", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
-    },
-    {
-        Name			=	"Underdark's Chosen - Drow RP",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/3485",
-        modGuid			=	"76015234-1bb4-42dc-adb9-c86c7f4cbb39",
-        UUID			=	"4a634f24-bdcb-4559-b8be-7847133ad1c3",
-		Author			=	"BitterPast",
-		SourceBook		=	"",
-		MainRace		=	true,
-		Stats			=	{"0", "2", "0", "0", "0", "1"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
     },
 	{
         Name 			= 	"Adapted Kender Race from Dragonlance: Shadow of the Dragon Queen",
@@ -1402,6 +1398,29 @@ The Avariel and Grugach, as far as I know, were not released.",
 		MainRace		=	false,
 		Sab				=	{"1","1","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
     },
+--[[
+__________.__  __    __              __________                  __       _____             .___      
+\______   \__|/  |__/  |_  __________\______   \_____    _______/  |_    /     \   ____   __| _/______
+ |    |  _/  \   __\   __\/ __ \_  __ \     ___/\__  \  /  ___/\   __\  /  \ /  \ /  _ \ / __ |/  ___/
+ |    |   \  ||  |  |  | \  ___/|  | \/    |     / __ \_\___ \  |  |   /    Y    (  <_> ) /_/ |\___ \ 
+ |______  /__||__|  |__|  \___  >__|  |____|    (____  /____  > |__|   \____|__  /\____/\____ /____  >
+		\/                    \/                     \/     \/                 \/            \/    \/ 
+		 \_Ghastly Ghouls - Playable Undead Race 3.01 Used
+]]--
+
+--
+-- Underdark's Chosen - Drow RP by BitterPast - https://www.nexusmods.com/baldursgate3/mods/3485
+--
+	{
+		Name			=	"Assassin Drow",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/3485",
+		modGuid			=	"76015234-1bb4-42dc-adb9-c86c7f4cbb39",
+		UUID			=	"4a634f24-bdcb-4559-b8be-7847133ad1c3",
+		Author			=	"BitterPast",
+		SourceBook		=	"",
+		MainRace		=	true,
+		Stats			=	{"0", "2", "0", "0", "0", "1"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+	},
 
 --[[
   ________.__                     __  .__            ________.__                 .__            ____ ___           .___                 .___ __________                      
