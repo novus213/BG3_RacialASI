@@ -989,7 +989,7 @@ ClassesLibrary = {
 -- -------------------------------- Magus class --------------------------------- --
 
 	{
-		Class			=	"Magus",
+		Name			=	"Magus",
 		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/422",
 		modGuid			=	"a827da36-4086-4d47-9945-f45555555555",
 		UUID			=	"452d6137-7720-4d04-b950-f45555555555",
@@ -1000,7 +1000,7 @@ ClassesLibrary = {
 		isOutdated		=	false
 	},
 	{
-		Class			=	"Magus - Inexorable Iron",
+		Name			=	"Magus - Inexorable Iron",
 		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/422",
 		modGuid			=	"a827da36-4086-4d47-9945-f45555555555",
 		UUID			=	"aaaa",
@@ -1011,7 +1011,7 @@ ClassesLibrary = {
 		isOutdated		=	false
 	},
 	{
-		Class			=	"Magus - Sparkling Targe",
+		Name			=	"Magus - Sparkling Targe",
 		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/422",
 		modGuid			=	"a827da36-4086-4d47-9945-f45555555555",
 		UUID			=	"aaaa",
@@ -1022,7 +1022,7 @@ ClassesLibrary = {
 		isOutdated		=	false
 	},
 	{
-		Class			=	"Magus - Laughing Shadow",
+		Name			=	"Magus - Laughing Shadow",
 		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/422",
 		modGuid			=	"a827da36-4086-4d47-9945-f45555555555",
 		UUID			=	"aaaa",
@@ -1033,7 +1033,7 @@ ClassesLibrary = {
 		isOutdated		=	false
 	},
 	{
-		Class			=	"Magus - Twisting Tree",
+		Name			=	"Magus - Twisting Tree",
 		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/422",
 		modGuid			=	"a827da36-4086-4d47-9945-f45555555555",
 		UUID			=	"aaaa",
@@ -1044,7 +1044,7 @@ ClassesLibrary = {
 		isOutdated		=	false
 	},
 	{
-		Class			=	"Magus - Starlit Span",
+		Name			=	"Magus - Starlit Span",
 		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/422",
 		modGuid			=	"a827da36-4086-4d47-9945-f45555555555",
 		UUID			=	"aaaa",
@@ -1055,7 +1055,89 @@ ClassesLibrary = {
 		isOutdated		=	false
 	},
 
--- -------------------------------- Magus class --------------------------------- --
+-- --------------------------------  class --------------------------------- --
+
+	{
+        Class 			= 	"Troubadour",
+        modGuid 		= 	"130082f8-4789-44ab-a4d0-a459459a5bf1",
+        UUID 			= 	"985ddb6d-4ad1-4cdd-99ff-661f5176115c"
+    },
+    {
+        Class 			= 	"DeathKnight",
+        modGuid 		= 	"3eb9981c-15b7-4973-9c15-bb680808ebeb",
+        UUID 			= 	"9406edff-5e57-4eb6-ab0d-a2cc7d5d8b8a"
+    },
+    {
+        Class 			= 	"Witcher (no 5e class)",
+        modGuid 		= 	"f3e00b63-f4ba-4893-81c4-d982884118af",
+        UUID 			=	 "ed7b629c-01e1-488d-88db-61851c63da27"
+    },
+    {
+        Class = "Homebrew Ambusher Class (no 5e class)",
+        modGuid = "68d429bb-16c5-4895-9cc4-b01e6d842843",
+        UUID = "5ef72e3c-717a-4250-860e-0813e3c42a36"
+    },
+    {
+        Class = "EldritchScholar (no 5e class)",
+        modGuid = "55f6108e-ab45-484f-a5f9-8b3a5318586c",
+        UUID = "a5842466-38b2-40fa-862a-7e48831e551d"
+    },
+    {
+        Class = "The Fathomless Patron for Warlocks",
+        modGuid = "5d30acc9-66aa-482b-8802-33aad93995e4",
+        UUID = "da7173e8-0faa-4929-a505-3e1228c16b82"
+    },
+    {
+        Class = "Genie Warlock 2024", -- warning mod bugged
+        modGuid = "0cb5018a-f898-4446-9b9e-8f7a6c3fa9ea",
+        UUID = "37a9d834-26fa-4bf0-aec2-9e8522139d72"
+    },
+    {
+        Class = "The Celestia Patron for Warlocks 2023",
+        modGuid = "9bf0dff3-59b9-4cdb-9003-dede17813444",
+        UUID = "b7a111c9-e398-4f99-9759-b19a993d97a2"
+    },
+    {
+        Class = "The Celestia Patron for Warlocks 2024",
+        modGuid = "015ff10e-b018-4bea-ab81-35b2a198623d",
+        UUID = "a7767dc5-e6ab-4e05-96fd-f0424256121c" -- same uuid ????
+    },
+    { 
+        Class = "HexBlade",
+        modGuid = "e1eb6d1a-5922-4964-bfd7-c971e71e351a",
+        UUID = "20015e25-8aa9-41bf-b959-aa587ba0aa27"
+    },
+    { 
+        Class = "The First Vampire",
+        modGuid = "69b724c2-1e84-44a4-961a-c225c7e319de",
+        UUID = "20015e25-8aa9-41bf-b959-aa587ba0aa27" 
+    },
+    {
+        Class = "Shadow Sorcerer",
+        modGuid = "38291fe1-40a3-4af7-bbbd-c9a55f3e39c0",
+        UUID = "42af9bda-9ac0-4564-920b-f9ca1588d6ee" -- same uuid ????
+    },
+    {
+        Class = "Elemancer Sorcerer Edited to level 12 max by Nathyiel. Original mod by Backburner26",
+        modGuid = "d40b8322-5d61-492d-9a0c-e75be1a1bbb2",
+        UUID = "42af9bda-9ac0-4564-920b-f9ca1588d6ee" -- same uuid ????
+    },
+    {
+        Class = "Elemancer Sorcerer lvl 12",
+        modGuid = "d40b8322-5d61-492d-9a0c-e75be1a1bbb2",
+        UUID = "42af9bda-9ac0-4564-920b-f9ca1588d6ee" -- same uuid ????
+    },
+    {
+        Class = "Arlequin",
+        modGuid = "32cf2ce3-b7f1-48c2-85b3-6ed38a09de1a",
+        UUID = "c43581ac-0262-4dd9-958b-1eeed88b10f0"
+    },
+    {
+        Class = "Pugilist",
+        modGuid = "0f14ab9a-0670-4cc8-a48b-609b1097983b",
+        UUID = "41c5ac54-bd32-4f5b-9feb-c30afb255857"
+    },
+
 
 	{
 		Name			=	"New",
