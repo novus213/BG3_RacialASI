@@ -679,8 +679,8 @@ _________                 __                   __________
 	{
 		Name 			=	"Aasimar Main",
 		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/1824",
-		modGuid 		=	"1ebf4a1c-01d4-41ed-8aa1-5b3975c6d019",	 --"ab267ed4-b3b5-4b4f-a62c-7dbc95c968fa",
-		UUID 			=	"69fa02bf-9943-4ca2-ae9c-5e49488e28c5",  --"06e918ad-be2c-48b6-a098-0288539de744", Bug uuid rewrite lvl 1 in progression.lsx
+		modGuid 		=	"ab267ed4-b3b5-4b4f-a62c-7dbc95c968fa",
+		UUID 			=	"06e918ad-be2c-48b6-a098-0288539de744",
 		raceLsxUUID		=	"31c1d14f-2a46-4507-b9ba-b993bdffd298",
 		Author			=	"DarthRen",
 		SourceBook		=	"VGtML",
@@ -923,7 +923,7 @@ The Avariel and Grugach, as far as I know, were not released.",
         Name			=	"Dhampir", -- look unused
 		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/4761",
         modGuid			=	"5114d845-2c0f-441c-a01b-91a1847a48bc",
-        UUID			=	"b5f04836-e2ef-4eb6-93d5-4aad7f3b1c20",
+        UUID			=	"b5f04836-e2ef-4eb6-93d5-4aad7f3b1c20", --Warning, conflit avec playable Undead (legacy) and Mori's Astral Elves
 		Author			=	"Sassandra Baerne",
 		SourceBook		=	"P",
 		MainRace		=	true
@@ -932,7 +932,7 @@ The Avariel and Grugach, as far as I know, were not released.",
         Name			=	"Dhampir - RU_SHI",
 		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/4761",
         modGuid			=	"5114d845-2c0f-441c-a01b-91a1847a48bc",
-        UUID			=	"042e6092-1602-4338-b6f9-cc7987f3bff4", --Warning, conflict with playable Undead (legacy) and Mori's Astral Elves
+        UUID			=	"042e6092-1602-4338-b6f9-cc7987f3bff4",
 		Author			=	"Sassandra Baerne",
 		Comments		=	"Progression UUID conflict with playable undead",
 		SourceBook		=	"P",
@@ -1394,8 +1394,8 @@ The Avariel and Grugach, as far as I know, were not released.",
     {
         Name			=	"Skeleton race Rexsaze (playableundead)",
 		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/4949",
-        modGuid			=	"1ebf4a1c-01d4-41ed-8aa1-5b3975c6d019",	--"315ce1a1-0f24-4777-90d9-06b01a93a716",
-        UUID			=	"1fc6ae9f-672f-458b-8b1d-0abfd3021336",	--"042e6092-1602-4338-b6f9-cc7987f3bff4",
+        modGuid			=	"315ce1a1-0f24-4777-90d9-06b01a93a716",
+        UUID			=	"042e6092-1602-4338-b6f9-cc7987f3bff4",
 		Author			=	"Sutherex",
 		SourceBook		=	"",
 		MainRace		=	true,
@@ -1425,16 +1425,16 @@ __________.__  __    __              __________                  __       _____ 
 --
 -- Underdark's Chosen - Drow RP by BitterPast - https://www.nexusmods.com/baldursgate3/mods/3485
 --
---	{
---		Name			=	"Assassin Drow",
---		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/3485",
---		modGuid			=	"76015234-1bb4-42dc-adb9-c86c7f4cbb39",
---		UUID			=	"4a634f24-bdcb-4559-b8be-7847133ad1c3",
---		Author			=	"BitterPast",
---		SourceBook		=	"",
---		MainRace		=	true,
---		Stats			=	{"0", "2", "0", "0", "0", "1"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
---	},
+	{
+		Name			=	"Assassin Drow",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/3485",
+		modGuid			=	"76015234-1bb4-42dc-adb9-c86c7f4cbb39",
+		UUID			=	"4a634f24-bdcb-4559-b8be-7847133ad1c3",
+		Author			=	"BitterPast",
+		SourceBook		=	"",
+		MainRace		=	true,
+		Stats			=	{"0", "2", "0", "0", "0", "1"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+	},
 
 --[[
   ________.__                     __  .__            ________.__                 .__            ____ ___           .___                 .___ __________                      
