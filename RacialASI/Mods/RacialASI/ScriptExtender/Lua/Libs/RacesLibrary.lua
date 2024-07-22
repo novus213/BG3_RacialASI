@@ -44,6 +44,7 @@ RaceLibrary = {
 	},
 	{
 		Name			=	"Elf default",
+		modURL			= 	{"https://bg3.wiki/wiki/Elf", "https://baldursgate3.wiki.fextralife.com/Elf"},
 		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
 		UUID			=	"496486a4-b5f2-4f91-90ea-6cad9023952e",
 		Author			=	"Larian",
@@ -52,6 +53,7 @@ RaceLibrary = {
 	},
 	{
 		Name			=	"High Elf default",
+		modURL			= 	{"https://bg3.wiki/wiki/Elf", "https://baldursgate3.wiki.fextralife.com/Elf"},
 		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
 		UUID			=	"db13a1fb-7d64-4309-a1c8-e2a5c752ded5",
 		Author			=	"Larian",
@@ -61,6 +63,7 @@ RaceLibrary = {
 	},
 	{
 		Name			=	"Wood Elf default",
+		modURL			= 	{"https://bg3.wiki/wiki/Elf", "https://baldursgate3.wiki.fextralife.com/Elf"},
 		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
 		UUID			=	"b262db2c-7a80-4c76-a1e8-0efdb9c1db13",
 		Author			=	"Larian",
@@ -71,6 +74,7 @@ RaceLibrary = {
 	},
 	{
 		Name			=	"Drow default",
+		modURL			= 	{"https://bg3.wiki/wiki/Drow", "https://baldursgate3.wiki.fextralife.com/Drow"},
 		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
 		UUID			=	"4a634f24-bdcb-4559-b8be-7847133ad1c3",
 		Author			=	"Larian",
@@ -80,6 +84,7 @@ RaceLibrary = {
 	},
 	{
 		Name			=	"Dwarf default",
+		modURL			= 	{"https://bg3.wiki/wiki/Dwarf", "https://baldursgate3.wiki.fextralife.com/Dwarf"},
 		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
 		UUID			=	"3c9a0bd8-bb0f-4a42-b77f-7a9a1cff2e5d",
 		Author			=	"Larian",
@@ -88,6 +93,7 @@ RaceLibrary = {
 	},
 	{
 		Name			=	"Dwarf - Duergar default",
+		modURL			= 	{"https://bg3.wiki/wiki/Dwarf", "https://baldursgate3.wiki.fextralife.com/Dwarf"},
 		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
 		UUID			=	"bd012f5b-0a0b-424e-ab7c-186dbd82ab30",
 		Author			=	"Larian",
@@ -97,6 +103,7 @@ RaceLibrary = {
 	},
 	{
 		Name			=	"Dwarf - Mountian default",
+		modURL			= 	{"https://bg3.wiki/wiki/Dwarf", "https://baldursgate3.wiki.fextralife.com/Dwarf"},
 		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
 		UUID			=	"3576f8c6-e515-49c5-808c-b68b77154ffd",
 		Author			=	"Larian",
@@ -106,6 +113,7 @@ RaceLibrary = {
 	},
 	{
 		Name			=	"Dwarf - Hill default",
+		modURL			= 	{"https://bg3.wiki/wiki/Dwarf", "https://baldursgate3.wiki.fextralife.com/Dwarf"},
 		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
 		UUID			=	"207d038e-1add-4335-81d1-b0861f524c19",
 		Author			=	"Larian",
@@ -115,6 +123,7 @@ RaceLibrary = {
 	},
 	{
 		Name			=	"Half-Elf default",
+		modURL			= 	{"https://bg3.wiki/wiki/Half-Elf", "https://baldursgate3.wiki.fextralife.com/Half-Elf"},
 		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
 		UUID			=	"a1729574-2f7b-4561-91d8-3766cf940420",
 		Author			=	"Larian",
@@ -124,6 +133,7 @@ RaceLibrary = {
 	},
 	{
 		Name			=	"Half-Elf - Half High Elf default",
+		modURL			= 	{"https://bg3.wiki/wiki/Half-Elf", "https://baldursgate3.wiki.fextralife.com/Half-Elf"},
 		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
 		UUID			=	"43bfa29a-fd63-4f47-850e-6714f0333022",
 		Author			=	"Larian",
@@ -134,6 +144,7 @@ RaceLibrary = {
 	},
 	{
 		Name			=	"Half-Elf - Half Wood Elf default",
+		modURL			= 	{"https://bg3.wiki/wiki/Half-Elf", "https://baldursgate3.wiki.fextralife.com/Half-Elf"},
 		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
 		UUID			=	"cb0f84ec-1b1d-4ecc-9ab5-76261e332f5a",
 		Author			=	"Larian",
@@ -144,6 +155,7 @@ RaceLibrary = {
 	},
 	{
 		Name			=	"Half-Elf - Half Drow default",
+		modURL			= 	{"https://bg3.wiki/wiki/Half-Elf", "https://baldursgate3.wiki.fextralife.com/Half-Elf"},
 		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
 		UUID			=	"58dae581-c25a-4dfb-8a57-589bf4b34f62",
 		Author			=	"Larian",
@@ -154,6 +166,8 @@ RaceLibrary = {
 	},
 	{
 		Name			=	"Gnome default",
+		modURL			= 	{"https://bg3.wiki/wiki/Gnome", "https://baldursgate3.wiki.fextralife.com/Gnome"},
+		Comments		=	"The Alpha Main Race !",
 		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
 		UUID			=	"d48f8fb3-4351-4b5d-a28c-946fd33be726",
 		Author			=	"Larian",
@@ -162,6 +176,7 @@ RaceLibrary = {
 	},
 	{
 		Name			=	"Gnome - Rock default",
+		modURL			= 	{"https://bg3.wiki/wiki/Gnome", "https://baldursgate3.wiki.fextralife.com/Gnome"},
 		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
 		UUID			=	"aa2257a9-1779-4d8b-be65-8a08eede07fa",
 		Author			=	"Larian",
@@ -171,6 +186,7 @@ RaceLibrary = {
 	},
 	{
 		Name			=	"Gnome - Deep default",
+		modURL			= 	{"https://bg3.wiki/wiki/Gnome", "https://baldursgate3.wiki.fextralife.com/Gnome"},
 		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
 		UUID			=	"938b6f72-18a6-4af0-924b-5292251d32bf",
 		Author			=	"Larian",
@@ -180,6 +196,7 @@ RaceLibrary = {
 	},
 	{
 		Name			=	"Gnome - Forest default",
+		modURL			= 	{"https://bg3.wiki/wiki/Gnome", "https://baldursgate3.wiki.fextralife.com/Gnome"},
 		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
 		UUID			=	"a63bbb3c-c37c-4578-94e6-7d1c4c063d5c",
 		Author			=	"Larian",
@@ -189,6 +206,7 @@ RaceLibrary = {
 	},
 	{
 		Name			=	"Halfling default",
+		modURL			= 	{"https://bg3.wiki/wiki/Halfling", "https://baldursgate3.wiki.fextralife.com/Halfling"},
 		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
 		UUID			=	"963edcba-c572-4f51-b447-8810bbb43a8e",
 		Author			=	"Larian",
@@ -197,6 +215,7 @@ RaceLibrary = {
 	},
 	{
 		Name			=	"Halfling - Lightfoot default",
+		modURL			= 	{"https://bg3.wiki/wiki/Halfling", "https://baldursgate3.wiki.fextralife.com/Halfling"},
 		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
 		UUID			=	"bc2d257b-a405-4f58-891e-3083c5f71127",
 		Author			=	"Larian",
@@ -206,6 +225,7 @@ RaceLibrary = {
 	},
 	{
 		Name			=	"Halfling - Strongheart default",
+		modURL			= 	{"https://bg3.wiki/wiki/Halfling", "https://baldursgate3.wiki.fextralife.com/Halfling"},
 		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
 		UUID			=	"b7a39730-2820-40c7-be96-2c134fead68a",
 		Author			=	"Larian",
@@ -215,6 +235,7 @@ RaceLibrary = {
 	},
 	{
 		Name			=	"Tiefling default",
+		modURL			= 	{"https://bg3.wiki/wiki/Tiefling", "https://baldursgate3.wiki.fextralife.com/Tiefling"},
 		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
 		UUID			=	"56529178-3df2-4067-b1c0-e35fe82fbd37",
 		Author			=	"Larian",
@@ -223,6 +244,7 @@ RaceLibrary = {
 	},
 	{
 		Name			=	"Tiefling - Asmodeus default",
+		modURL			= 	{"https://bg3.wiki/wiki/Tiefling", "https://baldursgate3.wiki.fextralife.com/Tiefling"},
 		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
 		UUID			=	"a8b18f0c-fe70-4f13-9dbc-23f4dbc3d648",
 		Author			=	"Larian",
@@ -232,6 +254,7 @@ RaceLibrary = {
 	},
 	{
 		Name			=	"Tiefling - Mephistopheles default",
+		modURL			= 	{"https://bg3.wiki/wiki/Tiefling", "https://baldursgate3.wiki.fextralife.com/Tiefling"},
 		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
 		UUID			=	"bdd1cf22-1b3c-4bc6-8313-898a49fcfe49",
 		Author			=	"Larian",
@@ -241,6 +264,7 @@ RaceLibrary = {
 	},
 	{
 		Name			=	"Tiefling - Zariel default",
+		modURL			= 	{"https://bg3.wiki/wiki/Tiefling", "https://baldursgate3.wiki.fextralife.com/Tiefling"},
 		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
 		UUID			=	"89d57acd-85ff-4da6-b989-9b82d0241e46",
 		Author			=	"Larian",
@@ -250,6 +274,7 @@ RaceLibrary = {
 	},
 	{
 		Name			=	"Dragonborn default",
+		modURL			= 	{"https://bg3.wiki/wiki/Dragonborn", "https://baldursgate3.wiki.fextralife.com/Dragonborn"},
 		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
 		UUID			=	"cabc4d46-f08e-4a48-8937-0bd1067ab43d",
 		Author			=	"Larian",
@@ -260,14 +285,32 @@ RaceLibrary = {
 
 	{
 		Name			=	"Dragonborn black ect. base Larian ",
+		modURL			= 	{"https://bg3.wiki/wiki/Dragonborn", "https://baldursgate3.wiki.fextralife.com/Dragonborn"},
 		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
 		UUID			=	"XXXX",
 		Author			=	"Larian",
 		SourceBook		=	"PHB",
 		MainRace		=	true
-	},
 
-	]]--
+
+		TAG ?? not a race ??
+
+		Full-illithid !!!!!! Ability Score Increase. Your Intelligence score increases by 2, and either your Wisdom or Charisma score increases by 1.
+		modURL			= 	{"https://bg3.wiki/wiki/Full-illithid", "https://baldursgate3.wiki.fextralife.com/Full-illithid"},
+		Stats			=	{"1", "0", "0", "2", "0", "0"},
+		Sab				=	{"1"}
+
+		ability uuid 002d957b-ed24-4efa-afdb-ccf86bac00dd
+
+
+		Partial-illithid   !!!! Ability Score Increase. Your Intelligence score increases by 2, and either your Wisdom or Charisma score increases by 1.
+		modURL			= 	{"https://bg3.wiki/wiki/Partial-illithid", "https://baldursgate3.wiki.fextralife.com/Partial-illithid"},
+		Stats			=	{"0", "0", "0", "2", "0", "0"},
+		Sab				=	{"1"}
+
+		ability uuid 002d957b-ed24-4efa-afdb-ccf86bac00dd
+   },  ]]--
+
 	{
 		Name			=	"Half-Orc default",
 		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
