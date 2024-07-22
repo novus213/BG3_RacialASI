@@ -9,7 +9,7 @@
                     <attribute id="Width" type="int64" value="64"/>
                 </node>
                 <node id="TextureAtlasPath">
-                    <attribute id="Path" type="LSString" value="Assets/Textures/Icons/Icons_RacialASI.DDS"/>
+                    <attribute id="Path" type="LSString" value="Assets/Textures/Icons/Icons_RacialASI.DDS"/> <!-- Thanks to Artificer community for icons -->
                     <attribute id="UUID" type="FixedString" value="87e01727-a42c-4ff5-ad79-0580419ef8d3"/>
                 </node>
                 <node id="TextureAtlasTextureSize">
