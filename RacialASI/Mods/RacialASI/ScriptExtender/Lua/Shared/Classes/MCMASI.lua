@@ -27,8 +27,6 @@ function MCMASI:OnSessionLoadedMCM()
         ]]--
     }
 
-
-
     mcmVarsBooksSettings = {
         PatchAsi5eLimited   = MCMASIAPI:MCMGet("PatchASI_5eLimited"),
         PatchAsi5e          = MCMASIAPI:MCMGet("PatchASI_5e"),
@@ -41,13 +39,12 @@ function MCMASI:OnSessionLoadedMCM()
             mcmVarsBooksSettings["IgnoreAll"]
         ]]--
     }
+
     mcmVarsGeneralSettings = {
         RASI        = MCMASIAPI:MCMGet("RASI"),
         DebugLevel  = MCMASIAPI:MCMGet("Debug_level"),
         Log         = MCMASIAPI:MCMGet("Log")
     }
-
-    
 
     BasicWarning(string.format("============> mcmVars is loaded. %s", table.dump(mcmVars)))
     BasicWarning(string.format("============> mcmVarsGeneralSettings is loaded. %s", table.dump(mcmVarsGeneralSettings)))
