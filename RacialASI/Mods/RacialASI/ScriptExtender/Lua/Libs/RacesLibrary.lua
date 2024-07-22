@@ -1084,6 +1084,8 @@ ___________              __                   __  .__              .__       ___
 		modGuid			=	"5e53f556-ba7a-46fd-9dee-ba1ff456d8db",
 		UUID			=	"0b88cad4-c5d0-4cde-a661-a8ede3f7d113",
 		Author			=	"Dungeons and Souls",
+		Comments		=	"optional feat rules from the Player’s Handbook, \
+		your Dungeon Master might allow these variant traits, all of which replace the human’s Ability Score Increase trait.",
 		SourceBook		=	"PHB",
 		MainRace		=	false,
 		Sab				=	{"1","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
@@ -1544,6 +1546,14 @@ ____________________ ________  ________ ________                                
 
 --[[ 
 Todo
+
+PHB
+variant human mods
+- https://www.nexusmods.com/baldursgate3/mods/3468
+- https://www.nexusmods.com/baldursgate3/mods/10232
+- https://www.nexusmods.com/baldursgate3/mods/875
+
+
 
 5e Extended
 - Playable Genasi race - https://www.nexusmods.com/baldursgate3/mods/4557
