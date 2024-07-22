@@ -3,10 +3,51 @@
 	<content contentuid="h151054dfg3492g4f2dg89bfg34c7989bb135" version="1">Tinker’s tools Gnome</content>
 	<content contentuid="hbe38632eg25f5g4949gb3f3ga7ae6b343737" version="1">You have proficiency with artisan’s tools (tinker’s tools), When you create a device, choose one of the following options : Music Box, Shovel</content>
 	<content contentuid="7342900a-1e03-4609-a77e-92b5089efabe" version="1">Undeath</content>
-	<content contentuid="h2a86252bg933bg45dega12cg276554b99997" version="1">You died, but it didn't stick. Now, you walk amongst the living once more as a creature reanimated by negative energy.&lt;br&gt;&lt;br&gt; Your undead nature means many spells and effects interact with you differently, or not at all. You have &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on Death &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;, and you are &lt;LSTag Tooltip="Immune"&gt;Immune&lt;/LSTag&gt; to Disease and Poison, and are healed by Necrotic damage. Once per long rest, you immediately gain health when downed.</content>
+	<content contentuid="h2a86252bg933bg45dega12cg276554b99997" version="1">You died, but it didn't stick. Now, you walk amongst the living once more as a creature reanimated by negative energy.andlt;brandgt;andlt;brandgt; Your undead nature means many spells and effects interact with you differently, or not at all. You have andlt;LSTag Tooltip="Advantage"andgt;Advantageandlt;/LSTagandgt; on Death andlt;LSTag Tooltip="SavingThrow"andgt;Saving Throwsandlt;/LSTagandgt;, and you are andlt;LSTag Tooltip="Immune"andgt;Immuneandlt;/LSTagandgt; to Disease and Poison, and are healed by Necrotic damage. Once per long rest, you immediately gain health when downed.</content>
 	<content contentuid="8044db69-d33f-4f59-8bbf-791ad0bd2f28" version="1">Undying Fervor</content>
-	<content contentuid="a63dce7f-a907-4a57-88de-dd05fa525363" version="1">If you reach 0 &lt;LSTag Tooltip="HitPoints"&gt;hit points&lt;/LSTag&gt;, you regain [1] instead of becoming &lt;LSTag Tooltip="Downed"&gt;Downed&lt;/LSTag&gt;. Refreshes after a long rest.</content>
-	<content contentuid="67eb642a-5324-4a10-93a8-db09a7ff4736" version="1">If you reach 0 &lt;LSTag Tooltip="HitPoints"&gt;hit points&lt;/LSTag&gt;, you regain [1] instead of becoming &lt;LSTag Tooltip="Downed"&gt;Downed&lt;/LSTag&gt;. Once per short rest.</content>
+	<content contentuid="a63dce7f-a907-4a57-88de-dd05fa525363" version="1">If you reach 0 andlt;LSTag Tooltip="HitPoints"andgt;hit pointsandlt;/LSTagandgt;, you regain [1] instead of becoming andlt;LSTag Tooltip="Downed"andgt;Downedandlt;/LSTagandgt;. Refreshes after a long rest.</content>
+	<content contentuid="67eb642a-5324-4a10-93a8-db09a7ff4736" version="1">If you reach 0 andlt;LSTag Tooltip="HitPoints"andgt;hit pointsandlt;/LSTagandgt;, you regain [1] instead of becoming andlt;LSTag Tooltip="Downed"andgt;Downedandlt;/LSTagandgt;. Once per short rest.</content>
 	<content contentuid="16cc763a-0f25-4c43-9057-5dff44817b55" version="1">Greater Undeath</content>
-	<content contentuid="71c2c2f2-89ef-46b1-b3ad-50445f2c4704" version="1">Your undeath has become a font of rejuvenation.&lt;br&gt;&lt;br&gt;You are immune to Disease, and you have &lt;LSTag Tooltip="Resistant"&gt;resistance&lt;/LSTag&gt; to Cold damage and Necrotic damage. Your Undying Fervor feature now replenishes after a short rest.</content>
+	<content contentuid="71c2c2f2-89ef-46b1-b3ad-50445f2c4704" version="1">Your undeath has become a font of rejuvenation.andlt;brandgt;andlt;brandgt;You are immune to Disease, and you have andlt;LSTag Tooltip="Resistant"andgt;resistanceandlt;/LSTagandgt; to Cold damage and Necrotic damage. Your Undying Fervor feature now replenishes after a short rest.</content>
+    <content contentuid="hb677b16932d14669ac2131eb6800155d31e7" version="1">Racial ASI</content>
+    <content contentuid="h5f4b675a7fd74f45a50f68ba10c58ee7f9ed" version="1">Enable or disable RacialASI. not working FOR NOW Maybe useless with uninstall mod from Volition</content>
+    <content contentuid="he8b5755c79de4068959aa14cca050ffd633a" version="1">General Settings</content>
+    <content contentuid="h07d47ae8f2e04a0ebf76f9d291d43f89a122" version="1">Debug level</content>
+    <content contentuid="h5adc1314428f4388982cd00e5b0e85c1be24" version="1">Used mainly to determine which messages to print.andlt;brandgt;Useful for developers or general troubleshooting. andlt;brandgt;It is intended for the author to find bugs eaiser</content>
+    <content contentuid="hb4c1a6067d974317bff0de318b8f41c4629d" version="1">Enable or disable debug level</content>
+    <content contentuid="ha812a2f2e88241eea7f03321e84ebdf4738a" version="1">Debug level</content>
+    <content contentuid="h8effff3ab7ca4498a2bf67aee6964e3f54fa" version="1">Log settings</content>
+    <content contentuid="hbb55682736c04450941a3fcb114209e8ff45" version="1">Log Enable</content>
+    <content contentuid="hcadb9f51b43740c6bbfea0704e5e3b547d0c" version="1">Enable or disable Log File.</content>
+    <content contentuid="hd31f59b8ae454bc69cb34a4f69791adabbe1" version="1">Enable or disable Log File.</content>
+    <content contentuid="he85b940743504f1485f9583fa631edd4f6e5" version="1">Add Feats and Passives Undead Ghastly Ghouls</content>
+    <content contentuid="hdb73025ef0cf4ea695ac2453a1206326db31" version="1">Enable or disable  Feats and Passives to Undead Ghastly Ghouls.</content>
+    <content contentuid="h2ee53fe5595040c8b73a47d1644915851c58" version="1">Add TruePotion Feat and LightSensitivity Passives to Undead Ghastly Ghouls.</content>
+    <content contentuid="hd629868ce4cb411782bf52b9726726801612" version="1">Feats Settings</content>
+    <content contentuid="ha6f6f1f710614c7dbbf094791748b83c27d4" version="1">General Settings</content>
+    <content contentuid="h58f1f87da2a4409298e576d42f7dd761ad4d" version="1">Fix 5e Limited ruleset Races and Classes</content>
+    <content contentuid="h522c516024ca488e9e66f020ad992f76265f" version="1">Enable or disable to fix 5e Limited Races and Classes.</content>
+    <content contentuid="h3dc8b21e901c473ebe2095f7defbcc0egf13" version="1">Enable or disable to fix 5e Limited Races and Classes.</content>
+    <content contentuid="h540131229f714a5a8ca68c840b314e48faa1" version="1">Fix 5e ruleset Races and Classes</content>
+    <content contentuid="haacb3f269d85427b84e585f3c1241f35g1a7" version="1">Enable or disable to fix 5e Races and Classes.</content>
+    <content contentuid="h646d48b7d5154aa2bcc91a860bfd0eee67f5" version="1">Enable or disable to fix 5e Races and Classes.</content>
+    <content contentuid="h6644859819e046aab9a1dd66d00268cb73a9" version="1">Fix 5e Extended ruleset Races and Classes</content>
+    <content contentuid="h2aa40375a90049889136d9ef0166bea59c29" version="1">Enable or disable to fix 5e Extended Races and Classes.</content>
+    <content contentuid="hfdcdc4435f8d4c6e8cd86d5ef92cd2a97d2f" version="1">Enable or disable to fix 5e Extended Races and Classes.</content>
+    <content contentuid="h106ecbfbc9a1492985c7362620d5a00a3a4e" version="1">Fix Legacy ruleset Races and Classes</content>
+    <content contentuid="h29e1603c8a5c417894a6c1b4ccd675ca3cf3" version="1">Enable or disable to fix Legacy Races and Classes.</content>
+    <content contentuid="hb67c5f85c5444bc6b0b61e391f6b8cd36590" version="1">Enable or disable to fix Legacy Races and Classes.</content>
+    <content contentuid="h2af96e58ad974eb1bd78f3a489cc2247bg88" version="1">Fix Flavour ruleset Races and Classes</content>
+    <content contentuid="h7be0b87bbd444c9aa966a3675687f0f64742" version="1">Enable or disable to fix Flavour Races and Classes.</content>
+    <content contentuid="h291bdfd4ec1949b8bd93b1ef660b0dfd12c0" version="1">Enable or disable to fix Flavour Races and Classes.</content>
+    <content contentuid="h6aa763a4161c43aa963a8337083a0656ea63" version="1">Fix Homebrew ruleset Races and Classes</content>
+    <content contentuid="h8c946095072a401188efbdb69077e6f86cc8" version="1">Enable or disable to fix Homebrew Races and Classes.</content>
+    <content contentuid="h78f0ea8eecd148dcab97c17c096668dc8ag7" version="1">Enable or disable to fix Homebrew Races and Classes.</content>
+    <content contentuid="h1cd7715533964b7598d773ea3a9e8877ad4e" version="1">Choose your rules set</content>
+    <content contentuid="ha2075bb674464088b748328cfb44c4b50734" version="1">More Informations</content>
+    <content contentuid="hbc9bf0cfaa274bdc954f73485eb538923cb0" version="1">When you tick one of these boxes, the characteristics, skills and spells of the races will be modified to be more in line with the rules in the DnD books.andlt;brandgt;andlt;brandgt;If a race doesn't exist in the rule books, you'll be given the choice when creating your character to assign characteristics as you wish (+2, +1).andlt;brandgt;andlt;brandgt;Please note that you will need to restart your game for these modifications to take effect.</content>
+    <content contentuid="h981af069c80e462f823e4eac889dc3d3409g" version="1">default patch ASI</content>
+    <content contentuid="h21b3e46a847b433dbf7ce538ed3a6f2f8365" version="1">WARNING ! If you select this option, all previous rules will be ignored and all races and sub-races will have default characteristic bonuses (+2, +1). Select with care!</content>
+    <content contentuid="hdc52a6ac1d644e34a6442853615f9dfcgb2g" version="1">WARNING ! If you select this option, all previous rules will be ignored and all races and sub-races will have default characteristic bonuses (+2, +1). Select with care!</content>
+    <content contentuid="hdd008807f9d846089fd1fce8a76a35ad0cdb" version="1">Patch ASI by Rule Set</content>
 </contentList>

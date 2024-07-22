@@ -17,14 +17,13 @@
               "Default": true,
               "Tooltip": "Enable or disable RacialASI. not working FOR NOW Maybe useless with uninstall mod from Volition",
               "Handles": {
-                "NameHandle": "",
-                "DescriptionHandle": "",
-                "TooltipHandle": ""
+                "NameHandle": "hb677b16932d14669ac2131eb6800155d31e7",
+                "TooltipHandle": "h5f4b675a7fd74f45a50f68ba10c58ee7f9ed"
               }
             }
           ],
           "Handles": {
-            "NameHandle": ""
+            "NameHandle": "he8b5755c79de4068959aa14cca050ffd633a"
           }
         },
         {
@@ -43,14 +42,14 @@
                 "Max": 4
               },
               "Handles": {
-                "NameHandle": "",
-                "DescriptionHandle": "",
-                "TooltipHandle": ""
+                "NameHandle": "h07d47ae8f2e04a0ebf76f9d291d43f89a122",
+                "DescriptionHandle": "h5adc1314428f4388982cd00e5b0e85c1be24",
+                "TooltipHandle": "hb4c1a6067d974317bff0de318b8f41c4629d"
               }
             }
           ],
           "Handles": {
-            "NameHandle": ""
+            "NameHandle": "ha812a2f2e88241eea7f03321e84ebdf4738a"
           }
         },
         {
@@ -65,14 +64,14 @@
               "Tooltip": "Enable or disable Log File.",
               "Description": "Enable or disable Log File.",
               "Handles": {
-                "NameHandle": "",
-                "DescriptionHandle": "",
-                "TooltipHandle": ""
+                "NameHandle": "hbb55682736c04450941a3fcb114209e8ff45",
+                "DescriptionHandle": "hd31f59b8ae454bc69cb34a4f69791adabbe1",
+                "TooltipHandle": "hcadb9f51b43740c6bbfea0704e5e3b547d0c"
               }
             }
           ],
           "Handles": {
-            "NameHandle": ""
+            "NameHandle": "h8effff3ab7ca4498a2bf67aee6964e3f54fa"
           }
         },
         {
@@ -87,19 +86,19 @@
               "Tooltip": "Enable or disable  Feats and Passives to Undead Ghastly Ghouls.",
               "Description": "Add TruePotion Feat and LightSensitivity Passives to Undead Ghastly Ghouls.",
               "Handles": {
-                "NameHandle": "",
-                "DescriptionHandle": "",
-                "TooltipHandle": ""
+                "NameHandle": "he85b940743504f1485f9583fa631edd4f6e5",
+                "DescriptionHandle": "h2ee53fe5595040c8b73a47d1644915851c58",
+                "TooltipHandle": "hdb73025ef0cf4ea695ac2453a1206326db31"
               }
             }
           ],
           "Handles": {
-            "NameHandle": ""
+            "NameHandle": "hd629868ce4cb411782bf52b9726726801612"
           }
         }
       ],
       "Handles": {
-        "NameHandle": ""
+        "NameHandle": "ha6f6f1f710614c7dbbf094791748b83c27d4"
       }
     },
     {
@@ -115,12 +114,12 @@
               "Name": "Fix 5e Limited ruleset Races & Classes",
               "Type": "checkbox",
               "Default": true,
-              "description": "",
+              "description": "Enable or disable to fix 5e Limited Races & Classes.",
               "Tooltip": "Enable or disable to fix 5e Limited Races & Classes.",
               "Handles": {
-                "NameHandle": "",
-                "DescriptionHandle": "",
-                "TooltipHandle": ""
+                "NameHandle": "h58f1f87da2a4409298e576d42f7dd761ad4d",
+                "DescriptionHandle": "h3dc8b21e901c473ebe2095f7defbcc0egf13",
+                "TooltipHandle": "h522c516024ca488e9e66f020ad992f76265f"
               }
             },
             {
@@ -128,12 +127,12 @@
               "Name": "Fix 5e ruleset Races & Classes",
               "Type": "checkbox",
               "Default": true,
-              "description": "",
+              "description": "Enable or disable to fix 5e Races & Classes.",
               "Tooltip": "Enable or disable to fix 5e Races & Classes.",
               "Handles": {
-                "NameHandle": "",
-                "DescriptionHandle": "",
-                "TooltipHandle": ""
+                "NameHandle": "h540131229f714a5a8ca68c840b314e48faa1",
+                "DescriptionHandle": "haacb3f269d85427b84e585f3c1241f35g1a7",
+                "TooltipHandle": "h646d48b7d5154aa2bcc91a860bfd0eee67f5"
               }
             },
             {
@@ -141,12 +140,12 @@
               "Name": "Fix 5e Extended ruleset Races & Classes",
               "Type": "checkbox",
               "Default": true,
-              "description": "",
+              "description": "Enable or disable to fix 5e Extended Races & Classes.",
               "Tooltip": "Enable or disable to fix 5e Extended Races & Classes.",
               "Handles": {
-                "NameHandle": "",
-                "DescriptionHandle": "",
-                "TooltipHandle": ""
+                "NameHandle": "h6644859819e046aab9a1dd66d00268cb73a9",
+                "DescriptionHandle": "h2aa40375a90049889136d9ef0166bea59c29",
+                "TooltipHandle": "hfdcdc4435f8d4c6e8cd86d5ef92cd2a97d2f"
               }
             },
             {
@@ -154,12 +153,12 @@
               "Name": "Fix Legacy ruleset Races & Classes",
               "Type": "checkbox",
               "Default": true,
-              "description": "",
+              "description": "Enable or disable to fix Legacy Races & Classes.",
               "Tooltip": "Enable or disable to fix Legacy Races & Classes.",
               "Handles": {
-                "NameHandle": "",
-                "DescriptionHandle": "",
-                "TooltipHandle": ""
+                "NameHandle": "h106ecbfbc9a1492985c7362620d5a00a3a4e",
+                "DescriptionHandle": "h29e1603c8a5c417894a6c1b4ccd675ca3cf3",
+                "TooltipHandle": "hb67c5f85c5444bc6b0b61e391f6b8cd36590"
               }
             },
             {
@@ -167,12 +166,12 @@
               "Name": "Fix Flavour ruleset Races & Classes",
               "Type": "checkbox",
               "Default": true,
-              "description": "",
+              "description": "Enable or disable to fix Flavour Races & Classes.",
               "Tooltip": "Enable or disable to fix Flavour Races & Classes.",
               "Handles": {
-                "NameHandle": "",
-                "DescriptionHandle": "",
-                "TooltipHandle": ""
+                "NameHandle": "h2af96e58ad974eb1bd78f3a489cc2247bg88",
+                "DescriptionHandle": "h7be0b87bbd444c9aa966a3675687f0f64742",
+                "TooltipHandle": "h291bdfd4ec1949b8bd93b1ef660b0dfd12c0"
               }
             },
             {
@@ -180,17 +179,17 @@
               "Name": "Fix Homebrew ruleset Races & Classes",
               "Type": "checkbox",
               "Default": true,
-              "description": "",
+              "description": "Enable or disable to fix Homebrew Races & Classes.",
               "Tooltip": "Enable or disable to fix Homebrew Races & Classes.",
               "Handles": {
-                "NameHandle": "",
-                "DescriptionHandle": "",
-                "TooltipHandle": ""
+                "NameHandle": "h6aa763a4161c43aa963a8337083a0656ea63",
+                "DescriptionHandle": "h8c946095072a401188efbdb69077e6f86cc8",
+                "TooltipHandle": "h78f0ea8eecd148dcab97c17c096668dc8ag7"
               }
             }
           ],
           "Handles": {
-            "NameHandle": ""
+            "NameHandle": "h1cd7715533964b7598d773ea3a9e8877ad4e"
           }
         },
         {
@@ -198,8 +197,8 @@
           "SectionName": "More Informations",
           "SectionDescription": "When you tick one of these boxes, the characteristics, skills and spells of the races will be modified to be more in line with the rules in the DnD books.\n\nIf a race doesn't exist in the rule books, you'll be given the choice when creating your character to assign characteristics as you wish (+2, +1).\n\nPlease note that you will need to restart your game for these modifications to take effect.",
           "Handles": {
-            "NameHandle": "",
-            "DescriptionHandle": ""
+            "NameHandle": "ha2075bb674464088b748328cfb44c4b50734",
+            "DescriptionHandle": "hbc9bf0cfaa274bdc954f73485eb538923cb0"
           }
         },
         {
@@ -211,19 +210,19 @@
               "Name": "Override all D&D rules",
               "Type": "checkbox",
               "Default": false,
-              "description": "",
+              "description": "WARNING ! If you select this option, all previous rules will be ignored and all races and sub-races will have default characteristic bonuses (+2, +1). Select with care!",
               "Tooltip": "WARNING ! If you select this option, all previous rules will be ignored and all races and sub-races will have default characteristic bonuses (+2, +1). Select with care!",
               "Handles": {
-                "NameHandle": "",
-                "DescriptionHandle": "",
-                "TooltipHandle": ""
+                "NameHandle": "h981af069c80e462f823e4eac889dc3d3409g",
+                "DescriptionHandle": "h21b3e46a847b433dbf7ce538ed3a6f2f8365",
+                "TooltipHandle": "hdc52a6ac1d644e34a6442853615f9dfcgb2g"
               }
             }
           ]
         }
       ],
       "Handles": {
-        "NameHandle": ""
+        "NameHandle": "hdd008807f9d846089fd1fce8a76a35ad0cdb"
       }
     }
   ]
