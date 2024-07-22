@@ -177,6 +177,9 @@ function builder5eRaces()
                         insertPayload(raceMod)
                     else
                         --desactive moi ce putain de mod Connard function
+                        if raceMod.NoDefStats == true then
+                            insertDefaultPayload(raceMod)
+                        end
                         BasicWarning(string.format("%s Wasn't fixed. You uncheck Homebrew", raceMod.Name))
                     end
                 end
@@ -186,7 +189,10 @@ function builder5eRaces()
                             CleanOnRacesStatsLoaded(raceMod)
                             insertPayload(raceMod)
                         else
-                            BasicWarning(string.format("%s Wasn't fixed. You uncheck Fix 5e Limited", raceMod.Name))
+                            if raceMod.NoDefStats == true then
+                                insertDefaultPayload(raceMod)
+                            end
+                                BasicWarning(string.format("%s Wasn't fixed. You uncheck Fix 5e Limited", raceMod.Name))
                         end
                     end
                 end
@@ -196,6 +202,9 @@ function builder5eRaces()
                             CleanOnRacesStatsLoaded(raceMod)
                             insertPayload(raceMod)
                         else
+                            if raceMod.NoDefStats == true then
+                                insertDefaultPayload(raceMod)
+                            end
                             BasicWarning(string.format("%s Wasn't fixed. You uncheck Fix 5e", raceMod.Name))
                         end
                     end
@@ -206,6 +215,9 @@ function builder5eRaces()
                             CleanOnRacesStatsLoaded(raceMod)
                             insertPayload(raceMod)
                         else
+                            if raceMod.NoDefStats == true then
+                                insertDefaultPayload(raceMod)
+                            end
                             BasicWarning(string.format("%s Wasn't fixed. You uncheck Fix 5e Extended", raceMod.Name))
                         end
                     end
@@ -216,6 +228,9 @@ function builder5eRaces()
                             CleanOnRacesStatsLoaded(raceMod)
                             insertPayload(raceMod)
                         else
+                            if raceMod.NoDefStats == true then
+                                insertDefaultPayload(raceMod)
+                            end
                             BasicWarning(string.format("%s Wasn't fixed. You uncheck Fix 5e Legacy", raceMod.Name))
                         end
                     end
@@ -226,6 +241,9 @@ function builder5eRaces()
                             CleanOnRacesStatsLoaded(raceMod)
                             insertPayload(raceMod)
                         else
+                            if raceMod.NoDefStats == true then
+                                insertDefaultPayload(raceMod)
+                            end
                             BasicWarning(string.format("%s Wasn't fixed. You uncheck Fix Flavours", raceMod.Name))
                         end
                     end
