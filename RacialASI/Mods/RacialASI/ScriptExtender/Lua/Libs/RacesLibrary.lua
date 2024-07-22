@@ -731,6 +731,20 @@ The Avariel and Grugach, as far as I know, were not released.",
 		Stats			=	{"0", "2", "1", "0", "0", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 	},
 	{
+		Name 			=	"Shadar-Kai with Drow dialogue tags",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/2476",
+		modGuid 		= 	"c36d595f-70d1-44f1-8ca6-4ad14186f489",
+        UUID 			= 	"96ad7abb-8a86-4939-913d-71f84191f7d7",
+		Author			=	"WintersPast",
+		SourceBook		=	"MToF",
+		Comments		=	"The Sea Elves and the Shadar-kai, originally published as playtest material in this Unearthed Arcana,\
+were officially released today (May 29, 2018) as part of Mordenkainen's Tome of Foes;\
+the Eladrin elf subrace was included as well.\
+The Avariel and Grugach, as far as I know, were not released.",
+		MainRace		=	false,
+		Stats			=	{"0", "2", "1", "0", "0", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+	},
+	{
 		Name			=	"Fairy (Flutter and Whimsy)",
 		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/5127",
 		modGuid			=	"673c5b7b-a274-4916-ad89-4e3c591e1187",
