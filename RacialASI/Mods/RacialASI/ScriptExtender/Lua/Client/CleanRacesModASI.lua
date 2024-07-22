@@ -75,7 +75,7 @@ function CleanOnRacesStatsLoaded(mod)
 
         -- remove Boost Ability
         for _, ability in ipairs(stats) do
-            for score=-10,10 do
+            for score=-5,5 do -- change to -5 5 to low balancing charge server
                 removedRace = removeBoosts(mod, ability, score)
             end
         end
