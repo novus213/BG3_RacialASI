@@ -305,7 +305,7 @@ RaceLibrary = {
 		Name			=	"Dragonborn - Brass defaut",
 		modURL			= 	{"https://bg3.wiki/wiki/Dragonborn", "https://baldursgate3.wiki.fextralife.com/Dragonborn"},
 		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
-		UUID			=	"ec92e1f3-b8cf-42a8-aefc-29c053d22c4",
+		UUID			=	"ec92e1f3-b8cf-42a8-aefc-29c053d22c44",
 		Author			=	"Larian",
 		SourceBook		=	"PHB",
 		MainRace		=	false,
@@ -800,18 +800,11 @@ The Avariel and Grugach, as far as I know, were not released.",
 		MainRace		=	false,
 		Sab				=	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
-	{
-        Name			=	"Halfling (Haunted Warriors)",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/8617",
-        modGuid			=	"f8f5f704-d463-4616-a321-9460060538ff",
-        UUID			=	"0194f214-ffce-4e74-94b6-09e76a270e49",
-		Author			=	"SydMeier",
-		SourceBook		=	"",
-		MainRace		=	false,
-		Stats			=	{"0", "2", "0", "0", "1", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
-    },
+--
+-- Wine and Revelry - Satyr by labotor - https://www.nexusmods.com/baldursgate3/mods/428
+--
     {
-        Name			=	"Satyr (Wine and Revelry)",
+        Name			=	"Satyr",
 		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/428",
         modGuid			=	"68315895-8bd4-4d53-aefc-1b853ffc1461",
         UUID			=	"eb3ac23d-3f7f-44d5-ad6a-bb99232d63bd",
@@ -820,8 +813,11 @@ The Avariel and Grugach, as far as I know, were not released.",
 		MainRace		=	true,
 		Stats			=	{"0", "1", "0", "0", "0", "2"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
     },
+--
+-- Transient Guests Are We - Dhampir by Ne Dragon - https://www.nexusmods.com/baldursgate3/mods/4750
+--
     {
-        Name			=	"Transient Guests Are We - Playable Dhampir",
+        Name			=	"Dhampir",
 		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/4750",
         modGuid			=	"7a4aaaca-88a7-41c4-98d6-de2df39496fe",
         UUID			=	"58971151-461d-4556-8db7-5894af1dceb2",
@@ -834,10 +830,10 @@ The Avariel and Grugach, as far as I know, were not released.",
 -- Dhampir by Sassandra Baerne - https://www.nexusmods.com/baldursgate3/mods/4761
 --
     {
-        Name			=	"Dhampir",
+        Name			=	"Dhampir", -- look unused
 		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/4761",
         modGuid			=	"5114d845-2c0f-441c-a01b-91a1847a48bc",
-        UUID			=	"b5f04836-e2ef-4eb6-93d5-4aad7f3b1c20",
+        UUID			=	"b5f04836-e2ef-4eb6-93d5-4aad7f3b1c20", --Warning, conflit avec playable Undead (legacy) and Mori's Astral Elves
 		Author			=	"Sassandra Baerne",
 		SourceBook		=	"P",
 		MainRace		=	true
@@ -883,8 +879,11 @@ The Avariel and Grugach, as far as I know, were not released.",
 		MainRace		=	false,
 		Stats			=	{"2", "0", "-2", "0", "2", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
     },
+--
+-- Followers Of Zerthimon - Githzerai by Kaz - https://www.nexusmods.com/baldursgate3/mods/3460
+--
     {
-        Name			=	"Followers Of Zerthimon (Githzerai) 1.4",
+        Name			=	"Githzerai (1.4)",
 		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/3460",
         modGuid			=	"ae6eacb7-f346-418f-89a9-f0e4c697baab",
         UUID			=	"8e8928df-70b1-43c0-bc86-40b32c455bee",
@@ -894,7 +893,7 @@ The Avariel and Grugach, as far as I know, were not released.",
 		Stats			=	{"0", "0", "0", "1", "2", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
     },
     {
-        Name			=	"Followers Of Zerthimon (Githzerai) 1.5",
+        Name			=	"Githzerai (1.5)",
 		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/3460",
         modGuid			=	"d6d1028e-68fb-4e94-83d8-e8951f55b86a",
         UUID			=	"8e8928df-70b1-43c0-bc86-40b32c455bee",
@@ -955,8 +954,11 @@ The Avariel and Grugach, as far as I know, were not released.",
 		MainRace		=	false,
 		Stats			=	{"0", "2", "0", "0", "1", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
     },
+--
+-- Forest Friends - Firbolgs by tepkunset - https://www.nexusmods.com/baldursgate3/mods/7757
+--
     {
-        Name			=	"Firbolgs (Forest Friends)",
+        Name			=	"Firbolgs",
 		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/7757",
         modGuid			=	"ecfb9910-1b38-4bbc-a873-4f2812fff276",
         UUID			=	"7eede716-00f0-43aa-ad18-f001f8c7c283",
@@ -965,6 +967,9 @@ The Avariel and Grugach, as far as I know, were not released.",
 		MainRace		=	true,
 		Stats			=	{"1", "0", "0", "0", "2", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
     },
+--
+-- Enter Maztica - unstone Gnome by SydMeier - https://www.nexusmods.com/baldursgate3/mods/9205
+--
     {
         Name			=	"Enter Maztica: Sunstone Gnome Subrace",
 		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/9205",
@@ -975,8 +980,11 @@ The Avariel and Grugach, as far as I know, were not released.",
 		MainRace		=	false,
 		Stats			=	{"0", "1", "0", "2", "0", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
     },
+--
+-- Enter Maztica - Desert Dwarf by SydMeier - https://www.nexusmods.com/baldursgate3/mods/9210
+--
     {
-        Name			=	"Enter Maztica: Desert Dwarf Subrace",
+        Name			=	"Desert Dwarf",
 		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/9210",
         modGuid			=	"1a3a0820-48e3-45b4-822a-7ee31e5d25c5",
         UUID			=	"75c28431-cd41-4256-af2e-0cadd4f8c2f8",
@@ -985,38 +993,50 @@ The Avariel and Grugach, as far as I know, were not released.",
 		MainRace		=	false,
 		Stats			=	{"0", "1", "2", "0", "0", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
     },
+--
+-- Beyond Faerun - Tinker Gnome by SydMeier - https://www.nexusmods.com/baldursgate3/mods/9547
+--
     {
-        Name			=	"Beyond Faerûn: Tinker Gnome Subrace",
+        Name			=	"Tinker Gnome",
 		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/9547",
         modGuid			=	"0b1613ac-1610-4ac4-ba8b-effe33317fd1",
         UUID			=	"a0ae2974-b54a-4e17-ba69-cde2f7448338",
 		Author			=	"SydMeier",
-		SourceBook		=	"",
+		SourceBook		=	"ERftLW",
 		MainRace		=	false,
 		Stats			=	{"0", "2", "0", "2", "0", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
     },
+--
+-- Beyond Faerun - Whisper Gnome by SydMeier - https://www.nexusmods.com/baldursgate3/mods/9546
+--
     {
-        Name			=	"Adapted Whisper Gnome Subrace based on the Eberron Campaign",
+        Name			=	"Whisper Gnome",
 		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/9546",
         modGuid			=	"f13d31f7-c897-494c-a988-bca2a71ccddc",
         UUID			=	"d45a8d46-8a68-4065-98da-9cc84bb2e3b1",
 		Author			=	"SydMeier",
-		SourceBook		=	"",
+		SourceBook		=	"ERftLW",
 		MainRace		=	false,
 		Stats			=	{"0", "2", "2", "0", "0", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
     },
+--
+-- Haunted Warriors - Ghostwise Halfling by SydMeier - https://www.nexusmods.com/baldursgate3/mods/8617
+--
     {
-        Name			=	"Adapted Ghostwise Halfling Subrace",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/xxxx",
+        Name			=	"Ghostwise Halfling",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/8617",
         modGuid			=	"f8f5f704-d463-4616-a321-9460060538ff",
         UUID			=	"0194f214-ffce-4e74-94b6-09e76a270e49",
 		Author			=	"SydMeier",
-		SourceBook		=	"",
+		SourceBook		=	"SCAG",
 		MainRace		=	false,
 		Stats			=	{"0", "2", "0", "0", "1", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
     },
+--
+-- Enter Maztica - Wild Halfling by SydMeier - https://www.nexusmods.com/baldursgate3/mods/9211
+--
     {
-        Name			=	"Enter Maztica: Wild Halfling Subrace",
+        Name			=	"Wild Halfling",
 		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/9211",
         modGuid			=	"9e7836a9-b1a9-4d4e-9089-563c43f4fb1e",
         UUID			=	"e8ccff14-10b6-43f7-bbfa-22ab2104f4fc",
@@ -1025,16 +1045,61 @@ The Avariel and Grugach, as far as I know, were not released.",
 		MainRace		=	false,
 		Stats			=	{"0", "2", "0", "0", "1", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
     },
+--
+-- Heart Of The Forest - Dryad by EmeraldTechno - https://www.nexusmods.com/baldursgate3/mods/6443
+--
     {
-        Name			=	"Dryad (Heart Of The Forest)",
+        Name			=	"Dryad",
 		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/6443",
         modGuid			=	"e61be041-6c93-4576-a4b1-ad183e726f02",
         UUID			=	"c5671549-0282-4b60-a68d-47b676e9e2b9",
 		Author			=	"EmeraldTechno",
 		SourceBook		=	"",
 		MainRace		=	true,
-		Stats			=	{"0", "0", "0", "0", "2", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
     },
+    {
+        Name			=	"Dryad - Spring",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/6443",
+        modGuid			=	"e61be041-6c93-4576-a4b1-ad183e726f02",
+        UUID			=	"40fdbfe4-2f41-4609-bb4c-ddb7bc49b5c4",
+		Author			=	"EmeraldTechno",
+		SourceBook		=	"",
+		MainRace		=	false,
+		Sab				=	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+    },
+    {
+        Name			=	"Dryad - Summer",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/6443",
+        modGuid			=	"e61be041-6c93-4576-a4b1-ad183e726f02",
+        UUID			=	"64615482-5cd6-4bac-beba-bdd5dff19b89",
+		Author			=	"EmeraldTechno",
+		SourceBook		=	"",
+		MainRace		=	false,
+		Sab				=	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+    },
+    {
+        Name			=	"Dryad - Autumn",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/6443",
+        modGuid			=	"e61be041-6c93-4576-a4b1-ad183e726f02",
+        UUID			=	"9693b4ad-6ac7-401c-a6ab-5503785edfac",
+		Author			=	"EmeraldTechno",
+		SourceBook		=	"",
+		MainRace		=	false,
+		Sab				=	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+    },
+    {
+        Name			=	"Dryad - Winter",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/6443",
+        modGuid			=	"e61be041-6c93-4576-a4b1-ad183e726f02",
+        UUID			=	"40ef0562-ac1b-4c5c-9831-5e3c4ce04c20",
+		Author			=	"EmeraldTechno",
+		SourceBook		=	"",
+		MainRace		=	false,
+		Sab				=	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+    },
+--
+-- Whispers of the Fey - Changelings by Trips ♥ - https://www.nexusmods.com/baldursgate3/mods/3110
+--
     {
         Name			=	"Whispers of the Fey - Changelings", -- SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,1)
 		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/3110",
@@ -1046,18 +1111,30 @@ The Avariel and Grugach, as far as I know, were not released.",
 		Stats			=	{"0", "0", "0", "0", "0", "2"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 		Sab				=	{"1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
     },
-    {
-        Name			=	"Whispers of the Fey - Goblins Greenskin",
+--
+-- Whispers of the Fey - Goblins by Trips ♥ - https://www.nexusmods.com/baldursgate3/mods/3254
+--
+	{
+		Name			=	"Goblins",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/3254",
+		modGuid			=	"ca81f091-bf1b-4bb6-90dd-1c4ef83fd798",
+		UUID			=	"fa9d4980-1b18-43e6-974b-4e3a2abae183",
+		Author			=	"Trips ♥",
+		SourceBook		=	"VGtM",
+		MainRace		=	true
+	},
+	{
+        Name			=	"Goblins Greenskin",
 		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/3254",
         modGuid			=	"ca81f091-bf1b-4bb6-90dd-1c4ef83fd798",
         UUID			=	"5a317953-08ea-4424-ad93-05a0a66b4748",
 		Author			=	"Trips ♥",
-		SourceBook		=	"",
+		SourceBook		=	"VGtM",
 		MainRace		=	false,
 		Stats			=	{"0", "2", "1", "0", "0", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
     },
     {
-        Name			=	"Whispers of the Fey - Goblins Dankwood",
+        Name			=	"Goblins Dankwood",
 		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/3254",
         modGuid			=	"ca81f091-bf1b-4bb6-90dd-1c4ef83fd798",
         UUID			=	"453c15bb-0ead-4766-b747-961066c84ee1",
@@ -1066,8 +1143,11 @@ The Avariel and Grugach, as far as I know, were not released.",
 		MainRace		=	false,
 		Stats			=	{"0", "2", "0", "0", "1", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
     },
+--
+-- Secrets of the Serpent - Yuan-ti by Trips ♥ - https://www.nexusmods.com/baldursgate3/mods/7922
+--
     {
-        Name			=	"Yuan-ti (Secrets of the Serpent)",
+        Name			=	"Yuan-ti",
 		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/7922",
         modGuid			=	"b2d490bc-6e10-4bc2-89e0-69c8f68cd453",
         UUID			=	"139dba60-4895-496a-ab48-bbd45719f317",
