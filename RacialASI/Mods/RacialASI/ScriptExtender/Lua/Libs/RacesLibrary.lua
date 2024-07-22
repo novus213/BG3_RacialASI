@@ -740,6 +740,9 @@ The Avariel and Grugach, as far as I know, were not released.",
 		MainRace		=	true,
 		Sab				=	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
+--
+-- Owlin by HornbirdDotMod - https://www.nexusmods.com/baldursgate3/mods/8113
+--
 	{
 		Name			=	"Owlin",
 		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/8113",
@@ -747,9 +750,31 @@ The Avariel and Grugach, as far as I know, were not released.",
 		UUID			=	"da629716-fd76-477d-9934-0473904fe04b", -- old "b5f04836-e2ef-4eb6-93d5-4aad7f3b1c20"
 		Author			=	"HornbirdDotMod",
 		SourceBook		=	"SACoC",
-		MainRace		=	true,
+		MainRace		=	true
+	},
+	{
+		Name			=	"Owlin - Forest",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/8113",
+		modGuid			=	"c1e87b16-c845-4254-b831-bb22b13016fb", -- old "315ce1a1-0f24-4777-90d9-06b01a93a716",
+		UUID			=	"9bb01d19-30fb-4478-bf55-d98dcacb228b",
+		Author			=	"HornbirdDotMod",
+		SourceBook		=	"SACoC",
+		MainRace		=	false,
 		Sab				=	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
+	{
+		Name			=	"Owlin - Snow",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/8113",
+		modGuid			=	"c1e87b16-c845-4254-b831-bb22b13016fb", -- old "315ce1a1-0f24-4777-90d9-06b01a93a716",
+		UUID			=	"837d45f1-17fb-407b-8c3c-ed83427036cf",
+		Author			=	"HornbirdDotMod",
+		SourceBook		=	"SACoC",
+		MainRace		=	false,
+		Sab				=	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+	},
+--
+-- Myconid by Porridge - https://www.nexusmods.com/baldursgate3/mods/5535
+--
 	{
 		Name			=	"Myconid",
 		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/5535",
@@ -760,16 +785,61 @@ The Avariel and Grugach, as far as I know, were not released.",
 		MainRace		=	true,
 		Sab				=	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
+--
+-- Elemental Power - Genasi by tekunset - https://www.nexusmods.com/baldursgate3/mods/4741
+--
 	{
-		Name			=	"Genasi (Elemental Power)",
+		Name			=	"Genasi",
 		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/4741",
 		modGuid			=	"97954f72-711b-4938-a5ae-6a477b2ed574",
 		UUID			=	"e808d2a5-a9eb-403f-bab9-90a5114a699c",
 		Author			=	"tekunset",
 		SourceBook		=	"MPMotM",
-		MainRace		=	true,
+		MainRace		=	true
+	},
+	{
+		Name			=	"Genasi - Fire",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/4741",
+		modGuid			=	"97954f72-711b-4938-a5ae-6a477b2ed574",
+		UUID			=	"ce1b1155-fc91-4dde-9ebb-ec06c103b944",
+		Author			=	"tekunset",
+		SourceBook		=	"MPMotM",
+		MainRace		=	false,
 		Sab				=	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
+	{
+		Name			=	"Genasi - Air",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/4741",
+		modGuid			=	"97954f72-711b-4938-a5ae-6a477b2ed574",
+		UUID			=	"1b933d13-bb4b-4806-97ed-92ef7dc75738",
+		Author			=	"tekunset",
+		SourceBook		=	"MPMotM",
+		MainRace		=	false,
+		Sab				=	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+	},
+	{
+		Name			=	"Genasi - Earth",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/4741",
+		modGuid			=	"97954f72-711b-4938-a5ae-6a477b2ed574",
+		UUID			=	"ffcdbf2d-9500-46a0-9827-a8898e7e0553",
+		Author			=	"tekunset",
+		SourceBook		=	"MPMotM",
+		MainRace		=	false,
+		Sab				=	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+	},
+	{
+		Name			=	"Genasi - Water",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/4741",
+		modGuid			=	"97954f72-711b-4938-a5ae-6a477b2ed574",
+		UUID			=	"ca4b22d5-24b2-43f2-a550-b9d9e7d4d7bc",
+		Author			=	"tekunset",
+		SourceBook		=	"MPMotM",
+		MainRace		=	false,
+		Sab				=	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+	},
+--
+-- Half-Dragon by Val aka Jo - https://www.nexusmods.com/baldursgate3/mods/2634
+--
 	{
 		Name			=	"Half-Dragon",
 		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/2634",
@@ -780,6 +850,9 @@ The Avariel and Grugach, as far as I know, were not released.",
 		MainRace		=	true,
 		Sab				=	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
+--
+-- Hobgoblin by GentlemanBabbo - https://github.com/GentlemanBabbo/Hobgoblin/tree/main
+--
 	{
 		Name			=	"Hobgoblin",
 		modURL			=	"https://github.com/GentlemanBabbo/Hobgoblin/tree/main",
@@ -790,8 +863,11 @@ The Avariel and Grugach, as far as I know, were not released.",
 		MainRace		=	true,
 		Sab				=	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
+--
+-- Witch Elf by CovenElf - https://www.nexusmods.com/baldursgate3/mods/3490
+--
 	{
-		Name			=	"Witch Elf (Custom Subrace)",
+		Name			=	"Witch Elf",
 		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/3490",
 		modGuid			=	"1aa49383-9208-4cc0-96b6-e827819d71d0",
 		UUID			=	"d19f42b3-1c1e-46cd-83e4-fd964426616f",
@@ -1156,6 +1232,9 @@ The Avariel and Grugach, as far as I know, were not released.",
 		MainRace		=	true,
 		Stats			=	{"0", "0", "0", "1", "2", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
     },
+--
+-- Automaton Figgyinchains by GentlemanBabbo - https://github.com/GentlemanBabbo/Automaton/blob/main/
+--
     {
         Name			=	"Automaton Figgyinchains",
 		modURL			=	"https://github.com/GentlemanBabbo/Automaton/blob/main/",
@@ -1166,16 +1245,111 @@ The Avariel and Grugach, as far as I know, were not released.",
 		MainRace		=	true,
 		Stats			=	{"0", "0", "1", "1", "0", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
     },
+--
+-- The Nine Hells Unchained - Imp by SydMeier - https://www.nexusmods.com/baldursgate3/mods/10849
+--
     {
-        Name			=	"The Nine Hells Unchained - Imp Race",
+        Name			=	"Imp",
 		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/10849",
         modGuid			=	"4b268977-b9ec-47fd-95e7-9b977969ba28",
         UUID			=	"602818c4-ec05-4af9-9cb7-dedf06ec04a8",
 		Author			=	"SydMeier",
 		SourceBook		=	"",
-		MainRace		=	true,
+		MainRace		=	true
+    },
+    {
+        Name			=	"Imp - Avernus",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/10849",
+        modGuid			=	"4b268977-b9ec-47fd-95e7-9b977969ba28",
+        UUID			=	"7ef3086e-0caa-4c31-ae61-03ff3f153c03",
+		Author			=	"SydMeier",
+		SourceBook		=	"",
+		MainRace		=	false,
 		Stats			=	{"0", "1", "0", "0", "0", "1"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
     },
+    {
+        Name			=	"Imp - Dis",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/10849",
+        modGuid			=	"4b268977-b9ec-47fd-95e7-9b977969ba28",
+        UUID			=	"ef5929ca-ed90-4050-9439-a9d0e080ee92",
+		Author			=	"SydMeier",
+		SourceBook		=	"",
+		MainRace		=	false,
+		Stats			=	{"0", "1", "0", "0", "0", "1"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+    },
+    {
+        Name			=	"Imp - Minauros",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/10849",
+        modGuid			=	"4b268977-b9ec-47fd-95e7-9b977969ba28",
+        UUID			=	"359d1af0-33b8-4949-b865-e7fb99e2590c",
+		Author			=	"SydMeier",
+		SourceBook		=	"",
+		MainRace		=	false,
+		Stats			=	{"0", "1", "0", "0", "0", "1"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+    },
+    {
+        Name			=	"Imp - Phlegethos",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/10849",
+        modGuid			=	"4b268977-b9ec-47fd-95e7-9b977969ba28",
+        UUID			=	"afbb84c9-612b-4300-a521-22abf2f65f06",
+		Author			=	"SydMeier",
+		SourceBook		=	"",
+		MainRace		=	false,
+		Stats			=	{"0", "1", "0", "0", "0", "1"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+    },
+    {
+        Name			=	"Imp - Stygia",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/10849",
+        modGuid			=	"4b268977-b9ec-47fd-95e7-9b977969ba28",
+        UUID			=	"c459c4d9-f97c-48db-b09d-c38482d03092",
+		Author			=	"SydMeier",
+		SourceBook		=	"",
+		MainRace		=	false,
+		Stats			=	{"0", "1", "0", "0", "0", "1"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+    },
+    {
+        Name			=	"Imp - Malbolge",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/10849",
+        modGuid			=	"4b268977-b9ec-47fd-95e7-9b977969ba28",
+        UUID			=	"ba346fb4-ddcf-45d8-9d61-1818763b710c",
+		Author			=	"SydMeier",
+		SourceBook		=	"",
+		MainRace		=	false,
+		Stats			=	{"0", "1", "0", "0", "0", "1"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+    },
+    {
+        Name			=	"Imp - Maladomini",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/10849",
+        modGuid			=	"4b268977-b9ec-47fd-95e7-9b977969ba28",
+        UUID			=	"f568ce77-922d-47ed-9163-05c4c1eb8fa6",
+		Author			=	"SydMeier",
+		SourceBook		=	"",
+		MainRace		=	false,
+		Stats			=	{"0", "1", "0", "0", "0", "1"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+    },
+    {
+        Name			=	"Imp - Cania",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/10849",
+        modGuid			=	"4b268977-b9ec-47fd-95e7-9b977969ba28",
+        UUID			=	"764e9049-246b-42f9-a71d-6b13272b34d7",
+		Author			=	"SydMeier",
+		SourceBook		=	"",
+		MainRace		=	false,
+		Stats			=	{"0", "1", "0", "0", "0", "1"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+    },
+    {
+        Name			=	"Imp - Nessus",
+		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/10849",
+        modGuid			=	"4b268977-b9ec-47fd-95e7-9b977969ba28",
+        UUID			=	"f157b7c5-95fb-43dd-a32b-02b9c710d637",
+		Author			=	"SydMeier",
+		SourceBook		=	"",
+		MainRace		=	false,
+		Stats			=	{"0", "1", "0", "0", "0", "1"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+    },
+--
+-- Avariel Elf by Ren - https://www.nexusmods.com/baldursgate3/mods/3680
+--
     {
         Name			=	"Avariel Elf",
 		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/3680",
