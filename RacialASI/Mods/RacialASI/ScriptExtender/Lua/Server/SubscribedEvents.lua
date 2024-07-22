@@ -1,5 +1,5 @@
---SubscribedEvents = {}
-
+SubscribedEvents = {}
+--[[
 Ext.RegisterNetListener("MU_Request_Server_Uninstall_Mod", function(channel, payload)
     local data = Ext.Json.Parse(payload)
     local uuid = data.modUUID
@@ -11,9 +11,9 @@ Ext.RegisterNetListener("MU_Request_Server_Uninstall_Mod", function(channel, pay
     end
     Mods.ModUninstaller.UninstallMod(uuid)
 end)
-
+]]--
 --[[function SubscribedEvents.SubscribeToEvents()
     Ext.Osiris.RegisterListener("LevelGameplayStarted", 2, "before", EHandlers.OnLevelGameplayStarted)
 end]]
 
---return SubscribedEvents
+return SubscribedEvents
