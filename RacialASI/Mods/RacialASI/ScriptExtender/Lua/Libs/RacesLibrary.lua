@@ -59,7 +59,7 @@ RaceLibrary = {
 		Author			=	"Larian",
 		SourceBook		=	"PHB",
 		MainRace		=	false,
-		Stats			=	{"0", "2", "0", "1", "0", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Stats			=	{"0", "2", "0", "1", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 	},
 	{
 		Name			=	"Wood Elf default",
@@ -281,17 +281,107 @@ RaceLibrary = {
 		SourceBook		=	"PHB",
 		MainRace		=	true
 	},
-	--[[
-
 	{
-		Name			=	"Dragonborn black ect. base Larian ",
+		Name			=	"Dragonborn - Black defaut",
 		modURL			= 	{"https://bg3.wiki/wiki/Dragonborn", "https://baldursgate3.wiki.fextralife.com/Dragonborn"},
 		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
-		UUID			=	"XXXX",
+		UUID			=	"f5a766a1-9379-47ed-bfeb-cccbba64346f",
 		Author			=	"Larian",
 		SourceBook		=	"PHB",
-		MainRace		=	true
-
+		MainRace		=	false,
+		Stats			=	{"2", "0", "0", "0", "0", "1"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+	},
+	{
+		Name			=	"Dragonborn - Blue defaut",
+		modURL			= 	{"https://bg3.wiki/wiki/Dragonborn", "https://baldursgate3.wiki.fextralife.com/Dragonborn"},
+		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
+		UUID			=	"fc46455a-24f8-4b5f-9340-05806e44257b",
+		Author			=	"Larian",
+		SourceBook		=	"PHB",
+		MainRace		=	false,
+		Stats			=	{"2", "0", "0", "0", "0", "1"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+	},
+	{
+		Name			=	"Dragonborn - Brass defaut",
+		modURL			= 	{"https://bg3.wiki/wiki/Dragonborn", "https://baldursgate3.wiki.fextralife.com/Dragonborn"},
+		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
+		UUID			=	"ec92e1f3-b8cf-42a8-aefc-29c053d22c4",
+		Author			=	"Larian",
+		SourceBook		=	"PHB",
+		MainRace		=	false,
+		Stats			=	{"2", "0", "0", "0", "0", "1"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+	},
+	{
+		Name			=	"Dragonborn - Bronze defaut",
+		modURL			= 	{"https://bg3.wiki/wiki/Dragonborn", "https://baldursgate3.wiki.fextralife.com/Dragonborn"},
+		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
+		UUID			=	"02abcdb7-301c-4ed5-9a39-223359e8d5fa",
+		Author			=	"Larian",
+		SourceBook		=	"PHB",
+		MainRace		=	false,
+		Stats			=	{"2", "0", "0", "0", "0", "1"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+	},
+	{
+		Name			=	"Dragonborn - Copper defaut",
+		modURL			= 	{"https://bg3.wiki/wiki/Dragonborn", "https://baldursgate3.wiki.fextralife.com/Dragonborn"},
+		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
+		UUID			=	"37b52fb8-71be-45c7-889d-aca8110e931b",
+		Author			=	"Larian",
+		SourceBook		=	"PHB",
+		MainRace		=	false,
+		Stats			=	{"2", "0", "0", "0", "0", "1"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+	},
+	{
+		Name			=	"Dragonborn - Gold defaut",
+		modURL			= 	{"https://bg3.wiki/wiki/Dragonborn", "https://baldursgate3.wiki.fextralife.com/Dragonborn"},
+		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
+		UUID			=	"f6fa4014-79fc-4c9c-910b-8e3738424cac",
+		Author			=	"Larian",
+		SourceBook		=	"PHB",
+		MainRace		=	false,
+		Stats			=	{"2", "0", "0", "0", "0", "1"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+	},
+	{
+		Name			=	"Dragonborn - Green defaut",
+		modURL			= 	{"https://bg3.wiki/wiki/Dragonborn", "https://baldursgate3.wiki.fextralife.com/Dragonborn"},
+		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
+		UUID			=	"b7e781e6-fa09-4a35-993a-b59e1e52a66f",
+		Author			=	"Larian",
+		SourceBook		=	"PHB",
+		MainRace		=	false,
+		Stats			=	{"2", "0", "0", "0", "0", "1"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+	},
+	{
+		Name			=	"Dragonborn - Red defaut",
+		modURL			= 	{"https://bg3.wiki/wiki/Dragonborn", "https://baldursgate3.wiki.fextralife.com/Dragonborn"},
+		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
+		UUID			=	"c0202100-b905-4791-8eaa-1c110fe0bd02",
+		Author			=	"Larian",
+		SourceBook		=	"PHB",
+		MainRace		=	false,
+		Stats			=	{"2", "0", "0", "0", "0", "1"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+	},
+	{
+		Name			=	"Dragonborn - Silver defaut",
+		modURL			= 	{"https://bg3.wiki/wiki/Dragonborn", "https://baldursgate3.wiki.fextralife.com/Dragonborn"},
+		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
+		UUID			=	"04ec0b37-ddb6-405d-989a-4f3e25ed1dfe",
+		Author			=	"Larian",
+		SourceBook		=	"PHB",
+		MainRace		=	false,
+		Stats			=	{"2", "0", "0", "0", "0", "1"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+	},
+	{
+		Name			=	"Dragonborn - White defaut",
+		modURL			= 	{"https://bg3.wiki/wiki/Dragonborn", "https://baldursgate3.wiki.fextralife.com/Dragonborn"},
+		modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
+		UUID			=	"e557c3b8-7cc1-43f8-bd8a-6838ff01e6d1",
+		Author			=	"Larian",
+		SourceBook		=	"PHB",
+		MainRace		=	false,
+		Stats			=	{"2", "0", "0", "0", "0", "1"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+	},
+	--[[
 
 		TAG ?? not a race ??
 
