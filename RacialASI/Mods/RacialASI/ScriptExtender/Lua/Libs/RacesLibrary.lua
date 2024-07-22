@@ -906,7 +906,7 @@ The Avariel and Grugach, as far as I know, were not released.",
         modGuid			=	"ecfb9910-1b38-4bbc-a873-4f2812fff276",
         UUID			=	"7eede716-00f0-43aa-ad18-f001f8c7c283",
 		Author			=	"tepkunset",
-		SourceBook		=	"",
+		SourceBook		=	"MPMotM",
 		MainRace		=	true,
 		Stats			=	{"1", "0", "0", "0", "2", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
     },
