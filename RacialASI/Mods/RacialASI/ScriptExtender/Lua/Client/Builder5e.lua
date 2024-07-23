@@ -122,7 +122,7 @@ local fixAsi = {}  -- Table to store classes with removed shit asi
             payload = createSABPayload(raceMod.modGuid, raceMod.UUID, AbilityListUUID, raceMod.Sab, table.getLength(raceMod.Sab))
             table.insert(fixAsi, raceMod.Name) -- Add to the list if ASI Fixed
             Mods.SubclassCompatibilityFramework.Api.InsertSelectors({payload})
-            BasicWarning(string.format("payload InsertSelectors: %s\n\n", table.dump(payload)))
+            --BasicWarning(string.format("payload InsertSelectors: %s\n\n", table.dump(payload)))
         end
 	end
 
