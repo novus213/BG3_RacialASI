@@ -93,7 +93,7 @@ function CONFIG:init()
     BasicPrint(" ----------------------------- ")
     BasicPrint(" ----------------------------- ")
     BasicPrint(
-        string.format("Config.Init() - %s mod by Fenrules (reworked from Argelia mod) VERSION : %s starting up... ", MOD_INFO.MOD_NAME,
+        string.format("Config.Init() - %s mod by Fenrules VERSION : %s starting up... ", MOD_INFO.MOD_NAME,
         MOD_INFO.VERSION),
         "INFO", nil, nil, true)
     BasicPrint(" ----------------------------- ")
