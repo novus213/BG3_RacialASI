@@ -44,6 +44,25 @@ local function createBoostPayload(modGuid, uuid, ability, score)
       }
 end
 
+--[[
+--- create String Ability
+---@param ability string ability DnD (Strength ect.)
+---@param score integer ability score
+---@return table payload
+local function createStringAbility(ability, score)
+    return {
+       "Ability("..ability..","..score..")"
+    }
+end
+
+VCHelpers.CF:addStringPayload(modGuid, target, type, strings)
+Ex:
+VCHelpers.CF:addStringPayload(modGuid, target, type, createStringAbility("Strenght", "1"))
+
+]]
+
+
+
 --- Constructor for removeBoosts
 ---@param mod table race mod table
 ---@param ability string ability DnD (Strength ect.)
