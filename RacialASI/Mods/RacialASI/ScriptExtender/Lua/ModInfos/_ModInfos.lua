@@ -1,7 +1,7 @@
 local racialASIConfig = {
     MOD_ENABLED = 1,
     DEBUG_MESSAGES = 1,
-    LOG_ENABLED = 1,
+    LOG_ENABLED = 0,
     Options = {
         AddUnderdarkRaces_LightSensitivity_Passives = "notuse",
         AddUndeadGhastlyGhouls_TruePotion_and_LightSensitivity_Passives = { Enabled = true },
