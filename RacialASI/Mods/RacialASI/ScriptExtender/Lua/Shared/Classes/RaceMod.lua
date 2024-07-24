@@ -262,8 +262,7 @@ function RaceMod:insertDefaultPayloadASI()
 end
 
 
---- Constructor for cleanOnRacesStatsLoaded
---- Clean race mods stats ASI
+
 --[[
 _________ .__                         __________                              __________    _____         .__       .__      _____    _________.___ 
 \_   ___ \|  |   ____ _____    ____   \______   \_____    ____  ____   ______ \______   \  /  _  \   ____ |__|____  |  |    /  _  \  /   _____/|   |
@@ -273,10 +272,13 @@ _________ .__                         __________                              __
         \/          \/     \/     \/          \/      \/     \/    \/     \/          \/         \/     \/        \/              \/        \/      
         \_Clean Races ModASI
 ]]--
-function RaceMod:cleanOnRacesStatsLoaded(lvlprogressionUUID)
+
+--- Constructor for cleanOnRacesStatsLoaded
+--- Clean race mods stats ASI
+function RaceMod:cleanOnRacesStatsLoaded(AbilityListUUID,lvl)
         -- remove +2+1, +1, +1+1 ect..
-        local payload = VCHelpers.CF:removeSelectorsPayload(self.modGuid, self.progressionUUID[lvlprogressionUUID], "SelectAbilityBonus",
-        deps.AbilityList_UUID)
+        local payload = VCHelpers.CF:removeSelectorsPayload(self.modGuid, self.progressionUUID[lvl], "SelectAbilityBonus",
+        AbilityListUUID)
 
         if VCHelpers.CF:checkSCF() then
             Mods.SubclassCompatibilityFramework.Api.RemoveSelectors(payload)

@@ -140,3 +140,13 @@ end
 function ClasseMod:SetSab(isOutdated)
     self.isOutdated = isOutdated
 end
+
+function ClasseMod:removeClassesASI(AbilityListUUID, lvl)
+    if self.UUID ~= "aaaa" then --rmv after lib finished
+        local removedClass = VCHelpers.CF:removeSelectorsPayload(self.modGuid, self.progressionUUID[lvl],
+        "SelectAbilityBonus", AbilityListUUID)
+        if removedClass then
+            table.insert(removedClasses, removedClass) -- Add to the list if removed
+        end
+    end
+end
