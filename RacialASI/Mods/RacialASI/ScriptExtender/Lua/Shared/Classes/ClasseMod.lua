@@ -1,30 +1,25 @@
----@diagnostic disable: return-type-mismatch
+---@class ClasseMod:MetaClass
+---@field name string
+---@field modURL table
+---@field modGuid string UUID
+---@field progressionUUID table
+---@field author string
+---@field sourceBook string
+---@field mainClasse boolean
+---@field isLvl20 boolean
+---@field isOutdated boolean
+ClasseMod = _Class:Create("ClasseMod")
 
----@class ClasseMod: MetaClass
-ClasseMod = _Class:Create("ClasseMod", nil, { -- Example of Instance
-    name 			=	"Artificer",
-    modURL			=	"https://www.nexusmods.com/baldursgate3/mods/1779",
-    modGuid 		=	"88fadf2c-152d-404e-b863-c12273559e1c",
-    UUID			=	{
-                        [1] = "28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", -- example with lvl 1
-                        [3] = "28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", -- example with lvl 3
-                        },
-    Author			=	"KiderionLykon",
-    SourceBook		=	"TCoE",
-    MainClasse		=	true,
-    isLvl20			=	true,
-    isOutdated		=	false
-})
-
----@class name string
----@class modURL table
----@class modGuid UUID
----@class progressionUUID table
----@class author string
----@class sourceBook string
----@class mainClasse boolean
----@class isLvl20 boolean
----@class isOutdated boolean
+---@class ClasseMod
+---@param name string
+---@param modURL table
+---@param modGuid string UUID
+---@param progressionUUID table
+---@param author string
+---@param sourceBook string
+---@param mainClasse boolean
+---@param isLvl20 boolean
+---@param isOutdated boolean
 function ClasseMod:New(name, modURL, modGuid, progressionUUID, author, sourceBook, mainClasse, isLvl20, isOutdated)
     local self           = setmetatable({}, ClasseMod)
     self.name            = name
@@ -45,8 +40,8 @@ function ClasseMod:GetName()
 end
 
 --- Get ModURL of ClasseMod
----@param integer i
----@return string self.modURL
+---@param i integer
+---@return table self.modURL
 function ClasseMod:GetModURL(i)
     return self.modURL[i]
 end
@@ -58,7 +53,7 @@ function ClasseMod:GetModGuid()
 end
 
 --- Get progressionUUID from lvl of ClasseMod
----@param integer lvl
+---@param lvl integer
 ---@return table self.progressionUUID
 function ClasseMod:GetProgressionUUID(lvl)
     return self.progressionUUID[lvl]
@@ -77,25 +72,24 @@ function ClasseMod:GetSourceBook()
 end
 
 --- Get mainClasse of ClasseMod
----@return string self.mainRace
+---@return boolean self.mainRace
 function ClasseMod:GetmainClasse()
     return self.mainClasse
 end
 
 --- Get isLvl20 of ClasseMod
----@return string self.isLvl20
+---@return boolean self.isLvl20
 function ClasseMod:GetIsLvl20()
     return self.isLvl20
 end
 
 --- Get isOutdated of ClasseMod
----@return string self.isOutdated
+---@return boolean self.isOutdated
 function ClasseMod:GetIsOutdated()
     return self.isOutdated
 end
 
 --- Get Object instancy of ClasseMod
----@return Object? self
 function ClasseMod:GetObject()
     return self
 end
@@ -136,8 +130,9 @@ function ClasseMod:SetSab(isOutdated)
     self.isOutdated = isOutdated
 end
 
----@param string AbilityListUUID
----@param integer lvl
+
+---@param AbilityListUUID string
+---@param lvl integer
 function ClasseMod:removeClassesASI(AbilityListUUID, lvl)
     if self.progressionUUID[1] ~= "aaaa" then --rmv after lib finished
         local removedClass = VCHelpers.CF:removeSelectorsPayload(self.modGuid, self.progressionUUID[lvl],

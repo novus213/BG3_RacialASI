@@ -1,7 +1,7 @@
 ---@class RaceMod: MetaClass
 ---@field name string
 ---@field modURL table
----@field modGuid UUID
+---@field modGuid string uuid
 ---@field progressionUUID table
 ---@field author string
 ---@field sourceBook string
@@ -10,38 +10,24 @@
 ---@field sab table
 ---@field bonus table
 ---@field statsList table
----@field specialAbList UUID
-RaceMod = _Class:Create("RaceMod", nil, { -- Example of Instance
-    name            = "Kender Best Race ever",
-    modURL          = {"https://bg3.wiki/wiki/Elf", "https://baldursgate3.wiki.fextralife.com/Elf"},
-    modGuid         = "28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid example
-    progressionUUID = {
-                        [1] = "28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", -- example with lvl 1
-                        [3] = "28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", -- example with lvl 3
-                      },
-    author          = "Larian",
-    sourceBook      = "PHB",
-    mainRace        = true,
-    specialAbList   = "0a42b87b-a001-4091-8072-a611a85fa465",
-    stats           = {"0", "2", "0", "1", "0", "0"}, --{"0", "2", "0", "1", "0", "0"}, -- "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" 
-    sab             = {"2","1"}, --{"2","1"} -- valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"}
-    bonus           = {"ProficiencyBonus(Skill,Stealth)"},
-    statsList       = {"Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma"}
-})
+---@field specialAbList string uuid
+RaceMod = _Class:Create("RaceMod")
 
----@field name string
----@field modURL table
----@field modGuid UUID
----@field progressionUUID table
----@field author string
----@field sourceBook string
----@field mainRace boolean
----@field specialAbList string
----@field stats table
----@field sab table
----@field bonus table
----@field statsList table
-function RaceMod:New(name, modURL, modGuid, progressionUUID, author, sourceBook, mainRace, specialAbList, stats, sab, bonus)
+
+---@class RaceMod
+---@param name string
+---@param modURL table
+---@param modGuid string uuid
+---@param progressionUUID table
+---@param author string
+---@param sourceBook string
+---@param mainRace boolean
+---@param specialAbList string
+---@param stats table
+---@param sab table
+---@param bonus table
+function RaceMod:New(name, modURL, modGuid, progressionUUID, author, sourceBook, mainRace, specialAbList, stats,
+ sab, bonus)
     local self           = setmetatable({}, RaceMod)
     self.name            = name
     self.modURL          = modURL or nil
@@ -64,10 +50,11 @@ function RaceMod:GetName()
     return self.name
 end
 
---- Get ModURL of RaceMod
----@return string self.modURL
-function RaceMod:GetModURL()
-    return self.modURL
+--- Get ModURL of ClasseMod
+---@param i integer
+---@return table self.modURL
+function RaceMod:GetModURL(i)
+    return self.modURL[i]
 end
 
 --- Get ModGuid of RaceMod
@@ -101,19 +88,19 @@ function RaceMod:GetMainRace()
 end
 
 --- Get stats of RaceMod
----@return string self.stats
+---@return table self.stats
 function RaceMod:GetStats()
     return self.stats
 end
 
 --- Get Name of RaceMod
----@return string self.name
+---@return table self.name
 function RaceMod:GetSab()
     return self.sab
 end
 
 --- Get Name of RaceMod
----@return string self.name
+---@return table self.name
 function RaceMod:GetBonus()
     return self.bonus
 end
@@ -124,8 +111,6 @@ function RaceMod:GetStatsList()
     return self.statsList
 end
 
---- Get Object instancy of RaceMod
----@return Object? self
 function RaceMod:GetObject()
     return self
 end
@@ -178,7 +163,7 @@ function RaceMod:TableInsertRaceStats()
 		for i = 1, 6 do
 			table.insert(RaceStat, "Ability(" .. self.statsList[i] .. "," .. self.stats[i] .. ")")
 		end
-        if self.Bonus ~= nil then
+        if self.bonus ~= nil then
             local raceModBonusSize = table.getLength(self.bonus)
             for i = 1, raceModBonusSize do
                 table.insert(RaceStat, self.bonus[i])
@@ -205,10 +190,10 @@ local fixAsi = {}  -- Table to store classes with removed shit asi
                 AbilityListUUID = deps.AbilityList_UUID
             end
 
-            payload = VCHelpers.CF:InsertSelectorsPayload(self.modGuid, self.UUID, AbilityListUUID, self.sab,
+            payload = VCHelpers.CF:InsertSelectorsPayload(self.modGuid, self.progressionUUID, AbilityListUUID, self.sab,
             table.getLength(self.sab))
 
-            table.insert(fixAsi, self.Name) -- Add to the list if ASI Fixed
+            table.insert(fixAsi, self.name) -- Add to the list if ASI Fixed
 
             if VCHelpers.CF:checkSCF() then
                 Mods.SubclassCompatibilityFramework.Api.InsertSelectors(payload)
@@ -222,7 +207,7 @@ local fixAsi = {}  -- Table to store classes with removed shit asi
         if self.modGuid and VCHelpers.ModVars:isModLoaded(self.modGuid) then
 
             local raceModStats = self.InsertPayloadRaceASI()
-            payload = VCHelpers.CF:addStringPayload(self.modGuid, self.UUID, "Boosts", raceModStats)
+            payload = VCHelpers.CF:addStringPayload(self.modGuid, self.progressionUUID, "Boosts", raceModStats)
 
             if self.stats ~= nil and self.sab == nil then
                 table.insert(fixAsi, self.name) -- Add to the list if ASI Fixed
@@ -243,11 +228,12 @@ end
 
 
 --- Constructor for insertDefaultPayloadASI
-function RaceMod:insertDefaultPayloadASI()
+function RaceMod:insertDefaultPayloadASI(AbilityListUUID)
     local baseAsi = {}  -- Table to store classes with removed shit asi
+    AbilityListUUID = AbilityListUUID or deps.AbilityList_UUID
     if self.modGuid and VCHelpers.ModVars:isModLoaded(self.modGuid) then
-        payload =  VCHelpers.CF:InsertSelectorsPayload(self.modGuid, self.UUID, "SelectAbilityBonus",
-        deps.AbilityList_UUID, {"2","1"}, 2, "AbilityBonus")
+        payload =  VCHelpers.CF:InsertSelectorsPayload(self.modGuid, self.progressionUUID, "SelectAbilityBonus",
+        AbilityListUUID, {"2","1"}, 2, "AbilityBonus")
         table.insert(baseAsi, self.name) -- Add to the list if ASI Fixed
 
         if VCHelpers.CF:checkSCF() then
@@ -276,8 +262,8 @@ _________ .__                         __________                              __
 
 --- Constructor for cleanOnRacesStatsLoaded
 --- Clean race mods stats ASI
----@param  string AbilityListUUID
----@param   integer lvl
+---@param AbilityList string
+---@param lvl int
 function RaceMod:cleanOnRacesStatsLoaded(AbilityListUUID,lvl)
         -- remove +2+1, +1, +1+1 ect..
         local payload = VCHelpers.CF:removeSelectorsPayload(self.modGuid, self.progressionUUID[lvl], "SelectAbilityBonus",
