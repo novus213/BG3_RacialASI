@@ -787,72 +787,84 @@ RaceLibrary = {
 ]] --
 
 	{
-		Name 			= 	"Elf - Moon",
-		modGuid 		=	"66b20233-cf0a-44bb-9bcf-32c0e0b09c19",
-		progressionUUID	=	{
-								[1]	=	"934762bb-eebd-4b42-b050-540148507a4a"
-							},
-		Author			=	"",
-		SourceBook		=	"SCAG",
-		MainRace		=	false,
-		Stats			=	{"0", "2", "0", "0", "0", "1"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Name 				= 	"Elf - Moon",
+		modURL				=	{"https://www.nexusmods.com/baldursgate3/mods/10230"},
+		modGuid 			=	"66b20233-cf0a-44bb-9bcf-32c0e0b09c19",
+		progressionTable	=	"",
+		progressionUUID		=	{
+									[1]	=	"934762bb-eebd-4b42-b050-540148507a4a"
+								},
+		Author				=	"Astralities",
+		SourceBook			=	"SCAG",
+		MainRace			=	false,
+		Stats				=	{"0", "2", "0", "0", "0", "1"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 	},
 	{
-		Name 			= 	"Elf - Snow",
-		modGuid 		=	"66b20233-cf0a-44bb-9bcf-32c0e0b09c19",
-		progressionUUID	=	{
-								[1]	=	"02e1d9ac-bcc4-4391-9e78-5df33f60ca64"
-							},
-		Author			=	"",
-		SourceBook		=	"",
-		MainRace		=	false,
-		Stats			=	{"0", "0", "2", "0", "1", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Name 				= 	"Elf - Snow",
+		modURL				=	{"https://www.nexusmods.com/baldursgate3/mods/10230"},
+		modGuid 			=	"66b20233-cf0a-44bb-9bcf-32c0e0b09c19",
+		progressionTable	=	"",
+		progressionUUID		=	{
+									[1]	=	"02e1d9ac-bcc4-4391-9e78-5df33f60ca64"
+								},
+		Author				=	"Astralities",
+		SourceBook			=	"",
+		MainRace			=	false,
+		Stats				=	{"0", "0", "2", "0", "1", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 	},
 	{
-		Name 			= 	"Elf - Sun",
-		modGuid 		=	"66b20233-cf0a-44bb-9bcf-32c0e0b09c19",
-		progressionUUID	=	{
-								[1]	=	"1089dddf-4e75-4e1b-bf2a-33affd0f6093"
-							},
-		Author			=	"",
-		SourceBook		=	"SCAG",
-		MainRace		=	false,
-		Stats			=	{"0", "2", "1", "0", "0", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Name 				= 	"Elf - Sun",
+		modURL				=	{"https://www.nexusmods.com/baldursgate3/mods/10230"},
+		modGuid 			=	"66b20233-cf0a-44bb-9bcf-32c0e0b09c19",
+		progressionTable	=	"",
+		progressionUUID		=	{
+									[1]	=	"1089dddf-4e75-4e1b-bf2a-33affd0f6093"
+								},
+		Author				=	"Astralities",
+		SourceBook			=	"SCAG",
+		MainRace			=	false,
+		Stats				=	{"0", "2", "1", "0", "0", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 	},
 	{
-		Name 			= 	"Elf - Lythari",
-		modGuid 		=	"66b20233-cf0a-44bb-9bcf-32c0e0b09c19",
-		progressionUUID	=	{
-								[1]	=	"9b37ca29-0d77-4a27-a662-8464ce9998bb"
-							},
-		Author			=	"",
-		SourceBook		=	"",
-		MainRace		=	false,
-		Stats			=	{"0", "2", "0", "0", "0", "1"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Name 				= 	"Elf - Lythari",
+		modURL				=	{"https://www.nexusmods.com/baldursgate3/mods/10230"},
+		modGuid 			=	"66b20233-cf0a-44bb-9bcf-32c0e0b09c19",
+		progressionTable	=	"",
+		progressionUUID		=	{
+									[1]	=	"9b37ca29-0d77-4a27-a662-8464ce9998bb"
+								},
+		Author				=	"Astralities",
+		SourceBook			=	"",
+		MainRace			=	false,
+		Stats				=	{"0", "2", "0", "0", "0", "1"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 	},
 	{
-		Name 			= 	"Elf - Star",
-		modGuid 		=	"66b20233-cf0a-44bb-9bcf-32c0e0b09c19",
-		progressionUUID	=	{
-								[1]	=	"e4c4c550-d4c7-43c5-92ba-49f93691356a"
-							},
-		Author			=	"",
-		SourceBook		=	"",
-		MainRace		=	false,
-		specialAbList	=	"002d957b-ed24-4efa-afdb-ccf86bac00dd",
-		Stats			=	{"0", "2", "0", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
-		Sab				=	{"1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		Name 				= 	"Elf - Star",
+		modURL				=	{"https://www.nexusmods.com/baldursgate3/mods/10230"},
+		modGuid 			=	"66b20233-cf0a-44bb-9bcf-32c0e0b09c19",
+		progressionTable	=	"",
+		progressionUUID		=	{
+									[1]	=	"e4c4c550-d4c7-43c5-92ba-49f93691356a"
+								},
+		Author				=	"Astralities",
+		SourceBook			=	"",
+		MainRace			=	false,
+		specialAbList		=	"002d957b-ed24-4efa-afdb-ccf86bac00dd",
+		Stats				=	{"0", "2", "0", "0", "0", "0"}, --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+		Sab					=	{"1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 	{
 		Name				=	"Elf - Dusk",
+		progressionTable	=	"",
+		modURL				=	{"https://www.nexusmods.com/baldursgate3/mods/10230"},
 		modGuid				=	"66b20233-cf0a-44bb-9bcf-32c0e0b09c19",
-		progressionUUID	=	{
-								[1]	=	"50d5a39d-4497-4d71-9368-d6c8c04f97dd"
-							},
-		Author			=	"",
-		SourceBook		=	"",
-		MainRace		=	false,
-		Sab				=	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
+		progressionUUID		=	{
+									[1]	=	"50d5a39d-4497-4d71-9368-d6c8c04f97dd"
+								},
+		Author				=	"Astralities",
+		SourceBook			=	"",
+		MainRace			=	false,
+		Sab					=	{"2","1"} --[[ valeurs autorisé : {"0","0","0"} ou {"0","0"} ou {"0"} ]]
 	},
 
 --[[

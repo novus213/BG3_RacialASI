@@ -6,7 +6,7 @@ ClassesLibrary = {
 
     {
 		Name 			=	"Artificer",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/1779",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/1779"},
 		modGuid 		=	"88fadf2c-152d-404e-b863-c12273559e1c",
 		progressionUUID =	{
 								[1] = "c1965de9-87f1-47ee-93c7-43c54f685f2d"
@@ -19,7 +19,7 @@ ClassesLibrary = {
     },
     {
 		Name			=	"Artificer - Alchemist",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/1779",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/1779"},
 		modGuid 		=	"88fadf2c-152d-404e-b863-c12273559e1c", -- At lvl 3 of Artificer
 		progressionUUID =	{
 								[1] = "aaaa"
@@ -32,7 +32,7 @@ ClassesLibrary = {
     },
     {
 		Name 			=	"Artificer - Armorer",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/1779",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/1779"},
 		modGuid 		=	"88fadf2c-152d-404e-b863-c12273559e1c", -- At lvl 3 of Artificer
 		progressionUUID =	{"aaaa"
 							},
@@ -44,7 +44,7 @@ ClassesLibrary = {
     },
     {
 		Name 			=	"Artificer - Artillerist",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/1779",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/1779"},
 		modGuid 		=	"88fadf2c-152d-404e-b863-c12273559e1c", -- At lvl 3 of Artificer
 		progressionUUID =	{"aaaa"
 							},
@@ -56,7 +56,7 @@ ClassesLibrary = {
     },
     {
 		Name			=	"Artificer - Battle Smith",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/1779",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/1779"},
 		modGuid			=	"88fadf2c-152d-404e-b863-c12273559e1c", -- At lvl 3 of Artificer
 		progressionUUID =	{
 								[1] = "aaaa"
@@ -121,7 +121,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"Barbarian - Path of the Zealot",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/6411",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/6411"},
 		modGuid			=	"aaaa",
 		progressionUUID =	{
 								[1] = "aaaa"
@@ -134,7 +134,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"Barbarian - Path of the Ancestral Guardian",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/6411",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/6411"},
 		modGuid			=	"aaaa",
 		progressionUUID =	{
 								[1] = "aaaa"
@@ -147,7 +147,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"Barbarian - Path of the Battle Rager",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/5085",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/5085"},
 		modGuid			=	"aaaa",
 		progressionUUID =	{
 								[1] = "aaaa"
@@ -160,7 +160,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"Barbarian - Path of the Storm Herald",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/8419",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/8419"},
 		modGuid			=	"aaaa",
 		progressionUUID =	{
 								[1] = "aaaa"
@@ -173,7 +173,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"Barbarian - Path of the Storm Herald",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/2996",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/2996"},
 		modGuid			=	"aaaa",
 		progressionUUID =	{
 								[1] = "aaaa"
@@ -186,7 +186,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"Barbarian - Path of the Beast",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/6404",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/6404"},
 		modGuid			=	"aaaa",
 		progressionUUID =	{
 								[1] = "aaaa"
@@ -199,7 +199,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"Barbarian - Path of the Giant",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/8037",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/8037"},
 		modGuid			=	"aaaa",
 		progressionUUID =	{
 								[1] = "aaaa"
@@ -212,7 +212,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"Barbarian - Path of the Giant",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/1806",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/1806"},
 		modGuid			=	"aaaa",
 		progressionUUID =	{
 								[1] = "aaaa"
@@ -225,7 +225,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"Barbarian - Primal Sentry",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/8165",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/8165"},
 		modGuid			=	"aaaa",
 		progressionUUID =	{
 								[1] = "aaaa"
@@ -241,7 +241,7 @@ ClassesLibrary = {
 --
 --	{
 --		Name			=	"Barbarian - Crusher",
---		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/1858",
+--		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/1858"},
 --		modGuid			=	"aaaa",
 --		UUID			=	"aaaa",
 --		Author			=	"Colten88",
@@ -252,7 +252,7 @@ ClassesLibrary = {
 --	},
 --	{
 --		Name			=	"Barbarian - Blood Magic",
---		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/6593",
+--		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/6593"},
 --		modGuid			=	"aaaa",
 --		UUID			=	"aaaa",
 --		Author			=	"Bysell107",
@@ -263,7 +263,7 @@ ClassesLibrary = {
 --	},
 --	{
 --		Name			=	"Barbarian - Fundamental Chaos",
---		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/4086",
+--		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/4086"},
 --		modGuid			=	"aaaa",
 --		UUID			=	"aaaa",
 --		Author			=	"Nitreaux",
@@ -274,7 +274,7 @@ ClassesLibrary = {
 --	},
 --	{
 --		Name			=	"Barbarian - Path of the Hearteater",
---		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/5591",
+--		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/5591"},
 --		modGuid			=	"aaaa",
 --		UUID			=	"aaaa",
 --		Author			=	"Bysell107",
@@ -338,7 +338,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"Bard - College of Glamour",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/741",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/741"},
 		modGuid			=	"aaaa",
 		progressionUUID =	{
 								[1] = "aaaa",
@@ -351,7 +351,7 @@ ClassesLibrary = {
 	},
 --	{
 --		Name			=	"Bard - College of Whispers",
---		modURL			=	"",
+--		modURL			=	{""},
 --		modGuid			=	"aaaa",
 --		UUID			=	"aaaa", -- At lvl 3 of bard
 --		Author			=	"aaa",
@@ -362,7 +362,7 @@ ClassesLibrary = {
 --	},
 	{
 		Name			=	"Bard - College of Creation",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/4519",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/4519"},
 		modGuid			=	"aaaa",
 		progressionUUID =	{
 								[1] = "aaaa",
@@ -375,7 +375,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"Bard - College of Eloquence",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/4651",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/4651"},
 		modGuid			=	"aaaa",
 		progressionUUID =	{
 								[1] = "aaaa",
@@ -388,7 +388,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"Bard - College of Spirits",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/4309",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/4309"},
 		modGuid			=	"aaaa",
 		progressionUUID =	{
 								[1] = "aaaa",
@@ -401,7 +401,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"Bard - College of Spirits (legacy)",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/2367",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/2367"},
 		modGuid			=	"aaaa",
 		progressionUUID =	{
 								[1] = "aaaa",
@@ -417,7 +417,7 @@ ClassesLibrary = {
 
 --	{
 --		Name			=	"Bard - College of Shuffling",
---		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/10079",
+--		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/10079"},
 --		modGuid			=	"aaaa",
 --		UUID			=	"aaaa", -- At lvl 3 of bard
 --		Author			=	"SydMeier",
@@ -428,7 +428,7 @@ ClassesLibrary = {
 --	},
 --	{
 --		Name			=	"Bard - College of Bae'qeshel",
---		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/8861",
+--		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/8861"},
 --		modGuid			=	"aaaa",
 --		UUID			=	"aaaa", -- At lvl 3 of bard
 --		Author			=	"Tet42",
@@ -439,7 +439,7 @@ ClassesLibrary = {
 --	},
 --	{
 --		Name			=	"Bard - College of Players",
---		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/909",
+--		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/909"},
 --		modGuid			=	"aaaa",
 --		UUID			=	"aaaa", -- At lvl 3 of bard
 --		Author			=	"DroZzhat",
@@ -550,7 +550,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"Cleric - Death Domain",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/432",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/432"},
 		modGuid			=	"aaaa",
 		progressionUUID =	{
 								[1] = "aaaa"
@@ -563,7 +563,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"Cleric - Death Domain (Standalone)",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/9790",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/9790"},
 		modGuid			=	"aaaa",
 		progressionUUID =	{
 								[1] = "aaaa"
@@ -576,7 +576,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"Cleric - Arcana Domain",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/432",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/432"},
 		modGuid			=	"aaaa",
 		progressionUUID =	{
 								[1] = "aaaa"
@@ -589,7 +589,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"Cleric - Forge Domain",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/432",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/432"},
 		modGuid			=	"aaaa",
 		progressionUUID =	{
 								[1] = "aaaa"
@@ -602,7 +602,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"Cleric - Grave Domain",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/432",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/432"},
 		modGuid			=	"aaaa",
 		progressionUUID =	{
 								[1] = "aaaa"
@@ -615,7 +615,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"Cleric - Order Domain",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/432",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/432"},
 		modGuid			=	"aaaa",
 		progressionUUID =	{
 								[1] = "aaaa"
@@ -628,7 +628,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"Cleric - Peace Domain",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/432",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/432"},
 		modGuid			=	"aaaa",
 		progressionUUID =	{
 								[1] = "aaaa"
@@ -641,7 +641,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"Cleric - Twilight Domain",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/432",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/432"},
 		modGuid			=	"aaaa",
 		progressionUUID =	{
 								[1] = "aaaa"
@@ -654,7 +654,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"Cleric - Death Domain (Standalone)",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/1552",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/1552"},
 		modGuid			=	"aaaa",
 		progressionUUID =	{
 								[1] = "aaaa"
@@ -667,7 +667,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"Cleric - Forge Domain (Standalone)",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/5685",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/5685"},
 		modGuid			=	"aaaa",
 		progressionUUID =	{
 								[1] = "aaaa"
@@ -680,7 +680,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"Cleric - Grave Domain (Standalone)",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/7909",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/7909"},
 		modGuid			=	"aaaa",
 		progressionUUID =	{
 								[1] = "aaaa"
@@ -693,7 +693,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"Cleric - Twilight Domain (Standalone)",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/5481",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/5481"},
 		modGuid			=	"aaaa",
 		progressionUUID =	{
 								[1] = "aaaa"
@@ -706,7 +706,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"Cleric - Inquisition Domain",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/8931",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/8931"},
 		modGuid			=	"aaaa",
 		progressionUUID =	{
 								[1] = "aaaa"
@@ -719,7 +719,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"Cleric - Eldritch Domain",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/4999",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/4999"},
 		modGuid			=	"aaaa",
 		progressionUUID =	{
 								[1] = "aaaa"
@@ -732,7 +732,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"Cleric - Protection Domain",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/9449",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/9449"},
 		modGuid			=	"aaaa",
 		progressionUUID =	{
 								[1] = "aaaa"
@@ -745,7 +745,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"Cleric - Strength Domain",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/9054",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/9054"},
 		modGuid			=	"aaaa",
 		progressionUUID =	{
 								[1] = "aaaa"
@@ -758,7 +758,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"Cleric - Ambition Domain",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/8734",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/8734"},
 		modGuid			=	"aaaa",
 		progressionUUID =	{
 								[1] = "aaaa"
@@ -771,7 +771,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"Cleric - Zeal Domain",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/9089",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/9089"},
 		modGuid			=	"aaaa",
 		progressionUUID =	{
 								[1] = "aaaa"
@@ -784,7 +784,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"Cleric - Solidarity Domain",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/8765",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/8765"},
 		modGuid			=	"aaaa",
 		progressionUUID =	{
 								[1] = "aaaa"
@@ -800,7 +800,7 @@ ClassesLibrary = {
 
 --	{
 --		Name			=	"Cleric - Moon Domain",
---		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/432",
+--		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/432"},
 --		modGuid			=	"aaaa",
 --		UUID			=	"aaaa",
 --		Author			=	"baltavi",
@@ -811,7 +811,7 @@ ClassesLibrary = {
 --	},
 --	{
 --		Name			=	"Cleric - Moon Domain (Standalone)",
---		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/6758",
+--		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/6758"},
 --		modGuid			=	"aaaa",
 --		UUID			=	"aaaa",
 --		Author			=	"skystryke468",
@@ -822,7 +822,7 @@ ClassesLibrary = {
 --	},
 --	{
 --		Name			=	"Cleric - Blood Domain",
---		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/432",
+--		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/432"},
 --		modGuid			=	"aaaa",
 --		UUID			=	"aaaa",
 --		Author			=	"baltavi",
@@ -833,7 +833,7 @@ ClassesLibrary = {
 --	},
 --	{
 --		Name			=	"Cleric - Mind Domain",
---		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/9887",
+--		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/9887"},
 --		modGuid			=	"aaaa",
 --		UUID			=	"aaaa",
 --		Author			=	"jevanoff",
@@ -844,7 +844,7 @@ ClassesLibrary = {
 --	},
 --	{
 --		Name			=	"Cleric - Darkness Domain",
---		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/8654",
+--		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/8654"},
 --		modGuid			=	"aaaa",
 --		UUID			=	"aaaa",
 --		Author			=	"xarara",
@@ -855,7 +855,7 @@ ClassesLibrary = {
 --	},
 --	{
 --		Name			=	"Cleric - Pained Domain",
---		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/10268",
+--		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/10268"},
 --		modGuid			=	"aaaa",
 --		UUID			=	"aaaa",
 --		Author			=	"khbsd",
@@ -866,7 +866,7 @@ ClassesLibrary = {
 --	},
 --	{
 --		Name			=	"Cleric - Song Domain",
---		modURL			=	"hhttps://www.nexusmods.com/baldursgate3/mods/7049",
+--		modURL			=	{"hhttps://www.nexusmods.com/baldursgate3/mods/7049"},
 --		modGuid			=	"aaaa",
 --		UUID			=	"aaaa",
 --		Author			=	"yoonmoonsick",
@@ -933,7 +933,7 @@ ClassesLibrary = {
 
 	{
 		Name			=	"BloodHunter",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/2151",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/2151"},
 		modGuid			=	"411d5c6e-2bd5-4e4e-ab72-67dcc37b8c0e",
 		progressionUUID =	{
 								[1] = "b85c5b64-347c-4ece-b45c-fe55a6fa2762"
@@ -946,7 +946,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"BloodHunter - Order of the Lycan",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/2151",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/2151"},
 		modGuid			=	"411d5c6e-2bd5-4e4e-ab72-67dcc37b8c0e",
 		progressionUUID =	{
 								[1] = "aaaa"
@@ -959,7 +959,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"BloodHunter - Order of the Ghostslayer",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/2151",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/2151"},
 		modGuid			=	"411d5c6e-2bd5-4e4e-ab72-67dcc37b8c0e",
 		progressionUUID =	{
 								[1] = "aaaa"
@@ -972,7 +972,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"BloodHunter - Profane Soul",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/5527",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/5527"},
 		modGuid			=	"aaaa",
 		progressionUUID =	{
 								[1] = "aaaa"
@@ -987,7 +987,7 @@ ClassesLibrary = {
 -- -------------------------------- Mystic class -------------------------------- --
     {
         Name			=	"Mystic",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/2786",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/2786"},
         modGuid			=	"b2ac3aa8-ce29-4d53-be47-7121845f3c1c",
 		progressionUUID =	{
 								[1] = "0482322d-723e-4705-a41a-99e27902311c"
@@ -1000,7 +1000,7 @@ ClassesLibrary = {
     },
     {
         Name			=	"Mystic - Order of the Avatar",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/2786",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/2786"},
         modGuid			=	"b2ac3aa8-ce29-4d53-be47-7121845f3c1c",
 		progressionUUID =	{
 								[1] = "aaaa"
@@ -1013,7 +1013,7 @@ ClassesLibrary = {
     },
     {
         Name			=	"Mystic - Order of the Awakened",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/2786",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/2786"},
         modGuid			=	"b2ac3aa8-ce29-4d53-be47-7121845f3c1c",
 		progressionUUID =	{
 								[1] = "aaaa"
@@ -1026,7 +1026,7 @@ ClassesLibrary = {
     },
     {
         Name			=	"Mystic - Order of the Immortal",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/2786",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/2786"},
         modGuid			=	"b2ac3aa8-ce29-4d53-be47-7121845f3c1c",
 		progressionUUID =	{
 								[1] = "aaaa"
@@ -1039,7 +1039,7 @@ ClassesLibrary = {
     },
     {
         Name			=	"Mystic - Order of the Nomad",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/2786",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/2786"},
         modGuid			=	"b2ac3aa8-ce29-4d53-be47-7121845f3c1c",
 		progressionUUID =	{
 								[1] = "aaaa"
@@ -1052,7 +1052,7 @@ ClassesLibrary = {
     },
     {
         Name			=	"Mystic - Order of the Soul Knife",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/2786",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/2786"},
         modGuid			=	"b2ac3aa8-ce29-4d53-be47-7121845f3c1c",
 		progressionUUID =	{
 								[1] = "aaaa"
@@ -1065,7 +1065,7 @@ ClassesLibrary = {
     },
     {
         Name			=	"Mystic - Order of the Wu Jen",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/2786",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/2786"},
         modGuid			=	"b2ac3aa8-ce29-4d53-be47-7121845f3c1c",
 		progressionUUID =	{
 								[1] = "aaaa"
@@ -1078,7 +1078,7 @@ ClassesLibrary = {
     },
     {
         Name			=	"Mystic - Order of the Ascetic",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/2786",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/2786"},
         modGuid			=	"b2ac3aa8-ce29-4d53-be47-7121845f3c1c",
 		progressionUUID =	{
 								[1] = "aaaa"
@@ -1091,7 +1091,7 @@ ClassesLibrary = {
     },
     {
         Name			=	"Mystic - Order of the Blade",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/2786",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/2786"},
         modGuid			=	"b2ac3aa8-ce29-4d53-be47-7121845f3c1c",
 		progressionUUID =	{
 								[1] = "aaaa"
@@ -1104,7 +1104,7 @@ ClassesLibrary = {
     },
     {
         Name			=	"Mystic - Order of the Unbound",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/2786",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/2786"},
         modGuid			=	"b2ac3aa8-ce29-4d53-be47-7121845f3c1c",
 		progressionUUID =	{
 								[1] = "aaaa"
@@ -1124,7 +1124,7 @@ ClassesLibrary = {
 
 	{
 		Name			=	"Magus",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/422",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/422"},
 		modGuid			=	"a827da36-4086-4d47-9945-f45555555555",
 		progressionUUID =	{
 								[1] = "452d6137-7720-4d04-b950-f45555555555"
@@ -1137,7 +1137,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"Magus - Inexorable Iron",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/422",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/422"},
 		modGuid			=	"a827da36-4086-4d47-9945-f45555555555",
 		progressionUUID =	{
 								[1] = "aaaa"
@@ -1150,7 +1150,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"Magus - Sparkling Targe",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/422",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/422"},
 		modGuid			=	"a827da36-4086-4d47-9945-f45555555555",
 		progressionUUID =	{
 								[1] = "aaaa"
@@ -1163,7 +1163,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"Magus - Laughing Shadow",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/422",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/422"},
 		modGuid			=	"a827da36-4086-4d47-9945-f45555555555",
 		progressionUUID =	{
 								[1] = "aaaa"
@@ -1176,7 +1176,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"Magus - Twisting Tree",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/422",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/422"},
 		modGuid			=	"a827da36-4086-4d47-9945-f45555555555",
 		progressionUUID =	{
 								[1] = "aaaa"
@@ -1189,7 +1189,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"Magus - Starlit Span",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/422",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/422"},
 		modGuid			=	"a827da36-4086-4d47-9945-f45555555555",
 		progressionUUID =	{
 								[1] = "aaaa"
@@ -1317,7 +1317,7 @@ ClassesLibrary = {
     },
 	{
 		Name			=	"New",
-		modURL			=	"",
+		modURL			=	{""},
 		modGuid			=	"aaaa",
 		progressionUUID =	{
 								[1] = "aaaa"
@@ -1330,7 +1330,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"New",
-		modURL			=	"",
+		modURL			=	{""},
 		modGuid			=	"aaaa",
 		progressionUUID =	{
 								[1] = "aaaa"
@@ -1343,7 +1343,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"New",
-		modURL			=	"",
+		modURL			=	{""},
 		modGuid			=	"aaaa",
 		progressionUUID =	{
 								[1] = "aaaa"
@@ -1356,7 +1356,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"New",
-		modURL			=	"",
+		modURL			=	{""},
 		modGuid			=	"aaaa",
 		progressionUUID =	{
 								[1] = "aaaa"
@@ -1369,7 +1369,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"New",
-		modURL			=	"",
+		modURL			=	{""},
 		modGuid			=	"aaaa",
 		progressionUUID =	{
 								[1] = "aaaa"
@@ -1382,7 +1382,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"New",
-		modURL			=	"",
+		modURL			=	{""},
 		modGuid			=	"aaaa",
 		progressionUUID =	{
 								[1] = "aaaa"
@@ -1395,7 +1395,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"New",
-		modURL			=	"",
+		modURL			=	{""},
 		modGuid			=	"aaaa",
 		progressionUUID =	{
 								[1] = "aaaa"
@@ -1408,7 +1408,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"New",
-		modURL			=	"",
+		modURL			=	{""},
 		modGuid			=	"aaaa",
 		progressionUUID =	{
 								[1] = "aaaa"
@@ -1421,7 +1421,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"New",
-		modURL			=	"",
+		modURL			=	{""},
 		modGuid			=	"aaaa",
 		progressionUUID =	{
 								[1] = "aaaa"
@@ -1434,7 +1434,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"New",
-		modURL			=	"",
+		modURL			=	{""},
 		modGuid			=	"aaaa",
 		progressionUUID =	{
 								[1] = "aaaa"
@@ -1447,7 +1447,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"New",
-		modURL			=	"",
+		modURL			=	{""},
 		modGuid			=	"aaaa",
 		progressionUUID =	{
 								[1] = "aaaa"
@@ -1460,7 +1460,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"New",
-		modURL			=	"",
+		modURL			=	{""},
 		modGuid			=	"aaaa",
 		progressionUUID =	{
 								[1] = "aaaa"
@@ -1473,7 +1473,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"New",
-		modURL			=	"",
+		modURL			=	{""},
 		modGuid			=	"aaaa",
 		progressionUUID =	{
 								[1] = "aaaa"
@@ -1486,7 +1486,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"New",
-		modURL			=	"",
+		modURL			=	{""},
 		modGuid			=	"aaaa",
 		progressionUUID =	{
 								[1] = "aaaa"
@@ -1499,7 +1499,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"New",
-		modURL			=	"",
+		modURL			=	{""},
 		modGuid			=	"aaaa",
 		progressionUUID =	{
 								[1] = "aaaa"
@@ -1512,7 +1512,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"New",
-		modURL			=	"",
+		modURL			=	{""},
 		modGuid			=	"aaaa",
 		progressionUUID =	{
 								[1] = "aaaa"
@@ -1525,7 +1525,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"New",
-		modURL			=	"",
+		modURL			=	{""},
 		modGuid			=	"aaaa",
 		progressionUUID =	{
 								[1] = "aaaa"
@@ -1538,7 +1538,7 @@ ClassesLibrary = {
 	},
 	{
 		Name			=	"New",
-		modURL			=	"",
+		modURL			=	{""},
 		modGuid			=	"aaaa",
 		progressionUUID =	{
 								[1] = "aaaa"
