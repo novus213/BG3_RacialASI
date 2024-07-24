@@ -19,6 +19,7 @@ VCPrint(2, "PatchAsiFlavour: " .. PatchAsiFlavour)
 VCPrint(2, "PatchAsiHomebrew: " .. PatchAsiHomebrew)
 
 
+
 --[[
 _________ .__                         _________ .__                                       __________    _____         .__       .__      _____    _________.___ 
 \_   ___ \|  |   ____ _____    ____   \_   ___ \|  | _____    ______ ______ ____   ______ \______   \  /  _  \   ____ |__|____  |  |    /  _  \  /   _____/|   |
@@ -35,7 +36,7 @@ local function classe5eModule()
         ClasseMod:New(classeMod.Name, classeMod.modURL, classeMod.modGuid, classeMod.progressionUUID, classeMod.Author,
         classeMod.SourceBook, classeMod.MainClasse, classeMod.isLvl20, classeMod.isOutdated)
         if classeMod.UUID ~= "aaaa" then --rmv after lib finished
-            local removedClass = removeSelectorsPayload(classeMod.modGuid, classeMod.progressionUUID[1],
+            local removedClass = VCHelpers.CF:removeSelectorsPayload(classeMod.modGuid, classeMod.progressionUUID[1],
             "SelectAbilityBonus", Deps.AbilityList_UUID)
             if removedClass then
                 table.insert(removedClasses, removedClass) -- Add to the list if removed
@@ -148,11 +149,11 @@ local function builder5e()
     classe5eModule()
 	race5eModule()
     if isModLoaded(deps.MCM_GUID) then
-        BasicPrint("                               ")
-        BasicPrint("                               ")
-        BasicPrint(" ----------------------------- ")
-        BasicPrint(" ----------------------------- ")
-        BasicPrint("Config.MCM.loaded() Happy Fun Gaming!...")
+        VCPrint(1, "                               ")
+        VCPrint(1, "                               ")
+        VCPrint(1, " ----------------------------- ")
+        VCPrint(1, " ----------------------------- ")
+        VCPrint(1, "Config.MCM.loaded() Happy Fun Gaming!...")
     end
 end
 

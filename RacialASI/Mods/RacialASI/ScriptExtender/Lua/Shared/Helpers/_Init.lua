@@ -1,4 +1,4 @@
 RequireFiles("Shared/Helpers/", {
-    "Printer",
+    "McmVarsLoader",
     "Table"
 })

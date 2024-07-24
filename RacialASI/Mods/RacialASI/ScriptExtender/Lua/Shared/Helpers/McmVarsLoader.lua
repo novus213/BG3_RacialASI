@@ -61,7 +61,7 @@ if Ext.Mod.IsModLoaded("755a8a72-407f-4f0d-9a33-274ac0f0b53d") then
         if mcmVars[data.settingId] ~= nil then
             mcmVars[data.settingId] = data.value
 
-            BasicWarning(string.format("Setting %s to %s", data.settingId, data.value))
+            VCWarn(2, string.format("Setting %s to %s", data.settingId, data.value))
 
             mcmVarsOptions 		= mcmVars
 
@@ -72,7 +72,7 @@ if Ext.Mod.IsModLoaded("755a8a72-407f-4f0d-9a33-274ac0f0b53d") then
             if mcmVarsBooksSettings[data.settingId] ~= nil then
             mcmVarsBooksSettings[data.settingId] = data.value
 
-            BasicWarning(string.format("Setting %s to %s", data.settingId, data.value))
+            VCWarn(2, string.format("Setting %s to %s", data.settingId, data.value))
 
             PatchAsi5eLimited  = mcmVarsBooksSettings["PatchAsi5eLimited"]
             PatchAsi5e         = mcmVarsBooksSettings["PatchAsi5e"]
@@ -92,7 +92,7 @@ if Ext.Mod.IsModLoaded("755a8a72-407f-4f0d-9a33-274ac0f0b53d") then
         if mcmVarsGeneralSettings[data.settingId] ~= nil then
 
             mcmVarsGeneralSettings[data.settingId] = data.value
-            BasicWarning(string.format("Setting %s to %s", data.settingId, data.value))
+            VCWarn(2, string.format("Setting %s to %s", data.settingId, data.value))
 
             mcmVarsGeneralSettingsUse = mcmVarsGeneralSettings
 
@@ -100,14 +100,14 @@ if Ext.Mod.IsModLoaded("755a8a72-407f-4f0d-9a33-274ac0f0b53d") then
 
         if data.settingId == "debug_level" then
 
-            BasicWarning(string.format("Setting %s to %s", data.settingId, data.value))
+            VCWarn(2, string.format("Setting %s to %s", data.settingId, data.value))
 
             DebugLevel = mcmVarsGeneralSettings["Debug_level"]
         end
 
         if data.settingId == "Log" then
 
-            BasicWarning(string.format("Setting %s to %s", data.settingId, data.value))
+            VCWarn(2, string.format("Setting %s to %s", data.settingId, data.value))
 
             Log = mcmVarsGeneralSettings["Log"]
         end

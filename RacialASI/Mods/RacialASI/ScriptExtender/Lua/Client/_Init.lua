@@ -6,7 +6,7 @@ end
 local function loadConfiguration()
     local configData = LoadconfigASI()
     if not configData then
-        BasicError("============> ERROR: Failed to load configuration file" .. configData)
+        VCWarn(1, "============> ERROR: Failed to load configuration file" .. configData)
     else
         VCPrint(1, "Config.load() - Config.json - Apply Configuration...")
     end
@@ -15,7 +15,7 @@ end
 
 local function processOption(optionName, optionValue, actionConfigs)
     if optionValue.Enabled then
-        BasicWarning(string.format("============> %s is enabled.", optionName))
+        VCWarn(2, string.format("============> %s is enabled.", optionName))
 
         for _, actionConfig in ipairs(actionConfigs) do
             local action = actionConfig.action
@@ -27,7 +27,7 @@ local function processOption(optionName, optionValue, actionConfigs)
                     --VCPrint(1, string.format("payload : ", payload))
                     MCMASIAPI:handlePayload(action, payload)
                 else
-                    BasicError(string.format("============> ERROR: Invalid target UUID for payload in '%s'.", optionName))
+                    VCWarn(1, string.format("============> ERROR: Invalid target UUID for payload in '%s'.", optionName))
                 end
             end
         end
@@ -53,7 +53,7 @@ local function OnStatsLoaded()
         if actionConfigs then
             processOption(optionName, optionValue, actionConfigs.actions)
         else
-            BasicError(string.format("============> ERROR: No action configuration found for %s.", optionName))
+            VCWarn(1, string.format("============> ERROR: No action configuration found for %s.", optionName))
         end
     end
 
