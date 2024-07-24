@@ -1,5 +1,42 @@
 if VCHelpers.ModVars:isModLoaded("755a8a72-407f-4f0d-9a33-274ac0f0b53d") then
 
+    RAPrinter = VolitionCabinetPrinter:New { Prefix = "RacialASI", ApplyColor = true,
+    DebugLevel = MCMGet("debug_level") }
+
+    function RAPrint(debugLevel, ...)
+        RAPrinter:SetFontColor(0, 255, 255)
+        RAPrinter:Print(debugLevel, ...)
+    end
+
+    function RATest(debugLevel, ...)
+        RAPrinter:SetFontColor(100, 200, 150)
+        RAPrinter:PrintTest(debugLevel, ...)
+    end
+
+    function RASuccess(debugLevel, ...)
+        RAPrinter:SetFontColor(50, 255, 100)
+        RAPrinter:Print(debugLevel, ...)
+    end
+
+    function RADebug(debugLevel, ...)
+        RAPrinter:SetFontColor(200, 200, 0)
+        RAPrinter:PrintDebug(debugLevel, ...)
+    end
+
+    function RAWarn(debugLevel, ...)
+        RAPrinter:SetFontColor(255, 100, 50)
+        RAPrinter:PrintWarning(debugLevel, ...)
+    end
+
+    function RADump(debugLevel, ...)
+        RAPrinter:SetFontColor(190, 150, 225)
+        RAPrinter:Dump(debugLevel, ...)
+    end
+
+    function RADumpArray(debugLevel, ...)
+        RAPrinter:DumpArray(debugLevel, ...)
+    end
+
     mcmVars = {
         AddGnome_Tinkertools_Spells                                     = "notuse",
         AddGnome_ForestMinorIllusion_Spells                             = "notuse",
@@ -61,7 +98,7 @@ if VCHelpers.ModVars:isModLoaded("755a8a72-407f-4f0d-9a33-274ac0f0b53d") then
         if mcmVars[data.settingId] ~= nil then
             mcmVars[data.settingId] = data.value
 
-            VCWarn(2, string.format("Setting %s to %s", data.settingId, data.value))
+            RAWarn(2, string.format("Setting %s to %s", data.settingId, data.value))
 
             mcmVarsOptions 		= mcmVars
 
@@ -72,7 +109,7 @@ if VCHelpers.ModVars:isModLoaded("755a8a72-407f-4f0d-9a33-274ac0f0b53d") then
             if mcmVarsBooksSettings[data.settingId] ~= nil then
             mcmVarsBooksSettings[data.settingId] = data.value
 
-            VCWarn(2, string.format("Setting %s to %s", data.settingId, data.value))
+            RAWarn(2, string.format("Setting %s to %s", data.settingId, data.value))
 
             PatchAsi5eLimited  = mcmVarsBooksSettings["PatchAsi5eLimited"]
             PatchAsi5e         = mcmVarsBooksSettings["PatchAsi5e"]
@@ -92,7 +129,7 @@ if VCHelpers.ModVars:isModLoaded("755a8a72-407f-4f0d-9a33-274ac0f0b53d") then
         if mcmVarsGeneralSettings[data.settingId] ~= nil then
 
             mcmVarsGeneralSettings[data.settingId] = data.value
-            VCWarn(2, string.format("Setting %s to %s", data.settingId, data.value))
+            RAWarn(2, string.format("Setting %s to %s", data.settingId, data.value))
 
             mcmVarsGeneralSettingsUse = mcmVarsGeneralSettings
 
@@ -100,14 +137,15 @@ if VCHelpers.ModVars:isModLoaded("755a8a72-407f-4f0d-9a33-274ac0f0b53d") then
 
         if data.settingId == "debug_level" then
 
-            VCWarn(2, string.format("Setting %s to %s", data.settingId, data.value))
+            RADebug(0, "Setting debug level to " .. data.value)
+            RAPrinter.DebugLevel = data.value
 
             DebugLevel = mcmVarsGeneralSettings["Debug_level"]
         end
 
         if data.settingId == "Log" then
 
-            VCWarn(2, string.format("Setting %s to %s", data.settingId, data.value))
+            RAWarn(2, string.format("Setting %s to %s", data.settingId, data.value))
 
             Log = mcmVarsGeneralSettings["Log"]
         end

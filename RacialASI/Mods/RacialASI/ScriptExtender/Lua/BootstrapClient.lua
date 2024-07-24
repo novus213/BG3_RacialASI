@@ -1,9 +1,10 @@
 ---@diagnostic disable: missing-parameter
 
+Ext.Require("Shared/_Init.lua")
+
 if not Ext.Mod.IsModLoaded(deps.Framework_GUID) then return end
 
 ---Libraries / Shared / Customs
-Ext.Require("Shared/_Init.lua")
 Ext.Require("Libs/OptionsActionsLib.lua")
 Ext.Require("ModInfos/_ModInfos.lua")
 

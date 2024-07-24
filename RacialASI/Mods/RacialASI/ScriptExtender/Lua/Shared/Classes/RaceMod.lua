@@ -183,7 +183,7 @@ function RaceMod:TableInsertRaceStats()
                 table.insert(RaceStat, self.bonus[i])
             end
         end
-        VCPrint(1, "raceMod.Stats: " .. VCDumpArray(RaceStat))
+        RAPrint(1, "raceMod.Stats: " .. RADumpArray(RaceStat))
 
 		return RaceStat
 	end
@@ -211,7 +211,7 @@ local fixAsi = {}  -- Table to store classes with removed shit asi
 
             if VCHelpers.CF:checkSCF() then
                 Mods.SubclassCompatibilityFramework.Api.InsertSelectors(payload)
-                VCPrint(1, "payload InsertSelectors: " .. VCDumpArray(fixAsi) .. "\n\n")
+                RAPrint(1, "payload InsertSelectors: " .. RADumpArray(fixAsi) .. "\n\n")
             end
         end
 	end
@@ -229,12 +229,12 @@ local fixAsi = {}  -- Table to store classes with removed shit asi
 
             if VCHelpers.CF:checkSCF() then
                 Mods.SubclassCompatibilityFramework.Api.InsertBoosts(payload)
-                VCPrint(1, "payload InsertBoosts: " .. VCDumpArray(fixAsi) .. "\n\n")
+                RAPrint(1, "payload InsertBoosts: " .. RADumpArray(fixAsi) .. "\n\n")
             end
         end
 	end
     if #fixAsi > 0 then
-        VCWarn(2, "============> Ability added to " ..
+        RAWarn(2, "============> Ability added to " ..
                  #fixAsi .. " mods: " ..
                  table.concat(fixAsi, ", "))
     end
@@ -251,11 +251,11 @@ function RaceMod:insertDefaultPayloadASI()
 
         if VCHelpers.CF:checkSCF() then
             Mods.SubclassCompatibilityFramework.Api.InsertSelectors(payload)
-            VCPrint(1, "payload InsertSelectors: " .. VCDumpArray(baseAsi) .. "\n\n")
+            RAPrint(1, "payload InsertSelectors: " .. RADumpArray(baseAsi) .. "\n\n")
         end
     end
     if #baseAsi > 0 then
-        VCWarn(2, "============> Base +2/+1 Ability added to " ..
+        RAWarn(2, "============> Base +2/+1 Ability added to " ..
                  #baseAsi .. " mods: " ..
                  table.concat(baseAsi, ", "))
     end
@@ -280,7 +280,7 @@ function RaceMod:cleanOnRacesStatsLoaded(lvlprogressionUUID)
 
         if VCHelpers.CF:checkSCF() then
             Mods.SubclassCompatibilityFramework.Api.RemoveSelectors(payload)
-            VCPrint(1, "payload InsertSelectors: " .. VCDumpArray(payload) .. "\n\n")
+            RAPrint(1, "payload InsertSelectors: " .. RADumpArray(payload) .. "\n\n")
         end
 
         -- remove Boost Ability

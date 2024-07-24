@@ -11,12 +11,12 @@ Ext.Require("Libs/ClassesLibrary.lua")
 Ext.Require("Libs/BooksLibrary.lua")
 Ext.Require("Libs/RacesLibrary.lua")
 
-VCPrint(2, "PatchAsi5eLimited: " .. PatchAsi5eLimited)
-VCPrint(2, "PatchAsi5e: " .. PatchAsi5e)
-VCPrint(2, "PatchAsi5eExtended: " .. PatchAsi5eExtended)
-VCPrint(2, "PatchAsiLegacy: " .. PatchAsiLegacy)
-VCPrint(2, "PatchAsiFlavour: " .. PatchAsiFlavour)
-VCPrint(2, "PatchAsiHomebrew: " .. PatchAsiHomebrew)
+RAPrint(1, "PatchAsi5eLimited: " .. PatchAsi5eLimited)
+RAPrint(1, "PatchAsi5e: " .. PatchAsi5e)
+RAPrint(1, "PatchAsi5eExtended: " .. PatchAsi5eExtended)
+RAPrint(1, "PatchAsiLegacy: " .. PatchAsiLegacy)
+RAPrint(1, "PatchAsiFlavour: " .. PatchAsiFlavour)
+RAPrint(1, "PatchAsiHomebrew: " .. PatchAsiHomebrew)
 
 
 
@@ -65,7 +65,7 @@ local function race5eModule()
                         if raceMod.NoDefStats == true then
                             RaceMod:insertDefaultPayloadASI()
                         end
-                        VCWarn(2, string.format("%s Wasn't fixed. You uncheck Homebrew", raceMod.Name))
+                        RADebug(2, string.format("%s Wasn't fixed. You uncheck Homebrew", raceMod.Name))
                     end
                 end
                 for _, book in pairs(Dnd5eLimited) do
@@ -77,7 +77,7 @@ local function race5eModule()
                             if raceMod.NoDefStats == true then
                                 RaceMod:insertDefaultPayloadASI()
                             end
-                                VCWarn(2, string.format("%s Wasn't fixed. You uncheck Fix 5e Limited", raceMod.Name))
+                                RADebug(2, string.format("%s Wasn't fixed. You uncheck Fix 5e Limited", raceMod.Name))
                         end
                     end
                 end
@@ -90,7 +90,7 @@ local function race5eModule()
                             if raceMod.NoDefStats == true then
                                 RaceMod:insertDefaultPayloadASI()
                             end
-                            VCWarn(2, string.format("%s Wasn't fixed. You uncheck Fix 5e", raceMod.Name))
+                            RADebug(2, string.format("%s Wasn't fixed. You uncheck Fix 5e", raceMod.Name))
                         end
                     end
                 end
@@ -103,7 +103,7 @@ local function race5eModule()
                             if raceMod.NoDefStats == true then
                                 RaceMod:insertDefaultPayloadASI()
                             end
-                            VCWarn(2, string.format("%s Wasn't fixed. You uncheck Fix 5e Extended", raceMod.Name))
+                            RADebug(2, string.format("%s Wasn't fixed. You uncheck Fix 5e Extended", raceMod.Name))
                         end
                     end
                 end
@@ -116,7 +116,7 @@ local function race5eModule()
                             if raceMod.NoDefStats == true then
                                 RaceMod:insertDefaultPayloadASI()
                             end
-                            VCWarn(2, string.format("%s Wasn't fixed. You uncheck Fix 5e Legacy", raceMod.Name))
+                            RADebug(2, string.format("%s Wasn't fixed. You uncheck Fix 5e Legacy", raceMod.Name))
                         end
                     end
                 end
@@ -129,7 +129,7 @@ local function race5eModule()
                             if raceMod.NoDefStats == true then
                                 RaceMod:insertDefaultPayloadASI()
                             end
-                            VCWarn(2, string.format("%s Wasn't fixed. You uncheck Fix Flavours", raceMod.Name))
+                            RADebug(2, string.format("%s Wasn't fixed. You uncheck Fix Flavours", raceMod.Name))
                         end
                     end
                 end
@@ -137,7 +137,7 @@ local function race5eModule()
         end
 	end
     if #removedRaces > 0 then
-        VCWarn(2, "============> Ability boost remove to " ..
+        RADebug(2, "============> Ability boost remove to " ..
                  #removedRaces .. " mods: " ..
                  table.concat(removedRaces, ", "))
     end
@@ -149,11 +149,11 @@ local function builder5e()
     classe5eModule()
 	race5eModule()
     if isModLoaded(deps.MCM_GUID) then
-        VCPrint(1, "                               ")
-        VCPrint(1, "                               ")
-        VCPrint(1, " ----------------------------- ")
-        VCPrint(1, " ----------------------------- ")
-        VCPrint(1, "Config.MCM.loaded() Happy Fun Gaming!...")
+        RAPrint(1, "                               ")
+        RAPrint(1, "                               ")
+        RAPrint(1, " ----------------------------- ")
+        RAPrint(1, " ----------------------------- ")
+        RAPrint(1, "Config.MCM.loaded() Happy Fun Gaming!...")
     end
 end
 

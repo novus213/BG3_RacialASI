@@ -6,16 +6,16 @@ end
 local function loadConfiguration()
     local configData = LoadconfigASI()
     if not configData then
-        VCWarn(1, "============> ERROR: Failed to load configuration file" .. configData)
+        RAWarn(1, "============> ERROR: Failed to load configuration file" .. configData)
     else
-        VCPrint(1, "Config.load() - Config.json - Apply Configuration...")
+        RAPrint(1, "Config.load() - Config.json - Apply Configuration...")
     end
     return configData
 end
 
 local function processOption(optionName, optionValue, actionConfigs)
     if optionValue.Enabled then
-        VCWarn(2, string.format("============> %s is enabled.", optionName))
+        RAWarn(2, string.format("============> %s is enabled.", optionName))
 
         for _, actionConfig in ipairs(actionConfigs) do
             local action = actionConfig.action
@@ -23,11 +23,11 @@ local function processOption(optionName, optionValue, actionConfigs)
 
             for _, payload in ipairs(payloads) do
                 if payload.Target then
-                    --VCPrint(1, string.format("action : ", action))
-                    --VCPrint(1, string.format("payload : ", payload))
+                    --RAPrint(1, string.format("action : ", action))
+                    --RAPrint(1, string.format("payload : ", payload))
                     MCMASIAPI:handlePayload(action, payload)
                 else
-                    VCWarn(1, string.format("============> ERROR: Invalid target UUID for payload in '%s'.", optionName))
+                    RAWarn(1, string.format("============> ERROR: Invalid target UUID for payload in '%s'.", optionName))
                 end
             end
         end
@@ -39,7 +39,7 @@ local function OnStatsLoaded()
         return
     end
 
-    VCPrint(1, "============> OnStatsLoaded function triggered, loading config","INFO", nil, nil, true)
+    RAPrint(1, "============> OnStatsLoaded function triggered, loading config","INFO", nil, nil, true)
 
     local config = loadConfiguration()
     if not config then
@@ -53,7 +53,7 @@ local function OnStatsLoaded()
         if actionConfigs then
             processOption(optionName, optionValue, actionConfigs.actions)
         else
-            VCWarn(1, string.format("============> ERROR: No action configuration found for %s.", optionName))
+            RAWarn(1, string.format("============> ERROR: No action configuration found for %s.", optionName))
         end
     end
 
@@ -85,8 +85,8 @@ else
     end)
 
     Ext.Events.GameStateChanged:Subscribe(function(e)
-        VCPrint(1, "e.FromState")
-        VCPrint(1, e.FromState)
+        RAPrint(1, "e.FromState")
+        RAPrint(1, e.FromState)
 
         if e.FromState == "PrepareRunning" then
 
