@@ -37,16 +37,16 @@ _________ .__                         _________ .__                             
 ]]--
 
 local function classe5eModule()
-    local removedClasses = {}  -- Table to store classes with removed selectors
+    RemovedClasses = {}  -- Table to store classes with removed selectors
     for _, classeMod in ipairs(ClassesLibrary) do
         ClasseMod:New(classeMod.Name, classeMod.modURL, classeMod.modGuid, classeMod.progressionUUID, classeMod.Author,
         classeMod.SourceBook, classeMod.MainClasse, classeMod.isLvl20, classeMod.isOutdated)
-        classeMod:removeClassesASI(deps.AbilityList_UUID,1)
+        ClasseMod:removeClassesASI(deps.AbilityList_UUID,1)
     end
 end
 
 local function race5eModule()
-    removedRaces = {}
+    RemovedRaces = {}
     for _, raceMod in pairs(RaceLibrary) do
         RaceMod:New(raceMod.Name,raceMod.modURL,raceMod.modGuid,raceMod.progressionUUID,raceMod.Author,raceMod.SourceBook,
         raceMod.MainRace,raceMod.specialAbList,raceMod.Stats,raceMod.Sab,raceMod.bonus)
@@ -135,10 +135,10 @@ local function race5eModule()
             end
         end
 	end
-    if #removedRaces > 0 then
+    if #RemovedRaces > 0 then
         RADebug(2, "============> Ability boost remove to " ..
-                 #removedRaces .. " mods: " ..
-                 table.concat(removedRaces, ", "))
+                 #RemovedRaces .. " mods: " ..
+                 table.concat(RemovedRaces, ", "))
     end
 end
 

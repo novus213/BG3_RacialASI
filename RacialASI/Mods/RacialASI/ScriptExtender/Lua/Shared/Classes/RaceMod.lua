@@ -36,6 +36,7 @@ RaceMod = _Class:Create("RaceMod", nil, { -- Example of Instance
 ---@field author string
 ---@field sourceBook string
 ---@field mainRace boolean
+---@field specialAbList string
 ---@field stats table
 ---@field sab table
 ---@field bonus table
@@ -43,7 +44,7 @@ RaceMod = _Class:Create("RaceMod", nil, { -- Example of Instance
 function RaceMod:New(name, modURL, modGuid, progressionUUID, author, sourceBook, mainRace, specialAbList, stats, sab, bonus)
     local self           = setmetatable({}, RaceMod)
     self.name            = name
-    self.modURL          = modURL or {}
+    self.modURL          = modURL or nil
     self.modGuid         = modGuid
     self.progressionUUID = progressionUUID --Target
     self.author          = author
@@ -275,6 +276,8 @@ _________ .__                         __________                              __
 
 --- Constructor for cleanOnRacesStatsLoaded
 --- Clean race mods stats ASI
+---@return string AbilityListUUID
+---@return integer lvl
 function RaceMod:cleanOnRacesStatsLoaded(AbilityListUUID,lvl)
         -- remove +2+1, +1, +1+1 ect..
         local payload = VCHelpers.CF:removeSelectorsPayload(self.modGuid, self.progressionUUID[lvl], "SelectAbilityBonus",
@@ -288,11 +291,11 @@ function RaceMod:cleanOnRacesStatsLoaded(AbilityListUUID,lvl)
         -- remove Boost Ability
         for _, ability in ipairs(self.statsList) do
             for score=-5,5 do -- change to -5 5 to low balancing charge server
-                removedRace = VCHelpers.CF:removeStringPayload(self.modGuid, self.progressionUUID, "Boosts",
+                RemovedRaces = VCHelpers.CF:removeStringPayload(self.modGuid, self.progressionUUID, "Boosts",
                 {"Ability("..ability..","..score..")"})
             end
         end
-        if removedRace then
-            table.insert(removedRaces, removedRace) -- Add to the list if removed
+        if RemovedRaces then
+            table.insert(RemovedRaces, RemovedRaces) -- Add to the list if removed
         end
 end

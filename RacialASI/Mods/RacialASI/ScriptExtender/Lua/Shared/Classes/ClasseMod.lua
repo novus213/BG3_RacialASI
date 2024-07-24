@@ -35,7 +35,7 @@ ClasseMod = _Class:Create("ClasseMod", nil, { -- Example of Instance
 function ClasseMod:New(name, modURL, modGuid, progressionUUID, author, sourceBook, mainClasse, isLvl20, isOutdated)
     local self           = setmetatable({}, ClasseMod)
     self.name            = name
-    self.modURL          = modURL or {}
+    self.modURL          = modURL or nil
     self.modGuid         = modGuid
     self.progressionUUID = progressionUUID
     self.author          = author
@@ -146,7 +146,7 @@ function ClasseMod:removeClassesASI(AbilityListUUID, lvl)
         local removedClass = VCHelpers.CF:removeSelectorsPayload(self.modGuid, self.progressionUUID[lvl],
         "SelectAbilityBonus", AbilityListUUID)
         if removedClass then
-            table.insert(removedClasses, removedClass) -- Add to the list if removed
+            table.insert(RemovedClasses, removedClass) -- Add to the list if removed
         end
     end
 end
