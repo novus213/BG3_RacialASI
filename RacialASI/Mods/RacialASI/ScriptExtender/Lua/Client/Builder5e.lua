@@ -41,6 +41,7 @@ local function classe5eModule()
     for _, classeMod in ipairs(ClassesLibrary) do
         ClasseMod:New(classeMod.Name, classeMod.modURL, classeMod.modGuid, classeMod.progressionUUID, classeMod.Author,
         classeMod.SourceBook, classeMod.MainClasse, classeMod.isLvl20, classeMod.isOutdated)
+        RAWarn(1, string.format("============> ERROR: classeMod.progressionUUID %s.", classeMod.progressionUUID))
         ClasseMod:removeClassesASI(deps.AbilityList_UUID,1)
     end
 end
@@ -50,6 +51,7 @@ local function race5eModule()
     for _, raceMod in pairs(RaceLibrary) do
         RaceMod:New(raceMod.Name,raceMod.modURL,raceMod.modGuid,raceMod.progressionUUID,raceMod.Author,raceMod.SourceBook,
         raceMod.MainRace,raceMod.specialAbList,raceMod.Stats,raceMod.Sab,raceMod.bonus)
+
         if PatchAsiDefault == true then
             RaceMod:CleanOnRacesStatsLoaded(deps.AbilityList_UUID,1)
             RaceMod:insertDefaultPayloadASI()

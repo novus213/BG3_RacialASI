@@ -276,8 +276,8 @@ _________ .__                         __________                              __
 
 --- Constructor for cleanOnRacesStatsLoaded
 --- Clean race mods stats ASI
----@return string AbilityListUUID
----@return integer lvl
+---@param  string AbilityListUUID
+---@param   integer lvl
 function RaceMod:cleanOnRacesStatsLoaded(AbilityListUUID,lvl)
         -- remove +2+1, +1, +1+1 ect..
         local payload = VCHelpers.CF:removeSelectorsPayload(self.modGuid, self.progressionUUID[lvl], "SelectAbilityBonus",

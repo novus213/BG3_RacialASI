@@ -1,13 +1,6 @@
+---@diagnostic disable: return-type-mismatch
+
 ---@class ClasseMod: MetaClass
----@field name string
----@field modURL table
----@field modGuid UUID
----@field progressionUUID table
----@field author string
----@field sourceBook string
----@field mainClasse boolean
----@field isLvl20 boolean
----@field isOutdated boolean
 ClasseMod = _Class:Create("ClasseMod", nil, { -- Example of Instance
     name 			=	"Artificer",
     modURL			=	"https://www.nexusmods.com/baldursgate3/mods/1779",
@@ -23,15 +16,15 @@ ClasseMod = _Class:Create("ClasseMod", nil, { -- Example of Instance
     isOutdated		=	false
 })
 
----@field name string
----@field modURL table
----@field modGuid UUID
----@field progressionUUID table
----@field author string
----@field sourceBook string
----@field mainClasse boolean
----@field isLvl20 boolean
----@field isOutdated boolean
+---@class name string
+---@class modURL table
+---@class modGuid UUID
+---@class progressionUUID table
+---@class author string
+---@class sourceBook string
+---@class mainClasse boolean
+---@class isLvl20 boolean
+---@class isOutdated boolean
 function ClasseMod:New(name, modURL, modGuid, progressionUUID, author, sourceBook, mainClasse, isLvl20, isOutdated)
     local self           = setmetatable({}, ClasseMod)
     self.name            = name
@@ -52,9 +45,10 @@ function ClasseMod:GetName()
 end
 
 --- Get ModURL of ClasseMod
+---@param integer i
 ---@return string self.modURL
-function ClasseMod:GetModURL()
-    return self.modURL
+function ClasseMod:GetModURL(i)
+    return self.modURL[i]
 end
 
 --- Get ModGuid of ClasseMod
@@ -64,6 +58,7 @@ function ClasseMod:GetModGuid()
 end
 
 --- Get progressionUUID from lvl of ClasseMod
+---@param integer lvl
 ---@return table self.progressionUUID
 function ClasseMod:GetProgressionUUID(lvl)
     return self.progressionUUID[lvl]
@@ -96,7 +91,7 @@ end
 --- Get isOutdated of ClasseMod
 ---@return string self.isOutdated
 function ClasseMod:GetIsOutdated()
-    return self.sab
+    return self.isOutdated
 end
 
 --- Get Object instancy of ClasseMod
@@ -141,8 +136,10 @@ function ClasseMod:SetSab(isOutdated)
     self.isOutdated = isOutdated
 end
 
+---@param string AbilityListUUID
+---@param integer lvl
 function ClasseMod:removeClassesASI(AbilityListUUID, lvl)
-    if self.UUID ~= "aaaa" then --rmv after lib finished
+    if self.progressionUUID[1] ~= "aaaa" then --rmv after lib finished
         local removedClass = VCHelpers.CF:removeSelectorsPayload(self.modGuid, self.progressionUUID[lvl],
         "SelectAbilityBonus", AbilityListUUID)
         if removedClass then
