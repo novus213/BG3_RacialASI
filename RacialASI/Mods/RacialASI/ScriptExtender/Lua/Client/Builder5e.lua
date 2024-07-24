@@ -172,7 +172,7 @@ local function race5eModule()
     RemovedRaces = {}
     for _, raceMod in pairs(RaceLibrary) do
         RaceMod:New(raceMod.Name,raceMod.modURL,raceMod.modGuid,raceMod.progressionUUID,raceMod.Author,raceMod.SourceBook,
-        raceMod.MainRace,raceMod.specialAbList,raceMod.Stats,raceMod.Sab,raceMod.bonus)
+        raceMod.MainRace,raceMod.specialAbList,raceMod.Stats,raceMod.Sab,raceMod.bonus,raceMod.NoDefStats)
 
         if PatchAsiDefault == true then
             CleanOnRacesStatsLoaded(1)
