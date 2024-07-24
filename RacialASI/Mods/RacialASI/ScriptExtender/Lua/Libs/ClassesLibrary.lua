@@ -89,7 +89,7 @@ ClassesLibrary = {
 		Name			=	"Barbarian - Vanilla Path of the Wild Magic",
 		modGuid			=	"d8cadb42-0ff9-4049-afaf-e5d78d06a399",
 		progressionUUID =	{
-								[1] =	"d6bf00fc-3518-4d63-ba8b-03532c1abc4d", 
+								[1] =	"d6bf00fc-3518-4d63-ba8b-03532c1abc4d"
 							},
 		Author			=	"Larian",
 		SourceBook		=	"PHB",
@@ -101,7 +101,7 @@ ClassesLibrary = {
 		Name			=	"Barbarian - Vanilla Path of the Berzerk",
 		modGuid			=	"d8cadb42-0ff9-4049-afaf-e5d78d06a399",
 		progressionUUID =	{
-								[1] =	"32eee7d8-1b2f-4de5-b9ee-78fbd286c6ef", 
+								[1] =	"32eee7d8-1b2f-4de5-b9ee-78fbd286c6ef"
 							},
 		Author			=	"Larian",
 		SourceBook		=	"PHB",
@@ -113,7 +113,7 @@ ClassesLibrary = {
 		Name			=	"Barbarian - Vanilla Wildheart (Path of the Totem Warrior)",
 		modGuid			=	"d8cadb42-0ff9-4049-afaf-e5d78d06a399",
 		progressionUUID =	{
-								[1] =	"2e585948-d775-451d-b58b-15b75321d11e", 
+								[1] =	"2e585948-d775-451d-b58b-15b75321d11e"
 							},
 		Author			=	"Larian",
 		SourceBook		=	"TCoE",
