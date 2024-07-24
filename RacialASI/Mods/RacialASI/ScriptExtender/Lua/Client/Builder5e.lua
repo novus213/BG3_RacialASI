@@ -53,13 +53,13 @@ local function race5eModule()
         raceMod.MainRace,raceMod.specialAbList,raceMod.Stats,raceMod.Sab,raceMod.bonus)
 
         if PatchAsiDefault == true then
-            RaceMod:CleanOnRacesStatsLoaded(deps.AbilityList_UUID,1)
+            RaceMod:CleanOnRacesStatsLoaded(1)
             RaceMod:insertDefaultPayloadASI(1)
         else
             if VCHelpers.ModVars:isModExist(deps.Framework_GUID, raceMod.modGuid) then -- présent dans isLoaded
                 if raceMod.SourceBook == nil or raceMod.SourceBook == "" then
                     if PatchAsiHomebrew == true then
-                        RaceMod:CleanOnRacesStatsLoaded(deps.AbilityList_UUID,1)
+                        RaceMod:CleanOnRacesStatsLoaded(1)
                         RaceMod:InsertPayloadRaceASI(1)
                     else
                         --desactive moi ce putain de mod Connard function
@@ -72,7 +72,7 @@ local function race5eModule()
                 for _, book in pairs(Dnd5eLimited) do
                     if book.bookRef == raceMod.SourceBook then
                         if PatchAsi5eLimited == true then
-                            RaceMod:CleanOnRacesStatsLoaded(deps.AbilityList_UUID,1)
+                            RaceMod:CleanOnRacesStatsLoaded(1)
                             RaceMod:InsertPayloadRaceASI(1)
                         else
                             if raceMod.NoDefStats == true then
@@ -85,7 +85,8 @@ local function race5eModule()
                 for _, book in pairs(Dnd5e) do
                     if book.bookRef == raceMod.SourceBook then
                         if PatchAsi5e == true then
-                            RaceMod:CleanOnRacesStatsLoaded(deps.AbilityList_UUID,1)
+                            RaceMod:CleanOnRacesStatsLoaded(1)
+
                             RaceMod:InsertPayloadRaceASI(1)
                         else
                             if raceMod.NoDefStats == true then
@@ -98,7 +99,7 @@ local function race5eModule()
                 for _, book in pairs(Dnd5eExtended) do
                     if book.bookRef == raceMod.SourceBook then
                         if PatchAsi5eExtended == true then
-                            RaceMod:CleanOnRacesStatsLoaded(deps.AbilityList_UUID,1)
+                            RaceMod:CleanOnRacesStatsLoaded(1)
                             RaceMod:InsertPayloadRaceASI(1)
                         else
                             if raceMod.NoDefStats == true then
@@ -111,7 +112,7 @@ local function race5eModule()
                 for _, book in pairs(Legacy) do
                     if book.bookRef == raceMod.SourceBook then
                         if PatchAsiLegacy == true then
-                            RaceMod:CleanOnRacesStatsLoaded(deps.AbilityList_UUID,1)
+                            RaceMod:CleanOnRacesStatsLoaded(1)
                             RaceMod:InsertPayloadRaceASI(1)
                         else
                             if raceMod.NoDefStats == true then
@@ -124,7 +125,7 @@ local function race5eModule()
                 for _, book in pairs(Flavours) do
                     if book.bookRef == raceMod.SourceBook then
                         if PatchAsiFlavour == true then
-                            RaceMod:CleanOnRacesStatsLoaded(deps.AbilityList_UUID,1)
+                            RaceMod:CleanOnRacesStatsLoaded(1)
                             RaceMod:InsertPayloadRaceASI(1)
                         else
                             if raceMod.NoDefStats == true then
