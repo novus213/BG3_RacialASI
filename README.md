@@ -86,7 +86,7 @@ This section (under construction) provides a reference for removing default abil
 ### Credits
 
 - BlackPegasusBP (original version)
-- argelia (refactoring)
+- argelia (coding help)
 - kilay (ideas)
 - actualsailorcat (coding help)
 
