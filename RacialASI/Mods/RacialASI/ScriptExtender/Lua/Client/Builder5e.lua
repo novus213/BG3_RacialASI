@@ -37,16 +37,16 @@ _________ .__                         _________ .__                             
 ]]--
 
 --- Function for TableInsertRaceStats
-local function TableInsertRaceStats(raceMod)
+local function TableInsertRaceStats()
     local RaceStat = {}
-	if raceMod.stats ~= nil then
+	if RaceMod:GetStats() ~= nil then
 		for i = 1, 6 do
-			table.insert(RaceStat, "Ability(" .. raceMod.statsList[i] .. "," .. raceMod.stats[i] .. ")")
+			table.insert(RaceStat, "Ability(" .. RaceMod:GetStatsListI(i) .. "," .. RaceMod:GetStats(i) .. ")")
 		end
-        if raceMod.bonus ~= nil then
-            local raceModBonusSize = table.getLength(raceMod.bonus)
+        if RaceMod:GetBonus() ~= nil then
+            local raceModBonusSize = table.getLength(RaceMod:GetBonus())
             for i = 1, raceModBonusSize do
-                table.insert(RaceStat, raceMod.bonus[i])
+                table.insert(RaceStat, RaceMod:GetBonusI(i))
             end
         end
         RAPrint(1, "raceMod.Stats: " .. RADumpArray(RaceStat))
@@ -56,20 +56,20 @@ local function TableInsertRaceStats(raceMod)
 end
 
 --- Function for InsertPayloadRaceASI
-local function InsertPayloadRaceASI(raceMod, lvl)
+local function InsertPayloadRaceASI(lvl)
 local fixAsi = {}  -- Table to store classes with removed shit asi
-	if raceMod.sab ~= nil then
+	if RaceMod:GetSab() ~= nil then
         local payload = {}
-        if raceMod.modGuid and VCHelpers.ModVars:isModLoaded(raceMod.modGuid) then
+        if RaceMod:GetModGuid() and VCHelpers.ModVars:isModLoaded(RaceMod:GetModGuid()) then
         -- special Ability List +x in some ASI or default
             local AbilityListUUID = ""
-            if raceMod.specialAbList ~= nil then
-                AbilityListUUID = raceMod.specialAbList
+            if RaceMod:GetSpecialAbList() ~= nil then
+                AbilityListUUID = RaceMod:GetSpecialAbList()
             else
                 AbilityListUUID = deps.AbilityList_UUID
             end
 
-            payload = VCHelpers.CF:InsertSelectorsPayload(raceMod.modGuid, raceMod.progressionUUID[lvl], AbilityListUUID, raceMod.sab, table.getLength(raceMod.sab))
+            payload = VCHelpers.CF:InsertSelectorsPayload(RaceMod:GetModGuid(), RaceMod:GetProgressionUUID(lvl), AbilityListUUID, RaceMod:GetSab(), table.getLength(RaceMod:GetSab()))
 
             table.insert(fixAsi, raceMod.name) -- Add to the list if ASI Fixed
 
@@ -81,18 +81,18 @@ local fixAsi = {}  -- Table to store classes with removed shit asi
 	end
 	if raceMod.stats ~= nil then
         local payload = {}
-        if raceMod.modGuid and VCHelpers.ModVars:isModLoaded(raceMod.modGuid) then
+        if raceMod.modGuid and VCHelpers.ModVars:isModLoaded(RaceMod:GetModGuid()) then
 
-            local raceModStats = TableInsertRaceStats(raceMod)
-            payload = VCHelpers.CF:addStringPayload(raceMod.modGuid, raceMod.progressionUUID[lvl], "Boosts", raceModStats)
+            local raceModStats = TableInsertRaceStats()
+            payload = VCHelpers.CF:addStringPayload(RaceMod:GetModGuid(), RaceMod:GetProgressionUUID(lvl), "Boosts", raceModStats)
 
             if raceMod.stats ~= nil and raceMod.sab == nil then
-                table.insert(fixAsi, raceMod.name) -- Add to the list if ASI Fixed
+                table.insert(fixAsi, RaceMod:GetName()) -- Add to the list if ASI Fixed
             end
 
             if VCHelpers.CF:checkSCF() then
                 Mods.SubclassCompatibilityFramework.Api.InsertBoosts(payload)
-                RAPrint(1, "payload InsertBoosts: " .. RADumpArray(fixAsi) .. "\n\n")
+                RAPrint(1, "payload InsertBoosts: " .. RADumpArray(payload) .. "\n\n")
             end
         end
 	end
@@ -103,18 +103,18 @@ local fixAsi = {}  -- Table to store classes with removed shit asi
     end
 end
 
-local function InsertDefaultPayloadASI(raceMod, lvl, AbilityListUUID)
+local function InsertDefaultPayloadASI(lvl, AbilityListUUID)
     local baseAsi = {}  -- Table to store classes with removed shit asi
     local payload = {}
     AbilityListUUID = AbilityListUUID or deps.AbilityList_UUID
-    if raceMod.modGuid and VCHelpers.ModVars:isModLoaded(raceMod.modGuid) then
-        payload =  VCHelpers.CF:InsertSelectorsPayload(raceMod.modGuid, raceMod.progressionUUID[lvl], "SelectAbilityBonus",
+    if RaceMod:GetModGuid() and VCHelpers.ModVars:isModLoaded(RaceMod:GetModGuid()) then
+        payload =  VCHelpers.CF:InsertSelectorsPayload(RaceMod:GetModGuid(), RaceMod:GetProgressionUUID(lvl), "SelectAbilityBonus",
         AbilityListUUID, {"2","1"}, 2, "AbilityBonus")
-        table.insert(baseAsi, raceMod.name) -- Add to the list if ASI Fixed
+        table.insert(baseAsi, RaceMod:GetName()) -- Add to the list if ASI Fixed
 
         if VCHelpers.CF:checkSCF() then
             Mods.SubclassCompatibilityFramework.Api.InsertSelectors(payload)
-            RAPrint(1, "payload InsertSelectors: " .. RADumpArray(baseAsi) .. "\n\n")
+            RAPrint(1, "payload InsertSelectors: " .. RADumpArray(payload) .. "\n\n")
         end
     end
     if #baseAsi > 0 then
@@ -125,21 +125,20 @@ local function InsertDefaultPayloadASI(raceMod, lvl, AbilityListUUID)
 end
 
 
-local function CleanOnRacesStatsLoaded(raceMod, lvl, AbilityListUUID)
+local function CleanOnRacesStatsLoaded(lvl, AbilityListUUID)
         AbilityListUUID = AbilityListUUID or deps.AbilityList_UUID
-        local stats = {"Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma"}
         -- remove +2+1, +1, +1+1 ect..
-        local payload = VCHelpers.CF:removeSelectorsPayload(raceMod.modGuid, raceMod.progressionUUID[lvl], "SelectAbilityBonus",
+        local payload = VCHelpers.CF:removeSelectorsPayload(RaceMod:GetModGuid(), RaceMod:GetProgressionUUID(lvl), "SelectAbilityBonus",
         AbilityListUUID)
 
         if VCHelpers.CF:checkSCF() then
             Mods.SubclassCompatibilityFramework.Api.RemoveSelectors(payload)
-            --RAPrint(1, "payload InsertSelectors: " .. RADumpArray(payload) .. "\n\n")
+            RAPrint(1, "payload InsertSelectors: " .. RADumpArray(payload) .. "\n\n")
         end
         -- remove Boost Ability
-        for _, ability in ipairs(stats) do
+        for _, ability in ipairs(RaceMod:GetStatsList()) do
             for score=-5,5 do -- change to -5 5 to low balancing charge server
-                RemovedRaces = VCHelpers.CF:removeStringPayload(raceMod.modGuid, raceMod.progressionUUID, "Boosts",{"Ability("..ability..","..score..")"})
+                RemovedRaces = VCHelpers.CF:removeStringPayload(RaceMod:GetModGuid(), RaceMod:GetProgressionUUID(lvl), "Boosts",{"Ability("..ability..","..score..")"})
             end
         end
         if RemovedRaces then
@@ -147,10 +146,10 @@ local function CleanOnRacesStatsLoaded(raceMod, lvl, AbilityListUUID)
         end
 end
 
-local function RemoveClassesASI(classeMod, lvl, AbilityListUUID)
+local function RemoveClassesASI(lvl, AbilityListUUID)
     AbilityListUUID = AbilityListUUID or deps.AbilityList_UUID
-    if classeMod.progressionUUID[lvl] ~= "aaaa" then --rmv after lib finished
-            local removedClass = VCHelpers.CF:removeSelectorsPayload(classeMod.modGuid, classeMod.progressionUUID[lvl],
+    if ClasseMod:GetProgressionUUID(lvl) ~= "aaaa" then --rmv after lib finished
+            local removedClass = VCHelpers.CF:removeSelectorsPayload(ClasseMod:GetModGuid(), ClasseMod:GetProgressionUUID(lvl),
         "SelectAbilityBonus", deps.AbilityList_UUID)
             if removedClass then
                 table.insert(RemovedClasses, removedClass) -- Add to the list if removed
@@ -165,7 +164,7 @@ local function classe5eModule()
         ClasseMod:New(classeMod.Name, classeMod.modURL, classeMod.modGuid, classeMod.progressionUUID, classeMod.Author,
         classeMod.SourceBook, classeMod.MainClasse, classeMod.isLvl20, classeMod.isOutdated)
         RAWarn(1, string.format("============> ERROR: classeMod.progressionUUID %s.",table.dump(classeMod.progressionUUID)))
-        RemoveClassesASI(classeMod,1)
+        RemoveClassesASI(1)
     end
 end
 
@@ -176,18 +175,18 @@ local function race5eModule()
         raceMod.MainRace,raceMod.specialAbList,raceMod.Stats,raceMod.Sab,raceMod.bonus)
 
         if PatchAsiDefault == true then
-            CleanOnRacesStatsLoaded(raceMod,1)
-            insertDefaultPayloadASI(raceMod,1)
+            CleanOnRacesStatsLoaded(1)
+            InsertDefaultPayloadASI(1)
         else
             if VCHelpers.ModVars:isModExist(deps.Framework_GUID, raceMod.modGuid) then -- présent dans isLoaded
                 if raceMod.SourceBook == nil or raceMod.SourceBook == "" then
                     if PatchAsiHomebrew == true then
-                        CleanOnRacesStatsLoaded(raceMod,1)
-                        InsertPayloadRaceASI(raceMod,1)
+                        CleanOnRacesStatsLoaded(1)
+                        InsertPayloadRaceASI(1)
                     else
                         --desactive moi ce putain de mod Connard function
                         if raceMod.NoDefStats == true then
-                            InsertDefaultPayloadASI(raceMod,1)
+                            InsertDefaultPayloadASI(1)
                         end
                         RADebug(2, string.format("%s Wasn't fixed. You uncheck Homebrew", raceMod.Name))
                     end
@@ -195,11 +194,11 @@ local function race5eModule()
                 for _, book in pairs(Dnd5eLimited) do
                     if book.bookRef == raceMod.SourceBook then
                         if PatchAsi5eLimited == true then
-                            CleanOnRacesStatsLoaded(raceMod,1)
-                            InsertPayloadRaceASI(raceMod,1)
+                            CleanOnRacesStatsLoaded(1)
+                            InsertPayloadRaceASI(1)
                         else
                             if raceMod.NoDefStats == true then
-                                InsertDefaultPayloadASI(raceMod,1)
+                                InsertDefaultPayloadASI(1)
                             end
                                 RADebug(2, string.format("%s Wasn't fixed. You uncheck Fix 5e Limited", raceMod.Name))
                         end
@@ -208,11 +207,11 @@ local function race5eModule()
                 for _, book in pairs(Dnd5e) do
                     if book.bookRef == raceMod.SourceBook then
                         if PatchAsi5e == true then
-                            CleanOnRacesStatsLoaded(raceMod,1)
-                            InsertPayloadRaceASI(raceMod,1)
+                            CleanOnRacesStatsLoaded(1)
+                            InsertPayloadRaceASI(1)
                         else
                             if raceMod.NoDefStats == true then
-                                InsertDefaultPayloadASI(raceMod,1)
+                                InsertDefaultPayloadASI(1)
                             end
                             RADebug(2, string.format("%s Wasn't fixed. You uncheck Fix 5e", raceMod.Name))
                         end
@@ -221,11 +220,11 @@ local function race5eModule()
                 for _, book in pairs(Dnd5eExtended) do
                     if book.bookRef == raceMod.SourceBook then
                         if PatchAsi5eExtended == true then
-                            CleanOnRacesStatsLoaded(raceMod,1)
-                            InsertPayloadRaceASI(raceMod,1)
+                            CleanOnRacesStatsLoaded(1)
+                            InsertPayloadRaceASI(1)
                         else
                             if raceMod.NoDefStats == true then
-                                InsertDefaultPayloadASI(raceMod,1)
+                                InsertDefaultPayloadASI(1)
                             end
                             RADebug(2, string.format("%s Wasn't fixed. You uncheck Fix 5e Extended", raceMod.Name))
                         end
@@ -234,11 +233,11 @@ local function race5eModule()
                 for _, book in pairs(Legacy) do
                     if book.bookRef == raceMod.SourceBook then
                         if PatchAsiLegacy == true then
-                            CleanOnRacesStatsLoaded(raceMod,1)
-                            InsertPayloadRaceASI(raceMod,1)
+                            CleanOnRacesStatsLoaded(1)
+                            InsertPayloadRaceASI(1)
                         else
                             if raceMod.NoDefStats == true then
-                                InsertDefaultPayloadASI(raceMod,1)
+                                InsertDefaultPayloadASI(1)
                             end
                             RADebug(2, string.format("%s Wasn't fixed. You uncheck Fix 5e Legacy", raceMod.Name))
                         end
@@ -247,11 +246,11 @@ local function race5eModule()
                 for _, book in pairs(Flavours) do
                     if book.bookRef == raceMod.SourceBook then
                         if PatchAsiFlavour == true then
-                            CleanOnRacesStatsLoaded(raceMod,1)
-                            InsertPayloadRaceASI(raceMod,1)
+                            CleanOnRacesStatsLoaded(1)
+                            InsertPayloadRaceASI(1)
                         else
                             if raceMod.NoDefStats == true then
-                                InsertDefaultPayloadASI(raceMod,1)
+                                InsertDefaultPayloadASI(1)
                             end
                             RADebug(2, string.format("%s Wasn't fixed. You uncheck Fix Flavours", raceMod.Name))
                         end

@@ -94,22 +94,46 @@ function RaceMod:GetStats()
     return self.stats
 end
 
+--- Get self.stats[i] of RaceMod
+---@return table self.stats[i]
+function RaceMod:GetStats(i)
+    return self.stats[i]
+end
+
 --- Get Name of RaceMod
----@return table self.name
+---@return table self.sab
 function RaceMod:GetSab()
     return self.sab
 end
 
---- Get Name of RaceMod
----@return table self.name
+--- Get bonus of RaceMod
+---@return table self.bonus
 function RaceMod:GetBonus()
     return self.bonus
+end
+
+--- Get bonus[i] of RaceMod
+---@return table self.bonus[i]
+function RaceMod:GetBonusI(i)
+    return self.bonus[i]
 end
 
 --- Get StatsList of RaceMod
 ---@return table self.statsList
 function RaceMod:GetStatsList()
     return self.statsList
+end
+
+--- Get statsList[i] of RaceMod
+---@return table self.statsList
+function RaceMod:GetStatsListI(i)
+    return self.statsList[i]
+end
+
+--- Get specialAbList of RaceMod
+---@return table self.specialAbList
+function RaceMod:GetSpecialAbList()
+    return self.specialAbList
 end
 
 function RaceMod:GetObject()
