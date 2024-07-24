@@ -147,7 +147,7 @@ local function CleanOnRacesStatsLoaded(raceMod, lvl, AbilityListUUID)
         end
 end
 
-local function removeClassesASI(classeMod, lvl, AbilityListUUID)
+local function RemoveClassesASI(classeMod, lvl, AbilityListUUID)
     AbilityListUUID = AbilityListUUID or deps.AbilityList_UUID
     if classeMod.progressionUUID[lvl] ~= "aaaa" then --rmv after lib finished
             local removedClass = VCHelpers.CF:removeSelectorsPayload(classeMod.modGuid, classeMod.progressionUUID[lvl],
@@ -165,7 +165,7 @@ local function classe5eModule()
         ClasseMod:New(classeMod.Name, classeMod.modURL, classeMod.modGuid, classeMod.progressionUUID, classeMod.Author,
         classeMod.SourceBook, classeMod.MainClasse, classeMod.isLvl20, classeMod.isOutdated)
         RAWarn(1, string.format("============> ERROR: classeMod.progressionUUID %s.",table.dump(classeMod.progressionUUID)))
-        removeClassesASI(classeMod,1)
+        RemoveClassesASI(classeMod,1)
     end
 end
 
