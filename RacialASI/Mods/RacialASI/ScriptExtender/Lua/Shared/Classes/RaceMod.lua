@@ -66,7 +66,8 @@ end
 --- Get progressionUUID from lvl of RaceMod
 ---@return table self.progressionUUID
 function RaceMod:GetProgressionUUID(lvl)
-    return self.progressionUUID[lvl]
+    local pUUID = self.progressionUUID[lvl]
+    return pUUID
 end
 
 --- Get author of RaceMod
@@ -189,8 +190,8 @@ local fixAsi = {}  -- Table to store classes with removed shit asi
             else
                 AbilityListUUID = deps.AbilityList_UUID
             end
-
-            payload = VCHelpers.CF:InsertSelectorsPayload(self.modGuid, self.progressionUUID[lvl], AbilityListUUID, self.sab,
+            local pUUID = self.progressionUUID[lvl]
+            payload = VCHelpers.CF:InsertSelectorsPayload(self.modGuid, pUUID, AbilityListUUID, self.sab,
             table.getLength(self.sab))
 
             table.insert(fixAsi, self.name) -- Add to the list if ASI Fixed
@@ -207,7 +208,8 @@ local fixAsi = {}  -- Table to store classes with removed shit asi
         if self.modGuid and VCHelpers.ModVars:isModLoaded(self.modGuid) then
 
             local raceModStats = self.InsertPayloadRaceASI()
-            payload = VCHelpers.CF:addStringPayload(self.modGuid, self.progressionUUID[lvl], "Boosts", raceModStats)
+            local pUUID = self.progressionUUID[lvl]
+            payload = VCHelpers.CF:addStringPayload(self.modGuid, pUUID, "Boosts", raceModStats)
 
             if self.stats ~= nil and self.sab == nil then
                 table.insert(fixAsi, self.name) -- Add to the list if ASI Fixed
@@ -232,7 +234,8 @@ function RaceMod:insertDefaultPayloadASI(lvl, AbilityListUUID)
     local baseAsi = {}  -- Table to store classes with removed shit asi
     AbilityListUUID = AbilityListUUID or deps.AbilityList_UUID
     if self.modGuid and VCHelpers.ModVars:isModLoaded(self.modGuid) then
-        payload =  VCHelpers.CF:InsertSelectorsPayload(self.modGuid, self.progressionUUID[lvl], "SelectAbilityBonus",
+        local pUUID = self.progressionUUID[lvl]
+        payload =  VCHelpers.CF:InsertSelectorsPayload(self.modGuid, pUUID, "SelectAbilityBonus",
         AbilityListUUID, {"2","1"}, 2, "AbilityBonus")
         table.insert(baseAsi, self.name) -- Add to the list if ASI Fixed
 
@@ -267,7 +270,8 @@ _________ .__                         __________                              __
 function RaceMod:cleanOnRacesStatsLoaded(lvl, AbilityListUUID)
         AbilityListUUID = AbilityListUUID or deps.AbilityList_UUID
         -- remove +2+1, +1, +1+1 ect..
-        local payload = VCHelpers.CF:removeSelectorsPayload(self.modGuid, self.progressionUUID[lvl], "SelectAbilityBonus",
+        local pUUID = self.progressionUUID[lvl]
+        local payload = VCHelpers.CF:removeSelectorsPayload(self.modGuid, pUUID, "SelectAbilityBonus",
         AbilityListUUID)
 
         if VCHelpers.CF:checkSCF() then

@@ -56,7 +56,8 @@ end
 ---@param lvl integer
 ---@return table self.progressionUUID
 function ClasseMod:GetProgressionUUID(lvl)
-    return self.progressionUUID[lvl]
+    local pUUID = self.progressionUUID[lvl]
+    return pUUID
 end
 
 --- Get author of ClasseMod
@@ -135,9 +136,9 @@ end
 ---@param lvl integer
 function ClasseMod:removeClassesASI(lvl, AbilityListUUID)
     AbilityListUUID = AbilityListUUID or deps.AbilityList_UUID
-    if self.progressionUUID[1] ~= "aaaa" or nil then --rmv after lib finished
-    local pUUid = self.progressionUUID[lvl]
-        local removedClass = VCHelpers.CF:removeSelectorsPayload(self.modGuid, pUUid,
+    if self.progressionUUID[1] ~= "aaaa" then --rmv after lib finished
+        local pUUID = self.progressionUUID[lvl]
+        local removedClass = VCHelpers.CF:removeSelectorsPayload(self.modGuid, pUUID,
         "SelectAbilityBonus", AbilityListUUID)
         if removedClass then
             table.insert(RemovedClasses, removedClass) -- Add to the list if removed
