@@ -83,7 +83,7 @@ function RaceMod:GetSourceBook()
 end
 
 --- Get mainRace of RaceMod
----@return string self.mainRace
+---@return boolean self.mainRace
 function RaceMod:GetMainRace()
     return self.mainRace
 end
@@ -158,6 +158,7 @@ end
 
 --- Function for tableInsertRaceStats
 ---@return table RaceStat
+--[[
 function RaceMod:TableInsertRaceStats()
     local RaceStat = {}
 	if self.stats ~= nil then
@@ -175,9 +176,11 @@ function RaceMod:TableInsertRaceStats()
 		return RaceStat
 	end
 end
+]]--
 
 
 --- Function for InsertPayloadRaceASI
+--[[
 function RaceMod:InsertPayloadRaceASI(lvl)
 local fixAsi = {}  -- Table to store classes with removed shit asi
 	if self.sab ~= nil then
@@ -227,9 +230,10 @@ local fixAsi = {}  -- Table to store classes with removed shit asi
                  table.concat(fixAsi, ", "))
     end
 end
-
+]]--
 
 --- Constructor for insertDefaultPayloadASI
+--[[
 function RaceMod:insertDefaultPayloadASI(lvl, AbilityListUUID)
     local baseAsi = {}  -- Table to store classes with removed shit asi
     AbilityListUUID = AbilityListUUID or deps.AbilityList_UUID
@@ -250,7 +254,7 @@ function RaceMod:insertDefaultPayloadASI(lvl, AbilityListUUID)
                  table.concat(baseAsi, ", "))
     end
 end
-
+]]--
 
 
 --[[
@@ -267,6 +271,7 @@ _________ .__                         __________                              __
 --- Clean race mods stats ASI
 ---@param AbilityList string
 ---@param lvl int
+--[[
 function RaceMod:cleanOnRacesStatsLoaded(lvl, AbilityListUUID)
         AbilityListUUID = AbilityListUUID or deps.AbilityList_UUID
         -- remove +2+1, +1, +1+1 ect..
@@ -290,3 +295,4 @@ function RaceMod:cleanOnRacesStatsLoaded(lvl, AbilityListUUID)
             table.insert(RemovedRaces, RemovedRaces) -- Add to the list if removed
         end
 end
+]]--

@@ -22,6 +22,10 @@ ClasseMod = _Class:Create("ClasseMod")
 ---@param isOutdated boolean
 function ClasseMod:New(name, modURL, modGuid, progressionUUID, author, sourceBook, mainClasse, isLvl20, isOutdated)
     local self           = setmetatable({}, ClasseMod)
+    --o = o or {}
+    --setmetatable(o, self)
+    --self.__index = self
+
     self.name            = name
     self.modURL          = modURL or nil
     self.modGuid         = modGuid
@@ -107,8 +111,8 @@ function ClasseMod:SetModGuid(modGuid)
     self.modGuid = modGuid
 end
 
-function ClasseMod:SetProgressionUUID(progressionUUID)
-    self.progressionUUID = progressionUUID
+function ClasseMod:SetProgressionUUID(pUUID,lvl)
+    self.progressionUUID[lvl] = pUUID
 end
 
 function ClasseMod:SetAuthor(author)
@@ -134,6 +138,7 @@ end
 
 ---@param AbilityListUUID string
 ---@param lvl integer
+--[[
 function ClasseMod:removeClassesASI(lvl, AbilityListUUID)
     AbilityListUUID = AbilityListUUID or deps.AbilityList_UUID
     if self.progressionUUID[1] ~= "aaaa" then --rmv after lib finished
@@ -145,3 +150,4 @@ function ClasseMod:removeClassesASI(lvl, AbilityListUUID)
         end
     end
 end
+]]--
