@@ -855,9 +855,9 @@ RaceLibrary = {
 	},
 	{
 		Name				=	"Elf - Dusk",
-		progressionTable	=	"",
 		modURL				=	{"https://www.nexusmods.com/baldursgate3/mods/10230"},
 		modGuid				=	"66b20233-cf0a-44bb-9bcf-32c0e0b09c19",
+		progressionTable	=	"",
 		progressionUUID		=	{
 									[1]	=	"50d5a39d-4497-4d71-9368-d6c8c04f97dd"
 								},
