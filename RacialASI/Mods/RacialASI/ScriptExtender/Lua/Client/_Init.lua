@@ -8,7 +8,7 @@ local function loadConfiguration()
     if not configData then
         BasicError("============> ERROR: Failed to load configuration file" .. configData)
     else
-        BasicPrint("Config.load() - Config.json - Apply Configuration...")
+        VCPrint(1, "Config.load() - Config.json - Apply Configuration...")
     end
     return configData
 end
@@ -23,8 +23,8 @@ local function processOption(optionName, optionValue, actionConfigs)
 
             for _, payload in ipairs(payloads) do
                 if payload.Target then
-                    --BasicPrint(string.format("action : ", action))
-                    --BasicPrint(string.format("payload : ", payload))
+                    --VCPrint(1, string.format("action : ", action))
+                    --VCPrint(1, string.format("payload : ", payload))
                     MCMASIAPI:handlePayload(action, payload)
                 else
                     BasicError(string.format("============> ERROR: Invalid target UUID for payload in '%s'.", optionName))
@@ -39,7 +39,7 @@ local function OnStatsLoaded()
         return
     end
 
-    BasicPrint("============> OnStatsLoaded function triggered, loading config","INFO", nil, nil, true)
+    VCPrint(1, "============> OnStatsLoaded function triggered, loading config","INFO", nil, nil, true)
 
     local config = loadConfiguration()
     if not config then
@@ -85,8 +85,8 @@ else
     end)
 
     Ext.Events.GameStateChanged:Subscribe(function(e)
-        BasicPrint("e.FromState")
-        BasicPrint(e.FromState)
+        VCPrint(1, "e.FromState")
+        VCPrint(1, e.FromState)
 
         if e.FromState == "PrepareRunning" then
 
@@ -103,9 +103,6 @@ else
             DebugLevel = mcmVarsGeneralSettings["debug_level"]
             Log = mcmVarsGeneralSettings["Log"]
 
-            --CleanOnRacesStatsLoaded()
-            --builder5eRaces()
-
             MCMASIAPI:OnSessionLoadedMCM()
             MCMASIAPI:OnStatsLoadedMCM()
         end
@@ -116,7 +113,7 @@ end
 ---Should've done this from the start
 Ext.Events.GameStateChanged:Subscribe(function(e)
     if e.FromState == "Running" and e.ToState == "Save" then
-        SyncModVariables()
-        SyncUserVariables()
+        VCHelpers.ModVars:Sync()
+        VCHelpers.UserVars:Sync()
     end
 end)

@@ -1,5 +1,5 @@
 ---@class RaceMod: MetaClass
----@field Name string
+---@field name string
 ---@field modURL table
 ---@field modGuid UUID
 ---@field progressionUUID table
@@ -29,7 +29,6 @@ RaceMod = _Class:Create("RaceMod", nil, { -- Example of Instance
     statsList       = {"Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma"}
 })
 
----@class RaceMod
 ---@field name string
 ---@field modURL table
 ---@field modGuid UUID
@@ -43,17 +42,17 @@ RaceMod = _Class:Create("RaceMod", nil, { -- Example of Instance
 ---@field statsList table
 function RaceMod:New(name, modURL, modGuid, progressionUUID, author, sourceBook, mainRace, specialAbList, stats, sab, bonus)
     local self           = setmetatable({}, RaceMod)
-    self.name            = name or "Kender The Alpha Race"
+    self.name            = name
     self.modURL          = modURL or {}
     self.modGuid         = modGuid
-    self.progressionUUID = progressionUUID or {}
-    self.author          = author or "Larian"
+    self.progressionUUID = progressionUUID --Target
+    self.author          = author
     self.sourceBook      = sourceBook
     self.mainRace        = mainRace
-    self.specialAbList        = specialAbList
-    self.stats           = stats or {"0", "0", "0", "0", "0", "0"}
-    self.sab             = sab or {"2","1"}
-    self.bonus           = bonus or {}
+    self.specialAbList   = specialAbList or nil
+    self.stats           = stats or nil
+    self.sab             = sab or nil
+    self.bonus           = bonus or nil
     self.statsList       = {"Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma"}
 
 end
@@ -125,7 +124,7 @@ function RaceMod:GetStatsList()
 end
 
 --- Get Object instancy of RaceMod
----@return Object self
+---@return Object? self
 function RaceMod:GetObject()
     return self
 end
@@ -170,8 +169,7 @@ function RaceMod:SetSab(sab)
     self.sab = sab
 end
 
---- Constructor for tableInsertRaceStats
----@param raceMod table raceMod
+--- Function for tableInsertRaceStats
 ---@return table RaceStat
 function RaceMod:TableInsertRaceStats()
     local RaceStat = {}
@@ -185,20 +183,19 @@ function RaceMod:TableInsertRaceStats()
                 table.insert(RaceStat, self.bonus[i])
             end
         end
-        VCWarn(0, "raceMod.Stats: " .. VCDumpArray(RaceStat))
+        VCPrint(1, "raceMod.Stats: " .. VCDumpArray(RaceStat))
 
 		return RaceStat
 	end
 end
 
 
---- Constructor for insertPayload
----@param raceMod table raceMod
-function RaceMod:InsertPayload()
+--- Function for InsertPayloadRaceASI
+function RaceMod:InsertPayloadRaceASI()
 local fixAsi = {}  -- Table to store classes with removed shit asi
 	if self.sab ~= nil then
         local payload = {}
-        if isModExist(self.modGuid) then
+        if self.modGuid and Ext.Mod.IsModLoaded(self.modGuid) then
         -- special Ability List +x in some ASI or default
             local AbilityListUUID = ""
             if self.specialAbList ~= nil then
@@ -211,28 +208,89 @@ local fixAsi = {}  -- Table to store classes with removed shit asi
             table.getLength(self.sab))
 
             table.insert(fixAsi, self.Name) -- Add to the list if ASI Fixed
-            
-            Mods.SubclassCompatibilityFramework.Api.InsertSelectors({payload})
 
-             VCWarn(0, "payload InsertSelectors: " .. VCDumpArray(RaceStat) .. "\n\n")
+            if VCHelpers.CF:checkSCF() then
+                Mods.SubclassCompatibilityFramework.Api.InsertSelectors(payload)
+                VCPrint(1, "payload InsertSelectors: " .. VCDumpArray(fixAsi) .. "\n\n")
+            end
         end
 	end
 
-	if raceMod.Stats ~= nil then
+	if self.stats ~= nil then
         local payload = {}
-        if isModExist(raceMod.modGuid) then
-            local raceModStats = tableInsertRaceStats(raceMod)
-            payload = createBoostPayload(raceMod.modGuid, raceMod.UUID, raceModStats)
-            if raceMod.Stats ~= nil and raceMod.Sab == nil then
-                table.insert(fixAsi, raceMod.Name) -- Add to the list if ASI Fixed
+        if self.modGuid and Ext.Mod.IsModLoaded(self.modGuid) then
+
+            local raceModStats = self.InsertPayloadRaceASI()
+            payload = VCHelpers.CF:addStringPayload(self.modGuid, self.UUID, "Boosts", raceModStats)
+
+            if self.stats ~= nil and self.sab == nil then
+                table.insert(fixAsi, self.name) -- Add to the list if ASI Fixed
             end
-            Mods.SubclassCompatibilityFramework.Api.InsertBoosts({payload})
-            --BasicWarning(string.format("payload InsertBoosts: %s\n\n", table.dump(payload)))
+
+            if VCHelpers.CF:checkSCF() then
+                Mods.SubclassCompatibilityFramework.Api.InsertBoosts(payload)
+                VCPrint(1, "payload InsertBoosts: " .. VCDumpArray(fixAsi) .. "\n\n")
+            end
         end
 	end
     if #fixAsi > 0 then
-        BasicWarning("============> Ability added to " ..
+        VCWarn(2, "============> Ability added to " ..
                  #fixAsi .. " mods: " ..
                  table.concat(fixAsi, ", "))
     end
+end
+
+
+--- Constructor for insertDefaultPayloadASI
+function RaceMod:insertDefaultPayloadASI()
+    local baseAsi = {}  -- Table to store classes with removed shit asi
+    if self.modGuid and Ext.Mod.IsModLoaded(self.modGuid) then
+        payload =  VCHelpers.CF:InsertSelectorsPayload(self.modGuid, self.UUID, "SelectAbilityBonus",
+        deps.AbilityList_UUID, {"2","1"}, 2, "AbilityBonus")
+        table.insert(baseAsi, self.name) -- Add to the list if ASI Fixed
+
+        if VCHelpers.CF:checkSCF() then
+            Mods.SubclassCompatibilityFramework.Api.InsertSelectors(payload)
+            VCPrint(1, "payload InsertSelectors: " .. VCDumpArray(baseAsi) .. "\n\n")
+        end
+    end
+    if #baseAsi > 0 then
+        VCWarn(2, "============> Base +2/+1 Ability added to " ..
+                 #baseAsi .. " mods: " ..
+                 table.concat(baseAsi, ", "))
+    end
+end
+
+
+--- Constructor for cleanOnRacesStatsLoaded
+--- Clean race mods stats ASI
+--[[
+_________ .__                         __________                              __________    _____         .__       .__      _____    _________.___ 
+\_   ___ \|  |   ____ _____    ____   \______   \_____    ____  ____   ______ \______   \  /  _  \   ____ |__|____  |  |    /  _  \  /   _____/|   |
+/    \  \/|  | _/ __ \\__  \  /    \   |       _/\__  \ _/ ___\/ __ \ /  ___/  |       _/ /  /_\  \_/ ___\|  \__  \ |  |   /  /_\  \ \_____  \ |   |
+\     \___|  |_\  ___/ / __ \|   |  \  |    |   \ / __ \\  \__\  ___/ \___ \   |    |   \/    |    \  \___|  |/ __ \|  |__/    |    \/        \|   |
+ \______  /____/\___  >____  /___|  /  |____|_  /(____  /\___  >___  >____  >  |____|_  /\____|__  /\___  >__(____  /____/\____|__  /_______  /|___|
+        \/          \/     \/     \/          \/      \/     \/    \/     \/          \/         \/     \/        \/              \/        \/      
+        \_Clean Races ModASI
+]]--
+function RaceMod:cleanOnRacesStatsLoaded(lvlprogressionUUID)
+        -- remove +2+1, +1, +1+1 ect..
+        local payload = VCHelpers.CF:removeSelectorsPayload(self.modGuid, self.progressionUUID[lvlprogressionUUID], "SelectAbilityBonus",
+        Deps.AbilityList_UUID)
+
+        if VCHelpers.CF:checkSCF() then
+            Mods.SubclassCompatibilityFramework.Api.RemoveSelectors(payload)
+            VCPrint(1, "payload InsertSelectors: " .. VCDumpArray(payload) .. "\n\n")
+        end
+
+        -- remove Boost Ability
+        for _, ability in ipairs(self.statsList) do
+            for score=-5,5 do -- change to -5 5 to low balancing charge server
+                removedRace = VCHelpers.CF:removeStringPayload(self.modGuid, self.progressionUUID, "Boosts",
+                {"Ability("..ability..","..score..")"})
+            end
+        end
+        if removedRace then
+            table.insert(removedRaces, removedRace) -- Add to the list if removed
+        end
 end

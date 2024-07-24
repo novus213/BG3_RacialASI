@@ -1,250 +1,134 @@
--- temporary require libs here , in futur require to Client/CleanRacesModASI.lua
---Ext.Require("Libs/RacesLibrary.lua")
+ --[[
+ .________        __________      .__.__       .___            
+ |   ____/ ____   \______   \__ __|__|  |    __| _/___________ 
+ |____  \_/ __ \   |    |  _/  |  \  |  |   / __ |/ __ \_  __ \
+ /       \  ___/   |    |   \  |  /  |  |__/ /_/ \  ___/|  | \/
+/______  /\___  >  |______  /____/|__|____/\____ |\___  >__|   
+       \/     \/          \/                    \/    \/       
+        \_Clean Races ModASI
+]]--
+Ext.Require("Libs/ClassesLibrary.lua")
 Ext.Require("Libs/BooksLibrary.lua")
+Ext.Require("Libs/RacesLibrary.lua")
+
+VCPrint(2, "PatchAsi5eLimited: " .. PatchAsi5eLimited)
+VCPrint(2, "PatchAsi5e: " .. PatchAsi5e)
+VCPrint(2, "PatchAsi5eExtended: " .. PatchAsi5eExtended)
+VCPrint(2, "PatchAsiLegacy: " .. PatchAsiLegacy)
+VCPrint(2, "PatchAsiFlavour: " .. PatchAsiFlavour)
+VCPrint(2, "PatchAsiHomebrew: " .. PatchAsiHomebrew)
 
 
--- temp show var
+--[[
+_________ .__                         _________ .__                                       __________    _____         .__       .__      _____    _________.___ 
+\_   ___ \|  |   ____ _____    ____   \_   ___ \|  | _____    ______ ______ ____   ______ \______   \  /  _  \   ____ |__|____  |  |    /  _  \  /   _____/|   |
+/    \  \/|  | _/ __ \\__  \  /    \  /    \  \/|  | \__  \  /  ___//  ___// __ \ /  ___/  |       _/ /  /_\  \_/ ___\|  \__  \ |  |   /  /_\  \ \_____  \ |   |
+\     \___|  |_\  ___/ / __ \|   |  \ \     \___|  |__/ __ \_\___ \ \___ \\  ___/ \___ \   |    |   \/    |    \  \___|  |/ __ \|  |__/    |    \/        \|   |
+ \______  /____/\___  >____  /___|  /  \______  /____(____  /____  >____  >\___  >____  >  |____|_  /\____|__  /\___  >__(____  /____/\____|__  /_______  /|___|
+        \/          \/     \/     \/          \/          \/     \/     \/     \/     \/          \/         \/     \/        \/              \/        \/      
+        \_Clean Classes ModASI
+]]--
 
-BasicWarning("PatchAsi5eLimited")
-BasicWarning(PatchAsi5eLimited)
-
-BasicWarning("PatchAsi5e")
-BasicWarning(PatchAsi5e)
-
-BasicWarning("PatchAsi5eExtended")
-BasicWarning(PatchAsi5eExtended)
-
-BasicWarning("PatchAsiLegacy")
-BasicWarning(PatchAsiLegacy)
-
-BasicWarning("PatchAsiFlavour")
-BasicWarning(PatchAsiFlavour)
-
-BasicWarning("PatchAsiHomebrew")
-BasicWarning(PatchAsiHomebrew)
-
---- Constructor for tableInsertRaceStats
----@param raceMod table raceMod
----@return table RaceStat
-local function tableInsertRaceStats(raceMod)
-    local RaceStat = {}
-    local StatsList = {"Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma"}
-	if raceMod.Stats ~= nil then
-		for i = 1, 6 do
-			table.insert(RaceStat, "Ability(" .. StatsList[i] .. "," .. raceMod.Stats[i] .. ")")
-		end
-        if raceMod.Bonus ~= nil then
-            local raceModBonusSize = table.getLength(raceMod.Bonus)
-            for i = 1, raceModBonusSize do
-                table.insert(RaceStat, raceMod.Bonus[i])
+local function classe5eModule()
+    local removedClasses = {}  -- Table to store classes with removed selectors
+    for _, classeMod in ipairs(ClassesLibrary) do
+        ClasseMod:New(classeMod.Name, classeMod.modURL, classeMod.modGuid, classeMod.progressionUUID, classeMod.Author,
+        classeMod.SourceBook, classeMod.MainClasse, classeMod.isLvl20, classeMod.isOutdated)
+        if classeMod.UUID ~= "aaaa" then --rmv after lib finished
+            local removedClass = removeSelectorsPayload(classeMod.modGuid, classeMod.progressionUUID[1],
+            "SelectAbilityBonus", Deps.AbilityList_UUID)
+            if removedClass then
+                table.insert(removedClasses, removedClass) -- Add to the list if removed
             end
         end
-        --BasicWarning(string.format("raceMod.Stats: %s\n\n", table.dump(RaceStat)))
-		return RaceStat
-	end
-end
-
-
-
---- Constructor for createSABPayload
----@param uuid string race Progression.lsx Level 1 UUID
----@param modGuid string race mod modGuid
----@param sabUUID string SelectAbilityBonus UUID
----@return table payload
-local function createSABPayload(modGuid, uuid, sabUUID, sab, sabAmount)
-    return {
-        Target = uuid,
-        FileType = "Progression",
-        Function = "SelectAbilityBonus",
-        modGuid = modGuid,
-        Params = {
-            Guid = sabUUID,
-            Amount = sabAmount,
-            Amounts = sab,
-            BonusType = "AbilityBonus"
-        }
-    }
-end
-
-
---- Constructor for createBoostPayload
----@param uuid string race Progression.lsx Level 1 UUID
----@param modGuid string race mod modGuid
----@param ability string ability DnD (Strength ect.)
----@param score integer ability score
----@return table payload
-local function createBoostPayload(modGuid, uuid, strings)
-    return {
-        modGuid = modGuid,
-        Target = uuid,
-        FileType = "Progression",
-        Type = "Boosts",
-        Strings = strings
-      }
-end
-
-
---- Test function to hide or disable race NOT Working :'((((((
-
---- Constructor for RemoveRacePayload
----@param raceMod table raceMod
-local function removeRacePayload(raceMod)
-    local removedModRace = {}  -- Table to store classes with removed shit asi
-    if isModExist(raceMod.modGuid) then
-            table.insert(removedModRace, raceMod.Name) -- Add to the list if ASI Fixed
-            Ext.Net.PostMessageToServer("MU_Request_Server_Uninstall_Mod", Ext.Json.Stringify({
-            modUUID = raceMod.modGuid
-        }))
-    end
-    if #removedModRace > 0 then
-        BasicWarning("============> Ability added to " ..
-                 #removedModRace .. " mods: " ..
-                 table.concat(removedModRace, ", "))
     end
 end
 
-
-
---- Constructor for insertPayload
----@param raceMod table raceMod
-local function insertPayload(raceMod)
-local fixAsi = {}  -- Table to store classes with removed shit asi
-	if raceMod.Sab ~= nil then
-        local payload = {}
-        if isModExist(raceMod.modGuid) then
-        -- special Ability List +x in some ASI or default
-            local AbilityListUUID = ""
-            if raceMod.specialAbList ~= nil then
-                AbilityListUUID = raceMod.specialAbList
-            else
-                AbilityListUUID = deps.AbilityList_UUID
-            end
-            payload = createSABPayload(raceMod.modGuid, raceMod.UUID, AbilityListUUID, raceMod.Sab, table.getLength(raceMod.Sab))
-            table.insert(fixAsi, raceMod.Name) -- Add to the list if ASI Fixed
-            Mods.SubclassCompatibilityFramework.Api.InsertSelectors({payload})
-            --BasicWarning(string.format("payload InsertSelectors: %s\n\n", table.dump(payload)))
-        end
-	end
-
-	if raceMod.Stats ~= nil then
-        local payload = {}
-        if isModExist(raceMod.modGuid) then
-            local raceModStats = tableInsertRaceStats(raceMod)
-            payload = createBoostPayload(raceMod.modGuid, raceMod.UUID, raceModStats)
-            if raceMod.Stats ~= nil and raceMod.Sab == nil then
-                table.insert(fixAsi, raceMod.Name) -- Add to the list if ASI Fixed
-            end
-            Mods.SubclassCompatibilityFramework.Api.InsertBoosts({payload})
-            --BasicWarning(string.format("payload InsertBoosts: %s\n\n", table.dump(payload)))
-        end
-	end
-    if #fixAsi > 0 then
-        BasicWarning("============> Ability added to " ..
-                 #fixAsi .. " mods: " ..
-                 table.concat(fixAsi, ", "))
-    end
-end
-
---- Constructor for insertDefaultPayload
----@param raceMod table raceMod
-local function insertDefaultPayload(raceMod)
-    local baseAsi = {}  -- Table to store classes with removed shit asi
-    if isModExist(raceMod.modGuid) then
-        payload = createSABPayload(raceMod.modGuid, raceMod.UUID, deps.AbilityList_UUID, {"2","1"}, 2)
-        table.insert(baseAsi, raceMod.Name) -- Add to the list if ASI Fixed
-        Mods.SubclassCompatibilityFramework.Api.InsertSelectors({payload})
-    end
-    if #baseAsi > 0 then
-        BasicWarning("============> Base +2/+1 Ability added to " ..
-                 #baseAsi .. " mods: " ..
-                 table.concat(baseAsi, ", "))
-    end
-end
-
---- Constructor for builder5eRaces
-function builder5eRaces()
-	removedRaces = {}  -- Table to store race with removed shit asi
-    -- on test si le mec a coché dans mcm default payload si oui on fait un for each for _, raceMod in pairs(RaceLibrary) do CleanOnRacesStatsLoaded(raceMod) et insertDefaultPayload(raceMod)
+local function race5eModule()
+    removedRaces = {}  -- Table to store race with removed shit asi
+    -- on test si le mec a coché dans mcm default payload si oui on fait un for each for _, raceMod in pairs(RaceLibrary) do  RaceMod:CleanOnRacesStatsLoaded(raceMod) et insertDefaultPayload(raceMod)
     for _, raceMod in pairs(RaceLibrary) do
+        RaceMod:New(raceMod.Name,raceMod.modURL,raceMod.modGuid,raceMod.progressionUUID,raceMod.Author,raceMod.SourceBook,
+        raceMod.MainRace,raceMod.specialAbList,raceMod.Stats,raceMod.Sab,raceMod.bonus)
         if PatchAsiDefault == true then
-            CleanOnRacesStatsLoaded(raceMod)
-            insertDefaultPayload(raceMod)
+            RaceMod:CleanOnRacesStatsLoaded(1)
+            RaceMod:insertDefaultPayloadASI()
         else
             if isModExist(raceMod.modGuid) then -- présent dans isLoaded
                 if raceMod.SourceBook == nil or raceMod.SourceBook == "" then
                     if PatchAsiHomebrew == true then
-                        CleanOnRacesStatsLoaded(raceMod)
-                        insertPayload(raceMod)
+                         RaceMod:CleanOnRacesStatsLoaded(1)
+                        RaceMod:InsertPayloadRaceASI()
                     else
                         --desactive moi ce putain de mod Connard function
                         if raceMod.NoDefStats == true then
-                            insertDefaultPayload(raceMod)
+                            RaceMod:insertDefaultPayloadASI()
                         end
-                        BasicWarning(string.format("%s Wasn't fixed. You uncheck Homebrew", raceMod.Name))
+                        VCWarn(2, string.format("%s Wasn't fixed. You uncheck Homebrew", raceMod.Name))
                     end
                 end
                 for _, book in pairs(Dnd5eLimited) do
                     if book.bookRef == raceMod.SourceBook then
                         if PatchAsi5eLimited == true then
-                            CleanOnRacesStatsLoaded(raceMod)
-                            insertPayload(raceMod)
+                             RaceMod:CleanOnRacesStatsLoaded(1)
+                            RaceMod:InsertPayloadRaceASI()
                         else
                             if raceMod.NoDefStats == true then
-                                insertDefaultPayload(raceMod)
+                                RaceMod:insertDefaultPayloadASI()
                             end
-                                BasicWarning(string.format("%s Wasn't fixed. You uncheck Fix 5e Limited", raceMod.Name))
+                                VCWarn(2, string.format("%s Wasn't fixed. You uncheck Fix 5e Limited", raceMod.Name))
                         end
                     end
                 end
                 for _, book in pairs(Dnd5e) do
                     if book.bookRef == raceMod.SourceBook then
                         if PatchAsi5e == true then
-                            CleanOnRacesStatsLoaded(raceMod)
-                            insertPayload(raceMod)
+                             RaceMod:CleanOnRacesStatsLoaded(1)
+                            RaceMod:InsertPayloadRaceASI()
                         else
                             if raceMod.NoDefStats == true then
-                                insertDefaultPayload(raceMod)
+                                RaceMod:insertDefaultPayloadASI()
                             end
-                            BasicWarning(string.format("%s Wasn't fixed. You uncheck Fix 5e", raceMod.Name))
+                            VCWarn(2, string.format("%s Wasn't fixed. You uncheck Fix 5e", raceMod.Name))
                         end
                     end
                 end
                 for _, book in pairs(Dnd5eExtended) do
                     if book.bookRef == raceMod.SourceBook then
                         if PatchAsi5eExtended == true then
-                            CleanOnRacesStatsLoaded(raceMod)
-                            insertPayload(raceMod)
+                             RaceMod:CleanOnRacesStatsLoaded(1)
+                            RaceMod:InsertPayloadRaceASI()
                         else
                             if raceMod.NoDefStats == true then
-                                insertDefaultPayload(raceMod)
+                                RaceMod:insertDefaultPayloadASI()
                             end
-                            BasicWarning(string.format("%s Wasn't fixed. You uncheck Fix 5e Extended", raceMod.Name))
+                            VCWarn(2, string.format("%s Wasn't fixed. You uncheck Fix 5e Extended", raceMod.Name))
                         end
                     end
                 end
                 for _, book in pairs(Legacy) do
                     if book.bookRef == raceMod.SourceBook then
                         if PatchAsiLegacy == true then
-                            CleanOnRacesStatsLoaded(raceMod)
-                            insertPayload(raceMod)
+                             RaceMod:CleanOnRacesStatsLoaded(1)
+                            RaceMod:InsertPayloadRaceASI()
                         else
                             if raceMod.NoDefStats == true then
-                                insertDefaultPayload(raceMod)
+                                RaceMod:insertDefaultPayloadASI()
                             end
-                            BasicWarning(string.format("%s Wasn't fixed. You uncheck Fix 5e Legacy", raceMod.Name))
+                            VCWarn(2, string.format("%s Wasn't fixed. You uncheck Fix 5e Legacy", raceMod.Name))
                         end
                     end
                 end
                 for _, book in pairs(Flavours) do
                     if book.bookRef == raceMod.SourceBook then
                         if PatchAsiFlavour == true then
-                            CleanOnRacesStatsLoaded(raceMod)
-                            insertPayload(raceMod)
+                             RaceMod:CleanOnRacesStatsLoaded(1)
+                            RaceMod:InsertPayloadRaceASI()
                         else
                             if raceMod.NoDefStats == true then
-                                insertDefaultPayload(raceMod)
+                                RaceMod:insertDefaultPayloadASI()
                             end
-                            BasicWarning(string.format("%s Wasn't fixed. You uncheck Fix Flavours", raceMod.Name))
+                            VCWarn(2, string.format("%s Wasn't fixed. You uncheck Fix Flavours", raceMod.Name))
                         end
                     end
                 end
@@ -252,12 +136,26 @@ function builder5eRaces()
         end
 	end
     if #removedRaces > 0 then
-        BasicWarning("============> Ability boost remove to " ..
+        VCWarn(2, "============> Ability boost remove to " ..
                  #removedRaces .. " mods: " ..
                  table.concat(removedRaces, ", "))
     end
 end
 
+
+--- Constructor for builder5eRaces
+local function builder5e()
+    classe5eModule()
+	race5eModule()
+    if isModLoaded(deps.MCM_GUID) then
+        BasicPrint("                               ")
+        BasicPrint("                               ")
+        BasicPrint(" ----------------------------- ")
+        BasicPrint(" ----------------------------- ")
+        BasicPrint("Config.MCM.loaded() Happy Fun Gaming!...")
+    end
+end
+
 if isModLoaded(deps.Framework_GUID) then
-    Ext.Events.StatsLoaded:Subscribe(builder5eRaces)
+    Ext.Events.StatsLoaded:Subscribe(builder5e)
 end

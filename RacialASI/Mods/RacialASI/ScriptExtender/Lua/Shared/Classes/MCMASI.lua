@@ -46,9 +46,9 @@ function MCMASI:OnSessionLoadedMCM()
         Log         = MCMASIAPI:MCMGet("Log")
     }
 
-    BasicWarning(string.format("============> mcmVars is loaded. %s", table.dump(mcmVars)))
-    BasicWarning(string.format("============> mcmVarsGeneralSettings is loaded. %s", table.dump(mcmVarsGeneralSettings)))
-    BasicWarning(string.format("============> mcmVarsBooksSettings is loaded. %s", table.dump(mcmVarsBooksSettings)))
+    VCWarn(2, string.format("============> mcmVars is loaded. %s", table.dump(mcmVars)))
+    VCWarn(2, string.format("============> mcmVarsGeneralSettings is loaded. %s", table.dump(mcmVarsGeneralSettings)))
+    VCWarn(2, string.format("============> mcmVarsBooksSettings is loaded. %s", table.dump(mcmVarsBooksSettings)))
 end
 
 --- Constructor for MCMASI:OnStatsLoadedMCM
@@ -61,17 +61,17 @@ function MCMASI:OnStatsLoadedMCM()
             if actionConfigs then
                 MCMASIAPI:processOptionMcm(key, actionConfigs.actions)
             else
-                    BasicError(string.format("============> ERROR: No configuration found for %s.", key))
+                    VCWarn(1, string.format("============> ERROR: No configuration found for %s.", key))
             end
-            BasicWarning(string.format("============> %s is enabled.", key))
+            VCWarn(2, string.format("============> %s is enabled.", key))
         else
             if value == "notuse" and actionConfigs.ruleset == "5eLimited" and PatchAsi5eLimited == true then
                 if actionConfigs then
                     MCMASIAPI:processOptionMcm(key, actionConfigs.actions)
                 else
-                        BasicError(string.format("============> ERROR: No configuration found for %s.", key))
+                        VCWarn(1, string.format("============> ERROR: No configuration found for %s.", key))
                 end
-                BasicWarning(string.format("============> %s is enabled (5eLimited Actived).", key))
+                VCWarn(2, string.format("============> %s is enabled (5eLimited Actived).", key))
             end
         end
     end
@@ -91,7 +91,7 @@ function MCMASI:processOptionMcm(optionName, actionConfigs)
             if payload.Target then
                 MCMASIAPI:handlePayload(action, payload)
             else
-                BasicError(string.format("============> ERROR: Invalid target UUID for payload in '%s'.", optionName))
+                VCWarn(1, string.format("============> ERROR: Invalid target UUID for payload in '%s'.", optionName))
             end
         end
     end
@@ -102,7 +102,7 @@ end
 ---@param payload table payload
 function MCMASI:callApiAction(action, payload)
     if not (Mods.SubclassCompatibilityFramework and Mods.SubclassCompatibilityFramework.Api) then
-        BasicError("============> ERROR: Subclass Compatibility Framework mod or its API is not available.")
+        VCWarn(1, "============> ERROR: Subclass Compatibility Framework mod or its API is not available.")
     end
 
     local apiActions = {
@@ -120,7 +120,7 @@ function MCMASI:callApiAction(action, payload)
     if apiFunction then
         return apiFunction(payload)
     else
-        BasicError("============> ERROR: Invalid API action: " .. action)
+        VCWarn(1, "============> ERROR: Invalid API action: " .. action)
     end
 end
 
@@ -129,7 +129,7 @@ end
 ---@param payload table payload
 function MCMASI:handlePayload(action, payload)
     MCMASIAPI:callApiAction(action, { payload = payload })
-    BasicWarning(string.format("============> %s payload.", { payload = payload }))
+    VCWarn(2, string.format("============> %s payload.", { payload = payload }))
 end
 
 --- Constructor for MCMASI:MCMGet
