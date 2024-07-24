@@ -134,7 +134,7 @@ end
 ---@param AbilityListUUID string
 ---@param lvl integer
 function ClasseMod:removeClassesASI(AbilityListUUID, lvl)
-    if self.progressionUUID[1] ~= "aaaa" then --rmv after lib finished
+    if self.progressionUUID[1] ~= "aaaa" or not self.progressionUUID[1] then --rmv after lib finished
         local removedClass = VCHelpers.CF:removeSelectorsPayload(self.modGuid, self.progressionUUID[lvl],
         "SelectAbilityBonus", AbilityListUUID)
         if removedClass then
