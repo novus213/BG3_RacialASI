@@ -1,4 +1,6 @@
 RequireFiles("Shared/Classes/", {
     "ModInfo",
-    "MCMASI"
+    "MCMASI",
+    "ClasseMod",
+    "RaceMod"
 })
