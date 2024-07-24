@@ -177,7 +177,7 @@ end
 
 
 --- Function for InsertPayloadRaceASI
-function RaceMod:InsertPayloadRaceASI()
+function RaceMod:InsertPayloadRaceASI(lvl)
 local fixAsi = {}  -- Table to store classes with removed shit asi
 	if self.sab ~= nil then
         local payload = {}
@@ -190,7 +190,7 @@ local fixAsi = {}  -- Table to store classes with removed shit asi
                 AbilityListUUID = deps.AbilityList_UUID
             end
 
-            payload = VCHelpers.CF:InsertSelectorsPayload(self.modGuid, self.progressionUUID, AbilityListUUID, self.sab,
+            payload = VCHelpers.CF:InsertSelectorsPayload(self.modGuid, self.progressionUUID[lvl], AbilityListUUID, self.sab,
             table.getLength(self.sab))
 
             table.insert(fixAsi, self.name) -- Add to the list if ASI Fixed
@@ -207,7 +207,7 @@ local fixAsi = {}  -- Table to store classes with removed shit asi
         if self.modGuid and VCHelpers.ModVars:isModLoaded(self.modGuid) then
 
             local raceModStats = self.InsertPayloadRaceASI()
-            payload = VCHelpers.CF:addStringPayload(self.modGuid, self.progressionUUID, "Boosts", raceModStats)
+            payload = VCHelpers.CF:addStringPayload(self.modGuid, self.progressionUUID[lvl], "Boosts", raceModStats)
 
             if self.stats ~= nil and self.sab == nil then
                 table.insert(fixAsi, self.name) -- Add to the list if ASI Fixed
@@ -228,11 +228,11 @@ end
 
 
 --- Constructor for insertDefaultPayloadASI
-function RaceMod:insertDefaultPayloadASI(AbilityListUUID)
+function RaceMod:insertDefaultPayloadASI(lvl, AbilityListUUID)
     local baseAsi = {}  -- Table to store classes with removed shit asi
     AbilityListUUID = AbilityListUUID or deps.AbilityList_UUID
     if self.modGuid and VCHelpers.ModVars:isModLoaded(self.modGuid) then
-        payload =  VCHelpers.CF:InsertSelectorsPayload(self.modGuid, self.progressionUUID, "SelectAbilityBonus",
+        payload =  VCHelpers.CF:InsertSelectorsPayload(self.modGuid, self.progressionUUID[lvl], "SelectAbilityBonus",
         AbilityListUUID, {"2","1"}, 2, "AbilityBonus")
         table.insert(baseAsi, self.name) -- Add to the list if ASI Fixed
 
