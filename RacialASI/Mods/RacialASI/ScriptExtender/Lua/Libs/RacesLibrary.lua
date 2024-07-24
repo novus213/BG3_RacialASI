@@ -798,7 +798,7 @@ _________                 __                   __________
 
 	{
 		Name 			=	"Aasimar Main",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/1824",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/1824"},
 		modGuid 		=	"ab267ed4-b3b5-4b4f-a62c-7dbc95c968fa",
 		progressionUUID =	{
 								[1] = "06e918ad-be2c-48b6-a098-0288539de744",
@@ -810,7 +810,7 @@ _________                 __                   __________
 	},
 	{
 		Name 			=	"Aasimar(Radiant Soul)",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/1824",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/1824"},
 		modGuid 		=	"ab267ed4-b3b5-4b4f-a62c-7dbc95c968fa",
 		progressionUUID =	{
 								[1] = "4c2c61ae-5904-4576-a8c5-efecce67ab82"
@@ -822,7 +822,7 @@ _________                 __                   __________
 	},
 	{
 		Name 			=	"Aasimar(Radiant Consumption)",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/1824",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/1824"},
 		modGuid 		=	"ab267ed4-b3b5-4b4f-a62c-7dbc95c968fa",
 		progressionUUID =	{
 								[1] = "56d62681-9769-4ad7-9bbf-4f72db44f070"
@@ -834,7 +834,7 @@ _________                 __                   __________
 	},
 	{
 		Name 			=	"Aasimar(Necrotic Shroud)",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/1824",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/1824"},
 		modGuid 		=	"ab267ed4-b3b5-4b4f-a62c-7dbc95c968fa",
 		progressionUUID =	{
 								[1] = "1b07140b-98c1-42e8-b4ec-072622862dc2"
@@ -846,7 +846,7 @@ _________                 __                   __________
 	},
 	{
 		Name 			=	"Raven Queen's Chosen - Shadar-Kai",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/1305",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/1305"},
 		modGuid 		=	"c36d595f-70d1-44f1-8ca6-4ad14186f489",
 		progressionUUID =	{
 								[1] = "2f7edf7e-0a6b-4018-9715-1cb8aa238e4a"
@@ -862,7 +862,7 @@ The Avariel and Grugach, as far as I know, were not released.",
 	},
 	{
 		Name 			=	"Shadar-Kai with Drow dialogue tags",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/2476",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/2476"},
 		modGuid 		= 	"c36d595f-70d1-44f1-8ca6-4ad14186f489",
         progressionUUID =	{
 								[1] = "96ad7abb-8a86-4939-913d-71f84191f7d7"
@@ -878,7 +878,7 @@ The Avariel and Grugach, as far as I know, were not released.",
 	},
 	{
 		Name			=	"Fairy (Flutter and Whimsy)",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/5127",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/5127"},
 		modGuid			=	"673c5b7b-a274-4916-ad89-4e3c591e1187",
 		progressionUUID =	{
 								[1] = "7b4d6e73-c54f-41ed-bd69-c25be95e9717"
@@ -893,7 +893,7 @@ The Avariel and Grugach, as far as I know, were not released.",
 --
 	{
 		Name			=	"Owlin",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/8113",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/8113"},
 		modGuid			=	"c1e87b16-c845-4254-b831-bb22b13016fb", -- old "315ce1a1-0f24-4777-90d9-06b01a93a716",
 		progressionUUID =	{
 								[1] = "da629716-fd76-477d-9934-0473904fe04b", -- old "b5f04836-e2ef-4eb6-93d5-4aad7f3b1c20"
@@ -904,7 +904,7 @@ The Avariel and Grugach, as far as I know, were not released.",
 	},
 	{
 		Name			=	"Owlin - Forest",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/8113",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/8113"},
 		modGuid			=	"c1e87b16-c845-4254-b831-bb22b13016fb", -- old "315ce1a1-0f24-4777-90d9-06b01a93a716",
 		progressionUUID =	{
 								[1] = "9bb01d19-30fb-4478-bf55-d98dcacb228b"
@@ -916,7 +916,7 @@ The Avariel and Grugach, as far as I know, were not released.",
 	},
 	{
 		Name			=	"Owlin - Snow",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/8113",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/8113"},
 		modGuid			=	"c1e87b16-c845-4254-b831-bb22b13016fb", -- old "315ce1a1-0f24-4777-90d9-06b01a93a716",
 		progressionUUID =	{
 								[1] = "837d45f1-17fb-407b-8c3c-ed83427036cf"
@@ -931,7 +931,7 @@ The Avariel and Grugach, as far as I know, were not released.",
 --
 	{
 		Name			=	"Myconid",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/5535",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/5535"},
 		modGuid			=	"71486ac7-a05c-434e-8e3b-9e6c2d40a04a",
 		progressionUUID =	{
 								[1] = "ada1a74c-89dd-45f9-95dd-f88bf59e3535"
@@ -946,7 +946,7 @@ The Avariel and Grugach, as far as I know, were not released.",
 --
 	{
 		Name			=	"Genasi",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/4741",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/4741"},
 		modGuid			=	"97954f72-711b-4938-a5ae-6a477b2ed574",
 		progressionUUID =	{
 								[1] = "e808d2a5-a9eb-403f-bab9-90a5114a699c"
@@ -957,7 +957,7 @@ The Avariel and Grugach, as far as I know, were not released.",
 	},
 	{
 		Name			=	"Genasi - Fire",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/4741",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/4741"},
 		modGuid			=	"97954f72-711b-4938-a5ae-6a477b2ed574",
 		progressionUUID =	{
 								[1] = "ce1b1155-fc91-4dde-9ebb-ec06c103b944"
@@ -969,7 +969,7 @@ The Avariel and Grugach, as far as I know, were not released.",
 	},
 	{
 		Name			=	"Genasi - Air",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/4741",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/4741"},
 		modGuid			=	"97954f72-711b-4938-a5ae-6a477b2ed574",
 		progressionUUID =	{
 								[1] = "1b933d13-bb4b-4806-97ed-92ef7dc75738"
@@ -981,7 +981,7 @@ The Avariel and Grugach, as far as I know, were not released.",
 	},
 	{
 		Name			=	"Genasi - Earth",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/4741",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/4741"},
 		modGuid			=	"97954f72-711b-4938-a5ae-6a477b2ed574",
 		progressionUUID =	{
 								[1] = "ffcdbf2d-9500-46a0-9827-a8898e7e0553"
@@ -993,7 +993,7 @@ The Avariel and Grugach, as far as I know, were not released.",
 	},
 	{
 		Name			=	"Genasi - Water",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/4741",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/4741"},
 		modGuid			=	"97954f72-711b-4938-a5ae-6a477b2ed574",
 		progressionUUID =	{
 								[1] = "ca4b22d5-24b2-43f2-a550-b9d9e7d4d7bc"
@@ -1008,7 +1008,7 @@ The Avariel and Grugach, as far as I know, were not released.",
 --
 	{
 		Name			=	"Half-Dragon",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/2634",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/2634"},
 		modGuid			=	"16ba58e4-3ee5-4cfd-81e8-5a9f6d3f6b46",
 		progressionUUID =	{
 								[1] = "72a06fbf-e1b3-4321-b975-a4a26d9b4b71"
@@ -1023,7 +1023,7 @@ The Avariel and Grugach, as far as I know, were not released.",
 --
 	{
 		Name			=	"Hobgoblin",
-		modURL			=	"https://github.com/GentlemanBabbo/Hobgoblin/tree/main",
+		modURL			=	{"https://github.com/GentlemanBabbo/Hobgoblin/tree/main"},
 		modGuid			=	"42152a0b-9b3c-4d63-8114-3ceba848f3e2",
 		progressionUUID =	{
 								[1] = "575fa3d3-cf83-4716-8cc3-8d971666b051"
@@ -1038,7 +1038,7 @@ The Avariel and Grugach, as far as I know, were not released.",
 --
 	{
 		Name			=	"Witch Elf",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/3490",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/3490"},
 		modGuid			=	"1aa49383-9208-4cc0-96b6-e827819d71d0",
 		progressionUUID =	{
 								[1] = "d19f42b3-1c1e-46cd-83e4-fd964426616f"
@@ -1053,7 +1053,7 @@ The Avariel and Grugach, as far as I know, were not released.",
 --
     {
         Name			=	"Satyr",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/428",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/428"},
         modGuid			=	"68315895-8bd4-4d53-aefc-1b853ffc1461",
         progressionUUID =	{
 								[1] = "eb3ac23d-3f7f-44d5-ad6a-bb99232d63bd"
@@ -1068,7 +1068,7 @@ The Avariel and Grugach, as far as I know, were not released.",
 --
     {
         Name			=	"Dhampir",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/4750",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/4750"},
         modGuid			=	"7a4aaaca-88a7-41c4-98d6-de2df39496fe",
         progressionUUID =	{
 								[1] = "58971151-461d-4556-8db7-5894af1dceb2"
@@ -1083,7 +1083,7 @@ The Avariel and Grugach, as far as I know, were not released.",
 --
     {
         Name			=	"Dhampir", -- look unused
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/4761",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/4761"},
         modGuid			=	"5114d845-2c0f-441c-a01b-91a1847a48bc",
         progressionUUID =	{
 								[1] = "b5f04836-e2ef-4eb6-93d5-4aad7f3b1c20", --Warning, conflit avec playable Undead (legacy) and Mori's Astral Elves
@@ -1094,7 +1094,7 @@ The Avariel and Grugach, as far as I know, were not released.",
     },
     {
         Name			=	"Dhampir - RU_SHI",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/4761",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/4761"},
         modGuid			=	"5114d845-2c0f-441c-a01b-91a1847a48bc",
         progressionUUID =	{
 								[1] = "042e6092-1602-4338-b6f9-cc7987f3bff4"
@@ -1107,7 +1107,7 @@ The Avariel and Grugach, as far as I know, were not released.",
     },
     {
         Name			=	"Dhampir - SVETOCHER",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/4761",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/4761"},
         modGuid			=	"5114d845-2c0f-441c-a01b-91a1847a48bc",
         progressionUUID =	{
 								[1] = "ceae071e-2ff2-4043-a2b8-a7fc1ab16065"
@@ -1119,7 +1119,7 @@ The Avariel and Grugach, as far as I know, were not released.",
     },
     {
         Name			=	"Dhampir - AJIBACHANA",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/4761",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/4761"},
         modGuid			=	"5114d845-2c0f-441c-a01b-91a1847a48bc",
         progressionUUID =	{
 								[1] = "65930b4d-75ca-4968-93b0-dde6662d5882"
@@ -1131,7 +1131,7 @@ The Avariel and Grugach, as far as I know, were not released.",
     },
     {
         Name			=	"Dhampir - ANCIENTBORN",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/4761",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/4761"},
         modGuid			=	"5114d845-2c0f-441c-a01b-91a1847a48bc",
         progressionUUID =	{
 								[1] = "ebd122f3-9223-4cc0-ac98-3810995dde9b"
@@ -1146,7 +1146,7 @@ The Avariel and Grugach, as far as I know, were not released.",
 --
     {
         Name			=	"Githzerai (1.4)",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/3460",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/3460"},
         modGuid			=	"ae6eacb7-f346-418f-89a9-f0e4c697baab",
         progressionUUID =	{
 								[1] = "8e8928df-70b1-43c0-bc86-40b32c455bee"
@@ -1158,7 +1158,7 @@ The Avariel and Grugach, as far as I know, were not released.",
     },
     {
         Name			=	"Githzerai (1.5)",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/3460",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/3460"},
         modGuid			=	"d6d1028e-68fb-4e94-83d8-e8951f55b86a",
         progressionUUID =	{
 								[1] = "8e8928df-70b1-43c0-bc86-40b32c455bee"
@@ -1173,7 +1173,7 @@ The Avariel and Grugach, as far as I know, were not released.",
 --
     {
         Name			=	"Fey Eladrin (Spirited Seasons)",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/7037",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/7037"},
         modGuid			=	"abc09812-ed4d-43ff-9a93-ee46487e81d9",
         progressionUUID =	{
 								[1] = "c2c089df-c622-4074-ab18-a4bde879a055"
@@ -1184,7 +1184,7 @@ The Avariel and Grugach, as far as I know, were not released.",
     },
     {
         Name			=	"Fey Eladrin - Winter (Spirited Seasons)",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/7037",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/7037"},
         modGuid			=	"abc09812-ed4d-43ff-9a93-ee46487e81d9",
         progressionUUID =	{
 								[1] = "83132733-dfd4-45d6-b117-8d33b5550c8e"
@@ -1196,7 +1196,7 @@ The Avariel and Grugach, as far as I know, were not released.",
     },
     {
         Name			=	"Fey Eladrin - Spring (Spirited Seasons)",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/7037",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/7037"},
         modGuid			=	"abc09812-ed4d-43ff-9a93-ee46487e81d9",
         progressionUUID =	{
 								[1] = "734b5fab-6654-49be-971a-e0d0ddede50d"
@@ -1208,7 +1208,7 @@ The Avariel and Grugach, as far as I know, were not released.",
     },
     {
         Name			=	"Fey Eladrin - Summer (Spirited Seasons)",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/7037",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/7037"},
         modGuid			=	"abc09812-ed4d-43ff-9a93-ee46487e81d9",
         progressionUUID =	{
 								[1] = "39d96060-532d-4814-9098-a6c0524d3b73"
@@ -1220,7 +1220,7 @@ The Avariel and Grugach, as far as I know, were not released.",
     },
     {
         Name			=	"Fey Eladrin - Autumn (Spirited Seasons)",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/7037",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/7037"},
         modGuid			=	"abc09812-ed4d-43ff-9a93-ee46487e81d9",
         progressionUUID =	{
 								[1] = "09e3d698-1ef6-46ef-b768-f19b94d46127"
@@ -1235,7 +1235,7 @@ The Avariel and Grugach, as far as I know, were not released.",
 --
     {
         Name			=	"Firbolgs",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/7757",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/7757"},
         modGuid			=	"ecfb9910-1b38-4bbc-a873-4f2812fff276",
         progressionUUID =	{
 								[1] = "7eede716-00f0-43aa-ad18-f001f8c7c283"
@@ -1250,7 +1250,7 @@ The Avariel and Grugach, as far as I know, were not released.",
 --
     {
         Name			=	"Enter Maztica: Sunstone Gnome Subrace",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/9205",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/9205"},
         modGuid			=	"7c7407ec-e2a8-4deb-a6dc-6cbc7bea2894",
         progressionUUID =	{
 								[1] = "3d7c0866-0357-43e1-ace0-b9c7f8bd90be"
@@ -1265,7 +1265,7 @@ The Avariel and Grugach, as far as I know, were not released.",
 --
     {
         Name			=	"Desert Dwarf",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/9210",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/9210"},
         modGuid			=	"1a3a0820-48e3-45b4-822a-7ee31e5d25c5",
         progressionUUID =	{
 								[1] = "75c28431-cd41-4256-af2e-0cadd4f8c2f8"
@@ -1280,7 +1280,7 @@ The Avariel and Grugach, as far as I know, were not released.",
 --
     {
         Name			=	"Tinker Gnome",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/9547",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/9547"},
         modGuid			=	"0b1613ac-1610-4ac4-ba8b-effe33317fd1",
         progressionUUID =	{
 								[1] = "a0ae2974-b54a-4e17-ba69-cde2f7448338"
@@ -1295,7 +1295,7 @@ The Avariel and Grugach, as far as I know, were not released.",
 --
     {
         Name			=	"Whisper Gnome",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/9546",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/9546"},
         modGuid			=	"f13d31f7-c897-494c-a988-bca2a71ccddc",
         progressionUUID =	{
 								[1] = "d45a8d46-8a68-4065-98da-9cc84bb2e3b1"
@@ -1310,7 +1310,7 @@ The Avariel and Grugach, as far as I know, were not released.",
 --
     {
         Name			=	"Ghostwise Halfling",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/8617",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/8617"},
         modGuid			=	"f8f5f704-d463-4616-a321-9460060538ff",
         progressionUUID =	{
 								[1] = "0194f214-ffce-4e74-94b6-09e76a270e49"
@@ -1325,7 +1325,7 @@ The Avariel and Grugach, as far as I know, were not released.",
 --
     {
         Name			=	"Wild Halfling",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/9211",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/9211"},
         modGuid			=	"9e7836a9-b1a9-4d4e-9089-563c43f4fb1e",
         progressionUUID =	{
 								[1] = "e8ccff14-10b6-43f7-bbfa-22ab2104f4fc"
@@ -1340,7 +1340,7 @@ The Avariel and Grugach, as far as I know, were not released.",
 --
     {
         Name			=	"Dryad",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/6443",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/6443"},
         modGuid			=	"e61be041-6c93-4576-a4b1-ad183e726f02",
         progressionUUID =	{
 								[1] = "c5671549-0282-4b60-a68d-47b676e9e2b9"
@@ -1351,7 +1351,7 @@ The Avariel and Grugach, as far as I know, were not released.",
     },
     {
         Name			=	"Dryad - Spring",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/6443",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/6443"},
         modGuid			=	"e61be041-6c93-4576-a4b1-ad183e726f02",
         progressionUUID =	{
 								[1] = "40fdbfe4-2f41-4609-bb4c-ddb7bc49b5c4"
@@ -1363,7 +1363,7 @@ The Avariel and Grugach, as far as I know, were not released.",
     },
     {
         Name			=	"Dryad - Summer",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/6443",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/6443"},
         modGuid			=	"e61be041-6c93-4576-a4b1-ad183e726f02",
         progressionUUID =	{
 								[1] = "64615482-5cd6-4bac-beba-bdd5dff19b89"
@@ -1375,7 +1375,7 @@ The Avariel and Grugach, as far as I know, were not released.",
     },
     {
         Name			=	"Dryad - Autumn",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/6443",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/6443"},
         modGuid			=	"e61be041-6c93-4576-a4b1-ad183e726f02",
         progressionUUID =	{
 								[1] = "9693b4ad-6ac7-401c-a6ab-5503785edfac"
@@ -1387,7 +1387,7 @@ The Avariel and Grugach, as far as I know, were not released.",
     },
     {
         Name			=	"Dryad - Winter",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/6443",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/6443"},
         modGuid			=	"e61be041-6c93-4576-a4b1-ad183e726f02",
         progressionUUID =	{
 								[1] = "40ef0562-ac1b-4c5c-9831-5e3c4ce04c20"
@@ -1402,7 +1402,7 @@ The Avariel and Grugach, as far as I know, were not released.",
 --
     {
         Name			=	"Whispers of the Fey - Changelings", -- SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,1)
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/3110",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/3110"},
         modGuid			=	"eaf83c50-1f22-4ce8-a825-25f07caf9faa",
         progressionUUID =	{
 								[1] = "fa7bf84a-a1d6-46b2-a779-739424d20b5b"
@@ -1418,7 +1418,7 @@ The Avariel and Grugach, as far as I know, were not released.",
 --
 	{
 		Name			=	"Goblins",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/3254",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/3254"},
 		modGuid			=	"ca81f091-bf1b-4bb6-90dd-1c4ef83fd798",
 		progressionUUID =	{
 								[1] = "fa9d4980-1b18-43e6-974b-4e3a2abae183"
@@ -1429,7 +1429,7 @@ The Avariel and Grugach, as far as I know, were not released.",
 	},
 	{
         Name			=	"Goblins Greenskin",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/3254",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/3254"},
         modGuid			=	"ca81f091-bf1b-4bb6-90dd-1c4ef83fd798",
         progressionUUID =	{
 								[1] = "5a317953-08ea-4424-ad93-05a0a66b4748"
@@ -1441,7 +1441,7 @@ The Avariel and Grugach, as far as I know, were not released.",
     },
     {
         Name			=	"Goblins Dankwood",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/3254",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/3254"},
         modGuid			=	"ca81f091-bf1b-4bb6-90dd-1c4ef83fd798",
         progressionUUID =	{
 								[1] = "453c15bb-0ead-4766-b747-961066c84ee1"
@@ -1456,7 +1456,7 @@ The Avariel and Grugach, as far as I know, were not released.",
 --
     {
         Name			=	"Yuan-ti",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/7922",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/7922"},
         modGuid			=	"b2d490bc-6e10-4bc2-89e0-69c8f68cd453",
         progressionUUID =	{
 								[1] = "139dba60-4895-496a-ab48-bbd45719f317"
@@ -1471,7 +1471,7 @@ The Avariel and Grugach, as far as I know, were not released.",
 --
     {
         Name			=	"Automaton Figgyinchains",
-		modURL			=	"https://github.com/GentlemanBabbo/Automaton/blob/main/",
+		modURL			=	{"https://github.com/GentlemanBabbo/Automaton/blob/main/"},
         modGuid			=	"a56867c9-8260-4685-b8a5-6cc94be41152",
         progressionUUID =	{
 								[1] = "3615e5db-c3ac-4b3b-bd01-f618d1cd95b5"
@@ -1486,7 +1486,7 @@ The Avariel and Grugach, as far as I know, were not released.",
 --
     {
         Name			=	"Imp",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/10849",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/10849"},
         modGuid			=	"4b268977-b9ec-47fd-95e7-9b977969ba28",
         progressionUUID =	{
 								[1] = "602818c4-ec05-4af9-9cb7-dedf06ec04a8"
@@ -1497,7 +1497,7 @@ The Avariel and Grugach, as far as I know, were not released.",
     },
     {
         Name			=	"Imp - Avernus",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/10849",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/10849"},
         modGuid			=	"4b268977-b9ec-47fd-95e7-9b977969ba28",
         progressionUUID =	{
 								[1] = "7ef3086e-0caa-4c31-ae61-03ff3f153c03"
@@ -1509,7 +1509,7 @@ The Avariel and Grugach, as far as I know, were not released.",
     },
     {
         Name			=	"Imp - Dis",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/10849",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/10849"},
         modGuid			=	"4b268977-b9ec-47fd-95e7-9b977969ba28",
         progressionUUID =	{
 								[1] = "ef5929ca-ed90-4050-9439-a9d0e080ee92"
@@ -1521,7 +1521,7 @@ The Avariel and Grugach, as far as I know, were not released.",
     },
     {
         Name			=	"Imp - Minauros",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/10849",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/10849"},
         modGuid			=	"4b268977-b9ec-47fd-95e7-9b977969ba28",
         progressionUUID =	{
 								[1] = "359d1af0-33b8-4949-b865-e7fb99e2590c"
@@ -1533,7 +1533,7 @@ The Avariel and Grugach, as far as I know, were not released.",
     },
     {
         Name			=	"Imp - Phlegethos",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/10849",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/10849"},
         modGuid			=	"4b268977-b9ec-47fd-95e7-9b977969ba28",
         progressionUUID =	{
 								[1] = "afbb84c9-612b-4300-a521-22abf2f65f06"
@@ -1545,7 +1545,7 @@ The Avariel and Grugach, as far as I know, were not released.",
     },
     {
         Name			=	"Imp - Stygia",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/10849",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/10849"},
         modGuid			=	"4b268977-b9ec-47fd-95e7-9b977969ba28",
         progressionUUID =	{
 								[1] = "c459c4d9-f97c-48db-b09d-c38482d03092"
@@ -1557,7 +1557,7 @@ The Avariel and Grugach, as far as I know, were not released.",
     },
     {
         Name			=	"Imp - Malbolge",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/10849",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/10849"},
         modGuid			=	"4b268977-b9ec-47fd-95e7-9b977969ba28",
         progressionUUID =	{
 								[1] = "ba346fb4-ddcf-45d8-9d61-1818763b710c"
@@ -1569,7 +1569,7 @@ The Avariel and Grugach, as far as I know, were not released.",
     },
     {
         Name			=	"Imp - Maladomini",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/10849",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/10849"},
         modGuid			=	"4b268977-b9ec-47fd-95e7-9b977969ba28",
         progressionUUID =	{
 								[1] = "f568ce77-922d-47ed-9163-05c4c1eb8fa6"
@@ -1581,7 +1581,7 @@ The Avariel and Grugach, as far as I know, were not released.",
     },
     {
         Name			=	"Imp - Cania",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/10849",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/10849"},
         modGuid			=	"4b268977-b9ec-47fd-95e7-9b977969ba28",
         progressionUUID =	{
 								[1] = "764e9049-246b-42f9-a71d-6b13272b34d7"
@@ -1593,7 +1593,7 @@ The Avariel and Grugach, as far as I know, were not released.",
     },
     {
         Name			=	"Imp - Nessus",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/10849",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/10849"},
         modGuid			=	"4b268977-b9ec-47fd-95e7-9b977969ba28",
         progressionUUID =	{
 								[1] = "f157b7c5-95fb-43dd-a32b-02b9c710d637"
@@ -1608,7 +1608,7 @@ The Avariel and Grugach, as far as I know, were not released.",
 --
     {
         Name			=	"Avariel Elf",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/3680",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/3680"},
         modGuid			=	"11675ee8-a7be-443b-9edb-125f33d21ce1",
         progressionUUID =	{
 								[1] = "77b6f9ec-7d6a-44b2-b110-88bf025eb586"
@@ -1624,7 +1624,7 @@ The Avariel and Grugach, as far as I know, were not released.",
 --
     {
         Name			=	"Orc Half-Elf",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/5943",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/5943"},
         modGuid			=	"d25f0ed3-efe7-4194-bdc6-671f784d7cef",
         progressionUUID =	{
 								[1] = "128ae023-fef6-4fa1-ade9-e338e60b8b56"
@@ -1639,7 +1639,7 @@ The Avariel and Grugach, as far as I know, were not released.",
 --
     {
         Name			=	"Skeleton race Rexsaze (playableundead)",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/4949",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/4949"},
         modGuid			=	"315ce1a1-0f24-4777-90d9-06b01a93a716",
         progressionUUID =	{
 								[1] = "042e6092-1602-4338-b6f9-cc7987f3bff4"
@@ -1651,7 +1651,7 @@ The Avariel and Grugach, as far as I know, were not released.",
     },
 	{
         Name 			= 	"Adapted Kender Race from Dragonlance: Shadow of the Dragon Queen",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/8465",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/8465"},
         modGuid 		= 	"56fe7a47-e0d6-404e-b2d5-fd6e88cae6ae",
         progressionUUID =	{
 								[1] = "7551c355-8311-4c2f-b91b-9877ef608267"
@@ -1677,7 +1677,7 @@ __________.__  __    __              __________                  __       _____ 
 --
 	{
 		Name			=	"Assassin Drow",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/3485",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/3485"},
 		modGuid			=	"76015234-1bb4-42dc-adb9-c86c7f4cbb39",
 		progressionUUID =	{
 								[1] = "4a634f24-bdcb-4559-b8be-7847133ad1c3"
@@ -1701,7 +1701,7 @@ __________.__  __    __              __________                  __       _____ 
 --[[
 {
         Name			=	"Undead (Ghastly Ghouls) MAIN",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/5895",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/5895"},
         modGuid			=	"f3d4e722-e576-43ce-a585-cfffcfcbcf40",
         progressionUUID =	{
 								[1] = ""
@@ -1714,7 +1714,7 @@ __________.__  __    __              __________                  __       _____ 
 
 	{
         Name			=	"Undead (Ghastly Ghouls) Lich",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/5895",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/5895"},
         modGuid			=	"f3d4e722-e576-43ce-a585-cfffcfcbcf40",
         progressionUUID =	{
 								[1] = "7123242e-9e00-4b9e-8e4f-aa1b0477fe13"
@@ -1726,7 +1726,7 @@ __________.__  __    __              __________                  __       _____ 
     },
 	{
         Name			=	"Undead (Ghastly Ghouls) Ghoul",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/5895",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/5895"},
         modGuid			=	"f3d4e722-e576-43ce-a585-cfffcfcbcf40",
         progressionUUID =	{
 								[1] = "cfabed72-38b8-424d-a07d-058fbd4dd1a9"
@@ -1738,7 +1738,7 @@ __________.__  __    __              __________                  __       _____ 
     },
 	{
         Name			=	"Undead (Ghastly Ghouls) Mummy",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/5895",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/5895"},
         modGuid			=	"f3d4e722-e576-43ce-a585-cfffcfcbcf40",
         progressionUUID =	{
 								[1] = "3a4465df-49a2-4278-9d16-f17ed876aede"
@@ -1750,7 +1750,7 @@ __________.__  __    __              __________                  __       _____ 
     },
 	{
         Name			=	"Undead (Ghastly Ghouls) Wight",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/5895",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/5895"},
         modGuid			=	"f3d4e722-e576-43ce-a585-cfffcfcbcf40",
         progressionUUID =	{
 								[1] = "677de788-81da-4f2f-b0d1-75c6aa9a1c35", -- SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,1);
@@ -1774,7 +1774,7 @@ ___________              __                   __  .__              .__       ___
 
 	{
 		Name 			=	"Variant Human - Fantastical",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/215",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/215"},
 		modGuid			=	"5e53f556-ba7a-46fd-9dee-ba1ff456d8db",
 		progressionUUID =	{
 								[1] = "0b88cad4-c5d0-4cde-a661-a8ede3f7d113"
@@ -1788,7 +1788,7 @@ ___________              __                   __  .__              .__       ___
 	},
 	{
 		Name			=	"Fantastical Astral Elf",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/215",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/215"},
 		modGuid			=	"e7071309-78a8-4fad-949b-d4dd326dd39b",
 		progressionUUID =	{
 								[1] = "06e918ad-be2c-48b6-a098-0288539de744"
@@ -1800,7 +1800,7 @@ ___________              __                   __  .__              .__       ___
 	},
 	{
 		Name			=	"Fantastical Reborn(Humanoid)",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/215",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/215"},
 		modGuid			=	"07a0478e-ba76-4fc7-a671-1c13c66ede2e",
 		progressionUUID =	{
 								[1] = "1253592f-5c8b-41b5-9ae7-b83b08ab92bb"
@@ -1812,7 +1812,7 @@ ___________              __                   __  .__              .__       ___
 	},
 	{
 		Name			=	"Fantastical Downcast",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/215",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/215"},
 		modGuid			=	"21d14d75-2e99-4e85-82ad-7139c69b85fe",
 		progressionUUID =	{
 								[1] = "aa03e8ed-a301-4e4a-bfde-ff7144e1fbb1"
@@ -1824,7 +1824,7 @@ ___________              __                   __  .__              .__       ___
 	},
 	{
 		Name			=	"Fantastical Elezen",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/215",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/215"},
 		modGuid			=	"3b7799fa-3dc0-47da-bf9f-fc590f7e2cdf",
 		progressionUUID =	{
 								[1] = "9be04b6b-c89f-4e67-8431-d0cd9b97db15"
@@ -1836,7 +1836,7 @@ ___________              __                   __  .__              .__       ___
 	},
 	{
 		Name			=	"Fantastical Dhampir(Lineage)",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/215",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/215"},
 		modGuid			=	"f34c3aca-0b14-4001-af29-27e130cf5c5c",
 		progressionUUID =	{
 								[1] = "de9b4cc2-94af-46d8-ab7d-31b00d81df03"
@@ -1848,7 +1848,7 @@ ___________              __                   __  .__              .__       ___
 	},
 	{
 		Name			=	"Fantastical Orc",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/215",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/215"},
 		modGuid			=	"9cbbf22a-2af4-48c7-970a-fb61a6c20b15",
 		progressionUUID =	{
 								[1] = "6c7094a4-bc8c-4613-9de6-5d9edec8e403"
@@ -1860,7 +1860,7 @@ ___________              __                   __  .__              .__       ___
 	},
 	{
 		Name			=	"Fantastical Kender",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/215",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/215"},
 		modGuid			=	"4508d3bd-e721-47a4-894d-0e61c7b0380d",
 		progressionUUID =	{
 								[1] = "727ce5d7-2c90-4cbb-bd52-6bd45067e27b"
@@ -1872,7 +1872,7 @@ ___________              __                   __  .__              .__       ___
 	},
 	{
 		Name			=	"Fantastical Water Genasi",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/215",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/215"},
 		modGuid			=	"95d5279b-e063-459d-81d2-d4fa0cec27ca",
 		progressionUUID =	{
 								[1] = "43759dcb-f50f-4c22-906c-d79c40a3dbb0"
@@ -1884,7 +1884,7 @@ ___________              __                   __  .__              .__       ___
 	},
 	{
 		Name			=	"Fantastical Shadar-kai",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/215",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/215"},
 		modGuid			=	"6abf0f64-62d6-4e80-a141-5582e29783e7",
 		progressionUUID =	{
 								[1] = "24991da3-14d0-4c65-85c6-9c62168415eb"
@@ -1896,7 +1896,7 @@ ___________              __                   __  .__              .__       ___
 	},
 	{
 		Name			=	"Fantastical Air Genasi",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/215",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/215"},
 		modGuid			=	"35fd2505-5eff-45c5-96e9-98d848f35da4",
 		progressionUUID =	{
 								[1] = "58af38d8-b039-4a75-91fa-4ef079318d8b"
@@ -1908,7 +1908,7 @@ ___________              __                   __  .__              .__       ___
 	},
 	{
 		Name			=	"Fantastical Earth Genasi",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/215",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/215"},
 		modGuid			=	"3fe9bc5e-2723-4044-a06b-060aed98e40b",
 		progressionUUID =	{
 								[1] = "47372143-e2a7-4cc5-9810-7caea80bd46a"
@@ -1920,7 +1920,7 @@ ___________              __                   __  .__              .__       ___
 	},
 	{
 		Name			=	"Fantastical Firbolg",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/215",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/215"},
 		modGuid			=	"2b5c5a5b-5da3-4c65-b852-92ff75dda75a",
 		progressionUUID =	{
 								[1] = "003cf78d-7db5-444e-9a2f-e41f9836c8c3"
@@ -1932,7 +1932,7 @@ ___________              __                   __  .__              .__       ___
 	},
 	{
 		Name			=	"Fantastical Fire Genasi",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/215",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/215"},
 		modGuid			=	"410f1b65-e8a1-4f13-b4e8-ae25e5460a7e",
 		progressionUUID =	{
 								[1] = "5a33238e-313f-4cce-8bac-f36db533b704"
@@ -1944,7 +1944,7 @@ ___________              __                   __  .__              .__       ___
 	},
 	{
 		Name			=	"Fantastical Githzerai",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/215",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/215"},
 		modGuid			=	"dc812cdf-7fdb-4372-81c7-72df0e00f542",
 		progressionUUID =	{
 								[1] = "8ffe5132-b5ad-424c-befb-eb4fc640a18b"
@@ -1956,7 +1956,7 @@ ___________              __                   __  .__              .__       ___
 	},
 	{
 		Name			=	"Fantastical Goliath",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/215",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/215"},
 		modGuid			=	"ff15d50f-57d4-48d9-80ce-0ee75a669010",
 		progressionUUID =	{
 								[1] = "d3ca9791-8f41-4819-9e2e-5c3f6dfb7778"
@@ -1968,7 +1968,7 @@ ___________              __                   __  .__              .__       ___
 	},
 	{
 		Name			=	"Fantastical Kobold",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/215",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/215"},
 		modGuid			=	"d41e6098-288c-49ba-a861-1ab082f8e4b9",
 		progressionUUID =	{
 								[1] = "9572fef0-12c6-4730-94ad-1471d54e7172"
@@ -1980,7 +1980,7 @@ ___________              __                   __  .__              .__       ___
 	},
 	{
 		Name			=	"Fantastical Lizardfolk",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/215",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/215"},
 		modGuid			=	"44aeee6c-5a35-4733-89a1-420451c6a559",
 		progressionUUID =	{
 								[1] = "fc81b68e-2835-4791-8a22-bfedee977765"
@@ -1992,7 +1992,7 @@ ___________              __                   __  .__              .__       ___
 	},
 	{
 		Name			=	"Fantastical Minotaur",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/215",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/215"},
 		modGuid			=	"35e9d7e9-716d-4fdb-8b0b-6dac2526389d",
 		progressionUUID =	{
 								[1] = "82319b4e-f38e-49b0-81cd-59953d54d824"
@@ -2004,7 +2004,7 @@ ___________              __                   __  .__              .__       ___
 	},
 	{
 		Name			=	"Fantastical Sea Elf",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/215",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/215"},
 		modGuid			=	"13871336-692e-4af3-9e52-68cdf58330fb",
 		progressionUUID =	{
 								[1] = "08bcd922-ef05-49e0-8e6f-3f6574c4d54c"
@@ -2016,7 +2016,7 @@ ___________              __                   __  .__              .__       ___
 	},
 	{
 		Name			=	"Fantastical Triton",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/215",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/215"},
 		modGuid			=	"41e6aeb8-e8ae-41b8-b303-8ad2f8b43f61",
 		progressionUUID =	{
 								[1] = "328aafb6-9e72-4702-b3ab-10bdbc5e953e"
@@ -2028,7 +2028,7 @@ ___________              __                   __  .__              .__       ___
 	},
 	{
 		Name			=	"Fantastical Yuan-ti",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/215",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/215"},
 		modGuid			=	"bea5a09a-b394-4a52-9166-659cbc1bf183",
 		progressionUUID =	{
 								[1] = "3fbd5365-bb01-4741-965d-2be2f11156bd"
@@ -2040,7 +2040,7 @@ ___________              __                   __  .__              .__       ___
 	},
 	{
 		Name			=	"Fantastical Ogresh",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/215",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/215"},
 		modGuid			=	"0cc2683d-c407-40d6-ad65-8c5f95d7ef4b",
 		progressionUUID =	{
 								[1] = "11d3fa5d-3e88-4c8c-b21c-e183d7208533"
@@ -2052,7 +2052,7 @@ ___________              __                   __  .__              .__       ___
 	},
 	{
 		Name			=	"Fantastical Yuan-ti Pureblood",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/215",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/215"},
 		modGuid			=	"94710eae-8809-42fe-ab17-5681ceae8714",
 		progressionUUID =	{
 								[1] = "69a8edff-fdec-4ef5-aeb6-dcb15562b062"
@@ -2064,7 +2064,7 @@ ___________              __                   __  .__              .__       ___
 	},
 	{
 		Name			=	"Fantastical Pallid Elf",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/215",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/215"},
 		modGuid			=	"02ad19d9-bb24-44a6-9693-35cec821774c",
 		progressionUUID =	{
 								[1] = "82704351-c1d6-4767-adef-49e25a290aad"
@@ -2076,7 +2076,7 @@ ___________              __                   __  .__              .__       ___
 	},
 	{
 		Name			=	"Fantastical Vedalken",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/215",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/215"},
 		modGuid			=	"58474556-4b69-494d-b290-1421010d1742",
 		progressionUUID =	{
 								[1] = "d17424ad-839d-4733-b16d-f7cb007c865f"
@@ -2088,7 +2088,7 @@ ___________              __                   __  .__              .__       ___
 	},
 	{
 		Name			=	"Fantastical Kobold Legacy",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/215",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/215"},
 		modGuid			=	"866dee81-42b5-4647-9fb7-ec39271f6c96",
 		progressionUUID =	{
 								[1] = "ee0bbb70-b8f7-44ec-9419-565ab963f664"
@@ -2100,7 +2100,7 @@ ___________              __                   __  .__              .__       ___
 	},
 	{
 		Name			=	"Fantastical Kalashtar",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/215",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/215"},
 		modGuid			=	"cbd0f091-d2a7-4569-bdf8-56511cea3076",
 		progressionUUID =	{
 								[1] = "0e35ec74-a63c-4d24-8912-4afa4a9930d8"
@@ -2112,7 +2112,7 @@ ___________              __                   __  .__              .__       ___
 	},
 	{
 		Name			=	"Fantastical Bugbear",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/215",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/215"},
 		modGuid			=	"f4361c10-b197-4490-ae30-06ce796f950e",
 		progressionUUID =	{
 								[1] = "d01d244f-3ae2-4d15-b0ba-9aed04fc16ac"
@@ -2135,7 +2135,7 @@ ___________.__       ___.                          ___________                  
 
 	{
 		Name			=	"Amethyst Dragonborn",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/1793",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/1793"},
 		modGuid			=	"1e64a434-4318-42fe-9388-e6aa49505094",
 		progressionUUID =	{
 								[1] = "862da67a-a65a-4cae-b9da-aceb974bc6e2"
@@ -2147,7 +2147,7 @@ ___________.__       ___.                          ___________                  
 	},
 	{
 		Name			=	"Crystal Dragonborn",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/1793",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/1793"},
 		modGuid			=	"1e64a434-4318-42fe-9388-e6aa49505094",
 		progressionUUID =	{
 								[1] = "f416a104-9a39-47ee-a96f-755f60f63d3e"
@@ -2159,7 +2159,7 @@ ___________.__       ___.                          ___________                  
 	},
 	{
 		Name			=	"Emerald Dragonborn",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/1793",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/1793"},
 		modGuid			=	"1e64a434-4318-42fe-9388-e6aa49505094",
 		progressionUUID =	{
 								[1] = "8c099c31-cc1b-4aa2-b6ba-43b46b607e5d"
@@ -2171,7 +2171,7 @@ ___________.__       ___.                          ___________                  
 	},
 	{
 		Name			=	"Sapphire Dragonborn",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/1793",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/1793"},
 		modGuid			=	"1e64a434-4318-42fe-9388-e6aa49505094",
 		progressionUUID =	{
 								[1] = "aff81767-f832-4599-b980-e4123cec0306"
@@ -2183,7 +2183,7 @@ ___________.__       ___.                          ___________                  
 	},
 	{
 		Name			=	"Topaz Dragonborn",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/1793",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/1793"},
 		modGuid			=	"1e64a434-4318-42fe-9388-e6aa49505094",
 		progressionUUID =	{
 								[1] = "f9d85bdb-2930-42b9-ace1-78b9187e8546"
@@ -2205,7 +2205,7 @@ ____________________ ________  ________ ________                                
 ]]--
 	{
 		Name			=	"Pink Dragonborn",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/2116",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/2116"},
 		modGuid			=	"05fa72c7-be18-4398-b0c6-a5c11fc897f6",
 		progressionUUID =	{
 								[1] = "50ee17bb-bc53-4d03-8100-0dd6c6bb48f8"
@@ -2217,7 +2217,7 @@ ____________________ ________  ________ ________                                
 	},
 	{
 		Name			=	"Shadow Dragonborn",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/2116",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/2116"},
 
 		modGuid			=	"05fa72c7-be18-4398-b0c6-a5c11fc897f6",
 		progressionUUID =	{
@@ -2230,7 +2230,7 @@ ____________________ ________  ________ ________                                
 	},
 	{
 		Name			=	"Solar Dragonborn",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/2116",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/2116"},
 		modGuid			=	"05fa72c7-be18-4398-b0c6-a5c11fc897f6",
 		progressionUUID =	{
 								[1] = "a36bfa8a-afeb-4ff3-9985-8726cc45a8c8"
@@ -2242,7 +2242,7 @@ ____________________ ________  ________ ________                                
 	},
 	{
 		Name			=	"Lunar Dragonborn",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/2116",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/2116"},
 		modGuid			=	"05fa72c7-be18-4398-b0c6-a5c11fc897f6",
 		progressionUUID =	{
 								[1] = "edfcb043-f704-4a84-a5ba-a9098787eb81"
@@ -2254,7 +2254,7 @@ ____________________ ________  ________ ________                                
 	},
 	{
 		Name			=	"Deep Dragonborn",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/2116",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/2116"},
 		modGuid			=	"05fa72c7-be18-4398-b0c6-a5c11fc897f6",
 		progressionUUID =	{
 								[1] = "097c8ee7-0525-4a9f-b614-24d1dd46aac6"
@@ -2266,7 +2266,7 @@ ____________________ ________  ________ ________                                
 	},
 	{
 		Name			=	"Moonstone Dragonborn",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/2116",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/2116"},
 		modGuid			=	"05fa72c7-be18-4398-b0c6-a5c11fc897f6",
 		progressionUUID =	{
 								[1] = "c990525f-e49b-4f82-b31f-e5dff0afed0a"
@@ -2278,7 +2278,7 @@ ____________________ ________  ________ ________                                
 	},
 	{
 		Name			=	"Grey Dragonborn",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/2116",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/2116"},
 		modGuid			=	"05fa72c7-be18-4398-b0c6-a5c11fc897f6",
 		progressionUUID =	{
 								[1] = "f011eebf-9545-4972-98d1-841c61b0ccae"
@@ -2290,7 +2290,7 @@ ____________________ ________  ________ ________                                
 	},
 	{
 		Name			=	"Yellow Dragonborn",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/2116",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/2116"},
 		modGuid			=	"05fa72c7-be18-4398-b0c6-a5c11fc897f6",
 		progressionUUID =	{
 								[1] = "f75743c6-8a0e-49a6-b9b1-4a001ea0ffb2"
@@ -2302,7 +2302,7 @@ ____________________ ________  ________ ________                                
 	},
 	{
 		Name			=	"Orange Dragonborn",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/2116",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/2116"},
 		modGuid			=	"05fa72c7-be18-4398-b0c6-a5c11fc897f6",
 		progressionUUID =	{
 								[1] = "039b3255-28c6-43a1-a40c-4fbbec842cb4"
@@ -2314,7 +2314,7 @@ ____________________ ________  ________ ________                                
 	},
 	{
 		Name			=	"Purple Dragonborn",
-		modURL			=	"https://www.nexusmods.com/baldursgate3/mods/2116",
+		modURL			=	{"https://www.nexusmods.com/baldursgate3/mods/2116"},
 		modGuid			=	"05fa72c7-be18-4398-b0c6-a5c11fc897f6",
 		progressionUUID =	{
 								[1] = "19f4eded-03fb-4363-90c2-689bff080c4b"
