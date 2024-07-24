@@ -26,8 +26,9 @@ RaceMod = _Class:Create("RaceMod")
 ---@param stats table
 ---@param sab table
 ---@param bonus table
+---@param NoDefStats boolean
 function RaceMod:New(name, modURL, modGuid, progressionUUID, author, sourceBook, mainRace, specialAbList, stats,
- sab, bonus)
+ sab, bonus, NoDefStats)
     local self           = setmetatable({}, RaceMod)
     self.name            = name
     self.modURL          = modURL or nil
@@ -41,13 +42,19 @@ function RaceMod:New(name, modURL, modGuid, progressionUUID, author, sourceBook,
     self.sab             = sab or nil
     self.bonus           = bonus or nil
     self.statsList       = {"Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma"}
-
+    self.NoDefStats      = NoDefStats or false
 end
 
 --- Get Name of RaceMod
 ---@return string self.name
 function RaceMod:GetName()
     return self.name
+end
+
+--- Get NoDefStats of RaceMod
+---@return boolean self.NoDefStats
+function RaceMod:GetNoDefStats()
+    return self.NoDefStats
 end
 
 --- Get ModURL of ClasseMod

@@ -71,7 +71,7 @@ local fixAsi = {}  -- Table to store classes with removed shit asi
 
             payload = VCHelpers.CF:InsertSelectorsPayload(RaceMod:GetModGuid(), RaceMod:GetProgressionUUID(lvl), AbilityListUUID, RaceMod:GetSab(), table.getLength(RaceMod:GetSab()))
 
-            table.insert(fixAsi, raceMod.name) -- Add to the list if ASI Fixed
+            table.insert(fixAsi, RaceMod:GetName()) -- Add to the list if ASI Fixed
 
             if VCHelpers.CF:checkSCF() then
                 Mods.SubclassCompatibilityFramework.Api.InsertSelectors(payload)
@@ -79,14 +79,14 @@ local fixAsi = {}  -- Table to store classes with removed shit asi
             end
         end
 	end
-	if raceMod.stats ~= nil then
+	if RaceMod:GetStats() ~= nil then
         local payload = {}
-        if raceMod.modGuid and VCHelpers.ModVars:isModLoaded(RaceMod:GetModGuid()) then
+        if RaceMod:GetModGuid() and VCHelpers.ModVars:isModLoaded(RaceMod:GetModGuid()) then
 
             local raceModStats = TableInsertRaceStats()
             payload = VCHelpers.CF:addStringPayload(RaceMod:GetModGuid(), RaceMod:GetProgressionUUID(lvl), "Boosts", raceModStats)
 
-            if raceMod.stats ~= nil and raceMod.sab == nil then
+            if RaceMod:GetStats() ~= nil and RaceMod:GetSab() == nil then
                 table.insert(fixAsi, RaceMod:GetName()) -- Add to the list if ASI Fixed
             end
 
@@ -163,7 +163,7 @@ local function classe5eModule()
     for _, classeMod in ipairs(ClassesLibrary) do
         ClasseMod:New(classeMod.Name, classeMod.modURL, classeMod.modGuid, classeMod.progressionUUID, classeMod.Author,
         classeMod.SourceBook, classeMod.MainClasse, classeMod.isLvl20, classeMod.isOutdated)
-        RAWarn(1, string.format("============> ERROR: classeMod.progressionUUID %s.",table.dump(classeMod.progressionUUID)))
+        RAWarn(1, string.format("============> ERROR: classeMod.progressionUUID %s.",table.dump(ClasseMod:GetProgressionUUID())))
         RemoveClassesASI(1)
     end
 end
@@ -178,26 +178,26 @@ local function race5eModule()
             CleanOnRacesStatsLoaded(1)
             InsertDefaultPayloadASI(1)
         else
-            if VCHelpers.ModVars:isModExist(deps.Framework_GUID, raceMod.modGuid) then -- présent dans isLoaded
-                if raceMod.SourceBook == nil or raceMod.SourceBook == "" then
+            if VCHelpers.ModVars:isModExist(deps.Framework_GUID, RaceMod:GetModGuid()) then -- présent dans isLoaded
+                if RaceMod:GetSourceBook() == nil or RaceMod:GetSourceBook() == "" then
                     if PatchAsiHomebrew == true then
                         CleanOnRacesStatsLoaded(1)
                         InsertPayloadRaceASI(1)
                     else
                         --desactive moi ce putain de mod Connard function
-                        if raceMod.NoDefStats == true then
+                        if RaceMod:GetNoDefStats() == true then
                             InsertDefaultPayloadASI(1)
                         end
-                        RADebug(2, string.format("%s Wasn't fixed. You uncheck Homebrew", raceMod.Name))
+                        RADebug(2, string.format("%s Wasn't fixed. You uncheck Homebrew", RaceMod:GetName()))
                     end
                 end
                 for _, book in pairs(Dnd5eLimited) do
-                    if book.bookRef == raceMod.SourceBook then
+                    if book.bookRef == RaceMod:GetSourceBook() then
                         if PatchAsi5eLimited == true then
                             CleanOnRacesStatsLoaded(1)
                             InsertPayloadRaceASI(1)
                         else
-                            if raceMod.NoDefStats == true then
+                            if RaceMod:GetNoDefStats() == true then
                                 InsertDefaultPayloadASI(1)
                             end
                                 RADebug(2, string.format("%s Wasn't fixed. You uncheck Fix 5e Limited", raceMod.Name))
@@ -205,12 +205,12 @@ local function race5eModule()
                     end
                 end
                 for _, book in pairs(Dnd5e) do
-                    if book.bookRef == raceMod.SourceBook then
+                    if book.bookRef == RaceMod:GetSourceBook() then
                         if PatchAsi5e == true then
                             CleanOnRacesStatsLoaded(1)
                             InsertPayloadRaceASI(1)
                         else
-                            if raceMod.NoDefStats == true then
+                            if RaceMod:GetNoDefStats() == true then
                                 InsertDefaultPayloadASI(1)
                             end
                             RADebug(2, string.format("%s Wasn't fixed. You uncheck Fix 5e", raceMod.Name))
@@ -218,41 +218,41 @@ local function race5eModule()
                     end
                 end
                 for _, book in pairs(Dnd5eExtended) do
-                    if book.bookRef == raceMod.SourceBook then
+                    if book.bookRef == RaceMod:GetSourceBook() then
                         if PatchAsi5eExtended == true then
                             CleanOnRacesStatsLoaded(1)
                             InsertPayloadRaceASI(1)
                         else
-                            if raceMod.NoDefStats == true then
+                            if RaceMod:GetNoDefStats() == true then
                                 InsertDefaultPayloadASI(1)
                             end
-                            RADebug(2, string.format("%s Wasn't fixed. You uncheck Fix 5e Extended", raceMod.Name))
+                            RADebug(2, string.format("%s Wasn't fixed. You uncheck Fix 5e Extended", RaceMod:GetName()))
                         end
                     end
                 end
                 for _, book in pairs(Legacy) do
-                    if book.bookRef == raceMod.SourceBook then
+                    if book.bookRef == RaceMod:GetSourceBook() then
                         if PatchAsiLegacy == true then
                             CleanOnRacesStatsLoaded(1)
                             InsertPayloadRaceASI(1)
                         else
-                            if raceMod.NoDefStats == true then
+                            if RaceMod:GetNoDefStats() == true then
                                 InsertDefaultPayloadASI(1)
                             end
-                            RADebug(2, string.format("%s Wasn't fixed. You uncheck Fix 5e Legacy", raceMod.Name))
+                            RADebug(2, string.format("%s Wasn't fixed. You uncheck Fix 5e Legacy", RaceMod:GetName()))
                         end
                     end
                 end
                 for _, book in pairs(Flavours) do
-                    if book.bookRef == raceMod.SourceBook then
+                    if book.bookRef == RaceMod:GetSourceBook() then
                         if PatchAsiFlavour == true then
                             CleanOnRacesStatsLoaded(1)
                             InsertPayloadRaceASI(1)
                         else
-                            if raceMod.NoDefStats == true then
+                            if RaceMod:GetNoDefStats() == true then
                                 InsertDefaultPayloadASI(1)
                             end
-                            RADebug(2, string.format("%s Wasn't fixed. You uncheck Fix Flavours", raceMod.Name))
+                            RADebug(2, string.format("%s Wasn't fixed. You uncheck Fix Flavours", RaceMod:GetName()))
                         end
                     end
                 end
