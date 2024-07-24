@@ -4,14 +4,14 @@ local function checkHumanFM()
         return {
 			humanMainRace	=	false,
 			humanUUID		=	"139e1b8c-dfa1-4b2d-895c-efb170736093", --Human default Fantastic M
-			modGuid				=	deps.Framework_FM_GUID,
+			modGuid			=	deps.Framework_FM_GUID,
 			Author			=	"Fantastic Multiverse",
         }
 	else
         return {
 			humanMainRace	=	true,
 			humanUUID		=	"dbde4d66-d3e4-4c3f-ae87-fd6e2d1cd276", --Human default Larian,
-			modGuid				=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
+			modGuid			=	"28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8", --GustavDev modGuid
 			Author			=	"Larian"
         }
 	end
@@ -516,26 +516,6 @@ RaceLibrary = {
 		MainRace			=	false,
 		Stats				=	{"2", "0", "0", "0", "0", "1"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 	},
-	--[[
-
-		TAG ?? not a race ??
-
-		Full-illithid !!!!!! Ability Score Increase. Your Intelligence score increases by 2, and either your Wisdom or Charisma score increases by 1.
-		modURL				=	{"https://bg3.wiki/wiki/Full-illithid", "https://baldursgate3.wiki.fextralife.com/Full-illithid"},
-		Stats			=	{"1", "0", "0", "2", "0", "0"},
-		Sab				=	{"1"}
-
-		ability uuid 002d957b-ed24-4efa-afdb-ccf86bac00dd
-
-
-		Partial-illithid   !!!! Ability Score Increase. Your Intelligence score increases by 2, and either your Wisdom or Charisma score increases by 1.
-		modURL				=	{"https://bg3.wiki/wiki/Partial-illithid", "https://baldursgate3.wiki.fextralife.com/Partial-illithid"},
-		Stats			=	{"0", "0", "0", "2", "0", "0"},
-		Sab				=	{"1"}
-
-		ability uuid 002d957b-ed24-4efa-afdb-ccf86bac00dd
-   },  ]]--
-
 	{
 		Name				=	"Half-Orc default",
 		modURL				=	{"https://bg3.wiki/wiki/Half-Orc", "https://baldursgate3.wiki.fextralife.com/Half-Orc"},
@@ -565,6 +545,25 @@ RaceLibrary = {
 		MainRace			=	true,
 		Stats				=	{"2", "0", "0", "1", "0", "0"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
 	},
+	--[[
+
+		TAG ?? not a race ??
+
+		Full-illithid !!!!!! Ability Score Increase. Your Intelligence score increases by 2, and either your Wisdom or Charisma score increases by 1.
+		modURL				=	{"https://bg3.wiki/wiki/Full-illithid", "https://baldursgate3.wiki.fextralife.com/Full-illithid"},
+		Stats			=	{"1", "0", "0", "2", "0", "0"},
+		Sab				=	{"1"}
+
+		ability uuid 002d957b-ed24-4efa-afdb-ccf86bac00dd
+
+
+		Partial-illithid   !!!! Ability Score Increase. Your Intelligence score increases by 2, and either your Wisdom or Charisma score increases by 1.
+		modURL				=	{"https://bg3.wiki/wiki/Partial-illithid", "https://baldursgate3.wiki.fextralife.com/Partial-illithid"},
+		Stats			=	{"0", "0", "0", "2", "0", "0"},
+		Sab				=	{"1"}
+
+		ability uuid 002d957b-ed24-4efa-afdb-ccf86bac00dd
+   },  ]]--
 
 --[[
    _____    ______________________________.____      ___________.__        _____.__  .__
