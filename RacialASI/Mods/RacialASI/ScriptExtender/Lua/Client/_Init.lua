@@ -100,7 +100,7 @@ else
             PatchAsiHomebrew   = mcmVarsBooksSettings["PatchAsiHomebrew"]
             PatchAsiDefault    = mcmVarsBooksSettings["PatchAsiDefault"]
 
-            DebugLevel = mcmVarsGeneralSettings["debug_level"]
+            DebugLevel = mcmVarsGeneralSettings["Debug_level"]
             Log = mcmVarsGeneralSettings["Log"]
 
             MCMASIAPI:OnSessionLoadedMCM()

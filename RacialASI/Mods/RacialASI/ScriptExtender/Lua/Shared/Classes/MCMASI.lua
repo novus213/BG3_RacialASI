@@ -129,7 +129,6 @@ end
 ---@param payload table payload
 function MCMASI:handlePayload(action, payload)
     MCMASIAPI:callApiAction(action, { payload = payload })
-    RAWarn(2, string.format("============> %s payload.", { payload = payload }))
 end
 
 --- Constructor for MCMASI:MCMGet

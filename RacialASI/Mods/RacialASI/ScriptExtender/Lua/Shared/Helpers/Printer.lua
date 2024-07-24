@@ -1,7 +1,7 @@
 if VCHelpers.ModVars:isModLoaded("755a8a72-407f-4f0d-9a33-274ac0f0b53d") then
 
     RAPrinter = VolitionCabinetPrinter:New { Prefix = "RacialASI", ApplyColor = true,
-    DebugLevel = MCMGet("debug_level") }
+    DebugLevel = MCMGet("Debug_level") }
 
     function RAPrint(debugLevel, ...)
         RAPrinter:SetFontColor(0, 255, 255)

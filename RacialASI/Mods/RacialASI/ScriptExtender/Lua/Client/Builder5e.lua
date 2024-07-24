@@ -11,12 +11,18 @@ Ext.Require("Libs/ClassesLibrary.lua")
 Ext.Require("Libs/BooksLibrary.lua")
 Ext.Require("Libs/RacesLibrary.lua")
 
-RAPrint(1, "PatchAsi5eLimited: " .. PatchAsi5eLimited)
-RAPrint(1, "PatchAsi5e: " .. PatchAsi5e)
-RAPrint(1, "PatchAsi5eExtended: " .. PatchAsi5eExtended)
-RAPrint(1, "PatchAsiLegacy: " .. PatchAsiLegacy)
-RAPrint(1, "PatchAsiFlavour: " .. PatchAsiFlavour)
-RAPrint(1, "PatchAsiHomebrew: " .. PatchAsiHomebrew)
+RAPrint(1, "PatchAsi5eLimited: ")
+RAPrint(1, PatchAsi5eLimited)
+RAPrint(1, "PatchAsi5e: ")
+RAPrint(1, PatchAsi5e)
+RAPrint(1, "PatchAsi5eExtended: ")
+RAPrint(1, PatchAsi5eExtended)
+RAPrint(1, "PatchAsiLegacy: ")
+RAPrint(1, PatchAsiLegacy)
+RAPrint(1, "PatchAsiFlavour: ")
+RAPrint(1, PatchAsiFlavour)
+RAPrint(1, "PatchAsiHomebrew: ")
+RAPrint(1, PatchAsiHomebrew)
 
 
 
@@ -37,7 +43,7 @@ local function classe5eModule()
         classeMod.SourceBook, classeMod.MainClasse, classeMod.isLvl20, classeMod.isOutdated)
         if classeMod.UUID ~= "aaaa" then --rmv after lib finished
             local removedClass = VCHelpers.CF:removeSelectorsPayload(classeMod.modGuid, classeMod.progressionUUID[1],
-            "SelectAbilityBonus", Deps.AbilityList_UUID)
+            "SelectAbilityBonus", deps.AbilityList_UUID)
             if removedClass then
                 table.insert(removedClasses, removedClass) -- Add to the list if removed
             end
@@ -71,7 +77,7 @@ local function race5eModule()
                 for _, book in pairs(Dnd5eLimited) do
                     if book.bookRef == raceMod.SourceBook then
                         if PatchAsi5eLimited == true then
-                             RaceMod:CleanOnRacesStatsLoaded(1)
+                            RaceMod:CleanOnRacesStatsLoaded(1)
                             RaceMod:InsertPayloadRaceASI()
                         else
                             if raceMod.NoDefStats == true then
@@ -84,7 +90,7 @@ local function race5eModule()
                 for _, book in pairs(Dnd5e) do
                     if book.bookRef == raceMod.SourceBook then
                         if PatchAsi5e == true then
-                             RaceMod:CleanOnRacesStatsLoaded(1)
+                            RaceMod:CleanOnRacesStatsLoaded(1)
                             RaceMod:InsertPayloadRaceASI()
                         else
                             if raceMod.NoDefStats == true then
@@ -97,7 +103,7 @@ local function race5eModule()
                 for _, book in pairs(Dnd5eExtended) do
                     if book.bookRef == raceMod.SourceBook then
                         if PatchAsi5eExtended == true then
-                             RaceMod:CleanOnRacesStatsLoaded(1)
+                            RaceMod:CleanOnRacesStatsLoaded(1)
                             RaceMod:InsertPayloadRaceASI()
                         else
                             if raceMod.NoDefStats == true then
@@ -110,7 +116,7 @@ local function race5eModule()
                 for _, book in pairs(Legacy) do
                     if book.bookRef == raceMod.SourceBook then
                         if PatchAsiLegacy == true then
-                             RaceMod:CleanOnRacesStatsLoaded(1)
+                            RaceMod:CleanOnRacesStatsLoaded(1)
                             RaceMod:InsertPayloadRaceASI()
                         else
                             if raceMod.NoDefStats == true then
@@ -123,7 +129,7 @@ local function race5eModule()
                 for _, book in pairs(Flavours) do
                     if book.bookRef == raceMod.SourceBook then
                         if PatchAsiFlavour == true then
-                             RaceMod:CleanOnRacesStatsLoaded(1)
+                            RaceMod:CleanOnRacesStatsLoaded(1)
                             RaceMod:InsertPayloadRaceASI()
                         else
                             if raceMod.NoDefStats == true then

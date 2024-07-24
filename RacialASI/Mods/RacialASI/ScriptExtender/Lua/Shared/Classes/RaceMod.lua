@@ -276,7 +276,7 @@ _________ .__                         __________                              __
 function RaceMod:cleanOnRacesStatsLoaded(lvlprogressionUUID)
         -- remove +2+1, +1, +1+1 ect..
         local payload = VCHelpers.CF:removeSelectorsPayload(self.modGuid, self.progressionUUID[lvlprogressionUUID], "SelectAbilityBonus",
-        Deps.AbilityList_UUID)
+        deps.AbilityList_UUID)
 
         if VCHelpers.CF:checkSCF() then
             Mods.SubclassCompatibilityFramework.Api.RemoveSelectors(payload)

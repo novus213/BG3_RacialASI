@@ -1,6 +1,7 @@
 ---@diagnostic disable: duplicate-set-field
 
-setmetatable(Mods.RacialASI, { __index = {Mods.VolitionCabinet, Mods.KendersLabsCoreLibs} })
+setmetatable(Mods[Ext.Mod.GetMod(ModuleUUID).Info.Directory], { __index = Mods.VolitionCabinet, Mods.KendersLabsCoreLibs })
+
 DevelReady = Ext.Utils:Version() >= 17 or Ext.Debug.IsDeveloperMode()
 
 local deps = {
