@@ -1,4 +1,4 @@
-if Ext.Mod.IsModLoaded("755a8a72-407f-4f0d-9a33-274ac0f0b53d") then
+if VCHelpers.ModVars:isModLoaded("755a8a72-407f-4f0d-9a33-274ac0f0b53d") then
 
     mcmVars = {
         AddGnome_Tinkertools_Spells                                     = "notuse",

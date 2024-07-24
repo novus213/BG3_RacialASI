@@ -195,7 +195,7 @@ function RaceMod:InsertPayloadRaceASI()
 local fixAsi = {}  -- Table to store classes with removed shit asi
 	if self.sab ~= nil then
         local payload = {}
-        if self.modGuid and Ext.Mod.IsModLoaded(self.modGuid) then
+        if self.modGuid and VCHelpers.ModVars:isModLoaded(self.modGuid) then
         -- special Ability List +x in some ASI or default
             local AbilityListUUID = ""
             if self.specialAbList ~= nil then
@@ -218,7 +218,7 @@ local fixAsi = {}  -- Table to store classes with removed shit asi
 
 	if self.stats ~= nil then
         local payload = {}
-        if self.modGuid and Ext.Mod.IsModLoaded(self.modGuid) then
+        if self.modGuid and VCHelpers.ModVars:isModLoaded(self.modGuid) then
 
             local raceModStats = self.InsertPayloadRaceASI()
             payload = VCHelpers.CF:addStringPayload(self.modGuid, self.UUID, "Boosts", raceModStats)
@@ -244,7 +244,7 @@ end
 --- Constructor for insertDefaultPayloadASI
 function RaceMod:insertDefaultPayloadASI()
     local baseAsi = {}  -- Table to store classes with removed shit asi
-    if self.modGuid and Ext.Mod.IsModLoaded(self.modGuid) then
+    if self.modGuid and VCHelpers.ModVars:isModLoaded(self.modGuid) then
         payload =  VCHelpers.CF:InsertSelectorsPayload(self.modGuid, self.UUID, "SelectAbilityBonus",
         deps.AbilityList_UUID, {"2","1"}, 2, "AbilityBonus")
         table.insert(baseAsi, self.name) -- Add to the list if ASI Fixed

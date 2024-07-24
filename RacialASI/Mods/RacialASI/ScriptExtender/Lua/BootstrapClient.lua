@@ -7,7 +7,7 @@ Ext.Require("Shared/_Init.lua")
 Ext.Require("Libs/OptionsActionsLib.lua")
 Ext.Require("ModInfos/_ModInfos.lua")
 
-if isModLoaded(deps.MCM_GUID) then
+if VCHelpers.ModVars:isModLoaded(deps.MCM_GUID) then
     BasicPrint("    ____             _       __   ___   _____ ____   ____________","INFO", nil, nil, true)
     BasicPrint("   / __ \\____ ______(_)___ _/ /  /   | / ___//  _/  / ____/ ____/","INFO", nil, nil, true)
     BasicPrint("  / /_/ / __ `/ ___/ / __ `/ /  / /| | \\__ \\ / /   /___ \\/ __/   ","INFO", nil, nil, true)
@@ -62,7 +62,7 @@ end
 
 Ext.Require("Client/_Init.lua")
 
-if not isModLoaded(deps.MCM_GUID) then
+if not VCHelpers.ModVars:isModLoaded(deps.MCM_GUID) then
     BasicPrint(" ----------------------------- ")
     BasicPrint(" ----------------------------- ")
     BasicPrint("                               ")
