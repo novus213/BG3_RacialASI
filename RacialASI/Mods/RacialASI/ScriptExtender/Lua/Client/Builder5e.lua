@@ -260,11 +260,7 @@ local function race5eModule()
             end
         end
 	end
-    if #RemovedRaces > 0 then
-        RADebug(2, "============> Ability boost remove to " ..
-                 #RemovedRaces .. " mods: " ..
-                 table.concat(RemovedRaces, ", "))
-    end
+  
 end
 
 
