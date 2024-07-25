@@ -1,5 +1,5 @@
 --- Define Actions and Payloads
-optionActions = {
+OptionActions = {
     AddHalfElf_Skills = {
         actions = {
             {

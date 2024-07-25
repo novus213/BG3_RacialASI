@@ -55,7 +55,7 @@ end
 --- extract mcmVar table from MCM Json
 function MCMASI:OnStatsLoadedMCM()
     for key, value in pairs(McmVarsOptions) do
-        local actionConfigs = optionActions[key]
+        local actionConfigs = OptionActions[key]
 
         if value == true then
             if actionConfigs then
