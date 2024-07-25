@@ -226,7 +226,7 @@ function RaceMod:InsertPayloadRaceASI(newRace, lvl)
 local fixAsi = {}  -- Table to store classes with removed shit asi
 	if newRace:GetSab() ~= nil then
         local payload = {}
-        if newRace:GetModGuid() and VCHelpers.ModVars:isModLoaded(newRace:GetModGuid()) then
+        if newRace:GetModGuid() and VCHelpers.ModVars:IsModLoaded(newRace:GetModGuid()) then
         -- special Ability List +x in some ASI or default
             local abilityListUUID = Deps.AbilityList_UUID
             if newRace:GetSpecialAbList() ~= nil then
@@ -248,7 +248,7 @@ local fixAsi = {}  -- Table to store classes with removed shit asi
 	end
 	if newRace:GetStats() ~= nil then
         local payload = {}
-        if newRace:GetModGuid() and VCHelpers.ModVars:isModLoaded(newRace:GetModGuid()) then
+        if newRace:GetModGuid() and VCHelpers.ModVars:IsModLoaded(newRace:GetModGuid()) then
 
             local raceModStats = RaceMod:TableInsertRaceStats(newRace)
             payload = VCHelpers.CF:addStringPayload(newRace:GetModGuid(), newRace:GetProgressionUUID(lvl),
@@ -278,7 +278,7 @@ function RaceMod:InsertDefaultPayloadASI(newRace, lvl, abilityListUUID)
     local baseAsi = {}  -- Table to store classes with removed shit asi
     local payload = {}
     abilityListUUID = abilityListUUID or Deps.AbilityList_UUID
-    if newRace:GetModGuid() and VCHelpers.ModVars:isModLoaded(newRace:GetModGuid()) then
+    if newRace:GetModGuid() and VCHelpers.ModVars:IsModLoaded(newRace:GetModGuid()) then
         payload =  VCHelpers.CF:InsertSelectorsPayload(newRace:GetModGuid(),
         newRace:GetProgressionUUID(lvl), "SelectAbilityBonus", abilityListUUID, {"2","1"}, 2, "AbilityBonus")
         table.insert(baseAsi, newRace:GetName()) -- Add to the list if ASI Fixed
