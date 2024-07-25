@@ -20,6 +20,13 @@
               <attribute id="UUID" type="FixedString" value="755a8a72-407f-4f0d-9a33-274ac0f0b53d" />
               <attribute id="Version64" type="int64" value="37013959437451264" />
             </node>
+            <node id="ModuleShortDesc">
+              <attribute id="Folder" type="LSWString" value="KendersLabsCoreLibs" />
+              <attribute id="MD5" type="LSString" value="" />
+              <attribute id="Name" type="FixedString" value="Kender's Labs Core Libs" />
+              <attribute id="UUID" type="FixedString" value="47e1154e-e169-4e4a-80b6-d117171ccd15" />
+              <attribute id="Version64" type="int64" value="36028797018963968" />
+            </node>
           </children>
         </node>
         <node id="ModuleInfo">
