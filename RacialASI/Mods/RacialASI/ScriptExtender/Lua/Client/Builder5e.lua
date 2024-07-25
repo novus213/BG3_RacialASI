@@ -57,7 +57,7 @@ local function race5eModule()
             RaceMod:CleanOnRacesStatsLoaded(raceModObject, 1)
             RaceMod:InsertDefaultPayloadASI(raceModObject, 1)
         else
-            if VCHelpers.ModVars:isModExist(Deps.Framework_GUID, raceModObject:GetModGuid()) then -- présent dans isLoaded
+            if VCHelpers.ModVars:IsModExist(Deps.Framework_GUID, raceModObject:GetModGuid()) then -- présent dans isLoaded
                 if raceModObject:GetSourceBook() == nil or raceModObject:GetSourceBook() == "" then
                     if PatchAsiHomebrew == true then
                         RaceMod:CleanOnRacesStatsLoaded(raceModObject, 1)
