@@ -11,6 +11,7 @@
 ---@field bonus table
 ---@field statsList table
 ---@field specialAbList string uuid
+---@field NoDefStats boolean
 RaceMod = _Class:Create("RaceMod")
 
 
@@ -39,16 +40,24 @@ function RaceMod:New(name, modURL, modGuid, progressionUUID, author, sourceBook,
     self.mainRace        = mainRace
     self.specialAbList   = specialAbList or nil
     self.stats           = stats or nil
-    self.sab             = sab or nil
+    self.sab             = sab or nil -- {"2","1"}
     self.bonus           = bonus or nil
     self.statsList       = {"Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma"}
     self.NoDefStats      = NoDefStats or false
+
+    return self
 end
 
 --- Get Name of RaceMod
 ---@return string self.name
 function RaceMod:GetName()
     return self.name
+end
+
+--- Set NoDefStats of RaceMod
+---@return boolean self.NoDefStats
+function RaceMod:SetNoDefStats(NoDefStats)
+    self.modGuid = NoDefStats
 end
 
 --- Get NoDefStats of RaceMod
@@ -103,7 +112,7 @@ end
 
 --- Get self.stats[i] of RaceMod
 ---@return table self.stats[i]
-function RaceMod:GetStats(i)
+function RaceMod:GetStatsI(i)
     return self.stats[i]
 end
 

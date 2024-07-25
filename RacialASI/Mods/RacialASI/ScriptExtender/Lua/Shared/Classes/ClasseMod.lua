@@ -22,10 +22,6 @@ ClasseMod = _Class:Create("ClasseMod")
 ---@param isOutdated boolean
 function ClasseMod:New(name, modURL, modGuid, progressionUUID, author, sourceBook, mainClasse, isLvl20, isOutdated)
     local self           = setmetatable({}, ClasseMod)
-    --o = o or {}
-    --setmetatable(o, self)
-    --self.__index = self
-
     self.name            = name
     self.modURL          = modURL or nil
     self.modGuid         = modGuid
@@ -35,6 +31,8 @@ function ClasseMod:New(name, modURL, modGuid, progressionUUID, author, sourceBoo
     self.mainClasse      = mainClasse
     self.isLvl20         = isLvl20
     self.isOutdated      = isOutdated
+
+    return self
 end
 
 --- Get Name of ClasseMod
@@ -60,9 +58,15 @@ end
 ---@param lvl integer
 ---@return table self.progressionUUID
 function ClasseMod:GetProgressionUUID(lvl)
-    local pUUID = self.progressionUUID[lvl]
-    return pUUID
+    return self.progressionUUID[lvl]
 end
+
+--- Get progressionUUID of ClasseMod
+---@return table self.progressionUUID
+function ClasseMod:GetProgressionUUID()
+    return self.progressionUUID
+end
+
 
 --- Get author of ClasseMod
 ---@return string self.author
@@ -138,16 +142,44 @@ end
 
 ---@param AbilityListUUID string
 ---@param lvl integer
+---@param Object MetaClass:ClasseMod
 --[[
-function ClasseMod:removeClassesASI(lvl, AbilityListUUID)
+function ClasseMod:RemoveClassesASI(lvl, AbilityListUUID, Object)
     AbilityListUUID = AbilityListUUID or deps.AbilityList_UUID
-    if self.progressionUUID[1] ~= "aaaa" then --rmv after lib finished
-        local pUUID = self.progressionUUID[lvl]
-        local removedClass = VCHelpers.CF:removeSelectorsPayload(self.modGuid, pUUID,
-        "SelectAbilityBonus", AbilityListUUID)
-        if removedClass then
-            table.insert(RemovedClasses, removedClass) -- Add to the list if removed
+    if self.GetProgressionUUID(lvl) ~= "aaaa" then --rmv after lib finished
+            local removedClass = VCHelpers.CF:removeSelectorsPayload(Object:GetModGuid(), Object:GetProgressionUUID(lvl),
+        "SelectAbilityBonus", deps.AbilityList_UUID)
+            if removedClass then
+                table.insert(RemovedClasses, removedClass) -- Add to the list if removed
+            end
         end
+    if #removedClasses > 0 then  -- Check if any selectors were removed
+        local classList = table.concat(removedClasses, ", ") -- Create comma-separated list
+    RAWarn(2, string.format("============> Selectors removed from %d mods: %s", #removedClasses, classList))
     end
 end
+
+
+
+function ClasseMod:CleanOnRacesStatsLoaded(lvl, AbilityListUUID)
+        AbilityListUUID = AbilityListUUID or deps.AbilityList_UUID
+        -- remove +2+1, +1, +1+1 ect..
+        local payload = VCHelpers.CF:removeSelectorsPayload(RaceMod:GetModGuid(), RaceMod:GetProgressionUUID(lvl), "SelectAbilityBonus",
+        AbilityListUUID)
+
+        if VCHelpers.CF:checkSCF() then
+            Mods.SubclassCompatibilityFramework.Api.RemoveSelectors(payload)
+            RAPrint(1, "payload InsertSelectors: " .. RADumpArray(payload) .. "\n\n")
+        end
+        -- remove Boost Ability
+        for _, ability in ipairs(RaceMod:GetStatsList()) do
+            for score=-5,5 do -- change to -5 5 to low balancing charge server
+                RemovedRaces = VCHelpers.CF:removeStringPayload(RaceMod:GetModGuid(), RaceMod:GetProgressionUUID(lvl), "Boosts",{"Ability("..ability..","..score..")"})
+            end
+        end
+        if RemovedRaces then
+            table.insert(RemovedRaces, RemovedRaces) -- Add to the list if removed
+        end
+end
+
 ]]--
