@@ -57,7 +57,7 @@ local function race5eModule()
             RaceMod:CleanOnRacesStatsLoaded(raceModObject, 1)
             RaceMod:InsertDefaultPayloadASI(raceModObject, 1)
         else
-            if VCHelpers.ModVars:IsModExist(Deps.Framework_GUID, raceModObject:GetModGuid()) then -- présent dans isLoaded
+            if VCHelpers.ModVars:IsModExist(Data.Deps.Framework_GUID, raceModObject:GetModGuid()) then -- présent dans isLoaded
                 if raceModObject:GetSourceBook() == nil or raceModObject:GetSourceBook() == "" then
                     if PatchAsiHomebrew == true then
                         RaceMod:CleanOnRacesStatsLoaded(raceModObject, 1)
@@ -144,7 +144,7 @@ end
 local function builder5e()
     classe5eModule()
 	race5eModule()
-    if VCHelpers.ModVars:IsModLoaded(Deps.MCM_GUID) then
+    if VCHelpers.ModVars:IsModLoaded(Data.Deps.MCM_GUID) then
         RAPrint(1, "                               ")
         RAPrint(1, "                               ")
         RAPrint(1, " ----------------------------- ")
@@ -153,6 +153,6 @@ local function builder5e()
     end
 end
 
-if VCHelpers.ModVars:IsModLoaded(Deps.Framework_GUID) then
+if VCHelpers.ModVars:IsModLoaded(Data.Deps.Framework_GUID) then
     Ext.Events.StatsLoaded:Subscribe(builder5e)
 end

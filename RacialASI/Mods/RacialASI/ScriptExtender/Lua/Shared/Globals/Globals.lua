@@ -43,7 +43,8 @@ BACKGROUND_COLORS = {
     white = 47,
 }
 
-Deps = {
+--[[
+Data.Deps. = {
     Framework_FM_GUID       = "ff9844a0-a097-4149-bbca-ee0da5b937d7", -- FM Framework
     Framework_WotD_GUID     = "4806bd2a-929b-406e-b1d4-2e0e9cc23bb2", -- WOT AAsimaSE
     ASTRL_Elvens_GUID       = "66b20233-cf0a-44bb-9bcf-32c0e0b09c19", -- ASTRLElvens
@@ -52,3 +53,4 @@ Deps = {
     MCM_GUID                = "755a8a72-407f-4f0d-9a33-274ac0f0b53d", -- MCM (not the TV channel ^^)
     AbilityList_UUID        = "b9149c8e-52c8-46e5-9cb6-fc39301c05fe" -- Ability List Default all stats +x
 }
+]]--

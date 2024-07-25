@@ -1,10 +1,10 @@
 
 local function checkHumanFM()
-	if VCHelpers.ModVars:IsModLoaded(Deps.Framework_FM_GUID) then
+	if VCHelpers.ModVars:IsModLoaded(Data.Deps.Framework_FM_GUID) then
         return {
 			humanMainRace	=	false,
 			humanUUID		=	"139e1b8c-dfa1-4b2d-895c-efb170736093", --Human default Fantastic M
-			modGuid			=	Deps.Framework_FM_GUID,
+			modGuid			=	Data.Deps.Framework_FM_GUID,
 			Author			=	"Fantastic Multiverse",
         }
 	else

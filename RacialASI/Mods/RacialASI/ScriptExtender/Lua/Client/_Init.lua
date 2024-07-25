@@ -35,7 +35,7 @@ local function processOption(optionName, optionValue, actionConfigs)
 end
 
 local function OnStatsLoaded()
-    if not VCHelpers.ModVars:IsModLoaded(Deps.Framework_GUID) then
+    if not VCHelpers.ModVars:IsModLoaded(Data.Deps.Framework_GUID) then
         return
     end
 
@@ -72,7 +72,7 @@ end
 --- End CONFIG NO MCM
 
 
-if not VCHelpers.ModVars:IsModLoaded(Deps.MCM_GUID) then
+if not VCHelpers.ModVars:IsModLoaded(Data.Deps.MCM_GUID) then
     Ext.Events.StatsLoaded:Subscribe(start)
     Ext.Events.StatsLoaded:Subscribe(OnStatsLoaded)
 else
