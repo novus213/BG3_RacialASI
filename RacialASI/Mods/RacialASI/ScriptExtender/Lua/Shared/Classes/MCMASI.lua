@@ -13,7 +13,7 @@ MCMASIAPI = MCMASI:New({}, "RacialASI")
 --- Constructor for MCMASI:OnSessionLoadedMCM
 --- Function to load MCM values from json
 function MCMASI:OnSessionLoadedMCM()
-    mcmVars = {
+    McmVars = {
         AddGnome_Tinkertools_Spells                                     = "notuse",
         AddGnome_ForestMinorIllusion_Spells                             = "notuse",
         AddHalfElf_Skills                                               = "notuse",
@@ -23,11 +23,11 @@ function MCMASI:OnSessionLoadedMCM()
         AddUndeadGhastlyGhouls_TruePotion_and_LightSensitivity_Passives = MCMASIAPI:MCMGet("AddUndeadGhastlyGhouls_TruePotion_and_LightSensitivity_Passives"),
         AddUnderdarkRaces_LightSensitivity_Passives                     = "notuse"
         --[[
-            mcmVars["AddGnomeTinkertoolsSpells"]
+            McmVars["AddGnomeTinkertoolsSpells"]
         ]]--
     }
 
-    mcmVarsBooksSettings = {
+    McmVarsBooksSettings = {
         PatchAsi5eLimited   = MCMASIAPI:MCMGet("PatchASI_5eLimited"),
         PatchAsi5e          = MCMASIAPI:MCMGet("PatchASI_5e"),
         PatchAsi5eExtended  = MCMASIAPI:MCMGet("PatchASI_5eExtended"),
@@ -36,25 +36,25 @@ function MCMASI:OnSessionLoadedMCM()
         PatchAsiHomebrew    = MCMASIAPI:MCMGet("PatchASI_Homebrew"),
         PatchAsiDefault     = MCMASIAPI:MCMGet("PatchASI_Default")
         --[[
-            mcmVarsBooksSettings["IgnoreAll"]
+            McmVarsBooksSettings["IgnoreAll"]
         ]]--
     }
 
-    mcmVarsGeneralSettings = {
+    McmVarsGeneralSettings = {
         RASI        = MCMASIAPI:MCMGet("RASI"),
         DebugLevel  = MCMASIAPI:MCMGet("Debug_level"),
         Log         = MCMASIAPI:MCMGet("Log")
     }
 
-    RAWarn(2, string.format("============> mcmVars is loaded. %s", table.dump(mcmVars)))
-    RAWarn(2, string.format("============> mcmVarsGeneralSettings is loaded. %s", table.dump(mcmVarsGeneralSettings)))
-    RAWarn(2, string.format("============> mcmVarsBooksSettings is loaded. %s", table.dump(mcmVarsBooksSettings)))
+    RAWarn(2, string.format("============> McmVars is loaded. %s", table.dump(McmVars)))
+    RAWarn(2, string.format("============> McmVarsGeneralSettings is loaded. %s", table.dump(McmVarsGeneralSettings)))
+    RAWarn(2, string.format("============> McmVarsBooksSettings is loaded. %s", table.dump(McmVarsBooksSettings)))
 end
 
 --- Constructor for MCMASI:OnStatsLoadedMCM
 --- extract mcmVar table from MCM Json
 function MCMASI:OnStatsLoadedMCM()
-    for key, value in pairs(mcmVarsOptions) do
+    for key, value in pairs(McmVarsOptions) do
         local actionConfigs = optionActions[key]
 
         if value == true then

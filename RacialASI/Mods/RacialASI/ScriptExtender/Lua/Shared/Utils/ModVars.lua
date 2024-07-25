@@ -29,14 +29,14 @@ function SyncModVariables()
     end
 end
 
-function isModLoaded(modId)
-    return VCHelpers.ModVars:isModLoaded(modId)
+function IsModLoaded(modId)
+    return VCHelpers.ModVars:IsModLoaded(modId)
 end
 
 ---@param modId string modId
 ---@return boolean
-function isModExist(modId)
-    return VCHelpers.ModVars:isModLoaded(deps.Framework_GUID) and VCHelpers.ModVars:isModLoaded(modId)
+function IsModExist(modId)
+    return VCHelpers.ModVars:IsModLoaded(Deps.Framework_GUID) and VCHelpers.ModVars:IsModLoaded(modId)
 end
 
 -- -------------------------------------------------------------------------- --

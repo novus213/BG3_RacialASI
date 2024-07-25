@@ -35,7 +35,7 @@ local function processOption(optionName, optionValue, actionConfigs)
 end
 
 local function OnStatsLoaded()
-    if not VCHelpers.ModVars:isModLoaded(deps.Framework_GUID) then
+    if not VCHelpers.ModVars:IsModLoaded(Deps.Framework_GUID) then
         return
     end
 
@@ -72,7 +72,7 @@ end
 --- End CONFIG NO MCM
 
 
-if not VCHelpers.ModVars:isModLoaded(deps.MCM_GUID) then
+if not VCHelpers.ModVars:IsModLoaded(Deps.MCM_GUID) then
     Ext.Events.StatsLoaded:Subscribe(start)
     Ext.Events.StatsLoaded:Subscribe(OnStatsLoaded)
 else
@@ -90,18 +90,18 @@ else
 
         if e.FromState == "PrepareRunning" then
 
-            mcmVarsOptions 		= mcmVars
+            McmVarsOptions 		= McmVars
 
-            PatchAsi5eLimited  = mcmVarsBooksSettings["PatchAsi5eLimited"]
-            PatchAsi5e         = mcmVarsBooksSettings["PatchAsi5e"]
-            PatchAsi5eExtended = mcmVarsBooksSettings["PatchAsi5eExtended"]
-            PatchAsiLegacy     = mcmVarsBooksSettings["PatchAsiLegacy"]
-            PatchAsiFlavour    = mcmVarsBooksSettings["PatchAsiFlavour"]
-            PatchAsiHomebrew   = mcmVarsBooksSettings["PatchAsiHomebrew"]
-            PatchAsiDefault    = mcmVarsBooksSettings["PatchAsiDefault"]
+            PatchAsi5eLimited  = McmVarsBooksSettings["PatchAsi5eLimited"]
+            PatchAsi5e         = McmVarsBooksSettings["PatchAsi5e"]
+            PatchAsi5eExtended = McmVarsBooksSettings["PatchAsi5eExtended"]
+            PatchAsiLegacy     = McmVarsBooksSettings["PatchAsiLegacy"]
+            PatchAsiFlavour    = McmVarsBooksSettings["PatchAsiFlavour"]
+            PatchAsiHomebrew   = McmVarsBooksSettings["PatchAsiHomebrew"]
+            PatchAsiDefault    = McmVarsBooksSettings["PatchAsiDefault"]
 
-            DebugLevel = mcmVarsGeneralSettings["Debug_level"]
-            Log = mcmVarsGeneralSettings["Log"]
+            DebugLevel = McmVarsGeneralSettings["Debug_level"]
+            Log = McmVarsGeneralSettings["Log"]
 
             MCMASIAPI:OnSessionLoadedMCM()
             MCMASIAPI:OnStatsLoadedMCM()

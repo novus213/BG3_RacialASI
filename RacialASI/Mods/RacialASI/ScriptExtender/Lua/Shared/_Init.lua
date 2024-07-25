@@ -9,12 +9,12 @@ local deps = {
     VCModuleUUID = "f97b43be-7398-4ea5-8fe2-be7eb3d4b5ca",
     KLCLModuleUUID = "47e1154e-e169-4e4a-80b6-d117171ccd15"
 }
-if not Ext.Mod.IsModLoaded(deps.VCModuleUUID) then
+if not Ext.Mod.IsModLoaded(Deps.VCModuleUUID) then
     Ext.Utils.Print(
         "Volition Cabinet is missing and is a hard requirement. PLEASE MAKE SURE IT IS ENABLED IN YOUR MOD MANAGER.")
 end
 
-if not Ext.Mod.IsModLoaded(deps.KLCLModuleUUID) then
+if not Ext.Mod.IsModLoaded(Deps.KLCLModuleUUID) then
     Ext.Utils.Print(
         "BG3 Kender's Labs Core Libs is missing and is a hard requirement. PLEASE MAKE SURE IT IS ENABLED IN YOUR MOD MANAGER.")
 end
