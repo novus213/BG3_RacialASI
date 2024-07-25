@@ -242,7 +242,7 @@ local fixAsi = {}  -- Table to store classes with removed shit asi
 
             if VCHelpers.CF:checkSCF() then
                 Mods.SubclassCompatibilityFramework.Api.InsertSelectors(payload)
-                RAPrint(1, "payload InsertSelectors: %s\n\n", RADumpArray(fixAsi))
+                RAPrint(2, "payload InsertSelectors: %s\n\n", RADumpArray(fixAsi))
             end
         end
 	end
