@@ -2,7 +2,7 @@
 
 Ext.Require("Shared/_Init.lua")
 
-if not Ext.Mod.isModLoaded(Deps.Framework_GUID) then return end
+if not Ext.Mod.IsModLoaded(Deps.Framework_GUID) then return end
 
 ---Libraries / Shared / Customs
 Ext.Require("Libs/OptionsActionsLib.lua")
