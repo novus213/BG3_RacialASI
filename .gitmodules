@@ -1,0 +1,18 @@
+[submodule "BG3_KendersLabsCoreLibs"]
+	path = BG3_KendersLabsCoreLibs
+	url = https://github.com/novus213/BG3_KendersLabsCoreLibs
+[submodule "BG3-volition-cabinet"]
+	path = BG3-volition-cabinet
+	url = https://github.com/AtilioA/BG3-volition-cabinet
+[submodule "BG3-Compatibility-Framework"]
+	path = BG3-Compatibility-Framework
+	url = https://github.com/BG3-Community-Library-Team/BG3-Compatibility-Framework
+[submodule "BG3-Community-Library"]
+	path = BG3-Community-Library
+	url = https://github.com/BG3-Community-Library-Team/BG3-Community-Library
+[submodule "BG3-MCM"]
+	path = BG3-MCM
+	url = https://github.com/AtilioA/BG3-MCM
+[submodule "bg3se"]
+	path = bg3se
+	url = https://github.com/Norbyte/bg3se
