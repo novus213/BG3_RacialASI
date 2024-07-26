@@ -16,3 +16,6 @@
 [submodule "bg3se"]
 	path = bg3se
 	url = https://github.com/Norbyte/bg3se
+[submodule "5eSpells"]
+	path = 5eSpells
+	url = https://github.com/Celestro/5eSpells
