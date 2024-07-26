@@ -1,4 +1,4 @@
----@diagnostic disable: missing-parameter
+---@diagnostic disable: 631
 
 Ext.Require("Shared/_Init.lua")
 
