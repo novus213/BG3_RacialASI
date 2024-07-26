@@ -1,5 +1,3 @@
----@diagnostic disable: 631
-
 Ext.Require("Shared/_Init.lua")
 
 if not Ext.Mod.IsModLoaded(Data.Deps.Framework_GUID) then return end
