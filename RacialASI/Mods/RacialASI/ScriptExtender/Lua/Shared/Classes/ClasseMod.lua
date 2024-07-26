@@ -1,8 +1,8 @@
 ---@class ClasseMod:MetaClass
 ---@field name string
----@field modURL any table
+---@field modURL table|string table
 ---@field modGuid string UUID
----@field progressionUUID any table
+---@field progressionUUID table|string table
 ---@field author string
 ---@field sourceBook string
 ---@field mainClasse boolean
@@ -10,11 +10,13 @@
 ---@field isOutdated boolean
 ClasseMod = _Class:Create("ClasseMod")
 
+
+--- Constructor for the ClasseMod class.
 ---@class ClasseMod
 ---@param name string
----@param modURL any
+---@param modURL table|string table
 ---@param modGuid string UUID
----@param progressionUUID any
+---@param progressionUUID table|string table
 ---@param author string
 ---@param sourceBook string
 ---@param mainClasse boolean
@@ -60,13 +62,6 @@ end
 function ClasseMod:GetProgressionUUIDLvl(lvl)
     return self.progressionUUID[lvl]
 end
-
---- Get progressionUUID of ClasseMod
----@return table self.progressionUUID
-function ClasseMod:GetProgressionUUID()
-    return self.progressionUUID
-end
-
 
 --- Get author of ClasseMod
 ---@return string self.author

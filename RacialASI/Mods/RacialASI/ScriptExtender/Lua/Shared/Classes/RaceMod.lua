@@ -1,15 +1,15 @@
 ---@class RaceMod:MetaClass
 ---@field name string
----@field modURL any table
+---@field modURL table|string table table
 ---@field modGuid string uuid
----@field progressionUUID any table
+---@field progressionUUID table|string table
 ---@field author string
 ---@field sourceBook string
 ---@field mainRace boolean
----@field stats any table
----@field sab any table
----@field bonus any table
----@field statsList any table
+---@field stats table|string table
+---@field sab table|string table
+---@field bonus table|string table
+---@field statsList table|string table
 ---@field specialAbList string uuid
 ---@field NoDefStats boolean
 RaceMod = _Class:Create("RaceMod")
@@ -17,16 +17,16 @@ RaceMod = _Class:Create("RaceMod")
 
 ---@class RaceMod
 ---@param name string
----@param modURL any table
+---@param modURL table|string table
 ---@param modGuid string uuid
----@param progressionUUID any table
+---@param progressionUUID table|string table
 ---@param author string
 ---@param sourceBook string
 ---@param mainRace boolean
 ---@param specialAbList string
----@param stats any table
----@param sab any table
----@param bonus any table
+---@param stats table|string table
+---@param sab table|string table
+---@param bonus table|string table
 ---@param NoDefStats boolean
 function RaceMod:New(name, modURL, modGuid, progressionUUID, author, sourceBook, mainRace, specialAbList, stats,
  sab, bonus, NoDefStats)
@@ -81,8 +81,7 @@ end
 --- Get progressionUUID from lvl of RaceMod
 ---@return table self.progressionUUID
 function RaceMod:GetProgressionUUID(lvl)
-    local pUUID = self.progressionUUID[lvl]
-    return pUUID
+    return self.progressionUUID[lvl]
 end
 
 --- Get author of RaceMod
@@ -104,7 +103,7 @@ function RaceMod:GetMainRace()
 end
 
 --- Get stats of RaceMod
----@return table self.stats
+---@return table|string self.stats
 function RaceMod:GetStats()
     return self.stats
 end
@@ -116,13 +115,13 @@ function RaceMod:GetStatsI(i)
 end
 
 --- Get Name of RaceMod
----@return table self.sab
+---@return table|string self.sab
 function RaceMod:GetSab()
     return self.sab
 end
 
 --- Get bonus of RaceMod
----@return table self.bonus
+---@return table|string self.bonus
 function RaceMod:GetBonus()
     return self.bonus
 end
@@ -134,7 +133,7 @@ function RaceMod:GetBonusI(i)
 end
 
 --- Get StatsList of RaceMod
----@return table self.statsList
+---@return table|string self.statsList
 function RaceMod:GetStatsList()
     return self.statsList
 end
