@@ -14,14 +14,14 @@ MCMASIAPI = MCMASI:New({}, "RacialASI")
 --- Function to load MCM values from json
 function MCMASI:OnSessionLoadedMCM()
     McmVars = {
-        AddGnome_Tinkertools_Spells                                     = "notuse",
-        AddGnome_ForestMinorIllusion_Spells                             = "notuse",
-        AddHalfElf_Skills                                               = "notuse",
-        AddHalfElfDrow_Drow_DrowWeaponTraining_Passives                 = "notuse",
-        RemoveHuman_HumanMilitia_HumanVersatility_Passives              = "notuse",
-        RemoveHalfElf_HumanMilitia_Passives                             = "notuse",
+        AddGnome_Tinkertools_Spells                                     = "notoptional",
+        AddGnome_ForestMinorIllusion_Spells                             = "notoptional",
+        AddHalfElf_Skills                                               = "notoptional",
+        AddHalfElfDrow_Drow_DrowWeaponTraining_Passives                 = "notoptional",
+        RemoveHuman_HumanMilitia_HumanVersatility_Passives              = "notoptional",
+        RemoveHalfElf_HumanMilitia_Passives                             = "notoptional",
         AddUndeadGhastlyGhouls_TruePotion_and_LightSensitivity_Passives = MCMASIAPI:MCMGet("AddUndeadGhastlyGhouls_TruePotion_and_LightSensitivity_Passives"),
-        AddUnderdarkRaces_LightSensitivity_Passives                     = "notuse"
+        AddUnderdarkRaces_LightSensitivity_Passives                     = "notoptional"
         --[[
             McmVars["AddGnomeTinkertoolsSpells"]
         ]]--
@@ -65,7 +65,7 @@ function MCMASI:OnStatsLoadedMCM()
             end
             RAWarn(2, string.format("============> %s is enabled.", key))
         else
-            if value == "notuse" and actionConfigs.ruleset == "5eLimited" and PatchAsi5eLimited == true then
+            if value == "notoptional" and actionConfigs.ruleset == "5eLimited" and PatchAsi5eLimited == true then
                 if actionConfigs then
                     MCMASIAPI:processOptionMcm(key, actionConfigs.actions)
                 else

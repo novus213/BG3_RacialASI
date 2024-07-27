@@ -3,14 +3,14 @@ local racialASIConfig = {
     DEBUG_MESSAGES = 1,
     LOG_ENABLED = 0,
     Options = {
-        AddUnderdarkRaces_LightSensitivity_Passives = "notuse",
+        AddUnderdarkRaces_LightSensitivity_Passives = "notoptional",
         AddUndeadGhastlyGhouls_TruePotion_and_LightSensitivity_Passives = { Enabled = true },
-        RemoveHuman_HumanMilitia_HumanVersatility_Passives = "notuse",
-        RemoveHalfElf_HumanMilitia_Passives = "notuse",
-        AddGnome_Tinkertools_Spells = "notuse",
-        AddGnome_ForestMinorIllusion_Spells = "notuse",
-        AddHalfElf_Skills = "notuse",
-        AddHalfElfDrow_Drow_DrowWeaponTraining_Passives = "notuse"
+        RemoveHuman_HumanMilitia_HumanVersatility_Passives = "notoptional",
+        RemoveHalfElf_HumanMilitia_Passives = "notoptional",
+        AddGnome_Tinkertools_Spells = "notoptional",
+        AddGnome_ForestMinorIllusion_Spells = "notoptional",
+        AddHalfElf_Skills = "notoptional",
+        AddHalfElfDrow_Drow_DrowWeaponTraining_Passives = "notoptional"
     },
     Settings5e = {
         PatchASI_5eLimited = true,
