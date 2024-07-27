@@ -6,16 +6,16 @@ end
 local function loadConfiguration()
     local configData = LoadconfigASI()
     if not configData then
-        BasicError("============> ERROR: Failed to load configuration file" .. configData)
+        RAWarn(1, "============> ERROR: Failed to load configuration file" .. configData)
     else
-        BasicPrint("Config.load() - Config.json - Apply Configuration...")
+        RAPrint(1, "Config.load() - Config.json - Apply Configuration...")
     end
     return configData
 end
 
 local function processOption(optionName, optionValue, actionConfigs)
     if optionValue.Enabled then
-        BasicWarning(string.format("============> %s is enabled.", optionName))
+        RAWarn(2, string.format("============> %s is enabled.", optionName))
 
         for _, actionConfig in ipairs(actionConfigs) do
             local action = actionConfig.action
@@ -23,11 +23,11 @@ local function processOption(optionName, optionValue, actionConfigs)
 
             for _, payload in ipairs(payloads) do
                 if payload.Target then
-                    --BasicPrint(string.format("action : ", action))
-                    --BasicPrint(string.format("payload : ", payload))
+                    --RAPrint(1, string.format("action : ", action))
+                    --RAPrint(1, string.format("payload : ", payload))
                     MCMASIAPI:handlePayload(action, payload)
                 else
-                    BasicError(string.format("============> ERROR: Invalid target UUID for payload in '%s'.", optionName))
+                    RAWarn(1, string.format("============> ERROR: Invalid target UUID for payload in '%s'.", optionName))
                 end
             end
         end
@@ -35,11 +35,11 @@ local function processOption(optionName, optionValue, actionConfigs)
 end
 
 local function OnStatsLoaded()
-    if not isModLoaded(deps.Framework_GUID) then
+    if not VCHelpers.ModVars:IsModLoaded(Data.Deps.Framework_GUID) then
         return
     end
 
-    BasicPrint("============> OnStatsLoaded function triggered, loading config","INFO", nil, nil, true)
+    RAPrint(1, "============> OnStatsLoaded function triggered, loading config","INFO", nil, nil, true)
 
     local config = loadConfiguration()
     if not config then
@@ -49,11 +49,11 @@ local function OnStatsLoaded()
     local options = config.Options
 
     for optionName, optionValue in pairs(options) do
-        local actionConfigs = optionActions[optionName]
+        local actionConfigs = Data.Libs.OptionActions[optionName]
         if actionConfigs then
             processOption(optionName, optionValue, actionConfigs.actions)
         else
-            BasicError(string.format("============> ERROR: No action configuration found for %s.", optionName))
+            RAWarn(1, string.format("============> ERROR: No action configuration found for %s.", optionName))
         end
     end
 
@@ -72,7 +72,7 @@ end
 --- End CONFIG NO MCM
 
 
-if not isModLoaded(deps.MCM_GUID) then
+if not VCHelpers.ModVars:IsModLoaded(Data.Deps.MCM_GUID) then
     Ext.Events.StatsLoaded:Subscribe(start)
     Ext.Events.StatsLoaded:Subscribe(OnStatsLoaded)
 else
@@ -85,26 +85,23 @@ else
     end)
 
     Ext.Events.GameStateChanged:Subscribe(function(e)
-        BasicPrint("e.FromState")
-        BasicPrint(e.FromState)
+        RAPrint(1, "e.FromState")
+        RAPrint(1, e.FromState)
 
         if e.FromState == "PrepareRunning" then
 
-            mcmVarsOptions 		= mcmVars
+            McmVarsOptions 		= McmVars
 
-            PatchAsi5eLimited  = mcmVarsBooksSettings["PatchAsi5eLimited"]
-            PatchAsi5e         = mcmVarsBooksSettings["PatchAsi5e"]
-            PatchAsi5eExtended = mcmVarsBooksSettings["PatchAsi5eExtended"]
-            PatchAsiLegacy     = mcmVarsBooksSettings["PatchAsiLegacy"]
-            PatchAsiFlavour    = mcmVarsBooksSettings["PatchAsiFlavour"]
-            PatchAsiHomebrew   = mcmVarsBooksSettings["PatchAsiHomebrew"]
-            PatchAsiDefault    = mcmVarsBooksSettings["PatchAsiDefault"]
+            PatchAsi5eLimited  = McmVarsBooksSettings["PatchAsi5eLimited"]
+            PatchAsi5e         = McmVarsBooksSettings["PatchAsi5e"]
+            PatchAsi5eExtended = McmVarsBooksSettings["PatchAsi5eExtended"]
+            PatchAsiLegacy     = McmVarsBooksSettings["PatchAsiLegacy"]
+            PatchAsiFlavour    = McmVarsBooksSettings["PatchAsiFlavour"]
+            PatchAsiHomebrew   = McmVarsBooksSettings["PatchAsiHomebrew"]
+            PatchAsiDefault    = McmVarsBooksSettings["PatchAsiDefault"]
 
-            DebugLevel = mcmVarsGeneralSettings["debug_level"]
-            Log = mcmVarsGeneralSettings["Log"]
-
-            --CleanOnRacesStatsLoaded()
-            --builder5eRaces()
+            DebugLevel = McmVarsGeneralSettings["Debug_level"]
+            Log = McmVarsGeneralSettings["Log"]
 
             MCMASIAPI:OnSessionLoadedMCM()
             MCMASIAPI:OnStatsLoadedMCM()
@@ -116,7 +113,7 @@ end
 ---Should've done this from the start
 Ext.Events.GameStateChanged:Subscribe(function(e)
     if e.FromState == "Running" and e.ToState == "Save" then
-        SyncModVariables()
-        SyncUserVariables()
+        VCHelpers.ModVars:Sync()
+        VCHelpers.UserVars:Sync()
     end
 end)
