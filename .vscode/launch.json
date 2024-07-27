@@ -2,6 +2,19 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "bg3lua",
+            "request": "launch",
+            "name": "BG3 Script Extender Lua Debug",
+            "program": "G:\\Mon Drive\\BG3ModManager_Latest\\#utilities\\DebugAdapter",
+            "backendHost": "127.0.0.1",
+            "backendPort": 9998,
+            "dbgOptions": {
+                "breakOnError": true,
+                "breakOnGenericError": false
+            }
+        },
+
+        {
             "type": "lua",
             "request": "launch",
             "tag": "normal",
