@@ -26,6 +26,7 @@ Frequently updated compatibility list!
 - Community Library
 - Mod Configuration Menu (MCM) (version > 5.0)
 - Volition Cabinet (version > 5.0)
+- Kender's Libs (version > 5.0)
 - Improved UI
 
 ## Racial Stats and Ability Scores Sources (5e Raw)
@@ -86,7 +87,7 @@ This section (under construction) provides a reference for removing default abil
 ### Credits
 
 - BlackPegasusBP (original version)
-- argelia (refactoring)
+- argelia (coding help)
 - kilay (ideas)
 - actualsailorcat (coding help)
 

@@ -1,4 +1,3 @@
---- From MCM
 ---@class MetaClass
 ---@field private _ClassName string
 _MetaClass = {
@@ -31,9 +30,9 @@ function _MetaClass.New(class, o)
     setmetatable(o, class)
     class.__index = class
 
-    -- if class.Init then
-    --     o:Init()
-    -- end
+    if class.Init then
+        o:Init()
+    end
 
     return o
 end
@@ -82,7 +81,7 @@ end
 
 ---Creates a new class with a given name
 ---@generic T
----@param class T Name of new class
+---@param class `T` Name of new class
 ---@param parentClass? string|table Can be the name of a parent class or the class itself
 ---@param initial? table Initializing table for the class
 ---@return T

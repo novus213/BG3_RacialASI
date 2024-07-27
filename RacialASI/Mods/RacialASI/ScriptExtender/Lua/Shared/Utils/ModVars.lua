@@ -1,4 +1,4 @@
----@diagnostic disable: duplicate-set-field
+---@diagnostic disable: duplicate-set-field, redundant-parameter
 
 -- -------------------------------------------------------------------------- --
 --                                   ModVars                                  --
@@ -29,14 +29,14 @@ function SyncModVariables()
     end
 end
 
-function isModLoaded(modId)
-    return Ext.Mod.IsModLoaded(modId)
+function IsModLoaded(modId)
+    return VCHelpers.ModVars:IsModLoaded(modId)
 end
 
 ---@param modId string modId
 ---@return boolean
-function isModExist(modId)
-    return Ext.Mod.IsModLoaded(deps.Framework_GUID) and Ext.Mod.IsModLoaded(modId)
+function IsModExist(modId)
+    return VCHelpers.ModVars:IsModLoaded(Data.Deps.Framework_GUID) and VCHelpers.ModVars:IsModLoaded(modId)
 end
 
 -- -------------------------------------------------------------------------- --

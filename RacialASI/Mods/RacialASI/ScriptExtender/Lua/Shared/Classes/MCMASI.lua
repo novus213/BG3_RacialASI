@@ -13,7 +13,7 @@ MCMASIAPI = MCMASI:New({}, "RacialASI")
 --- Constructor for MCMASI:OnSessionLoadedMCM
 --- Function to load MCM values from json
 function MCMASI:OnSessionLoadedMCM()
-    mcmVars = {
+    McmVars = {
         AddGnome_Tinkertools_Spells                                     = "notuse",
         AddGnome_ForestMinorIllusion_Spells                             = "notuse",
         AddHalfElf_Skills                                               = "notuse",
@@ -23,11 +23,11 @@ function MCMASI:OnSessionLoadedMCM()
         AddUndeadGhastlyGhouls_TruePotion_and_LightSensitivity_Passives = MCMASIAPI:MCMGet("AddUndeadGhastlyGhouls_TruePotion_and_LightSensitivity_Passives"),
         AddUnderdarkRaces_LightSensitivity_Passives                     = "notuse"
         --[[
-            mcmVars["AddGnomeTinkertoolsSpells"]
+            McmVars["AddGnomeTinkertoolsSpells"]
         ]]--
     }
 
-    mcmVarsBooksSettings = {
+    McmVarsBooksSettings = {
         PatchAsi5eLimited   = MCMASIAPI:MCMGet("PatchASI_5eLimited"),
         PatchAsi5e          = MCMASIAPI:MCMGet("PatchASI_5e"),
         PatchAsi5eExtended  = MCMASIAPI:MCMGet("PatchASI_5eExtended"),
@@ -36,42 +36,42 @@ function MCMASI:OnSessionLoadedMCM()
         PatchAsiHomebrew    = MCMASIAPI:MCMGet("PatchASI_Homebrew"),
         PatchAsiDefault     = MCMASIAPI:MCMGet("PatchASI_Default")
         --[[
-            mcmVarsBooksSettings["IgnoreAll"]
+            McmVarsBooksSettings["IgnoreAll"]
         ]]--
     }
 
-    mcmVarsGeneralSettings = {
+    McmVarsGeneralSettings = {
         RASI        = MCMASIAPI:MCMGet("RASI"),
         DebugLevel  = MCMASIAPI:MCMGet("Debug_level"),
         Log         = MCMASIAPI:MCMGet("Log")
     }
 
-    BasicWarning(string.format("============> mcmVars is loaded. %s", table.dump(mcmVars)))
-    BasicWarning(string.format("============> mcmVarsGeneralSettings is loaded. %s", table.dump(mcmVarsGeneralSettings)))
-    BasicWarning(string.format("============> mcmVarsBooksSettings is loaded. %s", table.dump(mcmVarsBooksSettings)))
+    RAWarn(2, string.format("============> McmVars is loaded. %s", table.dump(McmVars)))
+    RAWarn(2, string.format("============> McmVarsGeneralSettings is loaded. %s", table.dump(McmVarsGeneralSettings)))
+    RAWarn(2, string.format("============> McmVarsBooksSettings is loaded. %s", table.dump(McmVarsBooksSettings)))
 end
 
 --- Constructor for MCMASI:OnStatsLoadedMCM
 --- extract mcmVar table from MCM Json
 function MCMASI:OnStatsLoadedMCM()
-    for key, value in pairs(mcmVarsOptions) do
-        local actionConfigs = optionActions[key]
+    for key, value in pairs(McmVarsOptions) do
+        local actionConfigs = Data.Libs.OptionActions[key]
 
         if value == true then
             if actionConfigs then
                 MCMASIAPI:processOptionMcm(key, actionConfigs.actions)
             else
-                    BasicError(string.format("============> ERROR: No configuration found for %s.", key))
+                    RAWarn(1, string.format("============> ERROR: No configuration found for %s.", key))
             end
-            BasicWarning(string.format("============> %s is enabled.", key))
+            RAWarn(2, string.format("============> %s is enabled.", key))
         else
             if value == "notuse" and actionConfigs.ruleset == "5eLimited" and PatchAsi5eLimited == true then
                 if actionConfigs then
                     MCMASIAPI:processOptionMcm(key, actionConfigs.actions)
                 else
-                        BasicError(string.format("============> ERROR: No configuration found for %s.", key))
+                        RAWarn(1, string.format("============> ERROR: No configuration found for %s.", key))
                 end
-                BasicWarning(string.format("============> %s is enabled (5eLimited Actived).", key))
+                RAWarn(2, string.format("============> %s is enabled (5eLimited Actived).", key))
             end
         end
     end
@@ -91,7 +91,7 @@ function MCMASI:processOptionMcm(optionName, actionConfigs)
             if payload.Target then
                 MCMASIAPI:handlePayload(action, payload)
             else
-                BasicError(string.format("============> ERROR: Invalid target UUID for payload in '%s'.", optionName))
+                RAWarn(1, string.format("============> ERROR: Invalid target UUID for payload in '%s'.", optionName))
             end
         end
     end
@@ -102,7 +102,7 @@ end
 ---@param payload table payload
 function MCMASI:callApiAction(action, payload)
     if not (Mods.SubclassCompatibilityFramework and Mods.SubclassCompatibilityFramework.Api) then
-        BasicError("============> ERROR: Subclass Compatibility Framework mod or its API is not available.")
+        RAWarn(1, "============> ERROR: Subclass Compatibility Framework mod or its API is not available.")
     end
 
     local apiActions = {
@@ -120,7 +120,7 @@ function MCMASI:callApiAction(action, payload)
     if apiFunction then
         return apiFunction(payload)
     else
-        BasicError("============> ERROR: Invalid API action: " .. action)
+        RAWarn(1, "============> ERROR: Invalid API action: " .. action)
     end
 end
 
@@ -129,7 +129,6 @@ end
 ---@param payload table payload
 function MCMASI:handlePayload(action, payload)
     MCMASIAPI:callApiAction(action, { payload = payload })
-    BasicWarning(string.format("============> %s payload.", { payload = payload }))
 end
 
 --- Constructor for MCMASI:MCMGet
