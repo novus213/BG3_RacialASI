@@ -25,8 +25,8 @@ Frequently updated compatibility list!
 - Compatibility Framework
 - Community Library
 - Mod Configuration Menu (MCM) (version > 5.0)
-- Volition Cabinet (version > 5.0)
-- Kender's Libs (version > 5.0)
+- Volition Cabinet (version > 5.0.1.0)
+- Kender's Libs (version > 5.0.1.0)
 - Improved UI
 
 ## Racial Stats and Ability Scores Sources (5e Raw)
