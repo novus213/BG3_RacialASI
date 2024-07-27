@@ -150,7 +150,7 @@ _________ .__                         _________ .__                             
 ---@param newClass ClasseMod ClasseMod Instance
 --@param removedClasses table
 function ClasseMod:RemoveClassesASI(newClass, lvl ,abilityListUUID)
-    abilityListUUID = abilityListUUID or Deps.AbilityList_UUID
+    abilityListUUID = abilityListUUID or Data.Deps.AbilityList_UUID
 
     RAPrint(2, table.dump(newClass:GetProgressionUUIDLvl(1)))
     RAPrint(2, string.format("ClassModObject:GetModGuid(): %s", newClass:GetModGuid()))

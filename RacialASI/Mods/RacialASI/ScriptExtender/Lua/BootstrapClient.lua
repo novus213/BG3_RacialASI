@@ -3,7 +3,6 @@ Ext.Require("Shared/_Init.lua")
 if not Ext.Mod.IsModLoaded(Data.Deps.Framework_GUID) then return end
 
 ---Libraries / Shared / Customs
-Ext.Require("Libs/OptionsActionsLib.lua")
 Ext.Require("ModInfos/_ModInfos.lua")
 
 if VCHelpers.ModVars:IsModLoaded(Data.Deps.MCM_GUID) then

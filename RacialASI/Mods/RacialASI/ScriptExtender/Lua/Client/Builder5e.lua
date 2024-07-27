@@ -8,9 +8,6 @@
        \/     \/          \/                    \/    \/       
         \_Clean Races ModASI
 ]]--
-Ext.Require("Libs/ClassesLibrary.lua")
-Ext.Require("Libs/BooksLibrary.lua")
-Ext.Require("Libs/RacesLibrary.lua")
 
 RAPrint(1, "PatchAsi5eLimited: ")
 RAPrint(1, PatchAsi5eLimited)
@@ -27,7 +24,7 @@ RAPrint(1, PatchAsiHomebrew)
 
 local function classe5eModule()
     --local removedClasses = {}  -- Table to store classes with removed selectors
-    for _, classeMod in ipairs(ClassesLibrary) do
+    for _, classeMod in ipairs(Data.Libs.ClassesLibrary) do
         local classModObject = ClasseMod:New(classeMod.Name, classeMod.modURL, classeMod.modGuid, classeMod.progressionUUID, classeMod.Author,
         classeMod.SourceBook, classeMod.MainClasse, classeMod.isLvl20, classeMod.isOutdated)
         --local removedClass =
@@ -49,7 +46,7 @@ end
 
 local function race5eModule()
     RemovedRaces = {}
-    for _, raceMod in pairs(RaceLibrary) do
+    for _, raceMod in pairs(Data.Libs.RaceLibrary) do
         local raceModObject = RaceMod:New(raceMod.Name,raceMod.modURL,raceMod.modGuid,raceMod.progressionUUID,raceMod.Author,
         raceMod.SourceBook,raceMod.MainRace,raceMod.specialAbList,raceMod.Stats,raceMod.Sab,raceMod.bonus,
         raceMod.NoDefStats)
@@ -71,7 +68,7 @@ local function race5eModule()
                         RADebug(2, string.format("%s Wasn't fixed. You uncheck Homebrew", raceModObject:GetName()))
                     end
                 end
-                for _, book in pairs(Dnd5eLimited) do
+                for _, book in pairs(Data.Libs.Books.Dnd5eLimited) do
                     if book.bookRef == raceModObject:GetSourceBook() then
                         if PatchAsi5eLimited == true then
                             RaceMod:CleanOnRacesStatsLoaded(raceModObject, 1)
@@ -84,7 +81,7 @@ local function race5eModule()
                         end
                     end
                 end
-                for _, book in pairs(Dnd5e) do
+                for _, book in pairs(Data.Libs.Books.Dnd5e) do
                     if book.bookRef == raceModObject:GetSourceBook() then
                         if PatchAsi5e == true then
                             RaceMod:CleanOnRacesStatsLoaded(raceModObject, 1)
@@ -97,7 +94,7 @@ local function race5eModule()
                         end
                     end
                 end
-                for _, book in pairs(Dnd5eExtended) do
+                for _, book in pairs(Data.Libs.Books.Dnd5eExtended) do
                     if book.bookRef == raceModObject:GetSourceBook() then
                         if PatchAsi5eExtended == true then
                             RaceMod:CleanOnRacesStatsLoaded(raceModObject, 1)
@@ -110,7 +107,7 @@ local function race5eModule()
                         end
                     end
                 end
-                for _, book in pairs(Legacy) do
+                for _, book in pairs(Data.Libs.Books.Legacy) do
                     if book.bookRef == raceModObject:GetSourceBook() then
                         if PatchAsiLegacy == true then
                             RaceMod:CleanOnRacesStatsLoaded(raceModObject, 1)
@@ -123,7 +120,7 @@ local function race5eModule()
                         end
                     end
                 end
-                for _, book in pairs(Flavours) do
+                for _, book in pairs(Data.Libs.Books.Flavours) do
                     if book.bookRef == raceModObject:GetSourceBook() then
                         if PatchAsiFlavour == true then
                             RaceMod:CleanOnRacesStatsLoaded(raceModObject, 1)

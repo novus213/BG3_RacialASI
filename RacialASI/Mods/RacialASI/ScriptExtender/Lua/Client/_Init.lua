@@ -49,7 +49,7 @@ local function OnStatsLoaded()
     local options = config.Options
 
     for optionName, optionValue in pairs(options) do
-        local actionConfigs = OptionActions[optionName]
+        local actionConfigs = Data.Libs.OptionActions[optionName]
         if actionConfigs then
             processOption(optionName, optionValue, actionConfigs.actions)
         else
