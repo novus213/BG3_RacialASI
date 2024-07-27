@@ -1,0 +1,40 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"bg3ModHelper.rootModPath": "g:\\Mon Drive\\BG3_mods\\BG3_RacialASI",
+		"editor.tokenColorCustomizations": {
+			"textMateRules": [
+				{
+					"scope": "keyword.control.bg3txt",
+					"settings": {
+						"foreground": "#C586C0"
+					}
+				},
+				{
+					"scope": "keyword.operator.bg3txt",
+					"settings": {
+						"foreground": "#ffa200"
+					}
+				},
+				{
+					"scope": "string.first-column.bg3txt",
+					"settings": {
+						"foreground": "#9CDCFE"
+					}
+				}
+			]
+		},
+		"files.associations": {
+			"*.txt": "bg3txt"
+		},
+		"bg3ModHelper.gameInstallLocation": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Baldurs Gate 3",
+		"bg3ModHelper.lslibPath": "G:\\Mon Drive\\BG3ModManager_Latest\\#utilities\\ExportTool-v1.19.5\\Packed",
+		"bg3ModHelper.maxCacheSize": 1000,
+		"bg3ModHelper.modDestPath": "C:/Users/remim/AppData/Local/Larian Studios/Baldur's Gate 3/Mods",
+		"bg3ModHelper.hover.maxFiles": 100
+	}
+}
