@@ -1,4 +1,7 @@
 # BG3 - 5e Raw - Races and Classes Ability Scores and Stats (ASI) Mod
+
+[![GitHub release](https://img.shields.io/github/v/tag/novus213/BG3_RacialASI?label=Latest%20Version)](https://GitHub.com/novus213/BG3_KendersLabsCoreLibs/releases/) [![GitHub commits](https://img.shields.io/github/commits-since/novus213/BG3_RacialASI/main/5.0.2.0)](https://GitHub.com/novus213/BG3_RacialASI/commit/)
+
 A detailed guide to fixing ability scores and modifiers in Baldur's Gate 3 (BG3).
 
 ![BG3 - 5e Raw - Races and Classes Ability Scores and Stats (ASI) Mod](https://staticdelivery.nexusmods.com/mods/3474/images/3015/3015-1719748315-1254145093.png)
