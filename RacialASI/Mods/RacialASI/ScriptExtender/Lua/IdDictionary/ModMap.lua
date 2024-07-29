@@ -1,1 +1,0 @@
-VCHelpers.ModVars:InscribeTableMods(Data.Deps)

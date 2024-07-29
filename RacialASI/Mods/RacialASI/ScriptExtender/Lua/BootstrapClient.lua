@@ -1,4 +1,4 @@
-Ext.Require("Shared/_Init.lua")
+Ext.Require("BootstrapShared.lua")
 
 if not Ext.Mod.IsModLoaded(Data.Deps.Framework_GUID.ModuleUUID) then return end
 
