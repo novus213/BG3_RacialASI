@@ -1,156 +1,146 @@
 if VCHelpers.ModVars:IsModLoaded("755a8a72-407f-4f0d-9a33-274ac0f0b53d") then
-
-    RAPrinter = VolitionCabinetPrinter:New { Prefix = "RacialASI", ApplyColor = true,
+  RAPrinter = VolitionCabinetPrinter:New { Prefix = "RacialASIPrinter", ApplyColor = true,
     DebugLevel = MCMGet("Debug_level") }
 
-    function RAPrint(debugLevel, ...)
-        RAPrinter:SetFontColor(0, 255, 255)
-        RAPrinter:Print(debugLevel, ...)
-    end
+  function RAPrint(debugLevel, ...)
+    RAPrinter:SetFontColor(0, 255, 255)
+    RAPrinter:Print(debugLevel, ...)
+  end
 
-    function RATest(debugLevel, ...)
-        RAPrinter:SetFontColor(100, 200, 150)
-        RAPrinter:PrintTest(debugLevel, ...)
-    end
+  function RATest(debugLevel, ...)
+    RAPrinter:SetFontColor(100, 200, 150)
+    RAPrinter:PrintTest(debugLevel, ...)
+  end
 
-    function RASuccess(debugLevel, ...)
-        RAPrinter:SetFontColor(50, 255, 100)
-        RAPrinter:Print(debugLevel, ...)
-    end
+  function RASuccess(debugLevel, ...)
+    RAPrinter:SetFontColor(50, 255, 100)
+    RAPrinter:Print(debugLevel, ...)
+  end
 
-    function RADebug(debugLevel, ...)
-        RAPrinter:SetFontColor(200, 200, 0)
-        RAPrinter:PrintDebug(debugLevel, ...)
-    end
+  function RADebug(debugLevel, ...)
+    RAPrinter:SetFontColor(200, 200, 0)
+    RAPrinter:PrintDebug(debugLevel, ...)
+  end
 
-    function RAWarn(debugLevel, ...)
-        RAPrinter:SetFontColor(255, 100, 50)
-        RAPrinter:PrintWarning(debugLevel, ...)
-    end
+  function RAWarn(debugLevel, ...)
+    RAPrinter:SetFontColor(255, 100, 50)
+    RAPrinter:PrintWarning(debugLevel, ...)
+  end
 
-    function RADump(debugLevel, ...)
-        RAPrinter:SetFontColor(190, 150, 225)
-        RAPrinter:Dump(debugLevel, ...)
-    end
+  function RADump(debugLevel, ...)
+    RAPrinter:SetFontColor(190, 150, 225)
+    RAPrinter:Dump(debugLevel, ...)
+  end
 
-    function RADumpArray(debugLevel, ...)
-        RAPrinter:DumpArray(debugLevel, ...)
-    end
+  function RADumpArray(debugLevel, ...)
+    RAPrinter:DumpArray(debugLevel, ...)
+  end
 
-    McmVars = {
-        AddGnome_Tinkertools_Spells                                     = "notoptional",
-        AddGnome_ForestMinorIllusion_Spells                             = "notoptional",
-        AddHalfElf_Skills                                               = "notoptional",
-        AddHalfElfDrow_Drow_DrowWeaponTraining_Passives                 = "notoptional",
-        RemoveHuman_HumanMilitia_HumanVersatility_Passives              = "notoptional",
-        RemoveHalfElf_HumanMilitia_Passives                             = "notoptional",
-        AddUndeadGhastlyGhouls_TruePotion_and_LightSensitivity_Passives = MCMASIAPI:MCMGet("AddUndeadGhastlyGhouls_TruePotion_and_LightSensitivity_Passives"),
-        AddUnderdarkRaces_LightSensitivity_Passives                     = "notoptional"
-        --[[
+  McmVars = {
+    AddGnome_Tinkertools_Spells                                     = "notoptional",
+    AddGnome_ForestMinorIllusion_Spells                             = "notoptional",
+    AddHalfElf_Skills                                               = "notoptional",
+    AddHalfElfDrow_Drow_DrowWeaponTraining_Passives                 = "notoptional",
+    RemoveHuman_HumanMilitia_HumanVersatility_Passives              = "notoptional",
+    RemoveHalfElf_HumanMilitia_Passives                             = "notoptional",
+    AddUndeadGhastlyGhouls_TruePotion_and_LightSensitivity_Passives = MCMASIAPI:MCMGet(
+      "AddUndeadGhastlyGhouls_TruePotion_and_LightSensitivity_Passives"),
+    AddUnderdarkRaces_LightSensitivity_Passives                     = "notoptional"
+    --[[
             McmVars["AddGnomeTinkertoolsSpells"]
-        ]]--
-    }
+        ]] --
+  }
 
-    McmVarsBooksSettings = {
-        PatchAsi5eLimited = MCMASIAPI:MCMGet("PatchASI_5eLimited"),
-        PatchAsi5e = MCMASIAPI:MCMGet("PatchASI_5e"),
-        PatchAsi5eExtended = MCMASIAPI:MCMGet("PatchASI_5eExtended"),
-        PatchAsiLegacy = MCMASIAPI:MCMGet("PatchASI_Legacy"),
-        PatchAsiFlavour = MCMASIAPI:MCMGet("PatchASI_Flavour"),
-        PatchAsiHomebrew = MCMASIAPI:MCMGet("PatchASI_Homebrew"),
-        PatchAsiDefault = MCMASIAPI:MCMGet("PatchASI_Default")
+  McmVarsBooksSettings = {
+    PatchAsi5eLimited = MCMASIAPI:MCMGet("PatchASI_5eLimited"),
+    PatchAsi5e = MCMASIAPI:MCMGet("PatchASI_5e"),
+    PatchAsi5eExtended = MCMASIAPI:MCMGet("PatchASI_5eExtended"),
+    PatchAsiLegacy = MCMASIAPI:MCMGet("PatchASI_Legacy"),
+    PatchAsiFlavour = MCMASIAPI:MCMGet("PatchASI_Flavour"),
+    PatchAsiHomebrew = MCMASIAPI:MCMGet("PatchASI_Homebrew"),
+    PatchAsiDefault = MCMASIAPI:MCMGet("PatchASI_Default")
 
-        --[[
+    --[[
             McmVarsBooksSettings["IgnoreAll"]
-        ]]--
-    }
-    McmVarsGeneralSettings = {
-        RASI = MCMASIAPI:MCMGet("RASI"),
-        DebugLevel = MCMASIAPI:MCMGet("Debug_level"),
-        Log = MCMASIAPI:MCMGet("Log")
+        ]] --
+  }
+  McmVarsGeneralSettings = {
+    RASI = MCMASIAPI:MCMGet("RASI"),
+    DebugLevel = MCMASIAPI:MCMGet("Debug_level"),
+    Log = MCMASIAPI:MCMGet("Log")
 
-    }
-
-
-    McmVarsOptions 		= McmVars
-
-    PatchAsi5eLimited  = McmVarsBooksSettings["PatchAsi5eLimited"]
-    PatchAsi5e         = McmVarsBooksSettings["PatchAsi5e"]
-    PatchAsi5eExtended = McmVarsBooksSettings["PatchAsi5eExtended"]
-    PatchAsiLegacy     = McmVarsBooksSettings["PatchAsiLegacy"]
-    PatchAsiFlavour    = McmVarsBooksSettings["PatchAsiFlavour"]
-    PatchAsiHomebrew   = McmVarsBooksSettings["PatchAsiHomebrew"]
-    PatchAsiDefault    = McmVarsBooksSettings["PatchAsiDefault"]
+  }
 
 
-    DebugLevel = McmVarsGeneralSettings["Debug_level"]
-    Log = McmVarsGeneralSettings["Log"]
+  McmVarsOptions     = McmVars
 
-    -- Register a net listener to handle settings changes dynamically
-    Ext.RegisterNetListener("MCM_Saved_Setting", function(call, payload)
+  PatchAsi5eLimited  = McmVarsBooksSettings["PatchAsi5eLimited"]
+  PatchAsi5e         = McmVarsBooksSettings["PatchAsi5e"]
+  PatchAsi5eExtended = McmVarsBooksSettings["PatchAsi5eExtended"]
+  PatchAsiLegacy     = McmVarsBooksSettings["PatchAsiLegacy"]
+  PatchAsiFlavour    = McmVarsBooksSettings["PatchAsiFlavour"]
+  PatchAsiHomebrew   = McmVarsBooksSettings["PatchAsiHomebrew"]
+  PatchAsiDefault    = McmVarsBooksSettings["PatchAsiDefault"]
 
-        local data = Ext.Json.Parse(payload)
 
-        if not data or data.modGUID ~= ModuleUUID or not data.settingId then
-            return
-        end
+  DebugLevel = McmVarsGeneralSettings["Debug_level"]
+  Log = McmVarsGeneralSettings["Log"]
 
-        if McmVars[data.settingId] ~= nil then
-            McmVars[data.settingId] = data.value
+  -- Register a net listener to handle settings changes dynamically
+  Ext.RegisterNetListener("MCM_Saved_Setting", function (call, payload)
+    local data = Ext.Json.Parse(payload)
 
-            RAWarn(2, string.format("Setting %s to %s", data.settingId, data.value))
+    if not data or data.modGUID ~= ModuleUUID or not data.settingId then
+      return
+    end
 
-            McmVarsOptions 		= McmVars
+    if McmVars[data.settingId] ~= nil then
+      McmVars[data.settingId] = data.value
 
-            --MCMASIAPI:OnStatsLoadedMCM()
+      RAWarn(2, string.format("Setting %s to %s", data.settingId, data.value))
 
-        end
+      McmVarsOptions = McmVars
 
-            if McmVarsBooksSettings[data.settingId] ~= nil then
-            McmVarsBooksSettings[data.settingId] = data.value
+      --MCMASIAPI:OnStatsLoadedMCM()
+    end
 
-            RAWarn(2, string.format("Setting %s to %s", data.settingId, data.value))
+    if McmVarsBooksSettings[data.settingId] ~= nil then
+      McmVarsBooksSettings[data.settingId] = data.value
 
-            PatchAsi5eLimited  = McmVarsBooksSettings["PatchAsi5eLimited"]
-            PatchAsi5e         = McmVarsBooksSettings["PatchAsi5e"]
-            PatchAsi5eExtended = McmVarsBooksSettings["PatchAsi5eExtended"]
-            PatchAsiLegacy     = McmVarsBooksSettings["PatchAsiLegacy"]
-            PatchAsiFlavour    = McmVarsBooksSettings["PatchAsiFlavour"]
-            PatchAsiHomebrew   = McmVarsBooksSettings["PatchAsiHomebrew"]
-            PatchAsiDefault    = McmVarsBooksSettings["PatchAsiDefault"]
+      RAWarn(2, string.format("Setting %s to %s", data.settingId, data.value))
+
+      PatchAsi5eLimited  = McmVarsBooksSettings["PatchAsi5eLimited"]
+      PatchAsi5e         = McmVarsBooksSettings["PatchAsi5e"]
+      PatchAsi5eExtended = McmVarsBooksSettings["PatchAsi5eExtended"]
+      PatchAsiLegacy     = McmVarsBooksSettings["PatchAsiLegacy"]
+      PatchAsiFlavour    = McmVarsBooksSettings["PatchAsiFlavour"]
+      PatchAsiHomebrew   = McmVarsBooksSettings["PatchAsiHomebrew"]
+      PatchAsiDefault    = McmVarsBooksSettings["PatchAsiDefault"]
 
 
 
-            --CleanOnRacesStatsLoaded()
-            --builder5eRaces()
+      --CleanOnRacesStatsLoaded()
+      --builder5eRaces()
+    end
 
-        end
+    if McmVarsGeneralSettings[data.settingId] ~= nil then
+      McmVarsGeneralSettings[data.settingId] = data.value
+      RAWarn(2, string.format("Setting %s to %s", data.settingId, data.value))
 
-        if McmVarsGeneralSettings[data.settingId] ~= nil then
+      --McmVarsGeneralSettings = McmVarsGeneralSettings
+    end
 
-            McmVarsGeneralSettings[data.settingId] = data.value
-            RAWarn(2, string.format("Setting %s to %s", data.settingId, data.value))
+    if data.settingId == "debug_level" then
+      RADebug(0, "Setting debug level to " .. data.value)
+      RAPrinter.DebugLevel = data.value
 
-            --McmVarsGeneralSettings = McmVarsGeneralSettings
+      DebugLevel = McmVarsGeneralSettings["Debug_level"]
+    end
 
-        end
+    if data.settingId == "Log" then
+      RAWarn(2, string.format("Setting %s to %s", data.settingId, data.value))
 
-        if data.settingId == "debug_level" then
-
-            RADebug(0, "Setting debug level to " .. data.value)
-            RAPrinter.DebugLevel = data.value
-
-            DebugLevel = McmVarsGeneralSettings["Debug_level"]
-        end
-
-        if data.settingId == "Log" then
-
-            RAWarn(2, string.format("Setting %s to %s", data.settingId, data.value))
-
-            Log = McmVarsGeneralSettings["Log"]
-        end
-
-
-    end)
-
+      Log = McmVarsGeneralSettings["Log"]
+    end
+  end)
 end

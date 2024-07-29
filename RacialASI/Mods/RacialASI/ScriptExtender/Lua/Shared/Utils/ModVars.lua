@@ -36,7 +36,7 @@ end
 ---@param modId string modId
 ---@return boolean
 function IsModExist(modId)
-    return VCHelpers.ModVars:IsModLoaded(Data.Deps.Framework_GUID) and VCHelpers.ModVars:IsModLoaded(modId)
+    return VCHelpers.ModVars:IsModLoaded(Data.Deps.Framework_GUID.ModuleUUID) and VCHelpers.ModVars:IsModLoaded(modId)
 end
 
 -- -------------------------------------------------------------------------- --

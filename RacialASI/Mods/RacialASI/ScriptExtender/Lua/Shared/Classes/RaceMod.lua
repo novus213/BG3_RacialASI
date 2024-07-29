@@ -227,7 +227,7 @@ local fixAsi = {}  -- Table to store classes with removed shit asi
         local payload = {}
         if newRace:GetModGuid() and VCHelpers.ModVars:IsModLoaded(newRace:GetModGuid()) then
         -- special Ability List +x in some ASI or default
-            local abilityListUUID = Data.Deps.AbilityList_UUID
+            local abilityListUUID = Data.Deps.AbilityList_UUID.ModuleUUID
             if newRace:GetSpecialAbList() ~= nil then
                 abilityListUUID = newRace:GetSpecialAbList()
             end
@@ -276,7 +276,7 @@ end
 function RaceMod:InsertDefaultPayloadASI(newRace, lvl, abilityListUUID)
     local baseAsi = {}  -- Table to store classes with removed shit asi
     local payload = {}
-    abilityListUUID = abilityListUUID or Data.Deps.AbilityList_UUID
+    abilityListUUID = abilityListUUID or Data.Deps.AbilityList_UUID.ModuleUUID
     if newRace:GetModGuid() and VCHelpers.ModVars:IsModLoaded(newRace:GetModGuid()) then
         payload =  VCHelpers.CF:InsertSelectorsPayload(newRace:GetModGuid(),
         newRace:GetProgressionUUID(lvl), "SelectAbilityBonus", abilityListUUID, {"2","1"}, 2, "AbilityBonus")
@@ -310,7 +310,7 @@ _________ .__                         __________                              __
 ---@param lvl integer
 ---@param newRace RaceMod RaceMod Instance
 function RaceMod:CleanOnRacesStatsLoaded(newRace, lvl, abilityListUUID)
-        abilityListUUID = abilityListUUID or Data.Deps.AbilityList_UUID
+        abilityListUUID = abilityListUUID or Data.Deps.AbilityList_UUID.ModuleUUID
         -- remove +2+1, +1, +1+1 ect..
         local payload = VCHelpers.CF:removeSelectorsPayload(newRace:GetModGuid(),
         newRace:GetProgressionUUID(lvl), "SelectAbilityBonus",
