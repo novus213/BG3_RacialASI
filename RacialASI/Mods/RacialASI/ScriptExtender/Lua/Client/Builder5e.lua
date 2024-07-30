@@ -55,7 +55,6 @@ local function race5eModule()
       raceMod.Author,
       raceMod.SourceBook, raceMod.MainRace, raceMod.specialAbList, raceMod.Stats, raceMod.Sab, raceMod.bonus,
       raceMod.NoDefStats)
-
     if PatchAsiDefault == true then
       RaceMod:CleanOnRacesStatsLoaded(raceModObject, 1)
       RaceMod:InsertDefaultPayloadASI(raceModObject, 1)

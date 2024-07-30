@@ -2,8 +2,8 @@
 ---@class MCMASI
 
 MCMASI = _Class:Create("MCMASI", nil, {
-    mods = {},
-    profiles = {},
+  mods = {},
+  profiles = {},
 })
 
 MCMASIAPI = MCMASI:New({}, "RacialASI")
@@ -13,68 +13,69 @@ MCMASIAPI = MCMASI:New({}, "RacialASI")
 --- Constructor for MCMASI:OnSessionLoadedMCM
 --- Function to load MCM values from json
 function MCMASI:OnSessionLoadedMCM()
-    McmVars = {
-        AddGnome_Tinkertools_Spells                                     = "notoptional",
-        AddGnome_ForestMinorIllusion_Spells                             = "notoptional",
-        AddHalfElf_Skills                                               = "notoptional",
-        AddHalfElfDrow_Drow_DrowWeaponTraining_Passives                 = "notoptional",
-        RemoveHuman_HumanMilitia_HumanVersatility_Passives              = "notoptional",
-        RemoveHalfElf_HumanMilitia_Passives                             = "notoptional",
-        AddUndeadGhastlyGhouls_TruePotion_and_LightSensitivity_Passives = MCMASIAPI:MCMGet("AddUndeadGhastlyGhouls_TruePotion_and_LightSensitivity_Passives"),
-        AddUnderdarkRaces_LightSensitivity_Passives                     = "notoptional"
-        --[[
+  McmVars = {
+    AddGnome_Tinkertools_Spells                                     = "notoptional",
+    AddGnome_ForestMinorIllusion_Spells                             = "notoptional",
+    AddHalfElf_Skills                                               = "notoptional",
+    AddHalfElfDrow_Drow_DrowWeaponTraining_Passives                 = "notoptional",
+    RemoveHuman_HumanMilitia_HumanVersatility_Passives              = "notoptional",
+    RemoveHalfElf_HumanMilitia_Passives                             = "notoptional",
+    AddUndeadGhastlyGhouls_TruePotion_and_LightSensitivity_Passives = MCMASIAPI:MCMGet(
+      "AddUndeadGhastlyGhouls_TruePotion_and_LightSensitivity_Passives"),
+    AddUnderdarkRaces_LightSensitivity_Passives                     = "notoptional"
+    --[[
             McmVars["AddGnomeTinkertoolsSpells"]
-        ]]--
-    }
+        ]] --
+  }
 
-    McmVarsBooksSettings = {
-        PatchAsi5eLimited   = MCMASIAPI:MCMGet("PatchASI_5eLimited"),
-        PatchAsi5e          = MCMASIAPI:MCMGet("PatchASI_5e"),
-        PatchAsi5eExtended  = MCMASIAPI:MCMGet("PatchASI_5eExtended"),
-        PatchAsiLegacy      = MCMASIAPI:MCMGet("PatchASI_Legacy"),
-        PatchAsiFlavour     = MCMASIAPI:MCMGet("PatchASI_Flavour"),
-        PatchAsiHomebrew    = MCMASIAPI:MCMGet("PatchASI_Homebrew"),
-        PatchAsiDefault     = MCMASIAPI:MCMGet("PatchASI_Default")
-        --[[
+  McmVarsBooksSettings = {
+    PatchAsi5eLimited  = MCMASIAPI:MCMGet("PatchASI_5eLimited"),
+    PatchAsi5e         = MCMASIAPI:MCMGet("PatchASI_5e"),
+    PatchAsi5eExtended = MCMASIAPI:MCMGet("PatchASI_5eExtended"),
+    PatchAsiLegacy     = MCMASIAPI:MCMGet("PatchASI_Legacy"),
+    PatchAsiFlavour    = MCMASIAPI:MCMGet("PatchASI_Flavour"),
+    PatchAsiHomebrew   = MCMASIAPI:MCMGet("PatchASI_Homebrew"),
+    PatchAsiDefault    = MCMASIAPI:MCMGet("PatchASI_Default")
+    --[[
             McmVarsBooksSettings["IgnoreAll"]
-        ]]--
-    }
+        ]] --
+  }
 
-    McmVarsGeneralSettings = {
-        RASI        = MCMASIAPI:MCMGet("RASI"),
-        DebugLevel  = MCMASIAPI:MCMGet("Debug_level"),
-        Log         = MCMASIAPI:MCMGet("Log")
-    }
+  McmVarsGeneralSettings = {
+    RASI       = MCMASIAPI:MCMGet("RASI"),
+    DebugLevel = MCMASIAPI:MCMGet("Debug_level"),
+    Log        = MCMASIAPI:MCMGet("Log")
+  }
 
-    RAWarn(2, string.format("============> McmVars is loaded. %s", table.dump(McmVars)))
-    RAWarn(2, string.format("============> McmVarsGeneralSettings is loaded. %s", table.dump(McmVarsGeneralSettings)))
-    RAWarn(2, string.format("============> McmVarsBooksSettings is loaded. %s", table.dump(McmVarsBooksSettings)))
+  RAWarn(2, string.format("============> McmVars is loaded. %s", table.dump(McmVars)))
+  RAWarn(2, string.format("============> McmVarsGeneralSettings is loaded. %s", table.dump(McmVarsGeneralSettings)))
+  RAWarn(2, string.format("============> McmVarsBooksSettings is loaded. %s", table.dump(McmVarsBooksSettings)))
 end
 
 --- Constructor for MCMASI:OnStatsLoadedMCM
 --- extract mcmVar table from MCM Json
 function MCMASI:OnStatsLoadedMCM()
-    for key, value in pairs(McmVarsOptions) do
-        local actionConfigs = Data.Libs.OptionActions[key]
+  for key, value in pairs(McmVarsOptions) do
+    local actionConfigs = Data.Libs.OptionActions[key]
 
-        if value == true then
-            if actionConfigs then
-                MCMASIAPI:processOptionMcm(key, actionConfigs.actions)
-            else
-                    RAWarn(1, string.format("============> ERROR: No configuration found for %s.", key))
-            end
-            RAWarn(2, string.format("============> %s is enabled.", key))
+    if value == true then
+      if actionConfigs then
+        MCMASIAPI:processOptionMcm(key, actionConfigs.actions)
+      else
+        RAWarn(1, string.format("============> ERROR: No configuration found for %s.", key))
+      end
+      RAWarn(2, string.format("============> %s is enabled.", key))
+    else
+      if value == "notoptional" and actionConfigs.ruleset == "5eLimited" and PatchAsi5eLimited == true then
+        if actionConfigs then
+          MCMASIAPI:processOptionMcm(key, actionConfigs.actions)
         else
-            if value == "notoptional" and actionConfigs.ruleset == "5eLimited" and PatchAsi5eLimited == true then
-                if actionConfigs then
-                    MCMASIAPI:processOptionMcm(key, actionConfigs.actions)
-                else
-                        RAWarn(1, string.format("============> ERROR: No configuration found for %s.", key))
-                end
-                RAWarn(2, string.format("============> %s is enabled (5eLimited Actived).", key))
-            end
+          RAWarn(1, string.format("============> ERROR: No configuration found for %s.", key))
         end
+        RAWarn(2, string.format("============> %s is enabled (5eLimited Actived).", key))
+      end
     end
+  end
 end
 
 --- Constructor for MCMASI:processOptionMcm
@@ -82,57 +83,56 @@ end
 ---@param optionValue boolean active or not option
 ---@param actionConfigs table actions table from mcm option
 function MCMASI:processOptionMcm(optionName, actionConfigs)
-    for _, actionConfig in ipairs(actionConfigs) do
+  for _, actionConfig in ipairs(actionConfigs) do
+    local action   = actionConfig.action
+    local payloads = actionConfig.payloads
 
-        local action   = actionConfig.action
-        local payloads = actionConfig.payloads
-
-        for _, payload in ipairs(payloads) do
-            if payload.Target then
-                MCMASIAPI:handlePayload(action, payload)
-            else
-                RAWarn(1, string.format("============> ERROR: Invalid target UUID for payload in '%s'.", optionName))
-            end
-        end
+    for _, payload in ipairs(payloads) do
+      if payload.Target then
+        MCMASIAPI:handlePayload(action, payload)
+      else
+        RAWarn(1, string.format("============> ERROR: Invalid target UUID for payload in '%s'.", optionName))
+      end
     end
+  end
 end
 
 --- Constructor for MCMASI:callApiAction
 ---@param action string payload action
 ---@param payload table payload
 function MCMASI:callApiAction(action, payload)
-    if not (Mods.SubclassCompatibilityFramework and Mods.SubclassCompatibilityFramework.Api) then
-        RAWarn(1, "============> ERROR: Subclass Compatibility Framework mod or its API is not available.")
-    end
+  if not (Mods.SubclassCompatibilityFramework and Mods.SubclassCompatibilityFramework.Api) then
+    RAWarn(1, "============> ERROR: Subclass Compatibility Framework mod or its API is not available.")
+  end
 
-    local apiActions = {
-        InsertPassives  = Mods.SubclassCompatibilityFramework.Api.InsertPassives,
-        RemovePassives  = Mods.SubclassCompatibilityFramework.Api.RemovePassives,
-        InsertSelectors = Mods.SubclassCompatibilityFramework.Api.InsertSelectors,
-        RemoveSelectors = Mods.SubclassCompatibilityFramework.Api.RemoveSelectors,
-        InsertBoosts    = Mods.SubclassCompatibilityFramework.Api.InsertBoosts,
-        RemoveBoosts    = Mods.SubclassCompatibilityFramework.Api.RemoveBoosts,
-        SetBoolean      = Mods.SubclassCompatibilityFramework.Api.SetBoolean
-    }
+  local apiActions = {
+    InsertPassives  = Mods.SubclassCompatibilityFramework.Api.InsertPassives,
+    RemovePassives  = Mods.SubclassCompatibilityFramework.Api.RemovePassives,
+    InsertSelectors = Mods.SubclassCompatibilityFramework.Api.InsertSelectors,
+    RemoveSelectors = Mods.SubclassCompatibilityFramework.Api.RemoveSelectors,
+    InsertBoosts    = Mods.SubclassCompatibilityFramework.Api.InsertBoosts,
+    RemoveBoosts    = Mods.SubclassCompatibilityFramework.Api.RemoveBoosts,
+    SetBoolean      = Mods.SubclassCompatibilityFramework.Api.SetBoolean
+  }
 
-    local apiFunction = apiActions[action]
+  local apiFunction = apiActions[action]
 
-    if apiFunction then
-        return apiFunction(payload)
-    else
-        RAWarn(1, "============> ERROR: Invalid API action: " .. action)
-    end
+  if apiFunction then
+    return apiFunction(payload)
+  else
+    RAWarn(1, "============> ERROR: Invalid API action: " .. action)
+  end
 end
 
 --- Constructor for MCMASI:handlePayload
 ---@param action string payload action
 ---@param payload table payload
 function MCMASI:handlePayload(action, payload)
-    MCMASIAPI:callApiAction(action, { payload = payload })
+  MCMASIAPI:callApiAction(action, { payload = payload })
 end
 
 --- Constructor for MCMASI:MCMGet
 --- Function to get MCM setting values
-function  MCMASI:MCMGet(settingID)
-    return Mods.BG3MCM.MCMAPI:GetSettingValue(settingID, ModuleUUID)
+function MCMASI:MCMGet(settingID)
+  return Mods.BG3MCM.MCMAPI:GetSettingValue(settingID, ModuleUUID)
 end
