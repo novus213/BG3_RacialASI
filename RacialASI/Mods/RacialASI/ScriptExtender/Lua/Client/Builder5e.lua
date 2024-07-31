@@ -155,19 +155,23 @@ local function builder5e()
   end
 end
 
-if not VCHelpers.ModVars:IsModLoaded(Data.Deps.MCM_GUID.ModuleUUID) and MODENABLED == 1 then
-  if VCHelpers.ModVars:IsModLoaded(Data.Deps.Framework_GUID.ModuleUUID) then
-    Ext.Events.StatsLoaded:Subscribe(builder5e)
+if not VCHelpers.ModVars:IsModLoaded(Data.Deps.MCM_GUID.ModuleUUID) then
+  if MODENABLED == 1 then
+    if VCHelpers.ModVars:IsModLoaded(Data.Deps.Framework_GUID.ModuleUUID) then
+      Ext.Events.StatsLoaded:Subscribe(builder5e)
+    end
+  else
+    RAWarn(1, "JSON RASI Mod Disable <Builder5e>")
   end
-else
-  RAWarn(1, "JSON RASI Mod Disable <Builder5e>")
 end
 
 
-if VCHelpers.ModVars:IsModLoaded(Data.Deps.MCM_GUID.ModuleUUID) and McmVarsGeneralSettings["RASI"] == true then
- if VCHelpers.ModVars:IsModLoaded(Data.Deps.Framework_GUID.ModuleUUID) then
-    Ext.Events.StatsLoaded:Subscribe(builder5e)
+if VCHelpers.ModVars:IsModLoaded(Data.Deps.MCM_GUID.ModuleUUID) then
+  if McmVarsGeneralSettings["RASI"] == true then
+    if VCHelpers.ModVars:IsModLoaded(Data.Deps.Framework_GUID.ModuleUUID) then
+      Ext.Events.StatsLoaded:Subscribe(builder5e)
+    end
+  else
+    RAWarn(1, "MCM RASI Mod Disable <Builder5e>")
   end
-else
-  RAWarn(1, "MCM RASI Mod Disable <Builder5e>")
 end
