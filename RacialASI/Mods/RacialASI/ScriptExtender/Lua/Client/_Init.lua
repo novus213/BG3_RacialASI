@@ -83,8 +83,8 @@ else
   end)
 
   Ext.Events.GameStateChanged:Subscribe(function (e)
-    RAPrint(1, "e.FromState")
-    RAPrint(1, e.FromState)
+    RAPrint(2, "e.FromState")
+    RAPrint(2, e.FromState)
 
     if e.FromState == "PrepareRunning" then
       McmVarsOptions     = McmVars

@@ -201,9 +201,9 @@ function RaceMod:TableInsertRaceStats(newRace)
   local raceStat = {}
   if newRace:GetStats() ~= nil then
     for i = 1, 6 do
-      BasicPrint(newRace:GetStatsListI(i))
-      BasicPrint(newRace:GetStatsI(i))
-      BasicPrint(string.format("Ability(%s,%s)", newRace:GetStatsListI(i), newRace:GetStatsI(i)))
+      RAPrint(2, newRace:GetStatsListI(i))
+      RAPrint(2, newRace:GetStatsI(i))
+      RAPrint(2, string.format("Ability(%s,%s)", newRace:GetStatsListI(i), newRace:GetStatsI(i)))
       table.insert(raceStat, "Ability(" .. newRace:GetStatsListI(i) .. "," .. newRace:GetStatsI(i) .. ")")
     end
     if newRace:GetBonus() ~= nil then

@@ -90,3 +90,5 @@ if not VCHelpers.ModVars:IsModLoaded(Data.Deps.MCM_GUID.ModuleUUID) then
   BasicPrint("                               ")
   Ext.Require("Client/Builder5e.lua")
 end
+
+Ext.Require("Client/Debug.lua")
