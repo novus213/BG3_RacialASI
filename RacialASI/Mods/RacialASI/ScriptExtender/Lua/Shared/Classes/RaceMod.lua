@@ -276,7 +276,7 @@ function RaceMod:InsertDefaultPayloadASI(newRace, lvl, abilityListUUID)
   abilityListUUID = abilityListUUID or Data.Deps.AbilityList_UUID.ModuleUUID
   if newRace:GetModGuid() and VCHelpers.ModVars:IsModLoaded(newRace:GetModGuid()) then
     payload = VCHelpers.CF:InsertSelectorsPayload(newRace:GetModGuid(),
-      newRace:GetProgressionUUID(lvl), "SelectAbilityBonus", abilityListUUID, { "2", "1" }, 2, "AbilityBonus")
+      newRace:GetProgressionUUID(lvl), "SelectAbilityBonus", abilityListUUID, 2, { "2", "1" }, "AbilityBonus")
     table.insert(baseAsi, newRace:GetName())     -- Add to the list if ASI Fixed
 
     if VCHelpers.CF:checkSCF() then
