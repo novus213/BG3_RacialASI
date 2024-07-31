@@ -82,7 +82,7 @@ else
   Ext.Events.StatsLoaded:Subscribe(function ()
     MCMASIAPI:OnSessionLoadedMCM()
   end)
-  
+
   if McmVarsGeneralSettings["RASI"] == true then
     Ext.Events.StatsLoaded:Subscribe(function ()
       MCMASIAPI:OnStatsLoadedMCM()
@@ -92,7 +92,29 @@ else
       RAPrint(2, "e.FromState")
       RAPrint(2, e.FromState)
 
-      if e.FromState == "PrepareRunning" then
+      --[[
+  "Unknown",
+	"Uninitialized",
+	"Init",
+	"Idle",
+	"Exit",
+	"LoadLevel",
+	"LoadModule",
+	"LoadSession",
+	"UnloadLevel",
+	"UnloadModule",
+	"UnloadSession",
+	"Sync",
+	"Paused",
+	"Running",
+	"Save",
+	"Disconnect",
+	"BuildStory",
+	"ReloadStory"
+    ]]
+      --
+
+      if e.FromState == "PrepareRunning" or e.FromState == "Sync" or e.ToState == "LoadSession" then
         McmVarsOptions     = McmVars
 
         PatchAsi5eLimited  = McmVarsBooksSettings["PatchAsi5eLimited"]

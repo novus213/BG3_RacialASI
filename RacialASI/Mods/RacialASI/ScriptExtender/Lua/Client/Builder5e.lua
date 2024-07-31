@@ -155,23 +155,51 @@ local function builder5e()
   end
 end
 
-if not VCHelpers.ModVars:IsModLoaded(Data.Deps.MCM_GUID.ModuleUUID) then
-  if MODENABLED == 1 then
-    if VCHelpers.ModVars:IsModLoaded(Data.Deps.Framework_GUID.ModuleUUID) then
-      Ext.Events.StatsLoaded:Subscribe(builder5e)
-    end
-  else
-    RAWarn(1, "JSON RASI Mod Disable <Builder5e>")
-  end
+if VCHelpers.ModVars:IsModLoaded(Data.Deps.Framework_GUID.ModuleUUID) then
+  Ext.Events.StatsLoaded:Subscribe(builder5e)
 end
 
 
-if VCHelpers.ModVars:IsModLoaded(Data.Deps.MCM_GUID.ModuleUUID) then
-  if McmVarsGeneralSettings["RASI"] == true then
+Ext.Events.GameStateChanged:Subscribe(function (e)
+  RAPrint(2, "e.FromState")
+  RAPrint(2, e.FromState)
+
+
+  if not VCHelpers.ModVars:IsModLoaded(Data.Deps.MCM_GUID.ModuleUUID) then
+    if MODENABLED == 1 then
+      if VCHelpers.ModVars:IsModLoaded(Data.Deps.Framework_GUID.ModuleUUID) then
+        Ext.Events.StatsLoaded:Subscribe(builder5e)
+      end
+    else
+      RAWarn(1, "JSON RASI Mod Disable <Builder5e>")
+    end
+  end
+
+
+  if VCHelpers.ModVars:IsModLoaded(Data.Deps.MCM_GUID.ModuleUUID) and McmVarsGeneralSettings["RASI"] == true then
     if VCHelpers.ModVars:IsModLoaded(Data.Deps.Framework_GUID.ModuleUUID) then
       Ext.Events.StatsLoaded:Subscribe(builder5e)
+    end
+
+
+    if e.FromState == "PrepareRunning" or e.FromState == "Sync" or e.ToState == "LoadSession" then
+      McmVarsOptions     = McmVars
+
+      PatchAsi5eLimited  = McmVarsBooksSettings["PatchAsi5eLimited"]
+      PatchAsi5e         = McmVarsBooksSettings["PatchAsi5e"]
+      PatchAsi5eExtended = McmVarsBooksSettings["PatchAsi5eExtended"]
+      PatchAsiLegacy     = McmVarsBooksSettings["PatchAsiLegacy"]
+      PatchAsiFlavour    = McmVarsBooksSettings["PatchAsiFlavour"]
+      PatchAsiHomebrew   = McmVarsBooksSettings["PatchAsiHomebrew"]
+      PatchAsiDefault    = McmVarsBooksSettings["PatchAsiDefault"]
+
+      DebugLevel         = McmVarsGeneralSettings["Debug_level"]
+      Log                = McmVarsGeneralSettings["Log"]
+      RasiOnOff          = McmVarsGeneralSettings["RASI"]
+
+      builder5e()
     end
   else
     RAWarn(1, "MCM RASI Mod Disable <Builder5e>")
   end
-end
+end)
