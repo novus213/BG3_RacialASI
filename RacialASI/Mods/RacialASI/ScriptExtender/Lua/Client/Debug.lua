@@ -24,7 +24,7 @@ local function compare(t1, t2)
       local modData1 = Ext.Mod.GetMod(uuidI)
       local modData2 = Ext.Mod.GetMod(uuidIn)
 
-      if modData1.Info.ModuleUUID ~= modData2.Info.ModuleUUID then
+      if (modData1.Info.ModuleUUID ~= modData2.Info.ModuleUUID) and (modData1.Info.Name == modData2.Info.Name) then
         table.insert(tempUuid, uuidIn)
       end
     end

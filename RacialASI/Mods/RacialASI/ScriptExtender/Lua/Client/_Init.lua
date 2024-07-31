@@ -66,44 +66,54 @@ local function OnStatsLoaded()
   PatchAsiFlavour    = settings5e["PatchASI_Flavour"]
   PatchAsiHomebrew   = settings5e["PatchASI_Homebrew"]
   PatchAsiDefault    = settings5e["PatchASI_Default"]
+  MODENABLED         = config.MOD_ENABLED
 end
 --- End CONFIG NO MCM
 
 
 if not VCHelpers.ModVars:IsModLoaded(Data.Deps.MCM_GUID.ModuleUUID) then
-  Ext.Events.StatsLoaded:Subscribe(start)
-  Ext.Events.StatsLoaded:Subscribe(OnStatsLoaded)
+  if MODENABLED == 1 then
+    Ext.Events.StatsLoaded:Subscribe(start)
+    Ext.Events.StatsLoaded:Subscribe(OnStatsLoaded)
+  else
+    RAWarn(1, "JSON RASI Mod Disable")
+  end
 else
   Ext.Events.StatsLoaded:Subscribe(function ()
     MCMASIAPI:OnSessionLoadedMCM()
   end)
-
-  Ext.Events.StatsLoaded:Subscribe(function ()
-    MCMASIAPI:OnStatsLoadedMCM()
-  end)
-
-  Ext.Events.GameStateChanged:Subscribe(function (e)
-    RAPrint(2, "e.FromState")
-    RAPrint(2, e.FromState)
-
-    if e.FromState == "PrepareRunning" then
-      McmVarsOptions     = McmVars
-
-      PatchAsi5eLimited  = McmVarsBooksSettings["PatchAsi5eLimited"]
-      PatchAsi5e         = McmVarsBooksSettings["PatchAsi5e"]
-      PatchAsi5eExtended = McmVarsBooksSettings["PatchAsi5eExtended"]
-      PatchAsiLegacy     = McmVarsBooksSettings["PatchAsiLegacy"]
-      PatchAsiFlavour    = McmVarsBooksSettings["PatchAsiFlavour"]
-      PatchAsiHomebrew   = McmVarsBooksSettings["PatchAsiHomebrew"]
-      PatchAsiDefault    = McmVarsBooksSettings["PatchAsiDefault"]
-
-      DebugLevel         = McmVarsGeneralSettings["Debug_level"]
-      Log                = McmVarsGeneralSettings["Log"]
-
-      MCMASIAPI:OnSessionLoadedMCM()
+  
+  if McmVarsGeneralSettings["RASI"] == true then
+    Ext.Events.StatsLoaded:Subscribe(function ()
       MCMASIAPI:OnStatsLoadedMCM()
-    end
-  end)
+    end)
+
+    Ext.Events.GameStateChanged:Subscribe(function (e)
+      RAPrint(2, "e.FromState")
+      RAPrint(2, e.FromState)
+
+      if e.FromState == "PrepareRunning" then
+        McmVarsOptions     = McmVars
+
+        PatchAsi5eLimited  = McmVarsBooksSettings["PatchAsi5eLimited"]
+        PatchAsi5e         = McmVarsBooksSettings["PatchAsi5e"]
+        PatchAsi5eExtended = McmVarsBooksSettings["PatchAsi5eExtended"]
+        PatchAsiLegacy     = McmVarsBooksSettings["PatchAsiLegacy"]
+        PatchAsiFlavour    = McmVarsBooksSettings["PatchAsiFlavour"]
+        PatchAsiHomebrew   = McmVarsBooksSettings["PatchAsiHomebrew"]
+        PatchAsiDefault    = McmVarsBooksSettings["PatchAsiDefault"]
+
+        DebugLevel         = McmVarsGeneralSettings["Debug_level"]
+        Log                = McmVarsGeneralSettings["Log"]
+        RasiOnOff          = McmVarsGeneralSettings["RASI"]
+
+        MCMASIAPI:OnSessionLoadedMCM()
+        MCMASIAPI:OnStatsLoadedMCM()
+      end
+    end)
+  else
+    RAWarn(1, "MCM RASI Mod Disable <Patchs Raw>")
+  end
 end
 
 
