@@ -179,6 +179,8 @@ Ext.Events.GameStateChanged:Subscribe(function (e)
   if VCHelpers.ModVars:IsModLoaded(Data.Deps.MCM_GUID.ModuleUUID) and McmVarsGeneralSettings["RASI"] == true then
     if VCHelpers.ModVars:IsModLoaded(Data.Deps.Framework_GUID.ModuleUUID) then
       Ext.Events.StatsLoaded:Subscribe(builder5e)
+      VCHelpers.ModVars:Sync()
+      VCHelpers.UserVars:Sync()
     end
 
 
@@ -198,6 +200,8 @@ Ext.Events.GameStateChanged:Subscribe(function (e)
       RasiOnOff          = McmVarsGeneralSettings["RASI"]
 
       builder5e()
+      VCHelpers.ModVars:Sync()
+      VCHelpers.UserVars:Sync()
     end
   else
     RAWarn(1, "MCM RASI Mod Disable <Builder5e>")
