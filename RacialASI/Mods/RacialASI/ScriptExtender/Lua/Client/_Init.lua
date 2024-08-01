@@ -81,15 +81,11 @@ if not VCHelpers.ModVars:IsModLoaded(Data.Deps.MCM_GUID.ModuleUUID) then
 else
   Ext.Events.StatsLoaded:Subscribe(function ()
     MCMASIAPI:OnSessionLoadedMCM()
-    VCHelpers.ModVars:Sync()
-    VCHelpers.UserVars:Sync()
   end)
 
   if McmVarsGeneralSettings["RASI"] == true then
     Ext.Events.StatsLoaded:Subscribe(function ()
       MCMASIAPI:OnStatsLoadedMCM()
-      VCHelpers.ModVars:Sync()
-      VCHelpers.UserVars:Sync()
     end)
 
     Ext.Events.GameStateChanged:Subscribe(function (e)
@@ -135,9 +131,6 @@ else
 
         MCMASIAPI:OnSessionLoadedMCM()
         MCMASIAPI:OnStatsLoadedMCM()
-
-        VCHelpers.ModVars:Sync()
-        VCHelpers.UserVars:Sync()
       end
     end)
   else
