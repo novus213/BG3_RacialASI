@@ -44,7 +44,8 @@ function MCMASI:OnSessionLoadedMCM()
   McmVarsGeneralSettings = {
     RASI       = MCMASIAPI:MCMGet("RASI"),
     DebugLevel = MCMASIAPI:MCMGet("Debug_level"),
-    Log        = MCMASIAPI:MCMGet("Log")
+    Log        = MCMASIAPI:MCMGet("Log"),
+    CheatAsi30 = MCMASIAPI:MCMGet("CheatAsi30")
   }
 
   RAWarn(2, string.format("============> McmVars is loaded. %s", table.dump(McmVars)))

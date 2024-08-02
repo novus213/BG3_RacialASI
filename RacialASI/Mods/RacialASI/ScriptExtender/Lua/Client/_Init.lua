@@ -67,6 +67,7 @@ local function OnStatsLoaded()
   PatchAsiHomebrew   = settings5e["PatchASI_Homebrew"]
   PatchAsiDefault    = settings5e["PatchASI_Default"]
   MODENABLED         = config.MOD_ENABLED
+  CheatAsi30         = config.CheatAsi30
 end
 --- End CONFIG NO MCM
 
@@ -114,7 +115,7 @@ else
     ]]
       --
 
-      if e.FromState == "PrepareRunning" or e.FromState == "Sync" or e.ToState == "LoadSession" then
+      if e.FromState == "PrepareRunning" or e.FromState == "Sync" or e.ToState == "LoadSession" or e.FromState == "LoadMenu" then
         McmVarsOptions     = McmVars
 
         PatchAsi5eLimited  = McmVarsBooksSettings["PatchAsi5eLimited"]
@@ -128,6 +129,7 @@ else
         DebugLevel         = McmVarsGeneralSettings["Debug_level"]
         Log                = McmVarsGeneralSettings["Log"]
         RasiOnOff          = McmVarsGeneralSettings["RASI"]
+        CheatAsi30         = McmVarsGeneralSettings["CheatAsi30"]
 
         MCMASIAPI:OnSessionLoadedMCM()
         MCMASIAPI:OnStatsLoadedMCM()

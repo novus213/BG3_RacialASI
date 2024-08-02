@@ -10,7 +10,7 @@
 	<content contentuid="16cc763a-0f25-4c43-9057-5dff44817b55" version="1">Greater Undeath</content>
 	<content contentuid="71c2c2f2-89ef-46b1-b3ad-50445f2c4704" version="1">Your undeath has become a font of rejuvenation.&lt;br/&gt;&lt;br/&gt;You are immune to Disease, and you have &lt;LSTag Tooltip="Resistant"&gt;resistance&lt;/LSTag&gt; to Cold damage and Necrotic damage. Your Undying Fervor feature now replenishes after a short rest.</content>
     <content contentuid="hb677b16932d14669ac2131eb6800155d31e7" version="1">Racial ASI</content>
-    <content contentuid="h5f4b675a7fd74f45a50f68ba10c58ee7f9ed" version="1">Enable or disable RacialASI. not working FOR NOW Maybe useless with uninstall mod from Volition</content>
+    <content contentuid="h5f4b675a7fd74f45a50f68ba10c58ee7f9ed" version="1">Enable or disable RacialASI. YOU MUST RESTART THE GAME TO APPLY</content>
     <content contentuid="he8b5755c79de4068959aa14cca050ffd633a" version="1">General Settings</content>
     <content contentuid="h07d47ae8f2e04a0ebf76f9d291d43f89a122" version="1">Debug level</content>
     <content contentuid="h5adc1314428f4388982cd00e5b0e85c1be24" version="1">Used mainly to determine which messages to print.&lt;br/&gt;&lt;br/&gt;Useful for developers or general troubleshooting. &lt;br&gt;It is intended for the author to find bugs eaiser</content>
@@ -50,4 +50,9 @@
     <content contentuid="h21b3e46a847b433dbf7ce538ed3a6f2f8365" version="1">WARNING ! If you select this option, all previous rules will be ignored and all races and sub-races will have default characteristic bonuses (+2, +1). Select with care!</content>
     <content contentuid="hdc52a6ac1d644e34a6442853615f9dfcgb2g" version="1">WARNING ! If you select this option, all previous rules will be ignored and all races and sub-races will have default characteristic bonuses (+2, +1). Select with care!</content>
     <content contentuid="hdd008807f9d846089fd1fce8a76a35ad0cdb" version="1">Patch ASI by Rule Set</content>
+    <content contentuid="h91c32228ab60449daf9089fc355894223gdc" version="1">Add +30 ASI</content>
+    <content contentuid="h270beb6bffdd49d9908c69e7abedddd27g24" version="1">Add +30 ASI.</content>
+    <content contentuid="he0cccff7dbf14c98848193ca821037d125d9" version="1">Enable or disable Add +30 ASI.</content>
+    <content contentuid="h1d864893fbc34770958b3e457c4767d026e2" version="1">Cheats Settings</content>
+    <content contentuid="h651a2bde11404d77bacab179903a1bde642a" version="1">Options Rules (Feats, Cheats ect.)</content>
 </contentList>

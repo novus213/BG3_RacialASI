@@ -15,7 +15,7 @@
               "Name": "Racial ASI",
               "Type": "checkbox",
               "Default": true,
-              "Tooltip": "Enable or disable RacialASI. not working FOR NOW Maybe useless with uninstall mod from Volition",
+              "Tooltip": "Enable or disable RacialASI. YOU MUST RESTART THE GAME TO APPLY",
               "Handles": {
                 "NameHandle": "hb677b16932d14669ac2131eb6800155d31e7",
                 "TooltipHandle": "h5f4b675a7fd74f45a50f68ba10c58ee7f9ed"
@@ -73,7 +73,16 @@
           "Handles": {
             "NameHandle": "h8effff3ab7ca4498a2bf67aee6964e3f54fa"
           }
-        },
+        }
+      ],
+      "Handles": {
+        "NameHandle": "ha6f6f1f710614c7dbbf094791748b83c27d4"
+      }
+    },
+    {
+      "TabId": "OptionsRules",
+      "TabName": "Options Rules (Feats, Cheats ect.)",
+      "Sections": [
         {
           "SectionId": "Feats_settings",
           "SectionName": "Feats Settings",
@@ -95,10 +104,32 @@
           "Handles": {
             "NameHandle": "hd629868ce4cb411782bf52b9726726801612"
           }
+        },
+        {
+          "SectionId": "Cheats_settings",
+          "SectionName": "Cheats Settings",
+          "Settings": [
+            {
+              "Id": "CheatAsi30",
+              "Name": "Add +30 ASI",
+              "Type": "checkbox",
+              "Default": false,
+              "Tooltip": "Enable or disable Add +30 ASI.",
+              "Description": "Add +30 ASI.",
+              "Handles": {
+                "NameHandle": "h91c32228ab60449daf9089fc355894223gdc",
+                "DescriptionHandle": "h270beb6bffdd49d9908c69e7abedddd27g24",
+                "TooltipHandle": "he0cccff7dbf14c98848193ca821037d125d9"
+              }
+            }
+          ],
+          "Handles": {
+            "NameHandle": "h1d864893fbc34770958b3e457c4767d026e2"
+          }
         }
       ],
       "Handles": {
-        "NameHandle": "ha6f6f1f710614c7dbbf094791748b83c27d4"
+        "NameHandle": "h651a2bde11404d77bacab179903a1bde642a"
       }
     },
     {

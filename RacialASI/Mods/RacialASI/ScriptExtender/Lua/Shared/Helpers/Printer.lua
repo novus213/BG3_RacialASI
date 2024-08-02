@@ -67,8 +67,9 @@ if VCHelpers.ModVars:IsModLoaded("755a8a72-407f-4f0d-9a33-274ac0f0b53d") then
   McmVarsGeneralSettings = {
     RASI = MCMASIAPI:MCMGet("RASI"),
     DebugLevel = MCMASIAPI:MCMGet("Debug_level"),
-    Log = MCMASIAPI:MCMGet("Log")
-
+    Log = MCMASIAPI:MCMGet("Log"),
+    CheatAsi30 = MCMASIAPI:MCMGet(
+      "CheatAsi30")
   }
 
 
@@ -85,6 +86,8 @@ if VCHelpers.ModVars:IsModLoaded("755a8a72-407f-4f0d-9a33-274ac0f0b53d") then
 
   DebugLevel = McmVarsGeneralSettings["Debug_level"]
   Log = McmVarsGeneralSettings["Log"]
+  RASI = McmVarsGeneralSettings["RASI"]
+  CheatAsi30 = McmVarsGeneralSettings["CheatAsi30"]
 
   -- Register a net listener to handle settings changes dynamically
   Ext.RegisterNetListener("MCM_Saved_Setting", function (call, payload)
@@ -133,14 +136,22 @@ if VCHelpers.ModVars:IsModLoaded("755a8a72-407f-4f0d-9a33-274ac0f0b53d") then
     if data.settingId == "debug_level" then
       RADebug(0, "Setting debug level to " .. data.value)
       RAPrinter.DebugLevel = data.value
-
       DebugLevel = McmVarsGeneralSettings["Debug_level"]
     end
 
     if data.settingId == "Log" then
       RAWarn(2, string.format("Setting %s to %s", data.settingId, data.value))
-
       Log = McmVarsGeneralSettings["Log"]
+    end
+
+    if data.settingId == "RASI" then
+      RAWarn(2, string.format("Setting %s to %s", data.settingId, data.value))
+      RASI = McmVarsGeneralSettings["RASI"]
+    end
+
+    if data.settingId == "CheatAsi30" then
+      RAWarn(2, string.format("Setting %s to %s", data.settingId, data.value))
+      CheatAsi30 = McmVarsGeneralSettings["CheatAsi30"]
     end
   end)
 end
