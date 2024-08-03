@@ -1,6 +1,8 @@
+Core = {}
+
 RequireFiles("Shared/Classes/", {
-    "ModInfo",
-    "MCMASI",
-    "ClasseMod",
-    "RaceMod"
+  "ModInfo",
+  "MCMASI",
+  "ClasseMod",
+  "RaceMod"
 })

@@ -81,12 +81,29 @@ if not VCHelpers.ModVars:IsModLoaded(Data.Deps.MCM_GUID.ModuleUUID) then
   end
 else
   Ext.Events.StatsLoaded:Subscribe(function ()
+
     MCMASIAPI:OnSessionLoadedMCM()
+
+    McmVarsOptions     = McmVars
+
+    PatchAsi5eLimited  = McmVarsBooksSettings["PatchAsi5eLimited"]
+    PatchAsi5e         = McmVarsBooksSettings["PatchAsi5e"]
+    PatchAsi5eExtended = McmVarsBooksSettings["PatchAsi5eExtended"]
+    PatchAsiLegacy     = McmVarsBooksSettings["PatchAsiLegacy"]
+    PatchAsiFlavour    = McmVarsBooksSettings["PatchAsiFlavour"]
+    PatchAsiHomebrew   = McmVarsBooksSettings["PatchAsiHomebrew"]
+    PatchAsiDefault    = McmVarsBooksSettings["PatchAsiDefault"]
+
+    DebugLevel         = McmVarsGeneralSettings["Debug_level"]
+    Log                = McmVarsGeneralSettings["Log"]
+    RasiOnOff          = McmVarsGeneralSettings["RASI"]
+    CheatAsi30         = McmVarsGeneralSettings["CheatAsi30"]
   end)
 
   if McmVarsGeneralSettings["RASI"] == true then
     Ext.Events.StatsLoaded:Subscribe(function ()
       MCMASIAPI:OnStatsLoadedMCM()
+      Core.Builder5e()
     end)
 
     Ext.Events.GameStateChanged:Subscribe(function (e)
@@ -113,9 +130,9 @@ else
 	"BuildStory",
 	"ReloadStory"
     ]]
-      --
-
-      if e.FromState == "PrepareRunning" or e.FromState == "Sync" or e.ToState == "LoadSession" or e.FromState == "LoadMenu" then
+       --
+      if e.FromState == "PrepareRunning" or e.FromState == "Sync" or e.FromState == "LoadMenu" or e.ToState == "LoadSession" or e.FromState == "LoadModule" or e.FromState == "LoadMenu" or e.FromState == "LoadLevel" then
+        --if e.FromState == "PrepareRunning" or e.FromState == "Sync" or e.ToState == "LoadSession" or e.FromState == "LoadMenu" then
         McmVarsOptions     = McmVars
 
         PatchAsi5eLimited  = McmVarsBooksSettings["PatchAsi5eLimited"]
@@ -132,7 +149,25 @@ else
         CheatAsi30         = McmVarsGeneralSettings["CheatAsi30"]
 
         MCMASIAPI:OnSessionLoadedMCM()
+
+        McmVarsOptions     = McmVars
+
+        PatchAsi5eLimited  = McmVarsBooksSettings["PatchAsi5eLimited"]
+        PatchAsi5e         = McmVarsBooksSettings["PatchAsi5e"]
+        PatchAsi5eExtended = McmVarsBooksSettings["PatchAsi5eExtended"]
+        PatchAsiLegacy     = McmVarsBooksSettings["PatchAsiLegacy"]
+        PatchAsiFlavour    = McmVarsBooksSettings["PatchAsiFlavour"]
+        PatchAsiHomebrew   = McmVarsBooksSettings["PatchAsiHomebrew"]
+        PatchAsiDefault    = McmVarsBooksSettings["PatchAsiDefault"]
+
+        DebugLevel         = McmVarsGeneralSettings["Debug_level"]
+        Log                = McmVarsGeneralSettings["Log"]
+        RasiOnOff          = McmVarsGeneralSettings["RASI"]
+        CheatAsi30         = McmVarsGeneralSettings["CheatAsi30"]
+
         MCMASIAPI:OnStatsLoadedMCM()
+
+        Core.Builder5e()
       end
     end)
   else

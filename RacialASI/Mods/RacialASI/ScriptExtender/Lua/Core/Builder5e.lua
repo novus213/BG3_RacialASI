@@ -23,32 +23,29 @@ RAPrint(1, PatchAsiFlavour)
 RAPrint(1, "PatchAsiHomebrew: ")
 RAPrint(1, PatchAsiHomebrew)
 
-local function classe5eModule()
-  --local removedClasses = {}  -- Table to store classes with removed selectors
+function Core.classe5eModule()
+  local removedClasses = {} -- Table to store classes with removed selectors
   for _, classeMod in ipairs(Data.Libs.ClassesLibrary) do
     local classModObject = ClasseMod:New(classeMod.Name, classeMod.modURL, classeMod.modGuid, classeMod.progressionUUID,
       classeMod.Author,
       classeMod.SourceBook, classeMod.MainClasse, classeMod.isLvl20, classeMod.isOutdated)
-    --local removedClass =
+    --local removedClass = classeMod.Name
     ClasseMod:RemoveClassesASI(classModObject, 1)
-    --[[
-        if removedClass then
-                table.insert(removedClasses, removedClass) -- Add to the list if removed
-        end
-        ]]
-    --
+
+    -- if removedClass then
+    table.insert(removedClasses, removedClass)   -- Add to the list if removed
+    -- end
   end
   --[[
-    BasicPrint(table.dump(removedClasses))
-    if #removedClasses > 0 then
-        local classList = table.concat(removedClasses, ", ")
+  BasicPrint(table.dump(removedClasses))
+  if #removedClasses > 0 then
+    local classList = table.concat(removedClasses, ", ")
     BasicWarning(string.format("============> Selectors removed from %d mods: %s", #removedClasses, classList))
-    end
-    ]]
-  --
+  end
+  ]]--
 end
 
-local function race5eModule()
+function Core.race5eModule()
   RemovedRaces = {}
   for _, raceMod in pairs(Data.Libs.RaceLibrary) do
     local raceModObject = RaceMod:New(raceMod.Name, raceMod.modURL, raceMod.modGuid, raceMod.progressionUUID,
@@ -148,9 +145,9 @@ local function race5eModule()
 end
 
 --- Constructor for builder5eRaces
-local function builder5e()
-  classe5eModule()
-  race5eModule()
+function Core.Builder5e()
+  Core.classe5eModule()
+  Core.race5eModule()
   if VCHelpers.ModVars:IsModLoaded(Data.Deps.MCM_GUID.ModuleUUID) then
     RAPrint(1, "                               ")
     RAPrint(1, "                               ")
@@ -160,8 +157,9 @@ local function builder5e()
   end
 end
 
+--[[
 if VCHelpers.ModVars:IsModLoaded(Data.Deps.Framework_GUID.ModuleUUID) then
-  Ext.Events.StatsLoaded:Subscribe(builder5e)
+  Ext.Events.StatsLoaded:Subscribe(Core.Builder5e)
 end
 
 
@@ -173,7 +171,7 @@ Ext.Events.GameStateChanged:Subscribe(function (e)
   if not VCHelpers.ModVars:IsModLoaded(Data.Deps.MCM_GUID.ModuleUUID) then
     if MODENABLED == 1 then
       if VCHelpers.ModVars:IsModLoaded(Data.Deps.Framework_GUID.ModuleUUID) then
-        Ext.Events.StatsLoaded:Subscribe(builder5e)
+        Ext.Events.StatsLoaded:Subscribe(Core.Builder5e)
       end
     else
       RAWarn(1, "JSON RASI Mod Disable <Builder5e>")
@@ -183,7 +181,7 @@ Ext.Events.GameStateChanged:Subscribe(function (e)
 
   if VCHelpers.ModVars:IsModLoaded(Data.Deps.MCM_GUID.ModuleUUID) and McmVarsGeneralSettings["RASI"] == true then
     if VCHelpers.ModVars:IsModLoaded(Data.Deps.Framework_GUID.ModuleUUID) then
-      Ext.Events.StatsLoaded:Subscribe(builder5e)
+      Ext.Events.StatsLoaded:Subscribe(Core.Builder5e)
     end
 
 
@@ -203,9 +201,10 @@ Ext.Events.GameStateChanged:Subscribe(function (e)
       RasiOnOff          = McmVarsGeneralSettings["RASI"]
       CheatAsi30         = McmVarsGeneralSettings["CheatAsi30"]
 
-      builder5e()
+      Core.Builder5e()
     end
   else
     RAWarn(1, "MCM RASI Mod Disable <Builder5e>")
   end
 end)
+]]--

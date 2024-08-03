@@ -38,7 +38,7 @@ if VCHelpers.ModVars:IsModLoaded(Data.Deps.MCM_GUID.ModuleUUID) then
   BasicPrint(" ----------------------------- ")
   BasicPrint("                               ")
   BasicPrint("                               ")
-  Ext.Require("Client/Builder5e.lua")
+  Ext.Require("Core/Builder5e.lua")
   BasicPrint(" ----------------------------- ")
   BasicPrint(" ----------------------------- ")
   BasicPrint("                               ")
@@ -88,7 +88,7 @@ if not VCHelpers.ModVars:IsModLoaded(Data.Deps.MCM_GUID.ModuleUUID) then
   BasicPrint(" ----------------------------- ")
   BasicPrint("                               ")
   BasicPrint("                               ")
-  Ext.Require("Client/Builder5e.lua")
+  Ext.Require("Core/Builder5e.lua")
 end
 
 Ext.Require("Client/Debug.lua")
