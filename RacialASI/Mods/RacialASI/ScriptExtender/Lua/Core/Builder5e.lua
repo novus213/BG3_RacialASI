@@ -9,60 +9,71 @@
         \_Clean Races ModASI
 ]]
 --
+--RAPrint(2, "RasiOnOff: ")
+--RAPrint(2, RasiOnOff)
+RAPrint(2, "CheatAsi30: ")
+RAPrint(2, CheatAsi30)
+--RAPrint(2, "DebugLevel: ")
+--RAPrint(2, DebugLevel)
+--RAPrint(2, "Log: ")
+--RAPrint(2, Log)
 
-RAPrint(1, "PatchAsi5eLimited: ")
-RAPrint(1, PatchAsi5eLimited)
-RAPrint(1, "PatchAsi5e: ")
-RAPrint(1, PatchAsi5e)
-RAPrint(1, "PatchAsi5eExtended: ")
-RAPrint(1, PatchAsi5eExtended)
-RAPrint(1, "PatchAsiLegacy: ")
-RAPrint(1, PatchAsiLegacy)
-RAPrint(1, "PatchAsiFlavour: ")
-RAPrint(1, PatchAsiFlavour)
-RAPrint(1, "PatchAsiHomebrew: ")
-RAPrint(1, PatchAsiHomebrew)
+RAPrint(2, "PatchAsi5eLimited: ")
+RAPrint(2, PatchAsi5eLimited)
+RAPrint(2, "PatchAsi5e: ")
+RAPrint(2, PatchAsi5e)
+RAPrint(2, "PatchAsi5eExtended: ")
+RAPrint(2, PatchAsi5eExtended)
+RAPrint(2, "PatchAsiLegacy: ")
+RAPrint(2, PatchAsiLegacy)
+RAPrint(2, "PatchAsiFlavour: ")
+RAPrint(2, PatchAsiFlavour)
+RAPrint(2, "PatchAsiHomebrew: ")
+RAPrint(2, PatchAsiHomebrew)
+
+RAPrint(2, "AddGnome_Tinkertools_Spells: ")
+RAPrint(2, McmVarsOptions["AddGnome_Tinkertools_Spells"])
+RAPrint(2, "AddHalfElf_Skills: ")
+RAPrint(2, McmVarsOptions["AddHalfElf_Skills"])
+RAPrint(2, "AddHalfElfDrow_Drow_DrowWeaponTraining_Passives: ")
+RAPrint(2, McmVarsOptions["AddHalfElfDrow_Drow_DrowWeaponTraining_Passives"])
+RAPrint(2, "RemoveHuman_HumanMilitia_HumanVersatility_Passives: ")
+RAPrint(2, McmVarsOptions["RemoveHuman_HumanMilitia_HumanVersatility_Passives"])
+RAPrint(2, "RemoveHalfElf_HumanMilitia_Passives: ")
+RAPrint(2, McmVarsOptions["RemoveHalfElf_HumanMilitia_Passives"])
+RAPrint(2, "AddUndeadGhastlyGhouls_TruePotion_and_LightSensitivity_Passives: ")
+RAPrint(2, McmVarsOptions["AddUndeadGhastlyGhouls_TruePotion_and_LightSensitivity_Passives"])
+RAPrint(2, "AddUnderdarkRaces_LightSensitivity_Passives: ")
+RAPrint(2, McmVarsOptions["AddUnderdarkRaces_LightSensitivity_Passives"])
 
 function Core.classe5eModule()
-  local removedClasses = {} -- Table to store classes with removed selectors
   for _, classeMod in ipairs(Data.Libs.ClassesLibrary) do
     local classModObject = ClasseMod:New(classeMod.Name, classeMod.modURL, classeMod.modGuid, classeMod.progressionUUID,
       classeMod.Author,
       classeMod.SourceBook, classeMod.MainClasse, classeMod.isLvl20, classeMod.isOutdated)
-    --local removedClass = classeMod.Name
     ClasseMod:RemoveClassesASI(classModObject, 1)
-
-    -- if removedClass then
-    table.insert(removedClasses, removedClass)   -- Add to the list if removed
-    -- end
   end
-  --[[
-  BasicPrint(table.dump(removedClasses))
-  if #removedClasses > 0 then
-    local classList = table.concat(removedClasses, ", ")
-    BasicWarning(string.format("============> Selectors removed from %d mods: %s", #removedClasses, classList))
-  end
-  ]]--
 end
 
 function Core.race5eModule()
-  RemovedRaces = {}
   for _, raceMod in pairs(Data.Libs.RaceLibrary) do
     local raceModObject = RaceMod:New(raceMod.Name, raceMod.modURL, raceMod.modGuid, raceMod.progressionUUID,
       raceMod.Author,
       raceMod.SourceBook, raceMod.MainRace, raceMod.specialAbList, raceMod.Stats, raceMod.Sab, raceMod.bonus,
       raceMod.NoDefStats)
-    if CheatAsi30 == true then
+    if CheatAsi30 > 0 then
       RaceMod:CleanOnRacesStatsLoaded(raceModObject, 1)
       RaceMod:InsertPayloadRaceASI(raceModObject, 1, CheatAsi30)
     else
       if PatchAsiDefault == true then
+        RAWarn(2, "PatchAsiDefault = true")
         RaceMod:CleanOnRacesStatsLoaded(raceModObject, 1)
         RaceMod:InsertDefaultPayloadASI(raceModObject, 1)
       else
         if VCHelpers.ModVars:IsModExist(Data.Deps.Framework_GUID.ModuleUUID, raceModObject:GetModGuid()) then -- présent dans isLoaded
           if raceModObject:GetSourceBook() == nil or raceModObject:GetSourceBook() == "" then
             if PatchAsiHomebrew == true then
+              RAWarn(2, "PatchAsiHomebrew = true")
               RaceMod:CleanOnRacesStatsLoaded(raceModObject, 1)
               RaceMod:InsertPayloadRaceASI(raceModObject, 1)
             else
@@ -76,6 +87,7 @@ function Core.race5eModule()
           for _, book in pairs(Data.Libs.Books.Dnd5eLimited) do
             if book.bookRef == raceModObject:GetSourceBook() then
               if PatchAsi5eLimited == true then
+                RAWarn(2, "PatchAsi5eLimited = true")
                 RaceMod:CleanOnRacesStatsLoaded(raceModObject, 1)
                 RaceMod:InsertPayloadRaceASI(raceModObject, 1)
               else
@@ -89,6 +101,7 @@ function Core.race5eModule()
           for _, book in pairs(Data.Libs.Books.Dnd5e) do
             if book.bookRef == raceModObject:GetSourceBook() then
               if PatchAsi5e == true then
+                RAWarn(2, "PatchAsi5e = true")
                 RaceMod:CleanOnRacesStatsLoaded(raceModObject, 1)
                 RaceMod:InsertPayloadRaceASI(raceModObject, 1)
               else
@@ -102,6 +115,7 @@ function Core.race5eModule()
           for _, book in pairs(Data.Libs.Books.Dnd5eExtended) do
             if book.bookRef == raceModObject:GetSourceBook() then
               if PatchAsi5eExtended == true then
+                RAWarn(2, "PatchAsi5eExtended = true")
                 RaceMod:CleanOnRacesStatsLoaded(raceModObject, 1)
                 RaceMod:InsertPayloadRaceASI(raceModObject, 1)
               else
@@ -115,6 +129,7 @@ function Core.race5eModule()
           for _, book in pairs(Data.Libs.Books.Legacy) do
             if book.bookRef == raceModObject:GetSourceBook() then
               if PatchAsiLegacy == true then
+                RAWarn(2, "PatchAsiLegacy = true")
                 RaceMod:CleanOnRacesStatsLoaded(raceModObject, 1)
                 RaceMod:InsertPayloadRaceASI(raceModObject, 1)
               else
@@ -128,6 +143,7 @@ function Core.race5eModule()
           for _, book in pairs(Data.Libs.Books.Flavours) do
             if book.bookRef == raceModObject:GetSourceBook() then
               if PatchAsiFlavour == true then
+                RAWarn(2, "PatchAsiFlavour = true")
                 RaceMod:CleanOnRacesStatsLoaded(raceModObject, 1)
                 RaceMod:InsertPayloadRaceASI(raceModObject, 1)
               else
@@ -156,55 +172,3 @@ function Core.Builder5e()
     RAPrint(1, "Config.MCM.loaded() Happy Fun Gaming!...")
   end
 end
-
---[[
-if VCHelpers.ModVars:IsModLoaded(Data.Deps.Framework_GUID.ModuleUUID) then
-  Ext.Events.StatsLoaded:Subscribe(Core.Builder5e)
-end
-
-
-Ext.Events.GameStateChanged:Subscribe(function (e)
-  RAPrint(2, "e.FromState")
-  RAPrint(2, e.FromState)
-
-
-  if not VCHelpers.ModVars:IsModLoaded(Data.Deps.MCM_GUID.ModuleUUID) then
-    if MODENABLED == 1 then
-      if VCHelpers.ModVars:IsModLoaded(Data.Deps.Framework_GUID.ModuleUUID) then
-        Ext.Events.StatsLoaded:Subscribe(Core.Builder5e)
-      end
-    else
-      RAWarn(1, "JSON RASI Mod Disable <Builder5e>")
-    end
-  end
-
-
-  if VCHelpers.ModVars:IsModLoaded(Data.Deps.MCM_GUID.ModuleUUID) and McmVarsGeneralSettings["RASI"] == true then
-    if VCHelpers.ModVars:IsModLoaded(Data.Deps.Framework_GUID.ModuleUUID) then
-      Ext.Events.StatsLoaded:Subscribe(Core.Builder5e)
-    end
-
-
-    if e.FromState == "PrepareRunning" or e.FromState == "Sync" or e.ToState == "LoadSession" or e.FromState == "LoadMenu" then
-      McmVarsOptions     = McmVars
-
-      PatchAsi5eLimited  = McmVarsBooksSettings["PatchAsi5eLimited"]
-      PatchAsi5e         = McmVarsBooksSettings["PatchAsi5e"]
-      PatchAsi5eExtended = McmVarsBooksSettings["PatchAsi5eExtended"]
-      PatchAsiLegacy     = McmVarsBooksSettings["PatchAsiLegacy"]
-      PatchAsiFlavour    = McmVarsBooksSettings["PatchAsiFlavour"]
-      PatchAsiHomebrew   = McmVarsBooksSettings["PatchAsiHomebrew"]
-      PatchAsiDefault    = McmVarsBooksSettings["PatchAsiDefault"]
-
-      DebugLevel         = McmVarsGeneralSettings["Debug_level"]
-      Log                = McmVarsGeneralSettings["Log"]
-      RasiOnOff          = McmVarsGeneralSettings["RASI"]
-      CheatAsi30         = McmVarsGeneralSettings["CheatAsi30"]
-
-      Core.Builder5e()
-    end
-  else
-    RAWarn(1, "MCM RASI Mod Disable <Builder5e>")
-  end
-end)
-]]--

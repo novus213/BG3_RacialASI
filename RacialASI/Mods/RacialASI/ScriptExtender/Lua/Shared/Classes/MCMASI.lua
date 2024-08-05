@@ -17,12 +17,16 @@ function MCMASI:OnSessionLoadedMCM()
     AddGnome_Tinkertools_Spells                                     = "notoptional",
     AddGnome_ForestMinorIllusion_Spells                             = "notoptional",
     AddHalfElf_Skills                                               = "notoptional",
-    AddHalfElfDrow_Drow_DrowWeaponTraining_Passives                 = "notoptional",
-    RemoveHuman_HumanMilitia_HumanVersatility_Passives              = "notoptional",
-    RemoveHalfElf_HumanMilitia_Passives                             = "notoptional",
+    AddHalfElfDrow_Drow_DrowWeaponTraining_Passives                 = MCMASIAPI:MCMGet(
+      "AddHalfElfDrow_Drow_DrowWeaponTraining_Passives"),
+    RemoveHuman_HumanMilitia_HumanVersatility_Passives              = MCMASIAPI:MCMGet(
+      "RemoveHuman_HumanMilitia_HumanVersatility_Passives"),
+    RemoveHalfElf_HumanMilitia_Passives                             = MCMASIAPI:MCMGet(
+      "RemoveHalfElf_HumanMilitia_Passives"),
     AddUndeadGhastlyGhouls_TruePotion_and_LightSensitivity_Passives = MCMASIAPI:MCMGet(
       "AddUndeadGhastlyGhouls_TruePotion_and_LightSensitivity_Passives"),
-    AddUnderdarkRaces_LightSensitivity_Passives                     = "notoptional"
+    AddUnderdarkRaces_LightSensitivity_Passives                     = MCMASIAPI:MCMGet(
+      "AddUnderdarkRaces_LightSensitivity_Passives")
     --[[
             McmVars["AddGnomeTinkertoolsSpells"]
         ]] --
@@ -56,24 +60,43 @@ end
 --- Constructor for MCMASI:OnStatsLoadedMCM
 --- extract mcmVar table from MCM Json
 function MCMASI:OnStatsLoadedMCM()
+  local modSettingsTable = Mods.BG3MCM.MCMAPI:GetAllModSettings(ModuleUUID)
   for key, value in pairs(McmVarsOptions) do
     local actionConfigs = Data.Libs.OptionActions[key]
-
-    if value == true then
-      if actionConfigs then
-        MCMASIAPI:processOptionMcm(key, actionConfigs.actions)
-      else
-        RAWarn(1, string.format("============> ERROR: No configuration found for %s.", key))
+    if type(value) == "boolean" then
+      local isValid = Mods.BG3MCM.MCMAPI:IsSettingValueValid(key, value, ModuleUUID)
+      RADebug(2, "Setting value for " .. key .. " is valid? " .. tostring(isValid))
+      if not isValid then
+        RAWarn(1, "Invalid value for setting '" .. key .. " (" .. tostring(value) .. "). Value will not be saved.")
+        return
       end
-      RAWarn(2, string.format("============> %s is enabled.", key))
-    else
-      if value == "notoptional" and actionConfigs.ruleset == "5eLimited" and PatchAsi5eLimited == true then
+      if value == false and type(value) == "boolean" and actionConfigs.ruleset == "5eLimited" and PatchAsi5eLimited == true then
+        RAWarn(2, string.format("============> %s will enable (5eLimited enableb).", key))
+        modSettingsTable[key] = true
+        McmVars[key] = modSettingsTable[key]
+      end
+
+      if (actionConfigs.ruleset == "5eLimited" and PatchAsi5eLimited == false and value == true and type(value) == "boolean") or
+        PatchAsiDefault == true then
+        RAWarn(2, string.format("============> %s will disable (5eLimited disabled or Patch ASI Default enabled).", key))
+        modSettingsTable[key] = false
+        McmVars[key] = modSettingsTable[key]
+      end
+    end
+  end
+
+  Mods.BG3MCM.ModConfig:UpdateAllSettingsForMod(ModuleUUID, modSettingsTable)
+
+  for key, value in pairs(McmVarsOptions) do
+    local actionConfigs = Data.Libs.OptionActions[key]
+    if value == true or value == "notoptional" then
+      if actionConfigs.ruleset == "5eLimited" and PatchAsi5eLimited == true then
         if actionConfigs then
           MCMASIAPI:processOptionMcm(key, actionConfigs.actions)
         else
           RAWarn(1, string.format("============> ERROR: No configuration found for %s.", key))
         end
-        RAWarn(2, string.format("============> %s is enabled (5eLimited Actived).", key))
+        RAWarn(2, string.format("============> %s is enabled.", key))
       end
     end
   end

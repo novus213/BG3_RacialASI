@@ -23,7 +23,7 @@
     <content contentuid="he85b940743504f1485f9583fa631edd4f6e5" version="1">Add Feats and Passives Undead Ghastly Ghouls</content>
     <content contentuid="hdb73025ef0cf4ea695ac2453a1206326db31" version="1">Enable or disable  Feats and Passives to Undead Ghastly Ghouls.</content>
     <content contentuid="h2ee53fe5595040c8b73a47d1644915851c58" version="1">Add TruePotion Feat and LightSensitivity Passives to Undead Ghastly Ghouls.</content>
-    <content contentuid="hd629868ce4cb411782bf52b9726726801612" version="1">Feats Settings</content>
+    <content contentuid="hd629868ce4cb411782bf52b9726726801612" version="1">Feats, Passives and others Settings</content>
     <content contentuid="ha6f6f1f710614c7dbbf094791748b83c27d4" version="1">General Settings</content>
     <content contentuid="h58f1f87da2a4409298e576d42f7dd761ad4d" version="1">Fix 5e Limited ruleset Races and Classes</content>
     <content contentuid="h522c516024ca488e9e66f020ad992f76265f" version="1">Enable or disable to fix 5e Limited Races and Classes.</content>
@@ -55,4 +55,17 @@
     <content contentuid="he0cccff7dbf14c98848193ca821037d125d9" version="1">Enable or disable Add +30 ASI.</content>
     <content contentuid="h1d864893fbc34770958b3e457c4767d026e2" version="1">Cheats Settings</content>
     <content contentuid="h651a2bde11404d77bacab179903a1bde642a" version="1">Options Rules (Feats, Cheats ect.)</content>
+    <content contentuid="h5160775c4b83466e8554f41e80175c4b767g" version="1">Remove Human Militia and Human Versatility Passives to Humans</content>
+    <content contentuid="h3926b00726f640b9905f3d60fc8e0d8eg201" version="1">Enable or disable Remove Human Militia and Human Versatility Passives to Humans</content>
+    <content contentuid="h02de5733aef543d295dd4c1030e21a9d859c" version="1">Remove Human Militia and Human Versatility Passives to Humans.&lt;br&gt;If you uncheck 5elimited Option, this option will be disabled</content>
+    <content contentuid="ha9d5cc602d474745b8d6d7fe5bc42945d887" version="1">Add Half-Elf Drow, Drow Weapons Training Passive</content>
+    <content contentuid="hb675ad12e1514c24be22dafe1fe857ace174" version="1">Enable or disable Drow Weapons Training Passive to Half-Elf Drow.</content>
+    <content contentuid="h75932be3a3a54e4aa4cbdc6760324c804fe7" version="1">Add Half-Elf Drow, Drow Weapons Training Passive&lt;br&gt;If you uncheck 5elimited Option, this option will be disabled</content>
+    <content contentuid="h4e75bc9636de43e29bc6e8c2b8688db55fbc" version="1">Remove Half-Elf Human Militia Passive</content>
+    <content contentuid="h995ed382f9974a79ada563a9325148d60gdb" version="1">Enable or disable Human Militia Passive to Half-Elf.</content>
+    <content contentuid="hddceb260cf614b638a45bfca466675dcfeea" version="1">Remove Half-Elf Human Militia Passive.&lt;br&gt;If you uncheck 5elimited Option, this option will be disabled</content>
+    <content contentuid="h273eaa28aede44ad9fc93fcafa2c755d923a" version="1">Add Underdark Races Light Sensitivity Passives</content>
+    <content contentuid="h3c8d8cb61a1c40fdb012292a5f017d6b170b" version="1">Enable or disable Light Sensitivity Passives to Underdark Races.</content>
+    <content contentuid="h0db76ddefb7b4b03ab480478c9f436e0ce8a" version="1">Add Underdark Races Light Sensitivity Passives. &lt;br&gt;If you uncheck 5elimited Option, this option will be disabled</content>
+    <content contentuid="hdeb2111caefb44ddb5c9e149e57b69a6a19b" version="1">When you tick one of these boxes, the feats, passives or other of the races will be modified to be more in line with the rules in the DnD books.&lt;br&gt;If a feat or passive or other doesn't exist in the rule books, the option will disable, EXCEPT CHEATS OF COURSE!&lt;br&gt;Please note that you will need to restart your game for these modifications to take effect.</content>
 </contentList>

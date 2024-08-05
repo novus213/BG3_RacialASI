@@ -14,14 +14,26 @@ local function loadConfiguration()
 end
 
 local function processOption(optionName, optionValue, actionConfigs)
-  if optionValue.Enabled then
-    RAWarn(2, string.format("============> %s is enabled.", optionName))
+  for _, actionConfig in ipairs(actionConfigs) do
+    local action = actionConfig.action
+    local payloads = actionConfig.payloads
 
-    for _, actionConfig in ipairs(actionConfigs) do
-      local action = actionConfig.action
-      local payloads = actionConfig.payloads
+    if optionValue.Enabled or optionValue == "notoptional" then
+      RAWarn(2, string.format("============> %s is enabled.", optionName))
+    end
+    if optionValue.Enabled == false and type(optionValue.Enabled) == "boolean" and actionConfigs.ruleset == "5eLimited" and
+      PatchAsi5eLimited == true then
+      optionValue.Enabled = true
+    end
 
-      for _, payload in ipairs(payloads) do
+    if actionConfigs.ruleset == "5eLimited" and PatchAsi5eLimited == false and
+      optionValue.Enabled == true and type(optionValue.Enabled) == "boolean" then
+      optionValue.Enabled = false
+      RAWarn(2, string.format("============> %s will disable (5eLimited disable).", optionName))
+      break
+    end
+    for _, payload in ipairs(payloads) do
+      if actionConfigs.ruleset == "5eLimited" and PatchAsi5eLimited == true and (optionValue.Enabled or optionValue == "notoptional") then
         if payload.Target then
           --RAPrint(1, string.format("action : ", action))
           --RAPrint(1, string.format("payload : ", payload))
@@ -72,16 +84,16 @@ end
 --- End CONFIG NO MCM
 
 
-if not VCHelpers.ModVars:IsModLoaded(Data.Deps.MCM_GUID.ModuleUUID) then
+if not VCHelpers.ModVars:IsModLoaded(Data.Deps.MCM_GUID.ModuleUUID) and
+  not VCHelpers.ModVars:IsModLoaded(Data.Deps.KendersLabsCoreLibs_GUID.ModuleUUID) then
   if MODENABLED == 1 then
     Ext.Events.StatsLoaded:Subscribe(start)
     Ext.Events.StatsLoaded:Subscribe(OnStatsLoaded)
   else
-    RAWarn(1, "JSON RASI Mod Disable")
+    RAWarn(1, "JSON RASI Mod Disable or Missing dependencies (MCM and Kender's Lib Required)")
   end
 else
   Ext.Events.StatsLoaded:Subscribe(function ()
-
     MCMASIAPI:OnSessionLoadedMCM()
 
     McmVarsOptions     = McmVars
@@ -130,8 +142,8 @@ else
 	"BuildStory",
 	"ReloadStory"
     ]]
-       --
-      if e.FromState == "PrepareRunning" or e.FromState == "Sync" or e.FromState == "LoadMenu" or e.ToState == "LoadSession" or e.FromState == "LoadModule" or e.FromState == "LoadMenu" or e.FromState == "LoadLevel" then
+      --
+      if e.FromState == "LoadLevel" or e.FromState == "LoadSession" or e.FromState == "init" then
         --if e.FromState == "PrepareRunning" or e.FromState == "Sync" or e.ToState == "LoadSession" or e.FromState == "LoadMenu" then
         McmVarsOptions     = McmVars
 

@@ -152,21 +152,34 @@ _________ .__                         _________ .__                             
 function ClasseMod:RemoveClassesASI(newClass, lvl, abilityListUUID)
   abilityListUUID = abilityListUUID or Data.Deps.AbilityList_UUID.ModuleUUID
 
-  RAPrint(2, table.dump(newClass:GetProgressionUUIDLvl(lvl)))
-  RAPrint(2, string.format("ClassModObject:GetModGuid(): %s", newClass:GetModGuid()))
+  if (newClass:GetModGuid() and VCHelpers.ModVars:IsModLoaded(newClass:GetModGuid())) then
+    local payload          = {}
+    local RemoveClassesASI = {}
+    RADebug(4, table.dump(newClass:GetProgressionUUIDLvl(lvl)))
+    RADebug(4, string.format("ClassModObject:GetModGuid(): %s", newClass:GetModGuid()))
 
-  if newClass:GetProgressionUUIDLvl(lvl) ~= "aaaa" then   --rmv after lib finished
-    if newClass:GetProgressionUUIDLvl(lvl) == nil then
-      RAWarn(1, string.format("============> ERROR: classeMod.progressionUUID %s.",
-        table.dump(newClass:GetProgressionUUIDLvl(lvl))))
-    end
-    --local removedClasses =
-    VCHelpers.CF:removeSelectorsPayload(newClass:GetModGuid(),
-      newClass:GetProgressionUUIDLvl(lvl), "SelectAbilityBonus", abilityListUUID)
-    --[[
-        if removedClasses then
-            return removedClasses
+    if newClass:GetProgressionUUIDLvl(lvl) ~= "aaaa" then --rmv after lib finished
+      if newClass:GetProgressionUUIDLvl(lvl) == nil then
+        RAWarn(1, string.format("============> ERROR: classeMod.progressionUUID %s.",
+          table.dump(newClass:GetProgressionUUIDLvl(lvl))))
+      end
+      --local removedClasses =
+      local action = "RemoveSelectors"
+      payload = VCHelpers.CF:removeSelectorsPayload(newClass:GetModGuid(),
+        newClass:GetProgressionUUIDLvl(lvl), "SelectAbilityBonus", abilityListUUID)
+
+      if VCHelpers.CF:checkSCF() and payload then
+        table.insert(RemoveClassesASI, newClass:GetName()) -- Add to the list if ASI Fixed
+        RADebug(4, "RemoveClassesASI payload RemoveSelectors: ")
+        RADebug(4, table.dump(payload))
+        MCMASI:handlePayload(action, payload)
+        --Mods.SubclassCompatibilityFramework.Api.RemoveSelectors(payload)
+        if #RemoveClassesASI > 0 then
+          BasicWarning("============> BAD Classe Ability removed to " ..
+            #RemoveClassesASI .. " mods: " ..
+            table.concat(RemoveClassesASI, ", "))
         end
-        ]]--
+      end
+    end
   end
 end
