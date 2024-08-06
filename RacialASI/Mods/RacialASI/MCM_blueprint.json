@@ -80,124 +80,6 @@
       }
     },
     {
-      "TabId": "OptionsRules",
-      "TabName": "Options Rules (Feats, Cheats ect.)",
-      "Sections": [
-        {
-          "SectionId": "Moreinfos_OptionsRules",
-          "SectionName": "More Informations",
-          "SectionDescription": "When you tick one of these boxes, the feats, passives or other of the races will be modified to be more in line with the rules in the DnD books.\n\nIf a feat or passive or other doesn't exist in the rule books, the option will disable, EXCEPT CHEATS OF COURSE!\n\nPlease note that you will need to restart your game for these modifications to take effect.",
-          "Handles": {
-            "NameHandle": "ha2075bb674464088b748328cfb44c4b50734",
-            "DescriptionHandle": "hdeb2111caefb44ddb5c9e149e57b69a6a19b"
-          }
-        },
-        {
-          "SectionId": "Feats_settings",
-          "SectionName": "Feats, Passives and others Settings",
-          "Settings": [
-            {
-              "Id": "AddHalfElfDrow_Drow_DrowWeaponTraining_Passives",
-              "Name": "Add Half-Elf Drow, Drow Weapons Training Passive",
-              "Type": "checkbox",
-              "Default": true,
-              "Tooltip": "Enable or disable Drow Weapons Training Passive to Half-Elf Drow.",
-              "Description": "Add Half-Elf Drow, Drow Weapons Training Passive.\n\nIf you uncheck 5elimited Option, this option will be disabled",
-              "Handles": {
-                "NameHandle": "ha9d5cc602d474745b8d6d7fe5bc42945d887",
-                "DescriptionHandle": "hb675ad12e1514c24be22dafe1fe857ace174",
-                "TooltipHandle": "h75932be3a3a54e4aa4cbdc6760324c804fe7"
-              }
-            },
-            {
-              "Id": "RemoveHuman_HumanMilitia_HumanVersatility_Passives",
-              "Name": "Remove Human Militia and Human Versatility Passives to Humans",
-              "Type": "checkbox",
-              "Default": true,
-              "Tooltip": "Enable or disable Remove Human Militia and Human Versatility Passives to Humans",
-              "Description": "Remove Human Militia and Human Versatility Passives to Humans. \n\nIf you uncheck 5elimited Option, this option will be disabled",
-              "Handles": {
-                "NameHandle": "h5160775c4b83466e8554f41e80175c4b767g",
-                "DescriptionHandle": "h3926b00726f640b9905f3d60fc8e0d8eg201",
-                "TooltipHandle": "h02de5733aef543d295dd4c1030e21a9d859c"
-              }
-            },
-            {
-              "Id": "RemoveHalfElf_HumanMilitia_Passives",
-              "Name": "Remove Half-Elf Human Militia Passive",
-              "Type": "checkbox",
-              "Default": true,
-              "Tooltip": "Enable or disable Human Militia Passive to Half-Elf.",
-              "Description": "Remove Half-Elf Human Militia Passive. \n\nIf you uncheck 5elimited Option, this option will be disabled",
-              "Handles": {
-                "NameHandle": "h4e75bc9636de43e29bc6e8c2b8688db55fbc",
-                "DescriptionHandle": "h995ed382f9974a79ada563a9325148d60gdb",
-                "TooltipHandle": "hddceb260cf614b638a45bfca466675dcfeea"
-              }
-            },
-            {
-              "Id": "AddUndeadGhastlyGhouls_TruePotion_and_LightSensitivity_Passives",
-              "Name": "Add Feats and Passives Undead Ghastly Ghouls",
-              "Type": "checkbox",
-              "Default": true,
-              "Tooltip": "Enable or disable  Feats and Passives to Undead Ghastly Ghouls.",
-              "Description": "Add TruePotion Feat and LightSensitivity Passives to Undead Ghastly Ghouls. \n\nIf you uncheck 5elimited Option, this option will be disabled",
-              "Handles": {
-                "NameHandle": "he85b940743504f1485f9583fa631edd4f6e5",
-                "DescriptionHandle": "h2ee53fe5595040c8b73a47d1644915851c58",
-                "TooltipHandle": "hdb73025ef0cf4ea695ac2453a1206326db31"
-              }
-            },
-            {
-              "Id": "AddUnderdarkRaces_LightSensitivity_Passives",
-              "Name": "Add Underdark Races Light Sensitivity Passives",
-              "Type": "checkbox",
-              "Default": true,
-              "Tooltip": "Enable or disable Light Sensitivity Passives to Underdark Races.",
-              "Description": "Add Underdark Races Light Sensitivity Passives. \n\nIf you uncheck 5elimited Option, this option will be disabled",
-              "Handles": {
-                "NameHandle": "h273eaa28aede44ad9fc93fcafa2c755d923a",
-                "DescriptionHandle": "h3c8d8cb61a1c40fdb012292a5f017d6b170b",
-                "TooltipHandle": "h0db76ddefb7b4b03ab480478c9f436e0ce8a"
-              }
-            }
-          ],
-          "Handles": {
-            "NameHandle": "hd629868ce4cb411782bf52b9726726801612"
-          }
-        },
-        {
-          "SectionId": "Cheats_settings",
-          "SectionName": "Cheats Settings",
-          "Settings": [
-            {
-              "Id": "CheatAsi30",
-              "Name": "Add +X ASI",
-              "Type": "slider_int",
-              "Default": 0,
-              "Tooltip": "Enable or disable Add +X ASI.",
-              "Description": "Add +X ASI.",
-              "Options": {
-                "Min": 0,
-                "Max": 22
-              },
-              "Handles": {
-                "NameHandle": "h91c32228ab60449daf9089fc355894223gdc",
-                "DescriptionHandle": "h270beb6bffdd49d9908c69e7abedddd27g24",
-                "TooltipHandle": "he0cccff7dbf14c98848193ca821037d125d9"
-              }
-            }
-          ],
-          "Handles": {
-            "NameHandle": "h1d864893fbc34770958b3e457c4767d026e2"
-          }
-        }
-      ],
-      "Handles": {
-        "NameHandle": "h651a2bde11404d77bacab179903a1bde642a"
-      }
-    },
-    {
       "TabId": "PatchASI",
       "TabName": "Patch ASI by Rule Set",
       "Sections": [
@@ -319,6 +201,124 @@
       ],
       "Handles": {
         "NameHandle": "hdd008807f9d846089fd1fce8a76a35ad0cdb"
+      }
+    },
+    {
+      "TabId": "OptionsRules",
+      "TabName": "Options Rules (Feats, Cheats ect.)",
+      "Sections": [
+        {
+          "SectionId": "Moreinfos_OptionsRules",
+          "SectionName": "More Informations",
+          "SectionDescription": "When you tick one of these boxes, the feats, passives or other of the races will be modified to be more in line with the rules in the DnD books.\n\nIf a feat or passive or other doesn't exist in the rule books, the option will disable, EXCEPT CHEATS OF COURSE!\n\nPlease note that you will need to restart your game for these modifications to take effect.",
+          "Handles": {
+            "NameHandle": "ha2075bb674464088b748328cfb44c4b50734",
+            "DescriptionHandle": "hdeb2111caefb44ddb5c9e149e57b69a6a19b"
+          }
+        },
+        {
+          "SectionId": "Feats_settings",
+          "SectionName": "Feats, Passives and others Settings",
+          "Settings": [
+            {
+              "Id": "AddHalfElfDrow_Drow_DrowWeaponTraining_Passives",
+              "Name": "Add Half-Elf Drow, Drow Weapons Training Passive",
+              "Type": "checkbox",
+              "Default": true,
+              "Tooltip": "Enable or disable Drow Weapons Training Passive to Half-Elf Drow.",
+              "Description": "Add Half-Elf Drow, Drow Weapons Training Passive.\n\nIf you uncheck 5elimited Option, this option will be disabled",
+              "Handles": {
+                "NameHandle": "ha9d5cc602d474745b8d6d7fe5bc42945d887",
+                "DescriptionHandle": "hb675ad12e1514c24be22dafe1fe857ace174",
+                "TooltipHandle": "h75932be3a3a54e4aa4cbdc6760324c804fe7"
+              }
+            },
+            {
+              "Id": "RemoveHuman_HumanMilitia_HumanVersatility_Passives",
+              "Name": "Remove Human Militia and Human Versatility Passives to Humans",
+              "Type": "checkbox",
+              "Default": true,
+              "Tooltip": "Enable or disable Remove Human Militia and Human Versatility Passives to Humans",
+              "Description": "Remove Human Militia and Human Versatility Passives to Humans. \n\nIf you uncheck 5elimited Option, this option will be disabled",
+              "Handles": {
+                "NameHandle": "h5160775c4b83466e8554f41e80175c4b767g",
+                "DescriptionHandle": "h3926b00726f640b9905f3d60fc8e0d8eg201",
+                "TooltipHandle": "h02de5733aef543d295dd4c1030e21a9d859c"
+              }
+            },
+            {
+              "Id": "RemoveHalfElf_HumanMilitia_Passives",
+              "Name": "Remove Half-Elf Human Militia Passive",
+              "Type": "checkbox",
+              "Default": true,
+              "Tooltip": "Enable or disable Human Militia Passive to Half-Elf.",
+              "Description": "Remove Half-Elf Human Militia Passive. \n\nIf you uncheck 5elimited Option, this option will be disabled",
+              "Handles": {
+                "NameHandle": "h4e75bc9636de43e29bc6e8c2b8688db55fbc",
+                "DescriptionHandle": "h995ed382f9974a79ada563a9325148d60gdb",
+                "TooltipHandle": "hddceb260cf614b638a45bfca466675dcfeea"
+              }
+            },
+            {
+              "Id": "AddUndeadGhastlyGhouls_TruePotion_and_LightSensitivity_Passives",
+              "Name": "Add Feats and Passives Undead Ghastly Ghouls",
+              "Type": "checkbox",
+              "Default": true,
+              "Tooltip": "Enable or disable  Feats and Passives to Undead Ghastly Ghouls.",
+              "Description": "Add TruePotion Feat and LightSensitivity Passives to Undead Ghastly Ghouls. \n\nIf you uncheck 5elimited Option, this option will be disabled",
+              "Handles": {
+                "NameHandle": "he85b940743504f1485f9583fa631edd4f6e5",
+                "DescriptionHandle": "h2ee53fe5595040c8b73a47d1644915851c58",
+                "TooltipHandle": "hdb73025ef0cf4ea695ac2453a1206326db31"
+              }
+            },
+            {
+              "Id": "AddUnderdarkRaces_LightSensitivity_Passives",
+              "Name": "Add Underdark Races Light Sensitivity Passives",
+              "Type": "checkbox",
+              "Default": true,
+              "Tooltip": "Enable or disable Light Sensitivity Passives to Underdark Races.",
+              "Description": "Add Underdark Races Light Sensitivity Passives. \n\nIf you uncheck 5elimited Option, this option will be disabled",
+              "Handles": {
+                "NameHandle": "h273eaa28aede44ad9fc93fcafa2c755d923a",
+                "DescriptionHandle": "h3c8d8cb61a1c40fdb012292a5f017d6b170b",
+                "TooltipHandle": "h0db76ddefb7b4b03ab480478c9f436e0ce8a"
+              }
+            }
+          ],
+          "Handles": {
+            "NameHandle": "hd629868ce4cb411782bf52b9726726801612"
+          }
+        },
+        {
+          "SectionId": "Cheats_settings",
+          "SectionName": "Cheats Settings",
+          "Settings": [
+            {
+              "Id": "CheatAsi30",
+              "Name": "Add +X ASI",
+              "Type": "slider_int",
+              "Default": 0,
+              "Tooltip": "Enable or disable Add +X ASI.",
+              "Description": "Add +X ASI.",
+              "Options": {
+                "Min": 0,
+                "Max": 22
+              },
+              "Handles": {
+                "NameHandle": "h91c32228ab60449daf9089fc355894223gdc",
+                "DescriptionHandle": "h270beb6bffdd49d9908c69e7abedddd27g24",
+                "TooltipHandle": "he0cccff7dbf14c98848193ca821037d125d9"
+              }
+            }
+          ],
+          "Handles": {
+            "NameHandle": "h1d864893fbc34770958b3e457c4767d026e2"
+          }
+        }
+      ],
+      "Handles": {
+        "NameHandle": "h651a2bde11404d77bacab179903a1bde642a"
       }
     }
   ]

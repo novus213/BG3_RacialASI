@@ -61,6 +61,9 @@ end
 --- extract mcmVar table from MCM Json
 function MCMASI:OnStatsLoadedMCM()
   local modSettingsTable = Mods.BG3MCM.MCMAPI:GetAllModSettings(ModuleUUID)
+  --[[
+  force 5e limited function
+  
   for key, value in pairs(McmVarsOptions) do
     local actionConfigs = Data.Libs.OptionActions[key]
     if type(value) == "boolean" then
@@ -84,7 +87,7 @@ function MCMASI:OnStatsLoadedMCM()
       end
     end
   end
-
+]]--
   Mods.BG3MCM.ModConfig:UpdateAllSettingsForMod(ModuleUUID, modSettingsTable)
 
   for key, value in pairs(McmVarsOptions) do
