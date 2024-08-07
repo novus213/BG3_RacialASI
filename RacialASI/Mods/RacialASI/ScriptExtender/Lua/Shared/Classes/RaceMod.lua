@@ -3,6 +3,7 @@
 ---@field modURL table|string table table
 ---@field modGuid string uuid
 ---@field progressionUUID table|string table
+---@field progressionTable string string
 ---@field author string
 ---@field sourceBook string
 ---@field mainRace boolean
@@ -20,6 +21,7 @@ RaceMod = _Class:Create("RaceMod")
 ---@param modURL table|string table
 ---@param modGuid string uuid
 ---@param progressionUUID table|string table
+---@param progressionTable string string
 ---@param author string
 ---@param sourceBook string
 ---@param mainRace boolean
@@ -28,23 +30,25 @@ RaceMod = _Class:Create("RaceMod")
 ---@param sab table|string table
 ---@param bonus table|string table
 ---@param NoDefStats boolean
-function RaceMod:New(name, modURL, modGuid, progressionUUID, author, sourceBook, mainRace, specialAbList, stats,
+function RaceMod:New(name, modURL, modGuid, progressionTable, progressionUUID, author, sourceBook, mainRace,
+                     specialAbList, stats,
                      sab, bonus, NoDefStats)
-  local self           = setmetatable({}, RaceMod)
-  self.name            = name
-  self.modURL          = modURL or nil
-  self.modGuid         = modGuid
-  self.progressionUUID = progressionUUID --Target
-  self.author          = author
-  self.sourceBook      = sourceBook
-  self.mainRace        = mainRace
-  self.specialAbList   = specialAbList or nil
-  self.stats           = stats or
-    nil                             --{"2", "0", "0", "0", "0", "1"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
-  self.sab             = sab or nil -- {"2","1"}
-  self.bonus           = bonus or nil
-  self.statsList       = { "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" }
-  self.NoDefStats      = NoDefStats or false
+  local self            = setmetatable({}, RaceMod)
+  self.name             = name
+  self.modURL           = modURL or nil
+  self.modGuid          = modGuid
+  self.progressionUUID  = progressionUUID --Target lvl uuid
+  self.progressionTable = progressionTable -- progressionTable TableUUID
+  self.author           = author
+  self.sourceBook       = sourceBook
+  self.mainRace         = mainRace
+  self.specialAbList    = specialAbList or nil
+  self.stats            = stats or
+    nil                              --{"2", "0", "0", "0", "0", "1"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+  self.sab              = sab or nil -- {"2","1"}
+  self.bonus            = bonus or nil
+  self.statsList        = { "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" }
+  self.NoDefStats       = NoDefStats or false
 
   return self
 end
@@ -83,6 +87,12 @@ end
 ---@return table self.progressionUUID
 function RaceMod:GetProgressionUUID(lvl)
   return self.progressionUUID[lvl]
+end
+
+--- Get GetTableUUID  from lvl of RaceMod
+---@return string self.GetTableUUID 
+function RaceMod:GetTableUUID()
+  return self.progressionTable
 end
 
 --- Get author of RaceMod
@@ -279,15 +289,32 @@ function RaceMod:InsertPayloadRaceASI(newRace, lvl, cheatAsi30)
         raceModStats = RaceMod:TableInsertRaceStats(newRace)
       end
       if raceModStats ~= nil then
-        local action = "InsertBoosts"
-        payload = VCHelpers.CF:addStringPayload(newRace:GetModGuid(), newRace:GetProgressionUUID(lvl),
-          "Boosts", raceModStats)
+        --local action = "InsertBoosts"
+        -- payload = VCHelpers.CF:addStringPayload(newRace:GetModGuid(), newRace:GetProgressionUUID(lvl), "Boosts", raceModStats)
+        -- classic payload CF work only with restart complety game, need patch to not need restart
+        local res = Ext.StaticData.Get(newRace:GetProgressionUUID(lvl), "Progression")
+        local expect = {
+          ResourceUUID = newRace:GetProgressionUUID(lvl), --LVL UUID
+          AllowImprovement = false,
+          --Name = "Elf",
+          Boosts = raceModStats,
+          Level = lvl,
+          --PassivesAdded = "",
+          --PassivesRemoved = "",
+          ProgressionType = 2,
+          -- Selectors = "SelectSpells(2f43a103-5bf1-4534-b14f-663decc0c525,1,0,,,,AlwaysPrepared)",
+          --SelectSpells = { "2f43a103-5bf1-4534-b14f-663decc0c525" },
+          TableUUID = newRace:GetTableUUID()
+        }
+
         if VCHelpers.CF:checkSCF() then
-          MCMASI:handlePayload(action, payload)
+          --   MCMASI:handlePayload(action, payload)
           --Mods.SubclassCompatibilityFramework.Api.InsertBoosts(payload)
           RADebug(4, "InsertPayloadRaceASI payload InsertBoosts: ")
-          RADebug(4, table.dump(payload))
+          RADebug(4, table.dump(expect))
         end
+
+        AssertEqualsProperties(expect, res)
       end
       if (newRace:GetStats() ~= nil and newRace:GetSab() == nil) then
         table.insert(fixAsi, newRace:GetName()) -- Add to the list if ASI Fixed

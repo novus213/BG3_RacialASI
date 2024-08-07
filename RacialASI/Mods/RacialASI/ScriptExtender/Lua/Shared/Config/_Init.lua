@@ -1,3 +1,3 @@
 RequireFiles("Shared/Config/", {
-    "Config",
+  "Config",
 })

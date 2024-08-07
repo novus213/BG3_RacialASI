@@ -83,7 +83,6 @@ local function OnStatsLoaded()
 end
 --- End CONFIG NO MCM
 
-
 if not VCHelpers.ModVars:IsModLoaded(Data.Deps.MCM_GUID.ModuleUUID) and
   not VCHelpers.ModVars:IsModLoaded(Data.Deps.KendersLabsCoreLibs_GUID.ModuleUUID) then
   if MODENABLED == 1 then
