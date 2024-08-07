@@ -207,20 +207,22 @@ end
 
 --- Function for tableInsertRaceStats
 ---@param newRace RaceMod RaceMod Instance
----@return table RaceStat
+---@return string RaceStat
 function RaceMod:TableInsertRaceStats(newRace)
-  local raceStat = {}
+  local raceStat = ""
   if newRace:GetStats() ~= nil then
     for i = 1, 6 do
       RAPrint(2, newRace:GetStatsListI(i))
       RAPrint(2, newRace:GetStatsI(i))
       RAPrint(2, string.format("Ability(%s,%s)", newRace:GetStatsListI(i), newRace:GetStatsI(i)))
-      table.insert(raceStat, "Ability(" .. newRace:GetStatsListI(i) .. "," .. newRace:GetStatsI(i) .. ")")
+      raceStat = raceStat .. "Ability(" .. newRace:GetStatsListI(i) .. "," .. newRace:GetStatsI(i) .. ")"
+      --table.insert(raceStat, "Ability(" .. newRace:GetStatsListI(i) .. "," .. newRace:GetStatsI(i) .. ")")
     end
     if newRace:GetBonus() ~= nil then
       local raceModBonusSize = table.getLength(newRace:GetBonus())
       for i = 1, raceModBonusSize do
-        table.insert(raceStat, newRace:GetBonusI(i))
+        raceStat = raceStat .. newRace:GetBonusI(i)
+        --table.insert(raceStat, newRace:GetBonusI(i))
       end
     end
   end
@@ -229,16 +231,18 @@ end
 
 --- Function for TableInsertRaceCheatsStats
 ---@param newRace RaceMod RaceMod Instance
----@return table RaceStat
+---@return string RaceStat
 function RaceMod:TableInsertRaceCheatsStats(newRace, cheatASI)
-  local raceStat = {}
+  local raceStat = ""
   for i = 1, 6 do
-    table.insert(raceStat, "Ability(" .. newRace:GetStatsListI(i) .. "," .. cheatASI .. ")") --- 15+18 so 8+7+33 max
+    raceStat = raceStat .. "Ability(" .. newRace:GetStatsListI(i) .. "," .. cheatASI .. ")" --- 15+18 so 8+7+33 max
+    --table.insert(raceStat, "Ability(" .. newRace:GetStatsListI(i) .. "," .. cheatASI .. ")") --- 15+18 so 8+7+33 max
   end
   if newRace:GetBonus() ~= nil then
     local raceModBonusSize = table.getLength(newRace:GetBonus())
     for i = 1, raceModBonusSize do
-      table.insert(raceStat, newRace:GetBonusI(i))
+      raceStat = raceStat .. newRace:GetBonusI(i)
+      --table.insert(raceStat, newRace:GetBonusI(i))
     end
   end
   --RAPrint(1, string.format("raceMod.Stats: %s",RADumpArray(raceStat)))
@@ -279,30 +283,33 @@ function RaceMod:InsertPayloadRaceASI(newRace, lvl, cheatAsi30)
     end
   end
   if newRace:GetStats() ~= nil or cAsi30 > 0 then
-    local payload = {}
+    --local payload = {}
     if (newRace:GetModGuid() and VCHelpers.ModVars:IsModLoaded(newRace:GetModGuid())) then
-      local raceModStats = nil
+      local raceModStats = ""
       if cAsi30 > 0 and newRace:GetMainRace() == true then
         raceModStats = RaceMod:TableInsertRaceCheatsStats(newRace, cAsi30)
       end
       if cAsi30 == 0 then
         raceModStats = RaceMod:TableInsertRaceStats(newRace)
       end
-      if raceModStats ~= nil then
+      if raceModStats ~= "" then
         --local action = "InsertBoosts"
         -- payload = VCHelpers.CF:addStringPayload(newRace:GetModGuid(), newRace:GetProgressionUUID(lvl), "Boosts", raceModStats)
         -- classic payload CF work only with restart complety game, need patch to not need restart
-       
 
-        if VCHelpers.CF:checkSCF() then
-          --   MCMASI:handlePayload(action, payload)
-          --Mods.SubclassCompatibilityFramework.Api.InsertBoosts(payload)
-          RADebug(4, "InsertPayloadRaceASI payload InsertBoosts: ")
-          RADebug(4, table.dump(payload))
+        if newRace:GetProgressionUUID(lvl) ~= "96ad7abb-8a86-4939-913d-71f84191f7d7" then --temp fix shadar break the mod
+          local res = Ext.StaticData.Get(newRace:GetProgressionUUID(lvl), "Progression")
+          res.Boosts = res.Boosts .. raceModStats
+          if VCHelpers.CF:checkSCF() then
+            --   MCMASI:handlePayload(action, payload)
+            --Mods.SubclassCompatibilityFramework.Api.InsertBoosts(payload)
+            RADebug(4, "InsertPayloadRaceASI payload InsertBoosts: ")
+            RADebug(4, res.Boosts)
+          end
+          if (newRace:GetStats() ~= nil and newRace:GetSab() == nil) then
+            table.insert(fixAsi, newRace:GetName()) -- Add to the list if ASI Fixed
+          end
         end
-      end
-      if (newRace:GetStats() ~= nil and newRace:GetSab() == nil) then
-        table.insert(fixAsi, newRace:GetName()) -- Add to the list if ASI Fixed
       end
     end
   end
