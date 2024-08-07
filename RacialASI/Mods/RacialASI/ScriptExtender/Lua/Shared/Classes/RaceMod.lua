@@ -256,7 +256,7 @@ function RaceMod:InsertPayloadRaceASI(newRace, lvl, cheatAsi30)
   local cAsi30 = cheatAsi30 or 0
   local fixAsi = {} -- Table to store classes with removed shit asi
   if newRace:GetSab() ~= nil then
-    local payload = {}
+    -- local payload = {}
     if (newRace:GetModGuid() and VCHelpers.ModVars:IsModLoaded(newRace:GetModGuid())) then
       -- special Ability List +x in some ASI or default
       local abilityListUUID = Data.Deps.AbilityList_UUID.ModuleUUID
@@ -264,20 +264,26 @@ function RaceMod:InsertPayloadRaceASI(newRace, lvl, cheatAsi30)
         abilityListUUID = newRace:GetSpecialAbList()
       end
 
-      local action = "InsertSelectors"
-      local sabAs = table.getLength(newRace:GetSab()) --sabAmounts
-      payload = VCHelpers.CF:InsertSelectorsPayload(newRace:GetModGuid(), newRace:GetProgressionUUID(lvl),
-        "SelectAbilityBonus", abilityListUUID, sabAs, newRace:GetSab(), "AbilityBonus")
+      --local action = "InsertSelectors"
+      --local sabAs = table.getLength(newRace:GetSab()) --sabAmounts
+      --payload = VCHelpers.CF:InsertSelectorsPayload(newRace:GetModGuid(), newRace:GetProgressionUUID(lvl),
+      --  "SelectAbilityBonus", abilityListUUID, sabAs, newRace:GetSab(), "AbilityBonus")
+      local sabAs = table.getLength(newRace:GetSab())
+      local combinedStringSab = table.concat(newRace:GetSab(), ",")
+
+      local res = Ext.StaticData.Get(newRace:GetProgressionUUID(lvl), "Progression")
+      res.Selectors = res.Selectors ..
+        "SelectAbilityBonus(" .. abilityListUUID .. ",AbilityBonus," .. combinedStringSab .. ")"
 
       table.insert(fixAsi, newRace:GetName()) -- Add to the list if ASI Fixed
       if VCHelpers.CF:checkSCF() then
-        MCMASI:handlePayload(action, payload)
+        -- MCMASI:handlePayload(action, payload)
         --Mods.SubclassCompatibilityFramework.Api.InsertSelectors(payload)
         if cAsi30 > 0 then
           RADebug(2, "InsertPayloadRaceASI payload InsertSelectors: +X CHEAT")
         else
           RADebug(2, "InsertPayloadRaceASI payload InsertSelectors:")
-          RADebug(4, table.dump(payload))
+          RADebug(4, res.Selectors)
         end
       end
     end
@@ -330,20 +336,23 @@ end
 ---@param newRace RaceMod RaceMod Instance
 function RaceMod:InsertDefaultPayloadASI(newRace, lvl, abilityListUUID)
   local baseAsi   = {} -- Table to store races with removed shit asi
-  local payload   = {}
+  --local payload   = ""
   abilityListUUID = abilityListUUID or Data.Deps.AbilityList_UUID.ModuleUUID
   if (newRace:GetModGuid() and VCHelpers.ModVars:IsModLoaded(newRace:GetModGuid())) or
     newRace:GetModGuid() == Data.Deps.GustavDev_GUID.ModuleUUID then
-    local action = "InsertSelectors"
-    payload = VCHelpers.CF:InsertSelectorsPayload(newRace:GetModGuid(),
-      newRace:GetProgressionUUID(lvl), "SelectAbilityBonus", abilityListUUID, 2, { "2", "1" }, "AbilityBonus")
+    --local action = "InsertSelectors"
+    --payload = VCHelpers.CF:InsertSelectorsPayload(newRace:GetModGuid(),
+    -- newRace:GetProgressionUUID(lvl), "SelectAbilityBonus", abilityListUUID, 2, { "2", "1" }, "AbilityBonus")
+    local res = Ext.StaticData.Get(newRace:GetProgressionUUID(lvl), "Progression")
+    res.Selectors = res.Selectors .. "SelectAbilityBonus(" .. abilityListUUID .. ",AbilityBonus,2,1)"
+
     table.insert(baseAsi, newRace:GetName()) -- Add to the list if ASI Fixed
 
     if VCHelpers.CF:checkSCF() then
-      MCMASI:handlePayload(action, payload)
+      -- MCMASI:handlePayload(action, payload)
       --Mods.SubclassCompatibilityFramework.Api.InsertSelectors(payload)
       RADebug(4, "InsertDefaultPayloadASI payload InsertSelectors: ")
-      RADebug(4, table.dump(payload))
+      RADebug(4, res.Selectors)
     end
   end
   if #baseAsi > 0 then
