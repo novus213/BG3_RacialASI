@@ -37,7 +37,7 @@ function RaceMod:New(name, modURL, modGuid, progressionTable, progressionUUID, a
   self.name             = name
   self.modURL           = modURL or nil
   self.modGuid          = modGuid
-  self.progressionUUID  = progressionUUID --Target lvl uuid
+  self.progressionUUID  = progressionUUID  --Target lvl uuid
   self.progressionTable = progressionTable -- progressionTable TableUUID
   self.author           = author
   self.sourceBook       = sourceBook
@@ -90,7 +90,7 @@ function RaceMod:GetProgressionUUID(lvl)
 end
 
 --- Get GetTableUUID  from lvl of RaceMod
----@return string self.GetTableUUID 
+---@return string self.GetTableUUID
 function RaceMod:GetTableUUID()
   return self.progressionTable
 end
@@ -292,29 +292,14 @@ function RaceMod:InsertPayloadRaceASI(newRace, lvl, cheatAsi30)
         --local action = "InsertBoosts"
         -- payload = VCHelpers.CF:addStringPayload(newRace:GetModGuid(), newRace:GetProgressionUUID(lvl), "Boosts", raceModStats)
         -- classic payload CF work only with restart complety game, need patch to not need restart
-        local res = Ext.StaticData.Get(newRace:GetProgressionUUID(lvl), "Progression")
-        local expect = {
-          ResourceUUID = newRace:GetProgressionUUID(lvl), --LVL UUID
-          AllowImprovement = false,
-          --Name = "Elf",
-          Boosts = raceModStats,
-          Level = lvl,
-          --PassivesAdded = "",
-          --PassivesRemoved = "",
-          ProgressionType = 2,
-          -- Selectors = "SelectSpells(2f43a103-5bf1-4534-b14f-663decc0c525,1,0,,,,AlwaysPrepared)",
-          --SelectSpells = { "2f43a103-5bf1-4534-b14f-663decc0c525" },
-          TableUUID = newRace:GetTableUUID()
-        }
+       
 
         if VCHelpers.CF:checkSCF() then
           --   MCMASI:handlePayload(action, payload)
           --Mods.SubclassCompatibilityFramework.Api.InsertBoosts(payload)
           RADebug(4, "InsertPayloadRaceASI payload InsertBoosts: ")
-          RADebug(4, table.dump(expect))
+          RADebug(4, table.dump(payload))
         end
-
-        AssertEqualsProperties(expect, res)
       end
       if (newRace:GetStats() ~= nil and newRace:GetSab() == nil) then
         table.insert(fixAsi, newRace:GetName()) -- Add to the list if ASI Fixed
