@@ -42,6 +42,7 @@ function EHandlers.SyncVars()
 
         Core.Builder5e()
       end
+      Core.Builder5e()
     end)
   end
 end
