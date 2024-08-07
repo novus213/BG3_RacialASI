@@ -269,11 +269,10 @@ function RaceMod:InsertPayloadRaceASI(newRace, lvl, cheatAsi30)
       --payload = VCHelpers.CF:InsertSelectorsPayload(newRace:GetModGuid(), newRace:GetProgressionUUID(lvl),
       --  "SelectAbilityBonus", abilityListUUID, sabAs, newRace:GetSab(), "AbilityBonus")
       local sabAs = table.getLength(newRace:GetSab())
-      local combinedStringSab = table.concat(newRace:GetSab(), ",")
+      --local combinedStringSab = table.concat(newRace:GetSab(), ",")
 
       local res = Ext.StaticData.Get(newRace:GetProgressionUUID(lvl), "Progression")
-      res.Selectors = res.Selectors ..
-        "SelectAbilityBonus(" .. abilityListUUID .. ",AbilityBonus," .. combinedStringSab .. ")"
+      res.SelectAbilityBonus = { { abilityListUUID }, tostring(sabAs), newRace:GetSab(), "AbilityBonus" }
 
       table.insert(fixAsi, newRace:GetName()) -- Add to the list if ASI Fixed
       if VCHelpers.CF:checkSCF() then
@@ -283,7 +282,7 @@ function RaceMod:InsertPayloadRaceASI(newRace, lvl, cheatAsi30)
           RADebug(2, "InsertPayloadRaceASI payload InsertSelectors: +X CHEAT")
         else
           RADebug(2, "InsertPayloadRaceASI payload InsertSelectors:")
-          RADebug(4, res.Selectors)
+          RADebug(4, res.SelectAbilityBonus)
         end
       end
     end
@@ -344,7 +343,7 @@ function RaceMod:InsertDefaultPayloadASI(newRace, lvl, abilityListUUID)
     --payload = VCHelpers.CF:InsertSelectorsPayload(newRace:GetModGuid(),
     -- newRace:GetProgressionUUID(lvl), "SelectAbilityBonus", abilityListUUID, 2, { "2", "1" }, "AbilityBonus")
     local res = Ext.StaticData.Get(newRace:GetProgressionUUID(lvl), "Progression")
-    res.Selectors = res.Selectors .. "SelectAbilityBonus(" .. abilityListUUID .. ",AbilityBonus,2,1)"
+    res.SelectAbilityBonus = { { abilityListUUID }, 2, { 2, 1 }, "AbilityBonus" }
 
     table.insert(baseAsi, newRace:GetName()) -- Add to the list if ASI Fixed
 
@@ -352,7 +351,7 @@ function RaceMod:InsertDefaultPayloadASI(newRace, lvl, abilityListUUID)
       -- MCMASI:handlePayload(action, payload)
       --Mods.SubclassCompatibilityFramework.Api.InsertSelectors(payload)
       RADebug(4, "InsertDefaultPayloadASI payload InsertSelectors: ")
-      RADebug(4, res.Selectors)
+      RADebug(4, res.SelectAbilityBonus)
     end
   end
   if #baseAsi > 0 then
