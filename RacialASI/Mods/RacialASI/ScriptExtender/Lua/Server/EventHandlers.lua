@@ -1,5 +1,4 @@
 EHandlers = {}
---[[
 function EHandlers.SyncVars()
   if VCHelpers.ModVars:IsModLoaded(Data.Deps.MCM_GUID.ModuleUUID) and McmVarsGeneralSettings["RASI"] == true then
     McmVarsOptions     = McmVars
@@ -22,4 +21,3 @@ function EHandlers.SyncVars()
   Ext.Require("Core/Builder5e.lua")
   Core.Builder5e()
 end
-]]--

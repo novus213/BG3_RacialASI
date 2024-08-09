@@ -46,84 +46,6 @@ RAPrint(2, McmVarsOptions["AddUndeadGhastlyGhouls_TruePotion_and_LightSensitivit
 RAPrint(2, "AddUnderdarkRaces_LightSensitivity_Passives: ")
 RAPrint(2, McmVarsOptions["AddUnderdarkRaces_LightSensitivity_Passives"])
 
-function print_table(node)
-  local cache, stack, output = {}, {}, {}
-  local depth = 1
-  local output_str = "{\n"
-
-  while true do
-    local size = 0
-    for k, v in pairs(node) do
-      size = size + 1
-    end
-
-    local cur_index = 1
-    for k, v in pairs(node) do
-      if (cache[node] == nil) or (cur_index >= cache[node]) then
-        if (string.find(output_str, "}", output_str:len())) then
-          output_str = output_str .. ",\n"
-        elseif not (string.find(output_str, "\n", output_str:len())) then
-          output_str = output_str .. "\n"
-        end
-
-        -- This is necessary for working with HUGE tables otherwise we run out of memory using concat on huge strings
-        table.insert(output, output_str)
-        output_str = ""
-
-        local key
-        if (type(k) == "number" or type(k) == "boolean") then
-          key = "[" .. tostring(k) .. "]"
-        else
-          key = "['" .. tostring(k) .. "']"
-        end
-
-        if (type(v) == "number" or type(v) == "boolean") then
-          output_str = output_str .. string.rep('\t', depth) .. key .. " = " .. tostring(v)
-        elseif (type(v) == "table") then
-          output_str = output_str .. string.rep('\t', depth) .. key .. " = {\n"
-          table.insert(stack, node)
-          table.insert(stack, v)
-          cache[node] = cur_index + 1
-          break
-        else
-          output_str = output_str .. string.rep('\t', depth) .. key .. " = '" .. tostring(v) .. "'"
-        end
-
-        if (cur_index == size) then
-          output_str = output_str .. "\n" .. string.rep('\t', depth - 1) .. "}"
-        else
-          output_str = output_str .. ","
-        end
-      else
-        -- close the table
-        if (cur_index == size) then
-          output_str = output_str .. "\n" .. string.rep('\t', depth - 1) .. "}"
-        end
-      end
-
-      cur_index = cur_index + 1
-    end
-
-    if (size == 0) then
-      output_str = output_str .. "\n" .. string.rep('\t', depth - 1) .. "}"
-    end
-
-    if (#stack > 0) then
-      node = stack[#stack]
-      stack[#stack] = nil
-      depth = cache[node] == nil and depth + 1 or depth - 1
-    else
-      break
-    end
-  end
-
-  -- This is necessary for working with HUGE tables otherwise we run out of memory using concat on huge strings
-  table.insert(output, output_str)
-  output_str = table.concat(output)
-
-  print(output_str)
-end
-
 function Core.classe5eModule()
   for _, classeMod in ipairs(Data.Libs.ClassesLibrary) do
     ClassModObject = ClasseMod:New(classeMod.Name, classeMod.modURL, classeMod.modGuid, classeMod.progressionUUID,
@@ -141,19 +63,25 @@ function Core.race5eModule()
       raceMod.NoDefStats)
     if CheatAsi30 > 0 then
       RaceMod:CleanOnRacesStatsLoaded(RaceModObject, 1)
-      RaceMod:InsertPayloadRaceASI(RaceModObject, 1, CheatAsi30)
+      if Ext.isServer() then
+        RaceMod:InsertPayloadRaceASI(RaceModObject, 1, CheatAsi30)
+      end
     else
       if PatchAsiDefault == true then
         RAWarn(2, "PatchAsiDefault = true")
         RaceMod:CleanOnRacesStatsLoaded(RaceModObject, 1)
-        RaceMod:InsertDefaultPayloadASI(RaceModObject, 1)
+        if Ext.isServer() then
+          RaceMod:InsertPayloadRaceASI(RaceModObject, 1, CheatAsi30)
+        end
       else
         if VCHelpers.ModVars:IsModExist(Data.Deps.Framework_GUID.ModuleUUID, RaceModObject:GetModGuid()) then -- présent dans isLoaded
           if RaceModObject:GetSourceBook() == nil or RaceModObject:GetSourceBook() == "" then
             if PatchAsiHomebrew == true then
               RAWarn(2, "PatchAsiHomebrew = true")
               RaceMod:CleanOnRacesStatsLoaded(RaceModObject, 1)
-              RaceMod:InsertPayloadRaceASI(RaceModObject, 1)
+              if Ext.isServer() then
+                RaceMod:InsertPayloadRaceASI(RaceModObject, 1, CheatAsi30)
+              end
             else
               --desactive moi ce putain de mod Connard function
               if RaceModObject:GetNoDefStats() == true then
@@ -167,7 +95,9 @@ function Core.race5eModule()
               if PatchAsi5eLimited == true then
                 RAWarn(2, "PatchAsi5eLimited = true")
                 RaceMod:CleanOnRacesStatsLoaded(RaceModObject, 1)
-                RaceMod:InsertPayloadRaceASI(RaceModObject, 1)
+                if Ext.isServer() then
+                  RaceMod:InsertPayloadRaceASI(RaceModObject, 1, CheatAsi30)
+                end
               else
                 if RaceModObject:GetNoDefStats() == true then
                   RaceMod:InsertDefaultPayloadASI(RaceModObject, 1)
@@ -181,7 +111,9 @@ function Core.race5eModule()
               if PatchAsi5e == true then
                 RAWarn(2, "PatchAsi5e = true")
                 RaceMod:CleanOnRacesStatsLoaded(RaceModObject, 1)
-                RaceMod:InsertPayloadRaceASI(RaceModObject, 1)
+                if Ext.isServer() then
+                  RaceMod:InsertPayloadRaceASI(RaceModObject, 1, CheatAsi30)
+                end
               else
                 if RaceModObject:GetNoDefStats() == true then
                   RaceMod:InsertDefaultPayloadASI(RaceModObject, 1)
@@ -195,7 +127,9 @@ function Core.race5eModule()
               if PatchAsi5eExtended == true then
                 RAWarn(2, "PatchAsi5eExtended = true")
                 RaceMod:CleanOnRacesStatsLoaded(RaceModObject, 1)
-                RaceMod:InsertPayloadRaceASI(RaceModObject, 1)
+                if Ext.isServer() then
+                  RaceMod:InsertPayloadRaceASI(RaceModObject, 1, CheatAsi30)
+                end
               else
                 if RaceModObject:GetNoDefStats() == true then
                   RaceMod:InsertDefaultPayloadASI(RaceModObject, 1)
@@ -209,7 +143,9 @@ function Core.race5eModule()
               if PatchAsiLegacy == true then
                 RAWarn(2, "PatchAsiLegacy = true")
                 RaceMod:CleanOnRacesStatsLoaded(RaceModObject, 1)
-                RaceMod:InsertPayloadRaceASI(RaceModObject, 1)
+                if Ext.isServer() then
+                  RaceMod:InsertPayloadRaceASI(RaceModObject, 1, CheatAsi30)
+                end
               else
                 if RaceModObject:GetNoDefStats() == true then
                   RaceMod:InsertDefaultPayloadASI(RaceModObject, 1)
@@ -223,7 +159,9 @@ function Core.race5eModule()
               if PatchAsiFlavour == true then
                 RAWarn(2, "PatchAsiFlavour = true")
                 RaceMod:CleanOnRacesStatsLoaded(RaceModObject, 1)
-                RaceMod:InsertPayloadRaceASI(RaceModObject, 1)
+                if Ext.isServer() then
+                  RaceMod:InsertPayloadRaceASI(RaceModObject, 1, CheatAsi30)
+                end
               else
                 if RaceModObject:GetNoDefStats() == true then
                   RaceMod:InsertDefaultPayloadASI(RaceModObject, 1)

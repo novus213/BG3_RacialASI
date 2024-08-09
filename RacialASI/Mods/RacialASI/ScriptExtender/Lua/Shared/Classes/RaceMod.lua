@@ -3,6 +3,7 @@
 ---@field modURL table|string table table
 ---@field modGuid string uuid
 ---@field progressionUUID table|string table
+---@field progressionTable string string
 ---@field author string
 ---@field sourceBook string
 ---@field mainRace boolean
@@ -20,6 +21,7 @@ RaceMod = _Class:Create("RaceMod")
 ---@param modURL table|string table
 ---@param modGuid string uuid
 ---@param progressionUUID table|string table
+---@param progressionTable string string
 ---@param author string
 ---@param sourceBook string
 ---@param mainRace boolean
@@ -28,23 +30,25 @@ RaceMod = _Class:Create("RaceMod")
 ---@param sab table|string table
 ---@param bonus table|string table
 ---@param NoDefStats boolean
-function RaceMod:New(name, modURL, modGuid, progressionUUID, author, sourceBook, mainRace, specialAbList, stats,
+function RaceMod:New(name, modURL, modGuid, progressionTable, progressionUUID, author, sourceBook, mainRace,
+                     specialAbList, stats,
                      sab, bonus, NoDefStats)
-  local self           = setmetatable({}, RaceMod)
-  self.name            = name
-  self.modURL          = modURL or nil
-  self.modGuid         = modGuid
-  self.progressionUUID = progressionUUID --Target
-  self.author          = author
-  self.sourceBook      = sourceBook
-  self.mainRace        = mainRace
-  self.specialAbList   = specialAbList or nil
-  self.stats           = stats or
-    nil                             --{"2", "0", "0", "0", "0", "1"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
-  self.sab             = sab or nil -- {"2","1"}
-  self.bonus           = bonus or nil
-  self.statsList       = { "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" }
-  self.NoDefStats      = NoDefStats or false
+  local self            = setmetatable({}, RaceMod)
+  self.name             = name
+  self.modURL           = modURL or nil
+  self.modGuid          = modGuid
+  self.progressionUUID  = progressionUUID  --Target lvl uuid
+  self.progressionTable = progressionTable -- progressionTable TableUUID
+  self.author           = author
+  self.sourceBook       = sourceBook
+  self.mainRace         = mainRace
+  self.specialAbList    = specialAbList or nil
+  self.stats            = stats or
+    nil                              --{"2", "0", "0", "0", "0", "1"} --[[ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ]]
+  self.sab              = sab or nil -- {"2","1"}
+  self.bonus            = bonus or nil
+  self.statsList        = { "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" }
+  self.NoDefStats       = NoDefStats or false
 
   return self
 end
@@ -83,6 +87,12 @@ end
 ---@return table self.progressionUUID
 function RaceMod:GetProgressionUUID(lvl)
   return self.progressionUUID[lvl]
+end
+
+--- Get GetTableUUID  from lvl of RaceMod
+---@return string self.GetTableUUID
+function RaceMod:GetTableUUID()
+  return self.progressionTable
 end
 
 --- Get author of RaceMod
@@ -197,20 +207,22 @@ end
 
 --- Function for tableInsertRaceStats
 ---@param newRace RaceMod RaceMod Instance
----@return table RaceStat
+---@return string RaceStat
 function RaceMod:TableInsertRaceStats(newRace)
-  local raceStat = {}
+  local raceStat = ""
   if newRace:GetStats() ~= nil then
     for i = 1, 6 do
       RAPrint(2, newRace:GetStatsListI(i))
       RAPrint(2, newRace:GetStatsI(i))
       RAPrint(2, string.format("Ability(%s,%s)", newRace:GetStatsListI(i), newRace:GetStatsI(i)))
-      table.insert(raceStat, "Ability(" .. newRace:GetStatsListI(i) .. "," .. newRace:GetStatsI(i) .. ")")
+      raceStat = raceStat .. "Ability(" .. newRace:GetStatsListI(i) .. "," .. newRace:GetStatsI(i) .. ")"
+      --table.insert(raceStat, "Ability(" .. newRace:GetStatsListI(i) .. "," .. newRace:GetStatsI(i) .. ")")
     end
     if newRace:GetBonus() ~= nil then
       local raceModBonusSize = table.getLength(newRace:GetBonus())
       for i = 1, raceModBonusSize do
-        table.insert(raceStat, newRace:GetBonusI(i))
+        raceStat = raceStat .. newRace:GetBonusI(i)
+        --table.insert(raceStat, newRace:GetBonusI(i))
       end
     end
   end
@@ -219,16 +231,18 @@ end
 
 --- Function for TableInsertRaceCheatsStats
 ---@param newRace RaceMod RaceMod Instance
----@return table RaceStat
+---@return string RaceStat
 function RaceMod:TableInsertRaceCheatsStats(newRace, cheatASI)
-  local raceStat = {}
+  local raceStat = ""
   for i = 1, 6 do
-    table.insert(raceStat, "Ability(" .. newRace:GetStatsListI(i) .. "," .. cheatASI .. ")") --- 15+18 so 8+7+33 max
+    raceStat = raceStat .. "Ability(" .. newRace:GetStatsListI(i) .. "," .. cheatASI .. ")" --- 15+18 so 8+7+33 max
+    --table.insert(raceStat, "Ability(" .. newRace:GetStatsListI(i) .. "," .. cheatASI .. ")") --- 15+18 so 8+7+33 max
   end
   if newRace:GetBonus() ~= nil then
     local raceModBonusSize = table.getLength(newRace:GetBonus())
     for i = 1, raceModBonusSize do
-      table.insert(raceStat, newRace:GetBonusI(i))
+      raceStat = raceStat .. newRace:GetBonusI(i)
+      --table.insert(raceStat, newRace:GetBonusI(i))
     end
   end
   --RAPrint(1, string.format("raceMod.Stats: %s",RADumpArray(raceStat)))
@@ -242,7 +256,7 @@ function RaceMod:InsertPayloadRaceASI(newRace, lvl, cheatAsi30)
   local cAsi30 = cheatAsi30 or 0
   local fixAsi = {} -- Table to store classes with removed shit asi
   if newRace:GetSab() ~= nil then
-    local payload = {}
+    -- local payload = {}
     if (newRace:GetModGuid() and VCHelpers.ModVars:IsModLoaded(newRace:GetModGuid())) then
       -- special Ability List +x in some ASI or default
       local abilityListUUID = Data.Deps.AbilityList_UUID.ModuleUUID
@@ -250,47 +264,57 @@ function RaceMod:InsertPayloadRaceASI(newRace, lvl, cheatAsi30)
         abilityListUUID = newRace:GetSpecialAbList()
       end
 
-      local action = "InsertSelectors"
-      local sabAs = table.getLength(newRace:GetSab()) --sabAmounts
-      payload = VCHelpers.CF:InsertSelectorsPayload(newRace:GetModGuid(), newRace:GetProgressionUUID(lvl),
-        "SelectAbilityBonus", abilityListUUID, sabAs, newRace:GetSab(), "AbilityBonus")
+      --local action = "InsertSelectors"
+      --local sabAs = table.getLength(newRace:GetSab()) --sabAmounts
+      --payload = VCHelpers.CF:InsertSelectorsPayload(newRace:GetModGuid(), newRace:GetProgressionUUID(lvl),
+      --  "SelectAbilityBonus", abilityListUUID, sabAs, newRace:GetSab(), "AbilityBonus")
+      local sabAs = table.getLength(newRace:GetSab())
+      --local combinedStringSab = table.concat(newRace:GetSab(), ",")
+
+      local res = Ext.StaticData.Get(newRace:GetProgressionUUID(lvl), "Progression")
+      res.SelectAbilityBonus = { { abilityListUUID }, tostring(sabAs), newRace:GetSab(), "AbilityBonus" }
 
       table.insert(fixAsi, newRace:GetName()) -- Add to the list if ASI Fixed
       if VCHelpers.CF:checkSCF() then
-        MCMASI:handlePayload(action, payload)
+        -- MCMASI:handlePayload(action, payload)
         --Mods.SubclassCompatibilityFramework.Api.InsertSelectors(payload)
         if cAsi30 > 0 then
           RADebug(2, "InsertPayloadRaceASI payload InsertSelectors: +X CHEAT")
         else
           RADebug(2, "InsertPayloadRaceASI payload InsertSelectors:")
-          RADebug(4, table.dump(payload))
+          RADebug(4, res.SelectAbilityBonus)
         end
       end
     end
   end
   if newRace:GetStats() ~= nil or cAsi30 > 0 then
-    local payload = {}
+    --local payload = {}
     if (newRace:GetModGuid() and VCHelpers.ModVars:IsModLoaded(newRace:GetModGuid())) then
-      local raceModStats = nil
+      local raceModStats = ""
       if cAsi30 > 0 and newRace:GetMainRace() == true then
         raceModStats = RaceMod:TableInsertRaceCheatsStats(newRace, cAsi30)
       end
       if cAsi30 == 0 then
         raceModStats = RaceMod:TableInsertRaceStats(newRace)
       end
-      if raceModStats ~= nil then
-        local action = "InsertBoosts"
-        payload = VCHelpers.CF:addStringPayload(newRace:GetModGuid(), newRace:GetProgressionUUID(lvl),
-          "Boosts", raceModStats)
-        if VCHelpers.CF:checkSCF() then
-          MCMASI:handlePayload(action, payload)
-          --Mods.SubclassCompatibilityFramework.Api.InsertBoosts(payload)
-          RADebug(4, "InsertPayloadRaceASI payload InsertBoosts: ")
-          RADebug(4, table.dump(payload))
+      if raceModStats ~= "" then
+        --local action = "InsertBoosts"
+        -- payload = VCHelpers.CF:addStringPayload(newRace:GetModGuid(), newRace:GetProgressionUUID(lvl), "Boosts", raceModStats)
+        -- classic payload CF work only with restart complety game, need patch to not need restart
+
+        if newRace:GetProgressionUUID(lvl) ~= "96ad7abb-8a86-4939-913d-71f84191f7d7" then --temp fix shadar break the mod
+          local res = Ext.StaticData.Get(newRace:GetProgressionUUID(lvl), "Progression")
+          res.Boosts = res.Boosts .. raceModStats
+          if VCHelpers.CF:checkSCF() then
+            --   MCMASI:handlePayload(action, payload)
+            --Mods.SubclassCompatibilityFramework.Api.InsertBoosts(payload)
+            RADebug(4, "InsertPayloadRaceASI payload InsertBoosts: ")
+            RADebug(4, res.Boosts)
+          end
+          if (newRace:GetStats() ~= nil and newRace:GetSab() == nil) then
+            table.insert(fixAsi, newRace:GetName()) -- Add to the list if ASI Fixed
+          end
         end
-      end
-      if (newRace:GetStats() ~= nil and newRace:GetSab() == nil) then
-        table.insert(fixAsi, newRace:GetName()) -- Add to the list if ASI Fixed
       end
     end
   end
@@ -311,20 +335,23 @@ end
 ---@param newRace RaceMod RaceMod Instance
 function RaceMod:InsertDefaultPayloadASI(newRace, lvl, abilityListUUID)
   local baseAsi   = {} -- Table to store races with removed shit asi
-  local payload   = {}
+  --local payload   = ""
   abilityListUUID = abilityListUUID or Data.Deps.AbilityList_UUID.ModuleUUID
   if (newRace:GetModGuid() and VCHelpers.ModVars:IsModLoaded(newRace:GetModGuid())) or
     newRace:GetModGuid() == Data.Deps.GustavDev_GUID.ModuleUUID then
     local action = "InsertSelectors"
     payload = VCHelpers.CF:InsertSelectorsPayload(newRace:GetModGuid(),
       newRace:GetProgressionUUID(lvl), "SelectAbilityBonus", abilityListUUID, 2, { "2", "1" }, "AbilityBonus")
+    --local res = Ext.StaticData.Get(newRace:GetProgressionUUID(lvl), "Progression")
+    --res.SelectAbilityBonus = { { abilityListUUID }, 2, { 2, 1 }, "AbilityBonus" }
+
     table.insert(baseAsi, newRace:GetName()) -- Add to the list if ASI Fixed
 
     if VCHelpers.CF:checkSCF() then
       MCMASI:handlePayload(action, payload)
       --Mods.SubclassCompatibilityFramework.Api.InsertSelectors(payload)
       RADebug(4, "InsertDefaultPayloadASI payload InsertSelectors: ")
-      RADebug(4, table.dump(payload))
+      RADebug(4, res.SelectAbilityBonus)
     end
   end
   if #baseAsi > 0 then

@@ -1,12 +1,12 @@
---Ext.Require("Server/EventHandlers.lua")
---Ext.Require("Server/SubscribedEvents.lua")
+Ext.Require("Server/EventHandlers.lua")
+Ext.Require("Server/SubscribedEvents.lua")
 
---SubscribedEvents.SubscribeToEvents()
+SubscribedEvents.SubscribeToEvents()
 
-PersistentVars = {}
+--PersistentVars = {}
 -- Variable will be restored after the savegame finished loading
+--[[
 function doStuff()
-  PersistentVars['Test'] = 'Something to keep'
   Ext.Vars.RegisterUserVariable("ClassModObject", {
     Server = true,
     Client = true,
@@ -19,12 +19,14 @@ function doStuff()
   })
 end
 
+doStuff()
+
 function OnSessionLoaded()
   -- Persistent variables are only available after SessionLoaded is triggered!
-  _P(PersistentVars['Test'])
   Ext.Require("Core/Builder5e.lua")
-
   Core.Builder5e()
 end
 
 Ext.Events.SessionLoaded:Subscribe(OnSessionLoaded)
+]]--
+
