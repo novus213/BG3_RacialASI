@@ -11,6 +11,7 @@
 ---@field bonus table|string table
 ---@field statsList table|string table
 ---@field specialAbList string uuid
+---@field PresetUUID  table|string tableUUID CharacterCreationPresetUuid
 ---@field NoDefStats boolean
 RaceMod = _Class:Create("RaceMod")
 
@@ -27,9 +28,10 @@ RaceMod = _Class:Create("RaceMod")
 ---@param stats table|string table
 ---@param sab table|string table
 ---@param bonus table|string table
+---@param PresetUUID  table|string tableUUID CharacterCreationPresetUuid
 ---@param NoDefStats boolean
 function RaceMod:New(name, modURL, modGuid, progressionUUID, author, sourceBook, mainRace, specialAbList, stats,
-                     sab, bonus, NoDefStats)
+                     sab, bonus, PresetUUID, NoDefStats)
   local self           = setmetatable({}, RaceMod)
   self.name            = name
   self.modURL          = modURL or nil
@@ -44,6 +46,7 @@ function RaceMod:New(name, modURL, modGuid, progressionUUID, author, sourceBook,
   self.sab             = sab or nil -- {"2","1"}
   self.bonus           = bonus or nil
   self.statsList       = { "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" }
+  self.PresetUUID      = PresetUUID or nil --CharacterCreationPresetUuid nil if vanilla
   self.NoDefStats      = NoDefStats or false
 
   return self
@@ -193,6 +196,10 @@ end
 
 function RaceMod:SetSab(sab)
   self.sab = sab
+end
+
+function RaceMod:GetPresetUUID()
+  return self.PresetUUID
 end
 
 --- Function for tableInsertRaceStats
@@ -407,6 +414,24 @@ function RaceMod:CleanOnRacesStatsLoaded(newRace, lvl, abilityListUUID)
               table.concat(removeRaces, ", "))
           end
         end
+      end
+    end
+  end
+end
+
+--- Constructor for HideRacesAndSubRaceByRulesSet
+---@param newRace RaceMod RaceMod Instance
+function RaceMod:HideRacesAndSubRaceByRulesSet(newRace)
+  if newRace:GetPresetUUID() ~= nil then
+    local presetUUIDSize = table.getLength(newRace:GetPresetUUID())
+    local tCCPRUUID = newRace:GetPresetUUID()
+    for i = 1, presetUUIDSize do
+      local res = Ext.StaticData.Get(tCCPRUUID[i], "CharacterCreationPreset")
+      if newRace:GetMainRace() == true then
+        res.RaceUUID = "00000000-0000-0000-0000-000000000000"
+      end
+      if newRace:GetMainRace() == false then
+        res.SubRaceUUID = "00000000-0000-0000-0000-000000000000"
       end
     end
   end
