@@ -232,6 +232,19 @@
                 "DescriptionHandle": "h36f88fe6cf3e4c5a8daec1f9a94c8c9d7088",
                 "TooltipHandle": "he7c56e86c2b54be39d0cd0c329bf13d780c6"
               }
+            },
+             {
+              "Id": "ClasseHiddener",
+              "Name": "Hide Classes not in rules sets (BETA Wait Kender Libs updates) For now You MUST RESTART GAME TO APPLY",
+              "Type": "checkbox",
+              "Default": false,
+              "Tooltip": "Enable or disable Hide Classes not in rules sets.",
+              "Description": "Hide Classes not in rules sets.",
+              "Handles": {
+                "NameHandle": "h4d0a99c34d314b27bface2a8e615630cg43b",
+                "DescriptionHandle": "hd7877ac6df2647cd9ad44dbea1ef81cad836",
+                "TooltipHandle": "h0218359298ab4d7495a239be1619bb702c2a"
+              }
             }
           ],
           "Handles": {

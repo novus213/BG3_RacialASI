@@ -8,6 +8,7 @@
 ---@field mainClasse boolean
 ---@field isLvl20 boolean
 ---@field isOutdated boolean
+---@field cdUUID table|string table
 ClasseMod = _Class:Create("ClasseMod")
 
 
@@ -22,7 +23,9 @@ ClasseMod = _Class:Create("ClasseMod")
 ---@param mainClasse boolean
 ---@param isLvl20 boolean
 ---@param isOutdated boolean
-function ClasseMod:New(name, modURL, modGuid, progressionUUID, author, sourceBook, mainClasse, isLvl20, isOutdated)
+---@param cDUUID table|string table
+function ClasseMod:New(name, modURL, modGuid, progressionUUID, author, sourceBook, mainClasse, isLvl20, isOutdated,
+                       cdUUID)
   local self           = setmetatable({}, ClasseMod)
   self.name            = name
   self.modURL          = modURL or nil
@@ -33,6 +36,7 @@ function ClasseMod:New(name, modURL, modGuid, progressionUUID, author, sourceBoo
   self.mainClasse      = mainClasse
   self.isLvl20         = isLvl20
   self.isOutdated      = isOutdated
+  self.cDUUID          = cdUUID
 
   return self
 end
@@ -91,6 +95,12 @@ end
 ---@return boolean self.isOutdated
 function ClasseMod:GetIsOutdated()
   return self.isOutdated
+end
+
+--- Get isOutdated of ClasseMod
+---@return table self.cDUUID
+function ClasseMod:GetCDUUID()
+  return self.cDUUID
 end
 
 --- Get Object instancy of ClasseMod
@@ -181,6 +191,28 @@ function ClasseMod:RemoveClassesASI(newClass, lvl, abilityListUUID)
             #RemoveClassesASI .. " mods: " ..
             table.concat(RemoveClassesASI, ", "))
         end
+      end
+    end
+  end
+end
+
+--- Constructor for HideClassesAndSubClassesByRulesSet
+---@param newClass ClasseMod ClasseMod ClasseMod Instance
+function RaceMod:HideClassesAndSubClassesByRulesSet(newClass)
+  if newClass:GetCDUUID() ~= nil then
+    local classDescriptionUUIDSize = table.getLength(newClass:GetCDUUID())
+    local tCDUUID = newClass:GetCDUUID()
+    for i = 1, classDescriptionUUIDSize do
+      local res = Ext.StaticData.Get(tCDUUID[i], "ClassDescription")
+
+      if newClass:GetmainClasse() == true then
+        res.ResourceUUID = "00000000-0000-0000-0000-000000000000"
+        res.ProgressionTableUUID = "00000000-0000-0000-0000-000000000000"
+      end
+      if newClass:GetmainClasse() == false then
+        res.ParentGuid = "00000000-0000-0000-0000-000000000000"
+        res.ResourceUUID = "00000000-0000-0000-0000-000000000000"
+        res.ProgressionTableUUID = "00000000-0000-0000-0000-000000000000"
       end
     end
   end

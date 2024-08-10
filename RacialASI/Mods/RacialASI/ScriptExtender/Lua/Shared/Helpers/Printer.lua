@@ -74,7 +74,8 @@ if VCHelpers.ModVars:IsModLoaded("755a8a72-407f-4f0d-9a33-274ac0f0b53d") then
     Log = MCMASIAPI:MCMGet("Log"),
     CheatAsi30 = MCMASIAPI:MCMGet(
       "CheatAsi30"),
-    RaceHiddener = MCMASIAPI:MCMGet("RaceHiddener")
+    RaceHiddener = MCMASIAPI:MCMGet("RaceHiddener"),
+    ClasseHiddener = MCMASIAPI:MCMGet("ClasseHiddener")
 
   }
 
@@ -90,11 +91,13 @@ if VCHelpers.ModVars:IsModLoaded("755a8a72-407f-4f0d-9a33-274ac0f0b53d") then
   PatchAsiDefault    = McmVarsBooksSettings["PatchAsiDefault"]
 
 
-  DebugLevel = McmVarsGeneralSettings["Debug_level"]
-  Log = McmVarsGeneralSettings["Log"]
-  RASI = McmVarsGeneralSettings["RASI"]
-  CheatAsi30 = McmVarsGeneralSettings["CheatAsi30"]
-  RaceHiddener = McmVarsGeneralSettings["RaceHiddener"]
+  DebugLevel     = McmVarsGeneralSettings["Debug_level"]
+  Log            = McmVarsGeneralSettings["Log"]
+  RASI           = McmVarsGeneralSettings["RASI"]
+  CheatAsi30     = McmVarsGeneralSettings["CheatAsi30"]
+  RaceHiddener   = McmVarsGeneralSettings["RaceHiddener"]
+  ClasseHiddener = McmVarsGeneralSettings["ClasseHiddener"]
+
 
 
   -- Register a net listener to handle settings changes dynamically
@@ -162,10 +165,14 @@ if VCHelpers.ModVars:IsModLoaded("755a8a72-407f-4f0d-9a33-274ac0f0b53d") then
       CheatAsi30 = McmVarsGeneralSettings["CheatAsi30"]
     end
 
- if data.settingId == "RaceHiddener" then
+    if data.settingId == "RaceHiddener" then
       RAWarn(2, string.format("Setting %s to %s", data.settingId, data.value))
       RaceHiddener = McmVarsGeneralSettings["RaceHiddener"]
     end
 
+    if data.settingId == "ClasseHiddener" then
+      RAWarn(2, string.format("Setting %s to %s", data.settingId, data.value))
+      ClasseHiddener = McmVarsGeneralSettings["ClasseHiddener"]
+    end
   end)
 end

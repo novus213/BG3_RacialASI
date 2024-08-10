@@ -46,12 +46,12 @@ function MCMASI:OnSessionLoadedMCM()
   }
 
   McmVarsGeneralSettings = {
-    RASI         = MCMASIAPI:MCMGet("RASI"),
-    DebugLevel   = MCMASIAPI:MCMGet("Debug_level"),
-    Log          = MCMASIAPI:MCMGet("Log"),
-    CheatAsi30   = MCMASIAPI:MCMGet("CheatAsi30"),
-    RaceHiddener = MCMASIAPI:MCMGet("RaceHiddener")
-    --ClasseHiddener = MCMASIAPI:MCMGet("ClasseHiddener"),
+    RASI           = MCMASIAPI:MCMGet("RASI"),
+    DebugLevel     = MCMASIAPI:MCMGet("Debug_level"),
+    Log            = MCMASIAPI:MCMGet("Log"),
+    CheatAsi30     = MCMASIAPI:MCMGet("CheatAsi30"),
+    RaceHiddener   = MCMASIAPI:MCMGet("RaceHiddener"),
+    ClasseHiddener = MCMASIAPI:MCMGet("ClasseHiddener")
 
   }
 
@@ -91,7 +91,7 @@ function MCMASI:OnStatsLoadedMCM()
     end
   end
 ]]
-   --
+  --
   Mods.BG3MCM.ModConfig:UpdateAllSettingsForMod(ModuleUUID, modSettingsTable)
 
   for key, value in pairs(McmVarsOptions) do

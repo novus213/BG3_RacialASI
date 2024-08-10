@@ -72,4 +72,7 @@
     <content contentuid="he7c56e86c2b54be39d0cd0c329bf13d780c6" version="1">Enable or disable Hide Races not in rules sets.</content>
     <content contentuid="h36f88fe6cf3e4c5a8daec1f9a94c8c9d7088" version="1">Hide Races not in rules sets.</content>
     <content contentuid="hcc81c06cc7924078a2102b19892a2fbaea45" version="1">Hiddener Settings</content>
+    <content contentuid="h4d0a99c34d314b27bface2a8e615630cg43b" version="1">Hide Classes not in rules sets (BETA Wait Kender Libs updates) For now You MUST RESTART GAME TO APPLY</content>
+    <content contentuid="h0218359298ab4d7495a239be1619bb702c2a" version="1">Enable or disable Hide Classes not in rules sets.</content>
+    <content contentuid="hd7877ac6df2647cd9ad44dbea1ef81cad836" version="1">Hide Classes not in rules sets.</content>
 </contentList>
