@@ -198,7 +198,7 @@ end
 
 --- Constructor for HideClassesAndSubClassesByRulesSet
 ---@param newClass ClasseMod ClasseMod ClasseMod Instance
-function RaceMod:HideClassesAndSubClassesByRulesSet(newClass)
+function ClasseMod:HideClassesAndSubClassesByRulesSet(newClass)
   if newClass:GetCDUUID() ~= nil then
     local classDescriptionUUIDSize = table.getLength(newClass:GetCDUUID())
     local tCDUUID = newClass:GetCDUUID()
