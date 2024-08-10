@@ -68,4 +68,8 @@
     <content contentuid="h3c8d8cb61a1c40fdb012292a5f017d6b170b" version="1">Enable or disable Light Sensitivity Passives to Underdark Races.</content>
     <content contentuid="h0db76ddefb7b4b03ab480478c9f436e0ce8a" version="1">Add Underdark Races Light Sensitivity Passives. &lt;br&gt;If you uncheck 5elimited Option, this option will be disabled</content>
     <content contentuid="hdeb2111caefb44ddb5c9e149e57b69a6a19b" version="1">When you tick one of these boxes, the feats, passives or other of the races will be modified to be more in line with the rules in the DnD books.&lt;br&gt;If a feat or passive or other doesn't exist in the rule books, the option will disable, EXCEPT CHEATS OF COURSE!&lt;br&gt;Please note that you will need to restart your game for these modifications to take effect.</content>
+    <content contentuid="h0ca0dff2690e47799e103ba600d4c87323a9" version="1">Hide Races not in rules sets (BETA Wait Kender Libs updates) For now You MUST RESTART GAME TO APPLY</content>
+    <content contentuid="he7c56e86c2b54be39d0cd0c329bf13d780c6" version="1">Enable or disable Hide Races not in rules sets.</content>
+    <content contentuid="h36f88fe6cf3e4c5a8daec1f9a94c8c9d7088" version="1">Hide Races not in rules sets.</content>
+    <content contentuid="hcc81c06cc7924078a2102b19892a2fbaea45" version="1">Hiddener Settings</content>
 </contentList>

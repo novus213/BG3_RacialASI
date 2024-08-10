@@ -222,20 +222,20 @@
           "Settings": [
             {
               "Id": "RaceHiddener",
-              "Name": "Hide Races not in rules sets (BETA Wait Kender Libs updates)",
+              "Name": "Hide Races not in rules sets (BETA Wait Kender Libs updates) For now You MUST RESTART GAME TO APPLY",
               "Type": "checkbox",
               "Default": false,
               "Tooltip": "Enable or disable Hide Races not in rules sets.",
               "Description": "Hide Races not in rules sets.",
               "Handles": {
-                "NameHandle": "",
-                "DescriptionHandle": "",
-                "TooltipHandle": ""
+                "NameHandle": "h0ca0dff2690e47799e103ba600d4c87323a9",
+                "DescriptionHandle": "h36f88fe6cf3e4c5a8daec1f9a94c8c9d7088",
+                "TooltipHandle": "he7c56e86c2b54be39d0cd0c329bf13d780c6"
               }
             }
           ],
           "Handles": {
-            "NameHandle": "h1d864893fbc34770958b3e457c4767d026e2"
+            "NameHandle": "hcc81c06cc7924078a2102b19892a2fbaea45"
           }
         },
         {
