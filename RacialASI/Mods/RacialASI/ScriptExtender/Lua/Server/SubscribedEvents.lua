@@ -1,3 +1,8 @@
 SubscribedEvents = {}
 
---return SubscribedEvents
+function SubscribedEvents.SubscribeToEvents()
+    EHandlers.SyncVarsCharCS()
+    EHandlers.SyncVarsLLGame()
+end
+
+return SubscribedEvents

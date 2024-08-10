@@ -53,6 +53,7 @@ function Core.classe5eModule()
       classeMod.SourceBook, classeMod.MainClasse, classeMod.isLvl20, classeMod.isOutdated)
     ClasseMod:RemoveClassesASI(classModObject, 1)
   end
+  Ext.DumpExport(ClasseMod)
 end
 
 function Core.race5eModule()

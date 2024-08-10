@@ -150,6 +150,8 @@ _________ .__                         _________ .__                             
 ---@param newClass ClasseMod ClasseMod Instance
 --@param removedClasses table
 function ClasseMod:RemoveClassesASI(newClass, lvl, abilityListUUID)
+  --exception lvl nil
+  if newClass:GetProgressionUUIDLvl(lvl) == nil then return end
   abilityListUUID = abilityListUUID or Data.Deps.AbilityList_UUID.ModuleUUID
 
   if (newClass:GetModGuid() and VCHelpers.ModVars:IsModLoaded(newClass:GetModGuid())) then

@@ -239,6 +239,8 @@ end
 ---@param lvl integer
 ---@param newRace RaceMod RaceMod Instance
 function RaceMod:InsertPayloadRaceASI(newRace, lvl, cheatAsi30)
+  --exception lvl nil
+  if newRace:GetProgressionUUID(lvl) == nil then return end
   local cAsi30 = cheatAsi30 or 0
   local fixAsi = {} -- Table to store classes with removed shit asi
   if newRace:GetSab() ~= nil then
@@ -310,6 +312,8 @@ end
 ---@param abilityListUUID string
 ---@param newRace RaceMod RaceMod Instance
 function RaceMod:InsertDefaultPayloadASI(newRace, lvl, abilityListUUID)
+  --exception lvl nil
+  if newRace:GetProgressionUUID(lvl) == nil then return end
   local baseAsi   = {} -- Table to store races with removed shit asi
   local payload   = {}
   abilityListUUID = abilityListUUID or Data.Deps.AbilityList_UUID.ModuleUUID
@@ -351,6 +355,9 @@ _________ .__                         __________                              __
 ---@param lvl integer
 ---@param newRace RaceMod RaceMod Instance
 function RaceMod:CleanOnRacesStatsLoaded(newRace, lvl, abilityListUUID)
+  --exception lvl nil
+  if newRace:GetProgressionUUID(lvl) == nil then return end
+
   abilityListUUID = abilityListUUID or Data.Deps.AbilityList_UUID.ModuleUUID
   if (newRace:GetModGuid() and VCHelpers.ModVars:IsModLoaded(newRace:GetModGuid())) or newRace:GetModGuid() == Data.Deps.GustavDev_GUID.ModuleUUID then
     local rbaseAsi = {}
