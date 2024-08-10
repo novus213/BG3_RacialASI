@@ -80,6 +80,7 @@ local function OnStatsLoaded()
   PatchAsiDefault    = settings5e["PatchASI_Default"]
   MODENABLED         = config.MOD_ENABLED
   CheatAsi30         = config.CheatAsi30
+  RaceHiddener       = config.RaceHiddener
 end
 --- End CONFIG NO MCM
 
@@ -110,6 +111,7 @@ else
     Log                = McmVarsGeneralSettings["Log"]
     RasiOnOff          = McmVarsGeneralSettings["RASI"]
     CheatAsi30         = McmVarsGeneralSettings["CheatAsi30"]
+    RaceHiddener       = McmVarsGeneralSettings["RaceHiddener"]
   end)
 
   if McmVarsGeneralSettings["RASI"] == true then
@@ -159,6 +161,8 @@ else
         Log                = McmVarsGeneralSettings["Log"]
         RasiOnOff          = McmVarsGeneralSettings["RASI"]
         CheatAsi30         = McmVarsGeneralSettings["CheatAsi30"]
+        RaceHiddener       = McmVarsGeneralSettings["RaceHiddener"]
+
 
         MCMASIAPI:OnSessionLoadedMCM()
 
@@ -176,6 +180,8 @@ else
         Log                = McmVarsGeneralSettings["Log"]
         RasiOnOff          = McmVarsGeneralSettings["RASI"]
         CheatAsi30         = McmVarsGeneralSettings["CheatAsi30"]
+        RaceHiddener       = McmVarsGeneralSettings["RaceHiddener"]
+
 
         MCMASIAPI:OnStatsLoadedMCM()
 

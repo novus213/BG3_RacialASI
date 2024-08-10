@@ -18,6 +18,9 @@ RAPrint(2, CheatAsi30)
 --RAPrint(2, "Log: ")
 --RAPrint(2, Log)
 
+RAPrint(2, "RaceHiddener: ")
+RAPrint(2, RaceHiddener)
+
 RAPrint(2, "PatchAsi5eLimited: ")
 RAPrint(2, PatchAsi5eLimited)
 RAPrint(2, "PatchAsi5e: ")
@@ -78,11 +81,14 @@ function Core.race5eModule()
               RaceMod:CleanOnRacesStatsLoaded(raceModObject, 1)
               RaceMod:InsertPayloadRaceASI(raceModObject, 1)
             else
-              RaceMod:HideRacesAndSubRaceByRulesSet(raceModObject)
+              RAWarn(2, "PatchAsiHomebrew = false")
+              if RaceHiddener then
+                RADebug(2, string.format("%s is hidden. You uncheck Homebrew", raceModObject:GetName()))
+                RaceMod:HideRacesAndSubRaceByRulesSet(raceModObject)
+              end
               if raceModObject:GetNoDefStats() == true then
                 RaceMod:InsertDefaultPayloadASI(raceModObject, 1)
               end
-              RADebug(2, string.format("%s is hidden. You uncheck Homebrew", raceModObject:GetName()))
             end
           end
           for _, book in pairs(Data.Libs.Books.Dnd5eLimited) do
@@ -92,11 +98,15 @@ function Core.race5eModule()
                 RaceMod:CleanOnRacesStatsLoaded(raceModObject, 1)
                 RaceMod:InsertPayloadRaceASI(raceModObject, 1)
               else
-                RaceMod:HideRacesAndSubRaceByRulesSet(raceModObject)
+                RAWarn(2, "PatchAsi5eLimited = false")
+                if RaceHiddener then
+                  RADebug(2, string.format("%s is hidden. You uncheck Fix 5e Limited", raceMod.Name))
+                  RaceMod:HideRacesAndSubRaceByRulesSet(raceModObject)
+                end
+
                 if raceModObject:GetNoDefStats() == true then
                   RaceMod:InsertDefaultPayloadASI(raceModObject, 1)
                 end
-                RADebug(2, string.format("%s is hidden. You uncheck Fix 5e Limited", raceMod.Name))
               end
             end
           end
@@ -107,11 +117,15 @@ function Core.race5eModule()
                 RaceMod:CleanOnRacesStatsLoaded(raceModObject, 1)
                 RaceMod:InsertPayloadRaceASI(raceModObject, 1)
               else
-                RaceMod:HideRacesAndSubRaceByRulesSet(raceModObject)
+                RAWarn(2, "PatchAsi5e = false")
+                if RaceHiddener then
+                  RADebug(2, string.format("%s is hidden. You uncheck Fix 5e", raceMod.Name))
+                  RaceMod:HideRacesAndSubRaceByRulesSet(raceModObject)
+                end
+
                 if raceModObject:GetNoDefStats() == true then
                   RaceMod:InsertDefaultPayloadASI(raceModObject, 1)
                 end
-                RADebug(2, string.format("%s is hidden. You uncheck Fix 5e", raceMod.Name))
               end
             end
           end
@@ -122,11 +136,14 @@ function Core.race5eModule()
                 RaceMod:CleanOnRacesStatsLoaded(raceModObject, 1)
                 RaceMod:InsertPayloadRaceASI(raceModObject, 1)
               else
-                RaceMod:HideRacesAndSubRaceByRulesSet(raceModObject)
+                RAWarn(2, "PatchAsi5eExtended = false")
+                if RaceHiddener then
+                  RADebug(2, string.format("%s is hidden. You uncheck Fix 5e Extended", raceModObject:GetName()))
+                  RaceMod:HideRacesAndSubRaceByRulesSet(raceModObject)
+                end
                 if raceModObject:GetNoDefStats() == true then
                   RaceMod:InsertDefaultPayloadASI(raceModObject, 1)
                 end
-                RADebug(2, string.format("%s is hidden. You uncheck Fix 5e Extended", raceModObject:GetName()))
               end
             end
           end
@@ -137,11 +154,15 @@ function Core.race5eModule()
                 RaceMod:CleanOnRacesStatsLoaded(raceModObject, 1)
                 RaceMod:InsertPayloadRaceASI(raceModObject, 1)
               else
-                RaceMod:HideRacesAndSubRaceByRulesSet(raceModObject)
+                RAWarn(2, "PatchAsiLegacy = false")
+                if RaceHiddener then
+                  RADebug(2, string.format("%s is hidden. You uncheck Fix 5e Legacy", raceModObject:GetName()))
+                  RaceMod:HideRacesAndSubRaceByRulesSet(raceModObject)
+                end
+
                 if raceModObject:GetNoDefStats() == true then
                   RaceMod:InsertDefaultPayloadASI(raceModObject, 1)
                 end
-                RADebug(2, string.format("%s is hidden. You uncheck Fix 5e Legacy", raceModObject:GetName()))
               end
             end
           end
@@ -152,11 +173,15 @@ function Core.race5eModule()
                 RaceMod:CleanOnRacesStatsLoaded(raceModObject, 1)
                 RaceMod:InsertPayloadRaceASI(raceModObject, 1)
               else
-                RaceMod:HideRacesAndSubRaceByRulesSet(raceModObject)
+                RAWarn(2, "PatchAsiFlavour = false")
+                if RaceHiddener then
+                  RADebug(2, string.format("%s is hidden You uncheck Fix Flavours", raceModObject:GetName()))
+                  RaceMod:HideRacesAndSubRaceByRulesSet(raceModObject)
+                end
+
                 if raceModObject:GetNoDefStats() == true then
                   RaceMod:InsertDefaultPayloadASI(raceModObject, 1)
                 end
-                RADebug(2, string.format("%s is hidden You uncheck Fix Flavours", raceModObject:GetName()))
               end
             end
           end

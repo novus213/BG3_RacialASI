@@ -46,10 +46,13 @@ function MCMASI:OnSessionLoadedMCM()
   }
 
   McmVarsGeneralSettings = {
-    RASI       = MCMASIAPI:MCMGet("RASI"),
-    DebugLevel = MCMASIAPI:MCMGet("Debug_level"),
-    Log        = MCMASIAPI:MCMGet("Log"),
-    CheatAsi30 = MCMASIAPI:MCMGet("CheatAsi30")
+    RASI         = MCMASIAPI:MCMGet("RASI"),
+    DebugLevel   = MCMASIAPI:MCMGet("Debug_level"),
+    Log          = MCMASIAPI:MCMGet("Log"),
+    CheatAsi30   = MCMASIAPI:MCMGet("CheatAsi30"),
+    RaceHiddener = MCMASIAPI:MCMGet("RaceHiddener")
+    --ClasseHiddener = MCMASIAPI:MCMGet("ClasseHiddener"),
+
   }
 
   RAWarn(2, string.format("============> McmVars is loaded. %s", table.dump(McmVars)))
@@ -63,7 +66,7 @@ function MCMASI:OnStatsLoadedMCM()
   local modSettingsTable = Mods.BG3MCM.MCMAPI:GetAllModSettings(ModuleUUID)
   --[[
   force 5e limited function
-  
+
   for key, value in pairs(McmVarsOptions) do
     local actionConfigs = Data.Libs.OptionActions[key]
     if type(value) == "boolean" then
@@ -87,7 +90,8 @@ function MCMASI:OnStatsLoadedMCM()
       end
     end
   end
-]]--
+]]
+   --
   Mods.BG3MCM.ModConfig:UpdateAllSettingsForMod(ModuleUUID, modSettingsTable)
 
   for key, value in pairs(McmVarsOptions) do

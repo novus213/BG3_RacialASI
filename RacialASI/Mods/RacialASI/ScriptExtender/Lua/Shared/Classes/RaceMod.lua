@@ -11,7 +11,7 @@
 ---@field bonus table|string table
 ---@field statsList table|string table
 ---@field specialAbList string uuid
----@field PresetUUID  table|string tableUUID CharacterCreationPresetUuid
+---@field presetUUID  table|string tableUUID CharacterCreationPresetUuid
 ---@field NoDefStats boolean
 RaceMod = _Class:Create("RaceMod")
 
@@ -28,10 +28,10 @@ RaceMod = _Class:Create("RaceMod")
 ---@param stats table|string table
 ---@param sab table|string table
 ---@param bonus table|string table
----@param PresetUUID  table|string tableUUID CharacterCreationPresetUuid
+---@param presetUUID  table|string tableUUID CharacterCreationPresetUuid
 ---@param NoDefStats boolean
 function RaceMod:New(name, modURL, modGuid, progressionUUID, author, sourceBook, mainRace, specialAbList, stats,
-                     sab, bonus, PresetUUID, NoDefStats)
+                     sab, bonus, presetUUID, NoDefStats)
   local self           = setmetatable({}, RaceMod)
   self.name            = name
   self.modURL          = modURL or nil
@@ -46,7 +46,7 @@ function RaceMod:New(name, modURL, modGuid, progressionUUID, author, sourceBook,
   self.sab             = sab or nil -- {"2","1"}
   self.bonus           = bonus or nil
   self.statsList       = { "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" }
-  self.PresetUUID      = PresetUUID or nil --CharacterCreationPresetUuid nil if vanilla
+  self.presetUUID      = presetUUID or nil --CharacterCreationPresetUuid nil if vanilla
   self.NoDefStats      = NoDefStats or false
 
   return self
@@ -199,7 +199,7 @@ function RaceMod:SetSab(sab)
 end
 
 function RaceMod:GetPresetUUID()
-  return self.PresetUUID
+  return self.presetUUID
 end
 
 --- Function for tableInsertRaceStats

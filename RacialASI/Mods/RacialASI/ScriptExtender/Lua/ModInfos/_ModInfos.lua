@@ -21,6 +21,7 @@ local racialASIConfig = {
     PatchASI_Homebrew = true,
     PatchASI_Default = false
   },
+  RaceHiddener = false,
   CheatAsi30 = 0
 }
 

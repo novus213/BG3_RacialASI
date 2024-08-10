@@ -217,6 +217,28 @@
           }
         },
         {
+          "SectionId": "Hiddener_settings",
+          "SectionName": "Hiddener Settings",
+          "Settings": [
+            {
+              "Id": "RaceHiddener",
+              "Name": "Hide Races not in rules sets (BETA Wait Kender Libs updates)",
+              "Type": "checkbox",
+              "Default": false,
+              "Tooltip": "Enable or disable Hide Races not in rules sets.",
+              "Description": "Hide Races not in rules sets.",
+              "Handles": {
+                "NameHandle": "",
+                "DescriptionHandle": "",
+                "TooltipHandle": ""
+              }
+            }
+          ],
+          "Handles": {
+            "NameHandle": "h1d864893fbc34770958b3e457c4767d026e2"
+          }
+        },
+        {
           "SectionId": "Feats_settings",
           "SectionName": "Feats, Passives and others Settings",
           "Settings": [
@@ -315,7 +337,7 @@
           "Handles": {
             "NameHandle": "h1d864893fbc34770958b3e457c4767d026e2"
           }
-        }
+        }        
       ],
       "Handles": {
         "NameHandle": "h651a2bde11404d77bacab179903a1bde642a"
