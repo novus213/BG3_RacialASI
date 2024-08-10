@@ -78,12 +78,11 @@ function Core.race5eModule()
               RaceMod:CleanOnRacesStatsLoaded(raceModObject, 1)
               RaceMod:InsertPayloadRaceASI(raceModObject, 1)
             else
-              --desactive moi ce putain de mod Connard function
               RaceMod:HideRacesAndSubRaceByRulesSet(raceModObject)
               if raceModObject:GetNoDefStats() == true then
                 RaceMod:InsertDefaultPayloadASI(raceModObject, 1)
               end
-              RADebug(2, string.format("%s is. You uncheck Homebrew", raceModObject:GetName()))
+              RADebug(2, string.format("%s is hidden. You uncheck Homebrew", raceModObject:GetName()))
             end
           end
           for _, book in pairs(Data.Libs.Books.Dnd5eLimited) do
@@ -93,10 +92,11 @@ function Core.race5eModule()
                 RaceMod:CleanOnRacesStatsLoaded(raceModObject, 1)
                 RaceMod:InsertPayloadRaceASI(raceModObject, 1)
               else
+                RaceMod:HideRacesAndSubRaceByRulesSet(raceModObject)
                 if raceModObject:GetNoDefStats() == true then
                   RaceMod:InsertDefaultPayloadASI(raceModObject, 1)
                 end
-                RADebug(2, string.format("%s Wasn't fixed. You uncheck Fix 5e Limited", raceMod.Name))
+                RADebug(2, string.format("%s is hidden. You uncheck Fix 5e Limited", raceMod.Name))
               end
             end
           end
@@ -107,10 +107,11 @@ function Core.race5eModule()
                 RaceMod:CleanOnRacesStatsLoaded(raceModObject, 1)
                 RaceMod:InsertPayloadRaceASI(raceModObject, 1)
               else
+                RaceMod:HideRacesAndSubRaceByRulesSet(raceModObject)
                 if raceModObject:GetNoDefStats() == true then
                   RaceMod:InsertDefaultPayloadASI(raceModObject, 1)
                 end
-                RADebug(2, string.format("%s Wasn't fixed. You uncheck Fix 5e", raceMod.Name))
+                RADebug(2, string.format("%s is hidden. You uncheck Fix 5e", raceMod.Name))
               end
             end
           end
@@ -121,10 +122,11 @@ function Core.race5eModule()
                 RaceMod:CleanOnRacesStatsLoaded(raceModObject, 1)
                 RaceMod:InsertPayloadRaceASI(raceModObject, 1)
               else
+                RaceMod:HideRacesAndSubRaceByRulesSet(raceModObject)
                 if raceModObject:GetNoDefStats() == true then
                   RaceMod:InsertDefaultPayloadASI(raceModObject, 1)
                 end
-                RADebug(2, string.format("%s Wasn't fixed. You uncheck Fix 5e Extended", raceModObject:GetName()))
+                RADebug(2, string.format("%s is hidden. You uncheck Fix 5e Extended", raceModObject:GetName()))
               end
             end
           end
@@ -135,10 +137,11 @@ function Core.race5eModule()
                 RaceMod:CleanOnRacesStatsLoaded(raceModObject, 1)
                 RaceMod:InsertPayloadRaceASI(raceModObject, 1)
               else
+                RaceMod:HideRacesAndSubRaceByRulesSet(raceModObject)
                 if raceModObject:GetNoDefStats() == true then
                   RaceMod:InsertDefaultPayloadASI(raceModObject, 1)
                 end
-                RADebug(2, string.format("%s Wasn't fixed. You uncheck Fix 5e Legacy", raceModObject:GetName()))
+                RADebug(2, string.format("%s is hidden. You uncheck Fix 5e Legacy", raceModObject:GetName()))
               end
             end
           end
@@ -149,10 +152,11 @@ function Core.race5eModule()
                 RaceMod:CleanOnRacesStatsLoaded(raceModObject, 1)
                 RaceMod:InsertPayloadRaceASI(raceModObject, 1)
               else
+                RaceMod:HideRacesAndSubRaceByRulesSet(raceModObject)
                 if raceModObject:GetNoDefStats() == true then
                   RaceMod:InsertDefaultPayloadASI(raceModObject, 1)
                 end
-                RADebug(2, string.format("%s Wasn't fixed. You uncheck Fix Flavours", raceModObject:GetName()))
+                RADebug(2, string.format("%s is hidden You uncheck Fix Flavours", raceModObject:GetName()))
               end
             end
           end
