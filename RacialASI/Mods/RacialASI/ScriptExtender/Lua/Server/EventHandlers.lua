@@ -5,8 +5,8 @@ function EHandlers.SyncVarsCharCS()
     if McmVarsGeneralSettings["RASI"] == true and Ext.IsServer() then
       -- hide race / subrace / classe ruleSets
       local res = Ext.StaticData.GetGuidResource("03f972eb-de3c-4cdb-9050-e8e3fa0526eb", "ClassDescription")
-      res.ResourceUUID = "00000000-0000-0000-0000-000000000000"
-        Ext.Require("Core/Builder5e.lua")
+      res.UUID = "00000000-0000-0000-0000-000000000000"
+      Ext.Require("Core/Builder5e.lua")
       Core.Builder5e()
     end
   end)

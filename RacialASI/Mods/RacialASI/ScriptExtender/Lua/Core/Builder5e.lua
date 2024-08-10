@@ -61,7 +61,7 @@ function Core.race5eModule()
     local raceModObject = RaceMod:New(raceMod.Name, raceMod.modURL, raceMod.modGuid, raceMod.progressionUUID,
       raceMod.Author,
       raceMod.SourceBook, raceMod.MainRace, raceMod.specialAbList, raceMod.Stats, raceMod.Sab, raceMod.bonus,
-      raceMod.PresetUUID, raceMod.NoDefStats)
+      raceMod.presetUUID, raceMod.NoDefStats)
     if CheatAsi30 > 0 then
       RaceMod:CleanOnRacesStatsLoaded(raceModObject, 1)
       RaceMod:InsertPayloadRaceASI(raceModObject, 1, CheatAsi30)
