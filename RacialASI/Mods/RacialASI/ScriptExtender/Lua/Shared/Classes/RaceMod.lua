@@ -442,12 +442,12 @@ function RaceMod:HideRacesAndSubRaceByRulesSet(newRace)
     for i = 1, presetUUIDSize do
       local res = Ext.StaticData.Get(tCCPRUUID[i], "CharacterCreationPreset")
       if newRace:GetMainRace() == true then
-        res.ResourceUUID = "00000000-0000-0000-0000-000000000000"
-        res.RaceUUID = "00000000-0000-0000-0000-000000000000"
+        res.ResourceUUID = NULLUUID
+        res.RaceUUID = NULLUUID
       end
       if newRace:GetMainRace() == false then
-        res.ResourceUUID = "00000000-0000-0000-0000-000000000000"
-        res.SubRaceUUID = "00000000-0000-0000-0000-000000000000"
+        res.ResourceUUID = NULLUUID
+        res.SubRaceUUID = NULLUUID
       end
     end
   end
@@ -457,16 +457,16 @@ function RaceMod:HideRacesAndSubRaceByRulesSet(newRace)
     for i = 1, presetUUIDSize do
       local res = Ext.StaticData.Get(tOriginPRUUID[i], "Origin")
       if newRace:GetMainRace() == true then
-        res.ResourceUUID = "00000000-0000-0000-0000-000000000000"
-        res.RaceUUID = "00000000-0000-0000-0000-000000000000"
+        res.ResourceUUID = NULLUUID
+        res.RaceUUID = NULLUUID
       end
       if newRace:GetMainRace() == false then
-        res.ResourceUUID = "00000000-0000-0000-0000-000000000000"
-        res.SubRaceUUID = "00000000-0000-0000-0000-000000000000"
+        res.ResourceUUID = NULLUUID
+        res.SubRaceUUID = NULLUUID
       end
     end
   end
-  if newRace:GetComPresetUUID() ~= nil then -- HideCompanionByRulesSet ??
+  if newRace:GetComPresetUUID() ~= nil then -- HideCompanionByRulesSet
     local presetUUIDSize = table.getLength(newRace:GetComPresetUUID())
     local tComPPRUUID = newRace:GetComPresetUUID()
     for i = 1, presetUUIDSize do
@@ -500,12 +500,12 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
       ]]
          --
       if newRace:GetMainRace() == true then
-        res.ResourceUUID = "00000000-0000-0000-0000-000000000000"
-        res.RaceUuid = "00000000-0000-0000-0000-000000000000"
+        res.ResourceUUID = NULLUUID
+        res.RaceUuid = NULLUUID
       end
       if newRace:GetMainRace() == false then
-        res.ResourceUUID = "00000000-0000-0000-0000-000000000000"
-        res.SubRaceUuid = "00000000-0000-0000-0000-000000000000"
+        res.ResourceUUID = NULLUUID
+        res.SubRaceUuid = NULLUUID
       end
     end
   end

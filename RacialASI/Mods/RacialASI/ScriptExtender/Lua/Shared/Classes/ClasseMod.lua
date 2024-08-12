@@ -206,13 +206,13 @@ function ClasseMod:HideClassesAndSubClassesByRulesSet(newClass)
       local res = Ext.StaticData.Get(tCDUUID[i], "ClassDescription")
 
       if newClass:GetmainClasse() == true then
-        res.ResourceUUID = "00000000-0000-0000-0000-000000000000"
-        res.ProgressionTableUUID = "00000000-0000-0000-0000-000000000000"
+        res.ResourceUUID = NULLUUID
+        res.ProgressionTableUUID = NULLUUID
       end
       if newClass:GetmainClasse() == false then
-        res.ParentGuid = "00000000-0000-0000-0000-000000000000"
-        res.ResourceUUID = "00000000-0000-0000-0000-000000000000"
-        res.ProgressionTableUUID = "00000000-0000-0000-0000-000000000000"
+        res.ParentGuid = NULLUUID
+        res.ResourceUUID = NULLUUID
+        res.ProgressionTableUUID = NULLUUID
       end
     end
   end

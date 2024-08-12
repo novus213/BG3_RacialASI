@@ -22,19 +22,19 @@ ModInfo = {}
 ---@param modVars? table modVars to register
 ---@return ModInfo instance an instance of the ModInfo class.
 function ModInfo:new(folderName, modName, requireConfig, defaultModConfigTable, userVars, modVars)
-    local instance = {
-        FOLDER_NAME = folderName,
-        MOD_NAME = modName,
-        REQUIRE_CONFIG = requireConfig,
-        DEFAULT_CONFIG=defaultModConfigTable,
-        MOD_UUID = ModuleUUID,
-        VERSION = string.format("%d.%d.%d.%d",
-            Ext.Mod.GetMod(ModuleUUID).Info.ModVersion[1],
-            Ext.Mod.GetMod(ModuleUUID).Info.ModVersion[2],
-            Ext.Mod.GetMod(ModuleUUID).Info.ModVersion[3],
-            Ext.Mod.GetMod(ModuleUUID).Info.ModVersion[4]),
-    }
-    setmetatable(instance, self)
-    self.__index = self
-    return instance
+  local instance = {
+    FOLDER_NAME = folderName,
+    MOD_NAME = modName,
+    REQUIRE_CONFIG = requireConfig,
+    DEFAULT_CONFIG = defaultModConfigTable,
+    MOD_UUID = ModuleUUID,
+    VERSION = string.format("%d.%d.%d.%d",
+      Ext.Mod.GetMod(ModuleUUID).Info.ModVersion[1],
+      Ext.Mod.GetMod(ModuleUUID).Info.ModVersion[2],
+      Ext.Mod.GetMod(ModuleUUID).Info.ModVersion[3],
+      Ext.Mod.GetMod(ModuleUUID).Info.ModVersion[4]),
+  }
+  setmetatable(instance, self)
+  self.__index = self
+  return instance
 end
