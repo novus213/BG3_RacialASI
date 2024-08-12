@@ -12,6 +12,8 @@
 ---@field statsList table|string table
 ---@field specialAbList string uuid
 ---@field presetUUID  table|string tableUUID CharacterCreationPresetUuid
+---@field oPresetUUID  table|string originPresetUUID OriginPresetsPresetUuid
+---@field compPresetUUID  table|string compPresetUUID CompanionPresetsPresetUuid
 ---@field NoDefStats boolean
 RaceMod = _Class:Create("RaceMod")
 
@@ -28,10 +30,12 @@ RaceMod = _Class:Create("RaceMod")
 ---@param stats table|string table
 ---@param sab table|string table
 ---@param bonus table|string table
----@param presetUUID  table|string tableUUID CharacterCreationPresetUuid
+---@param presetUUID  table|string presetUUID CharacterCreationPresetUuid
+---@param originPresetUUID  table|string originPresetUUID OriginPresetsPresetUuid
+---@param compPresetUUID  table|string compPresetUUID CompanionPresetsPresetUuid
 ---@param NoDefStats boolean
 function RaceMod:New(name, modURL, modGuid, progressionUUID, author, sourceBook, mainRace, specialAbList, stats,
-                     sab, bonus, presetUUID, NoDefStats)
+                     sab, bonus, presetUUID, originPresetUUID, compPresetUUID, NoDefStats)
   local self           = setmetatable({}, RaceMod)
   self.name            = name
   self.modURL          = modURL or nil
@@ -46,7 +50,9 @@ function RaceMod:New(name, modURL, modGuid, progressionUUID, author, sourceBook,
   self.sab             = sab or nil -- {"2","1"}
   self.bonus           = bonus or nil
   self.statsList       = { "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" }
-  self.presetUUID      = presetUUID or nil --CharacterCreationPresetUuid nil if vanilla
+  self.presetUUID      = presetUUID or nil       --CharacterCreationPresetUuid nil if vanilla
+  self.oPresetUUID     = originPresetUUID or nil -- OriginPresetsPresetUuid
+  self.compPresetUUID  = compPresetUUID or nil   -- OriginPresetsPresetUuid
   self.NoDefStats      = NoDefStats or false
 
   return self
@@ -200,6 +206,14 @@ end
 
 function RaceMod:GetPresetUUID()
   return self.presetUUID
+end
+
+function RaceMod:GetOPresetUUID()
+  return self.oPresetUUID
+end
+
+function RaceMod:GetComPresetUUID()
+  return self.compPresetUUID
 end
 
 --- Function for tableInsertRaceStats
@@ -428,10 +442,70 @@ function RaceMod:HideRacesAndSubRaceByRulesSet(newRace)
     for i = 1, presetUUIDSize do
       local res = Ext.StaticData.Get(tCCPRUUID[i], "CharacterCreationPreset")
       if newRace:GetMainRace() == true then
+        res.ResourceUUID = "00000000-0000-0000-0000-000000000000"
         res.RaceUUID = "00000000-0000-0000-0000-000000000000"
       end
       if newRace:GetMainRace() == false then
+        res.ResourceUUID = "00000000-0000-0000-0000-000000000000"
         res.SubRaceUUID = "00000000-0000-0000-0000-000000000000"
+      end
+    end
+  end
+  if newRace:GetOPresetUUID() ~= nil then -- HideOriginByRulesSet
+    local presetUUIDSize = table.getLength(newRace:GetOPresetUUID())
+    local tOriginPRUUID = newRace:GetOPresetUUID()
+    for i = 1, presetUUIDSize do
+      local res = Ext.StaticData.Get(tOriginPRUUID[i], "Origin")
+      if newRace:GetMainRace() == true then
+        res.ResourceUUID = "00000000-0000-0000-0000-000000000000"
+        res.RaceUUID = "00000000-0000-0000-0000-000000000000"
+      end
+      if newRace:GetMainRace() == false then
+        res.ResourceUUID = "00000000-0000-0000-0000-000000000000"
+        res.SubRaceUUID = "00000000-0000-0000-0000-000000000000"
+      end
+    end
+  end
+  if newRace:GetComPresetUUID() ~= nil then -- HideCompanionByRulesSet ??
+    local presetUUIDSize = table.getLength(newRace:GetComPresetUUID())
+    local tComPPRUUID = newRace:GetComPresetUUID()
+    for i = 1, presetUUIDSize do
+      local res = Ext.StaticData.Get(tComPPRUUID[i], "CompanionPreset")
+      --[[
+      print("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
+      print(tostring(res))
+      print(table.getLength(res))
+      for k, v in pairs(res) do
+        print(k .. " : " .. v)
+      end
+      print("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
+
+      xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+resource::CompanionPreset (000002ADFEC534B0)
+11
+RaceUuid : ff2b6894-b03e-4bc6-a3b4-ce16ce405e7e
+SubRaceUuid : dd21fb84-2d6a-4d7d-a418-ca96991d3920
+BodyType : 1
+BodyShape : 0
+RootTemplate : 4fad9633-f171-47bd-99dc-81cc99d1add5
+Overview : HEL_F_Camera_CompanionOverview_A
+CloseUpA : HEL_F_Camera_CompanionCloseup_A
+CloseUpB : HEL_F_Camera_CompanionCloseup_B
+VoiceTableUuid : 60e91119-d07a-497a-8b3f-1cd88d3b464e
+VOLinesTableUuid : eec1dacc-91ee-49db-968f-a367faa97f42
+ResourceUUID : 4c1dd831-9a0a-4555-bd17-8aca3133b76b
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+      ]]
+         --
+      if newRace:GetMainRace() == true then
+        res.ResourceUUID = "00000000-0000-0000-0000-000000000000"
+        res.RaceUuid = "00000000-0000-0000-0000-000000000000"
+      end
+      if newRace:GetMainRace() == false then
+        res.ResourceUUID = "00000000-0000-0000-0000-000000000000"
+        res.SubRaceUuid = "00000000-0000-0000-0000-000000000000"
       end
     end
   end
