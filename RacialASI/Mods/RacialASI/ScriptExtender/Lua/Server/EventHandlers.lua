@@ -10,7 +10,7 @@ function EHandlers.SyncVarsCharCS()
   end)
 end
 
-function EHandlers.SyncVarsLSGame()
+function EHandlers.SyncVarsLLGame()
   Ext.Osiris.RegisterListener("DB_LevelGameplayLoadedOnce_WaitForGameplay", 4, "before", function ()
     if McmVarsGeneralSettings["RASI"] == true and Ext.IsServer() then
       Ext.Require("Core/Builder5e.lua")
