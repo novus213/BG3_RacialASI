@@ -24,7 +24,254 @@
                     "UUID": "b9149c8e-52c8-46e5-9cb6-fc39301c05fe"
                 }
             ]
+        },
+        {
+            "Comment": "Hobgoblin 1",
+            "UUIDs": [
+                "516ab354-c8db-466b-891a-677d8f7c3095"
+            ],
+            "Strings": [
+                {
+                    "Action": "Remove",
+                    "Type": "PassivesAdded",
+                    "Strings": [
+                        "Passive_WartimeTraining",
+                        "MartialAdvantage"
+                    ]
+                }
+            ],
+            "Selectors": [
+                {
+                    "Action": "Remove",
+                    "Function": "SelectSkills",
+                    "UUID": "8055873d-3029-45d8-93bd-0345d458d0db"
+                },
+                {
+                    "Action": "Remove",
+                    "Function": "AddSpells",
+                    "UUID": "7ff9a6e1-d682-4d34-aff3-5aa66c9a2c00"
+                }
+            ]
+        },
+        {
+            "Comment": "Hobgoblin 5",
+            "UUIDs": [
+                "12754c3c-eea8-4c99-a7a3-c01782c00c69"
+            ],
+            "Selectors": [
+                {
+                    "Action": "Remove",
+                    "Function": "AddSpells",
+                    "UUID": "30592112-d3d1-43d2-b463-3364ea15d739"
+                }
+            ]
+        },
+        {
+            "Comment": "Hobgoblin 7",
+            "UUIDs": [
+                "47aa1b60-bb60-4b83-8d62-5367dda4e8b5"
+            ],
+            "Selectors": [
+                {
+                    "Action": "Remove",
+                    "Function": "AddSpells",
+                    "UUID": "ed490030-a957-489f-ba91-c7c4f9cca5df"
+                }
+            ]
+        },
+        {
+            "Comment": "Hobgoblin 9",
+            "UUIDs": [
+                "f808a590-060f-45b8-acd4-bde78801650d"
+            ],
+            "Selectors": [
+                {
+                    "Action": "Remove",
+                    "Function": "AddSpells",
+                    "UUID": "e80b196a-2def-47ed-9476-da5ce36e4b03"
+                }
+            ]
+        },
+        {
+            "Comment": "Hobgoblin 11",
+            "UUIDs": [
+                "2ae1a961-8be5-4c69-b12d-cf0a961e62b6"
+            ],
+            "Selectors": [
+                {
+                    "Action": "Remove",
+                    "Function": "AddSpells",
+                    "UUID": "b4cab9d1-7990-4738-ad77-13b6f8e0f4ad"
+                }
+            ]
+        },
+        {
+            "Comment": "Strongblade 1",
+            "UUIDs": [
+                "732cd9b6-9374-425a-9b34-517a0337fcb0"
+            ],
+            "Strings": [
+                {
+                    "Action": "Remove",
+                    "Type": "PassivesAdded",
+                    "Strings": [
+                        "Passive_SBPackTactics"
+                    ]
+                }
+            ]
+        },
+        {
+            "Comment": "Strongblade 5",
+            "UUIDs": [
+                "1b35c12c-9ccd-4cfe-8615-4d3b4b1f4494"
+            ],
+            "Selectors": [
+                {
+                    "Action": "Remove",
+                    "Function": "AddSpells",
+                    "UUID": "eb00792d-b5fd-4121-ba20-30e96e894f79"
+                }
+            ]
+        },
+        {
+            "Comment": "Strongblade 9",
+            "UUIDs": [
+                "8ea52df9-3a4b-45a4-80e3-a048919afdb2"
+            ],
+            "Selectors": [
+                {
+                    "Action": "Remove",
+                    "Function": "AddSpells",
+                    "UUID": "7474ac59-d525-4615-aa9d-3f4466ab7f55"
+                }
+            ]
+        },
+        {
+            "Comment": "Koalinth 1",
+            "UUIDs": [
+                "ee4bfcdd-6d8b-4c79-a044-f9bed7136e7d"
+            ],
+            "Strings": [
+                {
+                    "Action": "Remove",
+                    "Type": "PassivesAdded",
+                    "Strings": [
+                        "Passive_Amphibious",
+                        "Proficiency_Tridents"
+                    ]
+                }
+            ]
+        },
+        {
+            "Comment": "Koalinth 5",
+            "UUIDs": [
+                "a8e454e0-a8ad-49b5-8cdd-f17f045e02bc"
+            ],
+            "Strings": [
+                {
+                    "Action": "Remove",
+                    "Type": "PassivesAdded",
+                    "Strings": [
+                        "Passive_AquaticAdvantage"
+                    ]
+                }
+            ]
+        },
+        {
+            "Comment": "Koalinth 9",
+            "UUIDs": [
+                "9d70bc30-ae21-49d7-b6a5-681e48d61bd5"
+            ],
+            "Selectors": [
+                {
+                    "Action": "Remove",
+                    "Function": "AddSpells",
+                    "UUID": "4a0e61eb-4be6-4b0c-9d64-27248aeb09b7"
+                }
+            ]
+        },
+        {
+            "Comment": "Sunscorch 1",
+            "UUIDs": [
+                "bf236089-1254-4285-9605-9c922e2ee17a"
+            ],
+            "Strings": [
+                {
+                    "Action": "Remove",
+                    "Type": "PassivesAdded",
+                    "Strings": [
+                        "Passive_SunScorch_DraconicResilience"
+                    ]
+                }
+            ]
+        },
+        {
+            "Comment": "Sunscorch 5",
+            "UUIDs": [
+                "7dd4f503-6b11-4de3-ae3c-e19ef3e427b9"
+            ],
+            "Selectors": [
+                {
+                    "Action": "Remove",
+                    "Function": "SelectPassives",
+                    "UUID": "59561db1-1f88-4d21-af34-0ee91b1b0729"
+                }
+            ]
+        },
+        {
+            "Comment": "Sunscorch 9",
+            "UUIDs": [
+                "0689cfe8-dfaf-4aba-9208-79771e3d2a1d"
+            ],
+            "Selectors": [
+                {
+                    "Action": "Remove",
+                    "Function": "AddSpells",
+                    "UUID": "092beccf-6fc0-4b82-b646-35b225cdb1e7"
+                }
+            ]
+        },
+        {
+            "Comment": "Harrower 1",
+            "UUIDs": [
+                "98da0193-6729-4364-bb5c-b13475edb3c7"
+            ],
+            "Strings": [
+                {
+                    "Action": "Remove",
+                    "Type": "PassivesAdded",
+                    "Strings": [
+                        "Passive_HulkingHob",
+                        "Passive_Brute_HulkingHob"
+                    ]
+                }
+            ]
+        },
+        {
+            "Comment": "Harrower 5",
+            "UUIDs": [
+                "b065e4b1-2f62-4846-b120-d6469061afcd"
+            ],
+            "Selectors": [
+                {
+                    "Action": "Remove",
+                    "Function": "AddSpells",
+                    "UUID": "aba560b2-4d22-491a-a6fe-f1cb5fea4b48"
+                }
+            ]
+        },
+        {
+            "Comment": "Harrower 9",
+            "UUIDs": [
+                "9bbe7dc7-beb5-4992-b39f-77e4ef584553"
+            ],
+            "Selectors": [
+                {
+                    "Action": "Remove",
+                    "Function": "AddSpells",
+                    "UUID": "2b5041e6-c915-4f24-9439-c5e97a25e926"
+                }
+            ]
         }
     ]
 }
-
