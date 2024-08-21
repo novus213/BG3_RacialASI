@@ -56,15 +56,15 @@ local function staticData(ud, typ)
   --
   local res = Ext.StaticData.Get(ud, typ)
 
-  --for k, v in pairs(res) do
-  -- print(k .. " : " .. tostring(v))
-  -- end
-  local tmpdt = {}
   for k, v in pairs(res) do
-    local str = tostring(k) .. " : " .. tostring(v)
-    table.insert(tmpdt, str)
-  end
-  return tmpdt
+   print(k .. " : " .. tostring(v))
+   end
+  --local tmpdt = {}
+  --for k, v in pairs(res) do
+  --  local str = tostring(k) .. " : " .. tostring(v)
+  --  table.insert(tmpdt, str)
+  --end
+  --return tmpdt
 end
 
 local function CheckLoadOrderUuid(dataB, name)
@@ -82,9 +82,9 @@ local function CheckLoadOrderUuid(dataB, name)
     for _, xo in pairs(dataB) do
       if modData.Info.ModuleUUID == xo.modGuid then
         table.insert(InloadOrder, uuid)
-        if xo.progressionUUID[1] ~= nil and xo.progressionUUID[1] ~= "aaaa" then
-          tProgression = staticData(xo.progressionUUID[1], "Progression")
-          --print(xo.progressionUUID[1])
+        if xo.progressionUUID[1] ~= nil and xo.progressionUUID[1] ~= "aaaa" and name == "Races" then
+          --tProgression = staticData(xo.progressionUUID[1], "Progression")
+          print(xo.progressionUUID[1])
         end
       else
         table.insert(noinLoadOrder, uuid)
@@ -95,8 +95,8 @@ local function CheckLoadOrderUuid(dataB, name)
   noinLoadOrder = table.unique(noinLoadOrder)
   local t1 = compare(InloadOrder, noinLoadOrder)
   t1 = table.unique(t1)
-  CheckTableUuid(InloadOrder, name, nil, tProgression)
-  CheckTableUuid(t1, name, "warn", tProgression)
+  --CheckTableUuid(InloadOrder, name, nil, tProgression)
+  --CheckTableUuid(t1, name, "warn", tProgression)
 end
 
 local logLevel_debuglua = (CONFIG and CONFIG.DEBUG_MESSAGES) or
