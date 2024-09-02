@@ -1,166 +1,77 @@
 ﻿<contentList>
   <content contentuid="h151054dfg3492g4f2dg89bfg34c7989bb135" version="1">Outils de bricoleur Gnome</content>
-  <content contentuid="hbe38632eg25f5g4949gb3f3ga7ae6b343737" version="1">Vous avez la compétence
-    avec les outils d'artisan (outils de bricoleur). Lorsque vous créez un dispositif, choisissez
-    l'une des options suivantes : Boîte à musique, Pelle</content>
+  <content contentuid="hbe38632eg25f5g4949gb3f3ga7ae6b343737" version="1">Vous avez la compétence avec les outils d'artisan (outils de bricoleur). Lorsque vous créez un dispositif, choisissez l'une des options suivantes : Boîte à musique, Pelle</content>
   <content contentuid="7342900a-1e03-4609-a77e-92b5089efabe" version="1">Mort-vivant</content>
-  <content contentuid="h2a86252bg933bg45dega12cg276554b99997" version="1">Vous êtes mort, mais cela
-    n'a pas tenu. Maintenant, vous marchez parmi les vivants une fois de plus en tant que créature
-    réanimée par de l'énergie négative.&lt;br/&gt;&lt;br/&gt;Votre nature de mort-vivant signifie
-    que de nombreux sorts et effets interagissent avec vous différemment, voire pas du tout. Vous
-    avez &lt;LSTag Tooltip="Advantage"&gt;Avantage&lt;/LSTag&gt; sur les &lt;LSTag
-    Tooltip="SavingThrow"&gt;jets de sauvegarde&lt;/LSTag&gt; contre la mort, et vous êtes &lt;LSTag
-    Tooltip="Immune"&gt;Immunisé&lt;/LSTag&gt; contre les maladies et le poison, et vous êtes soigné
-    par les dégâts nécrotiques. Une fois par repos long, vous regagnez immédiatement des points de
-    vie lorsque vous êtes mis à terre.</content>
+  <content contentuid="h2a86252bg933bg45dega12cg276554b99997" version="1">Vous êtes mort, mais cela  n'a pas tenu. Maintenant, vous marchez parmi les vivants une fois de plus en tant que créature  réanimée par de l'énergie négative.&lt;br/&gt;&lt;br/&gt;Votre nature de mort-vivant signifie  que de nombreux sorts et effets interagissent avec vous différemment, voire pas du tout. Vous  avez &lt;LSTag Tooltip="Advantage"&gt;Avantage&lt;/LSTag&gt; sur les &lt;LSTag  Tooltip="SavingThrow"&gt;jets de sauvegarde&lt;/LSTag&gt; contre la mort, et vous êtes &lt;LSTag  Tooltip="Immune"&gt;Immunisé&lt;/LSTag&gt; contre les maladies et le poison, et vous êtes soigné  par les dégâts nécrotiques. Une fois par repos long, vous regagnez immédiatement des points de  vie lorsque vous êtes mis à terre.</content>
   <content contentuid="8044db69-d33f-4f59-8bbf-791ad0bd2f28" version="1">Ferveur immortelle</content>
-  <content contentuid="a63dce7f-a907-4a57-88de-dd05fa525363" version="1">Si vous atteignez 0
-    &lt;LSTag Tooltip="HitPoints"&gt;points de vie&lt;/LSTag&gt;, vous regagnez [1] au lieu de
-    devenir &lt;LSTag Tooltip="Downed"&gt;Mis à terre&lt;/LSTag&gt;. Se régénère après un repos
-    long.</content>
-  <content contentuid="67eb642a-5324-4a10-93a8-db09a7ff4736" version="1">Si vous atteignez 0
-    &lt;LSTag Tooltip="HitPoints"&gt;points de vie&lt;/LSTag&gt;, vous regagnez [1] au lieu de
-    devenir &lt;LSTag Tooltip="Downed"&gt;Mis à terre&lt;/LSTag&gt;. Une fois par repos court.</content>
+  <content contentuid="a63dce7f-a907-4a57-88de-dd05fa525363" version="1">Si vous atteignez 0  &lt;LSTag Tooltip="HitPoints"&gt;points de vie&lt;/LSTag&gt;, vous regagnez [1] au lieu de  devenir &lt;LSTag Tooltip="Downed"&gt;Mis à terre&lt;/LSTag&gt;. Se régénère après un repos  long.</content>
+  <content contentuid="67eb642a-5324-4a10-93a8-db09a7ff4736" version="1">Si vous atteignez 0  &lt;LSTag Tooltip="HitPoints"&gt;points de vie&lt;/LSTag&gt;, vous regagnez [1] au lieu de  devenir &lt;LSTag Tooltip="Downed"&gt;Mis à terre&lt;/LSTag&gt;. Une fois par repos court.</content>
   <content contentuid="16cc763a-0f25-4c43-9057-5dff44817b55" version="1">Grande mort-vivant</content>
-  <content contentuid="71c2c2f2-89ef-46b1-b3ad-50445f2c4704" version="1">Votre condition de
-    mort-vivant est devenue une source de rajeunissement.&lt;br/&gt;&lt;br/&gt;Vous êtes immunisé
-    contre les maladies et avez une &lt;LSTag Tooltip="Resistant"&gt;résistance&lt;/LSTag&gt; aux
-    dégâts de froid et nécrotiques. Votre Ferveur immortelle se régénère maintenant après un repos
-    court.</content>
+  <content contentuid="71c2c2f2-89ef-46b1-b3ad-50445f2c4704" version="1">Votre condition de  mort-vivant est devenue une source de rajeunissement.&lt;br/&gt;&lt;br/&gt;Vous êtes immunisé  contre les maladies et avez une &lt;LSTag Tooltip="Resistant"&gt;résistance&lt;/LSTag&gt; aux  dégâts de froid et nécrotiques. Votre Ferveur immortelle se régénère maintenant après un repos  court.</content>
   <content contentuid="hb677b16932d14669ac2131eb6800155d31e7" version="1">ASI Racial</content>
-  <content contentuid="h5f4b675a7fd74f45a50f68ba10c58ee7f9ed" version="1">Activer ou désactiver ASI
-    Racial. VOUS DEVEZ REDÉMARRER LE JEU POUR APPLIQUER</content>
+  <content contentuid="h5f4b675a7fd74f45a50f68ba10c58ee7f9ed" version="1">Activer ou désactiver ASI  Racial. VOUS DEVEZ REDÉMARRER LE JEU POUR APPLIQUER</content>
   <content contentuid="he8b5755c79de4068959aa14cca050ffd633a" version="1">Paramètres généraux</content>
   <content contentuid="h07d47ae8f2e04a0ebf76f9d291d43f89a122" version="1">Niveau de débogage</content>
-  <content contentuid="h5adc1314428f4388982cd00e5b0e85c1be24" version="1">Utilisé principalement
-    pour déterminer quels messages imprimer.&lt;br/&gt;&lt;br/&gt;Utile pour les développeurs ou
-    pour le dépannage général. &lt;br&gt;Il est destiné à l'auteur pour trouver plus facilement les
-    bugs</content>
-  <content contentuid="hb4c1a6067d974317bff0de318b8f41c4629d" version="1">Activer ou désactiver le
-    niveau de débogage</content>
+  <content contentuid="h5adc1314428f4388982cd00e5b0e85c1be24" version="1">Utilisé principalement  pour déterminer quels messages imprimer.&lt;br&gt;&lt;br&gt;Utile pour les développeurs ou  pour le dépannage général. &lt;br&gt;Il est destiné à l'auteur pour trouver plus facilement les  bugs</content>
+  <content contentuid="hb4c1a6067d974317bff0de318b8f41c4629d" version="1">Activer ou désactiver le  niveau de débogage</content>
   <content contentuid="ha812a2f2e88241eea7f03321e84ebdf4738a" version="1">Niveau de débogage</content>
   <content contentuid="h8effff3ab7ca4498a2bf67aee6964e3f54fa" version="1">Paramètres du journal</content>
   <content contentuid="hbb55682736c04450941a3fcb114209e8ff45" version="1">Activer le journal</content>
-  <content contentuid="hcadb9f51b43740c6bbfea0704e5e3b547d0c" version="1">Activer ou désactiver le
-    fichier journal.</content>
-  <content contentuid="hd31f59b8ae454bc69cb34a4f69791adabbe1" version="1">Activer ou désactiver le
-    fichier journal.</content>
-  <content contentuid="he85b940743504f1485f9583fa631edd4f6e5" version="1">Ajouter des dons et des
-    passifs aux Ghouls Mort-vivant Spectrales</content>
-  <content contentuid="hdb73025ef0cf4ea695ac2453a1206326db31" version="1">Activer ou désactiver les
-    dons et les passifs pour les Ghouls Mort-vivant Spectrales.</content>
-  <content contentuid="h2ee53fe5595040c8b73a47d1644915851c58" version="1">Ajouter le don
-    PotionVéritable et les passifs SensibilitéLumière aux Ghouls Mort-vivant Spectrales.</content>
-  <content contentuid="hd629868ce4cb411782bf52b9726726801612" version="1">Dons, passifs et autres
-    paramètres</content>
+  <content contentuid="hcadb9f51b43740c6bbfea0704e5e3b547d0c" version="1">Activer ou désactiver le  fichier journal.</content>
+  <content contentuid="hd31f59b8ae454bc69cb34a4f69791adabbe1" version="1">Activer ou désactiver le  fichier journal.</content>
+  <content contentuid="he85b940743504f1485f9583fa631edd4f6e5" version="1">Ajouter des dons et des  passifs aux Ghouls Mort-vivant Spectrales</content>
+  <content contentuid="hdb73025ef0cf4ea695ac2453a1206326db31" version="1">Activer ou désactiver les  dons et les passifs pour les Ghouls Mort-vivant Spectrales.</content>
+  <content contentuid="h2ee53fe5595040c8b73a47d1644915851c58" version="1">Ajouter le don  PotionVéritable et les passifs SensibilitéLumière aux Ghouls Mort-vivant Spectrales.</content>
+  <content contentuid="hd629868ce4cb411782bf52b9726726801612" version="1">Dons, passifs et autres  paramètres</content>
   <content contentuid="ha6f6f1f710614c7dbbf094791748b83c27d4" version="1">Paramètres généraux</content>
-  <content contentuid="h58f1f87da2a4409298e576d42f7dd761ad4d" version="1">Corriger les races et
-    classes du jeu de règles 5e Limité</content>
-  <content contentuid="h522c516024ca488e9e66f020ad992f76265f" version="1">Activer ou désactiver la
-    correction des races et classes du jeu de règles 5e Limité.</content>
-  <content contentuid="h3dc8b21e901c473ebe2095f7defbcc0egf13" version="1">Activer ou désactiver la
-    correction des races et classes du jeu de règles 5e Limité.</content>
-  <content contentuid="h540131229f714a5a8ca68c840b314e48faa1" version="1">Corriger les races et
-    classes du jeu de règles 5e</content>
-  <content contentuid="haacb3f269d85427b84e585f3c1241f35g1a7" version="1">Activer ou désactiver la
-    correction des races et classes du jeu de règles 5e.</content>
-  <content contentuid="h646d48b7d5154aa2bcc91a860bfd0eee67f5" version="1">Activer ou désactiver la
-    correction des races et classes du jeu de règles 5e.</content>
-  <content contentuid="h6644859819e046aab9a1dd66d00268cb73a9" version="1">Corriger les races et
-    classes du jeu de règles 5e Étendu</content>
-  <content contentuid="h2aa40375a90049889136d9ef0166bea59c29" version="1">Activer ou désactiver la
-    correction des races et classes du jeu de règles 5e Étendu.</content>
-  <content contentuid="hfdcdc4435f8d4c6e8cd86d5ef92cd2a97d2f" version="1">Activer ou désactiver la
-    correction des races et classes du jeu de règles 5e Étendu.</content>
-  <content contentuid="h106ecbfbc9a1492985c7362620d5a00a3a4e" version="1">Corriger les races et
-    classes du jeu de règles Héritage</content>
-  <content contentuid="h29e1603c8a5c417894a6c1b4ccd675ca3cf3" version="1">Activer ou désactiver la
-    correction des races et classes du jeu de règles Héritage.</content>
-  <content contentuid="hb67c5f85c5444bc6b0b61e391f6b8cd36590" version="1">Activer ou désactiver la
-    correction des races et classes du jeu de règles Héritage.</content>
-  <content contentuid="h2af96e58ad974eb1bd78f3a489cc2247bg88" version="1">Corriger les races et
-    classes du jeu de règles Saveur</content>
-  <content contentuid="h7be0b87bbd444c9aa966a3675687f0f64742" version="1">Activer ou désactiver la
-    correction des races et classes du jeu de règles Saveur.</content>
-  <content contentuid="h291bdfd4ec1949b8bd93b1ef660b0dfd12c0" version="1">Activer ou désactiver la
-    correction des races et classes du jeu de règles Saveur.</content>
-  <content contentuid="h6aa763a4161c43aa963a8337083a0656ea63" version="1">Corriger les races et
-    classes du jeu de règles Homebrew</content>
-  <content contentuid="h8c946095072a401188efbdb69077e6f86cc8" version="1">Activer ou désactiver la
-    correction des races et classes du jeu de règles Homebrew.</content>
-  <content contentuid="h78f0ea8eecd148dcab97c17c096668dc8ag7" version="1">Activer ou désactiver la
-    correction des races et classes du jeu de règles Homebrew.</content>
-  <content contentuid="h1cd7715533964b7598d773ea3a9e8877ad4e" version="1">Choisissez votre jeu de
-    règles</content>
+  <content contentuid="h58f1f87da2a4409298e576d42f7dd761ad4d" version="1">Corriger les races et  classes du jeu de règles 5e Limité</content>
+  <content contentuid="h522c516024ca488e9e66f020ad992f76265f" version="1">Activer ou désactiver la  correction des races et classes du jeu de règles 5e Limité.</content>
+  <content contentuid="h3dc8b21e901c473ebe2095f7defbcc0egf13" version="1">Activer ou désactiver la  correction des races et classes du jeu de règles 5e Limité.</content>
+  <content contentuid="h540131229f714a5a8ca68c840b314e48faa1" version="1">Corriger les races et  classes du jeu de règles 5e</content>
+  <content contentuid="haacb3f269d85427b84e585f3c1241f35g1a7" version="1">Activer ou désactiver la  correction des races et classes du jeu de règles 5e.</content>
+  <content contentuid="h646d48b7d5154aa2bcc91a860bfd0eee67f5" version="1">Activer ou désactiver la  correction des races et classes du jeu de règles 5e.</content>
+  <content contentuid="h6644859819e046aab9a1dd66d00268cb73a9" version="1">Corriger les races et  classes du jeu de règles 5e Étendu</content>
+  <content contentuid="h2aa40375a90049889136d9ef0166bea59c29" version="1">Activer ou désactiver la  correction des races et classes du jeu de règles 5e Étendu.</content>
+  <content contentuid="hfdcdc4435f8d4c6e8cd86d5ef92cd2a97d2f" version="1">Activer ou désactiver la  correction des races et classes du jeu de règles 5e Étendu.</content>
+  <content contentuid="h106ecbfbc9a1492985c7362620d5a00a3a4e" version="1">Corriger les races et  classes du jeu de règles Héritage</content>
+  <content contentuid="h29e1603c8a5c417894a6c1b4ccd675ca3cf3" version="1">Activer ou désactiver la  correction des races et classes du jeu de règles Héritage.</content>
+  <content contentuid="hb67c5f85c5444bc6b0b61e391f6b8cd36590" version="1">Activer ou désactiver la  correction des races et classes du jeu de règles Héritage.</content>
+  <content contentuid="h2af96e58ad974eb1bd78f3a489cc2247bg88" version="1">Corriger les races et  classes du jeu de règles Saveur</content>
+  <content contentuid="h7be0b87bbd444c9aa966a3675687f0f64742" version="1">Activer ou désactiver la  correction des races et classes du jeu de règles Saveur.</content>
+  <content contentuid="h291bdfd4ec1949b8bd93b1ef660b0dfd12c0" version="1">Activer ou désactiver la  correction des races et classes du jeu de règles Saveur.</content>
+  <content contentuid="h6aa763a4161c43aa963a8337083a0656ea63" version="1">Corriger les races et  classes du jeu de règles Homebrew</content>
+  <content contentuid="h8c946095072a401188efbdb69077e6f86cc8" version="1">Activer ou désactiver la  correction des races et classes du jeu de règles Homebrew.</content>
+  <content contentuid="h78f0ea8eecd148dcab97c17c096668dc8ag7" version="1">Activer ou désactiver la  correction des races et classes du jeu de règles Homebrew.</content>
+  <content contentuid="h1cd7715533964b7598d773ea3a9e8877ad4e" version="1">Choisissez votre jeu de  règles</content>
   <content contentuid="ha2075bb674464088b748328cfb44c4b50734" version="1">Plus d'informations</content>
-  <content contentuid="hbc9bf0cfaa274bdc954f73485eb538923cb0" version="1">Lorsque vous cochez l'une
-    de ces cases, les caractéristiques, compétences et sorts des races seront modifiés pour être
-    plus en ligne avec les règles des livres DnD.&lt;br&gt;&lt;br&gt; Si une race n'existe pas dans
-    les livres de règles, vous aurez le choix lors de la création de votre personnage d'attribuer
-    les caractéristiques comme vous le souhaitez (+2, +1).&lt;br&gt;&lt;br&gt;Veuillez noter que
-    vous devrez redémarrer votre jeu pour que ces modifications prennent effet.</content>
+  <content contentuid="hbc9bf0cfaa274bdc954f73485eb538923cb0" version="1">Lorsque vous cochez l'une  de ces cases, les caractéristiques, compétences et sorts des races seront modifiés pour être  plus en ligne avec les règles des livres DnD.&lt;br&gt;&lt;br&gt; Si une race n'existe pas dans  les livres de règles, vous aurez le choix lors de la création de votre personnage d'attribuer  les caractéristiques comme vous le souhaitez (+2, +1).&lt;br&gt;&lt;br&gt;Veuillez noter que  vous devrez redémarrer votre jeu pour que ces modifications prennent effet.</content>
   <content contentuid="h981af069c80e462f823e4eac889dc3d3409g" version="1">Patch ASI par défaut</content>
-  <content contentuid="h21b3e46a847b433dbf7ce538ed3a6f2f8365" version="1">ATTENTION ! Si vous
-    sélectionnez cette option, toutes les règles précédentes seront ignorées et toutes les races et
-    sous-races auront des bonus de caractéristiques par défaut (+2, +1). Sélectionnez avec soin !</content>
-  <content contentuid="hdc52a6ac1d644e34a6442853615f9dfcgb2g" version="1">ATTENTION ! Si vous
-    sélectionnez cette option, toutes les règles précédentes seront ignorées et toutes les races et
-    sous-races auront des bonus de caractéristiques par défaut (+2, +1). Sélectionnez avec soin !</content>
-  <content contentuid="hdd008807f9d846089fd1fce8a76a35ad0cdb" version="1">Patch ASI par jeu de
-    règles</content>
+  <content contentuid="h21b3e46a847b433dbf7ce538ed3a6f2f8365" version="1">ATTENTION ! Si vous  sélectionnez cette option, toutes les règles précédentes seront ignorées et toutes les races et  sous-races auront des bonus de caractéristiques par défaut (+2, +1). Sélectionnez avec soin !</content>
+  <content contentuid="hdc52a6ac1d644e34a6442853615f9dfcgb2g" version="1">ATTENTION ! Si vous  sélectionnez cette option, toutes les règles précédentes seront ignorées et toutes les races et  sous-races auront des bonus de caractéristiques par défaut (+2, +1). Sélectionnez avec soin !</content>
+  <content contentuid="hdd008807f9d846089fd1fce8a76a35ad0cdb" version="1">Patch ASI par jeu de règles</content>
   <content contentuid="h91c32228ab60449daf9089fc355894223gdc" version="1">Ajouter +30 ASI</content>
   <content contentuid="h270beb6bffdd49d9908c69e7abedddd27g24" version="1">Ajouter +30 ASI.</content>
-  <content contentuid="he0cccff7dbf14c98848193ca821037d125d9" version="1">Activer ou désactiver
-    Ajouter +30 ASI.</content>
+  <content contentuid="he0cccff7dbf14c98848193ca821037d125d9" version="1">Activer ou désactiver  Ajouter +30 ASI.</content>
   <content contentuid="h1d864893fbc34770958b3e457c4767d026e2" version="1">Paramètres des triches</content>
-  <content contentuid="h651a2bde11404d77bacab179903a1bde642a" version="1">Options des règles (Dons,
-    Triches, etc.)</content>
-  <content contentuid="h5160775c4b83466e8554f41e80175c4b767g" version="1">Supprimer les passifs
-    Milice Humaine et Polyvalence Humaine pour les Humains</content>
-  <content contentuid="h3926b00726f640b9905f3d60fc8e0d8eg201" version="1">Activer ou désactiver
-    Supprimer les passifs Milice Humaine et Polyvalence Humaine pour les Humains</content>
-  <content contentuid="h02de5733aef543d295dd4c1030e21a9d859c" version="1">Supprimer les passifs
-    Milice Humaine et Polyvalence Humaine pour les Humains.&lt;br&gt;Si vous décochez l'option 5e
-    Limité, cette option sera désactivée</content>
-  <content contentuid="ha9d5cc602d474745b8d6d7fe5bc42945d887" version="1">Ajouter les passifs
-    Entraînement aux Armes Drow pour Demi-Elfe Drow</content>
-  <content contentuid="hb675ad12e1514c24be22dafe1fe857ace174" version="1">Activer ou désactiver
-    Entraînement aux Armes Drow pour Demi-Elfe Drow.</content>
-  <content contentuid="h75932be3a3a54e4aa4cbdc6760324c804fe7" version="1">Ajouter les passifs
-    Entraînement aux Armes Drow pour Demi-Elfe Drow&lt;br&gt;Si vous décochez l'option 5e Limité,
-    cette option sera désactivée</content>
-  <content contentuid="h4e75bc9636de43e29bc6e8c2b8688db55fbc" version="1">Supprimer les passifs
-    Milice Humaine pour Demi-Elfe</content>
-  <content contentuid="h995ed382f9974a79ada563a9325148d60gdb" version="1">Activer ou désactiver
-    Milice Humaine pour Demi-Elfe.</content>
-  <content contentuid="hddceb260cf614b638a45bfca466675dcfeea" version="1">Supprimer les passifs
-    Milice Humaine pour Demi-Elfe.&lt;br&gt;Si vous décochez l'option 5e Limité, cette option sera
-    désactivée</content>
-  <content contentuid="h273eaa28aede44ad9fc93fcafa2c755d923a" version="1">Ajouter les passifs
-    Sensibilité à la Lumière pour les races de l'Outreterre</content>
-  <content contentuid="h3c8d8cb61a1c40fdb012292a5f017d6b170b" version="1">Activer ou désactiver les
-    passifs Sensibilité à la Lumière pour les races de l'Outreterre.</content>
-  <content contentuid="h0db76ddefb7b4b03ab480478c9f436e0ce8a" version="1">Ajouter les passifs
-    Sensibilité à la Lumière pour les races de l'Outreterre. &lt;br&gt;Si vous décochez l'option 5e
-    Limité, cette option sera désactivée</content>
-  <content contentuid="hdeb2111caefb44ddb5c9e149e57b69a6a19b" version="1">Lorsque vous cochez l'une
-    de ces cases, les dons, passifs ou autres des races seront modifiés pour être plus en ligne avec
-    les règles des livres DnD.&lt;br&gt;Si un don ou passif ou autre n'existe pas dans les livres de
-    règles, l'option sera désactivée, SAUF POUR LES TRICHES BIEN SÛR !&lt;br&gt;Veuillez noter que
-    vous devrez redémarrer votre jeu pour que ces modifications prennent effet.</content>
-  <content contentuid="h0ca0dff2690e47799e103ba600d4c87323a9" version="1">Masquer les races non
-    incluses dans les jeux de règles (BETA En attente des mises à jour de Kender Libs) Pour
-    l'instant, VOUS DEVEZ REDÉMARRER LE JEU POUR APPLIQUER</content>
-  <content contentuid="he7c56e86c2b54be39d0cd0c329bf13d780c6" version="1">Activer ou désactiver
-    Masquer les races non incluses dans les jeux de règles.</content>
-  <content contentuid="h36f88fe6cf3e4c5a8daec1f9a94c8c9d7088" version="1">Masquer les races non
-    incluses dans les jeux de règles.</content>
+  <content contentuid="h651a2bde11404d77bacab179903a1bde642a" version="1">Options des règles (Dons,  Triches, etc.)</content>
+  <content contentuid="h5160775c4b83466e8554f41e80175c4b767g" version="1">Supprimer les passifs  Milice Humaine et Polyvalence Humaine pour les Humains</content>
+  <content contentuid="h3926b00726f640b9905f3d60fc8e0d8eg201" version="1">Activer ou désactiver  Supprimer les passifs Milice Humaine et Polyvalence Humaine pour les Humains</content>
+  <content contentuid="h02de5733aef543d295dd4c1030e21a9d859c" version="1">Supprimer les passifs  Milice Humaine et Polyvalence Humaine pour les Humains.&lt;br&gt;Si vous décochez l'option 5e  Limité, cette option sera désactivée</content>
+  <content contentuid="ha9d5cc602d474745b8d6d7fe5bc42945d887" version="1">Ajouter les passifs  Entraînement aux Armes Drow pour Demi-Elfe Drow</content>
+  <content contentuid="hb675ad12e1514c24be22dafe1fe857ace174" version="1">Activer ou désactiver  Entraînement aux Armes Drow pour Demi-Elfe Drow.</content>
+  <content contentuid="h75932be3a3a54e4aa4cbdc6760324c804fe7" version="1">Ajouter les passifs  Entraînement aux Armes Drow pour Demi-Elfe Drow&lt;br&gt;Si vous décochez l'option 5e Limité,  cette option sera désactivée</content>
+  <content contentuid="h4e75bc9636de43e29bc6e8c2b8688db55fbc" version="1">Supprimer les passifs  Milice Humaine pour Demi-Elfe</content>
+  <content contentuid="h995ed382f9974a79ada563a9325148d60gdb" version="1">Activer ou désactiver  Milice Humaine pour Demi-Elfe.</content>
+  <content contentuid="hddceb260cf614b638a45bfca466675dcfeea" version="1">Supprimer les passifs  Milice Humaine pour Demi-Elfe.&lt;br&gt;Si vous décochez l'option 5e Limité, cette option sera  désactivée</content>
+  <content contentuid="h273eaa28aede44ad9fc93fcafa2c755d923a" version="1">Ajouter les passifs  Sensibilité à la Lumière pour les races de l'Outreterre</content>
+  <content contentuid="h3c8d8cb61a1c40fdb012292a5f017d6b170b" version="1">Activer ou désactiver les  passifs Sensibilité à la Lumière pour les races de l'Outreterre.</content>
+  <content contentuid="h0db76ddefb7b4b03ab480478c9f436e0ce8a" version="1">Ajouter les passifs  Sensibilité à la Lumière pour les races de l'Outreterre. &lt;br&gt;Si vous décochez l'option 5e  Limité, cette option sera désactivée</content>
+  <content contentuid="hdeb2111caefb44ddb5c9e149e57b69a6a19b" version="1">Lorsque vous cochez l'une  de ces cases, les dons, passifs ou autres des races seront modifiés pour être plus en ligne avec  les règles des livres DnD.&lt;br&gt;Si un don ou passif ou autre n'existe pas dans les livres de  règles, l'option sera désactivée, SAUF POUR LES TRICHES BIEN SÛR !&lt;br&gt;Veuillez noter que  vous devrez redémarrer votre jeu pour que ces modifications prennent effet.</content>
+  <content contentuid="h0ca0dff2690e47799e103ba600d4c87323a9" version="1">Masquer les races non  incluses dans les jeux de règles (BETA En attente des mises à jour de Kender Libs) Pour  l'instant, VOUS DEVEZ REDÉMARRER LE JEU POUR APPLIQUER</content>
+  <content contentuid="he7c56e86c2b54be39d0cd0c329bf13d780c6" version="1">Activer ou désactiver  Masquer les races non incluses dans les jeux de règles.</content>
+  <content contentuid="h36f88fe6cf3e4c5a8daec1f9a94c8c9d7088" version="1">Masquer les races non  incluses dans les jeux de règles.</content>
   <content contentuid="hcc81c06cc7924078a2102b19892a2fbaea45" version="1">Paramètres de masquage</content>
-  <content contentuid="h4d0a99c34d314b27bface2a8e615630cg43b" version="1">Masquer les classes non
-    incluses dans les jeux de règles (BETA En attente des mises à jour de Kender Libs) Pour
-    l'instant, VOUS DEVEZ REDÉMARRER LE JEU POUR APPLIQUER</content>
-  <content contentuid="h0218359298ab4d7495a239be1619bb702c2a" version="1">Activer ou désactiver
-    Masquer les classes non incluses dans les jeux de règles.</content>
-  <content contentuid="hd7877ac6df2647cd9ad44dbea1ef81cad836" version="1">Masquer les classes non
-    incluses dans les jeux de règles.</content>
+  <content contentuid="h4d0a99c34d314b27bface2a8e615630cg43b" version="1">Masquer les classes non  incluses dans les jeux de règles (BETA En attente des mises à jour de Kender Libs) Pour  l'instant, VOUS DEVEZ REDÉMARRER LE JEU POUR APPLIQUER</content>
+  <content contentuid="h0218359298ab4d7495a239be1619bb702c2a" version="1">Activer ou désactiver  Masquer les classes non incluses dans les jeux de règles.</content>
+  <content contentuid="hd7877ac6df2647cd9ad44dbea1ef81cad836" version="1">Masquer les classes non  incluses dans les jeux de règles.</content>
 </contentList>
