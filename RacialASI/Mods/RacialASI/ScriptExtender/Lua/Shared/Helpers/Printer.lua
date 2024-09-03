@@ -100,28 +100,28 @@ if VCHelpers.ModVars:IsModLoaded("755a8a72-407f-4f0d-9a33-274ac0f0b53d") then
 
 
 
-  -- Register a net listener to handle settings changes dynamically
-  Ext.RegisterNetListener("MCM_Saved_Setting", function (call, payload)
-    local data = Ext.Json.Parse(payload)
+  -- In your MCM-integrated mod's code
+  Ext.ModEvents.BG3MCM["MCM_Setting_Saved"]:Subscribe(function (payload)
+    --local data = Ext.Json.Parse(payload)
 
-    if not data or data.modGUID ~= ModuleUUID or not data.settingId then
+    if not payload or payload.modUUID ~= ModuleUUID or not payload.settingId then
       return
     end
 
-    if McmVars[data.settingId] ~= nil then
-      McmVars[data.settingId] = data.value
+    if McmVars[payload.settingId] ~= nil then
+      McmVars[payload.settingId] = payload.value
 
-      RAWarn(2, string.format("Setting %s to %s", data.settingId, data.value))
+      RAWarn(2, string.format("Setting %s to %s", payload.settingId, payload.value))
 
       McmVarsOptions = McmVars
 
       --MCMASIAPI:OnStatsLoadedMCM()
     end
 
-    if McmVarsBooksSettings[data.settingId] ~= nil then
-      McmVarsBooksSettings[data.settingId] = data.value
+    if McmVarsBooksSettings[payload.settingId] ~= nil then
+      McmVarsBooksSettings[payload.settingId] = payload.value
 
-      RAWarn(2, string.format("Setting %s to %s", data.settingId, data.value))
+      RAWarn(2, string.format("Setting %s to %s", payload.settingId, payload.value))
 
       PatchAsi5eLimited  = McmVarsBooksSettings["PatchAsi5eLimited"]
       PatchAsi5e         = McmVarsBooksSettings["PatchAsi5e"]
@@ -131,47 +131,45 @@ if VCHelpers.ModVars:IsModLoaded("755a8a72-407f-4f0d-9a33-274ac0f0b53d") then
       PatchAsiHomebrew   = McmVarsBooksSettings["PatchAsiHomebrew"]
       PatchAsiDefault    = McmVarsBooksSettings["PatchAsiDefault"]
 
-
-
       --CleanOnRacesStatsLoaded()
       --builder5eRaces()
     end
 
-    if McmVarsGeneralSettings[data.settingId] ~= nil then
-      McmVarsGeneralSettings[data.settingId] = data.value
-      RAWarn(2, string.format("Setting %s to %s", data.settingId, data.value))
+    if McmVarsGeneralSettings[payload.settingId] ~= nil then
+      McmVarsGeneralSettings[payload.settingId] = payload.value
+      RAWarn(2, string.format("Setting %s to %s", payload.settingId, payload.value))
 
       --McmVarsGeneralSettings = McmVarsGeneralSettings
     end
 
-    if data.settingId == "debug_level" then
-      RADebug(0, "Setting debug level to " .. data.value)
-      RAPrinter.DebugLevel = data.value
+    if payload.settingId == "debug_level" then
+      RADebug(0, "Setting debug level to " .. payload.value)
+      RAPrinter.DebugLevel = payload.value
       DebugLevel = McmVarsGeneralSettings["Debug_level"]
     end
 
-    if data.settingId == "Log" then
-      RAWarn(2, string.format("Setting %s to %s", data.settingId, data.value))
+    if payload.settingId == "Log" then
+      RAWarn(2, string.format("Setting %s to %s", payload.settingId, payload.value))
       Log = McmVarsGeneralSettings["Log"]
     end
 
-    if data.settingId == "RASI" then
-      RAWarn(2, string.format("Setting %s to %s", data.settingId, data.value))
+    if payload.settingId == "RASI" then
+      RAWarn(2, string.format("Setting %s to %s", payload.settingId, payload.value))
       RasiOnOff = McmVarsGeneralSettings["RASI"]
     end
 
-    if data.settingId == "CheatAsi30" then
-      RAWarn(2, string.format("Setting %s to %s", data.settingId, data.value))
+    if payload.settingId == "CheatAsi30" then
+      RAWarn(2, string.format("Setting %s to %s", payload.settingId, payload.value))
       CheatAsi30 = McmVarsGeneralSettings["CheatAsi30"]
     end
 
-    if data.settingId == "RaceHiddener" then
-      RAWarn(2, string.format("Setting %s to %s", data.settingId, data.value))
+    if payload.settingId == "RaceHiddener" then
+      RAWarn(2, string.format("Setting %s to %s", payload.settingId, payload.value))
       RaceHiddener = McmVarsGeneralSettings["RaceHiddener"]
     end
 
-    if data.settingId == "ClasseHiddener" then
-      RAWarn(2, string.format("Setting %s to %s", data.settingId, data.value))
+    if payload.settingId == "ClasseHiddener" then
+      RAWarn(2, string.format("Setting %s to %s", payload.settingId, payload.value))
       ClasseHiddener = McmVarsGeneralSettings["ClasseHiddener"]
     end
   end)
